@@ -96,8 +96,8 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 </head>
 <body>
 	<div id="init-screen">
-		<div id="init-no-js"><noscript>JavaScript is required. Please enable it to continue.</noscript></div>
-		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
+		<div id="init-no-js"><noscript>JavaScript 是必需的。请启用它以继续。</noscript></div>
+		<div id="init-lacking">您的浏览器缺少所需的功能。请升级它或切换到另一个以继续。</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<!-- UUID://118862A8-E72B-4477-9D9C-1ADCDF707B6E// --><tw-storydata name="Dawn of Corruption" startnode="1846" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="118862A8-E72B-4477-9D9C-1ADCDF707B6E" zoom="0.6" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "notify.css" */
@@ -21486,17 +21486,17 @@ Config.ui.stowBarInitially = false;
 	name: &quot;Stunned&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; is stunned and cannot move!&quot;
+		return character.info.name + &quot;惊呆了，动弹不得！&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		if(character.fight.variables.stunnedDuration &gt; 0)
 		{
-			return character.info.name + &quot; tries to snap out of it.&quot;
+			return character.info.name + &quot;试图从中解脱出来。&quot;
 		}
 		else
 		{
-			return character.info.name + &quot; came back to their senses and is readying their next attack!&quot;
+			return character.info.name + &quot;恢复了理智，准备下一次进攻！&quot;
 		}
 		
 	},
@@ -21521,77 +21521,77 @@ Config.ui.stowBarInitially = false;
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
 	additionalEffects: []
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="StoryInit_StateDrivenModifiers" tags="" position="475,225" size="100,100">&lt;&lt;set $FightStateDrivenModifiers = [$Bigger_Than_Target_1, $Bigger_Than_Target_2, $Bigger_Than_Target_3]&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="StoryInit_UI" tags="" position="600,225" size="100,100">&lt;&lt;run setup.updateStaticCorruptionUI(State.variables.CharacterSheet_Player)&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_small" tags="" position="725,225" size="100,100">The enemy rushes in and attacks.</tw-passagedata><tw-passagedata pid="17" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_medium" tags="" position="850,225" size="100,100">The enemy barrels forward toward you, throwing his weight behind his attack.</tw-passagedata><tw-passagedata pid="18" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_large" tags="" position="975,225" size="100,100">The enemy stomps forward and swings a massive fist.</tw-passagedata><tw-passagedata pid="19" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_huge" tags="" position="1100,225" size="100,100">The enemy&#39;s @[all|huge|arms|noverb] hurtle down toward you.</tw-passagedata><tw-passagedata pid="20" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="1225,225" size="100,100">A trail of purple energy flows from his knuckles.</tw-passagedata><tw-passagedata pid="21" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="100,350" size="100,100">Each vein in his hand and arm burns with a tainted purple hue, energy rolls off of his skin as tendrils of dark power.</tw-passagedata><tw-passagedata pid="22" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="225,350" size="100,100">hops between each foot, ready to feint and strike at any moment.</tw-passagedata><tw-passagedata pid="23" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="350,350" size="100,100">braces himself for the battle.</tw-passagedata><tw-passagedata pid="24" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="475,350" size="100,100">rolls his boulder like shoulders, ready to strike.</tw-passagedata><tw-passagedata pid="25" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="600,350" size="100,100">is stretching his limbs, ready to wrestle.</tw-passagedata><tw-passagedata pid="26" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="725,350" size="100,100">rakes his large feet across the ground, ready to charge.</tw-passagedata><tw-passagedata pid="27" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="850,350" size="100,100">tenses his muscles. His bulky form creaks with strength, with the anticipation of battle.</tw-passagedata><tw-passagedata pid="28" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,350" size="100,100">flexes gargantuan muscles, ready to put each rolling mountain to use.</tw-passagedata><tw-passagedata pid="29" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,350" size="100,100">stomps his massive feet as he readies himself for combat. The earth quivers.</tw-passagedata><tw-passagedata pid="30" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,350" size="100,100">cracks his massive knuckles, they sound like thunder across the battlefield.</tw-passagedata><tw-passagedata pid="31" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt50" tags="" position="100,475" size="100,100">The air feels wrong around this creature.</tw-passagedata><tw-passagedata pid="32" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt75" tags="" position="225,475" size="100,100">A terrible darkness spreads across the ground from this creature&#39;s feet.</tw-passagedata><tw-passagedata pid="33" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt100" tags="" position="350,475" size="100,100">Purple and black tendrils of energy are breaking out from the ground around this creature&#39;s feet.</tw-passagedata><tw-passagedata pid="34" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_1" tags="" position="475,475" size="100,100">tiny</tw-passagedata><tw-passagedata pid="35" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_2" tags="" position="600,475" size="100,100">small</tw-passagedata><tw-passagedata pid="36" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_3" tags="" position="725,475" size="100,100">minute</tw-passagedata><tw-passagedata pid="37" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_4" tags="" position="850,475" size="100,100">little</tw-passagedata><tw-passagedata pid="38" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_1" tags="" position="975,475" size="100,100">large</tw-passagedata><tw-passagedata pid="39" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_2" tags="" position="1100,475" size="100,100">sizeable</tw-passagedata><tw-passagedata pid="40" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_3" tags="" position="1225,475" size="100,100">hefty</tw-passagedata><tw-passagedata pid="41" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_4" tags="" position="100,600" size="100,100">burly</tw-passagedata><tw-passagedata pid="42" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_1" tags="" position="225,600" size="100,100">huge</tw-passagedata><tw-passagedata pid="43" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_2" tags="" position="350,600" size="100,100">massive</tw-passagedata><tw-passagedata pid="44" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_3" tags="" position="475,600" size="100,100">towering</tw-passagedata><tw-passagedata pid="45" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_4" tags="" position="600,600" size="100,100">humongous</tw-passagedata><tw-passagedata pid="46" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_1" tags="" position="725,600" size="100,100">immense</tw-passagedata><tw-passagedata pid="47" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_2" tags="" position="850,600" size="100,100">titanic</tw-passagedata><tw-passagedata pid="48" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_3" tags="" position="975,600" size="100,100">colossal</tw-passagedata><tw-passagedata pid="49" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_4" tags="" position="1100,600" size="100,100">gigantic</tw-passagedata><tw-passagedata pid="50" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_1" tags="" position="1225,600" size="100,100">muscles harden and pulse with increasing strength. His biceps form fair peaks above well defined forearms. 
-Veins begin peeking through his skin as they spread across his growing shoulders and neck. 
-His pecs push outwards, his nipples harden and a moan escapes his mouth as the growth tumbles downward like a fresh breath of air through his six pack abs, thighs and calves.</tw-passagedata><tw-passagedata pid="51" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_2" tags="" position="100,725" size="100,100">athletic form hardens as each muscle contracts into picturesque beauty. Every line and crease deepens as the power flowing through him forces his body to adapt. 
-His laterals spread wider, his abdominal wall pushes outward and his upper body swells with growing, physical pride.</tw-passagedata><tw-passagedata pid="52" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_3" tags="" position="225,725" size="100,100">body convulses as a tingling feeling spreads outwards from his core and to each limb. His body freezes momentarily before a wellspring of growth overtakes him. 
-Calves bulge, quads expand and the upper body surges with strength to keep up.</tw-passagedata><tw-passagedata pid="53" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_4" tags="" position="350,725" size="100,100">expression shifts into a pleasurable smile. Looking down at his hands, he watches a bubble of growth move from his fingertips across his bulging arms and into his pecs. 
-Momentarily, it stops. A worried look overtakes his otherwise calm expression. 
-Suddenly, his cock fires an unattural amount of cum. Every pulse of white, every convulsion of his body propels his body upwards and outwards.</tw-passagedata><tw-passagedata pid="54" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_1" tags="" position="475,725" size="100,100">body shudders and he doubles over. His knees hit the ground as he is assaulted by a wave of intense pleasure. 
-Every burgeoning muscle flexes, each crest and trough grows into mounds that could only be crafted with years of dedication. 
-His arms become pillars of strength, his back becomes an atlas of muscles - his pecs begin pushing his growing nipples earthbound and his abdominal wall starts shifting from six to eight bricks of power.</tw-passagedata><tw-passagedata pid="55" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_2" tags="" position="600,725" size="100,100">mouth spreads into a wide grin as a surreal purple glow spins across the edges of his irises as his veins swell over his body. Not moments later, his cock rises as his limbs pack on weight and size. 
-What was once ample, is now in excess. What was once well chiselled is now barelling. He flexes his bicep, watching it rise higher and higher. 
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="StoryInit_StateDrivenModifiers" tags="" position="475,225" size="100,100">&lt;&lt;set $FightStateDrivenModifiers = [$Bigger_Than_Target_1, $Bigger_Than_Target_2, $Bigger_Than_Target_3]&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="StoryInit_UI" tags="" position="600,225" size="100,100">&lt;&lt;run setup.updateStaticCorruptionUI(State.variables.CharacterSheet_Player)&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_small" tags="" position="725,225" size="100,100">敌人冲上前来进攻。</tw-passagedata><tw-passagedata pid="17" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_medium" tags="" position="850,225" size="100,100">敌人向前猛地冲向你，在他的攻击中投入了他的体重作为附加伤害。</tw-passagedata><tw-passagedata pid="18" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_large" tags="" position="975,225" size="100,100">敌人向前跺脚，挥舞着巨大的拳头。</tw-passagedata><tw-passagedata pid="19" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_huge" tags="" position="1100,225" size="100,100">敌人&#39;的 @[all|huge|arms|noverb]向你急速冲来。</tw-passagedata><tw-passagedata pid="20" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="1225,225" size="100,100">一缕缕紫色的能量从他的指关节中流出。</tw-passagedata><tw-passagedata pid="21" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="100,350" size="100,100">他手上和手臂上的每一根血管都燃烧着一种污染的紫色，能量从他的皮肤上滚落，成为黑暗力量的卷须。</tw-passagedata><tw-passagedata pid="22" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="225,350" size="100,100">在每只脚之间跳跃，随时准备佯攻和进攻。</tw-passagedata><tw-passagedata pid="23" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="350,350" size="100,100">为战斗做好准备。</tw-passagedata><tw-passagedata pid="24" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="475,350" size="100,100">转动着他那巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="25" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="600,350" size="100,100">正在伸展他的四肢，准备进行摔跤。</tw-passagedata><tw-passagedata pid="26" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="725,350" size="100,100">他的大脚耙过地面，准备冲锋。</tw-passagedata><tw-passagedata pid="27" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="850,350" size="100,100">绷紧了他的肌肉。他笨重的身躯因力量而吱吱作响，因对战斗的期待而颤抖。</tw-passagedata><tw-passagedata pid="28" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,350" size="100,100">弯曲巨大的肌肉，准备把每一条绷紧的如山肌肉都用上。</tw-passagedata><tw-passagedata pid="29" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,350" size="100,100">跺着他巨大的脚，准备战斗。大地因此在颤抖。</tw-passagedata><tw-passagedata pid="30" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,350" size="100,100">巨大的指关节裂响，它们像雷声一样响彻战场。</tw-passagedata><tw-passagedata pid="31" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt50" tags="" position="100,475" size="100,100">这个生物周围的空气感觉不太对。</tw-passagedata><tw-passagedata pid="32" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt75" tags="" position="225,475" size="100,100">可怕的黑暗蔓延开了，从这个生物&#39;的 脚下。</tw-passagedata><tw-passagedata pid="33" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt100" tags="" position="350,475" size="100,100">紫色和黑色的能量卷须在地面上爆发出来，从这个生物&#39;的 脚下。</tw-passagedata><tw-passagedata pid="34" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_1" tags="" position="475,475" size="100,100">tiny</tw-passagedata><tw-passagedata pid="35" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_2" tags="" position="600,475" size="100,100">small</tw-passagedata><tw-passagedata pid="36" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_3" tags="" position="725,475" size="100,100">minute</tw-passagedata><tw-passagedata pid="37" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_4" tags="" position="850,475" size="100,100">little</tw-passagedata><tw-passagedata pid="38" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_1" tags="" position="975,475" size="100,100">large</tw-passagedata><tw-passagedata pid="39" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_2" tags="" position="1100,475" size="100,100">sizeable</tw-passagedata><tw-passagedata pid="40" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_3" tags="" position="1225,475" size="100,100">hefty</tw-passagedata><tw-passagedata pid="41" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_4" tags="" position="100,600" size="100,100">burly</tw-passagedata><tw-passagedata pid="42" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_1" tags="" position="225,600" size="100,100">huge</tw-passagedata><tw-passagedata pid="43" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_2" tags="" position="350,600" size="100,100">massive</tw-passagedata><tw-passagedata pid="44" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_3" tags="" position="475,600" size="100,100">towering</tw-passagedata><tw-passagedata pid="45" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_4" tags="" position="600,600" size="100,100">humongous</tw-passagedata><tw-passagedata pid="46" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_1" tags="" position="725,600" size="100,100">immense</tw-passagedata><tw-passagedata pid="47" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_2" tags="" position="850,600" size="100,100">titanic</tw-passagedata><tw-passagedata pid="48" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_3" tags="" position="975,600" size="100,100">colossal</tw-passagedata><tw-passagedata pid="49" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_4" tags="" position="1100,600" size="100,100">gigantic</tw-passagedata><tw-passagedata pid="50" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_1" tags="" position="1225,600" size="100,100">肌肉变硬并随着力量的增加而跳动。他的二头肌在轮廓分明的前臂上形成了一座美丽的的山峰。
+静脉开始从他的皮肤中涨出，遍布他那正不断增长的肩膀和脖子。
+他的胸肌向外推，他的乳头变硬，当增长的肌肉像新鲜空气一样向下翻滚，穿过他的六块腹肌、大腿和小腿时，一声呻吟从他嘴里发出。</tw-passagedata><tw-passagedata pid="51" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_2" tags="" position="100,725" size="100,100">运动形态随着每块肌肉收缩而变硬，形成风景如画的美丽。每一条线和褶皱都随着流经他的力量而加深，迫使他的身体适应。
+他的侧腹伸展得更宽、腹壁向外推，他的上半身膨胀得越来越大，身体也越来越令人感到自豪。</tw-passagedata><tw-passagedata pid="52" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_3" tags="" position="225,725" size="100,100">当一种刺痛的感觉从他的核心向外扩散到每个肢体时，他的身体抽搐起来。他的身体瞬间冻结，然后生长的源泉淹没了他。
+他的小腿隆起四肢扩张，上半身力量澎湃地跟上了步伐。</tw-passagedata><tw-passagedata pid="53" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_4" tags="" position="350,725" size="100,100">表情转变为愉悦的微笑。他低头看着自己的双手，看着一个个生长的气泡从他的指尖穿过他隆起的手臂，进入他的胸肌。
+瞬间，它停止了。他原本平静的表情被一种担忧的神情所笼罩。
+突然间，他的阴茎射出了数量惊人的精液。他每一次抽搐、每一次白色的喷发，都会推动他的身体向上和向外生长。</tw-passagedata><tw-passagedata pid="54" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_1" tags="" position="475,725" size="100,100">身体颤抖着，他翻了个身。当他被一波强烈的快感袭击时，他的膝盖不由自主地撞在了地上。
+他的每一块突起的肌肉都在弯曲，每一个肌肉形成的峰与谷都长成了只有经过多年努力才能形成的丘陵。
+他的手臂成为力量的支柱，背部成为肌肉的地图集——他的胸肌开始把他日益增长的乳头推向大地，他的腹肌开始从六块增长为富有力量的八块。</tw-passagedata><tw-passagedata pid="55" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_2" tags="" position="600,725" size="100,100">嘴角绽放出灿烂的笑容，超现实的紫色光芒在他的虹膜边缘旋转，他的血管在他的身体上膨胀。不一会儿，他的阴茎随着他四肢的重量与尺寸的增加而上升。
+曾经充裕的肌肉，现在已经过剩。曾经被衣物束缚的好身材现在已然赤裸。他弯曲着他的二头肌，目视着它越升越高。
 
-A sinister smile spreads wide across his face - this was only the beginning.</tw-passagedata><tw-passagedata pid="56" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_3" tags="" position="725,725" size="100,100">cock jumps to full mast as a sudden growth spurt overtakes his body. He quickly wraps his arms around his chest to feel his pecs compete with his biceps. 
-Wave after wave, his arms pushes away from his chest from the sheer size being compressed into them. His legs adopt a wider stance as the war continues below with his quads, expanding glutes and growing calves.</tw-passagedata><tw-passagedata pid="57" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_4" tags="" position="850,725" size="100,100">body spasms as his powerful muscles all flex at once. His bull like neck pulses larger and begins to threaten the sides of his head. 
-His pecs swell outwards in leaps and bounds over a growing and impressive set of eight abs. 
-His hands rove across each expanding inch of flesh, feeling the skin stretch tighter against chords of steel that thicken with each passing second.</tw-passagedata><tw-passagedata pid="58" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_1" tags="" position="975,725" size="100,100">body shudders. Every boulder contained within him rumbles with an ominous wave of incoming growth. 
-It didn&#39;t matter who or what was watching the world stood in stunned silence as his biceps exploded from raw, uncontained power. 
-They barreled outwards until their pulsing peaks began to reach sizes that were clearly unnatural. 
-Each pectoral was large enough to be a shelf, and they bounced eagerly as they consumed more and more space in front of him. 
-Large nipples were forced further sideways and downwards as more and more space was claimed by their hosts. 
-Thick thighs and glutes became even thicker, pillars that would easily host houses were increasing in size before his very eyes.</tw-passagedata><tw-passagedata pid="59" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_2" tags="" position="1100,725" size="100,100">bones cracked audibly. Growth was upon him yet again, and this wave was even stronger than the last. With a booming thud, his muscles exploded with new size - too much and too fast for his body to contend with. 
-The growth began running rampant; each second packed on more and more until limbs began to lock and grind against each other from the lack of any space at all. 
-With a primal roar, he flexes - a beastly mountain of mass - and wills it all to compact inwards. 
-Control was regained but his body had far from relented his new incredible atlassian size.</tw-passagedata><tw-passagedata pid="60" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_3" tags="" position="1225,725" size="100,100">mouth opens wide as a primordial roar bellows from his growing form. 
-Bending down, he slams his fist into the ground and a wave of size propells itself upwards from the cracked earth; up his forearm, bicep and into his bullish neck. 
-His pectorals push further outwards, forcing his center of gravity forward before his waist expands into a pillar of pure power to support his new torso. 
-Sliding outwards from the ground behind him; his legs push each other apart, massaging and grinding against his immense cock. 
-The pleasure is too much. With another ear-splitting roar, he arches his back and unleashes a torrential geyser of white.</tw-passagedata><tw-passagedata pid="61" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_4" tags="" position="100,850" size="100,100">jaw lowers into abrupt maniacal laughter as he feels the power within him erupt. 
-Like waves from the surface of disturbed water, his entire body groans, creaks and shifts as mucles begin to pack onto muscles - chords thicken and roadworks of veins the size of heavy duty pipes spiral across his expanding form. 
-With a mighty stomp his growing foot hits the ground, forcing a monstrous wave of size upwards through his calves, into his thighs and finally into his bulging muscular rear. 
-Finally, bringing both of his hands together in a mighty clap, his upper body doubles in strength and pure muscle mass.</tw-passagedata><tw-passagedata pid="62" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_1" tags="" position="225,850" size="100,100">movements halt. A deadly silence overtakes the land that he towers over. A rumbling. The sound of war drums, the sound of the Earth roaring its protest against the impending change. 
-Then it happened. Mountains that were biceps doubled in size. 
-Pectorals that quake with every minor shift billow outwards. Nipples - hard, large and sensitive are exiled into the deepening valley between them and an entire canyon of ten inumanely thick abdominal muscles. 
-Laterals that were wings, were forced wider. Back muscles that rippled with pure power expanded and arms that could crush villages grew into monstrosities that the world could never contend with. 
-His cock, large and heavy with muscle slowly swings into the air, its growing mass keeping each move sensual to all who would watch. 
-Another rumble. Another catastrophe. Rivers of white explode from its tip into a deluge that coats you, the ground and every object close enough to suffer the titanic load unleashed from his apocalyptic sized balls.</tw-passagedata><tw-passagedata pid="63" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_2" tags="" position="350,850" size="100,100">gigantic arms fall limp at his side. A loud rumbling, akin to the mighty growl of a beast in heat begins to echo across the land. A dark shadow - the silhouette of this monstrous behemoth begins to shudder. 
-The Golden Bastion. Those around it will all bear witness as the colossal titan suddenly shivers. A crack, as loud as thunder rockets through the air as the giant grows. 
-Thunderous booms echo around the land; every one heralding the titan&#39;s bones shifting to create more space. The ground shudders as the shadow in the \
-distance grows larger. Higher. Wider. There are no human words to describe the sheer size being displayed to the world, no words that exist to describe the mass being compacted into that singular point.</tw-passagedata><tw-passagedata pid="64" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_3" tags="" position="475,850" size="100,100">cock suddenly stiffens. An unfathomably large spurt of pre jettisons from his cock slit and pools in the lands far below him. 
-The air suddenly becomes hot as a thick umistakeable aura of power coats the very fabric of reality. 
-Reality&#39;s will could never stand a chance. To the world&#39;s surprise, the giant shudders and balloons outwards in every direction. 
-His forearms are perfect spheres of unadulterad power, pushing against growing biceps and triceps that have long since dwarfed their owner&#39;s head. 
-Their towering masses flex upwards and expand outwards, packing on new muscle groups that are not known to mankind. 
-His neck surges outward, practically ungulfing what driving force exists behind such a titanic body. His laterals surge outwards, forming an incredibly powerful yet impossible Y-shape. 
-Legs, as built as the foundations of the world, quickly explode into sizes which put those natural foundations to shame.</tw-passagedata><tw-passagedata pid="65" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_small" tags="" position="600,850" size="100,100">His @[all|cocks|one=throbs~more=throb], harder than it ever has. He looks down, feeling each vein engorge with unnatural thickness. 
-Then it hits him, a wave of pleasure grows from the base of his loin. His shaft pulsates wildly as it expands thicker and longer. 
-His eyes widen as the growth progresses further up his @[all|cocks|noverb]. 
-It&#39;s so long, so thick. And it keeps growing, pushing his fingers wider apart.</tw-passagedata><tw-passagedata pid="66" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_medium" tags="" position="725,850" size="100,100">A familiar feeling rushes over him. He grins, looking down at his @[all|cocks|noverb], welcoming a wave of incoming growth. 
-It suddenly hits him, like a rush of adrenaline. His @[all|cocks|one=jolts~more=jolt] forward, hard enough to make him lose his balance. 
-Suddenly, it comes. He screams in pleasure as his loin grows thicker and longer. 
-Every beat of his heart, every flex of his muscles and every breath feed it with more heavy, throbbing flesh. 
-He tries to grasp at his @[all|cocks|noverb] with both hands, failing to fully handle his monster as it grows uncontrollably. 
-He throws his head back, moaning deeply enough to cut his breath short.</tw-passagedata><tw-passagedata pid="67" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_large" tags="" position="850,850" size="100,100">Suddenly, his @[all|cocks|one=throbs~more=throb]. The sheer need for attention of his monster overwhelms him.
-He tries to grasp the base; he can only tremble in anticipation.
+一个阴险的笑容在他的脸上蔓延开来——这只是一个开始。</tw-passagedata><tw-passagedata pid="56" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_3" tags="" position="725,725" size="100,100">当他身体进行了一次突然的增长时，他的阴茎饱满地跳起。他迅速将双臂环绕在胸前，感受他的胸肌与二头肌的竞争。
+一波又一波，他的压在胸前的双臂被胸肌的巨大尺寸推开了。而他的双腿采取了更宽的姿态，因为下面的战争还在继续：他那四头肌、膨胀的臀部和不断增长的小腿。</tw-passagedata><tw-passagedata pid="57" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_medium_4" tags="" position="850,725" size="100,100">身体痉挛，因为他强大的肌肉同时弯曲。他的公牛一样的脖子跳动得更大，开始威胁到他的头部两侧。
+他的胸肌向外跳跃性地膨胀，超过了那组不断增长的、令人印象深刻的八块腹肌。
+他的手在每一英寸膨胀的肉体上游走，感觉皮肤如每一秒都会变粗的钢弦一样绷得更紧。</tw-passagedata><tw-passagedata pid="58" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_1" tags="" position="975,725" size="100,100">身体颤抖着。他体内包含的每一块如巨石般的肌肉仿佛都在隆隆作响，有一股不祥的浪潮涌来。
+当他的二头肌从未受控制的原始力量中爆发出来时，他站在震惊的沉默中。此时谁或什么正在注视着这个世界，这&#39; 并不重要。
+它们向外横冲直撞，直到它们脉动的山峰开始达到明显不自然的大小。
+他的每个胸肌都大得足以成为一个架子，它们急切地跳动着，因为它们在他胸前消耗了越来越多的空间。
+随着越来越多的空间被它们主人的胸肌占有，大乳头被迫进一步移向侧向和下方。
+他那本就壮实的大腿和臀部变得更加粗壮，如同可以轻松容纳房屋的柱子般在他眼前越来越大。</tw-passagedata><tw-passagedata pid="59" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_2" tags="" position="1100,725" size="100,100">伴随着骨头裂开的声音，成长再次降临到他身上，这一波浪潮比上一次还要强烈。随着一声巨响，他的肌肉爆发出新的大小——太多、太快了，他的身体根本无法承受。
+增长开始变得猖獗;每一秒都越积越多，直到四肢开始因为缺乏空间而相互挤压和磨擦。
+随着一声原始的咆哮，他屈身了——一座充满错误的野兽般的山——将一切都向内压缩。
+他恢复了对自己身体的控制权，但他那令人难以置信的的澳大利亚体型几乎没有任何缩减。</tw-passagedata><tw-passagedata pid="60" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_3" tags="" position="1225,725" size="100,100">他的嘴张得很大，原始的咆哮从他成长的身形中传出。
+他弯下腰，用拳头猛击地面后，一股巨大的力量从龟裂的土地上向上推进；沿着他的前臂、二头肌，进入他那粗壮的脖子。
+他的胸肌进一步向外生长，迫使他的重心前移，随后他的腰部扩展成为了一个纯粹的力量支柱以支撑他的新躯干。
+从他身后的地面向外滑动；他的双腿互相推开，按摩与摩擦着他那巨大的阴茎。
+这种快感实在是太多太强了。随着另一声震耳欲聋的咆哮，他拱起背，下体射出了一股湍急白色的喷泉。</tw-passagedata><tw-passagedata pid="61" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_large_4" tags="" position="100,850" size="100,100">当他感觉到他体内的力量爆发之时，他的下巴放低，发出了突然的狂笑声。
+就像受干扰的水面上的波浪一样，他的整个身体仿佛都在呻吟、吱吱作响，并随着肌肉开始挤在肌肉上而发生变化——愈发地变粗，而重型管道大小的静脉脉路在他不断扩大的皮肤上盘旋。
+随着他强有力的跺脚着地，迫使他的小腿上的肌肉出现了一个巨大的波浪，向上穿过小腿后进入他的大腿，最后进入了他隆起的肌肉末端。
+最后，他的双手合十，有力地拍了拍手，他上半身的力量和纯肌肉质量增加了一倍。</tw-passagedata><tw-passagedata pid="62" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_1" tags="" position="225,850" size="100,100">行动停止了。一种致命的寂静笼罩着他所耸立的土地。随后传来一阵隆隆声。有如战鼓的声音，这是地球咆哮着抗议即将发生的变化的声音。
+然后，这件事发生了：原本由肱二头肌组成的山峰变大了一倍。
+每一个小的变化都会使胸肌震颤，向外翻滚。乳头——坚硬、硕大而敏感的乳头，被放逐到由一整条粗壮的腹部肌肉与胸肌组成的那越来越深的峡谷里。
+原本是翅膀的侧翼被强行拉宽。荡漾着纯粹力量的背部肌肉扩大了，可以压垮村庄的手臂长成了全世界都无法与之抗衡的怪物。
+他的鸡巴附着着又大又重的肌肉，被慢慢地摆动到空中，它不断增长的质量使得每一个动作都让所有愿意驻足观看的观众都感到性感。
+又是一阵隆隆声。而这是另一场灾难。白色的河流从粗壮的阴茎顶端爆发出来，变成了一场洪水，覆盖了你、地面和每一个靠近的物体，使其遭受到从他的世界末日般大小的睾丸中释放出来的巨大负荷。</tw-passagedata><tw-passagedata pid="63" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_2" tags="" position="350,850" size="100,100">巨大的手臂软绵绵地落在他的身边。一声响亮的隆隆声，类似于发情的野兽的强大咆哮，开始在大地上回荡。一个黑影——这个庞然大物的轮廓开始颤抖。
+黄金堡垒。周围的人都会见证，这个巨大的泰坦突然颤抖起来。随着巨人的成长，一道如雷鸣般响亮的裂缝在空中炸开。
+雷鸣般的轰鸣声在这片土地上回荡；每一声都预示着泰坦&#39;的 骨骼在移动，以创造更多的空间。地面在颤抖，因为远处的阴影\
+越来越大。更高。愈加宽广。没有任何人类的语言可以描述此时展示给世界的巨大尺寸，没有任何语言可以描述被压缩到那个奇异点的质量。</tw-passagedata><tw-passagedata pid="64" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_3" tags="" position="475,850" size="100,100">他的阴茎突然硬了起来。一股深不可测的巨大能量从阴茎的缝隙中喷出，汇集到他下面的土地上。
+空气突然变得很热，因为一种厚重的、难以辨认的力量光环覆盖了现实的结构。
+现实&#39;的 意志再无机会。出乎全世界&#39;的 意料, 这个巨人颤抖着向各个方向膨胀。
+他的前臂是毫无杂质的完美球体，推动着不断增长的肱二头肌和肱三头肌，它们早已使主人&#39;的 头相形见绌。
+他那高大的体型向上弯曲并向外扩张，包裹着人类所无法想象的新肌肉群。
+他的颈部向外涌出，几乎快要将如此巨大的身体背后存在的驱动力给吞没了。他的侧腹向外涌动，形成一个令人难以置信的强大而不可能的Y形。
+腿部，就像世界的地基一样，迅速爆发出让那些天然地基感到羞愧的大小。</tw-passagedata><tw-passagedata pid="65" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_small" tags="" position="600,850" size="100,100">他的@[all|cocks|one=throbs~more=throb]，比以往任何时候都更硬。他往下看，感觉到阴茎上每条静脉都有着不自然的厚度。
+然后，他被从他腰部滋生的一股快感浪潮击中了。他的阴茎疯狂地跳动着，因为它膨胀得更粗更长。
+他的眼睛睁得大大的，因为@[all|cocks|noverb]的增长在他的身体上进一步发展。
+它是如此&#39;的 长，如此粗。而且它不断增长，把他的手指推得更开。</tw-passagedata><tw-passagedata pid="66" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_medium" tags="" position="725,850" size="100,100">一种熟悉的感觉涌上心头。他低头看着他的@[all|cocks|noverb]咧嘴一笑，准备迎接一波即将到来的增长。
+这突然袭击了他，就像肾上腺素激增一样。他的@[all|cocks|one=jolts~more=jolt]向前伸，硬到足以让他失去平衡。
+突然间，它来了。当他的阴茎越来越粗，越来越长时，他高兴地尖叫起来。
+他心脏的每一次跳动，他肌肉的每一次弯曲和每一次呼吸都为阴茎提供了更多沉重的、跳动的血肉。
+他试图用双手握住他的@[all|cocks|noverb]，但双手不能包裹住他那大得如同怪物般的肉棒，因为它不受控制地生长。
+他仰起头，低沉的呻吟足以让他的呼吸缩短。</tw-passagedata><tw-passagedata pid="67" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_large" tags="" position="850,850" size="100,100">突然，他的@[all|cocks|one=throbs~more=throb]。对他那大得如同怪物般的肉棒关注的纯粹需求压倒了他。
+他试图抓住根部;他只能在期待中颤抖。
 
-His @[all|cocks|one=is~more=are] so hot, so full and thick. He shivers at the thought of growing even bigger.
-Jolts of pleasure pulsates from his @[all|cocks|noverb] as it starts growing. He desperately tries to grasp and pleasure the throbbing flesh, but it is too massive for his hands to contain.
+他的@[all|cocks|one=is~more=are]好热、好饱满、好粗。一想到要变得更大，他就不寒而栗。
+随着@[all|cocks|noverb]开始增长，快感在他身上跳动起来。他拼命地试图抓住和享受跳动的肉体，但它太大了，他的手根本无法容纳。
 
-He pushes down and thrust his hips along the ground. The sheer mass of his @[all|cocks|noverb] is still incredibly sensitive; he moans in pleasure as it pushes outward, bigger and bigger.
+他向下压，沿着地面推送他的臀部。他庞大身躯的@[all|cocks|noverb]仍然非常敏感；当它向外推进，变得越来越大时，他发出了愉悦的呻吟。
 
-He slides his fingers along his slit and moans passionately. Bolts of pleasure pierce him with every contact, \
-precum leaks out of his monstrous cock like a damaged dam. His @[all|cocks|one=grows~more=grow] bigger than he thought possible.
+他用手指沿着阴茎马眼的细缝滑动，激情地呻吟着。每一次接触都会刺穿快感的闪电，\
+精液像损坏的大坝正在泄洪一样从他巨大的鸡巴中泄漏出来。他的@[all|cocks|one=grows~more=grow] 比他想象的要大。
 
-His loin is gigantic, monstrous even; finding anything that can handle him will be a challenge.</tw-passagedata><tw-passagedata pid="68" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_huge" tags="" position="975,850" size="100,100">He feels something coming, something tremendous... A familiar warmth rushes over him; his loin burns with anticipation. 
-It keeps building, tingles of pleasure spread from his @[all|cocks|noverb]. 
-This wave of incoming growth is greater than a roaring sea, and it keeps building, threatening to swallow him in its eternal pleasure. 
-But he welcomes it... He grins madly at his monstrous @[all|cocks|noverb] with an unatural eagerness. And then it happens. 
-His @[all|cocks|one=explodes~more=explode] in size, mountains of sensitive flesh burst upwards along his pecs. 
-He rubs it passionately, each touch bringing him close to the edge. 
-His veins grow massive, feeding his @[all|cocks|noverb] with untold power. A roar of triumph bursts out of his as his @[all|cocks|noverb] takes over the scenery.
-Everything and everyone gets exposed to the glorious beast he&#39;s packing. They can only stare in awe as the ground rumbles;
-his @[all|cocks|one=strains~more=strain], the land braces. His roars resound throughout the land as an ocean of potent cum rains down on this world once again.</tw-passagedata><tw-passagedata pid="69" name="StoryInit_UniversalFlavour" tags="" position="1100,850" size="100,100">&lt;&lt;set setup.UniversalFlavour =
+他的鸡巴是巨大的，甚至是畸形的；找到任何能应付它的东西都将成为一个挑战。</tw-passagedata><tw-passagedata pid="68" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_huge" tags="" position="975,850" size="100,100">他感觉到有什么东西要来了，有什么巨大的东西……一股熟悉的温暖涌上心头。他的鸡巴因期待而灼热。
+它不断建立，快乐的刺痛从他的@[all|cocks|noverb]里蔓延开来。
+这股来势汹汹的增长浪潮比咆哮的大海还大，它不断地增长，威胁着要把他吞没在它永恒的快乐中。
+但他欢迎它……他疯狂地咧开嘴，带着一种不自然的渴望，看着他那疯狂的@[all|cocks|noverb]。然后它就发生了。
+他的@[all|cocks|one=explodes~more=explode]在尺寸上不断增大，敏感的肉山沿着他的胸肌向上迸发。
+他热情地揉搓着它，每一次触摸都使他接近高潮边缘。
+他的血管变得巨大，以无尽的力量喂养他的@[all|cocks|noverb]。一声胜利的咆哮从他身上传来，他的@[all|cocks|noverb]占据了风景。
+一切事物，包括每个人都暴露在他&#39;所 被血肉包裹的值得称道的野兽面前。他们只能敬畏地注视着地面的隆隆声;
+他用@[all|cocks|one=strains~more=strain]支撑着土地。他的咆哮声响彻整个大地，强大的精液海洋再次降临到这个世界。</tw-passagedata><tw-passagedata pid="69" name="StoryInit_UniversalFlavour" tags="" position="1100,850" size="100,100">&lt;&lt;set setup.UniversalFlavour =
 {
 	basicAttackAttemptFlavour: {
 		heightFlavour: {
@@ -24382,7 +24382,7 @@ his @[all|cocks|one=strains~more=strain], the land braces. His roars resound thr
             passage: &quot;Imp_Low_Rela_Loss_Idle&quot;,
         },
     },
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="118" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="975,1475" size="100,100">is grining mischieviously, looking for an opportunity to attack.</tw-passagedata><tw-passagedata pid="119" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="1100,1475" size="100,100">flutters about in the air, waiting to strike.</tw-passagedata><tw-passagedata pid="120" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_3" tags="" position="1225,1475" size="100,100">is licking its lips, staring at you like you&#39;re his next meal.</tw-passagedata><tw-passagedata pid="121" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_4" tags="" position="100,1600" size="100,100">runs a finger down his chest, taunting you.</tw-passagedata><tw-passagedata pid="122" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="225,1600" size="100,100">rolls his boulder like shoulders, ready to strike.</tw-passagedata><tw-passagedata pid="123" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="350,1600" size="100,100">is stretching his limbs, ready to wrestle with you.</tw-passagedata><tw-passagedata pid="124" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_3" tags="" position="475,1600" size="100,100">lets his tongue slither over his pecs as he stares you down.</tw-passagedata><tw-passagedata pid="125" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="600,1600" size="100,100">growls with powerful brassy tones. He is itching to tussle with you.</tw-passagedata><tw-passagedata pid="126" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="725,1600" size="100,100">slurps up cascading rivulets of drool. His powerful form bends in anticipation of your next move.</tw-passagedata><tw-passagedata pid="127" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_3" tags="" position="850,1600" size="100,100">rakes his large feet across the ground, ready to charge.</tw-passagedata><tw-passagedata pid="128" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,1600" size="100,100">flexes gargantuan muscles, letting you know exactly where you stand.</tw-passagedata><tw-passagedata pid="129" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,1600" size="100,100">stomps his massive feet as he readies himself for combat. The earth quivers.</tw-passagedata><tw-passagedata pid="130" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,1600" size="100,100">cracks his massive knuckles, they sound like thunder across the battlefield.</tw-passagedata><tw-passagedata pid="131" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_1" tags="" position="100,1725" size="100,100">The small wily imp seems to have a trick or two planned for you.</tw-passagedata><tw-passagedata pid="132" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_2" tags="" position="225,1725" size="100,100">The small demon looks at your body, hungrily.</tw-passagedata><tw-passagedata pid="133" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_3" tags="" position="350,1725" size="100,100">The tiny demon looks you up and down, sizing you up.</tw-passagedata><tw-passagedata pid="134" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_4" tags="" position="475,1725" size="100,100">The small imp zips around in wild loops, clearly excited for its next meal.</tw-passagedata><tw-passagedata pid="135" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_1" tags="" position="600,1725" size="100,100">rolls his boulder like shoulders, ready to strike.</tw-passagedata><tw-passagedata pid="136" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_2" tags="" position="725,1725" size="100,100">is stretching his limbs, ready to wrestle with you.</tw-passagedata><tw-passagedata pid="137" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_3" tags="" position="850,1725" size="100,100">lets his tongue slither over his pecs as he stares you down.</tw-passagedata><tw-passagedata pid="138" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_1" tags="" position="975,1725" size="100,100">growls with powerful brassy tones. He is itching to tussle with you.</tw-passagedata><tw-passagedata pid="139" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_2" tags="" position="1100,1725" size="100,100">slurps up cascading rivulets of drool. His powerful form bends in anticipation of your next move.</tw-passagedata><tw-passagedata pid="140" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_3" tags="" position="1225,1725" size="100,100">rakes his large feet across the ground, ready to charge.</tw-passagedata><tw-passagedata pid="141" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_1" tags="" position="100,1850" size="100,100">flexes gargantuan muscles, letting you know exactly where you stand.</tw-passagedata><tw-passagedata pid="142" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_2" tags="" position="225,1850" size="100,100">stomps his massive feet as he readies himself for combat. The earth quivers.</tw-passagedata><tw-passagedata pid="143" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_3" tags="" position="350,1850" size="100,100">cracks his massive knuckles, they sound like thunder across the battlefield.</tw-passagedata><tw-passagedata pid="144" name="_imp_text_sheet" tags="" position="475,1850" size="100,100">&lt;&lt;set setup.TextSheet_Imp =
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="118" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="975,1475" size="100,100">一边调皮地咧嘴笑着，一边寻找攻击的机会。</tw-passagedata><tw-passagedata pid="119" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="1100,1475" size="100,100">在空中飘来飘去，等待攻击。</tw-passagedata><tw-passagedata pid="120" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_3" tags="" position="1225,1475" size="100,100">舔着嘴唇，像你&#39;是 下一块肉一样盯着你看。</tw-passagedata><tw-passagedata pid="121" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_4" tags="" position="100,1600" size="100,100">用一根手指顺着他的胸膛往下摸，并以此调戏你。</tw-passagedata><tw-passagedata pid="122" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="225,1600" size="100,100">转动着他的巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="123" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="350,1600" size="100,100">正在伸展他的四肢，准备与你搏斗。</tw-passagedata><tw-passagedata pid="124" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_3" tags="" position="475,1600" size="100,100">一边让他的舌头滑过他的胸肌，一边盯着你。</tw-passagedata><tw-passagedata pid="125" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="600,1600" size="100,100">咆哮声中带着强大的野性音调。他迫不及待地想与你干一架。</tw-passagedata><tw-passagedata pid="126" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="725,1600" size="100,100">啜饮着层叠的口水。他强大的身形弯曲，期待你的下一步行动。</tw-passagedata><tw-passagedata pid="127" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_3" tags="" position="850,1600" size="100,100">他的大脚耙在地上，准备随时冲锋。</tw-passagedata><tw-passagedata pid="128" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,1600" size="100,100">弯曲他那巨大的肌肉，想让你清楚地知道你的地位。</tw-passagedata><tw-passagedata pid="129" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,1600" size="100,100">跺着他巨大的脚，准备战斗。大地随之颤抖。</tw-passagedata><tw-passagedata pid="130" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,1600" size="100,100">他巨大的指关节迸响，它们发出的声音就像雷声一样响彻整个战场。</tw-passagedata><tw-passagedata pid="131" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_1" tags="" position="100,1725" size="100,100">这个狡猾的小恶魔似乎为你准备了一两招。</tw-passagedata><tw-passagedata pid="132" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_2" tags="" position="225,1725" size="100,100">小恶魔饥渴地看着你的身体。</tw-passagedata><tw-passagedata pid="133" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_3" tags="" position="350,1725" size="100,100">这个小恶魔上下打量着你，想要把你打量得一清二楚。</tw-passagedata><tw-passagedata pid="134" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_4" tags="" position="475,1725" size="100,100">这只小恶魔疯狂地绕着圈子，显然对下一顿饭感到兴奋。</tw-passagedata><tw-passagedata pid="135" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_1" tags="" position="600,1725" size="100,100">转动着他的巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="136" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_2" tags="" position="725,1725" size="100,100">正在伸展他的四肢，准备与你搏斗。</tw-passagedata><tw-passagedata pid="137" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_3" tags="" position="850,1725" size="100,100">一边让他的舌头滑过他的胸肌，一边盯着你。</tw-passagedata><tw-passagedata pid="138" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_1" tags="" position="975,1725" size="100,100">咆哮声中带着强大的野性音调。他迫不及待地想与你干一架。</tw-passagedata><tw-passagedata pid="139" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_2" tags="" position="1100,1725" size="100,100">啜饮着层叠的口水。他强大的身形弯曲，期待你的下一步行动。</tw-passagedata><tw-passagedata pid="140" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_3" tags="" position="1225,1725" size="100,100">他的大脚耙在地上，准备随时冲锋。</tw-passagedata><tw-passagedata pid="141" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_1" tags="" position="100,1850" size="100,100">弯曲他那巨大的肌肉，想让你清楚地知道你的地位。</tw-passagedata><tw-passagedata pid="142" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_2" tags="" position="225,1850" size="100,100">跺着他巨大的脚，准备战斗。大地随之颤抖。</tw-passagedata><tw-passagedata pid="143" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_3" tags="" position="350,1850" size="100,100">他巨大的指关节迸响，它们发出的声音就像雷声一样响彻整个战场。</tw-passagedata><tw-passagedata pid="144" name="_imp_text_sheet" tags="" position="475,1850" size="100,100">&lt;&lt;set setup.TextSheet_Imp =
 {	
 	goMeetImp_Intro :{
 		heightFlavour: {
@@ -26143,372 +26143,370 @@ his @[all|cocks|one=strains~more=strain], the land braces. His roars resound thr
 		apothusRealmFirstTime: true,
 
 	}
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="187" name="_player_text_sheet_mergeLost1_heightFlavour_small" tags="" position="850,2350" size="100,100">So could you – the power that this corrupting essence could bring. You move toward him, and straddle his monstrous abs. \
-You slide a hand down the length of one of your @[1|cocks|noverb] and push it into the sea of black.
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="187" name="_player_text_sheet_mergeLost1_heightFlavour_small" tags="" position="850,2350" size="100,100">你也可以接受——这种腐化本质可能带来的力量。你走向他，跨在他巨大的腹肌上。\
+你的一只手顺着你的@[1|cocks|noverb]长度滑下，然后把它推入了黑色的海洋。
 
-A surge of fluid takes you by surprise as the corruption rushes into your enlarged cum pipe.
+一股液体的涌动让你大吃一惊，因为腐败冲进了你扩大的精管。
 
-&quot;Mrhhh! Mooooore....&quot; you rumble, lustfully.
+&quot;啊啊啊！更多……&quot;你充满欲望地大声叫喊着。
 
-You smile at your victim, arch your back and plant your lips back onto his. Another rush of black blasts its way into your throat. \
-The ooze coils around your @[all|tongues|noverb] and floods into body with reckless abandon.
+你对你的受害者微笑，随后你拱起了你的背，把你的嘴唇放回他的嘴唇上。另一股黑色的冲击进入你的喉咙。\
+渗出物缠绕着你的@[all|tongues|noverb]并不顾一切地涌入你的身体。
 
-&quot;GRAAAAHHHHH!&quot;
+&quot;嘎啊啊啊啊啊！&quot;
 
-Your muscles throb with power. A muffled roar escapes your throat as you push your @[all|tongues|noverb] deeper into the Lost&#39;s mouth.
+你的肌肉因力量而悸动。一声闷闷的咆哮从你的喉咙里逸出，你推动着你的@[all|tongues|noverb]更深地进入迷失的嘴巴。
 
-You sit there, pumping your @[all|cocks|noverb] over his chest, locked in an endless kiss as his size begins to recede underneath you.</tw-passagedata><tw-passagedata pid="188" name="_player_text_sheet_mergeLost1_heightFlavour_medium" tags="" position="975,2350" size="100,100">So could you – the power that this corrupting essence could bring. You move toward him, and straddle his monstrous abs. \
-You slide a hand down the length of one of your @[1|cocks|noverb] and push it into the sea of black.
+你坐在那里，在他的胸膛上抽动你的@[all|cocks|noverb]，当他的体型开始在你身下退去时，你陷入了无休止的吻中。</tw-passagedata><tw-passagedata pid="188" name="_player_text_sheet_mergeLost1_heightFlavour_medium" tags="" position="975,2350" size="100,100">你也可以接受——这种腐化本质可能带来的力量。你走向他，跨在他巨大的腹肌上。\
+你的一只手顺着你的@[1|cocks|noverb]滑下，然后把它推入了黑色的海洋。
 
-A surge of fluid takes you by surprise as the corruption rushes into your enlarged urethra.
+一股液体的涌动让你大吃一惊，因为腐败冲进了你扩大的精管。
 
-&quot;Mrhhh! Mooooore....&quot; you rumble, lustfully.
+&quot;啊啊啊！更多……&quot;你充满欲望地大声叫喊着。
 
-You smile at your victim, arch your back and plant your lips back onto his. Another rush of black blasts its way into your throat. \
-The ooze coils around your @[all|tongues|noverb] and floods into body with reckless abandon.
+你对你的受害者微笑，随后你拱起了你的背，把你的嘴唇放回他的嘴唇上。另一股黑色的冲击进入你的喉咙。\
+渗出物缠绕着你的@[all|tongues|noverb]并不顾一切地涌入你的身体。
 
-&quot;GRAAAAHHHHH!&quot;
+&quot;嘎啊啊啊啊啊！&quot;
 
-Your muscles throb with power. A muffled roar escapes your throat as you push your @[all|tongues|noverb] deeper into the Lost&#39;s mouth.
+你的肌肉因力量而悸动。一声闷闷的咆哮从你的喉咙里逸出，你推动着你的@[all|tongues|noverb]更深地进入迷失的嘴巴。
 
-You sit there, pumping your @[all|cocks|noverb] over his chest, locked in an endless kiss as his size begins to recede underneath you.</tw-passagedata><tw-passagedata pid="189" name="_player_text_sheet_mergeLost1_heightFlavour_large" tags="" position="1100,2350" size="100,100">So could you – the power that this corrupting essence could bring. You move toward him and stand over his monstrous form. \
-You slide a hand down the length of one of your @[1|cocks|noverb] and push the tip so that its massive head hovers over his face. \
-Your cum pipe widens as your @[1|cocks|noverb] swallows his features.
+你坐在那里，在他的胸膛上抽动你的@[all|cocks|noverb]，当他的体型开始在你身下退去时，你陷入了无休止的吻中。</tw-passagedata><tw-passagedata pid="189" name="_player_text_sheet_mergeLost1_heightFlavour_large" tags="" position="1100,2350" size="100,100">你也可以支配——这种腐化本质可能带来的力量。你走向他，站在他可怕的身型前。\
+你的一只手顺着你的@[1|cocks|noverb]滑下并推动顶端，使其巨大的头部在他的脸上盘旋。 \
+当你的@[1|cocks|noverb]吞噬了他的容貌时，你的精液管道扩大了。
 
-A barrage of fluid takes you by surprise as the corruption rushes into your enlarged urethra.
+当腐败涌入你扩大的尿道时，一连串的液体让你措手不及。
 
-&quot;Mrhhh! Mooooore....&quot; you rumble, lustfully.
+&quot;啊啊啊！更多……&quot;你充满欲望地大声叫喊着。
 
-You smile at your victim, arch your back and flex your impeccably strong pelvic muscles. With a resounding gulp, your victim is pulled \
-into your cock. You feel it writhe against your inner walls, feel him slowly travel down the length until his massive body lodges itself right above the base of your nutsack.
+你对你的受害者微笑，随后你拱起了你的背，弯曲你无懈可击的强大骨盆肌肉。随着一声响亮的声音，你的受害者被你从鸡巴里抽了出来。\
+你感觉到它在你的内壁上蠕动，感觉到他慢慢地往下走，直到他巨大的身体在你的蛋蛋的根部上方停留。
 
-&quot;GRAAAAHHHHH!&quot;
+&quot;嘎啊啊啊啊啊！&quot;
 
-Your muscles throb with power. You stifle a moan as you flex harder and send the helpless creature into your eager @[all|balls|noverb]
+你的肌肉因力量而悸动。你压抑着呻吟，更加用力地弯曲，把无助的生物送入你饥渴的@[all|balls|noverb]
 
-Frantic with rampant desire you pump your @[all|cocks|noverb] as you feel his essence filter into you.
+当你感觉到他的精华渗入你的身体时，你就会欲望大开疯狂地抽插你的@[all|cocks|noverb]。
 
-With a final show of absolute dominance, your @[all|balls|noverb] rumble ominously and fire a monstrous load, the Lost riding within the massive stream \
-of white. He lands on the floor unceremoniously in front of you.</tw-passagedata><tw-passagedata pid="190" name="_player_text_sheet_mergeLost1_heightFlavour_huge" tags="" position="1225,2350" size="100,100">So could you – the power that this corrupting essence could bring. You place your gigantic feet on either side of his body. \
-Hefting up @[1|cocks|a~an] in one hand, you pluck the weak creature up between your fingers. \
-You flash your teeth with a snarl and plunge him into the abyss of your urethra.
+随着你最后的绝对统治力的展示，你的@[all|balls|noverb]不祥地发出低沉的声音，射出了巨大的负荷，迷失者骑在巨大的白灼小河中。
+他粗鲁地落在你面前的地板上。</tw-passagedata><tw-passagedata pid="190" name="_player_text_sheet_mergeLost1_heightFlavour_huge" tags="" position="1225,2350" size="100,100">你也可以支配——这种腐败的本质所能带来的力量。你把你巨大的脚放在他身体的两侧。\
+你用一只手举起@[1|cocks|a~an]，你把这只弱小的生物在你的手指间拔弄起来。\
+你闪着牙齿发出咆哮，把他塞进你的尿道深渊。
 
-He was a gnat in the presence of a titan, a small morsel to an insatiable beast. Yet, although a tiny speck, you could feel every one of his movements down your cavernous length. \
-What seems to be minutes later, he lands in the unending ocean of seed within your sack and like a volcano ready to erupt, it shudders!
+在一个巨人面前，他只是一只小虫子，对于一个贪得无厌的野兽来说，他只是一个小菜。然而，尽管是一个小斑点，你却能感觉到他在你的洞穴里的每一个动作。\
+似乎没有几分钟，他就落入了你那如同一座准备爆发的火山一样的阴囊里的无尽的种子海洋中，他颤抖了起来！
 
-A surge of power and lust takes you as the corruption bleeds into your endless reserves. With an earth shattering roar, you grab on to your @[all|cocks|noverb] and \
-slide your hands across them with reckless abandon. Your legs shudder as your approach climax - holding on for dear life as an absolutely monstrous orgasm rocks you. \
-Arc after arc after arc blasts upwards into the air, landing far beyond the eye can see on some unsuspecting land.
+当腐败渗入你无尽的储备时，一股力量和欲望的涌动将你带走。随着一声惊天动地的嚎叫，你抓住了你的@[all|cocks|noverb]并\
+鲁莽地将手滑过它们。当你接近高潮时，你的双腿在颤抖——为了亲爱的生命你要坚持住，因为绝对可怕的高潮震颤了你。\
+一道又一道的弧线向上射向空中，落在远处，远远地超出了眼睛所能触及的范围。
 
-&quot;Mrhhh! Mooooore....&quot; you rumble, lustfully.
+&quot;啊啊啊！更多……&quot;你充满欲望地大声叫喊着。
 
-You feel him coming up your cum pip, his minuscule form surfing the rapids inside of your spire of flesh. \
-With an absolutely amazing show of dexterity for someone of your size, you swing your hand through the mighty stream and catch the creature, the pressure against your hand backlashes onto you and coats you in a layer of alabaster.
+你感觉到他来到你的高潮点精阜上，他微小的身躯在你那由血肉构筑而成的尖塔上冲浪。\
+对于你这种体型的人来说，你展现出了绝对惊人的灵巧，你在湍急的溪流中挥动你的手，抓住了这个生物，你手上的精液飞溅到你身上，给你身上抹上了一层雪花石膏。
 
-&quot;GRAAAAHHHHH!&quot;
+&quot;嘎啊啊啊啊啊！&quot;
 
-The heat of your own powerful seed sends you into overdrive and you truly let yourself go! Your @[all|cocks|one=rises~more=rises] with incredible pressure and they slam into your \
-chest. An unholy amount of semen blasts into the air, your own ivory stairway to the heavens. 
+你自己强大的种子的热量让你进入超速状态，你真的放飞了自己！你的@[all|cocks|one=rises~more=rises以难以置信的压力，它们猛烈击打着你的胸膛。\
+大量的精液喷向空中，这是你自己的通往天堂的象牙阶梯。
 
-You grin; looks like rainfall could be expected later today.
+你咧嘴笑了;看起来今天晚些时候可能会有降雨。
 				
-With a final show of absolute dominance, you unceremoniously dump the creature back onto the floor.</tw-passagedata><tw-passagedata pid="191" name="_player_text_sheet_lostKiss_heightFlavour_small" tags="" position="100,2475" size="100,100">You slide your gooey body over his and he moans from your touch alone. You rub one of your @[2|hands|noverb] across his bulging abs and up to his hard nipple.
+随着最后一次绝对统治力的展示，你毫不客气地把这个生物扔回地板上。</tw-passagedata><tw-passagedata pid="191" name="_player_text_sheet_lostKiss_heightFlavour_small" tags="" position="100,2475" size="100,100">你把你那黏糊糊的身体滑过他的身上，他唯独因你的触碰而呻吟。你用你的一只@[2|hands|noverb]抚摸过他隆起的腹肌，一直到他坚硬的乳头。
 
-The entity inside of you yearns for the darkened soul of the Lost in your thrall. You feel your @[all|tongues|noverb] slip from the confines \
-of your mouth and into his open, hot maw. You can taste his thick corruption. You feel your @[all|cocks|noverb] harden again.</tw-passagedata><tw-passagedata pid="192" name="_player_text_sheet_lostKiss_heightFlavour_medium" tags="" position="225,2475" size="100,100">You slide your gooey body over his and he moans from your touch alone. You rub one of your @[2|hands|noverb] across his bulging abs and up to his hard nipple.
+你发自内心地渴望奴隶迷失者的黑暗灵魂。你感觉到@[all|tongues|noverb]从你的嘴巴里滑落，\
+进入他张开的、热乎乎的嘴里。你可以尝到他浓浓的腐败气息。你觉得你的@[all|cocks|noverb]再度勃起。</tw-passagedata><tw-passagedata pid="192" name="_player_text_sheet_lostKiss_heightFlavour_medium" tags="" position="225,2475" size="100,100">你把你那黏糊糊的身体滑过他的身上，他独自在你面前呻吟。你用你的一只@[2|hands|noverb]抚过他隆起的腹肌，一直摸到他坚硬的乳头。
 
-The entity inside of you yearns for the darkened soul of the Lost in your thrall. You feel your @[all|tongues|noverb] slip from the confines \
-of your mouth and into his open, hot maw. You can taste his thick corruption. You feel your @[all|cocks|noverb] harden again.</tw-passagedata><tw-passagedata pid="193" name="_player_text_sheet_lostKiss_heightFlavour_large" tags="" position="350,2475" size="100,100">Your gooey body towers over his and he moans from your presence alone. You rub one of your @[1|cocks|noverb] across his bulging abs, pinning him with the weight of it.
+你发自内心地渴望奴隶迷失者的黑暗灵魂。你感觉到@[all|tongues|noverb]从你的嘴巴里滑落，\
+进入他张开的、热乎乎的嘴里。你可以尝到他。你觉得你的@[all|cocks|noverb]再度勃起。</tw-passagedata><tw-passagedata pid="193" name="_player_text_sheet_lostKiss_heightFlavour_large" tags="" position="350,2475" size="100,100">你黏糊糊的身体耸立在他身上，他独自在你面前呻吟。你用你的一个@[1|cocks|noverb]蹭过他隆起的腹肌，用它自身的重量将他钉在地上。
 
-The entity inside of you yearns for the darkened soul of the Lost in your thrall. You feel your @[all|tongues|noverb] slip from the confines \
-of your mouth, sliding down your @[all|pecs|noverb] and twisting lower until it enters his hot maw. You can taste his thick corruption.</tw-passagedata><tw-passagedata pid="194" name="_player_text_sheet_lostKiss_heightFlavour_huge" tags="" position="475,2475" size="100,100">You fall to your massive knees. The Lost&#39;s mouth opens wide in awe at the immensity of your body. You let your @[all|cocks|noverb] fall to the side of him with an earth pounding shudder.
+你发自内心地渴望奴隶迷失者的黑暗灵魂。你感觉到@[all|tongues|noverb]从你的嘴巴里滑落，\
+滑下你的@[all|pecs|noverb]，向下扭动，直到它进入他滚烫的肚子。你可以品尝到他浓浓的腐败气息。</tw-passagedata><tw-passagedata pid="194" name="_player_text_sheet_lostKiss_heightFlavour_huge" tags="" position="475,2475" size="100,100">你跪倒在地。迷失者的嘴巴张大，对你身体的巨大感到敬畏。你让你的@[all|cocks|noverb]倒在他身边，发出了惊天动地的颤抖。
 
-The entity inside of you yearns for the darkened soul of the Lost in your thrall. You feel your @[all|tongues|noverb] slip from the confines \
-of your mouth, sliding down your @[all|pecs|noverb] and twisting lower until it enters his hot maw. You can taste his thick corruption.</tw-passagedata><tw-passagedata pid="195" name="_player_text_sheet_lostFuck2_heightFlavour_small" tags="" position="600,2475" size="100,100">You feel the corruption take root within you. You embrace it, letting its warmth run its proverbial tongues over every inch of you and into your brain. \
-Dark whispers fill your mind.
+你发自内心地渴望奴隶迷失者的黑暗灵魂。你感觉到@[all|tongues|noverb]从你的嘴巴里滑落，\
+滑下你的@[all|pecs|noverb]，向下扭动，直到它进入他滚烫的肚子。你可以品尝到他浓浓的腐败气息。</tw-passagedata><tw-passagedata pid="195" name="_player_text_sheet_lostFuck2_heightFlavour_small" tags="" position="600,2475" size="100,100">你觉得腐败在你体内扎根。你拥抱了它，让它的温暖传遍你的每一寸肌肤，进入你的大脑。\
+黑暗的低语充斥着你的脑海。
 
-You need to spread.
+你需要传播。
 
-You need to fuck.
+你需要做爱。
 
-More. More! MORE!
+更多……更多，更多！！！
 
-Your body flushes with an unnaturally high level of arousal. Your nutsack rumbles and streams of pre launches out of your @[all|cocks|noverb] like a fire-hose. \
-You growl bestially as you realise your precious sperm is being wasted. Digging your fingers into the Lost&#39;s flesh, you ram your dick into \
-his ass until your @[all|balls|noverb] slap hard against his glutes. He snarls with the sudden intrusion.
+你的身体以一种不自然的高度兴奋而潮红。你的阴囊发出低沉的声音，你的@[all|cock|noverb]像消防水带一样射出一连串的精液。\
+当你意识到你宝贵的液正在被浪费时，你拼命咆哮着。把手指挖进迷失者的肉里，把你的鸡巴撞进他的后穴\
+直到你的@[all|balls|noverb]狠狠地拍打着他的臀部。他随着后穴内突如其来的闯入而咆哮。
 
-You piston hard. Relentless. Back. Forward. Back. Forward.
+你的鸡巴在穴内艰难地抽插。毫不留情地。抽出。插入。抽出。插入。
 
-&quot;Ah! Fuck!&quot; You feel a mind-shattering orgasm building.
+&quot;啊！操！&quot;你感受到一种令人震惊的高潮。
 
-The corrupt creature howls as your @[all|balls|noverb] push out an incredible deluge of ivory into his body. \
-His stomach rises beneath you as you keep thrusting and pounding into his sex.
+这只腐败的生物嚎叫着，因为你的@[all|balls|noverb]将一股不可思议的象牙洪水推入他的身体。\
+当你不停地向他的后穴发动侵犯时，他的腹部在你下方隆起。
 
-&quot;MOOOOOOORE!&quot; You roar as your orgasm intensifies.
+&quot;更多更多更多！！！&quot;随着高潮的加剧，你咆哮着。
 
-The rapture rocks through  your @[all|cocks|noverb] and into every tense fibre underneath your skin.
+狂喜穿过你的@[all|cocks|noverb]，进入你皮肤下每一根紧绷的纤维。
 
-Feeling you grow on top of him and within him – feeling his own stomach dome upwards and push you ever higher sets off the creature&#39;s own orgasm. \
-He releases an all-powerful howl and shoots his thick corrupting seed over your chest. The ebon, tar-like sperm showers you from below, coating your entire chest in its inky shade.</tw-passagedata><tw-passagedata pid="196" name="_player_text_sheet_lostFuck2_heightFlavour_medium" tags="" position="725,2475" size="100,100">You feel the corruption take root within you. You embrace it, letting its warmth run its proverbial tongues over every inch of you and into your brain. \
-Dark whispers fill your mind.
+你感觉到你在他身上和他体内生长——感觉到他的胃向上拱起，把你的鸡巴推得更高，这会激发这只腐化生物的性高潮。\
+他发出一声强大的嚎叫，把他那厚厚的腐败种子射到你的胸膛上。乌木、焦油般的精子从下面淋向你，将你的整个胸部都涂上了墨汁般的阴影。</tw-passagedata><tw-passagedata pid="196" name="_player_text_sheet_lostFuck2_heightFlavour_medium" tags="" position="725,2475" size="100,100">你觉得腐败在你体内扎根。你拥抱了它，让它的温暖传遍你的每一寸肌肤，进入你的大脑。\
+黑暗的低语充斥着你的脑海。
 
-You need to spread.
+你需要传播。
 
-You need to fuck.
+你需要做爱。
 
-More. More! MORE!
+更多……更多，更多！！！
 
-Your body flushes with an unnaturally high level of arousal. Your nutsack rumbles and streams of pre launches out of your @[all|cocks|noverb] like a firehose. 
+你的身体以一种不自然的高度兴奋而潮红。你的阴囊发出低沉的声音，你的@[all|cock|noverb]像消防水带一样射出一连串的精液。\
+当你意识到你宝贵的液正在被浪费时，你拼命咆哮。把手指挖进迷失者的肉里，把你的鸡巴撞进他的后穴\
+直到你的@[all|balls|noverb]狠狠地拍打着他的臀部。他随着后穴内突如其来的闯入而咆哮。
 
-You growl bestially as you realise your precious sperm is being wasted. Digging your fingers into the Lost&#39;s flesh, you ram your dick into \
-his ass until your @[all|balls|noverb] slap hard against his glutes. He snarls with the sudden intrusion.
+你的鸡巴在穴内艰难地抽插。毫不留情地。抽出。插入。抽出。插入。
 
-You piston hard. Relentless. Back. Forward. Back. Forward.
+&quot;啊！操！&quot;你感受到一种令人震惊的高潮。
 
-&quot;Ah! Fuck!&quot; You feel a mind-shattering orgasm building.
+这只腐败的生物嚎叫着，因为你的@[all|balls|noverb]将一股不可思议的象牙洪水推入他的身体。\
+当你不停地向他的后穴发动侵犯时，他的腹部在你下方隆起。
 
-The corrupt creature howls as your @[all|balls|noverb] push out an incredible deluge of ivory into his body. \
-His stomach rises beneath you as you keep thrusting and pounding into his sex.
+&quot;更多更多更多！！！&quot;随着高潮的加剧，你咆哮着。
 
-&quot;MOOOOOOORE!&quot; You roar as your orgasm intensifies.
+狂喜穿过你的@[all|cocks|noverb]，进入你皮肤下每一根紧绷的纤维。
 
-The rapture rocks through @[all|cocks|noverb] and into every tense fibre underneath your skin.
+你感觉到你在他身上和他体内生长——感觉到他的胃向上拱起，把你的鸡巴推得更高，这会激发生物的性高潮。
 
-Feeling you grow on top of him and within him – feeling his own stomach dome upwards and push you ever higher sets off the creature&#39;s own orgasm. 
+他发出一声强大的嚎叫，把他那厚厚的腐败种子射到你的胸膛上。乌木、焦油般的精子从下面淋向你，将你的整个胸部都涂上了墨汁般的阴影。</tw-passagedata><tw-passagedata pid="197" name="_player_text_sheet_lostFuck2_heightFlavour_large" tags="" position="850,2475" size="100,100">你觉得腐败在你体内扎根。你拥抱了它，让它的温暖传遍你的每一寸肌肤，进入你的大脑。\
+黑暗的低语充斥着你的脑海。
 
-He releases an all-powerful howl and shoots his thick corrupting seed over your chest. The ebon, tar-like sperm showers you from below, coating your entire chest in its inky shade.</tw-passagedata><tw-passagedata pid="197" name="_player_text_sheet_lostFuck2_heightFlavour_large" tags="" position="850,2475" size="100,100">You feel the corruption take root within you. You embrace it, letting its warmth run its proverbial tongues over every inch of you and into your brain. Dark whispers fill your mind.
+你需要传播。
 
-You need to spread.
+你需要做爱。
 
-You need to fuck.
+更多……更多，更多！！！
 
-More. More! MORE!
+你的身体以一种不自然的高度兴奋而潮红。你的阴囊发出低沉的声音，一股浪潮从你的\
+@[all|cocks|noverb]射出，洗刷了你面前的迷失者。
 
-Your body flushes with an unnaturally high level of arousal. Your nutsack rumbles and a tidal wave of pre launches out of your \
-@[all|cocks|noverb], washing over the Lost in front of you. 
+当你意识到你宝贵的液正在被浪费时，你咆哮着。你抓住迷失者的身体，你将你的鸡巴撞进他的后穴\
+直到你的@[all|balls|noverb]狠狠地拍打着他的臀部。他随着突如其来的闯入而咆哮，但很快就变成了咯咯声，因为你鸡巴的长度几乎从内部到达了他的脖子。
 
-You growl bestially as you realise your precious sperm is being wasted. Grabbing the Lost&#39;s torso, you ram your dick \
-into his ass until your @[all|balls|noverb] slap hard against his glutes. He snarls with the sudden intrusion, but it quickly turns to a gurgle as your length almost reaches his neck from within.
+你的鸡巴在穴内艰难地抽插。毫不留情地。抽出。插入。抽出。插入。
 
-You piston hard. Relentless. Back. Forward. Back. Forward.
+&quot;啊！操！&quot;你感受到一种令人震惊的高潮。
 
-&quot;Ah! Fuck!&quot; You feel a mind-shattering orgasm building.
+腐败的生物嚎叫着，当你的阴囊发出低沉的声音时，它挪动并释放出一股令人震惊的象牙洪流，它在空中盘旋，
+溅在地上。你因用力不稳摔倒在地。快乐太强烈了！白色倾泻在眼前的一切事物之上。
+迷失者被覆盖了。你被覆盖了。当你在自己的热气腾腾的阳刚中滚动时，一个脚踝深的水池在你周围形成。
 
-The corrupt creature howls as your balls audibly rumble, shift and unleash a mind blowing torrent of ivory that arcs into the air and \
-splatters on the ground. You thrust erratically before falling to the floor. The pleasure is too intense! White pours over everything in sight. \
-The Lost is covered. You are covered. An ankle deep pools form around you as you roll in your own steaming virility.
+&quot;更多更多更多！！！&quot;随着高潮的加剧，你咆哮着！你的视线被雪花石膏样的精华所遮盖。
 
-&quot;MOOOOOOORE!&quot; You roar as your orgasm intensifies! Your vision is overtaken with alabaster cream.
+感觉你在他体内成长——感觉你的炙热种子覆盖了他的每一寸，这引发了这只腐败生物的高潮。\
+他在海浪下咕噜咕噜地叫着，把他浓稠的腐烂种子射在你的胸前，黑色的条纹很快就被你们俩周围过多的种子冲走了。
 
-Feeling you grow within him – feeling your hot seed cover every inch of his being sets off the creature&#39;s own orgasm. He gurgles \
-beneath the waves and shoots his thick corrupting seed over your chest, the black streaks quickly wash away by the excessive amount of seed around the both of you. 
+当你重新站起来时，你的肩膀下垂。你仿佛仍然能看到高潮后出现的星星。这只腐败的生物慢慢地从你的鸡巴上啜饮，然后砰的一声进入下面的水池，\
+溅起了一朵水花。
 
-Your shoulders slump as you get back to your feet. You still see stars. The creature slowly slurps off of your cock and thuds into the pool \
-below with an emphatic splash.
+这只野兽重重地摔倒在他的后面；他巨大的胸膛随着满足的粗重呼吸上下起伏。</tw-passagedata><tw-passagedata pid="198" name="_player_text_sheet_lostFuck2_heightFlavour_huge" tags="" position="975,2475" size="100,100">你觉得腐败在你体内扎根。你拥抱了它，让它的温暖传遍你的每一寸肌肤，进入你的大脑。\
+黑暗的低语充斥着你的脑海。
 
-The beast rolls onto his back with a heavy thud; his massive chest heaving up and down with ragged breaths of satisfaction.</tw-passagedata><tw-passagedata pid="198" name="_player_text_sheet_lostFuck2_heightFlavour_huge" tags="" position="975,2475" size="100,100">You feel the corruption take root within you. You embrace it, letting its warmth run its proverbial tongues over every inch of you and into your brain. Dark whispers fill your mind.
+你需要传播。
 
-You need to spread.
+你需要做爱。
 
-You need to fuck.
+更多……更多，更多！！！
 
-More. More! MORE!
+你的身体以一种不自然的高度兴奋而潮红。你身后的@[all|balls|noverb]地震，\
+以及从你的@[all|cocks|noverb]射出的大量且密集的精液，在大地上倾泻而下。\
+你周围的小树正在与汹涌的河水的突然冲击作斗争。
 
-Your body flushes with an unnaturally high level of arousal. Your @[all|balls|noverb] quake behind you and a flood of thick \
-pre launches out of your @[all|cocks|noverb] and cascades over the land. What little trees are around you struggle \
-against the sudden onslaught of the teeming river. 
+当你意识到你宝贵的精液被浪费时，你咆哮着。你抓住迷失者，\
+在他的身体被你的精华冲走之前，你把你的鸡巴猛烈地撞进他的后穴，直到他的臀部用力拍打你的腹部。\
+他的咆哮突然被切断，因为你的@[1|cocks|one=突然~more=突然]从他嘴里伸了出来，他的身体再次变成了你油腻的鸡巴套。
 
-You growl bestially as you realise your precious sperm is being wasted. You grab the Lost before his body \
-gets swept away with your produce and slam your dick into his ass until his rump slaps hard against your midriff. His snarls are suddenly cut off as \
-your @[1|cocks|one=erupts~more=erupts] out of him, his body once again morphing into your oily cocksleeve.
+你抓住了他，顺着你鸡巴上的血管长度不停抽插，毫不留情地。抽出。插入。抽出。插入。
 
-Grabbing him, you piston him up and down across your veined length. Relentless. Back. Forward. Back. Forward.
+&quot;啊！操！&quot;你感受到一种令人震惊的高潮。
 
-&quot;Ah! Fuck!&quot; You feel a mind-shattering orgasm building.
+当你的阴囊挪动时，腐败的生物发出咯咯的声音，你的下体释放出一股令人震惊的白色洪流，它在空中划出弧线，以难以置信的力量飞溅到地面上。\
+你用力不稳向后倒在你的@[all|balls|noverb]上，这快感太强烈了！白色倾泻在眼前的一切。\
+你周围有百万升的精液池！土地本身在你难以置信的重量下开始塌陷！你沉得越来越低。海越涨越高。
 
-The corrupt creature gurgles as your balls shift, unleashing a mind blowing torrent of white that arcs into the air and splatters onto the ground with incredible \
-force. You thrust erratically before falling backwards onto your @[all|balls|noverb]. The pleasure is too intense! White pours over everything in sight. \
-Megaliters of cum pools around you! The land itself begins to cave in under your incredible weight! Lower and lower you sink. Higher and higher the sea rises.
+&quot;更多更多更多！！！&quot; 随着高潮的加剧，你咆哮着！当你淹没在自己的种子湖中时，你的视野被雪花石膏样的精华所覆盖。
 
-&quot;MOOOOOOORE!&quot; You roar as your orgasm intensifies! Your vision is overtaken with alabaster as you submerge yourself into your own lake of seed.
+感觉你在他体内成长——感觉你热气腾腾的种子覆盖了他的每一寸，这引发了这只腐败生物的高潮。他咯咯地笑着，把他那浓浓的腐败种子射向周围的精华水域。
 
-Feeling you grow within him – feeling your steaming fluids cover every inch of his being sets off the creature&#39;s own orgasm. He gurgles and shoots his thick corrupting seed into the surrounding waters.
+这里实在是有太多精华了。无论你做什么你都不能停止射精！湖水已经溢出来了，你连续几个小时都没停下来。
 
-There&#39;s just too much. No matter what you do, you can&#39;t stop! The lake has already overflowed and you keep on at it for hours on end.
+你不知道你高潮结束后过了多久，但你从湖里爬出来的时候比以往任何时候都更大、更性感。\
+当你看着一波波白色的水珠从你身上滴落到你自己的大浴池时，你不禁微笑了起来。
 
-You are not sure how much time has passed since your orgasm ended, but you rise out of the lake larger and hornier than ever before. \
-You smile as you watch waves of white drip off of you and into your own macro sized cum bath.
+随着湿漉漉的啪啪声，你又一次把腐败的野兽从你的@[1|cocks|noverb]上拉了下来。
 
-With a wet schlorp, you pull the beast off of your @[1|cocks|noverb] once more.
+这只野兽重重地摔倒在他的后面；他巨大的胸膛上下起伏，他用肺部缓解了你令人难以置信的阳刚之气。</tw-passagedata><tw-passagedata pid="199" name="_player_text_sheet_lostFuck1_heightFlavour_small" tags="" position="1100,2475" size="100,100">你抓住怪物的鸡巴。虽然它滴着黑油，但其上的皮肤坚硬如岩石，随着每一次生长的跳动，你的手指被慢慢撑开。\
+他不寒而栗。通过你缓慢而性感的动作，你收紧手指并从阴茎顶端挤出一股粗绳般的液体。
 
-The beast collapses onto his back with a heavy thud; his massive chest heaving up and down as his lungs relieve themselves of your incredible virility.</tw-passagedata><tw-passagedata pid="199" name="_player_text_sheet_lostFuck1_heightFlavour_small" tags="" position="1100,2475" size="100,100">You grasp the monster&#39;s cock. Although dripping with black oil, the skin is rock hard and slowly spreads your fingers wider with every beat of growth. \
-He shudders. With a slow, sensual movement, you tighten your digits and squeeze a thick rope of pre out of the tip.
+同时，你向后弯曲臀部，将你的@[2|cocks|one=与他紧绷的穴口~more=与他的肛门和另一个可以滑过他的腹部的位置]对齐。
 
-At the same time, you bend your hips backwards and line up your @[2|cocks|one=with%his%tight%anus~more=with%his%anus%and%another%positioned%to%slide%across%his%midriff].
+当你用指尖抚过他的括约肌边缘时，你如此挑逗他，他发出了猥亵的呻吟和喘息。他把自己的身体推到你的身上，迫使你进入他体内。
+他的后穴感觉很紧，但黑色的粘稠物使入口尽可能顺畅。
 
-You tease his him, generating lewd moans and gasps as you slide your tip around the rim of his sphincter. He pushes his body against yours, forcing you inside of him.
+&quot;噢……嗯……&quot;
 
-His ass feels tight, yet the black goo makes the entry as smooth as it can be.
+你呻吟着，因为腐败的生物紧紧抓住你的肉。当你在他体内深处放松时，他的呻吟变成绝望的咕哝和咆哮。
 
-&quot;Oh... Hmmm...&quot;
+他紧绷的处女屁股般的感觉，加上从他体内分泌的覆盖着你的鸡巴粘液的感觉，是你以前从未有过的体验。
 
-You moan as the corrupt creature clenches his anus around your flesh. His moans turn into desperate grunts and growls as you ease yourself deeper inside of him.
+他的身体在你身下越来越温暖，几乎要因兴奋而燃烧。你的鸡巴他体内，你用你的@[all| arms|noverb]搂住他，你用唇齿锁住他的嘴唇。\
+当他抓住你时，他的舌头在你的嘴里驰骋，他的肉手在你的背上抚摸。他的一条腿缠在你身上，当他用他那肌肉发达的身体磨蹭你的身体时，\
+你们俩都兴奋地在原地打转。当你将自己仰躺着被包裹在他强有力的怀抱里时，你感到一阵温暖涌入你的内心。
 
-The feeling of his tight virgin ass combined with the goo covering your cock from inside of him, is like nothing you&#39;ve felt before.
+&quot;啊……操……嘎啊啊啊啊！&quot;
 
-His body grows warmer beneath you, almost burning with arousal. You thrust inside him, bring your @[all| arms|noverb] around him and lock lips. \
-His tongue darts inside of your mouth as he grabs you, running his meaty hands over your back. One of his legs wrap around you and you both spin in place as he \
-grinds his muscular body against yours. As you lay on your back and wrap yourself within his mighty embrace, you feel warmth rush inside of you.
+你把这只腐化的野兽翻了个身，用鸡巴猛烈地撞击他的后穴，你的高潮让你的身体进入兴奋状态。他的黑色鸡巴在你身上喷上了一股腐败的液体。
 
-&quot;Ah... FUCK... GRAHHHH!&quot;
+有少量的他的腐化本质进入了你的体内。
 
-You flip the beast onto his back with a mighty crash as your orgasm rocks your body into euphoria. His black cock erupts in a fountain of corrupted fluid over you.
+你会感觉到你的肌肉因力量而悸动。
+这种感觉顺着你的腿冲上来，进入了你身心存在的核心。
 
-A small amount of his corrupting essence enters you.
+你捏着你的大乳头，呻吟着。
+&quot;更多更多更多……&quot;你咆哮得很凶。</tw-passagedata><tw-passagedata pid="200" name="_player_text_sheet_lostFuck1_heightFlavour_medium" tags="" position="1225,2475" size="100,100">你抓住怪物的鸡巴。虽然它滴着黑油，但其上的皮肤坚硬如岩石，随着每一次生长的跳动，你的手指被慢慢撑开。\
+他不寒而栗。通过你缓慢而性感的动作，你收紧手指并从阴茎顶端挤出一股粗绳般的液体。
 
-You feel your muscles throb with power.
-The feeling rushes up your legs and into the core of your being.
+同时，你向后弯曲臀部，将你的@[2|cocks|one=与%他%紧绷的%穴口~more=与%他的%肛门%和%另一个%可以%滑过%他的%腹部%的%位置]对齐。
 
-You pinch your large nipples and groan.
-&quot;Moooooore...&quot; You growl monstrously.</tw-passagedata><tw-passagedata pid="200" name="_player_text_sheet_lostFuck1_heightFlavour_medium" tags="" position="1225,2475" size="100,100">You grasp the monster&#39;s cock. Although dripping with black oil, the skin is rock hard and slowly spreads your fingers wider with every beat of growth. \
-He shudders. With a slow, sensual movement, you tighten your digits and squeeze a thick rope of pre out of the tip.
+当你用指尖抚过他的括约肌边缘时，你如此挑逗他，他发出了猥亵的呻吟和喘息。他把自己的身体推到你的身上，迫使你进入他体内。
+他的后穴感觉很紧，但黑色的粘稠物使入口尽可能顺畅。
 
-At the same time, you bend your hips backwards and line up your @[2|cocks|one=with%his%tight%anus~more=with%his%anus%and%another%positioned%to%slide%across%his%midriff].
+&quot;噢……嗯……&quot;
 
-You tease his him, generating lewd moans and gasps as you slide your tip around the rim of his sphincter. He pushes his body against yours, forcing you inside of him.
+你呻吟着，因为腐败的生物紧紧抓住你的肉。当你在他体内深处放松时，他的呻吟变成绝望的咕哝和咆哮。
 
-His ass feels tight, yet the black goo makes the entry as smooth as it can be.
+他紧绷的处女屁股般的感觉，加上从他体内分泌的覆盖着你的鸡巴粘液的感觉，是你以前从未有过的体验。
 
-&quot;Oh... Hmmm...&quot;
+他的身体在你身下越来越温暖，几乎要因兴奋而燃烧。你的鸡巴他体内，你用你的@[all| arms|noverb]搂住他，你用唇齿锁住他的嘴唇。\
+当他抓住你时，他的舌头在你的嘴里驰骋，他的肉手在你的背上抚摸。他的一条腿缠在你身上，当他用他那肌肉发达的身体磨蹭你的身体时，\
+你们俩都兴奋地在原地打转。当你将自己仰躺着被包裹在他强有力的怀抱里时，你感到一阵温暖涌入你的内心。
 
-You moan as the corrupt creature clenches his anus around your flesh. His growls turn into desperate grunts and moans as you ease yourself deeper inside of him.
+&quot;啊……操……嘎啊啊啊啊！&quot;
 
-The feeling of his tight virgin ass combined with the goo covering your cock from inside of him, is like nothing you&#39;ve felt before.
+你把这只腐化的野兽翻了个身，用鸡巴猛烈地撞击他的后穴，你的高潮让你的身体进入兴奋状态。他的黑色鸡巴在你身上喷上了一股腐败的液体。
 
-His body grows warmer beneath you, almost burning with arousal. You thrust inside him, bring your @[all| arms|noverb] around him and lock lips. \
-His tongue darts inside of your mouth as he grabs you, running his meaty hands over your back. One of his legs wrap around you and you both spin in place as he \
-grinds his muscular body against yours. As you lay on your back and wrap yourself within his mighty embrace, you feel warmth rush inside of you.
+有少量的他的腐化本质进入了你的体内。
 
-&quot;Ah... FUCK... GRAHHHH!&quot;
+你会感觉到你的肌肉因力量而悸动。
+这种感觉顺着你的腿冲上来，进入了你身心存在的核心。
+你捏着你的大乳头，呻吟着。
 
-You flip the beast onto his back with a mighty crash as your orgasm rocks your body into euphoria. His black cock erupts in a fountain of corrupted fluid over you.
+&quot;更多更多更多……&quot;你咆哮得很凶。</tw-passagedata><tw-passagedata pid="201" name="_player_text_sheet_lostFuck1_heightFlavour_large" tags="" position="100,2600" size="100,100">你抓住怪物的鸡巴。虽然它滴着黑油，但其上的皮肤坚硬如岩石，随着每一次生长的跳动，你的手指被慢慢撑开。\
+他浑身发抖。通过你缓慢而性感的动作，你收紧手指并从阴茎顶端挤出一股粗绳般的液体。
 
-A small amount of his corrupting essence enters you.
+同时，你向后弯曲臀部，将你的@[2|cocks|one=与%他%紧绷的%穴口~more=与%他的%肛门%和%另一个%可以%滑过%他的%腹部%的%位置]对齐。
 
-You feel your muscles throb with power.
-The feeling rushes up your legs and into the core of your being.
-You pinch your large nipples and groan.
+当你用指尖抚过他的括约肌边缘时，你如此挑逗他，他发出了猥亵的呻吟和喘息。他把自己的身体推到你的身上，迫使你进入他体内。
 
-&quot;Moooooore...&quot; You growl monstrously.</tw-passagedata><tw-passagedata pid="201" name="_player_text_sheet_lostFuck1_heightFlavour_large" tags="" position="100,2600" size="100,100">You grasp the monster&#39;s cock. Although dripping with black oil, the skin is rock hard and slowly spreads your fingers wider with every beat of growth. \
-He shudders. With a slow, sensual movement, you tighten your digits and squeeze a thick rope of pre out of the tip.
+他的穴道是非常紧致的。你低头，不禁咧嘴一笑，因为你看到他的肚子因你鸡巴的庞大尺寸向外凸起。当然，黑色粘液只是在他周围变形以适应由你巨根带来的大小差异。
 
-At the same time, you bend your hips backwards and line up your @[2|cocks|one=with%his%tight%anus~more=with%his%anus%and%another%positioned%to%slide%across%his%midriff].
+&quot;噢……啊……&quot;
 
-You tease his him, generating lewd moans and gasps as you slide your tip around the rim of his sphincter. He pushes his body against yours, forcing you inside of him.
+你呻吟着，腐败的生物紧紧地抓住你的肉。他的咆哮变成了绝望的咕噜声和呻吟，因为你把自己在他体内的鸡巴推得更深。\
+你的性器随着情欲而胀大，这只腐化生物的躯干随着你在他体内倾泻精华的压力，和你“攻城锤”进攻力度的大小而膨胀。
 
-It&#39;s an incredibly tight fit. You look down and grin as you see his stomach bulge outward from the sheer size of your tool. Yet, the black goo simply morphs around him to accommodate the size difference.
+这是你以前从未有过的体验。
 
-&quot;Oh... Hmmm...&quot;
+他的身体在你身下越来越温暖，几乎要因兴奋而燃烧。你在他体内不断抽插，你鸡巴的顶端从他的喉咙里探出头来。
 
-You moan as the corrupt creature clenches his anus around your flesh. His growls turn into desperate grunts and moans as you push yourself in further. \
-Your cock expands with lust, and the creature&#39;s torso distends with a combination of the pre you are leaking within him and the size of your battering ram.
+&quot;啊……他妈的……嘎啊啊啊！&quot;
 
-The feeling is like nothing you&#39;ve felt before.
+你把你的[1|hands|noverb]拍在地上，随后弓起你的背，对着身下之物释放出可怕的高潮，精华从这只腐化生物的屁股和嘴里飞出。\
+在你身下，从迷失者的鸡巴里射出的腐败液体，如喷泉般喷发，覆盖了你的腹部并渗入你的毛孔。
 
-His body grows warmer beneath your weight, almost burning with arousal. You thrust inside him, the tip of your cock peeking out from his throat. 
+有少量的他的腐化本质进入了你的体内。
 
-&quot;Ah... FUCK... GRAHHHH!&quot;
+你会感觉到你的肌肉因力量而悸动。
 
-You slam your @[1|hands|noverb] into the ground, arch your back and unleash a terrifying orgasm that rockets out of the creature&#39;s ass and mouth. \
-The Lost&#39;s tools erupts in a fountain of corrupted fluid underneath you, coating your midriff and seeping into your pores.
+这种感觉顺着你的腿冲上来，进入了你身心存在的核心。
 
-A small amount of his corrupting essence enters you.
+你捏着你的大乳头，呻吟着。
 
-You feel your muscles throb with power. 
+&quot;更多更多更多……&quot; 当你从你的@[1|cocks|noverb]上将他拽下并将其扔到地上时，你发出可怕的咆哮。</tw-passagedata><tw-passagedata pid="202" name="_player_text_sheet_lostFuck1_heightFlavour_huge" tags="" position="225,2600" size="100,100">你抓住怪物的鸡巴。虽然它滴着黑油，但其上的皮肤坚硬如岩石，随着每一次生长的跳动，你的手指被慢慢撑开。\
+这实在是令人印象深刻——考虑到他与你相比有多小。他浑身颤抖抬头看着你那巨大的身影，\
+通过你缓慢而性感的动作，你收紧手指并从阴茎顶端挤出一股粗绳般的液体。
 
-The feeling rushes up your legs and into the core of your being.
+你用你的一只@[1|hands|noverb]将他从地上拎起来，把他与你的@[all|pre-leaking|cocks| noverb]贴在一起。
 
-You pinch your large nipples and groan. 
+你逗弄他，把他的小身子放在你性器膨胀的巨头上。当他瞪大眼睛看着你鸡巴粗壮的身材时，你微笑地看着他。
 
-&quot;Moooooore...&quot; You growl monstrously as you pull the creature off of your @[1|cocks|noverb] and throw him to the ground.</tw-passagedata><tw-passagedata pid="202" name="_player_text_sheet_lostFuck1_heightFlavour_huge" tags="" position="225,2600" size="100,100">You grasp the monster&#39;s cock. Although dripping with black oil, the skin is rock hard and slowly spreads your fingers wider with every beat of growth. \
-Impressive, considering how small he is compared to you. He shudders, looking up at your monstrously huge form. With a slow, sensual movement, \
-you tighten your digits and squeeze a thick rope of pre out of the tip of his cock.
+胜者通吃。
 
-With a single @[1|hands|noverb], you pick him up off of the ground and line him up with your @[all|pre-leaking|cocks| noverb].
+你开始用鸡巴挤压、进入他的肛门，目视着他的腿张得越来越宽以适应你下体那巨大的塔楼。\
+如果说你从这个世界上学到了什么，那就是腐化物适合任何鸡巴尺寸的人。\
+这个腐败的生物越来越膨胀，直到你将他像阴茎套一样包裹在你的巨根上。
 
-You tease his him, placing his tiny form on its massive swollen head. You smile as his eyes widen at your turgid length. 
+&quot;噢……嗯……&quot;
 
-Winner takes all.
+当这只腐化生物的身体紧紧搂住你的鸡巴时，你发出了呻吟。\
+当你开始用你的肉棒顶端刺穿他时，他的咆哮变成了绝望的咕哝和呻吟。\
+你的鸡巴因欲望而膨胀，而这只腐化生物的躯干则进一步膨胀。你鸡巴的每一次推进都会让你的铃口喷出一股炙热的喷泉，白色液体在你的身下汇聚成湖泊大小的液池。
 
-You start pressing his anus down and watch as his legs spread wider and wider to accommodate the massive tower. \
-If there is anything you have learned from this world, it is that the corruption caters for any size. \
-The creature distends further and further, until you wrap his form around your tool like a cocksleeve.
+这是你以前从未有过的体验。
 
-&quot;Oh... Hmmm...&quot;
+他包裹在你的鸡巴周围的身体越来越温暖，几乎要因兴奋而燃烧。你更加用力地抽插，你射出的精液汇聚成了白色的瀑布。
 
-You moan as the corrupt creature&#39;s body clenches around your flesh. \
-His growls turn into desperate grunts and moans as you begin to piston your spire of flesh through him. \
-Your cock expands with lust, and the creature&#39;s torso distends even further. Fountains of pre fire from your tip with each thrust, pooling below you in lake sized bodies of fluid.
+&quot;啊……我操……嘎啊啊啊啊啊！&quot;
 
-The feeling is like nothing you&#39;ve felt before.
+你将一只脚猛踏在地上，拱起背部，释放出一种可怕的高潮，精液从你的@[all|cocks|noverb]中射出，并在土地上覆盖了一层超级肥沃的精子。\
+与你自己的鸡巴相比，迷失者的鸡巴在你身边高潮射精表现得很糟糕，但腐败仍然包裹在你鸡巴的一部分之上。
 
-His body grows warmer around your cock, almost burning with arousal. You thrust even harder, your pre turning into waterfalls of white.
+少量他腐化的本质进入你体内。
 
-&quot;Ah... FUCK... GRAHHHH!&quot;
+你感觉到你的肌肉更加有力地跳动。
 
-You slam one of your feet into the ground, arch your back and unleash a terrifying orgasm that rockets out of your @[all|cocks|noverb] and coats the land with blankets of ultra fertile sperm. \
-The Lost&#39;s tools erupts alongside you in a poor display compared to your own, yet the corruption still coats a portion of your cock.
+这种感觉涌上你的双腿，进入你生命的核心。
 
-A small amount of his corrupting essence enters you.
+你捏着你的大乳头，当你的鸡巴套被拉伸到极限时你发出了呻吟。
 
-You feel your muscles throb with even more power.
+&quot;更多更多更多……&quot;你发出可怕的咆哮，随后将这个生物从你的鸡巴上扯了下来，把他的身体丢到你身下离你很远的土地上。</tw-passagedata><tw-passagedata pid="203" name="_player_text_sheet_lostWin1_heightFlavour_small" tags="" position="350,2600" size="100,100">你的双手相交，你的身体争夺控制权。当腐化的野兽把你拉近他时，你挣扎着。\
+你们的鸡巴足够接近，可以相互挤压与摩擦。他将身上的黑色液体涂抹在你的@[all|cocks|noverb]上。\
+突然，一种巨大的兴奋感震撼了你的内心，因为腐化野兽的腐败粘液迅速滑入了你龟头的缝隙中。
 
-The feeling rushes up your legs and into the core of your being.
+你瞪大眼睛，身体重新焕发了活力，你将腐化野兽推倒在地。你的鸡巴落在它肉质的胸膛上，你的肉棒顶端从他的胸肌上伸出。</tw-passagedata><tw-passagedata pid="204" name="_player_text_sheet_lostWin1_heightFlavour_medium" tags="" position="475,2600" size="100,100">你的@[1|hands|noverb]包围了他。你展示你的力量和体型，将他抓住的手臂拉到一边，让他扑倒在地。\
+他跳起来，用不可思议的力量拥抱你，他用他的鸡巴摩擦着你自己的鸡巴。他身上的黑色液体涂抹并扩散到你的@[all|cocks|noverb]上。\
+突然，一种巨大的兴奋感震撼了你的内心，因为腐化野兽的腐败粘液迅速滑入你龟头的缝隙里。
 
-You pinch your large nipples and groan as your cocksleeve is stretched to its limit.
+你瞪大眼睛，突然重新焕发了活力，你把野兽推倒在地。你的鸡巴落在它肉乎乎的胸膛上、被夹在他的大块头胸肌之间。</tw-passagedata><tw-passagedata pid="205" name="_player_text_sheet_lostWin1_heightFlavour_large" tags="" position="600,2600" size="100,100">你的@[1|hands|noverb]冲向迷失者，但他俯冲并让身体向你强大的@[all|cocks|noverb]靠近。虽然他受伤了，但他抓住了他的目标，\
+并将自己的鸡巴插入你的尿道。黑色的腐化精液射到了你的身体里，并蔓延到了你的身体内部。\
+突然，一种巨大的兴奋感震颤到了你的内心，因为那些腐化野兽的腐败精液迅速滑入了你的阴囊。
 
-&quot;Moooooore...&quot; You growl monstrously as you pull the creature off of your cock and drop his body to the ground far below you.</tw-passagedata><tw-passagedata pid="203" name="_player_text_sheet_lostWin1_heightFlavour_small" tags="" position="350,2600" size="100,100">Your hands meet, and your bodies clash for dominance. You struggle as the beast pulls you closer to him. \
-Your hard members are close enough to press and rub along each other. The black liquid that coats him smears and spreads across your @[all|cocks|noverb]. \
-Suddenly, an immense feeling of arousal shakes you to your core as the beast&#39;s corrupting goo quickly slithers into your slit. 
+你的眼睛睁得大大的，你突然充满了新的活力，你把野兽推倒在地。你用一只@[1|hands|noverb]把他的身体压到沙子里。</tw-passagedata><tw-passagedata pid="206" name="_player_text_sheet_lostWin1_heightFlavour_huge" tags="" position="725,2600" size="100,100">你的@[1|hands|noverb]冲向迷失者，但他俯冲并为你的@[all|cocks|noverb]倾斜身子。虽然受伤了，但他抓住目标，\
+随后将整个手臂插入了你的尿道。
 
-Your eyes open wide with renewed vigour and you shove the beast down to the ground. You land on top of its meaty chest, the tip of its pulsating head peeking up from your pecs.</tw-passagedata><tw-passagedata pid="204" name="_player_text_sheet_lostWin1_heightFlavour_medium" tags="" position="475,2600" size="100,100">Your @[1|hands|noverb] engulfs his. With a show of strength and size, you pull his captured arm to the side and send him hurtling to the ground. He leaps back up and bear hugs you \
-with incredible strength, grinding his cock against your own. The black liquid that coats him smears and spreads across your @[all|cocks|noverb]. \
-Suddenly, an immense feeling of arousal shakes you to your core as the beast&#39;s corrupting goo quickly slithers into your slit. 
+黑色的粘液爬进你的身体，蔓延到你身体的内部。\
+突然，一种巨大的兴奋感震颤到了你的内心，因为化的粘液很快滑入了你的阴囊。\
 
-Your eyes open wide with renewed vigour and you shove the beast down to the ground. You land on top of its meaty chest, your cocks sandwiched between your bulks.</tw-passagedata><tw-passagedata pid="205" name="_player_text_sheet_lostWin1_heightFlavour_large" tags="" position="600,2600" size="100,100">Your @[1|hands|noverb] hurtles toward the Lost, but he dives and angles for your mighty @[all|cocks|noverb]. Although injured, he grabs onto his target \
-and shoves his dick into your urethra. Black cum erupts into your shaft and spreads across the insides of it. \
-Suddenly, an immense feeling of arousal shakes you to your core as the beast&#39;s corrupting goo quickly slithers into your ballsack. 
+你的眼睛睁得大大的，身体突然充满了新的活力，你用惊天动地的愤怒力量将野兽推倒在地。你只用三个手指就把他的整个身体压在沙子里，差点就将他压垮。</tw-passagedata><tw-passagedata pid="207" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_small" tags="" position="850,2600" size="100,100"> 你用一只手顺着你的身体往下抚摸，一直往下，你轻轻地抚摸着你的@[all| cocks| noverb]。\
+你的手指拂过的每一寸肌肤，都会在你的全身上下释放出阵阵的快感。你的努力会为你带来回报。你渴望更多地探索自己的身体，\
+你把手伸到身下，感受你的@[all| balls| noverb]的重量。你在手中把玩每个睾丸，并且轻轻地挤压它们。</tw-passagedata><tw-passagedata pid="208" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_medium" tags="" position="975,2600" size="100,100">你用一只手顺着你的身体往下抚摸，一直往下，你轻轻地抚摸着你的@[all| cocks| noverb]。\
+你的手指拂过的每一寸肉，都会在你的全身上下散发出阵阵的快感。你惊讶于你的下体上有多少肉。\
+这整个性器属于你的事实，足以让你高兴得发抖，并把一个普通人的精液量作为前戏喷射出来。
 
-Your eyes open wide with renewed vigour and you shove the beast down to the ground. You press his body into the sand with one @[1|hands|noverb].</tw-passagedata><tw-passagedata pid="206" name="_player_text_sheet_lostWin1_heightFlavour_huge" tags="" position="725,2600" size="100,100">Your @[1|hands|noverb] hurtle toward the Lost, but he dives and angles for your @[all|cocks|noverb]. Although injured, he grabs onto his target \
-and shoves his entire arm into your urethra. 
+你渴望更多地探索自己的身体，你把手伸到身下，感受你的@[all| balls| noverb]的重量。它们在你手中很有分量——这是准备投入工作的阳刚工厂。</tw-passagedata><tw-passagedata pid="209" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_large" tags="" position="1100,2600" size="100,100">你用一只手沿着你的身体向下抚摸，你的手越来越低，直到你轻轻地抚摸着你的@[all| cocks| noverb]。仅用一只手握住你的整个性器已经变得不可能！
 
-Black goo climbs into your shaft and spreads across the insides of it. \
-Suddenly, an immense feeling of arousal shakes you to your core as the beast&#39;s corrupting goo quickly slithers into your ballsack. 
+你用手掌摸过尽可能多的肉，将炽热的快感之矛插遍你的身体。你鸡巴的身材已经远远超过了正常水平，你感到骄傲。\
+没有其他像这样的感觉——这种如果你愿意的话，你自己的性器可以轻松击溃战壕的感觉！另一个好的性交想法让你的高潮工厂开始运转。
 
-Your eyes open wide with renewed vigour and you shove the beast down to the ground with earth-breaking fury. You press his entire body into the sand with only three fingers, nearly crushing him.</tw-passagedata><tw-passagedata pid="207" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_small" tags="" position="850,2600" size="100,100">Running a hand down your body and ever lower, you gently caress your @[all| cocks| noverb]. Each inch of flesh that your fingers \
-brush over sends heated waves of pleasure throughout your body. Your efforts reward you with a few spurts of pre. Eager to explore more of yourself, \
-you reach down below to feel the weight of your @[all| balls| noverb]. You roll each orb in your hand, gently squeezing them.</tw-passagedata><tw-passagedata pid="208" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_medium" tags="" position="975,2600" size="100,100">Running a hand down your body and ever lower, you gently caress your @[all| cocks| noverb]. Each inch of flesh that your fingers \
-brush over sends heated waves of pleasure throughout your body. You marvel at how much flesh extends from your waist. The fact that this \
-entire package belongs to you is enough for you to shiver in delight and jettison an average man&#39;s worth of cum as pre.
+快感明显地增强，它们聚集到了你发出咆哮后鸡巴喷出量不可测的精液上，一股炙热粘稠的液体迅速汇聚在你周围的地面上。\
+当你的高潮摇晃你时，你在下面摸索以感受你的@[all| balls| noverb]的重量。仅仅触摸它们就会让他们进入超级兴奋的状态，每个睾丸都会震颤，因为它们正在将更多的液体推向体外。</tw-passagedata><tw-passagedata pid="210" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_huge" tags="" position="1225,2600" size="100,100">你用一只手沿着你的身体向下抚摸，你的手越来越低，直到你轻轻地抚摸着你的@[all| cocks| noverb]。当你意识到仅仅让他们的体重落在地上就可能会造成破坏时，你不禁张嘴大笑！
 
-Eager to explore more of yourself, you reach down below to feel the weight of your @[all| balls| noverb]. They are heavy in your hands - virile factories ready to be put to work.</tw-passagedata><tw-passagedata pid="209" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_large" tags="" position="1100,2600" size="100,100">Running a hand down your body and ever lower, you gently caress your @[all| cocks| noverb]. It&#39;s become impossible to hold your package with a single hand!
+你用手在你鸡巴宽阔的血肉上来回抚摸，这些血肉会随着你自己的心跳而隆隆作响。\
+这种快感极为猖獗。伴随着巨大的咆哮声，你的鸡巴大爆射，喷出了浓稠的精液喷泉，一个接一个的巨石般的精滴迅速地涂抹在周围的环境上。
 
-You brush your palms across as much flesh as they can reach, sending spears of blazing pleasure throughout your body. Your sheer size has far exceeded the normal, and you feel proud. \
-There is no other feeling like this - the feeling that your own toolset could easily skewer trenches if you so wished it!The thought of another good fuck sets your cum factories into motion.
+从未有过这种感觉——你是这个世界的阿尔法，它是用来被你爆操的。只要想到自己的阳刚之气，就会把你的快感推得更远；您的整个性器发出低沉的轰鸣，并将其输出提高了三倍！\
+你只考虑你自己的性感就真的造成了一场洪水！你摔倒在你的屁股后，结果被你的@[all| balls| noverb]缓冲住。\
+它们在你下面弹跳，极度兴奋，尽可能地覆盖了你目之所及的一切。</tw-passagedata><tw-passagedata pid="211" name="_player_text_sheet_mirror_player_CrotchFlavour_corruptionFlavour_corrupt50" tags="" position="100,2725" size="100,100">有些东西吸引了你的眼球。你把一些液体擦到手指上，当看着它变黑时你挑起了眉毛。腐化似乎正在控制你的身体。</tw-passagedata><tw-passagedata pid="212" name="_player_text_sheet_mirror_player_CrotchFlavour_corruptionFlavour_corrupt75" tags="" position="225,2725" size="100,100">你的@[all|cocks|noverb]拒绝停止流出液体。你看着你的精液变黑，带着病态的魅力渗入地下。这片土地想要将你变成一个怪物。</tw-passagedata><tw-passagedata pid="213" name="_player_text_sheet_mirror_player_CrotchFlavour_corruptionFlavour_corrupt100" tags="" position="350,2725" size="100,100">你的@[all|cocks|noverb]拒绝停止流出液体，液体在露天逗留时仿佛变成了黑曜石。这东西粘稠得像柏油一样，但土壤还是急切地将其排干。
 
-The unmistakable feeling of pleasure crescendos, gathering until you roar and blast out \
-an unfathomable amount of cum, - a deluge of hot sticky liquid that quickly pools on the ground around you. \
-As your orgasm rocks you, you grope down below to feel the weight of your @[all| balls| noverb]. Merely touching them sends them into overdrive, each testicle vibrating as they push even more fluid out into the open.</tw-passagedata><tw-passagedata pid="210" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_huge" tags="" position="1225,2600" size="100,100">Running a hand down your body and ever lower, you gently caress your @[all| cocks| noverb]. You grin widely as you realise the devastation you could cause by simply letting their weight drop onto the ground!
-
-You brush your hands across a vast expanse of flesh that rumbles with its own pulsing heartbeat. The pleasure is rampant. With a mighty roar, your tool explodes with fountains of thick cum, megaliters upon megaliters that quickly \
-paint the surroundings with your taint. 
-
-There is no other feeling like this - you are the alpha of this world, and it was yours to fuck. The mere thought of your virility pushes you even further over the edge; \
-your entire package rumbles and triples its output! You are causing a veritable flood from simply thinking about your own sex! You fall onto your rear, only to be cushioned by your \
-@[all| balls| noverb]. They bounce beneath you, working in overdrive to coat everything as far as the eye can see.</tw-passagedata><tw-passagedata pid="211" name="_player_text_sheet_mirror_player_CrotchFlavour_corruptionFlavour_corrupt50" tags="" position="100,2725" size="100,100">Something catches your eye. You swab some of your fluid onto your finger and raise an eyebrow as you watch it turn black. Corruption seems to be taking hold of your body.</tw-passagedata><tw-passagedata pid="212" name="_player_text_sheet_mirror_player_CrotchFlavour_corruptionFlavour_corrupt75" tags="" position="225,2725" size="100,100">Your @[all|cocks|noverb] refuse to stop leaking. You watch your cum turn dark and seep into the ground with morbid fascination. The land wants you to become a monster.</tw-passagedata><tw-passagedata pid="213" name="_player_text_sheet_mirror_player_CrotchFlavour_corruptionFlavour_corrupt100" tags="" position="350,2725" size="100,100">Your @[all|cocks|noverb] refuse to stop leaking, the fluids turning obsidian as they linger in the open air. The stuff is thick like tar, yet still, the soil drains it eagerly. 
-
-You grin as you realise you are just about ready to accept the monster you have become. \
-You finish off your self-appreciation with one last firm squeeze of your nutsack. There is no more time to waste - you need to satiate your thirst.</tw-passagedata><tw-passagedata pid="214" name="_player_text_sheet_mirror_player_mirror_symbiote_CrotchFlavour_heightFlavour_small" tags="" position="475,2725" size="100,100">Your hands wander down past your slick, gooey, &lt;&lt;SymbioteColor&gt;&gt;-covered flesh to find your @[all| cocks| noverb], still throbbing at your recent orgasm. However, a renewed thrill runs through your body at the delicate, giving \
+当你意识到你即将准备好接受你变成的怪物时，你不禁笑了起来。\
+你最后一次用力挤压阴囊来完成自我欣赏。没有更多的时间可以浪费了——你需要满足你的饥渴。</tw-passagedata><tw-passagedata pid="214" name="_player_text_sheet_mirror_player_mirror_symbiote_CrotchFlavour_heightFlavour_small" tags="" position="475,2725" size="100,100">Your hands wander down past your slick, gooey, &lt;&lt;SymbioteColor&gt;&gt;-covered flesh to find your @[all| cocks| noverb], still throbbing at your recent orgasm. However, a renewed thrill runs through your body at the delicate, giving \
 flesh your hands find. Soon, dollops of altered, thick pre starts to well up from your reserves--already replenished due to your new companion. 
 
 Your hands, somewhat reluctantly, turn from your @[all| cocks| noverb], only to turn \
