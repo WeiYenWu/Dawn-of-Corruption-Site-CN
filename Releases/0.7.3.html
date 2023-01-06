@@ -37027,354 +37027,353 @@ Same goes for every stat that is currently affected by a modifier!</tw-passageda
     unlearnable: true,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="582" name="Encounter_Jorm" tags="" position="225,7350" size="100,100">&lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Jorm.quest.encounterPassages)&gt;&gt;</tw-passagedata><tw-passagedata pid="583" name="Jorm_FirstMeeting_Intro" tags="" position="350,7350" size="100,100">&lt;&lt;run setup.initialJormSetup()&gt;&gt;\
-&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;jormFirstMeeting&quot;, 1)&gt;&gt;</tw-passagedata><tw-passagedata pid="584" name="Jorm_FirstMeeting_PlayerSmall" tags="" position="475,7350" size="100,100">You set out to explore and within the hour you come across a strange discovery.
-You are pretty sure that there used to be a swamp in this area, and yet all you find is an arid wasteland of almost suspicious emptiness.
+&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;jormFirstMeeting&quot;, 1)&gt;&gt;</tw-passagedata><tw-passagedata pid="584" name="Jorm_FirstMeeting_PlayerSmall" tags="" position="475,7350" size="100,100">你出发去探索，在一个小时内，你偶然发现了一个奇怪之处。
+你很确信在这片区域内有一片沼泽，但是你只能看到一片杳无人烟的干旱荒原。
 
-The dirt beneath your feet is dry, hard and so flat that you can see all the way towards the horizon with little in the way of obstacles or places to hide. 
+你脚下的泥土又干又硬，甚至平得没有一点能阻挡你看到地平线的障碍物和一个藏身之处。
 
-It makes it exceedingly easy to spot a group of Lost in the distance, and so you ready yourself for the inevitable fight. After all there is no place for you to hide either, \
-no way for them not to spot you. 
+这使得你非常容易发现了远处的一群迷失者，因此你为这场不可避免的战斗做好了准备。毕竟你也无处可藏，\ 
+他们不可能没有发现你。
 
-But the attack never comes. In fact, they appeared to be perfectly content with staying put. 
+但这场战斗从未发生。事实上，他们看起来对现状很满意。
 
-\&lt;&lt;run setup.choice(&quot;[[Investigate Further-&gt;Jorm_FirstMeeting_PlayerSmall_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="585" name="Jorm_FirstMeeting_PlayerSmall_2" tags="" position="600,7350" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
-An unhealthy amount of curiosity gets the better of you. It is an exceedingly rare sight to see any number of Lost who aren&#39;t ravenously mating each other or trying to spread their corruption.
-Seeing them just sit there warrants investigation. 
+\&lt;&lt;run setup.choice(&quot;[[继续调查-&gt;Jorm_FirstMeeting_PlayerSmall_2]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;村庄]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="585" name="Jorm_FirstMeeting_PlayerSmall_2" tags="" position="600,7350" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
+一股巨大的好奇心占据了你。这实在是很难看到迷失者不在贪婪地交配或传播着腐化。
+看到他们无动于衷值得调查一番。
 
-So, as you draw closer, you not only rather quickly realize that these Lost are significantly larger than the usual specimen.
-They sit around a big pond that is at least &lt;&lt;print setup.getLength(3937)&gt;&gt; in diameter, even this close, they do not seem to notice your presence. 
+当你走近时，你很快意识到这些迷失者比通常的大得多。
+他们闲坐在一个直径至少有&lt;&lt;print setup.getLength(3937)&gt;&gt;的池塘边，即便是如此之近，他们也似乎没有觉察到你的存在。
 
-\&lt;&lt;run setup.choice(&quot;[[Examine the pond-&gt;Jorm_FirstMeeting_PlayerSmall_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="586" name="Jorm_FirstMeeting_PlayerSmall_3" tags="" position="725,7350" size="100,100">A &lt;&lt;SymbioteColor&gt;&gt; goo fills the pond; it runs and spills over the edges while the Lost throbbing genitalias submerge within it.
+\&lt;&lt;run setup.choice(&quot;[[调查池塘-&gt;Jorm_FirstMeeting_PlayerSmall_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="586" name="Jorm_FirstMeeting_PlayerSmall_3" tags="" position="725,7350" size="100,100">A &lt;&lt;SymbioteColor&gt;&gt; 粘液填满了池塘； 它流动并溢出边缘，而迷失者悸动的生殖器则淹没在其中。
 
-You could see their bodies twitch with their vacant eyes rolled back and their tongues lolled out, drool dripping from their maws.
-Their balls contract again and again, you could see the goo bubble as streaks of white and black shoot through it as the Lost orgasm into the liquid with no end in sight.
+你可以看到他们的身体在抽搐，空洞的眼睛在向后翻，舌头伸了出来，口水在从嘴里滴下来。
+他们的睾丸一次又一次地收缩，当他们高潮把液体射入池塘时，你可以看到在黑白相间的粘液中看到气泡。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_FirstMeeting_PlayerSmall_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="587" name="Jorm_FirstMeeting_PlayerSmall_4" tags="" position="850,7350" size="100,100">It starts to tickle your nose. \
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;A scent that is hard to describe and leave you light headed for a moment. Your @[all|cocks|one=surges~more=surge] to full erection within a second.&quot;)&gt;&gt;
-You can feel the tightness in your taint as incredible desire ran through your loins. You feel how &lt;&lt;SymbioteName&gt;&gt; stirs beneath your skin, the desire to emerge growing within your companion.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_FirstMeeting_PlayerSmall_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="587" name="Jorm_FirstMeeting_PlayerSmall_4" tags="" position="850,7350" size="100,100">你感到你的鼻子开始发痒。  \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;一种难以描述的气味让您在片刻感到头晕目眩。Your @[all|cocks|one=涌动~more=涌动]，在一秒内就完全勃起了。&quot;)&gt;&gt;
+当令人难以置信的欲望穿过你的下身时，你会感觉到你的taint紧绷。 你感觉到&lt;&lt;SymbioteName&gt;&gt; 在你的皮肤下搅动, 渴望着挺立。
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;Just like the desire to step forward, to put your @[all|cocks|noverb] into the pond as well. You feel him writhe beneath your skin, your @[all|cocks|one=throbs~more=throb].&quot;)&gt;&gt;
-The scent beckons you forward, the low growling of the Lost promising an incredible pleasure, \
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;a thrilling excitement waiting mere steps away from you. You bring your @[all|cocks|noverb] over the pond and your pre drips into it. &quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;就像想上前一样，把你的@[all|cocks|noverb]也放进池塘里。 你感觉到它在你的皮肤下翻腾。&quot;)&gt;&gt;
+气味在召唤你前进，迷失者低沉的咆哮预示着令人难以置信的快乐， \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;距离您仅几步之遥的激动人心的兴奋等待着您。 你把你的生殖器放到池塘上方，你的前列腺液滴入了其中。&quot;)&gt;&gt;
 
-The goo almost lashes out at your early ejaculate before it suddenly recoils away.
+粘液在你早泄时猛烈抨击，然后突然退缩。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_FirstMeeting_PlayerSmall_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="588" name="Jorm_FirstMeeting_PlayerSmall_5" tags="" position="975,7350" size="100,100">It begins to bubble, then boil. The liquid churns and gurgles. The Lost around you roar and squirm as the goo lashes out at them, engulfing their lower bodies completely.
-Their gigantic musculature deflates before your very eyes until they are completely pulled into the pond. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_FirstMeeting_PlayerSmall_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="588" name="Jorm_FirstMeeting_PlayerSmall_5" tags="" position="975,7350" size="100,100">它开始冒泡，然后沸腾。 液体搅动并发出咯咯声。 当粘液猛击周围的迷失者，完全吞没他们的下半身时，他们开始咆哮和蠕动。
+他们巨大的肌肉在您的眼前收缩，直到他们完全被拉入池塘。
 
-The bubbling ceases, the scent vanishes with it. 
+气泡停止了，气味也随之消失了。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_JormEmerges_Small]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="589" name="Jorm_FirstMeeting_PlayerBig" tags="" position="1100,7350" size="100,100">The ground shakes beneath your massive gait. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_JormEmerges_Small]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="589" name="Jorm_FirstMeeting_PlayerBig" tags="" position="1100,7350" size="100,100">地面在你巨大的步态下摇晃。
 
-Exploring the wasteland is a treat at this size, and it would only become easier as you grow larger.
-You could see the slight curving of the world towards the horizon, and so, as you strode on, a curiosity peaked your interest.
+在这种大小下探索荒原是一种享受，而且随着您的增大，它只会变得更加容易。
+你可以看到世界向地平线微微弯曲，而当你大步向前时，好奇心激发了你的兴趣。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_FirstMeeting_PlayerBig_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="590" name="Jorm_FirstMeeting_PlayerBig_2" tags="" position="1225,7350" size="100,100">You remember being here before. Instead, all you can see is a flat, barren wasteland which is almost entirely devoid of features.
-Infact it almost seems like it has been purposefully flattened. Only - comparatively - small pools disturb the land like pockmarks.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_FirstMeeting_PlayerBig_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="590" name="Jorm_FirstMeeting_PlayerBig_2" tags="" position="1225,7350" size="100,100">你记得以前来过这里。然而，你所看到的只是一片平坦、贫瘠的荒地，几乎没有任何特征。
+事实上，它几乎看起来像是被故意压扁了。 只有相对较小的水池像麻子一样扰乱了土地。
 
-You also see that the Lost gather around these pools, which is unusual enough.
-After all, they usually come rushing immediately to bay and bark at your feet, given that your form is impossible to overlook. 
+您还看到迷失者聚集在这些池塘周围，这很不寻常。
+毕竟，他们通常会立即冲向海湾并在您的脚下狂吠，因为您的身影是不可能被忽视的。
 
-\&lt;&lt;run setup.choice(&quot;[[Investigate Further-&gt;Jorm_FirstMeeting_PlayerBig_3]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="591" name="Jorm_FirstMeeting_PlayerBig_3" tags="" position="100,7475" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
-It is curious enough to warrant investigation. A few more steps carry you across the vast distance and close to one of the many ponds.
-It is perhaps &lt;&lt;print setup.getLength(3937)&gt;&gt; in diameter and appears to be filled with &lt;&lt;SymbioteColor&gt;&gt; liquid.
+\&lt;&lt;run setup.choice(&quot;[[继续调查-&gt;Jorm_FirstMeeting_PlayerBig_3]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;村庄]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="591" name="Jorm_FirstMeeting_PlayerBig_3" tags="" position="100,7475" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
+它足够激起你的好奇心，值得调查。 再走几步，您将穿越遥远的距离，靠近许多池塘之一。
+这个池塘的直径可能有&lt;&lt;print setup.getLength(3937)&gt;&gt;长，而且似乎充满了&lt;&lt;SymbioteColor&gt;&gt;的液体。
 
-\&lt;&lt;run setup.choice(&quot;[[Get closer-&gt;Jorm_FirstMeeting_PlayerBig_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="592" name="Jorm_FirstMeeting_PlayerBig_4" tags="" position="225,7475" size="100,100">You crouch down to have a better look at it. Even this close, the Lost around it does not seem to react to your presence.
+\&lt;&lt;run setup.choice(&quot;[[靠近-&gt;Jorm_FirstMeeting_PlayerBig_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="592" name="Jorm_FirstMeeting_PlayerBig_4" tags="" position="225,7475" size="100,100">你蹲下来仔细看看它。 即使离得这么近，它周围的迷失者似乎也没有对你的存在做出反应。
 
-You can&#39;t help but notice that they seem significantly larger than normal, but that still make them miniscule compared to your vastness.
-Despite that however, it nearly escapes your notice that all of them have their massive genitals submerged in the quivering liquid of the pond.
+你不禁注意到他们看起来比正常情况大得多，但与你的硕大相比，他们仍然显得微不足道。
+尽管如此，你几乎没有注意到他们那巨大的生殖器都浸没在了池塘中。
 
-Something about that sight make &lt;&lt;SymbioteName&gt;&gt; stir within your loins, but not just that, there is something in the wind, a strange smell.
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;It makes your @[all|cocks|one=surges~more=surge] to full erection with such force and speed that you feel light headed for a moment.&quot;)&gt;&gt;
-&lt;&lt;SymbioteName&gt;&gt; writhes beneath your skin with a mounting desire to emerge. The hole in the ground before looks more and more appealing, \
-even considering that would struggle to actually contain your endowments. You place your hands on the ground next to it and your immense form looms over the pit.
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;You carefully line up your @[all|cocks|noverb] with the hole. Your @[all|cocks|noverb] over it and thick globs of pre fall into the liquid.&quot;)&gt;&gt;
+那景象的某些东西使得&lt;&lt;SymbioteName&gt;&gt;在你的下身激荡,但不仅如此，风中有什么东西，一种奇怪的气味。
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;它使得你的@[all|cocks|one=涌动~more=涌动]并完全勃起，这让您在片刻感到头晕目眩。&quot;)&gt;&gt;
+&lt;&lt;SymbioteName&gt;&gt;在你的皮肤下扭动，越来越渴望挺立。 之前地上的洞越来越吸引你了了，\
+即使考虑到它们很难真正容纳你的硕物。你把手放在它旁边的地上，你巨大的身影隐约出现在坑上。
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你小心地将@[all|cocks|noverb]准洞口。你的@[all|cocks|noverb]在它上面，浓厚的前列腺液掉进液体里。&quot;)&gt;&gt;
 
-The noise that unfolds gives you momentary pause. The Lost beneath you howl out in orgasmic bliss. Their bodies trash and flail as a mind breaking climax overwhelms them.
-You can perceive the lost of other pits undergoing a similar experience. 
+出现的噪音让你瞬间停顿。 你下面的迷失者在高潮的幸福中嚎叫。 当令人心碎的高潮压倒他们时，Their bodies trash and flail。
+你可以感知其他坑的迷失者也经历了类似的经历。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_FirstMeeting_PlayerBig_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="593" name="Jorm_FirstMeeting_PlayerBig_5" tags="" position="350,7475" size="100,100">The &lt;&lt;SymbioteColor&gt;&gt; goo within the pits lashes out and begins to engulf the Lost.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_FirstMeeting_PlayerBig_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="593" name="Jorm_FirstMeeting_PlayerBig_5" tags="" position="350,7475" size="100,100">The &lt;&lt;SymbioteColor&gt;&gt; goo within the pits lashes out and begins to engulf the Lost.
 Their huge, muscular bodies shrink as the pond turns black.
 
-Within seconds, they are fully engulfed into the pits to vanish completely. 
+在几秒钟之内，他们就被完全吞没在深坑中，彻底消失。
 
-You back away as the goo starts to churn and gurgle violently beneath you.
+当粘液开始在你身下剧烈翻腾和咯咯作响时，你不禁后退。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_JormEmerges_Big]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="594" name="Jorm_JormEmerges_Big" tags="" position="475,7475" size="100,100">The goo from each pit spill over and cover the land, only for it to retract in a rhythmic ebb and flow.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_JormEmerges_Big]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="594" name="Jorm_JormEmerges_Big" tags="" position="475,7475" size="100,100">每个坑中的粘液溢出并覆盖土地，并在有节奏的起伏中缩回。
 
-You hear a strange billowing sound from beneath the ground, something that sounds like an excited, heavy breathing.
+你听到地下传来一种奇怪的滚滚声，听起来像是兴奋而沉重的呼吸声。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_JormEmerges_Big_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="595" name="Jorm_JormEmerges_Big_2" tags="" position="600,7475" size="100,100">Then the earth begins to quake. A roar from beneath the earth emerge. The very ground you stand on begins to give in.
-All the flattened land under your purview fall at once. It is a deafening, roaring cacophony.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_JormEmerges_Big_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="595" name="Jorm_JormEmerges_Big_2" tags="" position="600,7475" size="100,100">然后，大地开始震动。一声轰鸣从地底下涌现。 你所站立的地面开始屈服。
+你所及范围内的平地一齐崩塌。 这是一种震耳欲聋、咆哮的杂音。
 
-A thundering destruction as chunks of packed earth fall into a dark abyss, never to be seen again.
+大块大块的泥土坠入黑暗的深渊，再也不见踪影。
 
-Any hope, any chance of seeing into the hole is taken by the forming sandstorm which blots out the sky.
-The sheer dryness and heat lead to a veritable lightning storm forming within. 
+任何希望以及任何看到洞里的机会都在被正在形成的遮天蔽日的沙尘暴所夺走。
+纯粹的干燥和高温导致内部形成名副其实的闪电风暴。
 
-The arcs and flashes of lightning illuminate a rising form. Higher and higher it seems to grow, emerging without end.
-A tremendous wall which pushes the storm ahead of it.
-Large limbs move with unnatural speed, a tail like an endless mountain ridge whipping with physics defying ease. 
+闪电的电弧和闪光照亮了其上升的姿态。 它似乎越来越高，不断涌现。
+一堵巨大的墙，将风暴推向前方。
+Large limbs move with unnatural speed, 一条像无尽的山脊一样的尾巴，以违背物理学的轻松姿态拂过。
 
-An earth splitting, deafening roar dispels the sandstorm.
+震耳欲聋的轰鸣声驱散了沙尘暴。
 
-&lt;&lt;link &quot;Continue&quot; setup.getInitialJormSizeDiffPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="596" name="Jorm_JormEmerges_Small" tags="" position="725,7475" size="100,100">The ground rumbles. The earth quakes. The goo within the pit overflows, before it retracts again.
-It is a mesmerizing ebb and flow before it finally pulls back again completely, only to leave a dark, yawning abyss in its wake.
-The hole is so deep that light could not reach the bottom of it. 
+&lt;&lt;link &quot;继续&quot; setup.getInitialJormSizeDiffPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="596" name="Jorm_JormEmerges_Small" tags="" position="725,7475" size="100,100">地面隆隆作响。 大地震动。 坑内的粘液溢出，然后再次缩回。
+在一个令人着迷的潮起潮落后，它最终再次完全拉回，只留下一个黑暗的，作响的深渊。
+这个洞很深，连光线无法到达它的底部。
 
-Then the ground ahead of you collapses.
+然后你前面的地面开始坍塌。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_JormEmerges_Small_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="597" name="Jorm_JormEmerges_Small_2" tags="" position="850,7475" size="100,100">The earth falls, bereft of whatever support it may have had. Chunks of packed dirt, as large as houses, falls into the abyss.
-An immense amount of dust is thrown up in the wake of this landfall.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_JormEmerges_Small_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="597" name="Jorm_JormEmerges_Small_2" tags="" position="850,7475" size="100,100">大地开始坠落，失去了它所可能拥有的任何支撑。 堆积如山的土块，大如房屋，都在落入深渊。 
+在这场滑坡后，大量的灰尘被抛起。
 
-You hear a deep groan from beneath. 
+你听到了从脚下传来的低沉的呻吟声。
 
-Then you could see it. A shape took form in the billowing clouds of dust before you. It rose, rose ever greater, seemingly without end. \
-Gigantic limbs moved behind the cover, a deafening roar, the earth splitting crack of a whip.
+然后你看到了。 一个形状在你面前的滚滚尘埃云中形成。 它上升得越来越大，似乎没有尽头。 \
+Gigantic limbs moved behind the cover,随着一阵震耳欲聋的吼声, 大地被劈开了。
 
-The clouds of dust are cast aside.
+尘土飞扬。
 
-&lt;&lt;link &quot;Continue&quot; setup.getInitialJormSizeDiffPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="598" name="Jorm_JormDescriptions_LargerThanPlayer" tags="" position="975,7475" size="100,100">The dust clears, you gaze upon a looming wall of &lt;&lt;SymbioteColor&gt;&gt;. 
+&lt;&lt;link &quot;继续&quot; setup.getInitialJormSizeDiffPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="598" name="Jorm_JormDescriptions_LargerThanPlayer" tags="" position="975,7475" size="100,100">The dust clears, you gaze upon a looming wall of &lt;&lt;SymbioteColor&gt;&gt;. 
 
-After a few seconds, you realize that this sheer, immense mountainside before you is the tail of an absolutely gargantuan naga.
+几秒钟后，你意识到眼前这个陡峭、巨大的山坡是一条极其庞大的纳迦的尾巴。
 
-You estimate his size to be &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;))&gt;&gt;, but there is simply no way to regard this beast with only a glance.
-A stellar musculature ripples beneath glistening scales, it slowly draws your attention up along this cliff of muscle, and towards his groin.
+你估计他身长&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;))&gt;&gt;, 但没有人能一眼看尽这只怪物。
+恒星般的肌肉在闪闪发光的鳞片下荡漾，它慢慢地将你的注意力吸引到这块肌肉的边缘上，延续到他的腹股沟。
 
-This snake is most definitely a him indeed. His genital slit is but a little more than a natural cockring, \
-which ensures that his pair of &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;cock&quot;))&gt;&gt; &lt;&lt;print setup.processFlavours($CharacterSheet_Jorm, &quot;@[all|cocks|one=remains~more=remain]&quot;)&gt;&gt; hard at all times.
+这条蛇，绝对是一只雄性。他的生殖腔如同一个自然的屌环，\
+这使得他那对&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;cock&quot;))&gt;&gt; &lt;&lt;print setup.processFlavours($CharacterSheet_Jorm, &quot;@[all|cocks|one=remains~more=remain]&quot;)&gt;&gt; 一直保持坚硬。
 
-These spires are adorned with barbs and ridges, the tips tapering just enough to ease themselves into significantly smaller holes. Their base flare with sufficient size to hint at the existence of a knot.
-Beneath these two grand spires is the naga&#39;s sack, the skin of which burgeon with the four immense balls contained within.
-In fact, it sits so tight to his body, these gonads should have been internal.
+这些塔尖上装饰着倒钩和脊，尖端逐渐变细，足以让自己轻松地钻入更小的洞。Their base flare with sufficient size to hint at the existence of a knot.
+在这两个宏伟的塔尖下面是娜加的阴囊，里面里装着四个巨大的睾丸。
+事实上，它紧贴着他的身体，这些性腺应该在他的体内。
 
-You hear them churn and gurgle up a storm.
+你听到他们搅动和发出暴风雨的声音。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_JormDescriptions_LargerThanPlayer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="599" name="Jorm_JormDescriptions_LargerThanPlayer_2" tags="" position="1100,7475" size="100,100">Taking your eyes off the naga&#39;s endowments is no easy task. They remain in the way even when you try to look up and past them, towards his doming midsection of abdominals.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_JormDescriptions_LargerThanPlayer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="599" name="Jorm_JormDescriptions_LargerThanPlayer_2" tags="" position="1100,7475" size="100,100">把你的目光从纳迦的硕物上移开并不是一件容易的事。即使你试图抬起头，越过它们，看向他隆起的腹部，它们仍然碍事。
 
-Each is a towering hill, a small mountain in their own right, dark canyons sculpted flesh of the grand beast.
-The path of musculature guided your eyes up further as your eyes followed along not just six, nor eight abs.
+每一座都是高耸的山丘，它们本身就是一座小山，黑暗的峡谷雕刻着巨兽的血肉。
+肌肉的线条引导你的眼睛进一步向上，因为你的视线不仅沿着六块腹肌，也不是八块。
 
-This road to glory seems insatiable as even twelve is not enough. Instead, the naga&#39;s long, powerful waist is rocking a solid twenty four huge, powerful abdominals.
-The last quarter at the top is flanked by a pair of pectorals, before it ends in yet another enormous, bulging pair of chiseled and hard cut mounds of muscles.
-Each of them is crowned by a fittingly gigantic, nipple. \
-&lt;&lt;print setup.processFlavours($CharacterSheet_Jorm, &quot;Though with how big these pectorals are, it&#39;s easy to imagine putting a lot more on them. That cleft is waiting for your @[all|cocks|noverb] to slide right between them.&quot;)&gt;&gt;
+这条大饱眼福之路成本似乎是永无止境的，因为即使是十二个也不够。相反，纳迦的长而有力的下身正摇晃着二十四个巨大而有力的腹肌。
+其顶部的最后四分之一的两侧是一对胸肌，然后是另一对巨大的、凸出的、轮廓分明、硬切的肌肉群。
+每个的顶部都有一个合适大小的巨大乳头。 \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Jorm, &quot;这些胸肌很大，很容易想象在它们上面放更多的东西。那个裂口正在等待你的@[all|cocks|noverb]在它们之间滑动。在它们之间滑动。&quot;)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_JormDescriptions_LargerThanPlayer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="600" name="Jorm_JormDescriptions_LargerThanPlayer_3" tags="" position="1225,7475" size="100,100">Belonging to these four pectorals are four arms, each of which are engorged with an immense power and so absolutely thick with dense muscle that it is difficult to fathom that the naga could reach his own nipples.
-He is a gigantic hulk of powerful muscle that make even the Lost appear tiny and insignificant to him.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_JormDescriptions_LargerThanPlayer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="600" name="Jorm_JormDescriptions_LargerThanPlayer_3" tags="" position="1225,7475" size="100,100">属于这四块胸肌的是四只手臂，每只手臂都充满了巨大的力量，而且肌肉非常粗壮，以至于很难想象纳迦能够到自己的乳头。
+他是一个拥有强大肌肉的庞然大物，即使是迷失者对他来说也显得渺小而微不足道。
 &lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;) &gt; 100&gt;&gt;\
-Only your own bulk could match his incredible girth and size. 
+只有你的体型能够与他媲美。
 &lt;&lt;else&gt;&gt;\
-Not even your own size could hope to match the naga&#39;s power.
+即使是你自己的体型也无法与纳迦的力量匹敌。
 &lt;&lt;/if&gt;&gt;\
 
-Above all that, atop of a long and massive neck which ripple with incredible power and girth, throne the naga&#39;s head.
+除此之外，在那条长长的、巨大的、以难以置信的力量和体态荡漾的脖子上的，是纳迦的头颅。
 It is cast into shadow by the utterly gigantic - and slightly familiar - cobra hood that spans like wings and stretches over his traps to disappear somewhere into his immense shoulders.
 
-He looks down at you.
+他低下头看向你。
 
-His eyes and scales glow with an iridescent color, like a rainbow is pulsating within. \
+他的眼睛和鳞片发出彩虹色的光，就好像彩虹在里面跳动。\
 Spiraling, confusing patterns run through his hood and thrum in tune with the color of his eyes.
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="601" name="Jorm_JormDescriptions_EvenToPlayer" tags="" position="100,7600" size="100,100">The dust clears and before you stands a &lt;&lt;SymbioteColor&gt;&gt; naga. The beast is an incredible sight for all it counts. \
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="601" name="Jorm_JormDescriptions_EvenToPlayer" tags="" position="100,7600" size="100,100">灰尘散去，在你面前出现了一只&lt;&lt;SymbioteColor&gt;&gt;的娜迦。这头野兽真是一个令人难以置信的景象。\
 The fact that its &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;))&gt;&gt; near matches your height at all is already a testament to how gigantic this beast is.
 
-As if by instinct, your gaze drifts downwards, towards the massive and girthy tail of the beast. Snakes are usually all muscle anyway, but this monster takes the cake indeed. \
+仿佛出于本能，你的目光向下漂移，看向这只野兽巨大而圆润的尾巴。 蛇通常都是肌肉发达的，但这个怪物确实比其他更胜一筹。\
 Though it is hard to look past the serpent&#39;s crotch. Two &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;cock&quot;))&gt;&gt; spires jut forth from his groin.
 
-\&lt;&lt;run setup.choice(&quot;[[Examine his crotch-&gt;Jorm_JormDescriptions_EvenToPlayer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="602" name="Jorm_JormDescriptions_EvenToPlayer_2" tags="" position="225,7600" size="100,100">The genital slit he once had has become little more than a natural cockring, ensuring that those dicks remain hard.
+\&lt;&lt;run setup.choice(&quot;[[调查他的裆部-&gt;Jorm_JormDescriptions_EvenToPlayer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="602" name="Jorm_JormDescriptions_EvenToPlayer_2" tags="" position="225,7600" size="100,100">他曾经拥有的生殖腔已经变成了一个自然的屌环，确保那些家伙保持坚挺。
 
 They are bristling with features no less, as their lengths are adorned with ridges, and the tapered tips overflow with fleshy barbs.
 The hint of a knot hides at the base. Beneath this pair of genital spires hangs a tight, snug fitting scrotum that is stretched far by a quad of gigantic balls.
 
-It is hard to take your eyes off that sight, considering how inviting these massive phalli throb and pulse.
+由于这些巨大的阳具的悸动和脉动是多么诱人，你很难把目光从那个景象上移开。
 
-\&lt;&lt;run setup.choice(&quot;[[Look upwards-&gt;Jorm_JormDescriptions_EvenToPlayer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="603" name="Jorm_JormDescriptions_EvenToPlayer_3" tags="" position="350,7600" size="100,100">Each ab is a thick, chiseled hill amidst a labyrinthe of canyons in between.
-They are flanked by a pair of pectorals, which in turn are crowned by yet another pair.
-All four are bulging, swollen mountains with massive fat nipple.
-A real hand filling handlebar to hold on to and pull, while fucking his massive pectorals. 
+\&lt;&lt;run setup.choice(&quot;[[向上看-&gt;Jorm_JormDescriptions_EvenToPlayer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="603" name="Jorm_JormDescriptions_EvenToPlayer_3" tags="" position="350,7600" size="100,100">每块腹肌都是一座厚实的、轮廓分明的山丘，中间是迷宫般的峡谷。
+它们的两侧是一对胸肌，而它们又被另一对凌驾于上方。
+这四块胸肌都如同隆起的、肿胀的山峰，都带有肥大的乳头。
+一个真正充满手感的车把，可以抓着拉着，同时操着他巨大的胸肌。
 
-His four arms are staying in tune with the sheer girth of the serpent. 
+四条手臂与大蛇的巨大腰围保持一致。
 &lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;) &gt; 100&gt;&gt;\
-They are almost as heavy as your own mass.
+他几乎和你自己的体重一样重。
 &lt;&lt;else&gt;&gt;\
-Not even your own size could hope to match the naga&#39;s power.
+即使是你自己的体型也无法与纳迦的力量匹敌。
 &lt;&lt;/if&gt;&gt;\
-His arms are so big that he would not be able to touch his own nipples, or properly reach his own cocks. Between the size of his biceps and the girth of his chest, there simply is no space to accomodate for either. 
+他的手臂是如此之大，以至于他无法触摸到自己的乳头，也无法适当地触及自己的阴茎。在他的二头肌大小和胸部之间，根本没有空间来容纳这两者。
 
-\&lt;&lt;run setup.choice(&quot;[[Look upwards still-&gt;Jorm_JormDescriptions_EvenToPlayer_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="604" name="Jorm_JormDescriptions_EvenToPlayer_4" tags="" position="475,7600" size="100,100">A remarkably long and thick neck leads up to his head, which in turn is crowned by a massive, - and familiar - cobra hood.
-Iridescent, confusing, spiralling patterns draw attention towards his face.
+\&lt;&lt;run setup.choice(&quot;[[继续向上看-&gt;Jorm_JormDescriptions_EvenToPlayer_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="604" name="Jorm_JormDescriptions_EvenToPlayer_4" tags="" position="475,7600" size="100,100">A remarkably long and thick neck leads up to his head, which in turn is crowned by a massive, - and familiar - cobra hood.
+五彩缤纷、令人困惑的螺旋形图案会使人们的注意力吸引至他的脸庞。
 
-Aside from the startlingly handsome muzzle, with its strong, firm cut jawline - it is all too easy to imagine him swallowing very, very large things.
-His eyes glow with an iridescent light.
+除了令人惊讶的英俊的吻部，它那结实、结实的下颚线，很容易想象他能吞下非常非常大的东西。
+他的眼睛闪烁着彩虹般的光芒。
 
-With each heartbeat, a different color pulses to the forefront, which happen entirely in tune with the patterns of his hood. 
+随着每一次心跳，一种不同的颜色都会冲到最前沿，这完全与他的hood图案一致。
 
-It is so difficult to look away.
+把目光移开实在是太困难了。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="605" name="Jorm_JormDescriptions_SmallerThanPlayer" tags="" position="600,7600" size="100,100">The dust clears and before you stands a &lt;&lt;SymbioteColor&gt;&gt; naga. You actually have to look down at it, even though the beast is easily &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;))&gt;&gt; tall.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="605" name="Jorm_JormDescriptions_SmallerThanPlayer" tags="" position="600,7600" size="100,100">灰尘散去，在你面前出现了一只&lt;&lt;SymbioteColor&gt;&gt; 的娜迦。你需要低下头才能看到他, even though the beast is easily &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;))&gt;&gt; tall.
 
-What a dramatic entrance for such a little twerp. But then again, how could he hope to stand against someone like you - a living, breathing, growing god - anyway? Your eyes trail along the serpent&#39;s body.
+What a dramatic entrance for such a little twerp. 但话又说回来，他怎么可能希望对抗像你这样的人————一个活生生的、正在成长的神呢？你的目光沿着大蛇的身体移动。
 
-For what he is worth, he&#39;s indeed on the powerfully built side. He is also most definitely a he, as a look at his groin so easily proves. Two &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;cock&quot;))&gt;&gt; spires jut from his groin.
+就他的价值而言，他确实是身材强壮的一方。他也绝对是个雄性，看看他的腹股沟就能证明这一点。Two &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;cock&quot;))&gt;&gt; spires jut from his groin.
 
 Their tapered tips bristle with fleshy barbs, only for thick ridges to take over along his length. Finally, towards the end of his members, there is the hint of a knot that has yet to inflate.
 
-All of that is kept in check by a genital slit that has become little more than a cockring, unable to contain his endowments any longer.
-Right beneath is a tight, snug fitting sack which held a quad of admittedly rather enormous testicles. 
+所有这一切都被一个生殖腔所控制，这个裂缝已经变成了一个屌环，无法再容纳他的硕物。
+正下方是一个紧实、贴身的阴囊，里面装着四个相当巨大的睾丸。
 
-\&lt;&lt;run setup.choice(&quot;[[Examine his body further-&gt;Jorm_JormDescriptions_SmallerThanPlayer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="606" name="Jorm_JormDescriptions_SmallerThanPlayer_2" tags="" position="725,7600" size="100,100">Your eyes run up what is a solid double-dozen of abs, a road of a full twenty four thick abs, which stretch over the long and thick roid-gut of the serpent.
+\&lt;&lt;run setup.choice(&quot;[[继续调查他的身体-&gt;Jorm_JormDescriptions_SmallerThanPlayer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="606" name="Jorm_JormDescriptions_SmallerThanPlayer_2" tags="" position="725,7600" size="100,100">你的眼睛向上看着那坚实的两打腹肌，一条完整的二十四块腹肌的道路延伸在蛇又长又厚的类肠上。
 
-The upper quarter is flanked by a pair of pectorals, which in turn is topped by yet another pair. Each pectoral is crowned by a fat, swollen nipple, as large as a soda can in relation to the naga&#39;s size.
+其顶部的最后四分之一的两侧是一对胸肌，而胸肌的顶部又是另一对。 每块胸肌的顶部都有一个肿胀的肥大乳头，相对于纳迦的体型而言，它们的大小与苏打水易拉罐一般。
 
-You&#39;d barely be able to fit your lips around them, with how small they are compared to you. At least his arms promise to make for sufficient holds with how girthy they are.
-They are burgeoning with powerful musculature in their own right, so much so that he would barely be able to bend them far enough to touch his pectorals or even dicks. 
+与您相比，您的嘴唇几乎无法贴合它们。 至少你还能握住他的粗壮手臂。
+他本身就长出了强大的肌肉组织，以至于他几乎无法将它们弯曲到足以触及他的胸肌甚至是阴茎的程度。
 
-\&lt;&lt;run setup.choice(&quot;[[Look upwards-&gt;Jorm_JormDescriptions_SmallerThanPlayer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="607" name="Jorm_JormDescriptions_SmallerThanPlayer_3" tags="" position="850,7600" size="100,100">Finally your gaze drift along his powerful and long neck, to his face.
-Your eyes are naturally guided that way.
+\&lt;&lt;run setup.choice(&quot;[[向上看-&gt;Jorm_JormDescriptions_SmallerThanPlayer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="607" name="Jorm_JormDescriptions_SmallerThanPlayer_3" tags="" position="850,7600" size="100,100">最后，你的目光顺着他有力而修长的脖子，到达了他的脸庞。
+你的眼睛自然被引导到那个方向。
 
 Even though there is still a massive cobra hood to draw your attention, the spiralling patterns adorning it throbs with light. They pulse inwards and brought you to look upon his admittedly very handsome features.
-Though really it is his eyes which are the real looker. 
+但最引人注目的是他的眼睛。
 
-They glow with all colors of the rainbow, pulsating from one to the next, a beautiful sea to get lost in. 
+它们闪耀着彩虹的所有颜色，从一种颜色跳到另一种，就像一片美丽的海洋，让人迷失其中。
 
-In fact, it is hard to tear your gaze away from them. 
+事实上，你很难将目光从他们身上移开。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="608" name="Jorm_NamingDialogue" tags="" position="975,7600" size="100,100">The naga clearly notices you, what is at first an amused smirk now turns into a wide grin of delighted recognition.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="608" name="Jorm_NamingDialogue" tags="" position="975,7600" size="100,100">纳迦很明显注意到了你，从是被逗乐了的微笑变成了现在欣喜的大笑。
+你可以从他那双彩虹般的眼睛里看到钦佩的光芒。
+随着他大力士般的肌肉嘎吱嘎吱作响，大蛇给了你一个简短但礼貌的鞠躬。它的优雅只因他肌肉发达的体格和他自己的大屌而受损。
+当他再次挺直身体时，他直视着你的眼睛。
 
-You can see the glint of admiration in his rainbow eyes.
-Herculean brawn creaks and groans as the serpent gives you a brief but nonetheless courteous bow. Its elegance is only marred by his musclebound physique and his own cocks.
-He looks you right in the eyes as he straightens himself again.
+&quot;我很高兴我们又有机会见面了，我希望是在更友好的条件下。&quot;
+他说话的声音异常洪亮，坦率得惊人。
+它充满了音量和音色，但也充满了难以抑制的欲望和欲望。
 
-&quot;I am glad that we get another chance to meet, in what I hope are going to be more amicable conditions.&quot;
-He speaks with a wondrously sonorous voice and a surprising amount of candor.
-It is full of volume and timbre, but also brimming with barely contained lust and desire.
+仍然有一些问题在你的脑海中。
 
-Still there are certain questions on your mind.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="609" name="Jorm_NamingDialogue_2" tags="" position="1100,7600" size="100,100">&quot;我知道你可能不记得了，因为我们上次见面时，我的处境要可怜得多。我甚至都不是一只动物。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="609" name="Jorm_NamingDialogue_2" tags="" position="1100,7600" size="100,100">&quot;I know you may not remember, as last time we met I was in a considerably more pitiful state. I was barely even a feral animal.&quot;
-
-His grin all but vanishes, making way for a wistful sigh.
-His gaze returns to you and starts to drift down your body.
+他的笑容几乎消失了，取而代之的是一声若有所思的叹息。
+他的目光回到你身上，开始顺着你的身体向下移动。
 
 The coloration of his eyes and hood turn into a muted grey red. His sorrows seem to conflict with his arousal.
-He licks his lips, his hands meet each other on the way down.
-He rubs them together so hard his knuckles nearly seem to pop out.
+他舔了舔嘴唇，他的双手在向下的过程中相碰。
+他用力地揉着它们，连指节都几乎要弹出来了。
 
-&quot;Just thinking back to it already…&quot;
+&quot;只是回想起来就...&quot;
 
-&lt;&lt;link &quot;Continue&quot; setup.getJormIntroductionPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="610" name="Jorm_NamingDialogue_FuckedNaga" tags="" position="1225,7600" size="100,100">&quot;The way you took me. How your warmth filled me… it was…&quot;
-He pauses for a moment and a shudder rolls through his body, while a gush of pre spurts from his shafts.
+&lt;&lt;link &quot;继续&quot; setup.getJormIntroductionPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="610" name="Jorm_NamingDialogue_FuckedNaga" tags="" position="1225,7600" size="100,100">&quot;你那拥抱我的姿态，那种温暖我的方式，真的是...&quot;
+他停顿了一会儿，身体一阵颤抖，他的下体也同时喷出了一股前列腺液。
 
-&quot;I could feel your unbridled lust rush through me. It was like a fire illuminating the darkness that had taken hold of my mind. \
-Your seed washed it all away, like a purifying rain cleanses the land, it freed me of the affliction controlling me.&quot;
+&quot;我可以感觉到你肆无忌惮的欲望冲过我。这就像一把火照亮了占据我头脑的黑暗。 \
+你的精种洗净了这一切，就像净化的雨水洗净了土地，它使我摆脱了控制我的苦难。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="611" name="Jorm_NamingDialogue_VoredNaga" tags="" position="100,7725" size="100,100">&quot;When you took me into yourself and surrounded me in your warmth..&quot;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="611" name="Jorm_NamingDialogue_VoredNaga" tags="" position="100,7725" size="100,100">&quot;当你把我带入你自己里面，并把我包围在你的温暖中的时候...quot;
 
-He pauses for a moment and a shudder rolls through his body, while a gush of pre spurts from his shafts.
+他停顿了一会儿，身体一阵颤抖，他的下体也同时喷出了一股前列腺液。
 
-&quot;Your unbridled, all consuming lust shone like a beacon as you unraveled me. \
-In that brief moment where you stripped me bare and we became one, you burned away the affliction which had cast me into darkness. \
-For the first time in… I don&#39;t know how long, I was truly free when you released me back into the swamp.&quot;
+&quot;当你揭开我的面纱时，你肆无忌惮的、强烈的欲望就像灯塔一样闪耀。\
+在那一刻，你剥光了我的衣物，我们合二为一时，你烧毁了使我陷入黑暗的痛苦。 \
+这是第一次...我不知道过了多久，当你把我放回沼泽时，我才真正得到了自由。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="612" name="Jorm_NamingDialogue_GotFuckedByNaga" tags="" position="225,7725" size="100,100">&quot;When I took you into myself and felt your warmth fill me…&quot;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="612" name="Jorm_NamingDialogue_GotFuckedByNaga" tags="" position="225,7725" size="100,100">&quot;当我把你纳入自己的身体，感受到你的温暖充满了我的时候...&quot;
 
-He pauses for a moment and a shudder rolls through his body. A gush of pre spurts from his shafts.
+他停顿了一会儿，身体一阵颤抖，他的下体也同时喷出了一股前列腺液。
 
-&quot;The power that I felt when you melted away inside me and we became one, if for but a brief moment… \
-In that moment our souls touched and I could feel, see, that unbridled flame of lust inside you. \
-And just like our souls, it touched me, scorched me, illuminated my mind and burned away the darkness holding me trapped.&quot; 
+&quot;当你在我体内融化时，我感受到了力量，我们成为一体，即使只是短暂的瞬间...\
+在那一刻，我们的灵魂相触，我可以感觉到，看到，你体内那肆无忌惮的欲望火焰。\
+就像我们的灵魂一样，它触动了我，炙烤着我，照亮了我的心灵，烧掉了困住我的黑暗。&quot; 
 
-He let out a rumble, before sucking down the drool pooling in his mouth.
+他发出隆隆声，然后吸下嘴里积聚的口水。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_GotFuckedByNaga_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="613" name="Jorm_NamingDialogue_GotFuckedByNaga_2" tags="" position="350,7725" size="100,100">&quot;R-Right! Let me return what I took. It is the least I could do now.&quot;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_GotFuckedByNaga_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="613" name="Jorm_NamingDialogue_GotFuckedByNaga_2" tags="" position="350,7725" size="100,100">&quot;对，对了! 我把我拿走的东西还给你。这是我现在至少可以做的。&quot;
 
-He utters and reaches forward to touch your chest with one hand.
+他说着，伸出一只手触摸你的胸部。
 &lt;&lt;SymbioteName&gt;&gt; reaches out in for him in turn as the symbiotic goo covering you stretches forth. 
 His hand submerges inside you. It is impossible for you to see where &lt;&lt;SymbioteName&gt;&gt;&#39;s goo end and his begin.
+你感受过的最奇怪的感觉流过你的全身，接着是一股突然的、激发活力的能量涌动。
 
-The strangest sensation flows through you, followed by a sudden, reinvigorating rush of energy.
-
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="614" name="Jorm_NamingDialogue_ToNamingPrompt" tags="" position="475,7725" size="100,100">&lt;&lt;if setup.sizeCharactercomparison($CharacterSheet_Jorm, $CharacterSheet_Player) &gt; setup.Comparators.BIGGER&gt;&gt;\
-His tail shifts and comes up next to him. With a motion of his hand he offers you to have a seat upon him.
-It feels rather strange, he is about as hard as you&#39;d expect from someone so shredded, yet it is a little squishy, just enough to not be uncomfortable to sit on.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="614" name="Jorm_NamingDialogue_ToNamingPrompt" tags="" position="475,7725" size="100,100">&lt;&lt;if setup.sizeCharactercomparison($CharacterSheet_Jorm, $CharacterSheet_Player) &gt; setup.Comparators.BIGGER&gt;&gt;\
+他的尾巴移到了他的旁边。 他挥了挥手，让你坐在他身上。
+这感觉相当奇怪，它几乎和你想象的一样硬，但它又有点软，刚好不至于让人坐着不舒服。
 &lt;&lt;/if&gt;&gt;\
 
-&quot;You can feel it, yes?&quot;
-He asks as he looks through you again. His hood has turned into a brighter yellow colour now.
+&quot;你可以感受到它，对吧？&quot;
+他一边问，一边又看了看你。 His hood has turned into a brighter yellow colour now.
 
-&quot;The connection that we both share? It was only faint at first, but now that we&#39;re this close together, it has grown so much stronger. It is so much easier to perceive.&quot;
+&quot;我们共同的联系？起初它只是微弱的，但现在我们如此亲密，它变得如此强大。这很容易被察觉到。&quot;
 
-You can feel &lt;&lt;SymbioteName&gt;&gt; stirring in the back of your mind. Your permanent companion is unusually animated.
+你能感受到&lt;&lt;SymbioteName&gt;&gt; 它在你的脑海中涌动着。你那永久的伴侣异常活泼。
 
-&quot;Ahh? What I mean…?&quot;
-He wonders, before his eyes go wide and he nods.
+&quot;啊？我是什么意思...？&quot;
+他想了想，然后睁大眼睛点了点头。
 
-&quot;Ah! I understand. I was talking to the one you call &lt;&lt;SymbioteName&gt;&gt;, host. So it seems that he cannot speak through you? Or do you choose not to say what he tells you to? Can you even hear what he says?&quot;
+&quot;啊，我明白了。我之前在跟被你称作 &lt;&lt;SymbioteName&gt;&gt;说话，宿主.所以他好像不能通过你说话？ 还是你选择不说他让你说的话？ 你能听到他说什么吗？&quot;
 
-&lt;&lt;set $passageName = &quot;Share info about the dream that shaped &quot;+ $CharacterSheet_Player.symbiote.name&gt;&gt;\
+&lt;&lt;set $passageName = &quot;分享关于塑造了&quot;+ $CharacterSheet_Player.symbiote.name&gt;&gt;的梦的信息\
 \&lt;&lt;run setup.choice(&quot;[[$passageName-&gt;Jorm_NamingDialogue_ToNamingPrompt_WithinDreams]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Refuse to answer him-&gt;Jorm_NamingDialogue_ToNamingPrompt_RefuseAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="615" name="Jorm_NamingDialogue_ToNamingPrompt_WithinDreams" tags="" position="600,7725" size="100,100">You shake your head and tell him that outside of some weird dreams, you can&#39;t remember ever having ‘spoken&#39; with &lt;&lt;SymbioteName&gt;&gt;, and even in those dreams you never heard him talk.
+\&lt;&lt;run setup.choice(&quot;[[不回应-&gt;Jorm_NamingDialogue_ToNamingPrompt_RefuseAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="615" name="Jorm_NamingDialogue_ToNamingPrompt_WithinDreams" tags="" position="600,7725" size="100,100">你摇摇头，告诉他除了一些奇怪的梦之外，你不记得曾经和&lt;&lt;SymbioteName&gt;&gt;说过话，甚至在那些梦里你也没有听到他说话。
 
-The naga nods in response as the yellow shifts towards a strangely warm blue. 
+当黄色变为异常温暖的蓝色时，纳迦点头回应。
 
-&quot;I see! Very well then. I shall talk to you too then. It is just as well and only proper, for you have brought my sire and me together again.&quot;
-He practically beamed with his smile and shuffled ever so much straighter in his ‘seat&#39;. 
+&quot;我明白了，非常好！ 那我也要和你谈谈。这是我应该做的, 因为你让我的陛下和我再次走到了一起。&quot;
+他几乎笑得合不拢嘴，在他的&#34;座位&#34;上越坐越直。
 
-&lt;&lt;set $passageName = &quot;Ask why he calls &quot;+ $CharacterSheet_Player.symbiote.name +&quot; his &#39;sire&#39;&quot;&gt;&gt;\
+&lt;&lt;set $passageName = &quot;问他为什么称呼&quot;+ $CharacterSheet_Player.symbiote.name +&quot;为他的&#39;陛下&#39;&quot;&gt;&gt;\
 \&lt;&lt;run setup.choice(&quot;[[$passageName-&gt;Jorm_NamingDialogue_ToNamingPrompt_Sire]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Refuse to answer him-&gt;Jorm_NamingDialogue_ToNamingPrompt_RefuseAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="616" name="Jorm_NamingDialogue_ToNamingPrompt_Sire" tags="" position="725,7725" size="100,100">Sire? He promptly clicks his tongue and tilts his head as one of his hands comes up to his face with a wavy motion.
+\&lt;&lt;run setup.choice(&quot;[[不回应-&gt;Jorm_NamingDialogue_ToNamingPrompt_RefuseAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="616" name="Jorm_NamingDialogue_ToNamingPrompt_Sire" tags="" position="725,7725" size="100,100">当他的一只手以波浪形动作抚上他的脸时，他立刻咂了咂舌头并歪了歪头。
 
-&quot;I am afraid there is no easy answer to that question, for I myself don&#39;t entirely understand it either.&quot;
-He responds and smirks.
+&quot;这个问题恐怕没有简单的答案，因为我自己也不完全理解。&quot;
+他回应并笑了。
 
-&quot;But let me try. Maybe speaking out loud helps connect the dots I have been missing so far. \
-You see, &lt;&lt;SymbioteName&gt;&gt; and I share a bond that is… somewhat similar to what you and he shares, and yet it&#39;s different. \
-We are kin, in a way. \
-We haven&#39;t been before, but now we are. Whether by choice or accident, during our last encounter, he has given me a sliver of himself, of his very being even, \
-his burning passion and lust, which I since carried like a torch to burn away the darkness the Corruption poses.&quot;
+&quot;不过让我试一下。也许大声说出来有助于连接我到目前为止所遗漏的点。\
+你看， &lt;&lt;SymbioteName&gt;&gt;和我的关系......有点类似于你和他的关系，但又有所不同。\
+在某种程度上，我们是亲戚。 \
+我们之前不是，但现在我们是了。无论是出于选择还是偶然，在我们的最后一次相遇中，他给了我他自己的一小部分，甚至是他的存在， \
+他燃烧的激情和欲望，从那以后就像火炬一样烧毁着腐败造成的黑暗。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="617" name="Jorm_NamingDialogue_ToNamingPrompt_RefuseAnswer" tags="" position="850,7725" size="100,100">He promptly clicks his tongue and tilts his head as one of his hands comes up to his face with a wavy motion.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="617" name="Jorm_NamingDialogue_ToNamingPrompt_RefuseAnswer" tags="" position="850,7725" size="100,100">当他的一只手以波浪形动作抚上他的脸时，他立刻咂了咂舌头并歪了歪头。
 
-Even with your cold response, his interest in you does not wane.
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="618" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer" tags="" position="975,7725" size="100,100">&quot;I am freed from the feral beast I once was, for which you have my deepest thanks. I will do what I can to repay this debt I now owe you.&quot;
-He finishes, with a deep red glowing within his eyes and hood.
+即使你的反应冷淡，他对你的兴趣也没有减弱。
 
-&quot;It may sound incredibly bold of me, considering what I just said, but may I be so forward as to request your aid again? I am sure it will serve us both.&quot;
-He suggests and motions to the side, but stops midway. His eyes dart around as if he searches something that is no longer there.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="618" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer" tags="" position="975,7725" size="100,100">&quot;我从曾经的野兽中被解脱出来，对此我深表感谢。 我会尽我所能来偿还我现在欠你的人情。&quot;
+他说完，他的眼睛和兜帽里发出深红色的光。
 
-As if he is only now becoming aware of the devastation that his emergence has caused. 
+&quot;我刚才所说的话可能听起来非常大胆，但我是否可以再次请求你的帮助呢？我相信这对我们俩都有好处。&quot;
+他说着并向旁边移动，但中途停了下来。他的眼睛飞快地转来转去，好像在寻找什么已经不在了的东西。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="619" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_2" tags="" position="1100,7725" size="100,100">&quot;Err, right. As you no doubt saw when you arrived, I am gathering the Lost to me. \
-I do so in an attempt to give them slivers of myself, so they too can regain their minds like I did when you gave me a piece of yourself. \
-I have tried several approaches, but I have yet to succeed like you did.&quot;
+好像他现在才意识到他的出现所造成的破坏。
 
-He tries to rub his forehead, but his bulk prevents him from fully reaching it.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="619" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_2" tags="" position="1100,7725" size="100,100">&quot;呃，对。正如你到达时所见，我正在为我收集迷失者。\
+我这样做是为了给他们一些我自己的一部分，这样他们也可以像我给我一块自己的一部分时那样重新振作起来。\
+我尝试了几种方法，但我还没有像你那样成功过一次。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="620" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_3" tags="" position="1225,7725" size="100,100">&quot;Though I admit that my memory is hardly infallible, I believe my technique can be improved. \
-It doesn&#39;t seem like I will be running out of opportunities to experiment either. The Lost only seem to grow more numerous no matter how many I devour. \
-Which is just as well as they provide me with sustenance and power, so even when I fail, I become stronger and smarter for it.&quot;
-He pauses for a second and turns his gaze back to you and away from the destruction. 
+他试着揉额头，但他的身体太大，无法碰不到。
 
-&quot;And now that you are here… if you lend me your aid, I am sure that it will be only a matter of time before I succeed.&quot;
-He smiles wide and expectantly at you, but all you can see are the two massive cocks throbbing in audible excitement. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="620" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_3" tags="" position="1225,7725" size="100,100">&quot;虽然我承认我的记忆力不是万无一失的，但我相信我的技术可以提高。\
+似乎我也不会再也没有机会进行实验。无论我吞噬多少迷失者，他们似乎只会越来越多。\
+就像它们为我提供了营养和力量一样，即使我失败了，我也会因此变得更坚强、更聪明。&quot;
+他停顿了一下，然后将目光从废墟中移开，转回你身上。
 
-Boom. Boom. Boom. 
-Each time his heart beat sent them bouncing.
+&quot;既然你在这里...如果你能帮助我，我相信我成功只是时间问题。&quot;
+他满怀期待地对你微笑，但你只能看到两根巨大的阴茎兴奋地抽动着。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="621" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_4" tags="" position="100,7850" size="100,100">The naga took that moment of silence for indecision as he raises his hands in placative fashion. 
+砰，砰，砰。
+每次他的心跳都会使它们弹起来。
 
-&quot;You need not decide now. I realize I ask much, for it is no easy task and the commitment necessary will be great. Take your time to think it over.&quot;
-He advises with a little smirk, which is followed by visible embarrassment creeping into his expression.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="621" name="Jorm_NamingDialogue_ToNamingPrompt_PostAnswer_4" tags="" position="100,7850" size="100,100">当纳迦以安抚的方式举起双手时，他因犹豫不决而沉默了片刻。
 
-It is kind of amusing to see a titan of his built looking this embarrassed. 
+&quot;你现在不需要决定。我意识到我的要求很高，这不是一项容易的任务，所需的付出也将是巨大的。花点时间好好考虑一下吧。&quot;
+他微微一笑，然后表情中流露出明显的尴尬。
 
-&quot;M-Maybe in the meantime, could I, yet again, ask you for your help with a different problem of mine? You see, while I was Lost, \
-I forgot much of myself and I have only recently been remembering things again, and while I think I have a good idea of what I once did, there is one thing that continues to elude me no matter how hard I try.&quot;
-He pauses and purses his lips. 
+看到一个身材魁梧的巨人如此尴尬，真是有点好笑。
+
+&quot;也许在此期间，我能再次请你帮我解决另一个问题吗？你看，while I was Lost, \
+我忘记了很多关于自己的事情，直到最近我才重新想起一些事情，虽然我觉得我很清楚自己曾经做过什么，但有一件事，无论我怎么努力，都无法理解。&quot;
+他停下来抿了抿嘴唇。
 
 &quot;Could you, my sire, perhaps look deep into our connection and reveal what has so far escaped me? Can you tell me who I am?&quot;
 
