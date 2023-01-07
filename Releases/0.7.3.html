@@ -43027,141 +43027,141 @@ You notice that Abel is wearing the ceremonial kit reserved for the Herald of th
     {
         setup.completeAchievement(&quot;Ability_MemoriesOfNyx&quot;);
     }
-};&gt;&gt;</tw-passagedata><tw-passagedata pid="1250" name="Ending_UncertainFate" tags="Overworld" position="1225,15600" size="100,100">(Congratulations on reaching the end of the current content of the main story. You can now begin a newgame+ in order to explore and trigger different endings.)
+};&gt;&gt;</tw-passagedata><tw-passagedata pid="1250" name="Ending_UncertainFate" tags="Overworld" position="1225,15600" size="100,100">(恭喜你到达了当前主要故事内容的结尾。现在你可以开始一轮新游戏+ 为了探索、触发其他结局。)
 
 \&lt;&lt;run setup.choice(&quot;[[The End (for now)-&gt;Ending_UncertainFate_2]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Go back-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1251" name="Ending_UncertainFate_2" tags="" position="100,15725" size="100,100">\&lt;&lt;run setup.completeAchievement(&quot;Achievement_IncompleteMemories&quot;);&gt;&gt;
 &lt;&lt;include Ending&gt;&gt;</tw-passagedata><tw-passagedata pid="1252" name="Planetary69Ending" tags="" position="225,15725" size="100,100">((To be implemented at a later stage!))
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1253" name="Death_NyxDungeon" tags="" position="350,15725" size="100,100">Your eyelids flutter as you feel yourself slipping away. A tendril of unease coils in your gut, but it&#39;s quickly forgotten as darkness takes over. 
-There&#39;s a brief moment of disorientation as your soul feels like it&#39;s being shaken awake. 
+\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1253" name="Death_NyxDungeon" tags="" position="350,15725" size="100,100">当你感觉自己的存在快要消失的时候，你的眼皮颤动了。不安的卷须缠绕在你的肚子里，但随着黑暗接管了一切，它很快便被遗忘。
+当你的灵魂感觉像被震醒时，你感到一阵短暂的迷茫。
 
-And then you&#39;re falling, tumbling through the darkness.
+然后你倒下了，跌进了黑暗。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death_NyxDungeon_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1254" name="Death_NyxDungeon_2" tags="" position="475,15725" size="100,100">A burning light surrounds your formless self.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death_NyxDungeon_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1254" name="Death_NyxDungeon_2" tags="" position="475,15725" size="100,100">火光包围着你无形的自我。
 
-Some fragment of what you remember as &quot;sense&quot; slowly come back to you.
+一些你记忆中“清醒”的片段慢慢回到了你的身边。
 
-You see the light. It&#39;s so powerful it feels like you&#39;re on fire.
+你看到了那光。它是如此强烈，感觉好像你要被点燃了一样。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death_NyxDungeon_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1255" name="Death_NyxDungeon_3" tags="" position="600,15725" size="100,100">Nyx shines down upon you, bathing you in its warm embrace. But as you try to move closer, it seems to pulse and shimmer, rejecting your presence.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death_NyxDungeon_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1255" name="Death_NyxDungeon_3" tags="" position="600,15725" size="100,100">Nyx照耀着你，你沐浴在它温暖的怀抱里。但当你试图靠得更近时，它似乎在跳动和闪烁，拒绝着你的存在。
 
-The light bursts and you wake up. You&#39;re disoriented for a moment, but then you recognize the entrance of the castle.
+那光一闪，你醒了。你一时迷失了方向，但随后你认出了城堡的入口。
 
 \&lt;&lt;run setup.choice(&quot;[[Get up-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1256" name="Death" tags="" position="725,15725" size="100,100">\&lt;&lt;run $CharacterSheet_Player.removeAbilityRuntimeData(setup.Ability_EmbracedByNyxsLight);&gt;&gt;
-You black out...
+你昏了过去...
 
 \&lt;&lt;if $DeathText == setup.DeathTextEnum.POST_APOTHUS&gt;&gt;
-Your soul shakes with unease.
+你的灵魂在不安中颤抖。
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death 2]]&quot;);&gt;&gt;
 \&lt;&lt;if $DeathText != setup.DeathTextEnum.POST_APOTHUS&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Skip-&gt;Village]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1257" name="Death 2" tags="" position="850,15725" size="100,100">Time moves on...
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1257" name="Death 2" tags="" position="850,15725" size="100,100">时间流逝...
 
 \&lt;&lt;if $DeathText == setup.DeathTextEnum.POST_APOTHUS&gt;&gt;
-Apothus&#39;s rampage only grows with each passing days.
+Apothus的暴虐与日俱增。
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;if $DeathText == setup.DeathTextEnum.POST_APOTHUS&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death_Post_Apothus]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death 3]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1258" name="Death 3" tags="" position="975,15725" size="100,100">A burning light surrounds your formless self.
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1258" name="Death 3" tags="" position="975,15725" size="100,100">火光包围着你无形的自我。
 
-Some fragment of what you remember as &quot;sense&quot; slowly come back to you.
+一些你记忆中“清醒”的片段慢慢回到了你的身边。
 
-You see the light. It&#39;s so powerful it feels like you&#39;re on fire.
+你看到了那光。它是如此强烈，感觉好像你要被点燃了一样。
 
-You recognize this feeling.
+你认出了这种感觉。
 
-\&lt;&lt;run setup.choice(&quot;[[Get up-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1259" name="Death_Post_Apothus" tags="" position="1100,15725" size="100,100">A shadow is cast over your reforming body.
+\&lt;&lt;run setup.choice(&quot;[[Get up-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1259" name="Death_Post_Apothus" tags="" position="1100,15725" size="100,100">阴影笼罩着你正在恢复的身体。
 
-The shape of a demon, so massive and tainted it overshadows the eclipse itself.
+一个恶魔的形状，巨大而污秽，遮蔽了日食本身。
 
-A terrifying grins curls from Apothus&#39;s lips.
+Apothus的嘴唇卷起一个可怕的笑容。
 
-The monsters around him try to run, only to be taken by the flood of corruption dripping from his body.
+他周围的怪物试图逃跑，但只被从他身上滴落的腐化的洪流吞噬。
 
-You must leave...
+你必须离开...
 
-\&lt;&lt;run setup.choice(&quot;[[Use the Talisman to escape-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1260" name="Intro01" tags="" position="1225,15725" size="100,100">You walk along the empty streets of your ruined village, great plumes of smoke rising from homes and stalls. 
+\&lt;&lt;run setup.choice(&quot;[[Use the Talisman to escape-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1260" name="Intro01" tags="" position="1225,15725" size="100,100">你走在被毁的村庄里空荡荡的街道上，房屋和货摊升起滚滚浓烟。 
 
-Debris forces you to walk with caution, taking slow and careful steps as you wander through the eerily quiet remnants.
+碎片迫使你谨慎地行走，当你漫步于残垣断壁中时，四周诡异的安静，让你缓慢而小心地前行。
 
-Through the barred windows of small shacks lining the street, you couldn&#39;t see a single soul, doors half ajar, creaking on their rusted hinges. 
+透过街道两旁的小棚屋的铁窗，你看不到一个人，门半掩着，生锈的铰链吱吱作响。
 
-The Golden Bastion is eerily quiet- more so than usual after an attack.
+The Golden Bastion出奇地安静——在一次袭击后比平时更安静。
 
-Your tired eyes, filled with melancholy, turn upwards to gaze at the sky. 
-The sun is low on the horizon, bathing the barren sands with a soft orange glow. 
-Soon, that last bastion of light and warmth would sink below the shifting sands, swallowed by the march of time.
+你疲惫的眼睛，布满忧郁，向上凝视着天空。
+太阳低垂在地平线上，给贫瘠的沙滩洒上柔和的橙色光芒。
+不久，那最后的、光与温暖的堡垒沉入流沙之下，随着时间的推进被缓缓吞噬。
 
-The expanse of the world- the vast, eerie emptiness of the desert, and the yawning abyss of the sky above. It all makes your troubles feel meaningless; 
-a single grain of sand in a sea of millions, a sea which was shifted and warped by the winds and the storms. 
+广袤无垠的世界——无边无际、阴森空旷的沙漠，以及天空那无底的深渊。这些都让你觉得你的烦恼毫无意义;
+犹如一粒砂，沉浮于被狂风裹挟、被风暴扭曲的大海。
 
-Infinitesimally small.
+沧海一粟。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Intro02]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1261" name="Intro02" tags="" position="100,15850" size="100,100">A glint catches your eye in the purple twilight sky above. 
-One of the stars shines brighter than those around it, a magnificent mixture of oranges and reds, blazing like the flame of a brazier. It was quite beautiful, steadily growing larger and larger up in the sky. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Intro02]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1261" name="Intro02" tags="" position="100,15850" size="100,100">在紫色的薄暮中，一道闪光映入你的眼帘。 
+有一颗星星比周围的星星更亮，橙与红壮丽地混合，像火盆中的火焰一样燃烧着。它是那么漂亮，在头顶的苍穹中变得越来越大。
 
-Though... as you watch the spectacle, you hear an alarming sound. A rumble which starts as the dull roar of an engine quickly grows into an explosive scream. 
-The dancing light suddenly burst forth with a brilliant flash of white and orange, filling your vision. 
-Your heart begins to pound as you realize what was coming.
+尽管……当你注视着这一奇观时，你听到了一种令人惊恐的声音。像引擎咆哮般低沉的轰鸣声迅速发展成爆炸性的尖啸。
+舞动的光突然迸发出一道明亮的白色和橙色的闪亮，填满了你的视野。 
+当你意识到将要发生什么时，你的心开始砰砰直跳。
 
-Before you can react, you are overwhelmed by an earth-shattering blast. 
-You hear the sounds of crumbling stone and the cries of warped steel. 
+在你做出反应之前，你就被一场惊天动地的爆炸淹没了。
+你听到石头破碎的声音，钢铁扭曲的哭喊。
 
-The world quickly grows dark.
+世界很快便被黑暗淹没。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Intro03]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1262" name="Intro03" tags="" position="225,15850" size="100,100">You awaken sometime later, your thoughts murky and body heavy.
-Instead of pain, you feel as if you&#39;ve been submerged in a pool of warm honey.  
-A thick liquid gathers around you and rushes into your body from every orifice.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Intro03]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1262" name="Intro03" tags="" position="225,15850" size="100,100">过了一段时间，你醒了。你的思绪模糊，身体沉重。
+但感到的并非疼痛，相反，你觉得好像自己淹没在一池温暖的蜂蜜中。 
+一种浓稠的液体聚集在你周围，经由一个个孔洞钻入你的身躯。
  
-You try to scream, but the air in your lungs clashes with some thick goo entering your throat. It thrusts inside you without mercy. 
+你试图尖叫，但肺部的空气与进入喉咙的粘液发生冲突。它毫不留情地涌进你的体内。 
  
-It enters through your ears, your nose, and soon, you feel it swirling around the inside of your skull.
-As quickly as it appeared, it fully disappears in your body.
+它钻入了耳朵、鼻子，很快，你便感觉到它在你头骨内部的涡流。
+就像突然出现那样，它又完全、迅速地消失在你体内。
  
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Intro04]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1263" name="Intro04" tags="" position="350,15850" size="100,100">You suddenly gasp, your lungs filling with air once more. You gulp for air for a few more moments, your erratic breaths slowly stabilizing as the world once again turns peaceful. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Intro04]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1263" name="Intro04" tags="" position="350,15850" size="100,100">你突然喘了一口气，肺部再次充满了空气。你又喘了一会儿，紊乱的呼吸慢慢稳定下来，世界再次变得平静。
 
-As you plant your hands to the ground to get up, you feel as though you touched hot metal. Looking around, you noticed what little grass there was had been turned to ash.
+当你把手放在地上试图站起来的时候，你感觉仿佛碰到了炽热的金属。环顾四周，你发现这里的小草都变成了灰烬。
 
-You lay in the center of a large crater, its still-flaming edges licking at the street, staining the adobe exterior of nearby buildings with the harsh black of ash.
+你躺在一个大火山口的中心，那仍在燃烧的边缘舔蚀着街道，附近建筑物的土坯表面沾满了刺鼻的黑色灰烬。
 
-You quickly scramble backward away from the flaming center, crawling up the slope of the pit.
+你迅速地向后爬离燃烧的中心，爬上坑口的斜坡。
 
-What had happened? 
-Something that you&#39;d never quite witnessed before. 
-Something dangerous, something deadly.
-Yet, here you stand without a scratch. 
+发生了什么？
+一些你以前从未见过的事情。
+一些危险的，致命的事情。
+然而，你却毫发无损地站在这里。
 
-You think it best to reflect once you make it back home- it certainly doesn&#39;t feel safe to be outside. Looking down, you notice your body and clothes are stained with ash and dirt. 
-You decide to return home, where your bed is waiting for you.
+你觉得最好回到家里再做回顾——在外面肯定感觉不安全。低头一看，你发现自己的身体和衣服都沾满了灰尘。 
+你决定回家，家里的床还在等你。
  
-\&lt;&lt;run setup.choice(&quot;[[Go Home-&gt;Intro05]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1264" name="Intro05" tags="" position="475,15850" size="100,100">You enter your home. Closer to the center of town, it was fortunately spared from the chaos near the fringes. Everything is as you left it, bathed in soft moonlight coming in through the windows. 
+\&lt;&lt;run setup.choice(&quot;[[Go Home-&gt;Intro05]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1264" name="Intro05" tags="" position="475,15850" size="100,100">你走进你的家。幸运的是，它离城镇中心更近，没有发生边缘地区的混乱。一切都和你离开时一样，沐浴在从窗户透进来的柔和月光中。 
  
-It feels like something is moving inside of you.
-Your stomach turns, muscles growing increasingly sore as you stand in your dark kitchen.
+但你感觉好像有什么东西在你体内移动。
+站在黑暗的厨房里，你开始反胃，肌肉越来越酸楚。
  
-It&#39;s as though your blood has a mind of its own. You feel it pumping through your veins. You try to relax on your bed and eventually fall asleep out of exhaustion.
+这就好像你的血液有自己的思想一样。你能感觉到它在你的血管里跳动。你试着躺在床上放松，最终在疲惫中睡着了。
  
-\&lt;&lt;run setup.choice(&quot;[[Sleep-&gt;Intro06]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1265" name="Intro06" tags="" position="600,15850" size="100,100">You are surrounded by a cold, shifting void. Deep purple mist twists and curls around your legs; curling and twisting in wisps and trails. 
+\&lt;&lt;run setup.choice(&quot;[[Sleep-&gt;Intro06]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1265" name="Intro06" tags="" position="600,15850" size="100,100">你被冰冷、流动的虚空包裹着。深紫色的薄雾缠绕着你的双腿;卷曲，缠绕成缕缕细丝。
 
-It licks at your feet, caressing your skin with a glacial embrace. 
+它舔舐着你的脚，用冰冷的拥抱爱抚着你的皮肤。
 
-A dim violet sky stretches across the horizon, the brightest hues found directly above you- as though you&#39;re at the bottom of a deep, purple sea. 
+暗淡的紫色天穹横跨地平线，头顶上有着最明亮的色调-好像你是在一个幽深的、紫色海洋的底部。
 
-There was nothing for miles...
+方圆几公里内什么都没有...
 
-...and miles.
-...and miles.
+...几公里外也一样...
+...什么都没有。
 
-\&lt;&lt;run setup.choice(&quot;[[Look Around You-&gt;Intro06_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1266" name="Intro06_2" tags="" position="725,15850" size="100,100">Behind you, the harsh black plane seems to stretch as far as the eye could see, the distance occluded by a murky, dark fog. 
-Before you, there is naught but a single, endless, infinite drop. 
-The expanse descends into darker shades of purple.
-And at the very bottom- if there even was one- your eyes are scorched by one of the strongest and harshest lights you have ever seen.
-That intense purple light almost seems to throb like a heartbeat, shifting and simmering, writhing, growling, moaning, pulsing.
+\&lt;&lt;run setup.choice(&quot;[[Look Around You-&gt;Intro06_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1266" name="Intro06_2" tags="" position="725,15850" size="100,100">在你身后，那粗糙的黑色平面似乎一直延伸到目光的尽头，一团浑浊的黑雾遮盖其上。 
+在你面前，只有一个唯一的，无穷的，无限的水滴。
+广阔的空间没入到更深的紫色阴影中。
+在最底部——如果有最底部的话——你的眼睛被你所见过的最强烈、最刺眼的光灼伤了。
+那强烈的紫光几乎像心跳一样悸动着，流动着，沸腾着，扭动着，咆哮着，呻吟着，脉动着。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Intro06_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1267" name="Intro06_3" tags="" position="850,15850" size="100,100">You stand there for what feels like hours.
 
