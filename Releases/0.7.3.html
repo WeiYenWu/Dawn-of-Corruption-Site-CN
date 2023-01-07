@@ -37038,7 +37038,7 @@ Same goes for every stat that is currently affected by a modifier!</tw-passageda
 但这场战斗从未发生。事实上，他们看起来对现状很满意。
 
 \&lt;&lt;run setup.choice(&quot;[[继续调查-&gt;Jorm_FirstMeeting_PlayerSmall_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[离开-&gt;村庄]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="585" name="Jorm_FirstMeeting_PlayerSmall_2" tags="" position="600,7350" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
+\&lt;&lt;run setup.choice(&quot;[[leave-&gt;village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="585" name="Jorm_FirstMeeting_PlayerSmall_2" tags="" position="600,7350" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
 一股巨大的好奇心占据了你。这实在是很难看到迷失者不在贪婪地交配或传播着腐化。
 看到他们无动于衷值得调查一番。
 
@@ -37077,7 +37077,7 @@ Same goes for every stat that is currently affected by a modifier!</tw-passageda
 毕竟，他们通常会立即冲向海湾并在您的脚下狂吠，因为您的身影是不可能被忽视的。
 
 \&lt;&lt;run setup.choice(&quot;[[继续调查-&gt;Jorm_FirstMeeting_PlayerBig_3]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[离开-&gt;村庄]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="591" name="Jorm_FirstMeeting_PlayerBig_3" tags="" position="100,7475" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
+\&lt;&lt;run setup.choice(&quot;[[leave-&gt;village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="591" name="Jorm_FirstMeeting_PlayerBig_3" tags="" position="100,7475" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.firstTime.available = false&gt;&gt;\
 它足够激起你的好奇心，值得调查。 再走几步，您将穿越遥远的距离，靠近许多池塘之一。
 这个池塘的直径可能有&lt;&lt;print setup.getLength(3937)&gt;&gt;长，而且似乎充满了&lt;&lt;SymbioteColor&gt;&gt;的液体。
 
@@ -37377,251 +37377,251 @@ His hand submerges inside you. It is impossible for you to see where &lt;&lt;Sym
 
 &quot;Could you, my sire, perhaps look deep into our connection and reveal what has so far escaped me? Can you tell me who I am?&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_NamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="622" name="Jorm_NamingPrompt" tags="" position="225,7850" size="100,100">It started as a whisper, but slowly became louder, clearer. It was your own voice, resonating in your mind, uttering a name. The Name.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingPrompt]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="622" name="Jorm_NamingPrompt" tags="" position="225,7850" size="100,100">开始时声音很小，但慢慢地变得更大声、更清晰。 那是你自己的声音，在你的脑海中回荡，说着一个名字。那个名字。
 
 &lt;&lt;textbox &quot;$CharacterSheet_Jorm.info.name&quot; &quot;Jorm&quot;&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Whisper his name-&gt;Jorm_NamingPromptEnd]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="623" name="Jorm_NamingPromptEnd" tags="" position="350,7850" size="100,100">You utter the serpent&#39;s name. $CharacterSheet_Jorm.info.name and his eyes light up. A wide smile starts to spread across his muzzle.
+\&lt;&lt;run setup.choice(&quot;[[低声呼唤他的名字-&gt;Jorm_NamingPromptEnd]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="623" name="Jorm_NamingPromptEnd" tags="" position="350,7850" size="100,100">你呼唤着大蛇的名字， $CharacterSheet_Jorm.info.name 和他的眼睛亮了起来。他的嘴角开始绽放出灿烂的笑容。
 
-&quot;Y-yes! That… that sounds familiar. That sounds right.&quot; 
+&quot;没，没错！ 这...听起来很熟悉。听起来不错。&quot; 
 He murmurs in turn and starts to nod. 
 
-&quot;$CharacterSheet_Jorm.info.name that is… that is it. Thank you.&quot; 
-He looks at you again, as if he saw you for the first time now.
+&quot;$CharacterSheet_Jorm.info.name 这就是...就是这个。谢谢你。&quot; 
+他又看了你一眼，就好像他第一次见到你一样。
 
-A bit of a sly smile spread across his muzzle as he began to recline on his coils again. It was a low, steady grinding as the scales scrap against each other. 
+当他开始再次斜倚在盘起的脖子上时，他的嘴角露出一丝狡黠的微笑。鳞片互相摩擦，缓慢而又平稳。
 
-&quot;We will meet again &lt;&lt;SymbioteName&gt;&gt;... After all, the universe is ours to shape.&quot;
+&quot;我们会再次见面的，&lt;&lt;SymbioteName&gt;&gt;...毕竟，这个宇宙是我们塑造的。&quot;
 
-He gives you a glance before slithering away with uncanny speed, his eyes burning with purpose.
+他看了你一眼，然后以不可思议的速度溜走，他的眼睛里洋溢着目标。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="624" name="Jorm_PostNamingPrompt" tags="" position="475,7850" size="100,100">&lt;&lt;set $CharacterSheet_Jorm.quest.encounterPassages.jormPostNameSetup.available = false&gt;&gt;\
-A few hours after you leave the Golden Bastion, you feel a distant rumble.
-It rages from the horizon and gets increasingly louder, like a crash of thunder that never seems to end.
+离开金色堡垒几个小时后，你感觉到远处传来隆隆声。
+它从地平线上呼啸而来，声音越来越大，就像一声永不停歇的雷声。
 
-Soon you see him, &lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;, the monstrous naga beast. His form rises, taking over the scenery as he rushes towards you.
+很快你就看到了他，&lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;, 这只可怕的纳迦野兽。当他冲向你时，他的身影遮蔽了你的视线。
 
-He pounces, crashing upon your midriff, his hands groping your cocks with not a single moment wasted.
+他猛扑过来，撞在你的腹部，他的手毫不犹豫地摸索着你的阴茎。
 
-&quot;You&#39;re finally back.&quot; He mutters.
+&quot;你终于回来了。&quot; 他喃喃自语。
 
-&quot;Let us experience your boundless lust again, &lt;&lt;SymbioteName&gt;&gt;~&quot;
+&quot;让我们再次体验你无边无际的欲望吧，&lt;&lt;SymbioteName&gt;&gt;~&quot;
 
-&lt;&lt;link &quot;Continue&quot; setup.getSecondJormSizeDiffPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="625" name="Jorm_PostNamingPrompt_PlayerSmaller" tags="" position="600,7850" size="100,100">$CharacterSheet_Jorm.info.name lunges at you with a speed that should not be allowed for a creature of his size.
+&lt;&lt;link &quot;Continue&quot; setup.getSecondJormSizeDiffPassage()&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="625" name="Jorm_PostNamingPrompt_PlayerSmaller" tags="" position="600,7850" size="100,100">$CharacterSheet_Jorm.info.name向你猛扑过来，速度之快是他这种体型的生物所不允许的。
 
-He casts his shadow over you as his four massive arms come slamming down into the ground next to you, his fingers dig into the earth and tear deep trenches that would leave marks for generations to come. \
+当他的四只巨大的手臂砰地砸在你旁边的地上时，他将自己的影子投射在你身上，他的手指挖进泥土，撕开深深的壕沟，给后世留下印记。\
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;Or until the next time he would slither over it anyway. His huge forked tongue licks over your @[all|pecs|noverb] and down your belly with its @[all|abdominals|noverb] before it reaches your crotch. &quot;)&gt;&gt; 
 
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;With how absolutely huge he is, his tongue easily wraps around your @[all|cocks|noverb]. He goes on to display remarkable dexterity with that appendage as he starts to rub and stroke along your @[all|cocks|noverb]. &quot;)&gt;&gt;
 
-It is a tight, powerful and yet slick embrace that leaves you panting.
+这实在是一个紧致有力而又干净利落的拥抱，不禁让你气喘吁吁。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="626" name="Jorm_PostNamingPrompt_PlayerSmaller_2" tags="" position="725,7850" size="100,100">A second tongue emerges from &lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;&#39;s maw. It guides your maleness into his waiting, salivating maw, which quickly dives down your full length with a reckless abandon. \
-But such is the advantage of being a gigantic snake. Your girth rams its way down his esophagus, only to disappear in his chest.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="626" name="Jorm_PostNamingPrompt_PlayerSmaller_2" tags="" position="725,7850" size="100,100">第二条舌头从&lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;&#39;的嘴里冒出来。它引导你的男性气质进入他等待已久的、垂涎三尺的嘴里，不计后果地迅速潜入你的全身。 \
+但这就是作为一条巨大的蛇的优势。你的腰冲进他的食道，最后在他的胸部消失。
 
-You feel the hot, slimy embrace within his body, the powerful muscular contractions as the naga swallows and gulps. 
+你能感觉到他内炽热而又黏糊糊的身体拥抱着你，以及纳迦吞咽和大口吞咽时强大的肌肉收缩。
 
 Your hands come forward as you grasp his head and hood, holding on to him, trying to force him down even further.
-He grasps your sides and lift you up. He pulls you back into the embrace of his long, massive coils.
+他抓住你的两侧，把你举起来，拉回他巨大的长脖的怀抱之中。
 
 His &lt;&lt;SymbioteColor&gt;&gt; hide ripples beneath your body as he brings you tight into his embrace. 
 
-You are surrounded by his flesh.
+你被他的肉体所包围。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="627" name="Jorm_PostNamingPrompt_PlayerSmaller_3" tags="" position="850,7850" size="100,100">The noise of his body moving, its parts grinding together, it smothers out the rest of the world.
-Then this absolute juggernaut of a serpent makes use of his remarkable flexibility. He throws his hips forward and brings his absolutely gigantic members to bear against your body. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="627" name="Jorm_PostNamingPrompt_PlayerSmaller_3" tags="" position="850,7850" size="100,100">他的身体运动所产生的声音，它的部位磨合在一起，他把世界的其他一切都掩盖了。
+然后，这条巨蛇利用了他非凡的灵活性。他把臀部向前推，把他绝对巨大的阴茎们顶在你的身上。 
 &lt;&lt;if setup.getStatValue($CharacterSheet_Jorm, &quot;cock&quot;) &gt; setup.getStatValue($CharacterSheet_Player, &quot;height&quot;)&gt;&gt;\
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;The idea that his @[all|cocks|noverb] would be able to fit inside you is a laughable notion. &quot;)&gt;&gt; \
-Those monsters are larger than you!
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;认为他的@[all|cocks|noverb]能够进入你真是一个可笑的想法。&quot;)&gt;&gt; \
+那些巨物比你还大呢！
 &lt;&lt;/if&gt;&gt;\
 
-The sheer leverage his size affords him makes him handle you like a little doll. The lust that burns within his bright pink eyes makes it evident that he could not be reasoned with. \
-The first of his tapered lengths presses against your rear entrance, smears it with a deluge of pre. By volume alone it already found its way into you, preparing your rear for the inevitable penetration. 
+他的身材给他带来的绝对影响力让他像对待玩偶一样对待你。他明亮的粉红色眼睛里燃烧着的欲望表明他无法被说服。\
+The first of his tapered lengths presses against your rear entrance, 用大量的前列腺液涂抹它。仅就体积而言，它已经进入了您的体内，为不可避免的抽插做好了准备。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="628" name="Jorm_PostNamingPrompt_PlayerSmaller_4" tags="" position="975,7850" size="100,100">It is a monstrous sensation as it enters, the stretch… the pressure it exerts on your insides. A primal roar leaves your lips as your balls unload into $CharacterSheet_Jorm.info.name throat, gushing your thick cream down his needy esophagus. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="628" name="Jorm_PostNamingPrompt_PlayerSmaller_4" tags="" position="975,7850" size="100,100">它进入时，一种可怕的感觉席卷而来，它对你的扩张...它对你的内部施加的压力...A primal roar leaves your lips as your balls unload into $CharacterSheet_Jorm.info.name throat, gushing your thick cream down his needy esophagus. 
 
-It is only the first of many orgasms to follow. The gigantic beast of a naga milks you for all you&#39;re worth, stretching you impossibly far over his cocks.
+这只是随后的许多高潮中的第一个。巨大的纳迦野兽榨取了你的所有价值，将他的阴茎在你体内更加深入。
 
-He blows load after load into you, almost in perfect sync with your own climaxes. Each pump sees you swell larger with the seed he dumps into you, pushing your body&#39;s elasticity to ever greater limits.
+他一次又一次地射入你的体内，几乎与你自己的高潮完美同步。 每次高潮你都都因他倾倒在你体内的精种而膨胀得更大，一次次挑战你身体弹性的极限。
 Impossibly enough, the seed he drinks from you sees him grow larger as well. Each climax adds inches to his frame, which given his immense size had to be hundreds of tons worth each.
 
-The immense beast purrs rather happily, though his size makes it so loud, unbelievably powerful.
+这头巨大的野兽相当高兴地发出咕噜声，他的体型使他的声音如此响亮，这种力量实在令人难以置信。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="629" name="Jorm_PostNamingPrompt_PlayerSmaller_5" tags="" position="1100,7850" size="100,100">It is impossible to tell how much time passes in this embrace. The world is all but gone from view. Your entire world is enraptured, engulfed by $CharacterSheet_Jorm.info.name body.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="629" name="Jorm_PostNamingPrompt_PlayerSmaller_5" tags="" position="1100,7850" size="100,100">你不知道在这场拥抱中过了多少时间。 世界几乎从视野中消失了。你的整个世界都沉浸在$CharacterSheet_Jorm.info.name的身体中。
 
-It is narrowed down, reduced to the grinding noises of scales upon scales, the groaning of muscle fibres hundreds of meters long and the low growling and gurgling of cumbloated bellies.
-Orgasm follows orgasm in relentless pursuit until it all blurrs together in a drowned swamp of desire. \
-Your nose is filled with the stench of your mutual rutting, the reek of sex is overpowering.
+世界缩小了，只剩下鳞屑声，数百米长的肌肉纤维发出的呻吟声，以及那臃肿的腹部发出的低沉咆哮和咕噜声。
+性高潮接踵而至，直到它在淹没的欲望沼泽中变得模糊不清。\
+你的鼻子里充满了你们相互发情的臭味，性爱的气味令人难以抗拒。
 
-Time seems to melt away, becoming a distant and barely relevant concept as all that remains is the burning pleasure and passion of this eternal intercourse. 
+时间似乎融化了，成为一个遥远的、几乎不相关的概念，剩下的只是这场永恒性交燃烧的快乐和激情。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="630" name="Jorm_PostNamingPrompt_PlayerSmaller_6" tags="" position="1225,7850" size="100,100">But eventually even a near bottomless stamina runs out. The near endless appetite is sated. Consciousness slowly returns to a semblance of existence and the rut calms down. \
-You feel a little sore in the aftermath of it all, your belly still distended into a noticeable gut, but now you are cuddled firmly into the embrace of the naga&#39;s coils. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerSmaller_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="630" name="Jorm_PostNamingPrompt_PlayerSmaller_6" tags="" position="1225,7850" size="100,100">但最终即使是近乎无底线的耐力也会耗尽。近乎没有底线的胃口被满足了。你的意识慢慢恢复到存在的模样，这场性爱平静了下来。\
+在这一切之后，你感到浑身有点酸痛，你的肚子仍然膨胀成一个明显的长条，但现在你被紧紧搂在娜迦的怀抱中。
 
-&quot;The world will know what we&#39;re made of... We&#39;ll meet again soon.&quot;
+&quot;The world will know what we&#39;re made of...我们很快会再一次见面的。&quot;
 
 (in a future version)
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="631" name="Jorm_PostNamingPrompt_PlayerEven" tags="" position="100,7975" size="100,100">The naga presses against you, his hands rub over your chest and down along your abs as his enormous tail begins to wrap around your lower body. \
-In a display of immense power and surprising dexterity, he turns you around and your back meets his chest.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="631" name="Jorm_PostNamingPrompt_PlayerEven" tags="" position="100,7975" size="100,100">纳迦压在你身上，当他巨大的尾巴开始缠绕你的下半身时，他的手在抚摸着你的胸部和腹部。\
+在展示巨大的力量和惊人的灵巧时，他将你转过去，然后你的背碰到他的胸膛。
 
 &lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;) &gt; 100&gt;&gt;\
-His arms try - with futility - to wrap around your torso and pull you into a firm, powerful hug. \
-He does not quite clear your immense chest of course, but the sheer size of his own massive build does still allow him to give you a muscle hug.
+虽然这是徒劳的，他的手臂仍试图环绕着你的躯干，将你拉入一个坚定而有力的拥抱中。\
+当然，他并没有完全离开你巨大的胸膛，但他庞大的体型仍然能让他给你一个肌肉间的拥抱。
 &lt;&lt;else&gt;&gt;\
-His enormous arms wrap around your torso and engulf you in his incredible musculature.
+他巨大的手臂环绕着你的躯干，将你包裹在他令人难以置信的肌肉组织中。
 &lt;&lt;/if&gt;&gt;\
 
-You can feel his biceps grind against your body. How his chest flexes and swells against your back with each massive breath he takes. 
+你能感觉到他的二头肌在你的身体上摩擦。 他每次深吸一口气时，他的胸部都会在你的背上弯曲和膨胀。
 
 &quot;Let us fill each other~&quot; 
 
-He breathes heavily into your ear. You could smell the lust on his breath. The desire he exhales is intoxicating. \
+他在你耳边大力地呼吸。你可以闻到他呼吸中的情欲。他呼出的欲望实在是令人陶醉。\
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="632" name="Jorm_PostNamingPrompt_PlayerEven_2" tags="" position="225,7975" size="100,100">It is hard to say no really. Feeling the warmth of his luscious body press against you while his scales scrape along and massage over your form. \
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;His tail start to grind and rub over your groin, and soon come to squeeze your @[all|cocks|noverb] inbetween it.&quot;)&gt;&gt; \
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="632" name="Jorm_PostNamingPrompt_PlayerEven_2" tags="" position="225,7975" size="100,100">这真的很难抗拒。你感受他性感身体的温暖压在你身上，同时他的鳞片在你身上刮擦和按摩。\
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;他的尾巴开始磨擦你的腹股沟，很快就把你的@[all|cocks|noverb]夹在中间。&quot;)&gt;&gt; \
  
 &lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;) &gt; setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;)&gt;&gt;\
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;You can feel your @[all|cocks|one=presses~more=press] against a thick, slick and incredibly hot fold in his tail, which reveals itself to be the snake&#39;s positively gaping anus.&quot;)&gt;&gt; \
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;He puts his elasticity on display as it slides over your @[all|cocks|noverb], engulfing you fully in the moist and heated embrace of his thick and powerfully muscled tail.&quot;)&gt;&gt; \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你可以感觉到你的@[all|cocks|one=压在~more=p压在] 在它尾巴上的一个厚厚的、光滑的、令人难以置信的热褶皱上，这就是大蛇那敞开的肛门。&quot;)&gt;&gt; \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;当它滑过你的@[all|cocks|noverb]时，他将弹性展示出来，将你包围在他厚而强壮的肌肉尾巴的潮湿而又热情的拥抱中。&quot;)&gt;&gt; \
 &lt;&lt;else&gt;&gt;
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;Seconds later, it moves to slide over your @[all|cocks|noverb], engulfing you fully in the moist and heated embrace of his thick and powerful tail.&quot;)&gt;&gt; \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;不久, 它滑过你的@[all|cocks|noverb]，将你包围在他厚而强壮的肌肉尾巴的潮湿而又热情的拥抱中。&quot;)&gt;&gt; \
 &lt;&lt;/if&gt;&gt;\
-You feel it flex and massage, grip and knead around your maleness, but at the same time you can feel how his own maleness presses against your back and finds its way towards your own entrance. \
+你感受到它在弯曲和揉搓, 抓住和揉捏你的阴茎, 同时你可以感觉到他自己的生殖器在压在你的背部，找到了你自己的后门。 \
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;The tapered, yet brutally thick torpedos that are his cocks find easy purchase against your backside. A sudden thrust drives your own @[all|cocks|noverb] deep into $CharacterSheet_Jorm.info.name body. &quot;)&gt;&gt; \
 
-It is an incredible sensation.
+这真是一种令人难以置信的感觉。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="633" name="Jorm_PostNamingPrompt_PlayerEven_3" tags="" position="350,7975" size="100,100">The sheer girth of his shafts, their length and the texture, it all rails through your insides. It&#39;s as if they are not quite as solid as they appear. \
-Your hands grasp his coils as they wrap around you, his hands in turn squeeze hard into your pectorals, groping and kneading them with strong intent. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="633" name="Jorm_PostNamingPrompt_PlayerEven_3" tags="" position="350,7975" size="100,100">他的巨物的宽度，长度和质地，都在被你的身体感知，就好像它们看起来不像它们那样坚固。 \
+你的手抓住他那缠绕着你的脖子，他的手又用力地挤进你的胸肌，用力地摸索着揉捏着。
 
-You barely have to do anything in the undulating embrace of the naga. 
-He gropes and thrusts, massages and kneads.
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;Your @[all|cocks|one=is~more=are] treated to a marvellously warm envelope, which contracts and milks you with such strength that his flesh rubs and grinds over every inch of your maleness.&quot;)&gt;&gt;
-Meanwhile his shafts pump within you, up and down, in and out. His ass meets yours, again and again, his balls swinging back and forth, slapping against his tail and into your sack with delectable force.
+在纳迦起伏的拥抱中，您几乎不需要做任何事情。
+他抚摸又推挤，摩擦又揉捏。
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的@[all|cocks|one=被~more=被]包裹在一个非常温暖的包套里，它以如此强大的力量收缩和压榨你，以至于他的肉体在摩擦着你阴茎的每一寸。&quot;)&gt;&gt;
+与此同时，他的阴茎在你体内抽动，上下，进出。 他的屁股一次又一次地碰撞你自己的，他的睾丸来回摆动，拍打着他的尾巴并以令人愉悦的力量拍在你的阴囊上。
 
-To your size, it is but like a regular slap indeed, but for normal sized people, this would have been cataclysmic forces at work. \
-Each impact, each time his groin meets your ass, a veritable shockwave ripples forth.
+对你的体型来说，这确实就只像一些普通的击打，但对于正常体型的人来说，这将是一场灾难。\
+每次撞击，每次他的腹股沟碰到你的屁股，都会产生十足的震荡。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="634" name="Jorm_PostNamingPrompt_PlayerEven_4" tags="" position="475,7975" size="100,100">Similarly, the earth quakes as you roar out the inevitable climax. It could be heard for miles into every direction, half the wasteland would know of your release.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="634" name="Jorm_PostNamingPrompt_PlayerEven_4" tags="" position="475,7975" size="100,100">同样，当你在不可避免的高潮时咆哮的时候，整个大地都在震颤。这个声音在每个方向上延伸数英里都会被听到，半个荒原都会知道你高潮了。
 
-Unimaginable amounts of thick cream floods forth from your balls.
+份量难以想象的浓精从你的睾丸中喷出。
 
-The naga&#39;s tail engorges with what you pump into him, on top of the bulge your endowments already give him. But in turn, he too blows his load, right into you.
+纳加的尾巴里充满了你泵入他的液体，呈现在在你的阴茎已经给他的凸起之上。但反过来，他也将精液射入你体内。
 
-You feel the incredible heat spread through your form as his spooge fills your bowels, overflowing them, spills into your stomach and makes your belly dome with the sheer volume.
-It is heavy and so warm.
+当他的精液填满你的肠子，从它们内部溢出，溢出到你的胃里，让你的腹部如穹顶般顶起时，你感觉到令人难以置信的热量在你的身体中传播。
+你感受到这些液体很沉重，但很暖和。
 
-And it is only the beginning. 
+而这，只是一切的开端。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="635" name="Jorm_PostNamingPrompt_PlayerEven_5" tags="" position="600,7975" size="100,100">Your stamina and sexual appetite are near endless, as are &lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;&#39;s.
-The pleasure is all that matters, feeling his scales against your body, muscles grinding upon muscles, cocks pumping sheer ceaselessly.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="635" name="Jorm_PostNamingPrompt_PlayerEven_5" tags="" position="600,7975" size="100,100">你的耐力和性欲几乎无穷无尽，可与&lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;匹敌。
+快乐才是最重要的，感受他的鳞片贴着你的身体，肌肉摩擦着肌肉，阴茎不停地抽动。
 
-The two of you tumble over each other as you try to find ever new positions to rut in.
+当你们在探索新姿势时，你们两人互相翻滚。
 
-Two immense giants, stomping and crushing the already blasted wasteland, crushing through the pit that $CharacterSheet_Jorm.info.name calls home.
+两个巨大的巨人，踩踏和压碎已经爆炸的荒地，摧毁着$CharacterSheet_Jorm.info.name称之为家的地方。
 
-Entire lakes of cum form as minutes became hours, became days. 
+这段狂欢从以分钟计量变为了以小时计量，又变为了以天计量，出现了许多精液湖。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="636" name="Jorm_PostNamingPrompt_PlayerEven_6" tags="" position="725,7975" size="100,100">Eventually though, even the deepest wells of stamina are depleted and the grandest hungers are sated. 
-The carnal feast comes to an end, bellies bloat with cum, balls empty of seed - at least for the moment.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_PlayerEven_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="636" name="Jorm_PostNamingPrompt_PlayerEven_6" tags="" position="725,7975" size="100,100">最终，即使是最深的耐力之井也枯竭了，最庞大的饥饿者也得到了满足。
+肉体的盛宴结束了，两人的肚子里充满了精液，睾丸里也被清空了————至少目前如此。
 
-You couldn&#39;t help but notice that you have fucked the serpent larger. Each climax makes him bigger, each load of your seed pump his muscles, engorging his endowments.
+你不禁注意到你把蛇操得更大了。 每一次高潮都让他变得更大，每一次你的射精都会抽动他的肌肉，充实着他的巨物。
 
-Now his huge, powerful coils are wrapped around you once more. Like a bed and blanket in one. His upper body is next to you, two hands idly stroking your chest.
-A surprisingly merry grin is on his face.
+现在他巨大而有力的脖子次缠绕在你身上。 就像一张床和一张毯子。 他的上半身紧挨着你，两只手抚在你的胸口上。
+他的脸上露出令人惊讶的快乐笑容。
 
-&quot;The world will know what we&#39;re made of... We&#39;ll meet again soon.&quot;
+&quot;The world will know what we&#39;re made of...我们很快会再次见面的。&quot;
 
 (in a future version)
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="637" name="Jorm_PostNamingPrompt_PlayerBigger" tags="" position="850,7975" size="100,100">You grin down at the serpent, who in turn lunges at you with lustful desire. You barely even notice his impact against your gigantic form.
-He really is small compared to you, tiny even, but he makes up for that with sheer zeal and intent.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="637" name="Jorm_PostNamingPrompt_PlayerBigger" tags="" position="850,7975" size="100,100">你对着蛇咧嘴一笑，而他又带着强烈的欲望向你扑来。 你几乎没有注意到他对你巨大身躯的影响。
+与你相比，他真的很小，甚至很迷你，但他以纯粹的热情和意图弥补了这一点。
 
-His serpentine body does its very best to wrap around, to coil and engulf your endowments, and for a little while you let him try.
+他蛇形的身体尽最大努力缠绕、盘绕和包围你的下体，于是你决定给他一些时间试一试。
 
-\&lt;&lt;run setup.choice(&quot;[[Help him soothe his itch-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="638" name="Jorm_PostNamingPrompt_PlayerBigger_2" tags="" position="975,7975" size="100,100">&quot;Let me help you~&quot; You chime with your booming, gigantic voice and your hands reach down to grasp the horny muscle rope.
-He writhes and squirms, desperately trying to tease you by slithering along your hands.
+\&lt;&lt;run setup.choice(&quot;[[Help him soothe his itch-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="638" name="Jorm_PostNamingPrompt_PlayerBigger_2" tags="" position="975,7975" size="100,100">&quot;我来帮你吧~&quot; 你发出洪亮又巨大的声音，你的手伸下来抓住那条正在发情的肌肉长绳。
+他扭动着身子，拼命地想通过在你的手上滑行来刺激你。
 
-&quot;Fuck me!&quot; He demands. &quot;Fill me with your cum, with your power! Make me grrrrooowww!&quot;
-The serpent bellows, and even though his voice echos across the landscape with a volume that could burst eardrums, it only reaches your ears as a little squeaking. 
+&quot;操我！&quot; 他要求着。 &quot;用你的精液和你的力量填满我！让我增大吧！&quot;
+大蛇咆哮着，尽管他的声音以足以震破耳膜的音量在大地上回荡，但传到你的耳朵时只是轻微的吱吱声。
 
-For the moment you feel willing to entertain this idea. The little beasty provides an awful lot of teasing after all, and &lt;&lt;SymbioteName&gt;&gt; demands for your lust to be sated. The pressure in your balls has to be relieved. 
+目前你愿意接受这个想法。 毕竟这头小野兽已经给予你了太多的刺激，而且&lt;&lt;SymbioteName&gt;&gt;也要求你的欲望得到满足，必须释放你的睾丸的压力。
 
-\&lt;&lt;run setup.choice(&quot;[[Use him to jerk yourself off-&gt;Jorm_PostNamingPrompt_PlayerBigger_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="639" name="Jorm_PostNamingPrompt_PlayerBigger_3" tags="" position="1100,7975" size="100,100">&quot;Lets see if you can take me then.&quot; 
-Your voice rumbles lowly, ominously even, as your hands roams over and inspects the naga&#39;s body.
+\&lt;&lt;run setup.choice(&quot;[[Use him to jerk yourself off-&gt;Jorm_PostNamingPrompt_PlayerBigger_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="639" name="Jorm_PostNamingPrompt_PlayerBigger_3" tags="" position="1100,7975" size="100,100">&quot;看看你能不能承受我把。&quot; 
+你用低沉甚至不祥的声音说着，同时你的手在检查纳迦的身体。
 
-He really is a juggernaut, just a shame that he is so tiny compared to a titan like you.
-You find him to be remarkably stretchy and malleable, almost as if he has no actual bones to speak of.
-It gives him a freakish - and much needed - durability. 
+他真的是一个巨无霸，只是遗憾的是，与你这样的巨人相比，他是如此渺小。
+你发现他非常有弹性和延展性，就好像他没有真正的骨头。
+这使得他拥有反常而又十分需要的耐用性。
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;Muzzle first you pull him over your @[all|cocks|noverb], as if he is little more than a towel. He fits around your dick with ease. &quot;)&gt;&gt;
 
-He stretches so thin that his body loses most if not all of his definition.
-He grips around you with surprising power and strength, which really made him better than any fucktoy could ever hope to be.
-With how pent up you are, it doesn&#39;t take long for climax to emerge. 
+他伸展得如此之瘦，以至于他的身体失去了大部分甚至全部的definition。
+他以惊人的力量和力量抓住你，这真的让他比任何你希望的性玩具都要好。
+由于你被压抑太久，高潮很快就出现了。
 
 \&lt;&lt;run setup.choice(&quot;[[Fill him to the brim-&gt;Jorm_PostNamingPrompt_FillHim]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Deny him-&gt;Jorm_PostNamingPrompt_DenyHim]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="640" name="Jorm_PostNamingPrompt_FillHim" tags="" position="1225,7975" size="100,100">You feel generous enough to oblige his request, the pressure and pleasure grows too great for you to hold in anyway.
-You roar out as your load explodes forth and floods right into the eager $CharacterSheet_Jorm.info.name.
+\&lt;&lt;run setup.choice(&quot;[[Deny him-&gt;Jorm_PostNamingPrompt_DenyHim]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="640" name="Jorm_PostNamingPrompt_FillHim" tags="" position="1225,7975" size="100,100">你觉得自己足够慷慨地满足了他的要求，压力和快乐都增长得太大了，无论如何你都无法忍受。
+当你的精液爆炸般涌入$CharacterSheet_Jorm.info.name.时，你咆哮了起来。
 
-His grip is strong, but you still have to hold him in place, lest he launches off by the force of your orgasm.
+他抓地很紧，但你仍然必须把他按在适当的位置，以免他被高潮的洪荒之力击飞。
 With gritted teeth and a wide grin, you watch Jorm&#39;s form balloon outward.
-Cum drips from his muzzle and ass as your output greatly exceeds the rate at which he could stretch.
+精液从他的嘴里和后门滴落，因为你的输出大大超过了他可以伸展的速度。
 
 \&lt;&lt;run setup.choice(&quot;[[Fill him some more...-&gt;Jorm_PostNamingPrompt_FillHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="641" name="Jorm_PostNamingPrompt_FillHim_2" tags="" position="100,8100" size="100,100">His &lt;&lt;SymbioteColor&gt;&gt; hide draws so incredibly thin that he becomes practically see through, allowing you to witness the lake of cum you pump into him.
 
-He becomes almost as catastrophically huge as yourself. The squishy tube that is his body becomes nigh impossible to handle as he flops to the ground.
-You could see him grow. Slowly, but steadily, the bloatedness shrinks as your orgasm wanes and the output lessens.
+他几乎和你自己一样灾难性地变得巨大。当他躺在地上时，他那变成蠕动的管子的身体变得几乎无法处理。
+你注视着他的增大，缓慢而又稳定。随着你高潮的减弱和输出的减少，他不再那么臃肿了。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_FillHim_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="642" name="Jorm_PostNamingPrompt_FillHim_3" tags="" position="225,8100" size="100,100">His body groans and gurgles, his grip around your endowments in turn strengthens. It spurs you on to use him more, use him harder.
-You continue to jackhammer into him with ferocious desire, and make the most of his growth and insane durability.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_FillHim_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="642" name="Jorm_PostNamingPrompt_FillHim_3" tags="" position="225,8100" size="100,100">他的身体在呻吟，他对你的生殖器的控制反过来又加强了。这刺激着你更多地、更用力地使用他。
+你继续以凶猛的欲望冲击他，并充分利用他的增大和那惊人的耐久性。
 
-He is an amazing sleeve to ram into, the experience only becomes better with each climax you pump into him.
-A lake&#39;s worth of cum soon becomes an ocean, the size gap between the two of you steadily shrinks.
+他真是一个令人惊奇的飞机杯，随着你在他体内的每一次高潮，这种体验只会变得更好。
+一湖的精液很快就变成了海洋，你们两个人之间的大小差距稳步缩小。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_FillHim_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="643" name="Jorm_PostNamingPrompt_FillHim_4" tags="" position="350,8100" size="100,100">Many hours and dozens of orgasms go through before your balls finally empty. 
-At that point, $CharacterSheet_Jorm.info.name has grown to be your near equal in size. \
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;When he lets go of you @[all|cocks|noverb] and rises up to eye level with you, his eyes and markings glow in a powerful pink that only slowly turns back into his rainbow colours. &quot;)&gt;&gt; \
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_FillHim_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="643" name="Jorm_PostNamingPrompt_FillHim_4" tags="" position="350,8100" size="100,100">在你的睾丸最终被排空之前，许多小时和几十次高潮过去了。
+到了这时，$CharacterSheet_Jorm.info.name已经增长得和你差不多一样高了。\
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;当他放开你的@[all|cocks|noverb]并和你平视时, 他的眼睛和标记发出强烈的粉红色光芒，然后慢慢地变回他的彩虹色。&quot;)&gt;&gt; \
 
-&quot;Thank you.&quot; He churrs, his voice so much deeper, so much more powerful, now that he is a titan like you.
-&quot;This power…&quot; He huffs as he raises his arms, flexing them in a remarkable, wonderful display of huge. 
+&quot;感谢你。&quot; 他咕哝道。现在他的声音低沉得多，有力得多。他成为了像你一样的巨人。
+&quot;这种力量...&quot;当他举起双臂时，他喘着粗气，弯曲它们，以一种非凡、美妙的方式展示巨大的力量。
 
-&quot;We&#39;ll meet again soon.&quot;
+&quot;我们很快会再次见面的。&&quot;
 
 &quot;Time for me to show the world what I&#39;m made of... &quot;
 
 (in a future version)
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="644" name="Jorm_PostNamingPrompt_DenyHim" tags="" position="475,8100" size="100,100">And while he had demands you fill him… 
-Why should you? 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="644" name="Jorm_PostNamingPrompt_DenyHim" tags="" position="475,8100" size="100,100">尽管他要求你填满他...
+你有必要迎合他吗？
 
-He is in no position to demand anything.
+他没有资格提出任何要求。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_DenyHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="645" name="Jorm_PostNamingPrompt_DenyHim_2" tags="" position="600,8100" size="100,100">Your breathing becomes more laboured as you fight against the impending climax.
-He grip hard and tries to resist being removed, but he is powerless to stop you.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_DenyHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="645" name="Jorm_PostNamingPrompt_DenyHim_2" tags="" position="600,8100" size="100,100">当你与即将到来的高潮作斗争时，你的呼吸变得更加艰难。
+他用力抓着，试图抵制他被拔出来，但他无力阻止你。
 
-The pressure reaches its peak and breaches through your dam. You couldn&#39;t quite hold it all the way, $CharacterSheet_Jorm.info.name comes free just as you roar out your climax.
+压力达到顶峰，冲破了你的大坝。你无法完全坚持下去。 当你吼出你的高潮时，$CharacterSheet_Jorm.info.name就被拔了出来。
 
-\&lt;&lt;run setup.choice(&quot;[[Cum-&gt;Jorm_PostNamingPrompt_DenyHim_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="646" name="Jorm_PostNamingPrompt_DenyHim_3" tags="" position="725,8100" size="100,100">The world trembles as orgasm overwhelms, the flood of seed nearly tears the snake out of your hands, \
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;but you hold on tight to the desperately gulping reptile. He promptly rubs and strokes himself over and against your @[all|cocks|noverb]. &quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[Cum-&gt;Jorm_PostNamingPrompt_DenyHim_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="646" name="Jorm_PostNamingPrompt_DenyHim_3" tags="" position="725,8100" size="100,100">世界因高潮而颤抖，精液的泛滥几乎将大蛇撕碎, \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你紧紧抓住那只拼命吞咽的爬行动物。 他立即地摩擦和抚摸你的阴茎。&quot;)&gt;&gt;
 
-Your load flies onward, filling the pit &lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;&#39;s emergence has left behind. While it becomes a veritable lake to countless mortals, to you it is little more than a puddle.
-A lake wouldn&#39;t do though. You are hardly getting started. You do not stop until there is an ocean of your cum.
+你的精液向前飞去，填满了lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;&#39;出现时留下的坑。对无数凡人来说，它成了名副其实的湖泊，对你来说，它不过是一个小水坑。
+单单一个湖泊还不够。好戏还没开始呢。直到你的精液泛滥成海，你才会舍得停下来。
 
-\&lt;&lt;run setup.choice(&quot;[[Cum-&gt;Jorm_PostNamingPrompt_DenyHim_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="647" name="Jorm_PostNamingPrompt_DenyHim_4" tags="" position="850,8100" size="100,100">You reduce $CharacterSheet_Jorm.info.name to be little more than a toy, a tool for you to rub out climax after climax.
+\&lt;&lt;run setup.choice(&quot;[[Cum-&gt;Jorm_PostNamingPrompt_DenyHim_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="647" name="Jorm_PostNamingPrompt_DenyHim_4" tags="" position="850,8100" size="100,100">你不仅$CharacterSheet_Jorm.info.name当成一个玩具，你还把他当成一个让你擦掉一次又一次高潮之液的工具。
 
-Your arms feel ready to fall off from the exertion of masturbation, your balls seem ready to proclaim their emptiness, and so by the end of it, \
-$CharacterSheet_Jorm.info.name is dazed, barely even conscious. 
+你的手臂感觉已经准备好因手淫的用力而脱落，你的睾丸似乎已经准备好宣告它们的空虚，在你结束时，\
+$CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_DenyHim_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="648" name="Jorm_PostNamingPrompt_DenyHim_5" tags="" position="975,8100" size="100,100">He awakes, startled and in your lap, his gaze drifts about before it focuses on the wall that is your body. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Jorm_PostNamingPrompt_DenyHim_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="648" name="Jorm_PostNamingPrompt_DenyHim_5" tags="" position="975,8100" size="100,100">他醒了并被吓了一跳。在你的膝上，他的目光四处飘荡，然后聚焦在你那像墙一般的身体上。
 
-&quot;What happened?&quot; 
-He utters, before memories seemingly rushs back into him. 
+&quot;发生了什么？&quot; 
+他说道，然后记忆似乎又涌回了他的脑海。
 
-&quot;That was... unbelievable. Please, leave me some time to recover.&quot; He pouts.
+&quot;那真是...难以置信。请给予我一些时间来恢复。&quot; 他噘着嘴。
 
-&quot;We must meet again.&quot;
+&quot;我们必须再见一面。&quot;
 
 (in a future version)
 
@@ -37629,41 +37629,41 @@ He utters, before memories seemingly rushs back into him.
 
 The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; &lt;&lt;print setup.processFlavours(
     $CharacterSheet_Lost_Entity,
-    &#39;&quot;Spreeeeaaad...&quot; he moans as he stands over your chest, letting his @[all|cocks|noverb] drip thick ebon precum onto your chest.&#39;
+    &#39;&quot;传播...&quot; 他呻吟着踩在你的胸上，让他的阴茎在你的胸膛上滴落着厚厚的黑檀色的前列腺液。&#39;
 )&gt;&gt;
 
-The black spread across you, covering your body from tip to toe in his corrupting essence. 
+黑色在你身上蔓延开来，你从头到脚都被他腐化所覆盖。
 
-You feel the presence of $CharacterSheet_Player.symbiote.name being smothered by something far larger and more sinister until nothing remained but the husky voice of the Lost.
-Your eyes roll into the back of your head as you experience visions of yourself transformed into a voracious black monster, shoving your massive dick into your victims. 
+你感受到$CharacterSheet_Player.symbiote.name的存在被更大更险恶的东西所覆盖，直到除了迷失者沙哑的声音，什么都没有剩下。
+当你幻视到变成一个贪婪的黑色怪物，将你的巨大阴茎展现给受害者时，your eyes roll into the back of your head 
 
-A bond builds between you and the &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;. He has chosen you as a mate, a mate that will spread his gift to everything in the Barrens. 
+你和&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;之间已经建立了关系。 He has chosen you as a mate, a mate that will spread his gift to everything in the Barrens. 
 
-Yes. This is how it always should be. The power you truly craved. There is no point in resisting the call to your greater purpose. 
+是的。 这就是你应该做的。 这是你真正渴望的力量， 拒绝这种对你更伟大的目标的命令是没有意义的。
 
-You take the monster&#39;s pulsating rod into your mouth suck it eagerly. Your soul barely clings to you as you completely give yourself away to your new mate. 
+你把怪物那在脉动着的肉棒放进嘴里，急切地吸吮它。当你把自己的一切完全交给你的新伴侣时，你的灵魂几乎没有依附在你身上。
 
-You feel the &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;s orgasm coming; you tense your jaws and hold on like your life depended on it. 
+你感觉到&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;的高潮快要来了。您绷紧下巴并坚持下去，就像您的生命取决于它一样。
 
-&quot;GRAAHHHHH!&quot; The monster howls madly as thick loads of corrupting seed fills your very being.
+&quot;嘎啊啊啊啊啊啊！&quot; 当大量腐化的液体充满你的身体时，怪物疯狂地嚎叫。
 
-Your body bulges larger and larger, wider and wider still - more muscular and corrupted until the last of your memories fade into a pool of oily black. 
+你的身体膨胀得越来越大，越来越宽，越来越强壮，越来越腐败，直到你最后的记忆消失在一滩油腻的黑色池子中。
 
-Your soul breaks under the insatiable arousal. Now no longer compatible with your body, it bursts out of you and drifts upwards.
+你的灵魂在贪得无厌的勃起下崩溃。现在，它不再与你的身体兼容，它从你身上爆发出来并向上漂离了你。
 
 &lt;&lt;print setup.getFightReward($CharacterSheet_Lost_Entity, true)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[This body has moved on...-&gt;Death]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="650" name="Encounter_Start_Lost_Entity" tags="" position="1225,8100" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Lost_Entity, &quot;His @[all|cocks|one=rises~more=rise] to a full&quot;)&gt;&gt; &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lost_Entity, &quot;cock&quot;))&gt;&gt; as he sees you. It throbs with hunger.
+\&lt;&lt;run setup.choice(&quot;[[This body has moved on...-&gt;Death]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="650" name="Encounter_Start_Lost_Entity" tags="" position="1225,8100" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Lost_Entity, &quot;His @[all|cocks|one=rises~more=rise] to a full&quot;)&gt;&gt; &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lost_Entity, &quot;cock&quot;))&gt;&gt; as he sees you. 它因饥渴而悸动。
 
-&quot;More...&quot; It mumbles between groans.</tw-passagedata><tw-passagedata pid="651" name="Encounter_Win_Lost_Entity" tags="" position="100,8225" size="100,100">The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; is overwhelmed by your strength. Yet, his need to spread has consumed all reason within him long ago.
+&quot;再来...&quot; 他在呻吟之间低语着。</tw-passagedata><tw-passagedata pid="651" name="Encounter_Win_Lost_Entity" tags="" position="100,8225" size="100,100">腐化的&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; 被你的力量压倒了。然而，他传播的需求早已吸收了他内心的所有理智。
 
-While clutching his wounds, he charges at you.
+他一边抓着伤口，一边向你冲去。
 
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;lostWin1&quot;, 1, $CharacterSheet_Lost_Entity)&gt;&gt;
 
-The &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; does not try to get back up; laying himself bare. He finally sees that dominating you would be impossible. 
+&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;没有试图重新站起来，只是光着身子躺着。他终于知道，支配你是不可能的。
 
-He ruts against your flesh. Although wounded, his arousal still had to be sated. Lustful whines reach your ears as he spreads his legs and exposes his ass to you, desperately craving your attention.
+他对着你的肉体发着情。 虽然受了伤，但他的兴奋还是要得到满足。 当他张开双腿并将屁股暴露在你面前时，淫荡的哀鸣传到你的耳朵里，极度渴望你的注意。
 
 \&lt;&lt;set $CharacterSheet_Lost_Entity.quest.beatenOnce = true&gt;&gt;
 &lt;&lt;print setup.getFightReward($CharacterSheet_Lost_Entity)&gt;&gt;
@@ -37678,9 +37678,9 @@ He ruts against your flesh. Although wounded, his arousal still had to be sated.
 \&lt;&lt;run setup.setRandomRace($CharacterSheet_Lost_Entity.info.anatomy)&gt;&gt; 
 \&lt;&lt;run $CharacterSheet_Lost_Entity.info.name = &quot;The Lost &quot; + setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;
 \&lt;&lt;run $Encounter_Target=$CharacterSheet_Lost_Entity&gt;&gt;
-After an hour of travel in the harsh deserts of the Barrens, you hear a strange sound. It sounds like a fusion between a deep moan and a terrifying growl.
+在Barrens中严酷的沙漠中行走了一个小时后，您听到了一种奇怪的声音。 这听起来像是深沉的呻吟和可怕的咆哮之间的融合。
 
-You recognize it as the unsettling call of the Lost. Monsters whose souls have rotten under countless days of debauchery. 
+你认出这是迷失者令人不安的呼唤，那些在无数天的放荡下，灵魂已经腐烂的怪物。
 
 The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; &lt;&lt;print setup.processFlavours(
     $CharacterSheet_Lost_Entity,
@@ -37688,61 +37688,61 @@ The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anato
     &quot; Black oil drips off of its body, the corrupt colour shimmering upon @[all| heads| a~an]. A @[1| tongues| noverb] hungrily rolls from his mouth as his @[all| eyes| noverb] fixate on you.\n&quot;
 )&gt;&gt;
 \&lt;&lt;if $CharacterSheet_Lost_Entity.quest.beatenOnce&gt;&gt;
-Its massive muscular form looks even larger than the last Lost you had encountered. 
-Your cock grows hard at the thought of enaging with this one, too.
+它那巨大的肌肉看起来比你上一次遇到的迷失者还要大。
+你的阴茎也因与这他接触的想法而发硬。
 \&lt;&lt;else&gt;&gt;
-\You&#39;ve never seen muscles as bloated as this. 
+你从未见过像这样肿胀的肌肉。
 \&lt;&lt;/if&gt;&gt;
 
-His body pulses and writhes with more and more size, as if every breath he takes expands his frame larger and more monstrous with no end in sight. 
+他的身体随着越来越大的体型跳动和扭动，就好像他每一次呼吸都会让他的身体变得更大、更可怕，而且永不停息。
 
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Lost_Entity)&gt;&gt;</tw-passagedata><tw-passagedata pid="653" name="Encounter_Lost_Leave_NoSex" tags="" position="350,8225" size="100,100">You leave the Lost &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; to his own devices. His hand travels to his cock to satiate his own unending needs.
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Lost_Entity)&gt;&gt;</tw-passagedata><tw-passagedata pid="653" name="Encounter_Lost_Leave_NoSex" tags="" position="350,8225" size="100,100">你离开了迷失者 &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;放着他不管。 他将手伸向他的阴茎以满足他自己无尽的需求。
 
-Who knows what could have happened if you had to give in to your desire.
+谁知道如果你不得不屈服于你的欲望会发生什么。
 
-Regardless, the entire ordeal has left you in an uncomfortably aroused state.
+无论如何，整场经历让你处于一种不舒服的兴奋状态。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="654" name="LeavePurified" tags="" position="475,8225" size="100,100">You assure him that you are fine as you get back onto your feet. After a few minutes of elaborate gestures of thanks, you part ways.
+\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="654" name="LeavePurified" tags="" position="475,8225" size="100,100">当你当你重新站起来时，你向他展示你没有大碍。经过几分钟的感谢手势后，你们分道扬镳。
 
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="655" name="Recruit" tags="" position="600,8225" size="100,100">You smile at him. $CharacterSheet_Player.symbiote.name recedes inwards as you return to your normal form.
 
 ((To be implemented at a later stage!))
 
 \&lt;&lt;run setup.choice(&quot;[[Invite him to the Golden Bastion-&gt;Recruit]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="656" name="Encounter_Win_Lost_Entity_Absorb" tags="" position="725,8225" size="100,100">The &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;s corrupting essence has made you grow, but this was not nearly enough! Your need for power is now too severe for just a taste. You need more.
+\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="656" name="Encounter_Win_Lost_Entity_Absorb" tags="" position="725,8225" size="100,100">The &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;他的腐化让你增大，但这还远远不够！你对力量的需求现在太强烈了，不能只是浅尝一下。 你需要更多。
 
-You bring your fingers to your mouth and taste remnants of the &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;s black seed. Its intense flavour makes you shiver.
+你把你的手指放在嘴里，尝尝&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;剩下的黑色液体. 它散发的浓郁气味让你不寒而栗。
 
-Thick $CharacterSheet_Player.symbiote.color goo slowly oozes out from your pores. A puff of steam escapes your slavering maw.
+浓稠的$CharacterSheet_Player.symbiote.color的粘液从毛孔中慢慢渗出。一股蒸汽从你流口水的嘴里逸出。
 
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;lostKiss&quot;, 1, $CharacterSheet_Lost_Entity)&gt;&gt;
 
-&quot;We&#39;ll be unstoppable...&quot; you growl, two distinct pitches colouring your voice.
+&quot;没有人能挡住我们...&quot; 你咆哮着，两个不同的音调使你的声音变得不同。
 
-\&lt;&lt;run setup.choice(&quot;[[Merge with the black goo-&gt;Encounter_Win_Lost_Entity_Absorb_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="657" name="Encounter_Win_Lost_Entity_Absorb_2" tags="" position="850,8225" size="100,100">The air is thick with debauchery. You could feel the embers of lust, the scent of sex overpowering all else. All testaments to your superiority as a host.
+\&lt;&lt;run setup.choice(&quot;[[Merge with the black goo-&gt;Encounter_Win_Lost_Entity_Absorb_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="657" name="Encounter_Win_Lost_Entity_Absorb_2" tags="" position="850,8225" size="100,100">空气中弥漫着放荡。你可以感觉到欲望的余烬，性的气味压倒一切。All testaments to your superiority as a host.
 
-The &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;s chest heaves upwards as the black ooze seems to shiver across his form. It senses the power contained within you.
+当黑色的软泥似乎在他的身体上颤抖时，&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;的胸部向上隆起。它感受到了你体内蕴藏的力量。
 
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mergeLost1&quot;, 1, $CharacterSheet_Lost_Entity)&gt;&gt;
 
-The &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; gradually turns from an oily black to a soft &lt;&lt;print setup.getRandomColor()&gt;&gt;. 
+&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;逐渐从油乎乎的黑色变成了柔和的&lt;&lt;print setup.getRandomColor()&gt;&gt;。
 
-It only takes a few seconds for the last flickers of corruption to seep into the ground beneath the &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;. His previously hulking form deflates. 
+几秒钟，腐化的最后一丝痕迹就渗入到&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;的所站之处。他先前笨重的身体缩了下来。
 Once standing at &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lost_Entity, &quot;height&quot;))&gt;&gt; has now reduced to a far less egregious state of &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lost_Entity, &quot;height&quot;) - 14)&gt;&gt;.
-His form is now back to his old thin powerless self - now free of the corruption that had plagued him for countless days.
+他的身体现在又恢复到了他那个瘦弱无力的老样子，已经摆脱了困扰他无数天的腐化。
 
-He coughs and splutters as black ooze pools out of his mouth. With disgust, you see him snarl at the droplets that seep into the ground before he collapses, exhausted. Holding his stomach, he rolls over to gaze into your eyes. A sudden wretch catches him off guard as remnants of your cum forcefully expels itself from his stomach. &quot;Who and what are you!?&quot;
+他咳嗽和呕吐着，黑色的物体从他的嘴里涌出。你看到他带着厌恶对渗入地面的水滴发出了一声咆哮，然后他就累得倒下了。他抱着肚子，翻过身来，凝视着你的眼睛。当你的残余精液强行从他的胃里排出时，A sudden wretch catches him off guard。 &quot;你是什么东西？！&quot;
 
 \&lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &gt;= 75&gt;&gt;
-How dare he adress you in such a pathetic form! Your growl hungrily, you desire a mate, a mate that can satisfy your unquenchable desire, not some pathetic weakling!
+他怎么敢用这样可悲的方式称呼你！ 你饥渴地咆哮着，你想要一个伴侣，一个能满足你无法抑制的欲望的伴侣，而不是一些可怜的弱者！
 \&lt;&lt;elseif setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &gt;= 50&gt;&gt;
-The euphoria of the corruption brings you to your knees.
+腐化的快感让你屈服。
 
 You register that the uncorrupted &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; has rushed up to you, but you struggle to comprehend his words through the dark haze of lust that swirls within your mind. The corruption within you teases you with sparks of pleasure across your body.
 \&lt;&lt;else&gt;&gt;
-The euphoria of the corruption brings you to your knees. It&#39;s difficult to resist the call. It feels like you could easily lose your senses if you weren&#39;t cautious around these creatures.
+腐败的快感让你屈服。 你很难抗拒这个请求。 感觉如果你对这些生物身边不够谨慎，你很容易失去理智。
 
-The freed &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; wobbles to his feet and hobbles toward you. &quot;H-hey! Don&#39;t you give in, you hear me!?&quot; he yells, &quot;You can&#39;t fall! You saved me!&quot;
+重获自由的&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;摇摇晃晃地站起来，蹒跚地走向你。 &quot;喂，喂！不要屈服！听我说！&quot; 他大喊道，&quot;你不能倒下！ 你是我的救命恩人！&quot;
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;if (setup.sizeNormalPersoncomparison($CharacterSheet_Player) &gt;= setup.Comparators.FITS_ON_FINGER) and (setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &gt;= 75)&gt;&gt;
@@ -37762,34 +37762,34 @@ The freed &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, 
 \&lt;&lt;run setup.choice(&quot;[[Leave him be-&gt;LeavePurified]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="658" name="Encounter_Win_Lost_Entity_Corrupt" tags="" position="975,8225" size="100,100">&lt;&lt;print setup.processFlavours(
     $CharacterSheet_Player,
-    &quot;It&#39;s not enough! It can never be enough!&quot;+
-    &quot; You need the Lost, you need more of them! Lost to serve you and you alone!&quot;+
-    &quot;\n\nResponding to your corrupt will, your ever increasing stream of pre turns into a dark ebon shade.&quot;+
-    &quot;\You grin maliciously as your grab your @[all|cocks|noverb] - you would make him yours! Yours and yours alone!&quot;
+    &quot;这还不够！ 永远都不够！&quot;+
+    &quot; 你需要迷失者，你需要更多！更多的迷失者只为你一个人服务！&quot;+
+    &quot;\n\n响应着你腐化的意志，你不断涌出的前列腺液变成了黑檀木色。&quot;+
+    &quot;\当你抓住你的@[all|cocks|noverb]时，你恶意地咧嘴一笑。你会让他成为你的！ 仅属于你的！&quot;
 )&gt;&gt;
 
-&quot;W-wait! What are you doing!?&quot; He yells as you frantically piston your hands along your length and grab the unsuspecting &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; by the shoulder in a vice grip. &quot;Get off me!&quot; He weakly struggles, going as far as biting your arm to escape.
+&quot;等，等一下！你这是在做什么？！&quot; He yells as you frantically piston your hands along your length and grab the unsuspecting &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; by the shoulder in a vice grip. &quot;放开我！&quot; 他无力地挣扎，甚至咬住你的手臂来试图逃脱。
 
-Futility.
+徒劳。
 
 &lt;&lt;print setup.processFlavours(
     $CharacterSheet_Player,
-    &quot;Thoughts of turning him are driving you over the edge. Your movements became erratic as you feel the corruption manifest as a massive bubble at the base of your @[all|cocks|noverb].&quot;
+    &quot;腐化他的念头正在把你逼到崩溃的边缘。你的动作开始变得不稳定，你感觉到腐化正在你的@[all|cocks|noverb]根部形成一个巨大的气泡。&quot;
 )&gt;&gt;
 
-&quot;Take it! Take! It! All!&quot; you roar as the recently cured creature&#39;s panic stricken screams are muffled by a niagara of sticky black seed.
+&quot;吞下它们！全部吞下去！&quot; 当这个刚刚被治愈的家伙的惊恐尖叫被粘稠的黑色液体压制住时，你发出了怒吼。
 
-His struggling arms, scraping at your fingers, slowly turn into sensual carressing gestures. You feel his hands growing, bulking with power. You grin as your creation cackles with uncontrolled lust. The Lost &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt; flexes his growing muscles as he expands with every liter of cum you pour onto him.
+他挣扎的手臂在你的手指上刮来刮去，慢慢变成了性感的抚摸姿态。你感觉到他的手在增长，力量在膨胀。当你的创造物不受控制地发出情欲的笑声时，你咧嘴一笑。迷失&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;当他随着你灌入的每一升精液而膨胀时，他屈伸着他不断增长的肌肉。
 
 &lt;&lt;print setup.processFlavours(
     $CharacterSheet_Lost_Entity,
-    &quot;Soon, he stands slightly taller than you with muscles that barely allow him any movement. They quake and groan with every desire driven shudder that takes him. &quot;+
-    &quot;His @[all|cocks|noverb] have grown so massive that they drag across the ground, constantly spurting puddle sized globules of black pre. The odour is warm within your nostrils, a pleasant but strong salty musk. &quot;+
-    &quot;He can barely contain himself! His eyes lock onto yours with pure adoration as he rocks his incredible form across his package. &quot;+
-    &#39;\n\n&quot;Yes! Fuck! YES!&quot; He howls as he orgasms over you, his flood colliding with your own in a glorious fountain of obsidian spunk. &#39;+
-    &quot;\n\nYou push against the powerful stream as it hoses you down. With passion stirring your loins, you lock your mouth with your beloved and insert yourself into him once again, relishing in the massaging pressure of the Lost&#39;s ejaculate powering into the underside of your chin. &quot;+
-    &quot;His @[all|tongues| one=jets~more=jet] into your mouth and dances along yours in an untameable samba of passion, growing longer and more intrusive as his orgasm continues between your bodies. &quot;+
-    &quot;\n\nYou lose yourselves into a deep mating session that lasts for hours; his form growing ever more monstrous with each successive fuck.&quot;
+    &quot;很快，他站了起来，比你略高，他的肌肉几乎不允许他有任何动作。它们随着他的每一次欲望驱动的颤抖而呻吟。 &quot;+
+    &quot;他的下体变得如此巨大，以至于它们地面上拖着，不断喷出水坑大小的黑色前列腺液。如今所弥漫气味在您的鼻孔内是温暖的，这是一种令人愉悦但强烈的咸味麝香。 &quot;+
+    &quot;他几乎无法控制自己！His eyes lock onto yours with pure adoration as he rocks his incredible form across his package. &quot;+
+    &#39;\n\n&quot;操！太棒了！&quot; 他在你面前高潮时嚎叫，他与你的洪流相互碰撞，如同一座黑曜石般的光辉喷泉。 &#39;+
+    &quot;\n\n你被精流推倒在地，抵抗着它。随着激情的涌动，你把你的嘴和你的爱人锁在一起，再次插入他的身体，享受着迷失者射出的精液在你的下巴上产生的压力。 &quot;+
+    &quot;他的舌头侵入到你的嘴里，并与你的舌头共舞，就像一种难以形容的激情桑巴舞，随着他的高潮在你的身体之间持续，他的舌头越来越长，越来越深入。 &quot;+
+    &quot;\n\n你陷入了持续数小时的深度交配期。他的身体随着一次又一次的做爱而变得越来越巨大。&quot;
 )&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Hours Later-&gt;Encounter_Lost_Entity_Swarm_creation]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="659" name="Encounter_Lost_Entity_Swarm_creation" tags="" position="1100,8225" size="100,100">\&lt;&lt;if $CharacterSheet_Swarm.quest.firstSwarm&gt;&gt; 
@@ -37798,42 +37798,42 @@ His struggling arms, scraping at your fingers, slowly turn into sensual carressi
 \&lt;&lt;run setup.setBaseStatValue($CharacterSheet_Lost_Harbinger, &quot;muscles&quot;, setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;))&gt;&gt;
 \&lt;&lt;run setup.setBaseStatValue($CharacterSheet_Lost_Harbinger, &quot;height&quot;, setup.getStatValue($CharacterSheet_Player, &quot;height&quot;))&gt;&gt;
 \&lt;&lt;run setup.setBaseStatValue($CharacterSheet_Lost_Harbinger, &quot;cock&quot;, setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt;
-You feel an unnaturally close bond between you and the Lost. He was your first and to him, you are his one and only true mate. He lives for you, breaths for you and exists for only you. While lying on each other&#39;s chest he gently runs a hand down your pecs and softly kisses your cheek. Reluctantly, you drag yourself away from his roving hands.
+你觉得你和迷失者之间有一种不自然的紧密联系。他是你的第一个伴侣，对他来说，你是他唯一真正的伴侣。他为你而生，为你而呼吸，只为你而存在。躺在对方胸前时，他轻轻地把手放在你的胸脯上，轻轻地亲吻你的脸颊。你不情愿地把自己从他飘忽不定的手上拖走。
 
-He wines, &quot;Don&#39;t go!&quot;
+He wines, &quot;不要走！&quot;
 
-With a firm hand, you stroke the back of his head and kiss his forehead. &quot;I have to. I have things to do, and so do you.&quot; 
+你用坚硬的手抚摸他的后脑勺，亲吻他的额头。&quot;我必须走。 我有事要做，而你也有要做的事。&quot; 
 \&lt;&lt;print setup.processFlavours(
     $CharacterSheet_Lost_Harbinger,
-    &quot;His mood immediately turns to excitement and his @[all|cocks|one=hardens~more=harden] from between his legs.&quot;
+    &quot;他的情绪立即变得兴奋起来，他两腿之间的的@[all|cocks|one=硬了起来~more=硬了起来]。&quot;
 )&gt;&gt;
 
-&quot;I want you to be the herald of my reign over these lands,&quot; you command, &quot;You will fuck, spread and grow larger for me.&quot;
+&quot;I我要你成为我统治这片土地的先驱，&quot;你命令道，&quot;你将为我做爱，传播腐化并继续增大。&quot;
 
-&quot;Yes!&quot; he moans, &quot;I&#39;ll do anything for you!&quot; His excitement is too much to handle as he begins to leak rivulets of pre.
+&quot;是！&quot; 他呻吟着， &quot;我愿意为你做任何事！"。&quot; 他的兴奋之情溢于言表，开始漏出前列腺液。
 
-Although glorious in form, your lover needs to be set apart from the masses. A name, to mark him as the leader of your new family of Lost.
+尽管你的爱人有着傲人的身姿，但他需要与众人区分开来。他需要一个名字，以标明他是你新的迷失者家族的领袖。
 
-You think &lt;&lt;textbox &quot;$CharacterSheet_Lost_Harbinger.quest.harbingerName&quot; &quot;Typhon&quot;&gt;&gt; would fit him well.
+你认为&lt;&lt;textbox &quot;$CharacterSheet_Lost_Harbinger.quest.harbingerName&quot; &quot;Typhon&quot;&gt;&gt;这个名字适合他。
 &lt;&lt;run $CharacterSheet_Lost_Harbinger.quest.harbingerRace = setup.RacePool[setup.getRace($CharacterSheet_Lost_Entity.info.anatomy).toUpperCase()]&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Christen him-&gt;Encounter_Lost_Entity_Swarm_Harbinger]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-Another monster birthed from your loins, another empassioned lover to join your swarm.
+又一个怪物被你孕育，又一个充满激情的爱人加入了你的家庭。
 
 You tell your new slave to go and find $CharacterSheet_Lost_Harbinger.quest.harbingerName and join him on his conquest in your name.
 
-A smile curls your lips upwards. You are sure your growing family would eagerly welcome their new addition.
+你的嘴唇向上翘起了一个微笑。你确信你不断壮大的家庭会热切地欢迎他们的新成员。
 
 \&lt;&lt;run setup.choice(&quot;[[Return to the Golden Bastion-&gt;Village]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="660" name="Encounter_Lost_Entity_Swarm_Harbinger" tags="" position="1225,8225" size="100,100">You smile, &quot;Now go forth in my name, $CharacterSheet_Lost_Harbinger.quest.harbingerName !&quot;
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="660" name="Encounter_Lost_Entity_Swarm_Harbinger" tags="" position="1225,8225" size="100,100">你微笑着, &quot;现在，以我之名向前吧！ $CharacterSheet_Lost_Harbinger.quest.harbingerName ！&quot;
 
-His jaw drops in awe and his eyes widen as you give him a name. Hearing you say it is too much for him to handle. Running up to you, he smothers you in a musclebound hug. His shafts harden below you and knock against your legs.
+当你给他起了一个名字时，他的下巴惊恐地掉下来，眼睛睁得大大的。听到你说这个名字，他承受不住了。他跑到你身边，给了你一个紧紧的充满肌肉的拥抱。他的阴茎开始变硬，碰到了你的腿。
 
-After locking lips one more time, he turns to face the open sands and bellows out a primordial roar of raw ferocity and strength - the likes of which you have never seen before.
+当你们再一次锁住你们的嘴唇后，他转身面对空旷的沙地，发出原始凶猛而又充满力量的吼声。这是一种你以前从未见过的声音。
 
-He was a king of monsters. Your monster.
+他是怪物之王，而他属于你。
 
-You smile as you watch $CharacterSheet_Lost_Harbinger.quest.harbingerName hurtle into the Barrens. You are sure you will see him again, soon.
+当你望着$CharacterSheet_Lost_Harbinger.quest.harbingerName冲向荒原时，你欣慰地笑了。你相信，你很快会再次见到他的。
 
 \&lt;&lt;run setup.choice(&quot;[[Return to the Golden Bastion-&gt;Village][$CharacterSheet_Swarm.quest.firstSwarm = false;]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="661" name="Encounter_Win_Lost_Entity_Fuck" tags="" position="100,8350" size="100,100">&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;lostFuck1&quot;, 1, $CharacterSheet_Lost_Entity)&gt;&gt;
 
