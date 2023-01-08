@@ -39,7 +39,7 @@
 |yes|corruption|n.腐化,腐败||
 |yes|Black Sun|n.黑日||
 |yes|goo|n.黏稠物质|通常意为粘液|
-|yes|monstrosity|n.巨兽,庞然大物|此乃游戏内的一个种族，特点是有两个性器和四个阴囊|
+|yes|monstrosity|n.巨兽,庞然大物||
 |yes|wasteland|n.荒原；不毛之地|游戏内目前主要有东、西部荒原两大地点可供玩家自由探索|
 |yes|Nyx|name.尼克斯|游戏内能在一定程度上控制宿主思想行为的一种寄生虫|
 |yes|The Lost Naga|name.被腐化的娜迦||
