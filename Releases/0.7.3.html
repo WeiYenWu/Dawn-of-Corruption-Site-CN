@@ -40039,34 +40039,34 @@ Almost as if something more than just your seed has been taken.
 
 伴随着娜迦的吼叫，你失去了意识，成为了这只高级掠食者的一部分。
 
-\&lt;&lt;run setup.choice(&quot;[[Let Go-&gt;Encounter_Loss_Lost_Naga_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="906" name="Encounter_Loss_Lost_Naga_3" tags="" position="725,11350" size="100,100">\&lt;&lt;if $curseStatus == &quot;Cursed&quot;&gt;&gt;
-The Lost Naga has taken some of your size, only by defeating him can you get your strength back...
+\&lt;&lt;run setup.choice(&quot;[[放弃-&gt;Encounter_Loss_Lost_Naga_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="906" name="Encounter_Loss_Lost_Naga_3" tags="" position="725,11350" size="100,100">\&lt;&lt;if $curseStatus == &quot;Cursed&quot;&gt;&gt;
+迷失娜迦已经吞掉了你身体的一部分，唯有击败他才能取回你失去的力量……
 
-Your muscles are reduced to &lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt; (-&lt;&lt;print $CharacterSheet_Player.quest.curseOfTheNagaStatDrain.muscles&gt;&gt;).
-Your body is shortened by &lt;&lt;print setup.getLength($CharacterSheet_Player.quest.curseOfTheNagaStatDrain.height)&gt;&gt;.
-Your cock&#39;s length is reduced by &lt;&lt;print setup.getLength($CharacterSheet_Player.quest.curseOfTheNagaStatDrain.cock)&gt;&gt;.
+你的力量下降为 &lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt; (-&lt;&lt;print $CharacterSheet_Player.quest.curseOfTheNagaStatDrain.muscles&gt;&gt;).
+你的身高降低为 &lt;&lt;print setup.getLength($CharacterSheet_Player.quest.curseOfTheNagaStatDrain.height)&gt;&gt;.
+你的鸡巴长度缩短为 &lt;&lt;print setup.getLength($CharacterSheet_Player.quest.curseOfTheNagaStatDrain.cock)&gt;&gt;.
 \&lt;&lt;elseif $curseStatus == &quot;AlreadyCursed&quot;&gt;&gt;
-The Lost Naga has already stolen some of your size, only by defeating him can you get your strength back...
+迷失娜迦已经窃取了你一部分能力，唯有击败他才能取回来……
 \&lt;&lt;else&gt;&gt;
-The Lost Naga has grown, but your form is too small to lose any more size...
+迷失娜迦获得了成长，但你的体型已小到无法继续缩小……
 \&lt;&lt;/if&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Death]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="907" name="Encounter_Intro_Swarm" tags="" position="850,11350" size="100,100">\&lt;&lt;set $CharacterSheet_Swarm.quest.met = true&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Death]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="907" name="Encounter_Intro_Swarm" tags="" position="850,11350" size="100,100">\&lt;&lt;set $CharacterSheet_Swarm.quest.met = true&gt;&gt;
 \&lt;&lt;include Swarm_Flavours&gt;&gt;
 \&lt;&lt;run setup.setRandomRace($CharacterSheet_Swarm.info.anatomy)&gt;&gt; 
 \&lt;&lt;run $CharacterSheet_Swarm.info.name = &quot;The lost &quot; + setup.getRace($CharacterSheet_Swarm.info.anatomy, true)&gt;&gt;
 \&lt;&lt;run $Encounter_Target=$CharacterSheet_Swarm&gt;&gt;
 
-While searching through the wastelands, your ears perk up to a fiendish and gutteral howl. 
+探索荒地【wasteland】时，一声凶恶而下流的嗥叫使你的耳朵瞬间立起。【gutteral疑似笔误，正确的单词应该是gutter】While searching through the wastelands, your ears perk up to a fiendish and gutteral howl. 
 
-It was fierce; powerful enough to rattle your ribcage.
+那凶恶又震撼的声响足以使你胸口发紧。
 
-The overwhelming presence of this creature could be felt across a massive distance - the aura of a Lost that could only have been birthed from the corrupted seed of your children. 
+即使隔了很远，你依然可以感受到那个生物满溢而出的存在感——一个迷失者的气场，且他只能是从你孩子的腐化之精种里孵育出来的。The overwhelming presence of this creature could be felt across a massive distance - the aura of a Lost that could only have been birthed from the corrupted seed of your children. 
 
-The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Swarm.info.anatomy, true)&gt;&gt; &lt;&lt;print setup.processFlavours(
+腐化者 &lt;&lt;print setup.getRace($CharacterSheet_Swarm.info.anatomy, true)&gt;&gt; &lt;&lt;print setup.processFlavours(
     $CharacterSheet_Lost_Entity,
-    &quot;roars in ecstasy as it catches its master&#39;s scent. Soon, a hulking feral monstrosity bounds into view.&quot; + 
-    &quot; Black oil drips off of its bulging body, the corrupt colour shimmering across its @[all| heads| a~an]. A @[1| tongues| noverb] hungrily rolls from his mouth as his @[all| cocks| one=hardens~more=hardens] with excitement.\n&quot;
+    &quot;狂喜地吼叫着，因其捕捉到了它主人的气息。很快，一个笨重而凶猛的【monstrosity】闯入了视野。 &quot; + 
+    &quot; 黑油从鼓胀的身体上滴落，堕落的颜色闪耀在在它的 @[all| 头上| a~an]. 他的 @[1| 舌头| noverb] 饥渴的在他嘴边卷起，同时兴奋也使他的 @[all| 鸡巴| one=硬了~more=硬了] 。\n&quot;
 )&gt;&gt;
 
 \&lt;&lt;if setup.sizeCharactercomparison($CharacterSheet_Swarm, $CharacterSheet_Player) &gt; setup.Comparators.BIGGER&gt;&gt;
@@ -40076,233 +40076,233 @@ The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Swarm.info.anatomy, tr
 \&lt;&lt;/if&gt;&gt;
 
 
-\&lt;&lt;run setup.choice(&quot;[[Go back-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="908" name="Swarm_Flavours" tags="" position="975,11350" size="100,100">\&lt;&lt;nobr&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[返回-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="908" name="Swarm_Flavours" tags="" position="975,11350" size="100,100">\&lt;&lt;nobr&gt;&gt;
 &lt;&lt;run $CharacterSheet_Swarm.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     1,
-    &quot;Skidding to a halt in front of you, the towering beast presses its chest down to the floor in a show of respect. Those glistening black eyes would almost pass as cute if &quot; +
-    &quot;its slavering maw hadn&#39;t been the size of your entire body and then some. Your eyes trail downwards as you feel a rush of warm liquid slam against your shins; &quot; +
-    &quot;you can&#39;t help but smile realising how &#39;excited&#39; he was to see you.\n\nYou scratch his head in approval. Now, what to do?&quot;
+    &quot;铁塔一般的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。那亮晶晶的黑眼睛几乎称得上可爱了，但只在 &quot; +
+    &quot;它淌着口水的咽喉不是足以容下你还有剩余空间的尺寸的情况下。一股暖流突然冲刷了你的小腿，让你向下看去； &quot; +
+    &quot;当你意识到了和你见面让他有多兴奋的时候，你情不自禁地微笑了起来。\n\n你挠挠他的脑袋以表赞许。现在，你要怎么做？ &quot;
 )&gt;&gt;
 
 &lt;&lt;run $CharacterSheet_Swarm.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     2,
-    &quot;Skidding to a halt in front of you, the gargantuan beast presses its chest down to the floor in a show of respect. You admire the immensity of your beast, his monstrous maw &quot; +
-    &quot;containing teeth the size of your body. His ever-growing body consumes most of your field of view, pulsating with deliciously bulging muscle. &quot; +
-    &quot;A torrent of corrupted seed explodes out from behind him, a tidal wave of masculinity! Before you are swept away, &quot; +
-    &quot;your child&#39;s tongue slips from its mouth, wraps around you and holds you still.\n\nYou smile in approval. Now, what to do?&quot;
+    &quot;庞大的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。你欣赏着你的野兽那巨大的体型，他的巨口 &quot; +
+    &quot;中的牙齿都和你大小相当。他永远在生长的身体，以及那搏动的可口的肌肉隆起占据了你绝大部分视野。 &quot; +
+    &quot;一股腐化之精种的洪流从他的身后喷射而出，好一股阳刚之气！在你要被冲走之前， &quot; +
+    &quot;你孩子的舌头从口中滑出，将你牢牢卷住以保持你的稳定。\n\n你露出赞许的微笑。现在，你要怎么做？ &quot;
 )&gt;&gt;
 
 &lt;&lt;run $CharacterSheet_Swarm.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     3,
-    &quot;Skidding to a halt in front of you, the gargantuan beast presses its chest down to the floor in a show of respect. He is a titan compared to you, the blades of his shoulders rising &quot; +
-    &quot;high enough into the sky to appear as bulging, growing mountains. His giant mouth alone could be mistaken for the interior of a living cave network. &quot; +
-    &quot;A flood of corrupted seed erupts from somewhere behind him; a virile sea being forced from his @[all|cocks|noverb]! Before you are swept away, &quot; +
-    &quot;your child&#39;s tongue slips from its mouth and wraps around you before lifting you above the voluminous alabaster sea.\n\nYou smile in approval. Now, what to do?&quot;
+    &quot;庞大的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。和你相比，他犹如一个巨人，肩胛骨 &quot; +
+    &quot;高耸入云，仿佛两座膨胀生长的山峰。单是他的巨口就足以被误认为是一个活体洞穴网格的内部。 &quot; +
+    &quot;一股腐化之精种的洪流从他身后的某处涌出；那是从他的 @[all|鸡巴|noverb]流出的阳刚之海! 在你要被冲走之前， &quot; +
+    &quot;你孩子的舌头从口中滑出，把你从那浩荡的雪花石膏般的海洋中卷起。\n\n你露出了赞许的微笑。现在，你要怎么做？ &quot;
 )&gt;&gt;
 
 &lt;&lt;run $CharacterSheet_Swarm.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     4,
-    &quot;Skidding to a halt in front of you, the gargantuan beast presses its chest down to the floor in a show of respect. The sight is unreal. A beast larger than mountains - so tall &quot; +
-    &quot;and wide that the entire land around you is caught in its magnificent shadow, is prostrating himself to you. The amount of muscle packed onto its frame billows outwards to an unbelievable &quot; +
-    &quot;degree; every chord audibly vibrating and creaking like the sound of bending metal. &quot;+
-    &quot; The ground Shakes. The creature&#39;s hot and torrential breath quickens before the sound of a volcano erupting splinters through the ambient noises of growth. &quot; +
-    &quot;A devastating ocean of virile seed rockets across the land, washing away nearby foliage! Everything and anything it touches is twisted into black versions of its prior self. If living, turning into another one of your new children. &quot; +
-    &quot; Before you are swept away &quot; +
-    &quot; your child&#39;s tongue slips from its mouth and burrows into the ground beneath you before lifting the hunk of earth upwards and raising you above the voluminous alabaster sea.\n\nYou smile in approval. Now, what to do?&quot;
+    &quot;庞大的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。整个场景是不真实的。比山还大的野兽——过于高耸和巨大 &quot; +
+    &quot;你周围的所有土地都笼罩在了它庞大的阴影之中——正在向你表示臣服。在他躯体上的肌肉以不可思议的程度朝着四周翻腾； &quot; +
+    &quot;每条腱的振动的声音都可被听见，嘎吱作响的声音如金属被折弯一般。 &quot;+
+    &quot;大地在震颤。这个生物的炙热且奔流的鼻息开始急促，随后，火山爆发的声音切碎了周围增长的噪声。 &quot; +
+    &quot;令人叹为观止的雄健之精种的海洋淹过了地面，冲走了附近的枝叶！被它波及到的所有东西都扭曲为了它们之前的漆黑的模样。而能够幸存的活物，就变成了你的新的孩子。 &quot; +
+    &quot; 在你被冲走之前 &quot; +
+    &quot; 你孩子的舌头从口中滑出，连带着你身下的土地一起从那浩荡的雪花石膏般的海洋中挖了起来。\n\n你露出了赞许的微笑。现在，你要怎么做？&quot;
 )&gt;&gt;
 
 &lt;&lt;run $CharacterSheet_Player.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     1,
-    &quot;Skidding to a halt in front of you, the towering beast presses its chest down to the floor in a show of respect. Those glistening black eyes would almost pass as cute if &quot; +
-    &quot;its slavering maw hadn&#39;t been the size of your entire body and then some. Your eyes trail downwards as you feel a rush of warm liquid slam against your shins; &quot; +
-    &quot;you can&#39;t help but smile realising how &#39;excited&#39; he was to see you.\n\nYou scratch his head in approval. Now, what to do?&quot;
+    &quot;铁塔一般的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。那亮晶晶的黑眼睛几乎称得上可爱了，但只在 &quot; +
+    &quot;它淌着口水的咽喉不是足以容下你还有剩余空间的尺寸的情况下。一股暖流突然冲刷了你的小腿，让你向下看去； &quot; +
+    &quot;当你意识到了和你见面让他有多兴奋的时候，你情不自禁地微笑了起来。\n\n你挠挠他的脑袋以表赞许。现在，你要怎么做？&quot;
 )&gt;&gt;
 
 &lt;&lt;run $CharacterSheet_Player.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     2,
-    &quot;Skidding to a halt in front of you, the muscular beast presses its chest down to the floor in a show of respect. Glistening eyes stare up at you. &quot;+
-    &quot;Who knew your hyper muscular child could be so cute? Your eyes trail downwards as you feel a rush of warm liquid slam against your ankles; &quot; +
-    &quot;you can&#39;t help but smile, realising how your presence alone is causing the creature such intense levels of arousal.\n\nYou scratch his head in approval. Now, what to do?&quot;
+    &quot;肌肉发达的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。一双亮晶晶的眼睛抬起来注视着你。 &quot;+
+    &quot;谁能想到你这亢奋的健壮的孩子可以这么可爱呢？一股暖流突然冲刷了你的脚踝，让你向下看去； &quot; +
+    &quot;当你意识到了单是你的存在就能让他产生如此强烈的性欲时，你情不自禁地微笑了起来。\n\n你挠挠他的脑袋以表赞许。现在，你要怎么做？&quot;
 )&gt;&gt;
 
 &lt;&lt;run $CharacterSheet_Player.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     3,
-    &quot;Skidding to a halt in front of you, the muscular beast presses its chest down to the floor in a show of respect. Its pulsating form looks so small in comparison to your &quot;+
-    &quot;towering figure. Regardless, you can&#39;t deny that its prostration was cute.\n\nYour eyes flick to a sudden movement from underneath your pet.\n\nAn explosion of black cum &quot; +
-    &quot;rockets out from below its hefty bulk and paints the edges of your feet. Its mouth clamps shut, its body shudders and a new wave of growth takes it as your gigantic presence alone &quot; +
-    &quot;amplifies its arousal by multiple folds. You smile while watching his orgasm chain and intensify for a good ten minutes.\n\nYou scratch his head in approval. &quot; + 
-    &quot;Now, what to do?&quot;
+    &quot;肌肉发达的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。与你那高大的身形相比，它搏动的身体看着是如此矮小。 &quot;+
+    &quot;不过，你也无法否认他的跪倒的样子很可爱。\n\n在你身下的宠物的突然动作让你的视线快速转移。\n\n一股爆发的黑色精液 &quot; +
+    &quot;从他那肌肉发达的躯体下喷射而出，染黑了你的脚边。它紧闭着嘴，身体颤抖，但是它的性欲被你庞大的存在本身便提高了数倍，这让它 &quot; +
+    &quot;再次射了出来。你微笑着看着他高潮迭起的样子，足足十分钟。\n\n你挠挠他的脑袋以表赞许。 &quot; + 
+    &quot;现在，你要怎么做？ &quot;
 )&gt;&gt;
 
 &lt;&lt;run $CharacterSheet_Player.addHeightFlavourText(
     &quot;swarmEncounter&quot;,
     4,
-    &quot;Skidding to a halt in front of you, the muscular beast presses its chest down to the floor in a show of respect. Its pulsating form is but a tiny shifting speck of uncontrolled &quot;+
-    &quot;arousal. Your power, your size, and strength radiates from you with such force that the creature had clearly painted the dunes black with seed in an endless orgasm just trying to reach you. &quot; +
-    &quot;\n\nCute.\n\nCreaking thunders across the lands as your titanic legs bend. Although your child was small; he easily put everything else in this wasteland to shame. &quot; +
-    &quot;\n\nYou scratch his head in approval. &quot; + 
-    &quot;Now, what to do?&quot;
+    &quot;肌肉发达的野兽急停在你的面前，俯下身子，胸部贴紧地面，以向你展示敬畏。它那搏动的身躯只是一个因无法控制的性高潮而不断移动的 &quot;+
+    &quot;尘埃。你的力量、你的体型、你的强大不断发散而出，迫使着这个生物在仅仅是试图靠近你的时候，就在永不停止的高潮里用精种清楚地染黑了它周围的沙丘。 &quot; +
+    &quot;\n\n可爱。\n\n你泰坦般的腿部屈起时发出了雷鸣声响彻大地。尽管你的孩子很小；他很轻易地就能让荒地【wasteland】上的其他生物相形见绌。 &quot; +
+    &quot;\n\n你挠挠他的脑袋以表赞许。 &quot; + 
+    &quot;现在，你要怎么做？ &quot;
 )&gt;&gt;
 \&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="909" name="Quest_MQ002_Entrance_PlayerWins" tags="" position="1100,11350" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
 
-The titan falls to his knees, the sheer weight of his armour is the only thing keeping him from falling over.
+巨人双膝跪地，全靠着他盔甲的重量才不至于倒下。
 
-&quot;Good, That&#39;ll do.&quot;
+&quot;很好，这样可行。 &quot;
 
 \&lt;&lt;set $CharacterSheet_MQ002_Guard.quest.beaten = true&gt;&gt;
 \&lt;&lt;print setup.getFightReward($CharacterSheet_MQ002_Guard)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_Entrance_PlayerWins_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="910" name="Quest_MQ002_Entrance_PlayerWins_2" tags="" position="1225,11350" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
-He helps himself up with his axe, and walks towards the gate.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Entrance_PlayerWins_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="910" name="Quest_MQ002_Entrance_PlayerWins_2" tags="" position="1225,11350" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
+他借着斧子支撑了起来，朝着大门走去。
 
-&quot;Follow me, and be mindful of the black sun above. It&#39;s power will be completely unfiltered beyond that point.&quot; 
+&quot;跟我来，小心上方的黑色太阳【black sun】。越过这里，它的力量便会完全不被遮蔽。 &quot; 
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_Entrance_PlayerWins_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="911" name="Quest_MQ002_Entrance_PlayerWins_3" tags="" position="100,11475" size="100,100">The minotaur pushes the gate open and instantly shivers in sudden pleasure.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Entrance_PlayerWins_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="911" name="Quest_MQ002_Entrance_PlayerWins_3" tags="" position="100,11475" size="100,100">这位牛头人推开了门，立马就因瞬时涌来的快感颤抖了起来。
 
-&quot;Ghhh... Keep it together.&quot; He mumbles as a strange purple glow floods out of the doors.
+&quot;嘎啊……冷静。 &quot; 他喃喃道，怪异的紫光从门中透了出来。
 
-He quickly slides through the massive gate like he is trying to prevent the light from spilling outside.
+他迅速穿过巨大的门，宛如他在努力不让光泄露出去一般。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_Entrance_NoGuard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="912" name="Quest_MQ002_Entrance_PlayerLoses" tags="" position="225,11475" size="100,100">You try to stay up but the minotaur is too powerful to handle.
-With an unceremonious thud, you fall down on your back.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Entrance_NoGuard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="912" name="Quest_MQ002_Entrance_PlayerLoses" tags="" position="225,11475" size="100,100">你试图挺住，但牛头人的强大力量实在无法招架。
+砰的一声，你仰面倒在了地上。
 
-The minotaur could strike you down at any moment, but instead, he kneels.
+牛头人可以轻易将你杀死，但相反，他跪了下来。The minotaur could strike you down at any moment, but instead, he kneels.
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_Entrance_PlayerLoses_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="913" name="Quest_MQ002_Entrance_PlayerLoses_1" tags="" position="350,11475" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Entrance_PlayerLoses_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="913" name="Quest_MQ002_Entrance_PlayerLoses_1" tags="" position="350,11475" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
 
-&quot;Leave now before things get worse.&quot;
+&quot;离开吧，趁着情况还未恶化。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="914" name="Quest_MQ002_NyxParasiteEncounter_FightIntro" tags="" position="475,11475" size="100,100">\&lt;&lt;set $CharacterSheet_MQ002_NyxParasite.quest.met = true&gt;&gt;
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_MQ002_NyxParasite)&gt;&gt;</tw-passagedata><tw-passagedata pid="915" name="Quest_MQ002_NyxParasiteEncounter_PlayerWins" tags="" position="600,11475" size="100,100">The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_NyxParasite, &quot;height&quot;))&gt;&gt; spawn falls flat on the ground.
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="914" name="Quest_MQ002_NyxParasiteEncounter_FightIntro" tags="" position="475,11475" size="100,100">\&lt;&lt;set $CharacterSheet_MQ002_NyxParasite.quest.met = true&gt;&gt;
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_MQ002_NyxParasite)&gt;&gt;</tw-passagedata><tw-passagedata pid="915" name="Quest_MQ002_NyxParasiteEncounter_PlayerWins" tags="" position="600,11475" size="100,100">那个 &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_NyxParasite, &quot;height&quot;))&gt;&gt; 卵完全摔在了地上。
 
-Stuck in a dead-end, it has nowhere to go. 
+它被卡在了死胡同里，动弹不得。
 
 &lt;&lt;print setup.getFightReward($CharacterSheet_MQ002_NyxParasite)&gt;&gt;
 
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Kill it-&gt;Quest_MQ002_NyxParasiteEncounter_KillIt]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[杀死它-&gt;Quest_MQ002_NyxParasiteEncounter_KillIt]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;DO NOT̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;[[Kill it-&gt;Quest_MQ002_NyxParasiteEncounter_KillIt]]&lt;/span&gt;
+&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;DO NOT̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;[[杀死它-&gt;Quest_MQ002_NyxParasiteEncounter_KillIt]]&lt;/span&gt;
 \&lt;&lt;endif&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Let it enter you-&gt;Quest_MQ002_NyxParasiteEncounter_ConsentualInfest]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="916" name="Quest_MQ002_NyxParasiteEncounter_ConsentualInfest" tags="" position="725,11475" size="100,100">\&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
-You look down upon the powerless spawn lying before you. You could kill it, right here and now. But something is stopping you.
+\&lt;&lt;run setup.choice(&quot;[[让它进入你-&gt;Quest_MQ002_NyxParasiteEncounter_ConsentualInfest]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="916" name="Quest_MQ002_NyxParasiteEncounter_ConsentualInfest" tags="" position="725,11475" size="100,100">\&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
+你低头看向面前已无生气的卵。你可以当场杀死它。但是有一种东西阻止了你。
 
-The pleasure you felt when it bit you, it throbs within you more than ever. Who knows how pleasurable it will be if you fully let it take you?
+当它缠上你，在你体内跳动的时候，你感到了前所未有的快感。天知道当你让它完全占据你时会有多爽？
 
-Can it truly be called a parasite if you yearn its influence?
+如果你渴望着它的影响，那它还算是寄生物吗？
 \&lt;&lt;else&gt;&gt;
-Your brain throbs at the sight of the wounded spawn. You could never bring yourself to kill it. 
+视线中那受伤的卵让你的大脑隐隐阵痛。你根本无法让自己杀了它。
 
-Not when it could bring you so much...
+至少是在它带给你了那么多之后……
 \&lt;&lt;/if&gt;&gt;
 
-You step towards it, openly presenting and rubbing your &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt; cock, letting it taste your arousal as you lick your lips eagerly.  
+你朝它走去，堂而皇之的展示着、摩擦着你的 &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt; 鸡巴，热切地舔舐着你的嘴唇，让它品尝你的肉欲。  
 \&lt;&lt;set $NyxParasiteEncounter_Won = true&gt;&gt;
 &lt;&lt;include Quest_MQ002_NyxParasiteEncounter_Infection&gt;&gt;</tw-passagedata><tw-passagedata pid="917" name="Quest_MQ002_NyxParasiteEncounter_Infection" tags="" position="850,11475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
-It crawls towards you with newfound vitality; you soon feel the wet spawn slither up along your legs.
+它带着新生出的活力向你蠕动着；很快，你便感觉到了那潮湿的卵爬上了双腿。
 \&lt;&lt;if $NyxParasiteEncounter_Won&gt;&gt;
-Quickly, it reaches your chest and stands inches from your mouth, like it was waiting for you to let it in.
+它很快便抵达了胸口，离你的嘴巴只有一步之遥，仿佛是在等你放他进入。
 
-You gaze at its featureless form and grin, opening your mouth wide open.
-It jumps at the opportunity; your whole body shivers as you taste the oily substance all over its skin. 
-It is a powerful aphrodisiac. You moan as it pushes deeper. Its body is feeling thicker around your mouth. 
+你看着它毫无特征的形状，咧开嘴笑了，将你的嘴大大地张开。
+它趁机跳了进去。布满它皮肤的油性物质的味道让你全身都颤抖了起来。
+那是种强力的催情剂。随着它的深入，你呻吟了起来。你感觉它在你嘴里变得更粗了。
 
-Your head lurches back as you rub your hard cock with both hands. 
+你猛地将头向后仰去，双手揉搓着你坚硬的鸡巴。
 \&lt;&lt;else&gt;&gt;
-Quickly, it reaches your chest and stands inches from your mouth, like a tiger about to pounce on its prey.
+它很快便抵达了胸口，离你的嘴巴只有一步之遥，仿佛是要跳向猎物的老虎。
 
-You gaze at its featureless form and can&#39;t stop yourself from gasping in terror.
-It jumps at the opportunity; your whole body shivers as you taste the oily substance all over its skin. 
+你看着它毫无特征的形状，无法抑制自己恐惧的喘息。
+它趁机跳了进去。布满它皮肤的油性物质的味道让你全身都颤抖了起来。
 
-It is a powerful aphrodisiac. 
+那是种强力的催情剂。
 
-Your already exhausted body nearly gives up to the arousal that spikes within you.
+你已精疲力竭的身体几乎要向体内急剧升起的欲望缴械投降。
 
-Its body quickly feels thicker around your mouth as it crawls in. 
+随着它的蠕动，你感觉它在你嘴里很快就变得更粗了
 \&lt;&lt;endif&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="918" name="Quest_MQ002_NyxParasiteEncounter_Infection_2" tags="" position="975,11475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-Your moans are blocked by the monster rushing down your throat. You feel it flick its tail to slide down further inside you. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="918" name="Quest_MQ002_NyxParasiteEncounter_Infection_2" tags="" position="975,11475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
+你的呻吟被迅速深入的怪物堵在了喉头。你感觉它的尾巴在不停地轻摆，以进入到更深的位置。
 
-Soon you feel a hardness build along your waist. It crawls and slowly intrudes your nutsack; your balls bathe in its aphrodisiac oil. 
-You rub them experimentally; this is almost enough to make you cum on the spot. 
-They are growing sensitive beyond what is humanly possible, and the constant pressure makes the pulsate wildly.
+很快，你感到腰部开始发硬。它缓慢地侵入了你的蛋蛋；你的双球被它的催情油浸润了。
+你试着揉了揉蛋蛋；仅仅这样就几乎让你立马射出来。 
+睾丸的敏感度不断增长，已超过了人体的极限，持续的压力更是让它们疯狂地脉动。
 
-You slurp on the last bit of the spawn&#39;s tail and moan while licking the oil around your lips. 
+你吮吸着这个卵的尾巴的末端，一边呻吟一边舔食着唇边的油。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="919" name="Quest_MQ002_NyxParasiteEncounter_Infection_3" tags="" position="1100,11475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="919" name="Quest_MQ002_NyxParasiteEncounter_Infection_3" tags="" position="1100,11475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
-You rub your balls once more. You are not sure what the spawn is doing to them, but they are changing.
+你又开始揉搓你的蛋蛋。虽然不确定那个卵做了什么，但是你的蛋蛋正在变化。
 \&lt;&lt;else&gt;&gt;
-You remember this feeling well, you rub and moan as your balls grow once again.
+你还清楚地记得这种感觉，并在你的睾丸再次生长的时候呻吟着揉搓着它们。
 \&lt;&lt;/if&gt;&gt;
 
-You feel your balls grow. They absorb the aphrodisiac oil of the spawn like a sponge in water. 
-You rub them hard; every touch now sends bolts of pleasure all over your body.
+你感觉你的睾丸涨大了。它们像海绵吸水一样吸收着卵分泌出的催情油。
+你用力地揉搓着，每一次触碰都让强烈的快感注满全身。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_3_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="920" name="Quest_MQ002_NyxParasiteEncounter_Infection_3_1" tags="" position="1225,11475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
-The spawn gorges on your incoming load, yet the pressure is becoming too much to bear. 
-It grows in size, filling your balls even more. The sheer magnitude of your load is too much for the spawn as well.
-You lurch your head back and scream as your swelled cock erupts like a fountain, litres and litres of cum jets out of your engorged balls, covering the hallway.
-Your screams of utter ecstasy continue for minutes on end.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_3_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="920" name="Quest_MQ002_NyxParasiteEncounter_Infection_3_1" tags="" position="1225,11475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
+卵贪婪地吞吃着你产生的精液，但是压力已经大到无法承受。
+它变得更大了，进一步填满了你的蛋蛋。而你巨大量的精液同时也超过了卵的极限。
+你扬起脑袋，吼叫着从你肥大鸡巴里射出一升又一升的精液，如喷泉一般，让精液从你塞得满满的蛋蛋中出来，铺满了过道
+你彻底陷入意乱神迷的快感，吼叫声持续了数分钟才停止。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="921" name="Quest_MQ002_NyxParasiteEncounter_Infection_4" tags="" position="100,11600" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
-The hunger of the spawn keeps your arousal at an all-time high. 
-But it feels like this wasn&#39;t the only thing that changed within you.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="921" name="Quest_MQ002_NyxParasiteEncounter_Infection_4" tags="" position="100,11600" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
+卵的饥渴驱使着你的欲望一直高涨着。
+但这似乎并不是你体内发生的唯一变化。
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
-You feel an urge to spread this gift for yourself as well.
+你同时感到了一股要将这个给你的赐福传播出去的渴望。
 \&lt;&lt;else&gt;&gt;
-With more spawns inside you, the urge to spread grows even stronger.
+随着你体内卵的增多，播撒的渴望愈发强烈。
 \&lt;&lt;/if&gt;&gt;
 
-∇: You gain 8 corruption.
+∇: 你获得了 8 点堕落值【corruption】.
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 8)&gt;&gt;
 \&lt;&lt;run setup.MQ002_AddNyxParasiteInfection()&gt;&gt;
-∇: You gain the &quot;Nyx Spawn Infection&quot; Ability.
+∇: 你获得了能力 &quot;倪克斯之卵的传染【Nyx Spawn Infection】&quot; 。
 \
 
 \&lt;&lt;print setup.clearWestWingRoom(&quot;WestWing_NyxSpawnFight&quot;)&gt;&gt;
 
-&lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="922" name="Quest_MQ002_NyxParasiteEncounter_KillIt" tags="" position="225,11600" size="100,100">As soon as you see it fall, you rush towards it to deliver the final blow. 
-You stomp on the spawn over and over again, fear and adrenaline guiding you instinctively. 
-Groans of efforts echo along the hall as you keep going for as long as your body allows you to. 
-High pitched screams soon melt into wet splashes; its body convulses without intent.
+&lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="922" name="Quest_MQ002_NyxParasiteEncounter_KillIt" tags="" position="225,11600" size="100,100">看到它掉落的瞬间，你箭步上前去给予它最后一击。
+你一遍又一遍地踩踏着卵，让恐惧和肾上腺素引领你的本能。Y
+你不停地用力踩踏，直到身体允许的最大极限，喘息声在整个门厅内回响着。
+锐利的尖叫声很快融化成了潮湿的溅泼声；它的身体只能无意识地抽搐。
 
-You pant and take a few steps back. 
-The gruesome sight of the dead spawn almost makes you sick.
+你喘着粗气，向后退了几步。 
+卵那毛骨悚然的死状让你几乎都要吐出来。
 
-You hold your breath and move to the door at the end of the hall. 
-Your eyes stay glued to the monster&#39;s corpse, in case it suddenly springs back to life.
+You hold your breath and move to the door at the end of the hall. 你屏住呼吸，走向了门廊尽头的门前。
+你的视线仍紧紧盯着那怪物的尸体，以防它会瞬间复活过来。Your eyes stay glued to the monster&#39;s corpse, in case it suddenly springs back to life.
 
 \&lt;&lt;print setup.clearWestWingRoom(&quot;WestWing_NyxSpawnFight&quot;)&gt;&gt;
 
 &lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="923" name="Quest_MQ002_NyxParasiteEncounter_PlayerLoses" tags="" position="350,11600" size="100,100">\&lt;&lt;print setup.getFightReward($CharacterSheet_MQ002_NyxParasite, true)&gt;&gt;
 
-As you see the spawn crawl hungrily towards you, you crumble.
+目睹着卵饥渴地朝你爬来的场景让你崩溃了。
 
-You only have a few seconds to react before it reaches you
+在它抓到你之前你只有数秒的反应时间
 
-\&lt;&lt;run setup.choice(&quot;[[Submit to the spawn-&gt;Quest_MQ002_NyxParasiteEncounter_Submit]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[屈服-&gt;Quest_MQ002_NyxParasiteEncounter_Submit]]&quot;);&gt;&gt;
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Escape-&gt;Quest_MQ002_NyxParasiteEncounter_Escape]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[逃跑-&gt;Quest_MQ002_NyxParasiteEncounter_Escape]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;DO NOT̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;[[Escape-&gt;Quest_MQ002_NyxParasiteEncounter_Escape]]&lt;/span&gt;
+&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;DO NOT̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;[[逃跑-&gt;Quest_MQ002_NyxParasiteEncounter_Escape]]&lt;/span&gt;
 \&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="924" name="Quest_MQ002_NyxParasiteEncounter_Submit" tags="" position="475,11600" size="100,100">\&lt;&lt;set $NyxParasiteEncounter_Won = false&gt;&gt;
-The door you came from lays a few feet behind you, but an overpowering mixture of exhaustion and aroused curiosity keeps you on your knees.
+你来时的门只在你身后几尺远的距离，但一股压倒性的疲劳混合着升起的好奇心让你保持着双膝跪地的姿势。
 
-&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_Infection&gt;&gt;</tw-passagedata><tw-passagedata pid="925" name="Quest_MQ002_NyxParasiteEncounter_Escape" tags="" position="600,11600" size="100,100">Your body is about to give up, but the sheer terror of seeing this spawn crawl towards you gives you a second wind.
+&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_Infection&gt;&gt;</tw-passagedata><tw-passagedata pid="925" name="Quest_MQ002_NyxParasiteEncounter_Escape" tags="" position="600,11600" size="100,100">在你身体即将放弃之时，看到卵爬向你的强烈恐惧让你重获动力。
 
-You turn your back to the monster and scream, the door is only a few feet away... 
-Without second thoughts, you hurl yourself back to the room you came from and force the door close with the little energy you have left.
+你尖叫着转过身去，门只有几寸之遥……
+你毫不犹豫冲进了来时的房间，用尽最后一丝力量将门强行关了上去。Without second thoughts, you hurl yourself back to the room you came from and force the door close with the little energy you have left.
 
-You pant and expect the worst, but the monster does not seem to take chase.
+你不停地喘息，做好了最坏的打算，不过那个怪物似乎并没有追过来。
 
 &lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="926" name="Encounter_Intro_Shard_Ring" tags="" position="725,11600" size="100,100">You travel through a wasteland of rusted iron covered by sand. It must have been an industrial complex at some point, but it&#39;s hard to tell.
 Its purpose is long lost, but salvagers are known to take and reuse pieces of these ruins for themselves.
