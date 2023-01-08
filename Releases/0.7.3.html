@@ -40304,141 +40304,141 @@ You hold your breath and move to the door at the end of the hall. 你屏住呼�
 
 你不停地喘息，做好了最坏的打算，不过那个怪物似乎并没有追过来。
 
-&lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="926" name="Encounter_Intro_Shard_Ring" tags="" position="725,11600" size="100,100">You travel through a wasteland of rusted iron covered by sand. It must have been an industrial complex at some point, but it&#39;s hard to tell.
-Its purpose is long lost, but salvagers are known to take and reuse pieces of these ruins for themselves.
+&lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="926" name="Encounter_Intro_Shard_Ring" tags="" position="725,11600" size="100,100">你到达了一片满是被沙子掩埋的锈铁的荒地。在过去的某个时间这里一定是个工业园区，但依然不好说。
+建造这片园区的目的已被历史掩埋，不过你知道打捞者们会自己取走回收这些废品。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="927" name="Encounter_Start_Shard_Ring" tags="" position="850,11600" size="100,100"></tw-passagedata><tw-passagedata pid="928" name="Encounter_Win_Shard_Ring" tags="" position="975,11600" size="100,100">&lt;&lt;print setup.getFightReward($CharacterSheet_Shard_Ring)&gt;&gt;
 
 &lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Shard_Ring.quest.postFightPassagesWin)&gt;&gt;</tw-passagedata><tw-passagedata pid="929" name="Encounter_Loss_Shard_Ring" tags="" position="1100,11600" size="100,100">&lt;&lt;print setup.getFightReward($CharacterSheet_Shard_Ring, true)&gt;&gt;
 
-&lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Shard_Ring.quest.postFightPassagesLoss)&gt;&gt;</tw-passagedata><tw-passagedata pid="930" name="Shard_Ring_Intro_2" tags="" position="1225,11600" size="100,100">You pick your way through the debris and rubble that litters the ground. 
-The only sound you can perceive is the crunch of your feet on the gravel and the occasional rustle of rats in the undergrowth. 
+&lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Shard_Ring.quest.postFightPassagesLoss)&gt;&gt;</tw-passagedata><tw-passagedata pid="930" name="Shard_Ring_Intro_2" tags="" position="1225,11600" size="100,100">你在满是碎石和残骸的地面上探出了一条路。
+唯一可以听见的便是你的脚踏在碎石上的声音，间或有些老鼠在低矮灌木下弄出的沙沙声。
 
-You keep your head down and your eyes peeled for any signs of life.
+你垂着脑袋，用双眼搜寻着一切生命的迹象。You keep your head down and your eyes peeled for any signs of life.
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Intro_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="931" name="Shard_Ring_Intro_3" tags="" position="100,11725" size="100,100">Suddenly, you feel the air thicken. It&#39;s like a storm is brewing. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Intro_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="931" name="Shard_Ring_Intro_3" tags="" position="100,11725" size="100,100">突然，你感到空气变得沉闷起来。这里似乎在酝酿一场暴风雨。
 
-A strong wind of Essence builds in the air, one that rushes through you and fills you with energy.
+一股浓郁的精华【Essence】在空气里聚起，吹过你的身体，让你充满了能量。
 
-&lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Shard_Ring.quest.encounterIntro)&gt;&gt;</tw-passagedata><tw-passagedata pid="932" name="Shard_Ring_LowScoring_Intro" tags="" position="225,11725" size="100,100">You catch a glimpse of a familiar ring floating in the air.
-It spins and begins to glow with a soft green light. And then, as if drawn by an invisible hand, it begins to move towards you.
+&lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Shard_Ring.quest.encounterIntro)&gt;&gt;</tw-passagedata><tw-passagedata pid="932" name="Shard_Ring_LowScoring_Intro" tags="" position="225,11725" size="100,100">你瞥见一个漂浮在空中的环，感觉有些眼熟。
+它一边旋转，一边开始发出柔和的绿光。接着，它开始朝你移动，如同被一只看不见的手拿着一样。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;I&#39;ve been waiting for you.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;I&#39;ve missed you.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;我一直在等你。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我想你了。 &quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_LowScoring_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="933" name="Shard_Ring_LowScoring_Intro_2" tags="" position="350,11725" size="100,100">You feel heat radiate from it as it gets closer, as the air thickens with Essence.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_LowScoring_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="933" name="Shard_Ring_LowScoring_Intro_2" tags="" position="350,11725" size="100,100">随着它的靠近，你感到了从里面散射出的热量，空气中的精华【Essence】也更为浓厚。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;You are a fierce opponent.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;one that can make me burst with Essence once more.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;你是一个难缠的对手。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;一个可以让我再次爆发出精华【Essence】的对手。 &quot;&lt;/span&gt;
 
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="934" name="Shard_Ring_FullDom_Intro" tags="" position="475,11725" size="100,100">Your cock ring was cold to the touch, but it sent a shiver up your spine nonetheless. You feel the spirit within quake with excitement.
-It can taste the Essence building around you and makes your cock harder than ever. 
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="934" name="Shard_Ring_FullDom_Intro" tags="" position="475,11725" size="100,100">你的阴茎环的触感是凉的，但它还是让你的脊骨打了个冷颤。你感觉到了里面的灵魂兴奋的颤抖。
+它可以感觉到你周围的精华【Essence】，并让你的鸡巴变得更硬。
 
-You feel the ring shift, becoming slightly ethereal and translucent. 
+你感到了环在移动，并变得稍有些透明和缥缈。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FullDom_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="935" name="Shard_Ring_FullDom_Intro_2" tags="" position="600,11725" size="100,100">It starts to move on its own, swirling around your cock and sending shivers up your spine.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FullDom_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="935" name="Shard_Ring_FullDom_Intro_2" tags="" position="600,11725" size="100,100">它开始自我运动，套在你的鸡巴上旋转，让你的脊骨发生一次次的颤抖。It starts to move on its own, swirling around your cock and sending shivers up your spine.
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;It&#39;s been too long since I last manifested.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;You look great from here.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;据我上次显灵已过去了太久太久。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;你从这个视角看起来很不错。 &quot;&lt;/span&gt;
 
-The cock ring morphs and warps as it gathers the Essence in the air, turning into the ghostly humanoid form you know and love.
+阴茎环收集着空气中的精华，同时在变换形状，最后变成了一个你了解并挚爱的人的幽灵的样子。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;How about a spar?&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;I&#39;ve been yearning to feel your power for myself.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;要来打一架吗？ &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我一直渴望着亲身体会你的力量。 &quot;&lt;/span&gt;
 
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="936" name="Shard_Ring_FullSub_Intro" tags="" position="725,11725" size="100,100">The collar suddenly grows warmer, the constant reminder of your submission bursting with life. You feel the spirit within quake with excitement. 
-He can taste the Essence building around you, making your cock harder than ever. 
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="936" name="Shard_Ring_FullSub_Intro" tags="" position="725,11725" size="100,100">项圈瞬间变得温暖起来，充满活力地持续提醒着你的屈服。你感觉到了里面的灵魂兴奋的颤抖。
+它可以感觉到你周围的精华【Essence】，并让你的鸡巴变得更硬。
 
-You feel the ring shift, becoming slightly ethereal and translucent. Then it starts to move on its own, swirling around your neck and sending shivers up your spine.
-Part of you feels left out as it detaches from your neck, but you know that seeing your master will make it all worth it.
+你感到了环在移动，并变得稍有些透明和缥缈。它开始自我运动，套在你的脖子上旋转，让你的脊骨发生一次次的颤抖。
+它从你脖子上分离的感觉让你感到了些许的冷落，但你知道你马上要见到你的主人，这是值得的。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FullSub_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="937" name="Shard_Ring_FullSub_Intro_2" tags="" position="850,11725" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;Show me what you can do.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;Let the Gods witness our might.&quot;&lt;/span&gt;
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FullSub_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="937" name="Shard_Ring_FullSub_Intro_2" tags="" position="850,11725" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;展示你的能力。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;让上帝见证我们的可能。 &quot;&lt;/span&gt;
 
-Your master wants to see your powers, and you feel compelled to show him.
+你的主人想要看看你的力量，并且你不得不向他展示。Your master wants to see your powers, and you feel compelled to show him.
 
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="938" name="Shard_Ring_FirstMeeting_Intro" tags="" position="975,11725" size="100,100">You turn in the direction of this powerful breeze, and your gaze catches a glowing metallic object buried under some scraps.
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="938" name="Shard_Ring_FirstMeeting_Intro" tags="" position="975,11725" size="100,100">你转向这股充满力量的和风来源，在一堆碎石下看到了一个发光的金属物品。
 
-It looks like an old ring, glowing in bright, viridian green. 
+它看起来像是个古老的环，散发着明亮的翡翠绿光。
 
 \&lt;&lt;run setup.choice(&quot;[[Dig it out-&gt;Shard_Ring_FirstMeeting_Intro_2]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Leave it be-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="939" name="Shard_Ring_FirstMeeting_Intro_2" tags="" position="1100,11725" size="100,100">\&lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;strength&quot;) &gt; 20&gt;&gt;
-You give the ring take a closer look and manage to grasp it from under the rubbles. 
-It is buried under quite a bit of debris, and it takes a lot effort to retrieve. 
+你凑近了环，试着从粗石下面握住它。
+盖在上面的碎石不在少数，要花费不少功夫才能将它取出来。
 
-But with a strong tug, you manage to free it from  the mountain of scraps above it.
+随着你用力的一拽，它从碎石山的底部被解放了出来。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_3]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-You attempt to dig it out and take a closer look. 
-However with each attempt to tug it free, the ring appears to bury itself deeper. 
+你尝试这将其挖出，以便更进一步的观察。
+但无论你怎么努力，那个环似乎都在将自己埋得更深。
 
-It seems that you do not have the strength to pull it out for now.
+你目前似乎并足够的力量没有将其取出。
 
 \&lt;&lt;run setup.choice(&quot;[[Leave it be-&gt;Village]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="940" name="Shard_Ring_FirstMeeting_Intro_3" tags="" position="1225,11725" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.info.known = setup.EncounterKnownState.KNOWN&gt;&gt;
-Your hand suddenly recoils back by instinct as if the ring were burning hot, yet you only felt a cool, glassy surface. 
+你的手如被环烫着了一样本能地缩了回去，但你刚才只感受到了它冰凉且光滑的表面。
 
-It falls to the ground, but never makes impact, continuing to glow and hovering a few inches above the sand.
+它坠向地面，但并没引起撞击，反而是漂浮在了沙地上方几英尺的位置，同时仍在发光。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="941" name="Shard_Ring_FirstMeeting_Intro_4" tags="" position="100,11850" size="100,100">Suddenly, it rises to the height of your chest.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="941" name="Shard_Ring_FirstMeeting_Intro_4" tags="" position="100,11850" size="100,100">突然，它升到了你胸口的位置。
 
-Green runes pulse across the ring&#39;s surface with the rhythm of a beating heart.
-It hovers and shakes, condensing the Essence in the air to form sounds in the wind.
+环表面的绿色符文以心脏跳动的频率搏动着。
+它不断地盘旋摇晃，不断浓缩着周围空气里的精华【Essence】，在风中响动着。
 
-You take a careful stance and are ready for anything.
+你摆出一个谨慎的架势，为后续的任何可能做好了准备。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_4_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="942" name="Shard_Ring_FirstMeeting_Intro_4_1" tags="" position="225,11850" size="100,100">A voice burst forth from all around you.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_4_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="942" name="Shard_Ring_FirstMeeting_Intro_4_1" tags="" position="225,11850" size="100,100">一个声音突然从你的四周响起。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;WARRIOR!&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;勇士啊！ &quot;&lt;/span&gt;
 
-You watch more Essence rise from the ruins below and rush towards the ring.
+你看到更多的精华【Essence]从废墟中升起，飞向了环。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;YOUR STRENGTH HAS GROWN ENOUGH FOR YOU TO CALL ME FORTH.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;你的力量已经成长到足以允许你称我为福斯【Forth】了。 &quot;&lt;/span&gt;
 
-The presence around the ring shakes as a growing mist builds within its center. Its glow becomes nearly blinding, the brilliant green light shimmering, energy crackling through the air.
+以他为中心升起了一团迷雾，使得环的周遭的存在开始模糊。它的光芒变得近乎炫目，明亮的绿光在闪耀，空气里传来能量的噼啪声。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="943" name="Shard_Ring_FirstMeeting_Intro_5" tags="" position="350,11850" size="100,100">You notice a figure materializing from the light, transparent at first, but gradually more of its features become apparent.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="943" name="Shard_Ring_FirstMeeting_Intro_5" tags="" position="350,11850" size="100,100">你发觉光芒中显现出一个人影，一开始近乎透明，但他的特征逐渐开始变得明显。
 
-It is muscular and well-defined, with a broad chest and powerful arms.
-A rugged face forms atop this warrior&#39;s body, one with a long scar that goes from his left eye to his mouth.
-He has no hair, and his eyes seem to shimmer with an inner light, the same green color of the ring&#39;s aura.
+肌肉发达，轮廓清晰，胸部宽阔，手臂有力。
+这具战士的躯体上显现出了一副刚毅英挺的面孔，一道长长的伤疤从他的左眼延续到了嘴巴。
+他没有头发，双眸似乎在闪着微光，是和那个环散发出的相同的绿色。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="944" name="Shard_Ring_FirstMeeting_Intro_6" tags="" position="475,11850" size="100,100">The apparition is that of a man, but he is not quite human.
-He seems almost solid as if it could reach out and touch you.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="944" name="Shard_Ring_FirstMeeting_Intro_6" tags="" position="475,11850" size="100,100">幻影某种程度上是个男人的形象，但并不是很像人类。
+他几乎像个实体，仿佛可以伸出手去触摸你一样。
 
-With a voice that seems to come from every direction, he exclaims:
+他用似乎是从每一个方向传来的声音大声说道：
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;ONLY A STRONG WARRIOR CAN GIVE ME WHAT I SEEK.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;If you would so kindly oblige to help.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;只有强壮的勇士可以给予我所追寻之物。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;不知你能否施以援手。 &quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="945" name="Shard_Ring_FirstMeeting_Intro_7" tags="" position="600,11850" size="100,100">With an unblinking gaze, his knees bend slightly, sending a gust of Essence around him. His fists are clenched, and he seems ready to fight.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_FirstMeeting_Intro_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="945" name="Shard_Ring_FirstMeeting_Intro_7" tags="" position="600,11850" size="100,100">他目光坚定，微微屈膝，在他四周释放出一阵精华【Essence】的劲风。他双拳紧握，似乎做好了战斗的准备。
 
-His muscles are firm and smooth, his unblemished skin almost shining.
-But what takes your attention the most is the spirit&#39;s throbbing cock. His tool is prominent, erect and strong enough to rise above his abs. 
-You can feel ethereal warmth pulsing from it as it drips with precum constantly.
+他的肌肉虬实而光滑，皮肤几乎白到发光。
+但最让吸引你注意的还是这个灵体跳动的鸡巴。他的肉棒非常显眼，直直竖起，强壮到足以超过他的腹肌。
+从它不断滴落的前列腺液中，你感受到了一丝缥缈的暖流涌动出来。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;Essence is what I yearn for. And the passion of us warriors clashing, that is what harnesses it.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;I&#39;ve been yearning for it for so long.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;精华【Essence】便是我渴求之物。而我们这些勇士的对战便是它的利用之道。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我已渴望了它太久。&quot;&lt;/span&gt;
 
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="946" name="Shard_Ring_Low_Rela_Win_Idle" tags="" position="725,11850" size="100,100">The spirit let out a final, thunderous cough. 
-A thick, green mist spews forth from his mouth, filling the air with an eerie, otherworldly glow. 
-It swirls and eddies around him before finally dissipating into his body.
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="946" name="Shard_Ring_Low_Rela_Win_Idle" tags="" position="725,11850" size="100,100">说完，灵体发出了一声如雷贯耳的咳嗽。
+一股绿色浓雾从他口中喷薄而出，使周围的空气充满了可怕且诡异的光芒。
+浓雾在他四周涡旋着，最终消散进入了他的身体。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="947" name="Shard_Ring_Low_Rela_Win_Idle_2" tags="" position="850,11850" size="100,100">Suddenly, the ghostly figure bends on one knee in respect, and you feel a sudden chill run down your spine. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="947" name="Shard_Ring_Low_Rela_Win_Idle_2" tags="" position="850,11850" size="100,100">突然，幽灵般的身影单膝下跪，以表敬畏，而你感到了一股恶寒从脊椎升起。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;YOU...&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;You are worthy of my powers.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;YOU...&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;你配得上我的力量。 &quot;&lt;/span&gt;
 
-The Essence in the air seems to drift towards you, slowly infusing your body with strength and vitality.
+空气中的精华【Essence】似乎在朝你飘来，缓慢地向你体内灌输着力量和活力。
 
-He gets up and slowly steps closer.
+他站起身，缓缓走了过来。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="948" name="Shard_Ring_Low_Rela_Win_Idle_3" tags="" position="975,11850" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;I HAVE BEEN WORSHIPED BY COUNTLESS WARRIORS&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;and have worshiped countless more.&quot;&lt;/span&gt;
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="948" name="Shard_Ring_Low_Rela_Win_Idle_3" tags="" position="975,11850" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;我曾被无数勇士所景仰&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;而我景仰的更是数不胜数。 &quot;&lt;/span&gt;
 
-As he gets closer, you start to feel a tingling sensation all over your body. 
-You can feel your body harden and pulse with desire.
+他的接近使你开始感觉全身微微发麻。
+你可以感到你的身体开始僵硬，并且欲望在涌动。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;WHERE DOES YOUR HEART STAND?&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;I will bestow power where you wish it most.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;你的心归属于何处？ &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我会将力量赋予你最渴望的地方。&quot;&lt;/span&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Say you yearn to be dominant-&gt;Shard_Ring_Win_Dominant_Idle]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Say you yearn to be submissive-&gt;ShardRing_Win_Sub_Idle]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="949" name="Shard_Ring_Low_Rela_Loss" tags="" position="1100,11850" size="100,100">The spirit looks down at you. His eyes are cold, and its mouth is set in a grim line. 
-You can see some regret in its eyes. 
+\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="949" name="Shard_Ring_Low_Rela_Loss" tags="" position="1100,11850" size="100,100">灵体俯视着你，眼神冰冷，嘴巴紧绷成一条严肃的直线。
+你察觉到了他眼中的一些惋惜。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;Keep fighting, warrior, for as long as you are willing to grow in strength.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;I will be waiting.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;继续战斗吧，勇士，只要你还想要获得更多力量。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我会等着你的。 &quot;&lt;/span&gt;&#39;bind2&#39;&gt;&quot;I will be waiting.&quot;&lt;/span&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Loss_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="950" name="Shard_Ring_Low_Rela_Loss_2" tags="" position="1225,11850" size="100,100">The ring fades away into nothingness, becoming less and less visible until it finally disappears.
 Whatever energy or focus it needed to stay whole is now gone.
