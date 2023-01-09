@@ -38,7 +38,7 @@
 |yes|Lost|n.迷失者||
 |yes|corruption|n.腐化,腐败||
 |yes|Black Sun|n.黑日||
-|yes|goo|n.黏稠物质|通常意为粘液|
+|yes|goo|n.黏稠物质|通常意为某种黏糊糊的东西|
 |yes|monstrosity|n.巨兽,庞然大物||
 |yes|Wasteland|n.荒原；不毛之地|游戏内目前主要有东、西部荒原两大地点可供玩家自由探索|
 |yes|Nyx|name.尼克斯|游戏内能在一定程度上控制宿主思想行为的一种寄生虫|
@@ -48,16 +48,37 @@
 |yes|Essence|n.精华；本质|鸡儿环/项圈的剧情里有出现这个单词，目前译为精华即可|
 |yes|Forth|name.福斯|鸡儿环的名字|
 |yes|Symbiote|name.共生体|主角前期就能获得的一个类似毒液的依附在主角身体里的伙伴一样的存在，在战斗里面很猛|
-|no|Barrens|荒漠|专有地名，游戏中同样也有非专有名词形式的barren和barrens|
-|no|the Bind|约束者|疑似是阴茎环/项圈剧情里灵体的种族或者职业|
-|no|cock ring|阴茎环，持久环，锁精环|因会成为专有能力需要统一称呼|
+|yes|Barrens|n.荒漠|专有地名，游戏中同样也有非专有名词形式的barren和barrens|
+|yes|the Bind|name.绑定者|阴茎环/项圈的称谓|
+|yes|cock ring|n.鸡巴环，锁精环，阴茎环||
+|yes|Apothus|name.阿波图斯||
+|yes|hood|n.（纳迦的）头侧皮褶|在纳迦剧情内疑似指纳迦头周类似眼镜蛇一样的结构:颈部皮褶，这个词同样有兜帽及覆盖的意思，但是结合立绘来看貌似纳迦并不穿衣服，具体情况具体分析|
+|yes|black cocoon|n.黑茧||
+|yes|serpent|n.大蛇||
+|yes|the Golden Bastion|n.黄金堡垒|游戏中玩家一开始的出生点|
+|yes|maleness|n.男性特征，男性，雄性||
+|yes|pre|n.前液|前列腺液|
+|yes|ball|n.阴囊，卵蛋，睾丸||
+|yes|naga|n.纳迦||
+|yes|anus|n.后穴，肛门||
+|yes|Jorm|name.乔姆|疑似为娜迦的名字|
+|yes|dark ebon shade|n.黑檀木样/色||
+|yes|The corrupted|adj.被腐化的……|后常接物种|
+|yes|realm|n.领地，地方||
+|yes|salvager|n.拯救者||
+|yes|Apothus|name.阿波托斯||
+|yes|promise|n.誓言|游戏内有npc可以与你缔结誓言，成功后会在身上以纹身花纹的形式出现|
 ---
 
 ## **三、代码查疑**
 |是否被确认|代码段|用意|备注|
 |:---:|---|---|---|
 |yes|&#39 ;(中间无空格)|html转义字符，意为英语中的单引号【'】|可直接删去|
-|yes|$CharacterSheet_Lost_Harbinger.quest.harbingerName|此变量意为调用被玩家所击败后同化的一名迷失者的名字，因为玩家可以自由为他取名，所以作者使用了表格数据存储玩家取的名字|
+|yes|$CharacterSheet_Lost_Harbinger.quest.harbingerName|此变量意为调用被玩家所击败后同化的一名迷失者的名字，因为玩家可以自由为他取名，所以作者使用了表格数据存储玩家取的名字||
+|yes|SymbioteColor|变量名，意为调用玩家体内共生体的颜色||
+|yes|SymbioteName|变量名，意为调用玩家体内共生体的名字||
+|yes|setup.getLength(...)|函数，意为获取长度数据||
+|yes|$CharacterSheet_Player.info.name|变量名，储存着玩家角色的姓名||
 ---
 
 # **附录**
