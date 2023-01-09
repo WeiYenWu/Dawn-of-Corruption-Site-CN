@@ -40040,15 +40040,15 @@ Almost as if something more than just your seed has been taken.
 伴随着娜迦的吼叫，你失去了意识，成为了这只高级掠食者的一部分。
 
 \&lt;&lt;run setup.choice(&quot;[[放弃-&gt;Encounter_Loss_Lost_Naga_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="906" name="Encounter_Loss_Lost_Naga_3" tags="" position="725,11350" size="100,100">\&lt;&lt;if $curseStatus == &quot;Cursed&quot;&gt;&gt;
-迷失娜迦已经吞掉了你身体的一部分，唯有击败他才能取回你失去的力量……
+被腐化的娜迦已经吞掉了你身体的一部分，唯有击败他才能取回你失去的力量……
 
 你的力量下降为 &lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt; (-&lt;&lt;print $CharacterSheet_Player.quest.curseOfTheNagaStatDrain.muscles&gt;&gt;).
 你的身高降低为 &lt;&lt;print setup.getLength($CharacterSheet_Player.quest.curseOfTheNagaStatDrain.height)&gt;&gt;.
 你的鸡巴长度缩短为 &lt;&lt;print setup.getLength($CharacterSheet_Player.quest.curseOfTheNagaStatDrain.cock)&gt;&gt;.
 \&lt;&lt;elseif $curseStatus == &quot;AlreadyCursed&quot;&gt;&gt;
-迷失娜迦已经窃取了你一部分能力，唯有击败他才能取回来……
+被腐化的娜迦已经窃取了你一部分能力，唯有击败他才能取回来……
 \&lt;&lt;else&gt;&gt;
-迷失娜迦获得了成长，但你的体型已小到无法继续缩小……
+被腐化的娜迦获得了成长，但你的体型已小到无法继续缩小……
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Death]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="907" name="Encounter_Intro_Swarm" tags="" position="850,11350" size="100,100">\&lt;&lt;set $CharacterSheet_Swarm.quest.met = true&gt;&gt;
@@ -40065,7 +40065,7 @@ Almost as if something more than just your seed has been taken.
 
 腐化者 &lt;&lt;print setup.getRace($CharacterSheet_Swarm.info.anatomy, true)&gt;&gt; &lt;&lt;print setup.processFlavours(
     $CharacterSheet_Lost_Entity,
-    &quot;狂喜地吼叫着，因其捕捉到了它主人的气息。很快，一个笨重而凶猛的【monstrosity】闯入了视野。 &quot; + 
+    &quot;狂喜地吼叫着，因其捕捉到了它主人的气息。很快，一个笨重而凶猛的巨兽闯入了视野。 &quot; + 
     &quot; 黑油从鼓胀的身体上滴落，堕落的颜色闪耀在它的@[all| heads| a~an],他的@[1| tongues| noverb]饥渴地在他嘴边卷起，同时兴奋也使他的@[all| cocks| one=hardens~more=hardens]。\n&quot;
 )&gt;&gt;
 
@@ -40329,7 +40329,7 @@ Almost as if something more than just your seed has been taken.
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;你是一个难缠的对手。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;一个可以让我再次爆发出精华的对手。 &quot;&lt;/span&gt;
 
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="934" name="Shard_Ring_FullDom_Intro" tags="" position="475,11725" size="100,100">你的阴茎环的触感是凉的，但它还是让你的脊骨打了个冷颤。你感觉到了里面的灵魂兴奋的颤抖。
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Shard_Ring)&gt;&gt;</tw-passagedata><tw-passagedata pid="934" name="Shard_Ring_FullDom_Intro" tags="" position="475,11725" size="100,100">你的【阴茎环】的触感是凉的，但它还是让你的脊骨打了个冷颤。你感觉到了里面的灵魂兴奋的颤抖。
 它可以感觉到你周围的精华，并让你的鸡巴变得更硬。
 
 你感到了环在移动，并变得稍有些透明和缥缈。
@@ -40338,7 +40338,7 @@ Almost as if something more than just your seed has been taken.
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;据我上次显灵已过去了太久太久。 &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;你从这个视角看起来很不错。 &quot;&lt;/span&gt;
 
-阴茎环收集着空气中的精华，同时在变换形状，最后变成了一个你了解并挚爱的人的幽灵的样子。
+【阴茎环】收集着空气中的精华，同时在变换形状，最后变成了一个你了解并挚爱的人的幽灵的样子。
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;要来打一架吗？ &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我一直渴望着亲身体会你的力量。 &quot;&lt;/span&gt;
 
@@ -40440,246 +40440,246 @@ Almost as if something more than just your seed has been taken.
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;继续战斗吧，勇士，只要你还想要获得更多我的力量。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我会等着你的。&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Loss_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="950" name="Shard_Ring_Low_Rela_Loss_2" tags="" position="1225,11850" size="100,100">The ring fades away into nothingness, becoming less and less visible until it finally disappears.
-Whatever energy or focus it needed to stay whole is now gone.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Loss_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="950" name="Shard_Ring_Low_Rela_Loss_2" tags="" position="1225,11850" size="100,100">环变得越来越难以看见，最后彻底消失在了虚无之中。
+它赖以维持完整的东西，无论是什么能量还是核心，现在都已消散。
 
-You slowly stand up and leave the ruins empty-handed.
+你缓缓起身，离开了废墟，一无所获。
 
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="951" name="Shard_Ring_Win_Dominant_Idle" tags="" position="100,11975" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.quest.relationshipScoring++&gt;&gt;
-The spirit grins at you, eyeing you up and down in a confidant gaze.
+灵体向你咧嘴一笑，用知己般的视线将你从头到脚打量着。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;YES... YOU ARE BOUND TO BRING PLEASURE TO COUNTLESS OTHERS.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;Make them all beg for more.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;确实……你注定要为很多人带去快感。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;并让他们全都渴求着更多。&quot;&lt;/span&gt;
 
-He grasps your shaft, cutting your breath short as an intense warmth radiates into it.
+他握住你的小兄弟，伴随着向其流入的强烈的热情，你的呼吸短促了起来。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Win_Dominant_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="952" name="Shard_Ring_Win_Dominant_Idle_2" tags="" position="225,11975" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;TO BE DOMINANT IS TO BE A SHEPHERD OF PLEASURE, TO SHOW BOUNDLESS MASCULINITY TO ALL WHO YEARN FOR YOU.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;You&#39;ll take so much Essence within you.&quot;&lt;/span&gt;
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Win_Dominant_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="952" name="Shard_Ring_Win_Dominant_Idle_2" tags="" position="225,11975" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;成为支配者就是成为快感的引导者，给所有渴求你的人展示你那无穷的阳刚气概。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;你会获得大量的精华的。&quot;&lt;/span&gt;
 
-Your cock throbs as you thrust into his warm ethereal hands.
-He gets closer and bends down slightly, guiding your cock to push between his pecs.
+在他温暖又缥缈的手中抽插让你的鸡巴抽动起来。
+他靠近过来，微微俯身，引导着你的鸡巴夹进他的胸肌沟之中。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;GROW, DEAR WARRIOR.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;BECOME A TITAN.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;生长吧，亲爱的勇士。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;长成巨人吧。&quot;&lt;/span&gt;
 
-You blink, and he is suddenly bending down in front of you. Your cock is pressing hard against his cheeks and angrily throbs with anticipation.
+在你眨眼的瞬间，他突然在你面前弯下腰去。你的鸡巴狠狠地顶着他的屁股，热切的期待使它的跳动更为血脉偾张。
 
 \&lt;&lt;run setup.choice(&quot;[[Fuck him-&gt;Shard_Ring_Win_Dominant_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="953" name="Shard_Ring_Win_Dominant_Idle_3" tags="" position="350,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
-You feel the warmth of his strangely smooth skin flush against the head of your dick, then thrust in. 
+你用龟头感受着他那异常丝滑的皮肤上的红晕，然后猛地插了进去。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;GRRRRRRAHHHHHHH!&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;嘎啊啊啊啊啊！&quot;&lt;/span&gt;
 
-His whole body lights up, his lust burning bright enough to heat him up. 
-He can&#39;t help but moan for more, making you want to fuck him even harder.
+他的全身都被激活，灼热的欲望甚至使他体温都在上升。 
+他无法压抑的骚叫声让你想要更加用力地狠操他。
 
 \&lt;&lt;run setup.choice(&quot;[[Fuck him harder-&gt;Shard_Ring_Win_Dominant_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="954" name="Shard_Ring_Win_Dominant_Idle_4" tags="" position="475,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-You swell with a sense of power, a burning flame of pleasure that feeds on his desperate moans. Precum squirts out of his cock in response.
+力量灌注你的全身，饥渴的呻吟使快感的火焰更加旺盛。而他回应以喷涌而出的前列腺液。
 
-Your cock begins to absorb the overflow of Essence building within him; It grows and pulses as your thrust stretch the limits of what the spirit can hold.
+你的鸡巴开始吸收他体内溢出的精华；随着你的冲刺一步步冲破着灵体的极限，你的鸡巴也在增长。Your cock begins to absorb the overflow of Essence building within him; It grows and pulses as your thrust stretch the limits of what the spirit can hold.
 
-∇: Your cock has grown &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 1))&gt;&gt; longer.
+∇: 你的鸡巴长度增加了 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 1))&gt;&gt;。
 
-But you give him more.
+但你还能给他更多。
 
 \&lt;&lt;run setup.choice(&quot;[[Thrust balls deep into him-&gt;Shard_Ring_Win_Dominant_Idle_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="955" name="Shard_Ring_Win_Dominant_Idle_5" tags="" position="600,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
-He wants to feel a warrior&#39;s might, so you grant him his wish.
-You thrust balls deep within him with a grin that brings him over the edge.
+既然他想要感受一个勇士的威力，那你便满足他的愿望。
+你坏笑着将蛋蛋也塞了进去，使他超越了承受的极限。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;OH GODS...&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;哦天……&quot;&lt;/span&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Cum-&gt;Shard_Ring_Win_Dominant_Idle_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="956" name="Shard_Ring_Win_Dominant_Idle_6" tags="" position="725,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
-You cum deep within him and roar in pleasure, shattering your limits as a torrent of potent seed bursts within him. 
-His gut expands with every spurt, and you hold him tightly against you to make sure he takes it all. 
+你发出满足的怒吼，射入了他的深处，一股强健的雄性精种浪潮般在他体内爆发，也使你抵达了极限。
+你死死抵着他，确保他吸收了每一滴精液，他的肚子随着精液的涌入鼓胀了起来。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;Ahhhh... Ahhhhh. AHHHHHHHH!&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;啊……哈——啊啊啊啊！！！&quot;&lt;/span&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Win_Dominant_Idle_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="957" name="Shard_Ring_Win_Dominant_Idle_7" tags="" position="850,11975" size="100,100">&lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Shard_Ring.quest.dominantExit)&gt;&gt;</tw-passagedata><tw-passagedata pid="958" name="Shard_Ring_Low_Rela_Win_Dominant_NormalExit" tags="" position="975,11975" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
-His load spurts out in tandem with yours to build a monstrous mess in the area around you. 
-With each shot of glowing green cum, you feel his form dissipate in the thick fog of Essence that now fills the air. 
+他的存货与你同时射出，将你们周围弄得一片狼藉。
+每一股发着绿光的精液的射出都让你有种感觉，他的形态正消散于现在充满了空气的精华的浓雾之中。
 
-His focus is long gone, and you now stand alone in the Barrens once again.
+他的核心早已荡然无存。现在，你又一次独自一人站在了荒漠【Barrens】之中。
 
-You look down and grin in approval. Your cock has grown through this experience.
+你朝下看去，露出了赞许的笑容。这次经历让你的鸡巴获得了成长。
 
-∇: Your cock has grown &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 1))&gt;&gt; longer.
-∇: The Bind considers you more dominant.
+∇: 你的鸡巴长度增加了 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 1))&gt;&gt;。
+∇: 约束者【The Bind】觉得你更加支配了。
 
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="959" name="Shard_Ring_Low_Rela_Win_Dominant_Final" tags="" position="1100,11975" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
 \&lt;&lt;set State.variables.CharacterSheet_Shard_Ring.quest.fullDom = true&gt;&gt;
 
-His tight hole grips your cock as you thrust in and out of him; the sensation is unbelievable. 
-You can feel every inch of you inside him, which makes you even more aroused. 
+他紧致的小洞紧紧吸着你不断进出的鸡巴；这种感觉爽到无法相信。
+你能感受到进入他体内的每一寸肉棒，这使你更为兴致高亢。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;You feel so damn gooooood!&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;你操起来太他妈爽了！&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="960" name="Shard_Ring_Low_Rela_Win_Dominant_Final_2" tags="" position="1225,11975" size="100,100">Your cock once again becomes fully erect and starts to leak.
-The spirit is moaning in pleasure, and you can tell he&#39;s enjoying it just as much as you are.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="960" name="Shard_Ring_Low_Rela_Win_Dominant_Final_2" tags="" position="1225,11975" size="100,100">你的鸡巴再次完全勃起，并开始流水。
+灵体愉悦地淫叫着，你敢肯定他的享受程度不在你之下。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;I want this to go on. To always feel your godlike cock within me.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;pleeeeeease~&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;我想要继续。让你这神一样的鸡巴永远插在我里面。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;求你了~&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Give him another thrust-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="961" name="Shard_Ring_Low_Rela_Win_Dominant_Final_3" tags="" position="100,12100" size="100,100">It feels as if he is melting on your cock.
+\&lt;&lt;run setup.choice(&quot;[[Give him another thrust-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="961" name="Shard_Ring_Low_Rela_Win_Dominant_Final_3" tags="" position="100,12100" size="100,100">感觉他都要在你鸡巴上融化了。
 
-His ectoplasm hardens around your shaft, molding itself to your contours and providing an exhilarating sensation as you thrust into him. 
-The spirit moans as he&#39;s filled with your cock, his translucent body trembling with ecstasy.
+他的肉壁在你的大棒周围硬化，适应着你的形状，为你的猛插提供着极致兴奋的触感。
+被你的鸡巴塞得满满当当的灵体呻吟着，他半透明的身体因陶醉而不停颤抖。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="962" name="Shard_Ring_Low_Rela_Win_Dominant_Final_4" tags="" position="225,12100" size="100,100">He shudders and clings to you tightly, his body pulsing around your cock as he cums again. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="962" name="Shard_Ring_Low_Rela_Win_Dominant_Final_4" tags="" position="225,12100" size="100,100">他战栗着，紧紧贴住你，吸入你鸡巴的肉体因他的再次射精搏动了起来。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;Ahhhh...!&quot;&lt;/span&gt; He whines, clinging to you as his body trembles with pleasure.
+&lt;span class=&#39;bind1&#39;&gt;&quot;啊啊啊——！&quot;&lt;/span&gt; 他在哀鸣，紧贴着你的身体愉悦地哆嗦着。
 
-The ghostly form begins to take shape around your cock, moulding itself to your every contour. You can feel the spirit&#39;s energy entering you, making your cock harder than before.
-The spirit slowly becomes a large metallic cock ring.
+鬼魂般的形态开始在你鸡巴周围聚集，照着你的轮廓严丝合缝地自我塑形。你感到了灵体的能量正在朝你涌入，让你的鸡巴硬到前所未有的程度。
+慢慢地，灵体变成了一个大号的金属【阴茎环】。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="963" name="Shard_Ring_Low_Rela_Win_Dominant_Final_5" tags="" position="350,12100" size="100,100">You feel its warmth pulse all over your shaft, keeping it rigid and throbbing with lust.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="963" name="Shard_Ring_Low_Rela_Win_Dominant_Final_5" tags="" position="350,12100" size="100,100">【阴茎环】的温暖蔓延了你老二的每一寸，使它一边保持坚挺，一边充满欲望地跳动着。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;Yessssss...&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;Let&#39;s find some more warriors to dominate~.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;很好……&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我们去征服更多的勇士吧~&quot;&lt;/span&gt;
 
-∇: Your cock has grown &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 4))&gt;&gt; longer.
-∇: You gain the &quot;Cock Ring of the Bind&quot; Ability.
+∇: 你的鸡巴长度增长了 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 4))&gt;&gt;。
+∇: 你获得了能力 &quot;约束者【the Bind】的【阴茎环】&quot;。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_CockRingOfTheBind)&gt;&gt;
 \&lt;&lt;run setup.completeAchievement(&quot;Achievement_CockRingOfTheBind&quot;);&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="964" name="Shard_Ring_Low_Rela_Win_Dominant_Idle" tags="" position="475,12100" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
 
-His tight hole is gripping your cock tightly as you thrust in and out of him. 
-You can feel every inch of him inside you, which makes you even more aroused. 
+他紧致的小洞紧紧吸着你不断进出的鸡巴。
+你能感受到进入他体内的每一寸肉棒，这使你更为兴致高亢。 
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;I never want this to end.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;Gods, I love being your cock ring.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;我完全不想停止这一切。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;老天啊，我爱死了做你【阴茎环】的感觉。&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="965" name="Shard_Ring_Low_Rela_Win_Dominant_Idle_2" tags="" position="600,12100" size="100,100">Your cock once again becomes fully erect and starts to leak.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="965" name="Shard_Ring_Low_Rela_Win_Dominant_Idle_2" tags="" position="600,12100" size="100,100">你的鸡巴再次完全勃起，并开始流水。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;I want this to go on. To always feel your godlike cock within me.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;pleeeeeease~&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;我想要继续。让你这神一样的鸡巴永远插在我里面。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;求你了~&quot;&lt;/span&gt;
 
-It feels as if he is melting on your cock.
+感觉他都要在你鸡巴上融化了。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="966" name="Shard_Ring_Low_Rela_Win_Dominant_Idle_3" tags="" position="725,12100" size="100,100">His ectoplasm hardens around your cock, moulding itself to your contours and providing an exhilarating sensation as you thrust into him. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="966" name="Shard_Ring_Low_Rela_Win_Dominant_Idle_3" tags="" position="725,12100" size="100,100">他的肉壁在你的大棒周围硬化，适应着你的形状，为你的猛插提供着极致兴奋的触感。
 
-He shudders and clings to you tightly, his body pulsing around your cock as he cums.
-You feel its warmth pulse all over your shaft, keeping it rigid and throbbing with lust.
+他战栗着，紧紧贴住你，在他射精时身体抖个不停。
+它的温暖蔓延了你老二的每一寸，使其一边保持坚挺，一边充满欲望地跳动着。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="967" name="Shard_Ring_Low_Rela_Win_Dominant_Idle_4" tags="" position="850,12100" size="100,100">He slowly turns back into your cock ring, except it feels bigger and heavier than before.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Dominant_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="967" name="Shard_Ring_Low_Rela_Win_Dominant_Idle_4" tags="" position="850,12100" size="100,100">他缓缓地重新变回为你的【阴茎环】，不过感觉它更大更重了。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;I&#39;m yours...&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;All yours...&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;我是你的……&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;全部都是……&quot;&lt;/span&gt;
 
-∇: Your cock has grown &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 4))&gt;&gt; longer.
-∇: Your &quot;Cock Ring of the Bind&quot; Ability is now stronger.
+∇: 你的鸡巴长度增长了 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 4))&gt;&gt;。
+∇: 你的能力 &quot;约束者【the Bind】的【阴茎环】&quot;现在更强了。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_CockRingOfTheBind)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="968" name="Shard_Ring_Dom_Loss" tags="" position="975,12100" size="100,100">The spirit looks down at you. His eyes are cold, and its mouth is set in a grim line. 
-You can see some regret in its eyes. 
+\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="968" name="Shard_Ring_Dom_Loss" tags="" position="975,12100" size="100,100">灵体俯视着你，眼神冰冷，嘴巴紧绷成一条严肃的直线。
+你察觉到了他眼中的一些惋惜。 
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;Seems you&#39;ve lost&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;that can&#39;t be right.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;你似乎是腐化了。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;这可不对劲。&quot;&lt;/span&gt;
 
-With a blink, the ghost vanishes from your sight, but you feel the familiar pressure of your cock ring building on your shaft again.
-The green runes across the ring pulse softly, without the usual bright intensity.
+眨眼间，鬼魂从你的视野里消失了，但你的老二再次感到了【阴茎环】的熟悉的压迫感。
+环上的绿色符文温和地脉动着，但没有往常那样明亮。
 
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="969" name="ShardRing_Win_Sub_Idle" tags="" position="1100,12100" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.quest.relationshipScoring--&gt;&gt;
-The spirit gives you a slight smile, eyeing you up and down in a confidant gaze.
+灵体向你轻轻一笑，用知己般的视线将你从头到脚打量着。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;HMMMM YES... OTHER&#39;S GIFTS ARE YOURS TO EXPERIENCE.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;You shall be blessed with raw pleasure.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;嗯哼……的确，他人的赐予要由你体验。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;你应该要被原始的快感所赐福。&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;ShardRing_Win_Sub_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="970" name="ShardRing_Win_Sub_Idle_2" tags="" position="1225,12100" size="100,100">The spirit approaches you, his eyes alight with hunger. As his hands reach for you, you can feel the warmth emanating from his ethereal form. 
-Electrifying fingers trace the lines of your body, and you shiver in response. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;ShardRing_Win_Sub_Idle_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="970" name="ShardRing_Win_Sub_Idle_2" tags="" position="1225,12100" size="100,100">灵体接近了你，目光中满是即可。当他朝你伸出手时，你感受到了从缥缈的形态中传来的温热。
+手指顺着你身体的线条滑过，触电般的感觉让你全身开始颤抖。 
 
-The touch of the spirit is strangely intoxicating, and you find yourself wanting more.
+灵体的触摸带有一种奇妙的陶醉感，让你欲求不满。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;ShardRing_Win_Sub_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="971" name="ShardRing_Win_Sub_Idle_3" tags="" position="100,12225" size="100,100">The spirit presses you against him. You can feel the need pulsing within him, and you are not afraid. 
-There is an undeniable allure to whatever this spirit has to offer. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;ShardRing_Win_Sub_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="971" name="ShardRing_Win_Sub_Idle_3" tags="" position="100,12225" size="100,100">灵体紧紧地压住了你。你可以感受到他体内涌动的需求，而你一点也不害怕。
+不论灵体会做出什么都是无法抗拒的诱惑。
 
-His mouth descends on yours, and you are lost in a warm kiss. 
+他的唇落在了你的唇上，温暖的吻使你恍神。
 
 \&lt;&lt;run setup.choice(&quot;[[Kiss Back-&gt;ShardRing_Win_Sub_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="972" name="ShardRing_Win_Sub_Idle_4" tags="" position="225,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
-Your body responds to the spirit and melts into it. The kiss deepens, and you are pulled into a whirling vortex of pleasure.
+你的身体也在回应，瘫在他的怀里。吻仍在深入，将你拉入了快感的漩涡之中。
 
-You feel his hot breath on your neck and shiver as his tongue runs up and down your skin. 
-You&#39;re completely helpless as the spirit continues to explore your body, his hands roaming over your skin, sending chills down your spine. 
+他的热气呼在你的脖颈上，他的舌头舔舐着你的皮肤，让你浑身颤抖。
+你完全无法阻止灵体进一步探索你的身体，在你皮肤上漫游的双手又让你脊骨一阵发凉。
 
 \&lt;&lt;run setup.choice(&quot;[[Take a deep breath-&gt;ShardRing_Win_Sub_Idle_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="973" name="ShardRing_Win_Sub_Idle_5" tags="" position="350,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-The musk radiating from him suddenly strikes you, and your cock instinctively spurts a small blast of pre.
-You both become overwhelmed in lust through the intoxicating Essence thickening around you. 
+他散发出的麝香扑面而来，你的鸡巴本能地流出了一小股前列腺液。
+周围醉人的精华愈发浓烈，让你们二人都被肉欲淹没。
 
-The spirit feels an intense need to breed, only worsened by your arousal.
+急切的播种欲望涌上灵体的心头，而你的挑逗只会使其更加糟糕。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;MOAN FOR ME...&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;为我呻吟……&quot;&lt;/span&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Moan-&gt;ShardRing_Win_Sub_Idle_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="974" name="ShardRing_Win_Sub_Idle_6" tags="" position="475,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
-His whole body is boiling with lust, and he can&#39;t contain it anymore.
-The spirit&#39;s demanding tone devolves into orgasmic growls as you overwhelm him with pleasure.
+他的欲望几乎要让全身沸腾，使他再也无法压抑。
+他沉浸在你带来的快感中，命令的口吻变成了高潮的咆哮。
 
-Sparing the formalities, he quickly shoves his cock inside you and unleashes a long, drawn-out moan.
+他省去了繁琐的过程，直接将他的鸡巴猛插进了你的体内，并发出了一声悠长的呻吟。
 
 &lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Shard_Ring.quest.subExit)&gt;&gt;</tw-passagedata><tw-passagedata pid="975" name="Shard_Ring_Low_Rela_Win_Sub_NormalExitChoice" tags="" position="600,12225" size="100,100">\&lt;&lt;run setup.choice(&quot;[[Beg for more-&gt;Shard_Ring_Low_Rela_Win_Sub_LowRelaExit]]&quot;);&gt;&gt;
 &lt;span class = &#39;inactive&#39;&gt;[[Give yourself up to him-&gt;Village]] (The Bind still feels some restraint within you.)&lt;/span&gt;</tw-passagedata><tw-passagedata pid="976" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice" tags="" position="725,12225" size="100,100">\&lt;&lt;run setup.choice(&quot;[[Beg for more-&gt;Shard_Ring_Low_Rela_Win_Sub_LowRelaExit]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Give yourself up to him-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="977" name="Shard_Ring_Low_Rela_Win_Sub_LowRelaExit" tags="" position="850,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
-He roars and cums, grasping your neck hard enough for the Essence to burn against your skin.
-His load spurts out in tandem with yours to build a monstrous mess in the area around you. 
+他用力掐住你的脖子，怒吼着射了出来，你的皮肤被精华灼烧着。
+你和他同时射出的精液将你们周围搞的一片狼藉。
 
-With each shot of glowing green cum, you feel his form dissipate in the thick fog of Essence that now fills the air. 
+每一股发着绿光的精液的射出都让你有种感觉，他的形态正消散于现在充满了空气的精华的浓雾之中。 
 
-The ring and its spirit have disappeared from the area.
+环和灵体都从这片区域里消失了。
 
-∇: The Bind&#39;s cock has grown &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Shard_Ring, &quot;cock&quot;, 1))&gt;&gt; longer.
-∇: The Bind considers you more submissive.
+∇: 约束者【The Bind】的鸡巴长度增长了 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Shard_Ring, &quot;cock&quot;, 1))&gt;&gt;。
+∇: 约束者【The Bind】觉得你更加服从了。
 
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="978" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_2" tags="" position="975,12225" size="100,100">\&lt;&lt;set State.variables.CharacterSheet_Shard_Ring.quest.fullSub = true&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
-The spirit&#39;s cum is warm inside you, and it feels amazing. 
-You can feel every inch of him inside you, and he fills you completely. 
-He fucks you hard, and you can feel his cum churning inside you until he explodes again. 
+你体内的温热的灵体精液带来了一种美妙的体验。
+他完全塞满了你，你能感受到他进入你体内的每一寸肉棒。
+他狠狠地操着你，体内的精液在不断搅动，直到他再次爆发。
 
-The sensation is intense, and you can feel yourself climaxing with him.
+这种激情的感觉使你跟着他一起达到了高潮。
 
-Nothing could be better than this.
+不会有比这更好的事情了。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="979" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_3" tags="" position="1100,12225" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
-He suddenly pulls you close, his eyes boring into yours. 
+他突然将你拉近，与你四目相对。
 
-He grasps your neck with one hand, and you suddenly feel warmth build between his fingers.
+他的一只手扼住你的咽喉，你瞬间感到了他手指间传来的暖流。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;Yesssss&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;You&#39;re perfect...&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;很好。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;你很完美……&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="980" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_4" tags="" position="1225,12225" size="100,100">Metal forms under his touch, and an unknown alloy grows around your neck.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="980" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_4" tags="" position="1225,12225" size="100,100">Metal forms under his touch, and an unknown alloy grows around your neck.他触碰的地方有金属出现，一种未知的合金围住了你的脖子。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;This is for you.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;Wear it well.&quot;&lt;/span&gt; 
+&lt;span class=&#39;bind1&#39;&gt;&quot;这是给你的。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;好好带着它。&quot;&lt;/span&gt; 
 
-His voice like a whisper on the wind.
+他的声音宛如风中细语。
 
-He steps back, admiring its handiwork.  
+他退后一步，欣赏着它的手工艺。
 
-&quot;Now you are bound to me.&quot;
+&quot;现在你被绑定于我了。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="981" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_5" tags="" position="100,12350" size="100,100">You look down and see a sizable metallic collar that now adorns your neck. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="981" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_5" tags="" position="100,12350" size="100,100">你向下看去，发现脖子上装饰了一个相当大的金属项圈。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;I&#39;m going to make you feel things you never thought possible.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;我要让你拥有你从不认为可能的体验。&quot;&lt;/span&gt;
 
-The ghostly hands rest on your body, and you shiver as their touch sends a thrill of pleasure through you. 
-He explores your body, pushing you to the brink of ecstasy.  
+幽灵般的双手放在你的身体上，触感让你发出一阵激动的战栗。
+他探索着你的身体，将你推向疯狂的边缘。 
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="982" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_6" tags="" position="225,12350" size="100,100">You cry out as the spirit brings you over the edge, your body writhing in pleasure as you float in the afterglow. 
-The spirit watches you, a satisfied smirk on its face. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="982" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_6" tags="" position="225,12350" size="100,100">你放声呼喊，本处在高潮后的余韵的身体，因灵体带给你超越极限的快感而开始疯狂扭动起来。
+灵体欣赏着你，脸上露出了得意且满足的笑容。 
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;You&#39;re mine.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;你是我的。&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="983" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_7" tags="" position="350,12350" size="100,100">You feel the gentle touch of a ghostly hand on your back as you come down from your ecstasy. 
-The feeling is electric, sending shivers down your spine as the afterglow takes effect. 
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="983" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_7" tags="" position="350,12350" size="100,100">在你的疯狂开始消退时，后背传来了鬼魂般的手的轻柔的触感。
+电击般的感觉使得你的脊椎颤抖，而贤者时间也开始生效。
 
-You feel your body relax, and the stress of the day just melts away under the touch of the spirit. 
-It&#39;s like being wrapped in a warm, comforting blanket, and you can&#39;t help but laze and relax into it. 
+你全身放松，一整天的压力都随着灵体的触摸烟消云散。
+就像是一个让你忍不住钻进去休息的温暖舒适的棉被。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="984" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_8" tags="" position="475,12350" size="100,100">Your eyes close for a second, and you have no idea how much time has passed.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="984" name="Shard_Ring_Low_Rela_Win_Sub_FinalExitChoice_8" tags="" position="475,12350" size="100,100">你闭上了眼睛，无法感到时间的流逝。
 
-You wake up feeling both relaxed and energized at the same time. 
-The spirit of the ring is now gone, but you can still feel his presence within your collar.
+当你醒来后，全身都感到既轻松又充满活力。
+灵体已经消失了，但你仍可以从项圈中感觉到他的存在。
 
-∇: You can feel The Bind&#39;s presence within your soul.
-∇: You gain the &quot;Collar of the Bind&quot; Ability.
+∇: 你可以感觉到约束者【the Bind】存在于你的灵魂深处。
+∇: 你获得了能力 &quot;约束者【the Bind】的项圈&quot;。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_CollarOfTheBind)&gt;&gt;
 \&lt;&lt;run setup.completeAchievement(&quot;Achievement_CollarOfTheBind&quot;);&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="985" name="Shard_Ring_Low_Rela_Win_Sub_IdleExit" tags="" position="600,12350" size="100,100">You moan as the spirit looms over you, his long, hard cock thrusting deep inside you. 
-He is relentless, repeatedly pounding away at your hole, making you moan and writhe in pleasure.  
+\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="985" name="Shard_Ring_Low_Rela_Win_Sub_IdleExit" tags="" position="600,12350" size="100,100">灵体在你身上的耕耘使你不断呻吟，他那坚硬的大鸡巴深深顶进了你的身体。
+他毫不留情的一次次撞击着你的小穴，快感引得你不停蠕动淫叫。
 
-You are entirely at the spirit&#39;s mercy, and he loves it.
+你完全被灵体所掌控，而他喜爱这样。
 
-&lt;span class=&#39;bind1&#39;&gt;&quot;I will always be with you.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;All will know who owns you.&quot;&lt;/span&gt;
+&lt;span class=&#39;bind1&#39;&gt;&quot;我会永远伴随着你。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;所有人都会知道是谁拥有了你。&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Moan for him-&gt;Shard_Ring_Low_Rela_Win_Sub_IdleExit_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="986" name="Shard_Ring_Low_Rela_Win_Sub_IdleExit_2" tags="" position="725,12350" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;You&#39;re mine.&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;Grrrrrrrahhhh!!&quot;&lt;/span&gt;
+\&lt;&lt;run setup.choice(&quot;[[Moan for him-&gt;Shard_Ring_Low_Rela_Win_Sub_IdleExit_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="986" name="Shard_Ring_Low_Rela_Win_Sub_IdleExit_2" tags="" position="725,12350" size="100,100">&lt;span class=&#39;bind1&#39;&gt;&quot;你是我的。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;咯啊啊啊啊啊!!&quot;&lt;/span&gt;
 
 You moan as he fills you with his ectoplasmic cum, your ass throbbing with pleasure. 
 His seed feels amazing as it gushes into your hole, coating your insides with its slippery goodness. 
@@ -43551,7 +43551,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 你注意到亚伯的手在揉他的档部那逐渐变硬的大包。&quot;任何称职的救援者都说这东西非常危险。让你心里痒痒。也许那就是那东西把这些家伙变成这么大，这么壮硕的野兽的。&quot;
 
-A亚伯的手突然从裤子上抽了出来， &quot;完事了吗？我一秒都不想再待在这头恶魔身边了。&quot;
+亚伯的手突然从裤子上抽了出来， &quot;完事了吗？我一秒都不想再待在这头恶魔身边了。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[It doesn&#39;t feel too bad... -&gt; intro_hot]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[It looks dangerous... -&gt; intro_disgusting]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1300" name="intro_hot" tags="" position="1225,16225" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
