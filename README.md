@@ -1,7 +1,67 @@
-# Dawn of Corruption CN translation projects
+# **Dawn of Corruption CN translation projects**
 
-## Thanks to @Sombreve, the author of DoC, for the great recognition of this project!
+## Thanks to [@Sombreve](https://github.com/Sombreve), the author of DoC, for the great recognition of this project!
 
+---
+## **project_red汉化组（e-mail：<project_red@foxmail.com>）全体成员**
+|    |职位|昵称|
+|---|---|---|
+|1|翻校组长|老魏|
+|2|翻译|Phil|
+|3|翻译|机械|
+|4|翻译|炀|
+|5|程序、校对|小徐|
+|6|翻译|lan|
+---
+## **一、翻校原则。**
+
+### **1.宁可不做，不要乱做。**
+除非你完全清楚、明白含有疑似代码（例如转义符号）的文段，你大可以放心删除，但最好建立在咨询我的前提之下，编译、debug文件是一件非常麻烦的事情；
+因为编译很麻烦，所以请不要轻易改变文档结构，因为我们是靠行数来定位汉化段落的，所以不要随便删改行数，这很重要！
+
+### **2.请标记并跳过代码内嵌的、你没有把握的短词**
+如题，同上条原则，宁可不翻译，不要乱翻译。
+
+### **3.不要着急，尽量还原作者意思**
+对各位的翻译速度不作要求，但请各位不要丢进翻译软件就不管了，那样还不如不翻译，翻译工具终究是一个死板的机器工具，要做到严复先生所提到的“信、达、雅”，仅凭机器是万万不能的,我只希望各位能尽量达到“信”这一层次，及指意义不悖原文这一原则，还请各位多多慎重思考。
+---
+
+## **二、单词注释**
+如果各位对翻译有更好的建议请在群里艾特我让我看到
+
+使用ctrl+shift+v预览此文档
+
+使用ctrl+f查找单词与代码
+
+|是否被确认|单词|译意（多个意义请使用分号分隔）|备注|
+|:---:|:---:|:---:|---|
+|yes|Lost|n.迷失者||
+|yes|corruption|n.腐化,腐败||
+|yes|Black Sun|n.黑日||
+|yes|goo|n.黏稠物质|通常意为粘液|
+|yes|monstrosity|n.巨兽,庞然大物||
+|yes|wasteland|n.荒原；不毛之地|游戏内目前主要有东、西部荒原两大地点可供玩家自由探索|
+|yes|Nyx|name.尼克斯|游戏内能在一定程度上控制宿主思想行为的一种寄生虫|
+|yes|The Lost Naga|name.被腐化的娜迦||
+|yes|Nyx Spawn Infection|感染尼克斯之卵|此乃游戏里的一个常驻效果，随着层数增高，你的腐化值也就越高，但同样还伴随着对玩家数值的增强|
+|yes|spawn|n.(Nyx)幼体；卵|直译为卵，但通过游戏立绘可知这玩意指nyx的时候并不是指nyx的卵而是nyx幼体|
+|yes|Essence|n.精华；本质|鸡儿环/项圈的剧情里有出现这个单词，目前译为精华即可|
+|yes|Forth|name.福斯|鸡儿环的名字|
+|yes|Symbiote|name.共生体|主角前期就能获得的一个类似毒液的依附在主角身体里的伙伴一样的存在，在战斗里面很猛|
+---
+
+## **三、代码查疑**
+|是否被确认|代码段|用意|备注|
+|:---:|---|---|---|
+|yes|&#39 ;(中间无空格)|html转义字符，意为英语中的单引号【'】|可直接删去|
+|yes|$CharacterSheet_Lost_Harbinger.quest.harbingerName|此变量意为调用被玩家所击败后同化的一名迷失者的名字，因为玩家可以自由为他取名，所以作者使用了表格数据存储玩家取的名字|
+---
+
+# **附录**
+## **原文本勘误**
+|行数|原文本|正确文本|备注|
+|:---:|---|---|---|
+|40060|...your ears perk up to a fiendish and >>>gutteral<<< howl.|guttural|
 ---
 
 *[待补充]*
