@@ -48,7 +48,7 @@
 |yes|Essence|n.精华；本质|鸡儿环/项圈的剧情里有出现这个单词，目前译为精华即可|
 |yes|Forth|name.福斯|鸡儿环的名字|
 |yes|Symbiote|name.共生体|主角前期就能获得的一个类似毒液的依附在主角身体里的伙伴一样的存在，在战斗里面很猛|
-|yes|Barrens|n.荒漠|专有地名，游戏中同样也有非专有名词形式的barren和barrens|
+|yes|Barrens|n.荒漠|专有地名，游戏中同样也有非专有名词形式的barren和barrens;the Northen Barrens即为北方荒漠|
 |yes|the Bind|name.绑定者|阴茎环/项圈的称谓|
 |yes|cock ring|n.鸡巴环，锁精环，阴茎环||
 |yes|Apothus|name.阿波图斯||
@@ -68,6 +68,7 @@
 |yes|salvager|n.拯救者||
 |yes|Apothus|name.阿波托斯||
 |yes|promise|n.誓言|游戏内有npc可以与你缔结誓言，成功后会在身上以纹身花纹的形式出现|
+|yes|the temple of the Eldest|name.长老庙||
 ---
 
 ## **三、代码查疑**
