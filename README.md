@@ -66,9 +66,11 @@
 |yes|The corrupted|adj.被腐化的……|后常接物种|
 |yes|realm|n.领地，地方||
 |yes|salvager|n.拯救者||
-|yes|Apothus|name.阿波托斯||
 |yes|promise|n.誓言|游戏内有npc可以与你缔结誓言，成功后会在身上以纹身花纹的形式出现|
 |yes|the temple of the Eldest|name.长老庙||
+|yes|minotaur|n.牛头人|种族|
+|yes|Kanathar|name.卡纳塔尔|Imp的名字|
+|yes|Imp|n.小恶魔||
 ---
 
 ## **三、代码查疑**
@@ -86,7 +88,8 @@
 ## **原文本勘误**
 |行数|原文本|正确文本|备注|
 |:---:|---|---|---|
-|40060|...your ears perk up to a fiendish and >>>gutteral<<< howl.|guttural|
+|40060|...your ears perk up to a fiendish and >>>gutteral<<< howl.|guttural||
+|43773|...of the >>>direlect<<< ruins...|derelict||
 ---
 
 *[待补充]*
