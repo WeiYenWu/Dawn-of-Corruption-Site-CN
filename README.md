@@ -61,7 +61,7 @@
 |yes|ball|n.阴囊，卵蛋，睾丸||
 |yes|naga|n.纳迦||
 |yes|anus|n.后穴，肛门||
-|yes|Jorm|name.乔姆|疑似为娜迦的名字|
+|yes|Jorm|name.乔姆|疑似为纳迦的名字|
 |yes|dark ebon shade|n.黑檀木样/色||
 |yes|The corrupted|adj.被腐化的……|后常接物种|
 |yes|realm|n.领地，地方||
@@ -71,6 +71,8 @@
 |yes|minotaur|n.牛头人|种族|
 |yes|Kanathar|name.卡纳塔尔|Imp的名字|
 |yes|Imp|n.小恶魔||
+|yes|displacer beast|n.移位兽|出自dnd，特点是背上有两个触手一样的东西|
+|yes|Abel|name.亚伯|主角的好基友||
 ---
 
 ## **三、代码查疑**
