@@ -44002,99 +44002,99 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 ……更危险的事件的开端。
 
-\&lt;&lt;run setup.choice(&quot;[[Get dressed -&gt; intro_get_dressed]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1344" name="intro_get_dressed" tags="" position="475,16850" size="100,100">You take a moment to put your gear back on, wiping coagulated blood and Corruption off of your clothes with some scrap fabric you had collected for just this occasion.
+\&lt;&lt;run setup.choice(&quot;[[Get dressed -&gt; intro_get_dressed]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1344" name="intro_get_dressed" tags="" position="475,16850" size="100,100">你花了一些时间穿上装备，用周遭的破布擦去衣服上凝固的血液和腐化。
 
-When you finish, you find yourself holding two separate textiles. Subconsciously, you had used one to clean off the blood...
+当你擦完后，你发现自己手里拿着两块布。下意识地，你用其中一块来擦血了……
 
-... The other, is stained black. You find yourself clutching onto the cloth tightly.
+……而那另一块，则被染成了黑色。你紧紧攥着这块布。
 
 \&lt;&lt;run setup.choice(&quot;[[Breathe it in -&gt; intro_inhale_cloth]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Throw it away -&gt; intro_throw_away_cloth]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1345" name="intro_inhale_cloth" tags="" position="600,16850" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-Luck is on your side. There is enough here to have at least one mind bending orgasm - just enough to feel the forbidden pleasure.
+真走运。这东西至少能让你体验一次古怪的高潮——刚好足够让你感受到那种被禁止的快感。
 
-Closing your eyes, you place the cloth over your mouth and inhale deeply. Searing warmth rushes through your body and you flush with intense arousal.
+你闭上眼睛，把布盖在嘴上，深深地吸气。灼热的暖流涌入你的身体，你的脸涨得绯红，异常地兴奋。
 
-You need more.
+还不够。
 
-Far more!
+远远不够！
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;intro_inhale_cloth_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1346" name="intro_inhale_cloth_1" tags="" position="725,16850" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
-Your breath quickens into a frenzy. With every breath, pleasure builds and builds and builds until a mind-shattering orgasm rips through your senses.
+你的呼吸变得急促而疯狂。随着每一次呼吸，快感不断累积，直到一个让大脑都要融化的高潮撕裂了感受。
 
-It is beyond your expectation; the heavenly bliss expanding out from your groin and across your entire body.
+这远远超出了你的预期；天堂般的极乐从胯部蔓延全身。
 
-You feel as if you&#39;ve somehow grown a little stronger.
+不知怎么地，你感觉自己变得更强壮了。
 \&lt;&lt;set $growth = setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, 2)&gt;&gt;
 
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 10)&gt;&gt;
-Δ: You gain 10 corruption.
+Δ:你获得了10点腐化。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave -&gt; intro_leave_home][setup.stopRealizationPackages([&#39;CharacterSheet_Player&#39;])]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1347" name="intro_throw_away_cloth" tags="" position="850,16850" size="100,100">Tearing your eyes from it, you ball the fabric and throw it across the room.
+\&lt;&lt;run setup.choice(&quot;[[Leave -&gt; intro_leave_home][setup.stopRealizationPackages([&#39;CharacterSheet_Player&#39;])]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1347" name="intro_throw_away_cloth" tags="" position="850,16850" size="100,100">你把眼睛从那块布上移开，把它揉成一团扔到房间的另一边。
 
-Disgusting.
+真恶心。
 
-You cannot help but be simultaneously angered and afraid of the inky toxin.
+你对这漆黑的毒物既愤怒又害怕。
 
-Taking a mental note of the potency of the foul Corruption, you get up to leave.
+你在心里记下了腐败的威力，然后起身离开了。
 
 \&lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Achievement_MemoriesOfTheLost&quot;)&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Leave -&gt; intro_no_herald]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Leave -&gt; intro_leave_home]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1348" name="intro_no_herald" tags="" position="975,16850" size="100,100">Leaving the comfort of your home, you walk through what feels like a wall made of dry, hot air. The desert would not be kind to scavengers today.
-
-The Herald is nowhere to be seen.
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1348" name="intro_no_herald" tags="" position="975,16850" size="100,100">离开舒适的家，你在干燥、酷热的空气里穿梭。今天的沙漠绝不会善待拾荒者。
+    
+你没有发现使者。
 
 &lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;Good...&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1349" name="intro_leave_home" tags="" position="1100,16850" size="100,100">Leaving the comfort of your home, you walk through what feels like a wall made of dry, hot air. The desert would not be kind to scavengers today.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1349" name="intro_leave_home" tags="" position="1100,16850" size="100,100">离开舒适的家，你在干燥、酷热的空气里穿梭。今天的沙漠绝不会善待拾荒者。
 
-&quot;G&#39;morning sleepy head!&quot; You hear Abel call out. He is standing next to a man covered from tip to toe in a frayed cassock. &quot;Come over here for a second.&quot;
+&quot;早上好，瞌睡虫！&quot;你听到亚伯喊到。他旁边站着一个从头到脚都裹着破旧法袍的男人。&quot;过来一下吧。&quot;
 
-You recognise the mysterious figure next to Abel as the Eldest&#39;s Herald. Only those chosen to be a Herald may enter the temple in the center of the village and speak with the Eldest. These people are your leader&#39;s voice, his eyes and ears.
+你认出亚伯旁边的神秘人是长老的使者。只有那些被选为使者的人才可以进入村庄中心的寺庙，与长老交谈。那些人就是长老的嘴和耳目。
 
-The older man smiles at you from underneath his hood, his blue eyes sunken into his aged skull and canopied by a mat of silver hair. &quot;Ah, $CharacterSheet_Player.info.name. I am so happy to see that you have recovered.&quot;
+年长的男人从兜帽下向你微笑，他的蓝眼睛凹陷在他那苍老的头骨里，银发覆盖着他的头顶。&quot;啊，$CharacterSheet_Player.info.name。看到你康复了，我很高兴。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Approach the Herald -&gt; intro_approach_herald]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1350" name="intro_approach_herald" tags="" position="1225,16850" size="100,100">It is unwise to keep a Herald waiting. You briskly make your way over to the pair.
+\&lt;&lt;run setup.choice(&quot;[[Approach the Herald -&gt; intro_approach_herald]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1350" name="intro_approach_herald" tags="" position="1225,16850" size="100,100">让使者久等是不明智的。你迅速走到他们跟前。
 
-Taking your hand, he smiles up at you, &quot;I am truly grateful that you were not slain in the attack last night and, too, am I truly, truly sorry that I must request that you are put in danger again so suddenly.&quot;
+握着你的手，他微笑着对你说：&quot;我真的很庆幸你没有在昨晚的袭击中丧生，同时，我对让你再次突然陷入危险真的非常非常抱歉。&quot;
 
-Abel grunts and folds his arms, seems like he has been told the news beforehand.
+亚伯咕哝着，交叉着双臂，似乎事先就被告知了这个消息。
 
-&quot;The Eldest has requested you by name, $CharacterSheet_Player.info.name,&quot; the Herald continues, &quot;Last night, a great ball of purple fire erupted through the night sky and landed out in the Northern Barrens. \
-The Eldest has commanded the Golden Bastion scavenger to retrieve samples from the site and to confirm whether it is a threat to our people or not.&quot;
+&quot;长老点名要见你，$CharacterSheet_Player.info.name，&quot;使者接着说，&quot;昨晚，一个巨大的紫色火球在夜空中爆发，落在了北边的荒地。&quot; \
+&quot;长老已经下令让黄金堡垒的拾荒者从现场取回样本，并确认它是否对我们的人民构成威胁。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;intro_approach_herald_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1351" name="intro_approach_herald_2" tags="" position="100,16975" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;, $CharacterSheet_Abel.info.bodyList.apprentice)&gt;&gt;
 
-&quot;Cray&#39;s gone,&quot; Abel answers your confused expression, &quot;Which means you are next in line, apparently. Curse of being too good with those fists of yours, buddy.&quot;
+&quot;克雷不见了，&quot;亚伯看着你困惑的表情，回答道，&quot;也就是说，很明显，你要接他的班了。无语，你的拳头强到要被诅咒了，伙计。&quot;
 
-&quot;That is not a curse, Abel!&quot; The Herald scowls, silencing your friend, &quot;It is one of the highest honours to hold the title of scavenger. It is the opportunity to etch your family name into the annals of our history. Now please, time is of the essence. Proceed to the Barrens and report back to us what you find.&quot;
+&quot;那可不是诅咒，亚伯！&quot;使者皱眉，亚伯立刻没声了。&quot;拥有拾荒者的头衔是最高的荣耀之一。这是一个能让你家族的名字载入史册的机会。求你了，时间紧迫。立即前往荒地，然后回来向我们报告你发现了什么。&quot;
 
-Giving you little room to respond, the man leaves you and Abel and hobbles back toward the village center.
+他没给你留下一点点回旋的余地。那个男人离开了你和亚伯，蹒跚地向村庄中心走去。
 
-&quot;Well,&quot; Abel sighs and then puts a hand on your shoulder, his tone growing slightly sarcastic &quot;Congratulations. One battle and straight into the other. You stay safe out there, okay?&quot;
+&quot;好吧，&quot;亚伯叹了口气，然后把一只手搭在你的肩上，半开玩笑着说，&quot;恭喜呀，战斗一场接着一场哈？一定要注意安全，好吗？&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Ask Abel to accompany you -&gt; intro_abel_company]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Thank him and depart -&gt; intro_depart]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1352" name="intro_abel_company" tags="" position="225,16975" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
-&quot;I would if I could! I just don&#39;t think the guards will let the Herald&#39;s apprentice leave the village like that.&quot; \
+&quot;我也想啊！但我觉得卫兵们肯定不会让使者的徒弟就这么大摇大摆地走出村庄的。&quot; \
 
-He suddenly wraps his arms around you and gives you a squeeze, &quot;Make sure you get back here alive and in one piece. I&#39;m not letting this forsaken world steal you too.&quot;
+他突然用胳膊搂住你，狠狠地抱了你一下，&quot;确保你能安然无恙地回来好吗。我不允许这个被抛弃的世界把你也偷走。&quot;
 
-After a few moments of conversation, you say goodbye to each other and watch Abel&#39;s form disappear into the village proper.
+简短地交谈后，你们彼此道别，你看着亚伯的背影消失在村庄里。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1353" name="intro_depart" tags="" position="350,16975" size="100,100">There is no reason to delay. If a Herald gave you an order, it is priority to deal with it immediately.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1353" name="intro_depart" tags="" position="350,16975" size="100,100">没有理由再拖延下去了。如果使者给了你一个指令，那你就应该优先处理它。
 
-After a few moments of conversation, you thank Abel for his help and say your farewells.
+经过短暂的交谈，你感谢了亚伯的帮助，并向他说了再见。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1354" name="Name Setup" tags="Name" position="24,1579" size="100,100">&lt;&lt;include MeasurementSystem&gt;&gt;
 
-I am &lt;&lt;textbox &quot;$CharacterSheet_Player.info.name&quot; $CharacterSheet_Player.info.name&gt;&gt;. 
+我的名字是&lt;&lt;textbox &quot;$CharacterSheet_Player.info.name&quot; $CharacterSheet_Player.info.name&gt;&gt;。 
 
-I sound like this. (You can adjust the volume at the bottom of the stats panel) 
+我的声音是这样的。(你可以在统计面板底部调整音量)
 &lt;&lt;print setup.displayVoiceRadio($CharacterSheet_Player, [&quot;AudioSheet_Voice1_Player&quot;,&quot;AudioSheet_Voice2_Player&quot;])&gt;&gt;
 
-And I am 
+而且我是
 [[A Human-&gt;$Intro_Passage][setup.setRace($CharacterSheet_Player.info.anatomy, setup.RacePool.DEFAULT); setup.stopTestVoices();]]  &lt;span title=&quot;Click for more info&quot;&gt;&lt;&lt;click &quot;🛈&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#humandescription&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;/span&gt;
 &lt;div id=&quot;humandescription&quot; class=&quot;hidden expandInfo&quot;&gt; &lt;&lt;print setup.getRaceDescriptor(setup.RacePoolObjects.DEFAULT) &gt;&gt;&lt;/div&gt; \
 [[A Werewolf-&gt;$Intro_Passage][setup.setRace($CharacterSheet_Player.info.anatomy, setup.RacePool.WOLF); setup.stopTestVoices();]]  &lt;span title=&quot;Click for more info&quot;&gt;&lt;&lt;click &quot;🛈&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#wolfdescription&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;/span&gt;
@@ -44112,17 +44112,17 @@ And I am
 \&lt;&lt;if $Debug&gt;&gt;
 [[Something else...-&gt;CustomRaceDisclaimer]]
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1355" name="CustomRaceDisclaimer" tags="" position="600,16975" size="100,100">&lt;&lt;run setup.stopTestVoices()&gt;&gt;
-Welcome to the custom race menu! This is a debug level tool which allows you to inject your own race into the game.
-Please be advised that this race is NOT included into the main game and only exists within your save. Thus, please note:
+欢迎来到自定义种族菜单！这是一个调试级别的工具，允许你在游戏中添加自己的种族。
+请留意，这个种族不包含在主游戏中，只存在于你自己的存档里。因此，请注意：
 
-- This race will NOT be carried into the next version if the save is incompatible
-- I cannot guarantee that the text will cater for all aspects of your new race
+-如果存档不兼容，这个种族将不会一并保存至下一版本；
+-我无法保证游戏内的文本完全匹配一个新的种族。
 
 [[I accept-&gt;CustomRaceCreator]]
-[[I decline-&gt;Name Setup]]</tw-passagedata><tw-passagedata pid="1356" name="CustomRaceCreator" tags="" position="725,16975" size="100,100">Instructions:
+[[I decline-&gt;Name Setup]]</tw-passagedata><tw-passagedata pid="1356" name="CustomRaceCreator" tags="" position="725,16975" size="100,100">说明：
 
-Please use a single number in the first box, as high as you want.
-The second box is a list of adjectives that describe the texture of your limb. Please separate them with the &#39;,&#39; character.
+请在第一个方框内填一个数字，多少由你。
+第二个方框是一组描述肢体的形容词列表。使用英文的&#39;,&#39;符号进行分隔。
 
 
 My race&#39;s name is &lt;&lt;textbox &quot;$CustomRace.name&quot; &quot;Kobold&quot;&gt;&gt;
@@ -44151,13 +44151,13 @@ I have a &lt;&lt;textbox &quot;$CharacterSheet_Player.info.cock&quot; 6&gt;&gt; 
 I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; inches balls.
 
 [[Done-&gt;$Intro_Passage][console.log($CustomRace); console.log(setup.RacePoolObjects); setup.parseIntStats(); setup.setRace(State.variables.CharacterSheet_Player.info.anatomy, setup.RacePool.CUSTOM, &quot;herm&quot;)]]</tw-passagedata><tw-passagedata pid="1357" name="RandomEcounter" tags="" position="167,1844" size="100,100">\&lt;&lt;if !$Encounter_Target&gt;&gt;
-You find nothing exciting in your journey. All those that could have crossed your path are no more.
+你在旅途中找不到令人兴奋的东西。所有可能与你遇到的人和事都不见了。
 
 \&lt;&lt;run setup.choice(&quot;[[Go Home-&gt;Village]]&quot;);&gt;&gt;
 \&lt;&lt;elseif setup.hasKnownEncounter()&gt;&gt;
 &lt;&lt;print setup.displayPlaceholderImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/northern_barrens.jpg&quot;, undefined, undefined, true)&gt;&gt;
 
-The Barrens are hard to get used to, but you have travelled them enough to trail some of your previous encounters.
+荒地很难习惯，但你已经在这里旅行了足够多，可以追踪你之前遇到的一些人。
 \&lt;&lt;run setup.choice(&quot;[[Explore the Barrens-&gt;KnownEncounter]]&quot;);&gt;&gt;
 &lt;&lt;print setup.displayKnownEncounters()&gt;&gt;
 
@@ -44165,16 +44165,16 @@ The Barrens are hard to get used to, but you have travelled them enough to trail
 &lt;&lt;include KnownEncounter&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1358" name="KnownEncounter" tags="" position="975,16975" size="100,100">&lt;&lt;print $Encounter_Target.fight.encounterIntroText&gt;&gt;</tw-passagedata><tw-passagedata pid="1359" name="Travelling" tags="" position="1100,16975" size="100,100">&lt;&lt;set $Explore_Destination = setup.getExploreDestination(0)&gt;&gt;
 
-&lt;&lt;run setup.choice(&quot;[[Explore the Barrens-&gt;$Explore_Destination]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1360" name="Change_Combo_Moves_Menu" tags="Overworld" position="1225,16975" size="100,100">Change Combo Moves!
+&lt;&lt;run setup.choice(&quot;[[Explore the Barrens-&gt;$Explore_Destination]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1360" name="Change_Combo_Moves_Menu" tags="Overworld" position="1225,16975" size="100,100">改变连击动作！
 \&lt;&lt;set $FightMovesLeft = 5&gt;&gt;
-&lt;&lt;print setup.displayChangeFightMoves()&gt;&gt;</tw-passagedata><tw-passagedata pid="1361" name="ChartPage" tags="Overworld" position="100,17100" size="100,100">You reminisce about the beings you&#39;ve encountered along your adventure and how their size compares to one another. 
+&lt;&lt;print setup.displayChangeFightMoves()&gt;&gt;</tw-passagedata><tw-passagedata pid="1361" name="ChartPage" tags="Overworld" position="100,17100" size="100,100">你回忆着你在冒险中遇到的生物，对比着他们之间的大小。
 
 &lt;&lt;print setup.renderGraph()&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Home]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1362" name="Home" tags="Overworld" position="225,17100" size="100,100">\&lt;&lt;if $CharacterSheet_Player.quest.corruptionVillageExiled == true&gt;&gt;
-Your camp rests on top of a vast canyon. you&#39;re confident that you won&#39;t get too disturbed here. 
+你的营地扎在一个巨大峡谷的顶部。你确信你在这里不会遭遇太多纷扰。
 
-You notice some weapons and trinkets from travellers past. Seems that you&#39;re not the first exile to take camp in this place.
+你注意到一些过去旅行者留下的武器和小饰品。看来你已经不是第一个在这里扎营的，被放逐的人了。
 
 &lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/Exiles_Rest_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/Exiles_Rest.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;else&gt;&gt;
@@ -44192,13 +44192,13 @@ You notice some weapons and trinkets from travellers past. Seems that you&#39;re
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Home]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1364" name="mirror_player" tags="Overworld" position="475,17100" size="100,100">&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_Flavour&quot;, 1)&gt;&gt;
 
-You are currently a &lt;&lt;print setup.displayStatValue($CharacterSheet_Player, &quot;height&quot;, true)&gt;&gt; tall &lt;&lt;print setup.getRace($CharacterSheet_Player.info.anatomy)&gt;&gt; with &lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt; muscles.
+你现在是一个&lt;&lt;print setup.displayStatValue($CharacterSheet_Player, &quot;height&quot;, true)&gt;&gt;高的&lt;&lt;print setup.getRace($CharacterSheet_Player.info.anatomy)&gt;&gt; 有着&lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt;肌肉。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;mirror_player_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1365" name="mirror_player_2" tags="Overworld" position="600,17100" size="100,100">&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_HeadFlavour&quot;, 1)&gt;&gt;
 &lt;&lt;if $CharacterSheet_Player.info.anatomy.horns != undefined &amp;&amp; $CharacterSheet_Player.info.anatomy.horns.number &gt;= 1&gt;&gt;
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_HornsFlavour&quot;,1 )&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-You smile. This was just the tip of the iceberg.
+你笑了。这只是冰山一角。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;mirror_player_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1366" name="mirror_player_3" tags="Overworld" position="725,17100" size="100,100">&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_UpperBodyFlavour&quot;, 1)&gt;&gt;
 &lt;&lt;if $CharacterSheet_Player.info.anatomy.wings != undefined &amp;&amp; $CharacterSheet_Player.info.anatomy.wings.number &gt;= 1&gt;&gt;
@@ -44209,36 +44209,36 @@ You smile. This was just the tip of the iceberg.
 &lt;&lt;if $CharacterSheet_Player.info.anatomy.tails != undefined &amp;&amp; $CharacterSheet_Player.info.anatomy.tails.number &gt;= 1&gt;&gt;
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_TailFlavour&quot;, 1)&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-Then your eyes travel along your navel and to your crotch, your pride and joy.
+然后你的眼睛沿着肚脐移动到胯部，你的骄傲和快乐所在。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;mirror_player_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1368" name="mirror_player_5" tags="Overworld" position="975,17100" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_CrotchFlavour&quot;, 1)&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[Back-&gt;Home][setup.stopRealizationPackages([&#39;CharacterSheet_Player&#39;])]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1369" name="mirror_symbiote" tags="" position="1100,17100" size="100,100">\&lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Ability_ToLiveForEcho&quot;)&gt;&gt;
-&lt;&lt;print &quot;You feel &lt;&lt;SymbioteName&gt;&gt; demanding to be released. Who are you to deny your master&#39;s wishes?&quot;&gt;&gt;
+&lt;&lt;print &quot;你感觉&lt;&lt;SymbioteName&gt;&gt;要求被释放出来。你凭什么拒绝主人的愿望？&quot;&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &lt;= setup.CorruptionComparators.PURE&gt;&gt;
-&lt;&lt;print &quot;In the safety of your own claimed space, you find it surprisingly easy to come to a forceful orgasm, coaxing &lt;&lt;SymbioteName&gt;&gt; out into the open.&quot;&gt;&gt;
+&lt;&lt;print &quot;在你自己安全空间里，你惊讶地发现非常容易就能达到强烈的高潮，你把&lt;&lt;SymbioteName&gt;&gt;引诱了出来。&quot;&gt;&gt;
 \&lt;&lt;elseif setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &lt;= setup.CorruptionComparators.NEUTRAL&gt;&gt;
-&lt;&lt;print &quot;You eagerly start to pleasure yourself, feeling the now-familiar moment when &lt;&lt;SymbioteName&gt;&gt; erupts from you, surround you in its warm, slick embrace.&quot;&gt;&gt;
+&lt;&lt;print &quot;你热切地开始取悦自己，感受着已经熟悉的时刻：当他从你身上喷发出来，他温暖、油滑的拥抱包围着你的时刻。&quot;&gt;&gt;
 \&lt;&lt;elseif setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &lt;= setup.CorruptionComparators.TAINTED&gt;&gt;
-&lt;&lt;print &quot;You flush at the thought of releasing &lt;&lt;SymbioteName&gt;&gt;, eager to feel his flesh against yours. Quickly you reach down to your already throbbing genitals to eagerly seek release and let out your companion.&quot;&gt;&gt;\
+&lt;&lt;print &quot;你想到要释放&lt;&lt;SymbioteName&gt;&gt;，脸上便泛起红晕，渴望着你们肉体的接触。很快，你伸手握住悸动着的生殖器，急切地寻求释放，好让你的伙伴出来。&quot;&gt;&gt;\
 \&lt;&lt;else&gt;&gt;
-&lt;&lt;print &quot;You put on a show, masturbating for those around you, adding your voice to the constant chorus of pleasure surrounding you.&quot;&gt;&gt;
+&lt;&lt;print &quot;你开始了你的表演，为你周围的观众手淫，让你的声音加入到你周围不断的快乐合唱中。&quot;&gt;&gt;
 \&lt;&lt;/if&gt;&gt;\
 
 \&lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Ability_OrgasmicGrowth&quot;)&gt;&gt;\
-&lt;&lt;print &quot;However, without the rush of battle--even against a lowly imp--your orgasm does not seem to push your body further past its limits.&quot;&gt;&gt;
+&lt;&lt;print &quot;然而，如果没有战斗的冲动——即便对手是一个卑贱的小恶魔——你的高潮似乎不会把你的身体推过它的极限。&quot;&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_symbiote_Flavour&quot;, 1, undefined, true)&gt;&gt;
 
-&lt;&lt;print &quot;&lt;&lt;SymbioteName&gt;&gt; is a &quot; + setup.displayStatValue($CharacterSheet_Player, &quot;height&quot;, true) + &quot; tall &lt;&lt;SymbioteRace&gt;&gt;  with &quot;+ setup.getMusclesDescriptor($CharacterSheet_Player) + &quot; muscles.&quot;&gt;&gt; 
+&lt;&lt;print &quot;&lt;&lt;SymbioteName&gt;&gt;是一个&quot; + setup.displayStatValue($CharacterSheet_Player, &quot;height&quot;, true) + &quot;高的&lt;&lt;SymbioteRace&gt;&gt; 有着&quot;+ setup.getMusclesDescriptor($CharacterSheet_Player) + &quot;肌肉。&quot;&gt;&gt;  
 
 \&lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Ability_ToLiveForEcho&quot;)&gt;&gt;
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;Now unleashed, &lt;&lt;SymbioteName&gt;&gt; takes the lead in admiring itself for you. Starting with its @[all| heads| noverb]. It tries out a few expressions showing off its own jawline, opening its mouth occasionally to admire the view. &lt;&lt;SymbioteName&gt;&gt; seems to love admiring the shape of its pronounced cheeks and the way it draws attention to its own mouth. There, &lt;&lt;SymbioteName&gt;&gt;&#39;s @[all|eyes|noverb] linger before it opens its @[all| jaws | noverb] wide and lets its @[all| tongues| noverb] gloss out over its @[all| teeths| noverb]. &lt;&lt;SymbioteName&gt;&gt; seems to give you a salacious glower as it does so.&quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;&lt;&lt;SymbioteName&gt;&gt;被释放了出来，接管了欣赏它自己的动作。它首先从@[all| heads| noverb]开始，尝试了一些表情来炫耀自己的下颌轮廓，偶尔张开嘴巴欣赏一下里面的模样。&lt;&lt;SymbioteName&gt;&gt;似乎很喜欢欣赏明显的脸颊，以及把注意力吸引到自己嘴巴上的轮廓。&lt;&lt;SymbioteName&gt;&gt;的@[all|eyes|noverb]停留在那里，然后张开@[all| jaws | noverb]，让@[all| tongues| noverb]盖过@[all| teeths| noverb]上的闪光。&lt;&lt;SymbioteName&gt;&gt;这样做时，似乎给了你一个淫荡的怒视。&quot;)&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;You find yourself admiring the gooey glistening of &lt;&lt;SymbioteName&gt;&gt; covering your @[all| heads| noverb]. You try out a few expressions showing off its jawline and admiring the form of its face. From there, your @[all|eyes|noverb] linger before you spend a moment prodding a hand at your @[all| jaws | noverb], opening its mouth to take a look at its @[all| tongues| noverb] and  @[all| teeths| noverb]. You spend a moment admiring the sensation of the new face.&quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你发现自己在欣赏&lt;&lt;SymbioteName&gt;&gt;覆盖在你@[all| heads| noverb]上的闪着光的粘液。你试着做出一些表情来炫耀它的下巴轮廓，欣赏它的脸的形状。你的@[all|eyes|noverb]停留在那里，然后用手戳了你的@[all| jaws | noverb]一小会儿，又张开嘴看看它的@[all| tongues| noverb]和@[all| teeths| noverb]。你花了一会儿时间欣赏新面孔的感觉。&quot;)&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_symbiote_HeadFlavour&quot;, 1, undefined, true)&gt;&gt;
@@ -44270,17 +44270,17 @@ Then your eyes travel along your navel and to your crotch, your pride and joy.
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_symbiote_TailFlavour&quot;, 1, undefined, true)&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-You feel &lt;&lt;SymbioteName&gt;&gt;&#39;s attention turning lower.
+你感觉到&lt;&lt;SymbioteName&gt;&gt;的注意力在下降。
 
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_symbiote_CrotchFlavour&quot;, 1, undefined, true)&gt;&gt;
 
-&lt;&lt;print &quot;Eventually, though, the presence of &lt;&lt;SymbioteName&gt;&gt; fades, relenting back to your &lt;&lt;PlayerRace&gt;&gt; form.&quot;&gt;&gt;
+&lt;&lt;print &quot;最后，&lt;&lt;SymbioteName&gt;&gt;的存在还是消失了，你又变回了你的&lt;&lt;PlayerRace&gt;&gt;形态。&quot;&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Back-&gt;Home]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1370" name="player_visitHouse_heightFlavour_small" tags="" position="1225,17100" size="100,100">It takes a few minutes to walk toward Abel&#39;s house, a relatively small shack erected from pieces of limestone, metal and rebar. As you approach, you find your eyes drifting towards scattered curios of an origin you do not recognise. Each trinket appears to be ancient. Ancient and junk.
+\&lt;&lt;run setup.choice(&quot;[[Back-&gt;Home]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1370" name="player_visitHouse_heightFlavour_small" tags="" position="1225,17100" size="100,100">亚伯的房子是一间相对较小的棚屋，由石灰岩、金属和钢筋搭建而成，你走了几分钟就到了。你走近时，你发现自己的目光飘向几件零散的、起源不明的古玩。每件饰品似乎都很古老。古老的垃圾。
 
-The door is ajar, a slice of carefully cut corrugated iron which you knock on with three resounding thuds.
+精心切割的波纹铁门虚掩着，你敲了敲门，门发出了三下响亮的砰声。
 
-After a moment, the door opens and Abel invites you inside.</tw-passagedata><tw-passagedata pid="1371" name="player_visitHouse_heightFlavour_medium" tags="" position="100,17225" size="100,100">Abel&#39;s house was a relatively small shack erected from pieces of limestone metal and rebar within the Inner Ring. However, you can not help but notice how much smaller the shack appears next to your height. What would be a modest home for maybe two people looks like it would struggle to accomodate you through the door.
+过了一会儿，门开了，亚伯邀请你进去。</tw-passagedata><tw-passagedata pid="1371" name="player_visitHouse_heightFlavour_medium" tags="" position="100,17225" size="100,100">Abel&#39;s house was a relatively small shack erected from pieces of limestone metal and rebar within the Inner Ring. However, you can not help but notice how much smaller the shack appears next to your height. What would be a modest home for maybe two people looks like it would struggle to accomodate you through the door.
 
 You find it difficult to make it to the entrance without one of your @[one|legs|noverb] stepping on scattered piles of curios you do not recognise.
 
