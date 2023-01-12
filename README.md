@@ -23,7 +23,7 @@
 如题，同上条原则，宁可不翻译，不要乱翻译。
 
 ### **3.不要着急，尽量还原作者意思**
-对各位的翻译速度不作要求，但请各位不要丢进翻译软件就不管了，那样还不如不翻译，翻译工具终究是一个死板的机器工具，要做到严复先生所提到的“信、达、雅”，仅凭机器是万万不能的,我只希望各位能尽量达到“信”这一层次，及指意义不悖原文这一原则，还请各位多多慎重思考。
+对各位的翻译速度不作要求，但请各位不要丢进翻译软件就不管了，那样还不如不翻译，翻译工具终究是一个死板的机器工具，要做到严复先生所提到的“信、达、雅”，仅凭机器是万万不能的,我只希望各位能尽量达到“信”这一层次，及指意义不悖原文这一原则，还请各位慎重思考。
 ---
 
 ## **二、单词注释**
@@ -72,14 +72,20 @@
 |yes|Kanathar|name.卡纳塔尔|Imp的名字|
 |yes|Imp|n.小恶魔||
 |yes|displacer beast|n.移位兽|出自dnd，特点是背上有两个触手一样的东西|
-|yes|Abel|name.亚伯|主角的好基友|
-|no|Torgar|name.托尔戈|半兽人炼金术师，后续可能加入队伍|
-|no|Shattered Peak|name.破碎山峰|托尔戈的故乡|
-|no|Sunken World|name.沉落世界||
-|no|Seed of Growth|name.永毓之种|喝下后会使身体永远生长下去|
-|no|Seed of Pain|name.苦痛之种|喝下后能够一击致命|
-|no|Seed of Vitality|name.焕发之种|喝下后能将对手受到的伤害转为能量|
-|no|Empowered Drink|name.强化饮料|能力名|
+|yes|Abel|name.亚伯|主角的好基友，做了nyx的回忆的任务后可以选择腐化|
+|yes|Torgar|name.托加|半兽人炼金术师，后续可能加入队伍|
+|yes|Shattered Peak|name.破碎山峰|托尔戈的故乡|
+|yes|Sunken World|name.沉落世界||
+|yes|Seed of Growth|name.生长之种|喝下后会使身体永远生长下去|
+|yes|Seed of Pain|name.苦痛之种|喝下后能够一击致命|
+|yes|Seed of Vitality|name.焕发之种|喝下后能将对手受到的伤害转为能量|
+|yes|Empowered Drink|name.赋能饮料|能力名|
+|yes|Gurad|name.守卫|黄金堡垒的门卫，nyx的回忆结局后打败守卫可以选择腐化他|
+|yes|core|n.内心，核心|不指生理变化时译为内心|
+|yes|stamina|n.耐力||
+|yes|Cray|name.克雷|黄金堡垒人人推崇的英雄人物|
+|no|Talisman|n.护身符||
+|yes|Monstrous Symbiote|name.怪物共生体|毒液|
 ---
 
 ## **三、代码查疑**
@@ -91,6 +97,7 @@
 |yes|SymbioteName|变量名，意为调用玩家体内共生体的名字||
 |yes|setup.getLength(...)|函数，意为获取长度数据||
 |yes|$CharacterSheet_Player.info.name|变量名，储存着玩家角色的姓名||
+|yes|$SigilColor|颜色||
 ---
 
 # **附录**
