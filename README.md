@@ -89,6 +89,7 @@
 |no|Path of Mastery/Ascension/Embrace/Redemption|name.驾驭/济世/接纳/救赎之路|托加的四条路线|
 |no|Tonic of Stillness|name.冷静补剂|技能，可将腐化暂时转为力量|
 |no|Torgar&#39;s Corrupted Bond|name.托加的腐化连接|能力名|
+|no|Herald of the Eldest|name.长老之信使||
 ---
 
 ## **三、代码查疑**
