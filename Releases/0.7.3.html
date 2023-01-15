@@ -35299,14 +35299,14 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="538" name="FightMove_CorruptedRemedy" tags="" position="975,6725" size="100,100">&lt;&lt;set setup.FightMove_CorruptedRemedy =
 {
 	id: &quot;FightMove_CorruptedRemedy&quot;,
-	name: &quot;Corrupted Remedy&quot;,
+	name: &quot;腐败的补偿&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; grins, as if their wounds were suddenly gone.&quot;
+		return character.info.name + &quot;咧嘴一笑，仿佛他们的伤口突然消失了。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return &quot;Deep moans below out of &quot;+character.info.name+&quot; as they embrace the power that fuels their inevitable ascension. Corruption builds around their wound, closing gashes and healing bruises, rebuilding what is bound to grow into a god.&quot;
+		return &quot;当他们拥抱助长他们不可避免的升华的力量时，&quot;+character.info.name+&quot;的下面发出了深深的呻吟。腐败在他们的伤口周围建立起来，闭合伤口，愈合瘀伤，重建必将成长为神的身体。&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35326,7 +35326,7 @@ maxRank: 5
 	critMod: 100,
     comboCost: 3,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;No wound can reach a corrupted soul. Gain 5% of your corruption as health.&quot;,
+	skillDescription: &quot;任何伤口都无法到达被腐蚀的灵魂。以堕落值的5%恢复健康值。&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;corruption&quot;,
     unlearnable: true,
@@ -35334,14 +35334,14 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="539" name="FightMove_CorruptedUrges" tags="" position="1100,6725" size="100,100">&lt;&lt;set setup.FightMove_CorruptedUrges =
 {
 	id: &quot;FightMove_CorruptedUrges&quot;,
-	name: &quot;Corruptive Urges&quot;,
+	name: &quot;腐败性冲动&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; muscles suddenly flex harder than ever.&quot;
+		return character.info.name + &quot;的肌肉突然比以前更用力地弯曲。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return &quot;The world around &quot;+character.info.name+&quot; seems to warp, tainted by the endless need to be more. Their whole body flexes, feeding on the power of Corruption, growing more robust than the limits of mortal bodies. Then, against the sound of hardening muscles, a single word seeps out. &#39;More...&#39;&quot;
+		return &quot;周围的世界似乎扭曲了，&quot;+character.info.name+&quot;被无尽的渴望所玷污。他们的整个身体都在弯曲，以腐败的力量为食，比凡人身体的极限更加强壮。然后，在肌肉变硬的声音中，一个词渗了出来。&#39;更多……&#39;&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35361,7 +35361,7 @@ maxRank: 5
 	critMod: 100,
     comboCost: 2,
     skillStatsToDescriptionSpacing: 3,
-	skillDescription: &quot;Feast upon Corruption. Add 20% of your Corruption to your Strength&quot;,
+	skillDescription: &quot;腐败的盛宴。将你的腐化值的20%加到你的力量上&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;corruption&quot;,
     unlearnable: true,
@@ -35369,16 +35369,16 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="540" name="FightMove_CumDeluge" tags="" position="1225,6725" size="100,100">&lt;&lt;set setup.FightMove_CumDeluge =
 {
 	id: &quot;FightMove_CumDeluge&quot;,
-	name: &quot;Deluge of Seed&quot;,
+	name: &quot;种子的洪流&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s balls churn with enough cum to completely flood their opponent.&quot;;
+		return character.info.name + &quot;睾丸里的精液足以完全淹没他们的对手。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		var displayString = setup.processFlavours(State.variables.CharacterSheet_Player, character.info.name +&quot; howls as another wave of pleasure washes over them. Their @[all|balls|one=pulses~more=pulse] with a mad fury before suddenly clenching.&quot;);
-		displayString += target.info.name +&quot; can only stare up as the earth shake, nothing can prepare them from the incoming flood.&quot;;
-		displayString += setup.processFlavours(State.variables.CharacterSheet_Player, &quot;From the high of orgasm, &quot;+character.info.name+&quot; aims their @[all|cocks|noverb] down to &quot;+target.info.name+&quot;, completely drenching them in an overwhelming deluge of seed.&quot;);
+		var displayString = setup.processFlavours(State.variables.CharacterSheet_Player, character.info.name +&quot;嚎叫着，另一波快感冲刷着他们。他们的@[all|balls|one=搏动~more=搏动],带着疯狂的怒火，然后突然紧缩。&quot;);
+		displayString += target.info.name +&quot;只能眼睁睁地看着地动山摇，没有什么能让他们准备好应对即将到来的洪水。&quot;;
+		displayString += setup.processFlavours(State.variables.CharacterSheet_Player, &quot;从高潮的高点出发，&quot;+character.info.name+&quot;将他们的@[all|cocks|noverb]向下瞄准&quot;+target.info.name+&quot;，将他们完全淹没在铺天盖地的种子洪流中。&quot;);
 
 		return displayString;
 	},
@@ -35402,7 +35402,7 @@ maxRank: 5
 	comboCost: 3,
 	unique: true,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Lowers the strength of your opponent.&quot;,
+	skillDescription: &quot;降低对手的力量。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
     unlearnable: true,
@@ -35410,16 +35410,16 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="541" name="FightMove_DoNothing" tags="" position="100,6850" size="100,100">&lt;&lt;set setup.FightMove_Do_Nothing =
 {
 	id: &quot;FightMove_Do_Nothing&quot;,
-	name: &quot;Do Nothing&quot;,
+	name: &quot;开摆&quot;,
 	preparation: function(character, target)
 	{
 		var he = setup.getPronoun(character,&quot;pronoun&quot;);
 
-		return character.info.name + &quot; is not readying any attack. It does not look like &quot;+he+&quot; cares about the fight.&quot;;
+		return character.info.name + &quot;没有准备好任何攻击。看上去&quot;+he+&quot;并不关心这场战斗。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name +&quot; waits eagerly for what will come next.&quot;;
+		return character.info.name +&quot;急切地等待着事情下一步的进展。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35439,7 +35439,7 @@ maxRank: 5
 	staminaCost: 0,
 	critMod: 100,
 	skillStatsToDescriptionSpacing: 1,
-	skillDescription: &quot;Lets your opponent attack freely.&quot;,
+	skillDescription: &quot;让你的对手自由攻击。&quot;,
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
     unlearnable: true,
@@ -35454,11 +35454,11 @@ maxRank: 5
 	{
 		var he = setup.getPronoun(character,&quot;pronoun&quot;);
 
-		return character.info.name + &quot; surrenders themselves completely&quot;;
+		return character.info.name + &quot;彻底投降&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; surrenders themselves completely&quot;;
+		return character.info.name + &quot;彻底投降&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35482,7 +35482,7 @@ maxRank: 5
 	staminaCost: 0,
 	critMod: 100,
 	skillStatsToDescriptionSpacing: 1,
-	skillDescription: &quot;Surrender yourself completely.&quot;,
+	skillDescription: &quot;彻底开摆。&quot;,
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
     unlearnable: true,
@@ -35490,14 +35490,14 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="542" name="FightMove_DragonStrike" tags="" position="225,6850" size="100,100">&lt;&lt;set setup.FightMove_DragonStrike =
 {
 	id: &quot;FightMove_DragonStrike&quot;,
-	name: &quot;Dragon Strike&quot;,
+	name: &quot;龙击&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body glow in a powerful white hue.&quot;;
+		return character.info.name + &quot;的身体发出强大的白色光芒。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return &quot;With the energy of the parried attack filling &quot; + character.info.name +&quot;&#39;s body, they charge forward with their fist glowing in a blinding white light.&quot;;
+		return &quot;随着招架攻击的能量充斥着&quot; + character.info.name +&quot;的身体，他们向前冲去，拳头发出耀眼的白光。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35516,31 +35516,31 @@ maxRank: 5
 	staminaCost: 25,
 	critMod: 0,
 	skillStatsToDescriptionSpacing: 1,
-	skillDescription: &quot;Use absorbed energy to unleash an all powerful attack!&quot;,
+	skillDescription: &quot;使用吸收的能量释放出强大的攻击！&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: [setup.stunTarget],
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="543" name="FightMove_EnragedPummel" tags="" position="350,6850" size="100,100">&lt;&lt;set setup.FightMove_EnragedPummel =
 {
 	id: &quot;FightMove_EnragedPummel&quot;,
-	name: &quot;Enraged Pummel&quot;,
+	name: &quot;愤怒的组合拳&quot;,
 	preparation: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 
-		return character.info.name + &quot; keeps up the momentum of &quot;+his+&quot; attacks.&quot;
+		return character.info.name + &quot;继续保持&quot;+his+&quot;攻击势头。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 		
-		return character.info.name + &quot; keeps up the momentum of &quot;+his+&quot; attacks.&quot;
+		return character.info.name + &quot;继续保持&quot;+his+&quot;攻击势头。&quot;
 	},
 	attackHitDesc: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 
-		return character.info.name + &quot; pummels &quot;+his+&quot; opponent over and over!&quot;;
+		return character.info.name + &quot;一次又一次地击打&quot;+his+&quot;对手!&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35560,27 +35560,27 @@ maxRank: 5
 	critMod: 45,
     comboCost: 1,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Can only be comboed after 2 or more moves.&quot;,
+	skillDescription: &quot;只能在2个或更多的行动后进行组合。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="544" name="FightMove_FirstStrike" tags="" position="475,6850" size="100,100">&lt;&lt;set setup.FightMove_FirstStrike =
 {
 	id: &quot;FightMove_FirstStrike&quot;,
-	name: &quot;First Strike&quot;,
+	name: &quot;先发制人&quot;,
 	preparation: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 
-		return character.info.name + &quot; is already on their opponent before they can even react.&quot;
+		return character.info.name + &quot;在对手还没有反应过来的时候就已经出现在他们脸上了。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; strikes faster than their opponent could have expected.&quot;
+		return character.info.name + &quot;打击的速度比他们的对手所能预期的要快。&quot;
 	},
 	attackHitDesc: function(character, target)
 	{
-		return character.info.name + &quot; hits before their target is ready for it!&quot;;
+		return character.info.name + &quot;在他们的目标准备好之前就被击中!&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35600,21 +35600,21 @@ maxRank: 5
 	critMod: 45,
     comboCost: 1,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Must be used as the first move of a combo.&quot;,
+	skillDescription: &quot;必须作为组合的第一个行动使用。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="545" name="FightMove_Focus" tags="" position="600,6850" size="100,100">&lt;&lt;set setup.FightMove_Focus =
 {
 	id: &quot;FightMove_Focus&quot;,
-	name: &quot;Focus&quot;,
+	name: &quot;专心致志&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; focuses on their next move.&quot;
+		return character.info.name + &quot;专注于他们的下一步行动。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; takes a breather.&quot;
+		return character.info.name + &quot;喘了口气。&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35634,7 +35634,7 @@ maxRank: 5
 	critMod: 100,
     comboCost: 1,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Gain an additional action slot until the end of this fight.&quot;,
+	skillDescription: &quot;获得一个额外的行动槽，直到这场战斗结束。&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;buff&quot;,
     unlearnable: true,
@@ -35642,16 +35642,16 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="546" name="FightMove_Goo_Stun" tags="" position="725,6850" size="100,100">&lt;&lt;set setup.FightMove_Goo_Stun =
 {
 	id: &quot;FightMove_Goo_Stun&quot;,
-	name: &quot;Ensnaring Goo&quot;,
+	name: &quot;困捕粘液&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s goo completely surrounds &quot;+target.info.name+&quot;.&quot;
+		return character.info.name + &quot;的粘液完全覆盖了&quot;+target.info.name+&quot;的身体。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		var He = setup.getPronoun(character,&quot;pronounCap&quot;);
 		
-		return character.info.name + &quot;&#39;s goo completely covers &quot;+target.info.name+&quot;.&quot;;
+		return character.info.name + &quot;的粘液完全覆盖了&quot;+target.info.name+&quot;的身体。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35673,29 +35673,29 @@ maxRank: 5
 	comboCost: 5,
 	unique: true,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Send your goo to immobilize your target.&quot;,
+	skillDescription: &quot;射出你的粘液，使你的目标无法动弹。&quot;,
 	skillType: &quot;symbiote&quot;,
 	skillTheme: &quot;symbiote&quot;,
 	additionalEffects: [setup.stunTarget]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="547" name="FightMove_HeraldsDevotion" tags="" position="850,6850" size="100,100">&lt;&lt;set setup.FightMove_HeraldsDevotion =
 {
 	id: &quot;FightMove_HeraldsDevotion&quot;,
-	name: &quot;Herald&#39;s Devotion&quot;,
+	name: &quot;先驱的敬拜&quot;,
 	preparation: function(character, target)
 	{
         var arousal = character.fight.variables.currentArousal;
 
         if(arousal &lt; 20 || !setup.usesArousal(character))
         {
-            return character.info.name + &quot;&#39;s focus is sharp and unclouded by lust.&quot;;
+            return character.info.name + &quot;&#39;的注意力很敏锐，没有被情欲所遮蔽。&quot;;
         } 
         else if(arousal &lt; 70)
         {
-            return character.info.name + &quot;&#39;s focus is faltering to their arousal.&quot;;
+            return character.info.name + &quot;&#39;的注意力正在动摇。&quot;;
         }
         else
         {
-            return character.info.name + &quot;&#39;s focus is completely gone, only lust is on their mind.&quot;;
+            return character.info.name + &quot;&#39;的注意力完全消失了，他们心中只有欲望。&quot;;
         }
 		
 	},
@@ -35705,15 +35705,15 @@ maxRank: 5
 
         if(arousal &lt; 20 || !setup.usesArousal(character))
         {
-            return character.info.name + &quot; closes their eyes, letting a bright white glow grow around their body.&quot;;
+            return character.info.name + &quot;闭上眼睛，让明亮的白光在身体周围生长。&quot;;
         } 
         else if(arousal &lt; 70)
         {
-            return character.info.name + &quot; closes their eyes and a subtle, nearly invisible white glow covers their body.&quot;;
+            return character.info.name + &quot;闭上眼睛，一种微妙的、几乎看不见的白光笼罩着他们的身体。&quot;;
         }
         else
         {
-            return character.info.name + &quot; closes their eyes, but nothing happens.&quot;;
+            return character.info.name + &quot;闭上眼睛，但什么都没发生。&quot;;
         }
 	},
 	activationCondition: function(character, target)
@@ -35735,23 +35735,23 @@ maxRank: 5
     comboCost: 5,
 	unique: true,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Greatly heals your wounds. The effectiveness dimishes when aroused.&quot;,
+	skillDescription: &quot;极大地治愈您的伤口。当被唤醒时，效果会减弱。&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;special&quot;,
 	additionalEffects: [setup.heraldsDevotionEffect],
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="548" name="FightMove_Hypnotize" tags="" position="975,6850" size="100,100">&lt;&lt;set setup.FightMove_Hypnotize =
 {
 	id: &quot;FightMove_Hypnotize&quot;,
-	name: &quot;Hypnotize&quot;,
+	name: &quot;催眠&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body glows in an unearthly purple. Their target is drawn to gaze at their eyes.&quot;
+		return character.info.name + &quot;的身体发散出一种奇异的紫光。他们的目标被吸引来凝视他们的眼睛。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		var He = setup.getPronoun(character,&quot;pronounCap&quot;);
 		
-		return character.info.name + &quot; attempts to enthrall their target with their glowing, piercing eyes.&quot;;
+		return character.info.name + &quot;试图用他们发光的、晃眼的眼睛迷惑他们的目标。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35771,17 +35771,17 @@ maxRank: 5
 	critMod: -15,
 	cooldown: 5,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Influence your opponent&#39;s next attack choice.&quot;,
+	skillDescription: &quot;影响你的对手的下一次攻击选择。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: [setup.hypnotize]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="549" name="FightMove_IncubusCall" tags="" position="1100,6850" size="100,100">&lt;&lt;set setup.FightMove_IncubusCall =
 {
 	id: &quot;FightMove_IncubusCall&quot;,
-	name: &quot;Incubus Call&quot;,
+	name: &quot;种汁召唤&quot;,
 	preparation: function(character, target)
 	{
-		return &quot;An ominous red glow appears around &quot;+ character.info.name + &quot;&#39;s demonic cock. It is filled with demonic energy.&quot;;
+		return &quot;&quot;+ character.info.name + &quot;的恶魔阴茎周围出现不祥的红色光芒。它充满了恶魔的能量。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
@@ -35790,8 +35790,8 @@ maxRank: 5
 		var he = setup.getPronoun(character,&quot;pronoun&quot;);
 
         var cockSize = setup.getLength(setup.getStatValue(character, &quot;cock&quot;) + 20);
-		var displayString = &quot;With every throb, &quot;+character.info.name +&quot;&#39;s cock expands in girth and length, far larger than its natural size. &quot;+His+&quot; lustful moans increase in intensity as it grows to &quot; + cockSize + &quot; in length.  &quot;;
-        displayString += &quot;It only takes a few jerks before &quot;+he+&quot; roars and shoots loads of demonic seed towards &quot;+his+&quot; target before it recedes to its original length.\n&quot;;
+		var displayString = &quot;随着每一次悸动，&quot;+character.info.name +&quot;的阴茎在周长和长度上都在扩大，远远大于其自然尺寸。当它的长度增长到&quot; + cockSize + &quot;长时，&quot;+his+&quot;淫荡呻吟声越来越强烈。&quot;;
+        displayString += &quot;只需抽动几下，&quot;+he+&quot;就会咆哮着向目标射出大量&quot;+his+&quot;恶魔般的种子，然后再退到原来的长度。\n&quot;;
 
         return displayString;
     },
@@ -35802,10 +35802,10 @@ maxRank: 5
 		var He = setup.getPronoun(character,&quot;pronounCap&quot;);
 		var he = setup.getPronoun(character,&quot;pronoun&quot;);
 
-		var displayString = target.info.name + &quot; is hit by the incubus&#39;s cum. Warmth courses through &quot;+his+&quot; whole body, it feels like &quot;+he+&quot;&#39;s burning with arousal.\n\n&quot;;
-        displayString +=  His+&quot; heart immediately starts beating like a drum. \n&quot;;
-        displayString +=  He+&quot; can&#39;t stop himself, &quot;+his+&quot; hand goes to feel &quot;+his+&quot; crotch.\n\n&quot;;
-        displayString +=  &quot;It&#39;s beyond sensitive... Arousal overtakes his thoughts &quot;+his+&quot; mind, &quot;+he+&quot; gathers a handful of demonic cum a tastes it eagerly.\n\nThe effects are instantaneous.&quot;;
+		var displayString = target.info.name + &quot;的精液击中了&quot;+his+&quot;身体。温暖传遍了他的全身，感觉就像&quot;+he+&quot;&#39;被兴奋的情愫所燃烧。\n\n&quot;;
+        displayString +=  his+&quot;心脏立即开始像鼓一样跳动。\n&quot;;
+        displayString +=  He+&quot;不能阻止他自己，&quot;+his+&quot;手感觉着&quot;+his+&quot;裆部。\n\n&quot;;
+        displayString +=  &quot;这已经超出了敏感度……兴奋超越了他的思想，&quot;+his+&quot;头脑,&quot;+he+&quot;收集了一把恶魔的精液，急切地品尝它。\n\n效果是瞬间的。&quot;;
 
         return displayString;
 	},
@@ -35827,23 +35827,23 @@ maxRank: 5
 	critMod: 0,
     comboCost: 3,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Give them a taste of your demonic seed.&quot;,
+	skillDescription: &quot;让他们尝尝你的恶魔种子。&quot;,
 	skillType: &quot;demon&quot;,
 	skillTheme: &quot;demon&quot;,
 	additionalEffects: [setup.incubusCallEffects]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="550" name="FightMove_IncubusStrike" tags="" position="1225,6850" size="100,100">&lt;&lt;set setup.FightMove_IncubusStrike =
 {
 	id: &quot;FightMove_IncubusStrike&quot;,
-	name: &quot;Incubus Strike&quot;,
+	name: &quot;种汁冲击&quot;,
 	preparation: function(character, target)
 	{
 		var His = setup.getPronoun(character,&quot;pronounDepPosCap&quot;);
 
-		return &quot;A red sigil appears under &quot;+ character.info.name + &quot;. &quot;+His+&quot; body glows with demonic energy.&quot;
+		return &quot;一个红色的符号出现在&quot;+ character.info.name + &quot;的身上。 &quot;+his+&quot;身体发出恶魔般的能量。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; runs to their target.&quot;;
+		return character.info.name + &quot;奔向他们的目标。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
@@ -35854,13 +35854,13 @@ maxRank: 5
 
 		if(character.id == &quot;CharacterSheet_Player&quot;)
 		{
-			return &quot;You grins and presses your hand on &quot;+target.info.name+&quot;&#39;s crotch.\n &quot;+His+&quot; vitality and arousal rushes into you. &quot;
-			+&quot;You can only laugh as your body grows in power.&quot;
+			return &quot;你咧嘴一笑，把你的手按在 &quot;+target.info.name+&quot;的裆部\n &quot;+his+&quot;生命力和兴奋感涌入你体内。&quot;
+			+&quot;你随着身体力量的增长而不断大笑。&quot;
 		}
 		else
 		{
-			return He+&quot; grins and presses &quot;+his+&quot; hand on &quot;+his+&quot; target&#39;s crotch.\n &quot;+target.info.name+&quot;&#39;s vitality and arousal rushes into &quot;+him+&quot;. &quot;
-			+character.info.name+&quot; can only laugh as &quot;+his+&quot; body grows in power.\n&quot;
+			return He+&quot; 咧嘴一笑，按捺不住&quot;+his+&quot;那在放&quot;+his+&quot; 目标裆部的手。\n &quot;+target.info.name+&quot;的活力和唤醒冲向了&quot;+him+&quot;。 &quot;
+			+character.info.name+&quot;只得大笑当&quot;+his+&quot;身体在能量中生长。\n&quot;
 		}
 	},
 	activationCondition: function(character, target)
@@ -35881,23 +35881,23 @@ maxRank: 5
 	critMod: 15,
     comboCost: 5,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Your need for more is never sated.&quot;,
+	skillDescription: &quot;你的欲求不满永远不会被满足。&quot;,
 	skillType: &quot;demon&quot;,
 	skillTheme: &quot;demon&quot;,
 	additionalEffects: [setup.incubusStrikeEffects]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="551" name="FightMove_InfectiousLust" tags="" position="100,6975" size="100,100">&lt;&lt;set setup.FightMove_InfectiousLust =
 {
 	id: &quot;FightMove_InfectiousLust&quot;,
-	name: &quot;Infectious Lust&quot;,
+	name: &quot;散播欲望&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; lets the corruption within himself take over. They lash out, with every inch of they being oozing out with Corruption.&quot;
+		return character.info.name + &quot;让自己内心的腐败占据了上风。它们倾泻而出，他们的每一寸肌肤都渗出了腐败。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		var displayString = setup.processFlavours(character, character.info.name + &quot; growls, unable to contain the Corruption coursing through their body. They fall to their knees, @[all|hands|noverb] grasping their @[all|cocks|noverb] into furious, uneven motions of unholy lust.\n&quot;);
-		displayString += &quot;&#39;Yesssss... Moooooore...&#39; They moan, completely absorbed in their own lust. The air around them thickens with the hot and humid smell of Corruption.\n&quot;;
-		displayString += &quot;&#39;I NEED MORE!&#39; &quot;+character.info.name+&quot; roars, their head pulling back into a mad lustful frenzy. &quot;+target.info.name+&quot; can only gaze as a wave of corrupted cum makes their way to them. &quot;;
+		var displayString = setup.processFlavours(character, character.info.name + &quot; 咆哮着，无法控制流经他们身体的腐化。他们跪倒在地，用@[all|hands|noverb]抓着他们的@[all|cocks|noverb]愤怒地、不匀速地做着邪恶的欲望行为。\n&quot;);
+		displayString += &quot;&#39;是的是的……更多更多更多……&#39;他们呻吟着，完全沉浸在自己的情欲中。他们周围的空气中弥漫着腐化的湿热气味。\n&quot;;
+		displayString += &quot;&#39;我需要更多！&#39; &quot;+character.info.name+&quot;如此咆哮，他们的头向后仰，陷入了疯狂的欲望狂潮。&quot;+target.info.name+&quot;只能凝视着一波波腐败的精液向他们走来。&quot;;
 
 		return displayString;
 	},
@@ -35919,7 +35919,7 @@ maxRank: 5
 	critMod: 100,
     comboCost: 2,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Corrupt all... Gives Arousal and Corruption to your opponent.&quot;,
+	skillDescription: &quot;腐化一切……给你的对手带来兴奋和腐化。&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;corruption&quot;,
     unlearnable: true,
@@ -35927,17 +35927,17 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="552" name="FightMove_Infest" tags="" position="225,6975" size="100,100">&lt;&lt;set setup.FightMove_Infest =
 {
 	id: &quot;FightMove_Infest&quot;,
-	name: &quot;Infest&quot;,
+	name: &quot;侵袭&quot;,
 	preparation: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 
-		return character.info.name + &quot; can&#39;t contain &quot;+his+&quot; arousal anymore...&quot;
+		return character.info.name + &quot;不能抑制更多&quot;+his+&quot;唤醒了……&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
         var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
-		return character.info.name + &quot; approaches you as &quot;+his+&quot; thick tongue drips with corrupting goo.&quot;;
+		return character.info.name + &quot;&quot;+his+&quot;厚厚的舌头上滴着腐化的粘液，接近了你。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
@@ -35948,18 +35948,18 @@ maxRank: 5
 
         if(target.fight.variables.currentArousal &gt;= 50)
         {
-            hitText = &quot;As &quot;+his+&quot; seed comes in contact with your body, you feel an influence grow in your mind.\n&quot;
-                        +&quot;Your already high arousal makes the influence stronger, you can barely think as visions of sex and monsters overtake your thoughts. \n&quot;
-						+&quot;You are stunned!&quot;;
+            hitText = &quot;当&quot;+his+&quot;种汁与你的身体接触，你感觉到一种影响在你的头脑中成长。\n&quot;
+                        +&quot;你已经很高的唤醒值使这种影响力变得更强，你几乎无法思考，因为性和怪物的幻象占据了你的思想。\n&quot;
+						+&quot;你惊呆了！&quot;;
 
         }
         else
         {
-            hitText = &quot;As &quot;+his+&quot; seed comes in contact with your body, you feel an influence grow in your mind.\n&quot;
-                        +&quot; Visions of yourself transformed into a massive monster influence your thoughts.&quot;;
+            hitText = &quot;当&quot;+his+&quot;种汁与你的身体接触，你感觉到一种影响在你的头脑中成长。\n&quot;
+                        +&quot;自己变成一个巨大怪物的幻觉影响着你的思想。&quot;;
         }
 
-		return &quot;\&quot;Spreeeeaaad...\&quot; You hear &quot;+him+&quot; moan as &quot;+his+&quot; cock drips thick black precum on your chest.\n&quot;+
+		return &quot;\&quot;传播传播传播……\&quot;你听到&quot;+him+&quot;的呻吟当&quot;+his+&quot;鸡巴在你的胸前滴下浓黑的精液。\n&quot;+
                 hitText;
 	},
 	activationCondition: function(character, target)
@@ -35980,44 +35980,44 @@ maxRank: 5
 	critMod: 5,
     cooldown: 3,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Stuns your opponent with pure corruptive lust.&quot;,
+	skillDescription: &quot;用纯粹的腐化欲望使你的对手目瞪口呆。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: [setup.infestStun]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="553" name="FightMove_Inspect" tags="" position="350,6975" size="100,100">&lt;&lt;set setup.FightMove_Inspect =
 {
     id: &quot;FightMove_Inspect&quot;,
-	name: &quot;Inspect&quot;,
+	name: &quot;探查对手&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; inspects their opponent carefully.&quot;
+		return character.info.name + &quot;仔细观察他们的对手。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
         var displayString = &quot;&quot;;
 
-		displayString += character.info.name  + &quot; inspects &quot;+target.info.name+&quot; carefully.\n\n&quot;;
+		displayString += character.info.name  + &quot;细致地观察&quot;+target.info.name+&quot;。\n\n&quot;;
 
         if(target.info.picture != undefined)
         {
 		    displayString += setup.displayEncounterImage(target.info.picture) + &quot;\n\n&quot;;
         }
 
-        displayString += &quot;HP: &quot;+target.fight.variables.currentHP+&quot;/&quot;+setup.displayStatValue(target, &quot;hp&quot;)+&quot;\n&quot;;
-        displayString += &quot;Stamina: &quot;+target.fight.variables.currentStamina+&quot;/&quot;+setup.displayStatValue(target, &quot;stamina&quot;)+&quot;\n&quot;;
-        displayString += &quot;Arousal: &quot;+target.fight.variables.currentArousal+&quot;\n\n&quot;;
+        displayString += &quot;生命值：&quot;+target.fight.variables.currentHP+&quot;/&quot;+setup.displayStatValue(target, &quot;hp&quot;)+&quot;\n&quot;;
+        displayString += &quot;耐力：&quot;+target.fight.variables.currentStamina+&quot;/&quot;+setup.displayStatValue(target, &quot;stamina&quot;)+&quot;\n&quot;;
+        displayString += &quot;唤醒：&quot;+target.fight.variables.currentArousal+&quot;\n\n&quot;;
 
-        displayString += &quot;Strength: &quot;+setup.displayStatValue(target, &quot;strength&quot;)+&quot;\n&quot;;
-        displayString += &quot;Critical Hit Chance: &quot;+setup.displayStatValue(target, &quot;critChance&quot;)+&quot;\n&quot;;
-        displayString += &quot;Arousal per Turn: &quot;+setup.displayStatValue(target, &quot;arousalGain&quot;)+&quot;\n&quot;;
-        displayString += &quot;Stamina per Turn: &quot;+setup.displayStatValue(target, &quot;staminaRecovery&quot;)+&quot;\n\n&quot;;
+        displayString += &quot;力量：&quot;+setup.displayStatValue(target, &quot;strength&quot;)+&quot;\n&quot;;
+        displayString += &quot;暴击率：&quot;+setup.displayStatValue(target, &quot;critChance&quot;)+&quot;\n&quot;;
+        displayString += &quot;每回合的唤醒量：&quot;+setup.displayStatValue(target, &quot;arousalGain&quot;)+&quot;\n&quot;;
+        displayString += &quot;每回合的体力值：&quot;+setup.displayStatValue(target, &quot;staminaRecovery&quot;)+&quot;\n\n&quot;;
 
-        displayString += &quot;Corruption: &quot;+setup.getStatValue(target, &quot;corruption&quot;)+&quot;\n&quot;;
-        displayString += &quot;Muscles: &quot;+setup.getMusclesDescriptor(target)+&quot;(&quot;+setup.displayStatValue(target, &quot;muscles&quot;)+&quot;)\n&quot;;
-        displayString += &quot;Height: &quot;+setup.displayStatValue(target, &quot;height&quot;, true)+&quot;\n&quot;;
-        displayString += &quot;Cock Size: &quot;+setup.displayStatValue(target, &quot;cock&quot;, true)+&quot;\n\n&quot;;
+        displayString += &quot;腐化值：&quot;+setup.getStatValue(target, &quot;corruption&quot;)+&quot;\n&quot;;
+        displayString += &quot;肌肉：&quot;+setup.getMusclesDescriptor(target)+&quot;(&quot;+setup.displayStatValue(target, &quot;muscles&quot;)+&quot;)\n&quot;;
+        displayString += &quot;高度：&quot;+setup.displayStatValue(target, &quot;height&quot;, true)+&quot;\n&quot;;
+        displayString += &quot;鸡巴尺寸：&quot;+setup.displayStatValue(target, &quot;cock&quot;, true)+&quot;\n\n&quot;;
 
-        displayString += &quot;Passive Abilities:\n&quot;;
+        displayString += &quot;被动能力：\n&quot;;
 
         if(character.abilityHandler.abilityRuntimeDatas.length &gt; 0)
         {
@@ -36054,7 +36054,7 @@ maxRank: 5
 	staminaCost: 0,
 	critMod: 100,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Shows information about your opponent.&quot;,
+	skillDescription: &quot;显示关于你的对手的信息。&quot;,
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
     unlearnable: true,
@@ -36062,20 +36062,20 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="554" name="FightMove_Lunge" tags="" position="475,6975" size="100,100">&lt;&lt;set setup.FightMove_Lunge =
 {
 	id: &quot;FightMove_Lunge&quot;,
-	name: &quot;Lunge&quot;,
+	name: &quot;弓步刺戳&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; is preparing to pounce.&quot;;
+		return character.info.name + &quot;正准备猛攻。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; jumps at his target. &quot;;
+		return character.info.name + &quot;跳向了他的目标。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
 		var He = setup.getPronoun(character,&quot;pronounCap&quot;);
 		
-		return character.info.name + &quot; lands on their target. &quot;+He+&quot; roars and slash them mercilessly.&quot;;
+		return character.info.name + &quot;在他的目标身上着陆。&quot;+He+&quot;怒吼着，毫不留情地砍杀他们。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36093,19 +36093,19 @@ maxRank: 5
 	},
 	staminaCost: 0,
 	critMod: 0,
-	skillDescription: &quot;A basic attack.&quot;,
+	skillDescription: &quot;一个基本的攻击方式。&quot;,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="555" name="FightMove_LustfulInstincts" tags="" position="600,6975" size="100,100">&lt;&lt;set setup.FightMove_LustfulInstincts =
 {
 	id: &quot;FightMove_LustfulInstincts&quot;,
-	name: &quot;Lustful Instincts&quot;,
+	name: &quot;欲望本能&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;  relishes the Corruption flowing through them. The need to grow and become something more... It changes reaches out and warps their whole being.&quot;
+		return character.info.name + &quot;喜欢流淌在他们身上的腐败。对成长和成为更多东西的欲望……它的变化伸出手来，扭曲了他们的整个生命。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s heartbeat fastens; their breath becomes heavy with a subtle purple mist. Unholy vitality rushes through &quot;+character.info.name+&quot;, urges them to reach out for what they yearn. Their body shakes with lust, their cock hardens with thick purple veins.&quot;
+		return character.info.name + &quot;的心跳加快；他们的呼吸变得沉重，带有微妙的紫雾。邪恶的生命力冲过&quot;+character.info.name+&quot;的身体，敦促他们伸手去抓取他们所渴望的东西。他们的身体因欲望而颤抖，他们的阴茎因厚重的紫色血管而变硬。&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36125,7 +36125,7 @@ maxRank: 5
 	critMod: 100,
     comboCost: 1,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Give in... Grants arousal.&quot;,
+	skillDescription: &quot;让步……授予唤醒。&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;corruption&quot;,
     unlearnable: true,
@@ -36133,16 +36133,16 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="556" name="FightMove_Masturbate" tags="" position="725,6975" size="100,100">&lt;&lt;set setup.FightMove_Masturbate =
 {
 	id: &quot;FightMove_Masturbate&quot;,
-	name: &quot;Pleasure Self&quot;,
+	name: &quot;取悦自我&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s hand reaches for their crotch&quot;
+		return character.info.name + &quot;的手伸向他们的裆部。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		var him = setup.getPronoun(character, &quot;pronounObject&quot;);
 
-		return character.info.name + setup.processFlavours(character, &quot; grabs his @[all|cocks|noverb] and then pumps it passionately. Arousal flows through &quot;)+him+&quot;.&quot;
+		return character.info.name + setup.processFlavours(character, &quot;抓住了他的@[all|cocks|noverb]然后热情地抽动它。兴奋感流过&quot;)+him+&quot;的身体。&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36162,7 +36162,7 @@ maxRank: 5
 	critMod: 100,
     comboCost: 1,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Increases your arousal gain by 100%.&quot;,
+	skillDescription: &quot;使你的唤醒收益增加100%。&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;buff&quot;,
     unlearnable: true,
@@ -36170,20 +36170,20 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="557" name="FightMove_ParasiteLunge" tags="" position="850,6975" size="100,100">&lt;&lt;set setup.FightMove_ParasiteLunge =
 {
 	id: &quot;FightMove_ParasiteLunge&quot;,
-	name: &quot;Parasite Lunge&quot;,
+	name: &quot;寄生刺戳&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; is preparing to pounce.&quot;;
+		return character.info.name + &quot;正准备扑上去。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; jumps at his target. &quot;;
+		return character.info.name + &quot;跳向他的目标。 &quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
 		var He = setup.getPronoun(character,&quot;pronounCap&quot;);
 		
-		return character.info.name + &quot; lands on their target. &quot;+He+&quot; bites them mercilessly.&quot;;
+		return character.info.name + &quot;在他们的目标身上着陆了。&quot;+He+&quot;无情地撕咬着他们。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36201,19 +36201,19 @@ maxRank: 5
 	},
 	staminaCost: 4,
 	critMod: 0,
-	skillDescription: &quot;A basic attack.&quot;,
+	skillDescription: &quot;一种基础的攻击方式。&quot;,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="558" name="FightMove_Parry" tags="" position="975,6975" size="100,100">&lt;&lt;set setup.FightMove_Parry =
 {
     id: &quot;FightMove_Parry&quot;,
-	name: &quot;Parry&quot;,
+	name: &quot;招架&quot;,
 	preparation: function(character, target)
 	{
-        return character.info.name + &quot; enters a parry stance.&quot;;
+        return character.info.name + &quot;进入招架姿势。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
-        var displayString = character.info.name + &quot; drops his parry stance.&quot;;
+        var displayString = character.info.name + &quot;解除了他的防守姿势。&quot;;
 
         return displayString;
 	},
@@ -36225,7 +36225,7 @@ maxRank: 5
 	critMod: 100,
     cooldown: 4,
 	skillStatsToDescriptionSpacing: 1,
-	skillDescription: &quot;Enter a parry stance, turning an opponent&#39;s damage into stamina&quot;,
+	skillDescription: &quot;进入招架状态，将对手的伤害转化为耐力。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
     callbackOnPreparation: setup.doParry,
@@ -36233,18 +36233,18 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="559" name="FightMove_PridefulAscent" tags="" position="1100,6975" size="100,100">&lt;&lt;set setup.FightMove_PridefulAscent =
 {
 	id: &quot;FightMove_PridefulAscent&quot;,
-	name: &quot;Prideful Ascent&quot;,
+	name: &quot;骄傲升华&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body suddenly pulses, demonic energy coursing through them.&quot;
+		return character.info.name + &quot;的身体突然跳动起来，恶魔般的能量在他们身上流淌。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; leaps and strikes with demonic vigor.&quot;;
+		return character.info.name + &quot;纵身一跃，以魔鬼般的劲头出击。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s presses his body on &quot;+target.info.name+&quot;, holding them as tight as they can.\n &quot; + character.info.name + &quot;&#39;s body suddenly surges with growth, pushing them harder against their target.&quot;;
+		return character.info.name + &quot;将他的身体压在&quot;+target.info.name+&quot;身上，尽可能紧地抱住他们。\n &quot; + character.info.name + &quot;的身体突然随着生长而激增，将他们推向目标。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36264,29 +36264,29 @@ maxRank: 5
 	critMod: 0,
     comboCost: 1,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;All must bask in your pride.&quot;,
+	skillDescription: &quot;世间一切都必须沐浴在你的骄傲中。&quot;,
 	skillType: &quot;demon&quot;,
 	skillTheme: &quot;demon&quot;,
 	additionalEffects: [setup.pridefulAscentEffects]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="560" name="FightMove_SeedOfRuin" tags="" position="1225,6975" size="100,100">&lt;&lt;set setup.FightMove_SeedOfRuin =
 {
     id: &quot;FightMove_SeedOfRuin&quot;,
-	name: &quot;Seed of Ruin&quot;,
+	name: &quot;毁灭之种&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; grasps his monstrous cock, and roars as arousal washes over him.&quot;
+		return character.info.name + &quot;握住他那巨大的鸡巴，咆哮着，兴奋感冲刷着他的身心。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 
-		return character.info.name + &quot; cums, their infected load shooting towards their target.&quot;;
+		return character.info.name + &quot;高潮射精，用他们被感染的种汁向目标射击。&quot;;
 	},
     attackHitDesc: function(character, target)
 	{
-        var displayString = character.info.name + &quot;&#39;s load overwhelms you.\n&quot; 
-		displayString += &quot;His infected seed crawls into you through your pores, frying your nerves with your own unstoppable need. \n&quot; 
-		displayString += &quot;You scream as pain merges with a sudden orgasm washing over you.\n&quot;
+        var displayString = character.info.name + &quot;的种汁压倒了你。\n&quot; 
+		displayString += &quot;他被感染的种子通过你的毛孔爬进你的身体，用你自己不可阻挡的欲望使你的神经备受煎熬。\n&quot; 
+		displayString += &quot;你尖叫着，因为疼痛与突然来临的高潮融合在一起，冲刷着你的身心。\n&quot;
 
         return displayString;
 	},
@@ -36308,7 +36308,7 @@ maxRank: 5
 	critMod: 0,
     cooldown: 3,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Deals extra damage equal to your opponent&#39;s Arousal.&quot;,
+	skillDescription: &quot;造成等同于你的对手的唤醒值的额外伤害。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
     unlearnable: true,
@@ -36318,7 +36318,7 @@ maxRank: 5
     id: &quot;Sigil_Growth&quot;,
     constantDesc: function(attacker, victim)
     {
-        return &quot;A Sigil of Growth pulsates in tune with &quot; + attacker.info.name + &quot;&#39;s heartbeat.&quot;;
+        return &quot;增长魔印与&quot; + attacker.info.name + &quot;的心跳同步跳动。&quot;;
     },
     onDamagingHit: function(attacker, victim, params)
     {
@@ -36337,10 +36337,10 @@ maxRank: 5
         var His = setup.getPronoun(attacker,&quot;pronounDepPosCap&quot;);
         var his = setup.getPronoun(attacker,&quot;pronounDepPos&quot;);
 
-        var displayString = attacker.info.name +&quot;&#39;s body gets overtaken by a golden aura as the Sigil of Growth activates. \n&quot;;
-        displayString += attacker.info.name + &quot;&#39;s cock grows &quot;+ setup.getLength(cockGrowth) + &quot;, &quot;;
-        displayString += his+&quot; muscles grow bigger (+&quot;+ muscleGrowth + &quot;) and &quot;;
-        displayString += his+&quot; body becomes &quot;+ setup.getLength(sizeGrowth) + &quot; taller\n&quot;;
+        var displayString = attacker.info.name +&quot;&#39;随着成长魔印的激活，他的身体被金色的光环所笼罩。\n&quot;;
+        displayString += attacker.info.name + &quot;的鸡巴生长为&quot;+ setup.getLength(cockGrowth) + &quot;长，&quot;;
+        displayString += his+&quot;肌肉变得更大了(+&quot;+ muscleGrowth + &quot;)并且&quot;;
+        displayString += his+&quot;身体变为&quot;+ setup.getLength(sizeGrowth) + &quot;高。\n&quot;;
 
         return displayString;
     },
@@ -36348,17 +36348,17 @@ maxRank: 5
 &lt;&lt;set setup.FightMove_Sigil_Growth =
 {
     id: &quot;FightMove_Sigil_Growth&quot;,
-	name: &quot;Sigil of Growth&quot;,
-    itemName: &quot;A large golden bottle&quot;,
+	name: &quot;生长魔印&quot;,
+    itemName: &quot;一个大金瓶&quot;,
 	preparation: function(character, target)
 	{
-        return character.info.name + &quot; feels an urge to grow...&quot;;
+        return character.info.name + &quot;感到一种生长的冲动……&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
         var displayString = setup.displaySeedMoveIntro(character, target, &quot;golden&quot;);
-		displayString += &quot;It enters his body,  forming a Sigil of Growth on his skin.\n&quot;;
-        displayString += character.info.name+&quot; can feel the growth that&#39;s about to be unleashed on him.&quot;;
+		displayString += &quot;它进入他的身体，在他的皮肤上形成了一个生长的标志。\n&quot;;
+        displayString += character.info.name+&quot;可以感受到即将在他身上释放出来的成长。&quot;;
 
         return displayString;
 	},
@@ -36371,7 +36371,7 @@ maxRank: 5
     comboCost: 1,
     maxStack: 4,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Grows your body based on the damage of your next attack&quot;,
+	skillDescription: &quot;根据你下一次攻击的伤害来增长你的身体。&quot;,
 	skillType: &quot;sigil&quot;,
 	skillTheme: &quot;sigil&quot;,
     buyFromStore: true,
@@ -36384,7 +36384,7 @@ maxRank: 5
     id: &quot;Sigil_Pain&quot;,
 	constantDesc: function(attacker, victim)
     {
-        return &quot;A black Sigil of Pain cracks deeply along &quot; + attacker.info.name + &quot;&#39;s skin.&quot;;
+        return &quot;一个黑色的苦痛魔印沿着&quot; + attacker.info.name + &quot;的皮肤深深裂开。&quot;;
     },
     onDamagingHit: function(attacker, victim, params)
     {
@@ -36392,22 +36392,22 @@ maxRank: 5
 
         params.attackDamage = Math.floor(params.attackDamage * 1.25);
 
-        return &quot;A Sigil of Pain ruptures &quot;+ victim.info.name +&quot;&#39;s flesh as they get hit. The attack is amplified to &quot;+params.attackDamage+&quot; damage.\n&quot;;
+        return &quot;当&quot;+ victim.info.name +&quot;被击中时，一个苦痛魔印破裂了，他们的身体受到了伤害。攻击被放大到&quot;+params.attackDamage+&quot;伤害。\n&quot;;
     },
 }&gt;&gt;
 &lt;&lt;set setup.FightMove_Sigil_Pain =
 {
     id: &quot;FightMove_Sigil_Pain&quot;,
-	name: &quot;Sigil of Pain&quot;,
-	itemName: &quot;A thin black bottle&quot;,
+	name: &quot;苦痛魔印&quot;,
+	itemName: &quot;一个细长的黑色瓶子&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body suddenly glows with a subtle black hue.&quot;;
+		return character.info.name + &quot;的身体突然焕发出微妙的黑色色调。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
 		var displayString = setup.displaySeedMoveIntro(character, target, &quot;dark red&quot;);
-		displayString += &quot;It enters &quot;+target.info.name+&quot;&#39;s body. It twists and cracks along &quot;+ target.info.name +&quot;&#39;s skin, turning into a Sigil of Pain.&quot;;
+		displayString += &quot;它进入了&quot;+target.info.name+&quot;的身体。它沿着&quot;+ target.info.name +&quot;的皮肤扭曲和分裂，成为了一个苦痛魔印。&quot;;
 
         return displayString;
 	},
@@ -36420,7 +36420,7 @@ maxRank: 5
     comboCost: 1,
     maxStack: 8,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Increases the damage of your next attack by 25%&quot;,
+	skillDescription: &quot;增加你下次攻击25%的伤害。&quot;,
 	skillType: &quot;sigil&quot;,
 	skillTheme: &quot;sigil&quot;,
 	buyPassage: &quot;Buy_Sigil_Pain&quot;,
@@ -36433,7 +36433,7 @@ maxRank: 5
     id: &quot;Sigil_Perception&quot;,
     constantDesc: function(attacker, victim)
     {
-        return &quot;A Sigil of Perception builds a strong cyan aura around &quot; + attacker.info.name + &quot;&#39;s body.&quot;;
+        return &quot;感知魔印在&quot; + attacker.info.name + &quot;&#39;的身体周围建立起了一个强大的青色光环。&quot;;
     },
     onActivate: function(attacker, victim, params)
     {
@@ -36444,22 +36444,22 @@ maxRank: 5
         setup.removePersistentEffect(victim, this);
         attacker.removeAbilityRuntimeData(setup.Ability_SigilOfPerception);
 
-        return &quot;The Sigil of Perception dissipates\n&quot;;
+        return &quot;感知魔印消失了。\n&quot;;
     },
 }&gt;&gt;
 &lt;&lt;set setup.FightMove_Sigil_Perception =
 {
     id: &quot;FightMove_Sigil_Perception&quot;,
-	name: &quot;Sigil of Perception&quot;,
+	name: &quot;感知魔印&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body suddenly glows with a subtle cyan hue.&quot;;
+		return character.info.name + &quot;的身体突然散发出了一种微妙的青色色调。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
         var displayString = &quot;&quot;;
-        displayString += setup.processFlavours(State.variables.CharacterSheet_Player, &quot;You focus Essence to your @[all| hands| noverb]; it suddenly glows in a soft cyan hue.\n&quot;);
-        displayString += &quot;You strike at &quot;+ target.info.name +&quot;&#39;s core, making the glow spread through their whole body.&quot;;
+        displayString += setup.processFlavours(State.variables.CharacterSheet_Player, &quot;你将精华集中到你的@[all| hands| noverb]；它突然发出柔和的青色色调。\n&quot;);
+        displayString += &quot;你攻击&quot;+ target.info.name +&quot;&#39;身体的核心，使得光芒扩散到他们的整个身体。&quot;;
 
         return displayString;
 	},
@@ -36472,7 +36472,7 @@ maxRank: 5
     comboCost: 1,
     maxStack: 5,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Increases next attack&#39;s chance to critically hit by 30%&quot;,
+	skillDescription: &quot;增加你下一次攻击%30的暴击率。&quot;,
 	skillType: &quot;sigil&quot;,
 	skillTheme: &quot;sigil&quot;,
     persistentEffectOpponent: $Sigil_Perception,
@@ -36482,7 +36482,7 @@ maxRank: 5
     id: &quot;Sigil_Triad&quot;,
 	constantDesc: function(attacker, victim)
     {
-        return &quot;A swirl of complex patterns form three sigils that cling to &quot; + attacker.info.name + &quot;&#39;s body.&quot;;
+        return &quot;复杂图案的漩涡形成了三个魔印，依附在&quot; + attacker.info.name + &quot;&#39;的身体上。&quot;;
     },
     onActivate: function(attacker, victim, params)
     {
@@ -36495,10 +36495,10 @@ maxRank: 5
 		var displayString = &quot;&quot;;
 
         params.attackDamage = Math.floor(params.attackDamage * 1.25);
-        displayString += &quot;The Sigil of Pain ruptures &quot;+ victim.info.name +&quot;&#39;s flesh as they get hit. The attack is amplified to &quot;+params.attackDamage+&quot; damage.\n&quot;;
+        displayString += &quot;苦痛魔印破裂了，&quot;+ victim.info.name +&quot;的身体受到了伤害。此次攻击的伤害增加到&quot;+params.attackDamage+&quot;。\n&quot;;
 		
         attacker.removeAbilityRuntimeData(setup.Ability_SigilOfPerception);
-        displayString += &quot;The Sigil of Perception dissipates\n&quot;;
+        displayString += &quot;苦痛魔印消失了。\n&quot;;
 
 		var ballsGrowth = Math.ceil(params.attackDamage * 0.7);
         var cockGrowth = Math.ceil(params.attackDamage * 0.12);
@@ -36513,10 +36513,10 @@ maxRank: 5
         var His = setup.getPronoun(attacker,&quot;pronounDepPosCap&quot;);
         var his = setup.getPronoun(attacker,&quot;pronounDepPos&quot;);
 
-        var displayString = attacker.info.name +&quot;&#39;s body gets overtaken by a golden aura as the Sigil of Growth activates. \n&quot;;
-        displayString += attacker.info.name + &quot;&#39;s cock grows &quot;+ setup.getLength(cockGrowth) + &quot;, &quot;;
-        displayString += his+&quot; muscles grow bigger (+&quot;+ muscleGrowth + &quot;) and &quot;;
-        displayString += his+&quot; body becomes &quot;+ setup.getLength(sizeGrowth) + &quot; taller\n&quot;;
+        var displayString = attacker.info.name +&quot;随着生长魔印的激活，他的身体被一个金色的光环所笼罩。\n&quot;;
+        displayString += attacker.info.name + &quot;的鸡巴生长为&quot;+ setup.getLength(cockGrowth) + &quot;长，&quot;;
+        displayString += his+&quot;肌肉变大了(+&quot;+ muscleGrowth + &quot;)并且&quot;;
+        displayString += his+&quot;身体变为&quot;+ setup.getLength(sizeGrowth) + &quot;高\n&quot;;
 
         return displayString
     },
@@ -36525,15 +36525,15 @@ maxRank: 5
 &lt;&lt;set setup.FightMove_Sigil_Triad =
 {
     id: &quot;FightMove_Sigil_Triad&quot;,
-	name: &quot;Sigil Triad&quot;,
+	name: &quot;三联魔印&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body suddenly glows with a complex blend of turquoise, black and gold.&quot;;
+		return character.info.name + &quot;他的身体突然焕发出青色、黑色和金色的复杂混合物。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
         var displayString = &quot;&quot;;
-		displayString += character.info.name + &quot;&#39;s hands rise. Soon after, three trails of turquoise, black and gold emerge from his hands and swirl towards you.&quot;;
+		displayString += character.info.name + &quot;的双手抬起。不久之后，三条绿松石、黑色和金色的轨迹从他的手中出现，向你旋转。&quot;;
 
         return displayString;
 	},
@@ -36546,7 +36546,7 @@ maxRank: 5
     maxStack: 4,
     comboCost: 1,
 	skillStatsToDescriptionSpacing: 3,
-	skillDescription: &quot;Combines the effects of the sigils of Pain, Perception and Growth.&quot;,
+	skillDescription: &quot;结合了痛苦、感知和生长的魔印的效果。&quot;,
 	skillType: &quot;sigil&quot;,
 	skillTheme: &quot;sigil&quot;,
     persistentEffectOpponent: $Sigil_Triad,
@@ -36556,7 +36556,7 @@ maxRank: 5
     id: &quot;Sigil_Vitality&quot;,
 	constantDesc: function(attacker, victim)
     {
-        return &quot;A gooey turquoise Sigil of Vitality clings to &quot; + attacker.info.name + &quot;&#39;s body like thick latex.&quot;;
+        return &quot;一个粘稠的青色活力魔印像厚厚的乳胶一样附着在&quot; + attacker.info.name + &quot;的身体上。&quot;;
     },
     onDamagingHit: function(attacker, victim, params)
     {
@@ -36565,9 +36565,9 @@ maxRank: 5
         setup.removePersistentEffect(victim, this);
 		var displayString = &quot;&quot;;
 		if (attacker.id == &quot;CharacterSheet_Player&quot;){
-			displayString = &quot;Thick turquoise goo emerges from &quot;+victim.info.name+&quot;&#39;s wounds as the Sigil of Vitality activates. It rushes up to you and enters your body. You are healed for &quot;+ lifedrain + &quot;hp.\n&quot;;
+			displayString = &quot;随着活力魔印的激活，浓稠的绿松石粘液从&quot;+victim.info.name+&quot;的伤口处涌出。它冲向你并进入了你的身体。你被治愈了，获得了&quot;+ lifedrain + &quot;生命值。\n&quot;;
 		}else{
-			displayString = &quot;Thick turquoise goo emerges from your wounds as the Sigil of Vitality activates. It rushes up to your enemy and enters their body. They are healed for &quot;+ lifedrain + &quot;hp.\n&quot;;
+			displayString = &quot;随着活力魔印的激活，浓稠的绿松石粘液从你的伤口处涌出。它冲向你的敌人，进入他们的身体。他们会得到&quot;+ lifedrain + &quot;生命值的治疗。\n&quot;;
 		}
 
         return displayString
@@ -36576,16 +36576,16 @@ maxRank: 5
 &lt;&lt;set setup.FightMove_Sigil_Vitality =
 {
     id: &quot;FightMove_Sigil_Vitality&quot;,
-	name: &quot;Sigil of Vitality&quot;,
-	itemName: &quot;A glowing cyan vial&quot;,
+	name: &quot;活力魔印&quot;,
+	itemName: &quot;一个发光的青色小瓶&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body suddenly glows with a subtle turquoise hue.&quot;;
+		return character.info.name + &quot;的身体突然焕发出微妙的青色色泽。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
         var displayString = setup.displaySeedMoveIntro(character, target, &quot;turquoise&quot;);
-		displayString += &quot;It enters &quot;+target.info.name+&quot;&#39;s body, forming a Sigil of Vitality on his skin.&quot;;
+		displayString += &quot;它进入了&quot;+target.info.name+&quot;的身体，在他的皮肤上形成了一个活力魔印的标志。&quot;;
 
         return displayString;
 	},
@@ -36598,7 +36598,7 @@ maxRank: 5
     maxStack: 4,
     comboCost: 1,
 	skillStatsToDescriptionSpacing: 3,
-	skillDescription: &quot;Heals the user by 75% of the damage applied by an attack as it activates&quot;,
+	skillDescription: &quot;在下一次的攻击命中时治愈你所造成伤害75%的生命值。&quot;,
 	skillType: &quot;sigil&quot;,
 	skillTheme: &quot;sigil&quot;,
 	buyFromStore: true,
@@ -36609,7 +36609,7 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="566" name="FightMove_Slash" tags="" position="725,7100" size="100,100">&lt;&lt;set setup.FightMove_Slash =
 {
 	id: &quot;FightMove_Slash&quot;,
-	name: &quot;Slash&quot;,
+	name: &quot;猛劈&quot;,
 	preparation: function(character, target)
 	{
 		var flavourtext = setup.getFlavourBasedDescription(character, &#39;basicAttackPrepFlavour&#39;, 1)
@@ -36619,7 +36619,7 @@ maxRank: 5
 		}
 		else
 		{
-			return character.info.name + &quot; is getting ready to strike.&quot;
+			return character.info.name + &quot;准备进攻。&quot;
 		}
 	},
 	attackAttemptDesc: function(character, target)
@@ -36645,27 +36645,27 @@ maxRank: 5
 	critMod: 15,
     comboCost: 3,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;A potentially devastating slash of your weapon.&quot;,
+	skillDescription: &quot;用你的武器发动一次牛逼的攻击。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="567" name="FightMove_SlimeLunge" tags="" position="850,7100" size="100,100">&lt;&lt;set setup.FightMove_SlimeLunge =
 {
 	id: &quot;FightMove_SlimeLunge&quot;,
-	name: &quot;Slime Lunge&quot;,
+	name: &quot;粘液弓步&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; sloshes around, moving at a surprisingly nimble pace, ready to respond to your next move.&quot;;
+		return character.info.name + &quot;荡来荡去，以令人惊讶的灵活速度移动，准备对你的下一步行动作出反应。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return character.info.name + &quot; bounces slightly, every movement causes its entire being to shake and stir, but its form remains well intact, not even a trail of goo is left behind in its wake.&quot;;
+		return character.info.name + &quot;微微弹起，每一个动作都会引起它整个身体的摇晃和骚动，但它的外形仍然很完整，甚至没有留下一丝粘液的痕迹。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
 		var He = setup.getPronoun(character,&quot;pronounCap&quot;);
 		
-		return character.info.name + &quot; bounces with the agility you&#39;d never expect from such a creature. It collides against you with all its might, attempting to knock you off your feet.&quot;;
+		return character.info.name + &quot;的弹跳力让你意识到你从未想过它是这样一种生物。它用尽全力与你相撞，试图把你打倒在地。&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36683,21 +36683,21 @@ maxRank: 5
 	},
 	staminaCost: 0,
 	critMod: 0,
-	skillDescription: &quot;Lunge towards your opponent, possibly stunning them if you are bigger than them.&quot;,
+	skillDescription: &quot;向你的对手猛冲，如果你比他们大，可能会使他们眩晕。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: [setup.slimeLungeEffects]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="568" name="FightMove_Stomp" tags="" position="975,7100" size="100,100">&lt;&lt;set setup.FightMove_Stomp =
 {
 	id: &quot;FightMove_Stomp&quot;,
-	name: &quot;Stomp&quot;,
+	name: &quot;践踏&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s massive feet loom over his opponent.&quot;;
+		return character.info.name + &quot;的巨大脚掌在他的对手身上掠过。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return &quot;The ground shakes as &quot;+character.info.name +&quot; brings his foot down on his opponent.&quot;
+		return &quot;当&quot;+character.info.name +&quot;把他的脚踩在对手身上时，地面震动了一下。&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36718,7 +36718,7 @@ maxRank: 5
 	unique: true,
 	critMod: 20,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Bring your foot down on your tiny opponent.&quot;,
+	skillDescription: &quot;将你的脚踩在你的对手的小身板上。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
     unlearnable: true,
@@ -36726,23 +36726,23 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="569" name="FightMove_SummonParasite" tags="" position="1100,7100" size="100,100">&lt;&lt;set setup.FightMove_SummonParasite =
 {
 	id: &quot;FightMove_SummonParasite&quot;,
-	name: &quot;Summon Parasite&quot;,
+	name: &quot;召唤寄生体&quot;,
 	preparation: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 
-		return &quot;A thick purple mist suddenly gathers around &quot;+character.info.name+&quot;&#39;s hands.&quot;
+		return &quot;浓厚的紫雾突然在&quot;+character.info.name+&quot;的手周围聚集起来。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
         var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
-        var displayString = &quot;The familiar sound of a portal opening rings between the two of you.\n&quot;;
-        displayString += &quot;The black, opaque skin of a &quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot; spawn of Nyx pokes out before it jumps towards &quot;+ target.info.name;
+        var displayString = &quot;熟悉的传送门打开的声音在你们两个人之间响起。\n&quot;;
+        displayString += &quot;&quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot;长的尼克斯幼体的黑色不透明皮肤探出头来，在跳向&quot;+ target.info.name之前。;
 		return displayString;
 	},
 	attackHitDesc: function(character, target)
 	{
-        var displayString = &quot;The parasite stings &quot;+target.info.name+&quot;. A sharp pain slowly spreads through their limbs.&quot;;
+        var displayString = &quot;寄生虫叮咬&quot;+target.info.name+&quot;一种尖锐的疼痛慢慢蔓延到他们的四肢。&quot;;
 
 		return displayString;
 	},
@@ -36764,27 +36764,27 @@ maxRank: 5
 	critMod: 0,
 	comboCost: 3,
 	skillStatsToDescriptionSpacing: 1,
-	skillDescription: &quot;Bring forth spawns of Nyx.&quot;,
+	skillDescription: &quot;带来尼克斯的后代。&quot;,
 	skillType: &quot;demon&quot;,
 	skillTheme: &quot;demon&quot;,
 	additionalEffects: [setup.witheringVenom]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="570" name="FightMove_TonicOfStillness" tags="" position="1225,7100" size="100,100">&lt;&lt;set setup.FightMove_TonicOfStillness =
 {
     id: &quot;FightMove_TonicOfStillness&quot;,
-	name: &quot;Tonic of Stillness&quot;,
+	name: &quot;冷静滋补&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; pulls out a flask filled with a glowing white liquid.&quot;
+		return character.info.name + &quot;掏出一个装满发亮白色液体的烧瓶。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
-		return character.info.name + &quot; drinks from a flask filled with a glowing white liquid.&quot;;
+		return character.info.name + &quot;将装满发亮白色液体的烧瓶里的液体喝下。&quot;;
 	},
     attackHitDesc: function(character, target)
 	{
-        var displayString = character.info.name+&quot; muscles flex with a sudden thrunderous force.\n&quot;
-        displayString += &quot;His body processes Corruption at an exceedingly fast rate and turns it into strength!&quot;
+        var displayString = character.info.name+&quot;的肌肉以一种突如其来的力量屈伸。\n&quot;
+        displayString += &quot;他的身体以极快的速度处理腐败，并将其转化为力量!&quot;
 
         return displayString;
 	},
@@ -36806,7 +36806,7 @@ maxRank: 5
 	critMod: 0,
     comboCost: 1,
 	skillStatsToDescriptionSpacing: 1,
-	skillDescription: &quot;Turns Corruption into temporary strength.&quot;,
+	skillDescription: &quot;将腐化变成暂时的力量。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;special&quot;,
     unlearnable: true,
@@ -36814,14 +36814,14 @@ maxRank: 5
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="571" name="FightMove_Tutorial1" tags="" position="100,7225" size="100,100">&lt;&lt;set setup.FightMove_Tutorial1 =
 {
 	id: &quot;FightMove_Tutorial1&quot;,
-	name: &quot;Struggle&quot;,
+	name: &quot;斗争&quot;,
 	preparation: function(character, target)
 	{
 		return &quot;&lt;&lt;include FightMove_Tutorial1_Preparation&gt;&gt;&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return &quot;The beast is distracted by Abel&#39;s attack.&quot;
+		return &quot;野兽被亚伯的攻击分散了注意力。&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -36842,15 +36842,15 @@ maxRank: 5
     comboCost: 2,
     cooldown: 2,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;The beast is distracted by Abel&#39;s attack, now is the time to strike.&quot;,
+	skillDescription: &quot;野兽被亚伯的攻击分散了注意力，是时候反击了。&quot;,
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
 	additionalEffects: []
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="572" name="FightMove_Tutorial1_Preparation" tags="" position="225,7225" size="100,100">The wounded Lost is distracted by Abel&#39;s attacks!
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="572" name="FightMove_Tutorial1_Preparation" tags="" position="225,7225" size="100,100">受伤的迷失者被亚伯的攻击分散了注意力!
 
-As he slashes the beasts back, you hear him cry out.
+当他砍断野兽的后背时，你听到他的叫喊。
 
-&quot;Hit him as often as you can $CharacterSheet_Player.info.name! Remember your &lt;&lt;link &quot;training!&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial1_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;&quot;
+&quot;尽可能多地打击他，因为你可以的，$CharacterSheet_Player.info.name！记住你的&lt;&lt;链接&quot;训练！&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial1_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;&quot;
 
 &lt;span id=&quot;tutorial&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="573" name="FightMove_Tutorial1_Tutorial" tags="" position="350,7225" size="100,100">A list of randomized moves are given to you every turn.
 You can chain multiple moves during the same turn, as long as their Link Value (the number in the top right corner) is adjacent to that of the following move.
@@ -44167,7 +44167,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 &lt;&lt;include KnownEncounter&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1358" name="KnownEncounter" tags="" position="975,16975" size="100,100">&lt;&lt;print $Encounter_Target.fight.encounterIntroText&gt;&gt;</tw-passagedata><tw-passagedata pid="1359" name="Travelling" tags="" position="1100,16975" size="100,100">&lt;&lt;set $Explore_Destination = setup.getExploreDestination(0)&gt;&gt;
 
-&lt;&lt;run setup.choice(&quot;[[Explore the Barrens-&gt;$Explore_Destination]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1360" name="Change_Combo_Moves_Menu" tags="Overworld" position="1225,16975" size="100,100">改变连击动作！
+&lt;&lt;run setup.choice(&quot;[[Explore the Barrens-&gt;$Explore_Destination]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1360" name="Change_Combo_Moves_Menu" tags="Overworld" position="1225,16975" size="100,100">改变连击行动！
 \&lt;&lt;set $FightMovesLeft = 5&gt;&gt;
 &lt;&lt;print setup.displayChangeFightMoves()&gt;&gt;</tw-passagedata><tw-passagedata pid="1361" name="ChartPage" tags="Overworld" position="100,17100" size="100,100">你回忆着你在冒险中遇到的生物，对比着他们之间的大小。
 
