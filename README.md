@@ -86,10 +86,25 @@
 |yes|Cray|name.克雷|黄金堡垒人人推崇的英雄人物|
 |no|Talisman|n.护身符||
 |yes|Monstrous Symbiote|name.怪物共生体|毒液|
-|no|Path of Mastery/Ascension/Embrace/Redemption|name.驾驭/济世/接纳/救赎之路|托加的四条路线|
-|no|Tonic of Stillness|name.冷静补剂|技能，可将腐化暂时转为力量|
-|no|Torgar&#39;s Corrupted Bond|name.托加的腐化连接|能力名|
-|no|Herald of the Eldest|name.长老之信使||
+|yes|Path of Mastery/Ascension/Embrace/Redemption|name.驾驭/济世/接纳/救赎之路|托加的四条路线|
+|yes|Tonic of Stillness|name.冷静补剂|技能，可将腐化暂时转为力量|
+|yes|Torgar&#39;s Corrupted Bond|name.托加的腐化连接|能力名|
+|yes|Herald of the Eldest|name.长老之信使||
+|yes|ESSENCE|n.精华|游戏中类似货币的存在|
+|yes|STAMINA|n.耐力||
+|yes|STRENGTH|n.力量，（肌肉）强度||
+|yes|CRIT|n.暴击|后接百分数指暴击几率，接dmg指暴击伤害|
+|yes|BODY TYPE|n.体型||
+|yes|HEIGHT|n.身高||
+|yes|perks|n.额外加成||
+|yes|Alterations|n.变动||
+|yes|Status Effects|n.状态影响||
+|yes|Global Effects|n.全局影响||
+|yes|Achievements|n.成就||
+|yes|Idle|n.闲置的||
+|yes|cycle|n.周目||
+|yes|save file|n.存档||
+|yes|Tiadane|name.提亚丹|牛头人门卫的名字|
 ---
 
 ## **三、代码查疑**
@@ -109,7 +124,8 @@
 |行数|原文本|正确文本|备注|
 |:---:|---|---|---|
 |40060|...your ears perk up to a fiendish and >>>gutteral<<< howl.|guttural||
-|43773|...of the >>>direlect<<< ruins...|derelict||
+|43775|...of the >>>direlect<<< ruins...|derelict||
+|44928|...and bound to corrupt us all!>>>&#39;<<<...|||
 ---
 
 *[待补充]*

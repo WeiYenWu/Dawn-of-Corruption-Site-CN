@@ -10606,14 +10606,14 @@ setup.displayCorruptSidebar = function(character)
 	var displayString = "";
 
 	displayString +=  "<span class='corruptText100'>";
-	displayString +=  "<span class='glitch nyx fucked' data-text='̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷̴͇͕͛́͘Ṫ̶̖Ḩ̵̰̈Ȅ̷̥̄ ̴̛̣̟̃Ā̸͜G̴͇̗̅͝Ḙ̴͋͐ ̶̪̖̑O̸̙͛̀F̴̡̖̊͆ ̸̠̥̇͐N̴̬͑Y̸̰̔X̴͚́ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ '>̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ THE AGE OF NYXɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ </span> \n";
+	displayString +=  "<span class='glitch nyx fucked' data-text='̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷̴͇͕͛́͘Ṫ̶̖Ḩ̵̰̈Ȅ̷̥̄ ̴̛̣̟̃Ā̸͜G̴͇̗̅͝Ḙ̴͋͐ ̶̪̖̑O̸̙͛̀F̴̡̖̊͆ ̸̠̥̇͐N̴̬͑Y̸̰̔X̴͚́ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ '>̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ 尼克斯的时代ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ </span> \n";
 	displayString +=  "<div id='SidebarDivisionTop'>"+setup.getCorruptSidebarDividerTop()+"</div>";
 	displayString += "<div class='stat-window-offset'>"
 	displayString += 	"<div class='info-row'>"
     displayString += 	   "<div class='info-column1 corruptText100'>"
-    displayString += 	       "CORRUPTION\n"
-    displayString += 	       "CORRUPTION\n"
-    displayString += 	       "CORRUPTION\n"
+    displayString += 	       "腐化\n"
+    displayString += 	       "腐化\n"
+    displayString += 	       "腐化\n"
     displayString += 	   "</div>";
     displayString += 	   "<div class='info-column2'>"
     displayString += 	       "ɥ̸̡̌̆͒̕͠ƃ̶̤͔̦̳̰͋͊̐͐̂ı̴̛͎̠̂́͝ɥ̶̲̜̎̏̐́̚ ̷̟͉̮͑͜ʎ̷̧̺͎͉̘̻̒̈́̍͗̿ן̶̛̲̝̱̈́́͘ן̵̖̣̖͇̘̈́̀̾̾͘ɐ̸̨͈͌̅ı̸̻͔͕̩̓̄̇̒͠ʇ̵̤̠̠͖̈̉͌̊͛͝͝u̸͔̰̟̖͐̎̏ͅǝ̷̧̭̗̰̱̜̩̀̄̆̋̊͆ͅu̸͙̼̜̭̺̓͛͌͆̏̕͜ȍ̵̭͓̼̑̿d̸̙̜̺͙̓͑̂͝x̵̬̣͇̍́̎̉̇̅ǝ̸͋̒̃̋͗̓͊͜͠\n"
@@ -10653,16 +10653,16 @@ setup.displayInfoStats = function(character)
 	var expedition = State.variables.Expedition;
 	var displayString = "";
 	
-	displayString +=  "<span class='DateText'>"+setup.ordinal_suffix(expedition) +" Expedition of the "+ setup.ordinal_suffix(cycle) +" Cycle</span> \n";
+	displayString +=  "<span class='DateText'>"+setup.ordinal_suffix(expedition) +"次远征于第"+ setup.ordinal_suffix(cycle) +"周目</span> \n";
 	displayString +=  "<div id='SidebarDivisionTop'>"+setup.getCorruptSidebarDividerTop()+"</div>";
 	displayString +=  "<div class='PlayerDescriptor'>";
 	displayString +=  "<span class='PlayerName'>"+State.variables.CharacterSheet_Player.info.name.toUpperCase() +"</span>\n";
-	displayString +=  "<span class='LevelText'>Lvl "+State.variables.Level+"</span> <span class='PlayerRace'>"+setup.getRace(State.variables.CharacterSheet_Player.info.anatomy).toUpperCase() +"</span>\n";
+	displayString +=  "<span class='LevelText'>等级 "+State.variables.Level+"</span> <span class='PlayerRace'>"+setup.getRace(State.variables.CharacterSheet_Player.info.anatomy).toUpperCase() +"</span>\n";
 	displayString +=  "</div>";
 	displayString += "<div id='LevelBarContainer'>";
 	displayString += "<div class='ProgressBarRow'>"
     displayString +=    "<div class='ProgressBarColumn1'>"
-    displayString +=        "Next"
+    displayString +=        "下一级"
     displayString +=    "</div>";
 	displayString +=    "<div class='ProgressBarColumn2'>"
 	
@@ -10686,8 +10686,8 @@ setup.displayInfoStats = function(character)
 	displayString += "<div class='stat-window-offset'>"
 	displayString += 	"<div class='info-row'>"
     displayString += 	   "<div class='info-column1 "+setup.getCorruptTextClass(character)+"'>"
-    displayString += 	       "ESSENCE\n"
-    displayString += 	       "CORRUPTION\n"
+    displayString += 	       "精华\n"
+    displayString += 	       "腐化值\n"
     displayString += 	   "</div>";
     displayString += 	   "<div class='info-column2'>"
     displayString += 	       State.variables.Essence.toFixed(2).replace(/\.00$/, '') + "\n"
@@ -10773,7 +10773,7 @@ setup.displayFightStats = function(character)
 		displayString +=	    	"<div id='statButtonText'>";
 	}
 	
-    displayString +=	    	"<<click 'STATS'>>";
+    displayString +=	    	"<<click '属性'>>";
 	displayString +=	  		   "<<if $DisplayStatWindow == false>>";
 	displayString +=	  		      "<<toggleclass '#StatsWindow' 'hidden'>>";
 	displayString +=	  		      "<<toggleclass '#statButtonText' 'stat-container-column-active'>>";
@@ -10796,7 +10796,7 @@ setup.displayFightStats = function(character)
 		displayString +=	    	"<div id='abilitiesButtonText' class='stat-container-column-active'>";
 	}
 
-	displayString +=			"<<click '&nbsp;&nbsp;&nbsp;&nbsp;ABILITIES'>>";
+	displayString +=			"<<click '&nbsp;&nbsp;&nbsp;&nbsp;能力'>>";
 	displayString +=	   		   "<<if $DisplayStatWindow == true>>";
 	displayString +=	   		      "<<toggleclass '#StatsWindow' 'hidden'>>";
 	displayString +=	  		      "<<toggleclass '#statButtonText' 'stat-container-column-active'>>";
@@ -10823,10 +10823,10 @@ setup.displayFightStats = function(character)
 
     displayString +=		"<div class='info-row'>";
     displayString +=		    "<div class='stat-column1 "+setup.getCorruptTextClass(character)+"'>";
-    displayString +=		        "STRENGTH\n";
-    displayString +=		        "STAMINA\n";
-    displayString +=		        "CRIT %\n";
-    displayString +=		        "CRIT DMG\n";
+    displayString +=		        "力量\n";
+    displayString +=		        "耐力\n";
+    displayString +=		        "暴击率 %\n";
+    displayString +=		        "暴击伤害\n";
     displayString +=		    "</div>";
     displayString +=		    "<div class='stat-column2'>";
     displayString +=		        setup.displayStatValue(character, "strength") + "\n";
@@ -10968,10 +10968,10 @@ setup.displayBodyStats = function(character)
 
     displayString +="<div class='info-row'>";
     displayString +=    "<div class='stat-column1 "+setup.getCorruptTextClass(character)+"'>";
-    displayString +=        "BODY TYPE\n";
-    displayString +=        "HEIGHT\n";
-    displayString +=        "COCK SIZE\n";
-    displayString +=        "BALLS SIZE\n";
+    displayString +=        "体型\n";
+    displayString +=        "身高\n";
+    displayString +=        "鸡巴尺寸\n";
+    displayString +=        "睾丸尺寸\n";
     displayString +=    "</div>";
     displayString +=    "<div class='stat-column2'>";
     displayString +=        "<<nobr>>"+setup.getMusclesDescriptor(character)+"&nbsp;("+ setup.displayStatValue(character, "muscles")+")<</nobr>>\n";
@@ -11182,19 +11182,19 @@ setup.displayAbilityCategoryTitleElement = function(category)
 	switch(category)
 	{
 		case 0:
-			displayString += "title='Perks'";
+			displayString += "title='额外加成'";
 			break;
 		case 1:
-			displayString += "title='Alterations'";
+			displayString += "title='数值变动'";
 			break;
 		case 2:
-			displayString += "title='Status Effects'";
+			displayString += "title='状态影响'";
 			break;
 		case 3:
-			displayString += "title='Global Effects'";
+			displayString += "title='全局影响'";
 			break;
 		default:
-			displayString += "title='Global Effects'";
+			displayString += "title='全局影响'";
 			break;
 	}
 
@@ -11465,7 +11465,7 @@ setup.displayModifierTypeText = function(modifier)
 	}
 	else if(modifier.mod == setup.mod.REPLACE)
 	{
-		displayString += " becomes ";
+		displayString += " 变为 ";
 	}
 
 	return displayString;
@@ -16288,7 +16288,7 @@ setup.achievements = function()
 	if(activatedAchievements.length > 0)
 	{
 		displayString += '<div class="AchievementWindowContentContainer">';
-		displayString += '<div class="AchievementWindowHeader"><h2 class="AchievementWindowHeaderTitle">Awarded Achievements</h2>Your feats have been noticed and have brought you boons that transcend time itself.</div>'
+		displayString += '<div class="AchievementWindowHeader"><h2 class="AchievementWindowHeaderTitle">获得的成就</h2>你的功绩已被注意到，并为你带来了超越时间本身的好处。</div>'
 
 		displayString += '<div class="AchievementCardsContainer">';
 		for(let i = 0; i < activatedAchievements.length; i++)
@@ -16311,7 +16311,7 @@ setup.achievements = function()
 	if(completeAchievements.length > 0)
 	{
 		displayString += '<div class="AchievementWindowContentContainer">';
-		displayString += '<div class="AchievementWindowHeader"><h2 class="AchievementWindowHeaderTitle">Completed Achievements</h2>You have accomplished great deeds that will bring upon rewards to your next life.</div>'
+		displayString += '<div class="AchievementWindowHeader"><h2 class="AchievementWindowHeaderTitle">已达成的成就</h2>你已经完成了伟大的事迹，它们将会给你的下辈子带来回报。</div>'
 
 		displayString += '<div class="AchievementCardsContainer">';
 		for(let i = 0; i < completeAchievements.length; i++)
@@ -16334,7 +16334,7 @@ setup.achievements = function()
 	if(idleAchievements.length > 0)
 	{
 		displayString += '<div class="AchievementWindowContentContainer">';
-		displayString += '<div class="AchievementWindowHeader"><h2 class="AchievementWindowHeaderTitle">Locked Achievements</h2>Silent gods watch upon you expectantly.</div>'
+		displayString += '<div class="AchievementWindowHeader"><h2 class="AchievementWindowHeaderTitle">锁定的成就</h2>无言的神灵期待地注视着你。</div>'
 
 		displayString += '<div class="AchievementCardsContainer">';
 		for(let i = 0; i < idleAchievements.length; i++)
@@ -16361,17 +16361,17 @@ setup.displayAchievement = function(ability)
 
 	switch (ability.achivemementState) {
 		case setup.AchievementState.IDLE:
-			stateClass = "Idle"
+			stateClass = "闲置的"
 			break;
 		case setup.AchievementState.COMPLETE:
-			stateClass = "Complete"
+			stateClass = "完成的"
 			break;
 		case setup.AchievementState.ACTIVATED:
-			stateClass = "Activated"
+			stateClass = "获得的"
 			break;
 	
 		default:
-			stateClass = "Idle"
+			stateClass = "闲置的"
 			break;
 	}
 
@@ -16402,7 +16402,7 @@ setup.displayAchievement = function(ability)
 		{
 			//new game lock
 			displayString += "<div class='AchievementAbilityBodyNewGameLock'>";
-			displayString += "Reach an Ending to earn a Transcendent Ability in your next playthrough.";
+			displayString += "在你的下一次游戏中，达到一个结局以获得超凡能力。";
 			displayString += "</div>";
 		}
 	}
@@ -16410,7 +16410,7 @@ setup.displayAchievement = function(ability)
 	{
 		//complete lock
 		displayString += "<div class='AchievementAbilityBodyCompleteLock'>";
-		displayString += "Locked";
+		displayString += "锁定的";
 		displayString += "</div>";
 	}
 
@@ -16433,7 +16433,7 @@ setup.completeAchievement = function(abilityID)
 		{
 			if(abilities[i].achivemementState == setup.AchievementState.IDLE)
 			{
-				setup.notify("Achievement Unlocked: " + setup[abilityID].name);
+				setup.notify("已解锁的成就 " + setup[abilityID].name);
 				abilities[i].achivemementState = setup.AchievementState.COMPLETE;
 			}
 		}
@@ -16442,14 +16442,14 @@ setup.completeAchievement = function(abilityID)
 
 setup.restart = function()
 {
-	Dialog.setup("Jump to another cycle");
+	Dialog.setup("跳转到另一个轮回");
 	Dialog.wiki(Story.get("RestartScreen").processText());
 	Dialog.open();
 };
 
 setup.volumeMenu = function()
 {
-	Dialog.setup("Audio Settings");
+	Dialog.setup("音频设定");
 
 	var displayString = '<div class="VolumeMenuWindow">'
 
@@ -16457,7 +16457,7 @@ setup.volumeMenu = function()
 	var sliderClass = setup.getCorruptionUIClassName("dummy", corruption);
 	
 	displayString += '<div class="VolumeMenu">';
-	displayString += 	'<div class="VolumeMenuTitle">Music</div>';
+	displayString += 	'<div class="VolumeMenuTitle">音乐</div>';
 	displayString += 		'<div class="VolumeMenuSlider">';
 	displayString += 			'<span class="macro-volume">';
 	displayString += 			'<input id="volume-control" class="'+sliderClass+'" type="range" name="volumeMusic" min="0" max="1" step="0.01" value="'+State.variables.VolumeControls.music.volume+'">';
@@ -16466,7 +16466,7 @@ setup.volumeMenu = function()
 	displayString += '</div>';
 
 	displayString += '<div class="VolumeMenu">';
-	displayString += 	'<div class="VolumeMenuTitle">SFX</div>';
+	displayString += 	'<div class="VolumeMenuTitle">音效</div>';
 	displayString += 		'<div class="VolumeMenuSlider">';
 	displayString += 			'<span class="macro-volume">';
 	displayString += 			'<input id="volume-control" class="'+sliderClass+'" type="range" name="volumeSFX" min="0" max="1" step="0.01" value="'+State.variables.VolumeControls.sfx.volume+'">';
@@ -16475,7 +16475,7 @@ setup.volumeMenu = function()
 	displayString += '</div>';
 
 	displayString += '<div class="VolumeMenu">';
-	displayString += 	'<div class="VolumeMenuTitle">Voices</div>';
+	displayString += 	'<div class="VolumeMenuTitle">语音</div>';
 	displayString += 		'<div class="VolumeMenuSlider">';
 	displayString += 			'<span class="macro-volume">';
 	displayString += 			'<input id="volume-control" class="'+sliderClass+'" type="range" name="volumeVoices" min="0" max="1" step="0.01" value="'+State.variables.VolumeControls.voices.volume+'">';
@@ -18917,51 +18917,51 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 &lt;&lt;if $Version &gt;= 10301 &amp;&amp; $Version &lt; 10302&gt;&gt;
 
 &lt;&lt;set $Version = 10302&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.3.2\n Cannot upgrade save file. Play at your own risk.&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.3.2\n 无法升级存档。玩的时候要自己承担风险。&#39;&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10302 &amp;&amp; $Version &lt; 10303&gt;&gt;
 
 &lt;&lt;set $Version = 10303&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.3.3\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.3.3\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10303 &amp;&amp; $Version &lt; 10304&gt;&gt;
 
 &lt;&lt;set $Version = 10304&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.3.4\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.3.4\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10303 &amp;&amp; $Version &lt; 10304&gt;&gt;
 
 &lt;&lt;set $Version = 10305&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.3.5\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.3.5\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $Version &gt;= 10304 &amp;&amp; $Version &lt; 10400&gt;&gt;
 
 &lt;&lt;set $Version = 10400&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.4.0\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.4.0\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $Version &gt;= 10400 &amp;&amp; $Version &lt; 10401&gt;&gt;
 
 &lt;&lt;set $Version = 10401&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.4.1\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.4.1\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $Version &gt;= 10401 &amp;&amp; $Version &lt; 10402&gt;&gt;
 
 &lt;&lt;set $Version = 10402&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.4.2\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.4.2\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $Version &gt;= 10402 &amp;&amp; $Version &lt; 10403&gt;&gt;
 
 &lt;&lt;set $Version = 10403&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.4.3\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.4.3\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10403 &amp;&amp; $Version &lt; 10404&gt;&gt;
@@ -19111,7 +19111,7 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 
 &lt;&lt;if $Version &gt;= 10406 &amp;&amp; $Version &lt; 10407&gt;&gt;
 &lt;&lt;set $Version = 10407&gt;&gt;
-&lt;&lt;set $VersionStr = &#39;0.4.7\n SAVE FILE NOT COMPATIBLE WITH THIS VERSION! PLAY AT YOUR OWN RISKS!&#39;&gt;&gt;
+&lt;&lt;set $VersionStr = &#39;0.4.7\n 存档与此版本不兼容! 风险自担!&#39;&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
 
@@ -19832,7 +19832,7 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 
     &lt;&lt;run console.log(&quot;deprecate 10503&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10503&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.5.3\n [[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.5.3\n [[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10503 &amp;&amp; $Version &lt; 10600&gt;&gt;
@@ -19847,43 +19847,43 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 
     &lt;&lt;run console.log(&quot;deprecate 10600&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10600&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.6.0\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.6.0\n &quot;[[S保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10600 &amp;&amp; $Version &lt; 10601&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10601&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10601&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.6.1\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.6.1\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10601 &amp;&amp; $Version &lt; 10602&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10602&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10602&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.6.2\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.6.2\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10602 &amp;&amp; $Version &lt; 10603&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10603&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10603&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.6.3\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.6.3\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10603 &amp;&amp; $Version &lt; 10604&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10604&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10604&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.6.4\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.6.4\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10604 &amp;&amp; $Version &lt; 10605&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10605&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10605&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.6.5\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.6.5\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10605 &amp;&amp; $Version &lt; 10700&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10700&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10700&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.7.0\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.7.0\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 
     &lt;&lt;set $VolumeControls =
     {
@@ -19915,19 +19915,19 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 &lt;&lt;if $Version &gt;= 10700 &amp;&amp; $Version &lt; 10701&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10701&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10701&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.7.1\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.7.1\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10701 &amp;&amp; $Version &lt; 10702&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10702&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10702&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.7.2\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.7.2\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $Version &gt;= 10702 &amp;&amp; $Version &lt; 10703&gt;&gt;
     &lt;&lt;run console.log(&quot;deprecate 10703&quot;)&gt;&gt;
     &lt;&lt;set $Version = 10703&gt;&gt;
-    &lt;&lt;set $VersionStr = &#39;0.7.3\n &quot;[[SAVE FILE NOT COMPATIBLE WITH THIS VERSION! CLICK HERE TO RESTART WHILE KEEPING YOUR ESSENCE, ACHIEVEMENTS AND EXP!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
+    &lt;&lt;set $VersionStr = &#39;0.7.3\n &quot;[[保存文件与此版本不兼容! 点击这里重新启动，同时保留你的精华和经验!-&gt;Reload_Unsupported_Enter]]&#39;&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="PassageReady" tags="" position="350,100" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="161,1322" size="100,100">&lt;&lt;include StoryInit_Base&gt;&gt;
 &lt;&lt;include StoryInit_Widgets&gt;&gt;
 &lt;&lt;include StoryInit_UniversalFlavour&gt;&gt;
@@ -26258,7 +26258,8 @@ Config.ui.stowBarInitially = false;
 
 更多……更多，更多！！！
 
-你的身体以一种不自然的高度兴奋而潮红。你的阴囊发出低沉的声音，你的@[all|cock|noverb]像消防水带一样射出一连串的精液。\
+你的身体以一种不自然的高度兴奋而潮红。你的阴囊发出低沉的声音，你的@[all|cock|noverb]像消防水带一样射出一连串的精液。
+
 当你意识到你宝贵的液正在被浪费时，你拼命咆哮。把手指挖进迷失者的肉里，把你的鸡巴撞进他的后穴\
 直到你的@[all|balls|noverb]狠狠地拍打着他的臀部。他随着后穴内突如其来的闯入而咆哮。
 
@@ -26495,7 +26496,8 @@ Config.ui.stowBarInitially = false;
 你用手掌摸过尽可能多的肉，将炽热的快感之矛插遍你的身体。你鸡巴的身材已经远远超过了正常水平，你感到骄傲。\
 从未有过这种感觉——这种如果你愿意的话，你自己的性器可以轻松击溃战壕的感觉！另一个好的性交想法让你的高潮工厂开始运转。
 
-快感明显地增强，它们聚集到了你发出咆哮后鸡巴喷出量不可测的精液上，一股炙热粘稠的液体迅速汇聚在你周围的地面上。\
+快感明显地增强，\
+它们聚集到了你发出咆哮后鸡巴喷出量不可测的精液上，一股炙热粘稠的液体迅速汇聚在你周围的地面上。\
 当你的高潮摇晃你时，你在下面摸索以感受你的@[all| balls| noverb]的重量。仅仅触摸它们就会让他们进入超级兴奋的状态，每个睾丸都会震颤，因为它们正在将更多的液体推向体外。</tw-passagedata><tw-passagedata pid="210" name="_player_text_sheet_mirror_player_CrotchFlavour_heightFlavour_huge" tags="" position="1225,2600" size="100,100">你用一只手沿着你的身体向下抚摸，你的手越来越低，直到你轻轻地抚摸着你的@[all| cocks| noverb]。当你意识到仅仅让他们的体重落在地上就可能会造成破坏时，你不禁张嘴大笑！
 
 你用手在你鸡巴宽阔的血肉上来回抚摸，这些血肉会随着你自己的心跳而隆隆作响。\
@@ -26526,7 +26528,7 @@ Config.ui.stowBarInitially = false;
 
 很快，你的手就碰到并部分碰上了你极为敏感的鸡巴肉，\
 这一举动导致强烈的白热化的快感在你身上燃烧——这种快感很快就会以生理的形式从你身上爆发出来，你所能看到的一切都被你射出的洪水淹没。\
-在看不到任何可能停止的情况下，你感觉到你的A@[all| balls| noverb]紧张并在你身下不停泵动，有着粘稠形状的它们似乎是从以太召唤出的一条无尽河流激发了你的狂喜。\
+在看不到任何可能停止的情况下，你感觉到你的@[all| balls| noverb]紧张并在你身下不停泵动，有着粘稠形状的它们似乎是从以太召唤出的一条无尽河流激发了你的狂喜。\
 你的身体似乎几乎因快感而分崩离析，让你在精神上和身体上几乎溃不成军。</tw-passagedata><tw-passagedata pid="218" name="_player_text_sheet_mirror_player_mirror_symbiote_CrotchFlavour_corruptionFlavour_corrupt50" tags="" position="975,2725" size="100,100">你看着一条深黑紫色的小溪流经你粘稠的身体，它几乎无法察觉。无论是什么腐败玷污了这片土地，但似乎它们都已进入了你的身体。</tw-passagedata><tw-passagedata pid="219" name="_player_text_sheet_mirror_player_mirror_symbiote_CrotchFlavour_corruptionFlavour_corrupt75" tags="" position="1100,2725" size="100,100">你的@[all|cocks|noverb]流着小股黑紫色的腐败脉动，它们与你的心脏同步，在你鸡巴上半透明的血肉中可见。</tw-passagedata><tw-passagedata pid="220" name="_player_text_sheet_mirror_player_mirror_symbiote_CrotchFlavour_corruptionFlavour_corrupt100" tags="" position="1225,2725" size="100,100">黑色的渗出物，几乎与你的身体几乎无法区分，从你的@[all|cocks|noverb]滴出——既像是直接从龟头滴出，又似乎是直接从你鸡巴里倾泻而出，滴落并变黑你行走的土壤。</tw-passagedata><tw-passagedata pid="221" name="_player_text_sheet_mirror_player_TailFlavour_heightFlavour_small" tags="" position="100,2850" size="100,100">你臀肌发力，将你的@[all| tails| one=从身体一侧鞭打~more=从身体一侧鞭打]至另一侧。你的视线沿着它向下移动，你盯着它的每个细节，随后得意地笑了起来，\
 你用你的手抓住了它，俏皮地将它来回摆动。</tw-passagedata><tw-passagedata pid="222" name="_player_text_sheet_mirror_player_TailFlavour_heightFlavour_medium" tags="" position="225,2850" size="100,100">你臀肌发力，将你的@[all| tails| one=从身体一侧鞭打~more=从身体一侧鞭打]至另一侧，发出了嗖嗖的声音。你的视线顺着它向下移动，你盯着它的每个细节，随后得意地笑了起来，\
 你用手抓住它，然后俏皮地摆动它。它的重量变得相当危险。当你不小心打翻桌子时，一声巨响在你身后响起。这是一个很好的证明。</tw-passagedata><tw-passagedata pid="223" name="_player_text_sheet_mirror_player_TailFlavour_heightFlavour_large" tags="" position="350,2850" size="100,100">你臀肌发力，将你的@[all| tails| one=从身体一侧鞭打~more=从身体一侧鞭打]至另一侧。现在，它的每一个动作都带有强大的力量，只有你这种体型的人才能控制。\
@@ -26557,25 +26559,25 @@ Config.ui.stowBarInitially = false;
 你的适应性身体强壮到了只要你想，便能用翅尖戳破墙壁。</tw-passagedata><tw-passagedata pid="249" name="_player_text_sheet_mirror_symbiote_WingsFlavour_heightFlavour_large" tags="" position="1100,3100" size="100,100">你巨幅的@[all| wings| noverb]的翼展构成的阴影几乎笼罩了你的视野，而那缓慢循环的粘液使得这影子的质感变得有一些缥缈而波动了起来。\
 你半透明的、滴着液体的薄膜本身的巨大尺寸都足以抹掉整个农场。翅膀的粘液滴入湖中，你感到它存贮了湖水，在中心形成了一个小池塘。</tw-passagedata><tw-passagedata pid="250" name="_player_text_sheet_mirror_symbiote_WingsFlavour_heightFlavour_huge" tags="" position="1225,3100" size="100,100">你已无法看见你@[all| wings| noverb]的末梢。单是拍打一下这黏糊糊的形体便足以倾泻出压平下方湖泊和植被的气浪。\
 翅膀上最细的隆起已经比你刚才的大腿还要巨大有力了。\
-The slick goo that drips and moves across your membranes tenses and forms a strong barrier as you gently flap one of your wings, almost knocking over a tree.</tw-passagedata><tw-passagedata pid="251" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt25" tags="" position="100,3225" size="100,100">The texture of the gooey wings is soft and pliable with no imperfections. &lt;&lt;SymbioteName&gt;&gt; has kept the wings in pristine condition and maintains structure by remaining closely intact.</tw-passagedata><tw-passagedata pid="252" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt50" tags="" position="225,3225" size="100,100">The texture of your gooey wings is like thick, melting wax. &lt;&lt;SymbioteName&gt;&gt; is slightly restless and the wings feeling like they&#39;re beginning to lose a stable form.</tw-passagedata><tw-passagedata pid="253" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt75" tags="" position="350,3225" size="100,100">Spots of purple and black erupt from the edges of your goo wings, criss-crossing all across your membranes, a visible mark of your corruption. Your wings drip constantly, each flap causes wicks of goop to fly in all directions.</tw-passagedata><tw-passagedata pid="254" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt100" tags="" position="475,3225" size="100,100">Dark corrupt black ooze drips out of your gooey membranes, coating the ground in your monstrous corruption. When folded in, your back gives off the appearance of wearing a cape made of flowing water. \
-When spread out, your wings constantly seep out in all directions. Each flap of your wings practically coats the entire area beneath you within the runny texture of goo.</tw-passagedata><tw-passagedata pid="255" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_small" tags="" position="600,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt; brings an arm up to fondle the massive wings in self admiration.</tw-passagedata><tw-passagedata pid="256" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_medium" tags="" position="725,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt; brings an arm up to fondle the massive wings in self admiration.</tw-passagedata><tw-passagedata pid="257" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_large" tags="" position="850,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt; brings an arm up to fondle the massive wings in self admiration, almost enthralled by the size of itself.</tw-passagedata><tw-passagedata pid="258" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_huge" tags="" position="975,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt; brings an arm up to fondle the massive wings in self admiration, almost enthralled by the size of itself.</tw-passagedata><tw-passagedata pid="259" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_small" tags="" position="1100,3225" size="100,100">Moving from side to side, you proudly examine the @[all| horns| noverb] that crown your fearsome visage. Their weight is pleasant on your neck and their points sharp enough to cause \
-some serious damage. You run a hand across one of them, relishing in the feeling of power and protection it gives you.</tw-passagedata><tw-passagedata pid="260" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_medium" tags="" position="1225,3225" size="100,100">Moving from side to side, you proudly examine the @[all| horns| noverb] that crown your fearsome visage. Their weight is heavy, but your thick neck can easily support it. \
-You pick up a nearby piece of metal and run it across the points. It splits like butter. These could cause some serious damage. You run a hand across one of them, relishing in the feeling of power and protection it gives you.</tw-passagedata><tw-passagedata pid="261" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_large" tags="" position="100,3350" size="100,100">Moving from side to side, you proudly examine the @[all| horns| noverb] that crown your fearsome visage. Their weight is incredible, it feels as if their momentum would be enough to even knock you off balance if you aren&#39;t careful! \
-You bend down and test your horn&#39;s strength on the ground. The earth quakes as you rip out a clean hole. These are horns that you can be proud of. You run a hand across one of them, relishing in the feeling of power and protection it gives you.</tw-passagedata><tw-passagedata pid="262" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_huge" tags="" position="225,3350" size="100,100">Moving from side to side, you proudly examine the @[all| horns| noverb] that crown your fearsome visage. Each time you move your head, the air parts as if a mountain had suddenly flung itself across a distance. \
-They are the only weight on this planet that challenges your massive neck and you love the feeling.
+你轻轻扇动翅膀，差点吹断了一棵树，滑溜溜的粘液沿着你的薄膜滴落、伸展、绷紧，最后形成了一个强力屏障。</tw-passagedata><tw-passagedata pid="251" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt25" tags="" position="100,3225" size="100,100">翅膀的质感柔软而又韧劲儿，毫无瑕疵。&lt;&lt;SymbioteName&gt;&gt;将翅膀和其结构保持在了一个几乎没有损伤的程度。</tw-passagedata><tw-passagedata pid="252" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt50" tags="" position="225,3225" size="100,100">翅膀的质感如同厚厚的融蜡。&lt;&lt;SymbioteName&gt;&gt;有点疲惫的样子，使翅膀感觉即将要失去稳定的结构。</tw-passagedata><tw-passagedata pid="253" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt75" tags="" position="350,3225" size="100,100">你的粘液翅边缘突然长出了黑色和紫色的小点，交织在整个薄膜上，这都是你腐化的肉眼标志。你的翅膀一直在滴落，每次扇动都使得粘液飞向四面八方。</tw-passagedata><tw-passagedata pid="254" name="_player_text_sheet_mirror_symbiote_WingsFlavour_corruptionFlavour_corrupt100" tags="" position="475,3225" size="100,100">粘液薄膜分泌着腐化的漆黑的液滴，将大地笼上了你可怕的腐化。你收起翅膀，背部的粘液形成了一个流淌着的斗篷。\
+你的翅膀在展开时朝着四面八方持续渗出液体。每次战斗都在你身下的几乎整片区域覆盖上了一层粘稠的粘液。</tw-passagedata><tw-passagedata pid="255" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_small" tags="" position="600,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt;抬起一条胳膊，自我欣赏地摆弄着这对巨翼。</tw-passagedata><tw-passagedata pid="256" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_medium" tags="" position="725,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt;抬起一条胳膊，自我欣赏地摆弄着这对巨翼。</tw-passagedata><tw-passagedata pid="257" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_large" tags="" position="850,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt;抬起一条胳膊，自我欣赏地摆弄着这对巨翼，几乎都要被自己的尺寸迷住了。</tw-passagedata><tw-passagedata pid="258" name="_player_text_sheet_mirror_symbiote_WingsFlavour_LiveForEcho_heightFlavour_huge" tags="" position="975,3225" size="100,100">&lt;&lt;SymbioteName&gt;&gt;抬起一条胳膊，自我欣赏地摆弄着这对巨翼，几乎都要被自己的尺寸迷住了。</tw-passagedata><tw-passagedata pid="259" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_small" tags="" position="1100,3225" size="100,100">你不断转着身子，骄傲地检查着为你恐怖的外表加冕的@[all| horns| noverb]。适度的重量对你的脖子很友好，而那尖尖的部位足以造成\
+巨大的伤害。你用一只手抚摸着尖端，享受着它给你的力量和保护的感觉。</tw-passagedata><tw-passagedata pid="260" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_medium" tags="" position="1225,3225" size="100,100">你不断转着身子，骄傲地检查着为你恐怖的外表加冕的@[all| horns| noverb]。重量很重，但你粗脖子可以轻易支撑住。\
+你捡起附近一块金属，划过它们的尖端。如同是切开一块黄油。它们能造成一些严重的伤害。你用一只手抚摸着尖端，享受着它给你的力量和保护的感觉。</tw-passagedata><tw-passagedata pid="261" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_large" tags="" position="100,3350" size="100,100">你不断转着身子，骄傲地检查着为你恐怖的外表加冕的@[all| horns| noverb]。重量很重，感觉你一不小心就要因它们的动量而失去平衡！\
+你俯下身子，以地面测试你角的强度。大地在震动中被钻出一个洞。这是你能为之骄傲的角。你用一只手抚摸着其中一只，享受着它给你的力量和保护的感觉。</tw-passagedata><tw-passagedata pid="262" name="_player_text_sheet_mirror_player_HornsFlavour_heightFlavour_huge" tags="" position="225,3350" size="100,100">你不断转着身子，骄傲地检查着为你恐怖的外表加冕的@[all| horns| noverb]。每当你活动头部，空气就仿佛被一个突然自己飞出去的山推开了一样。\
+这是这个星球上唯一能匹敌你巨大的脖子的重量，而你很爱这种感觉。
 
-It is far too dangerous to test your horns out, the amount of earth that they would penetrate would easily split the ground for a fair distance. 
-You run a hand across one of them, relishing in the feeling of power and protection it gives you.</tw-passagedata><tw-passagedata pid="263" name="_player_text_sheet_mirror_player_HornsFlavour_corruptionFlavour_corrupt50" tags="" position="350,3350" size="100,100">As your finger runs across the surface, you feel small indentations that were never there before. They don&#39;t feel randomly shaped either! 
-If you trace your fingers across them, they feel runic. You wonder if it&#39;s the corruption&#39;s influence.</tw-passagedata><tw-passagedata pid="264" name="_player_text_sheet_mirror_player_HornsFlavour_corruptionFlavour_corrupt75" tags="" position="475,3350" size="100,100">Your finger gently passes over faintly glowing runes of purple. Every crevice cracks with small arcs of corruption which fire miniature bolts of arousal into your very core.</tw-passagedata><tw-passagedata pid="265" name="_player_text_sheet_mirror_player_HornsFlavour_corruptionFlavour_corrupt100" tags="" position="600,3350" size="100,100">You find yourself repeating this motion for a while. In fact, it has become daily practice. Every purple rune now drips with aphrodesiac and its touch is as pleasurable as tongues worshipping your glorious package. \
-Why stop when you could reach an orgasm from touching your horns alone?</tw-passagedata><tw-passagedata pid="266" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_small" tags="" position="725,3350" size="100,100">&lt;&lt;SymbioteName&gt;&gt; is crowned with @[all| horns| noverb]. Due to its gooey nature, they are slightly pliable when relaxed. 
+测试你角的强度实在过于危险，它们能穿透的土地量足以将地面分成两个有相当距离的地块。
+你用一只手抚摸着其中一只，享受着它给你的力量和保护的感觉。</tw-passagedata><tw-passagedata pid="263" name="_player_text_sheet_mirror_player_HornsFlavour_corruptionFlavour_corrupt50" tags="" position="350,3350" size="100,100">随着你的手指拂过表面，你感到了之前没有的小缺口。它们的规则似乎也不是随机的！
+如果你用手指沿着它们划过，会有种符文的感觉。你在想这是否是腐化的影响。</tw-passagedata><tw-passagedata pid="264" name="_player_text_sheet_mirror_player_HornsFlavour_corruptionFlavour_corrupt75" tags="" position="475,3350" size="100,100">你用手指轻轻拂过那些微微发光的紫色符文。每一次的龟裂都使一股小小的腐化电弧将一股微微的性唤起感觉恰好送到你的核心处。</tw-passagedata><tw-passagedata pid="265" name="_player_text_sheet_mirror_player_HornsFlavour_corruptionFlavour_corrupt100" tags="" position="600,3350" size="100,100">你发现自己最近一直在重复这个动作。事实上，这已成了每日练习。每道紫色符文现在都在滴着催情剂，而触摸它们就和有舌头祭拜着你壮阔的下体一样。\
+当你只用触碰你的角就能高潮的时候，为何要停下来呢？</tw-passagedata><tw-passagedata pid="266" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_small" tags="" position="725,3350" size="100,100">&lt;&lt;SymbioteName&gt;&gt;被@[all| horns| noverb]所加冕，鉴于它胶黏的特点，在放松时它们会变得柔韧一点。
 
-However, as your head rubs up against a wall, the semi-fluid of its flesh shifts around, forcing them into sharp, dense spires. \
-Acting similarly to a non-newtonian fluid, They could do quite a bit of damage when needed.</tw-passagedata><tw-passagedata pid="267" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_medium" tags="" position="850,3350" size="100,100">&lt;&lt;SymbioteName&gt;&gt;&#39;s slightly malleable @[all| horns| noverb] weigh upon its head, slowly dripping with its essence. \
-But in a sudden impulse, you decide to thrust them against some metal, where they instantly harden and pierce through.
+但是，当你用头摩擦墙壁的时候，这种半液体的肉质会迅速转变，强制转为了浓密的锋利尖端。\
+类似非牛顿流体一般，它们可以在需要时制造一些伤害。</tw-passagedata><tw-passagedata pid="267" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_medium" tags="" position="850,3350" size="100,100">&lt;&lt;SymbioteName&gt;&gt;的稍微有些韧性的@[all| horns| noverb]被戴在它的头上，并缓缓滴落着它的液体。\
+但是，当你猛地将它们撞向一块金属时，它们随着一个突然的脉动瞬间硬化，并刺穿了它。
 
-Acting like a non-newtonian, the raw power even in just one horn leaves you smiling.</tw-passagedata><tw-passagedata pid="268" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_large" tags="" position="975,3350" size="100,100">The weight of &lt;&lt;SymbioteName&gt;&gt;&#39;s dripping @[all| horns| noverb] would crush those with a weaker neck. Fortunately, that does not apply to you.
+这类似非牛顿流体的角哪怕之哟与一个也能让你微笑。</tw-passagedata><tw-passagedata pid="268" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_large" tags="" position="975,3350" size="100,100">&lt;&lt;SymbioteName&gt;&gt;的滴答着的@[all| horns| noverb]的重量能够压断弱者的脖子，幸运的是，这对你不是问题。
 
-A chuckle escapes your lips as you lean down and push your horns deep into the ground, gouging out a trench in the lakeside. The sturdiness of the fluid keeps it intact whenever pressure is applied.</tw-passagedata><tw-passagedata pid="269" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_huge" tags="" position="1100,3350" size="100,100">&lt;&lt;SymbioteName&gt;&gt;&#39;s gooey visage is framed by towering spires of @[all| horns| noverb]. They raise up into the sky, mighty towers befitting a master of the world that the two of you have become.
+你俯身将角对准地面，看着它在湖边凿出一道壕沟的样子使你轻笑了一声。这液体的坚固性，只要其上面有压力就能保持住。</tw-passagedata><tw-passagedata pid="269" name="_player_text_sheet_mirror_symbiote_HornsFlavour_heightFlavour_huge" tags="" position="1100,3350" size="100,100">&lt;&lt;SymbioteName&gt;&gt;黏糊糊的外表被@[all| horns| noverb]的立起的尖刺包围在了里面。它们各个直指天空，如同是匹配着你们两个已经成为的世界主宰的身份的强大的尖塔。
 
 You have the weight of the world on your shoulders, along with its dangerous power. One single horn could pierce through an entire tower, used as a siege breaker.</tw-passagedata><tw-passagedata pid="270" name="_player_text_sheet_mirror_symbiote_HornsFlavour_corruptionFlavour_corrupt25" tags="" position="1225,3350" size="100,100">The glistening horns are perfectly unblemished and well intact.</tw-passagedata><tw-passagedata pid="271" name="_player_text_sheet_mirror_symbiote_HornsFlavour_corruptionFlavour_corrupt50" tags="" position="100,3475" size="100,100">Reflected in the outer layer of your slightly-transluscent horns lies certain geometric shapes that you cannot identify.</tw-passagedata><tw-passagedata pid="272" name="_player_text_sheet_mirror_symbiote_HornsFlavour_corruptionFlavour_corrupt75" tags="" position="225,3475" size="100,100">The horns constantly drip, steady droplets escape from any point of contact. Glowing in the middle of the horns are faint, purple runes.</tw-passagedata><tw-passagedata pid="273" name="_player_text_sheet_mirror_symbiote_HornsFlavour_corruptionFlavour_corrupt100" tags="" position="350,3475" size="100,100">The horns constantly drip with a downpour of goo as if there were a waterfall before your eyes. The corrupt purple runes from inside your horns glow out in a constant stream, radiating from your head like a halo of pure corruption.</tw-passagedata><tw-passagedata pid="274" name="_player_text_sheet_mirror_player_HeadFlavour_heightFlavour_small" tags="" position="475,3475" size="100,100">You find yourself admiring your @[all| heads| noverb]. You try out a few expressions showing off your jawline - both open and clenched, how your cheeks \
 are shaped beneath your eyes and the way they lead to your mouth. 
@@ -34611,16 +34613,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="524" name="Achievement_OffTheDeepEnd" tags="" position="475,6600" size="100,100">&lt;&lt;set setup.Achievement_OffTheDeepEnd = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_OffTheDeepEnd&quot;,
-    name:       &quot;Off The Deep End&quot;,
+    name:       &quot;离开深渊&quot;,
     description:function(character)
     {
-        return &quot;You&#39;ve been warned and have seen the signs. &lt;br&gt;It only made your descent even sweeter.&quot;; 
+        return &quot;你已经被警告过了，并且已经看到了这些征兆。 &lt;br&gt;这只会使你的降生更加甜美。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_OffTheDeepEnd.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_OffTheDeepEnd.achievementInfo = &quot;Reach 200 Corruption.&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_OffTheDeepEnd.achievementInfo = &quot;腐化值到达200。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_OffTheDeepEnd.addBehaviour(
     &quot;start&quot;,
@@ -34668,16 +34670,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="525" name="Achievement_Redemption" tags="" position="600,6600" size="100,100">&lt;&lt;set setup.Achievement_Redemption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_Redemption&quot;,
-    name:       &quot;Redemption&quot;,
+    name:       &quot;救赎&quot;,
     description:function(character)
     {
-        return &quot;Torgar has rejected Corruption and has vowed to help build a better world.&quot;; 
+        return &quot;托加已经拒绝腐败，并发誓要帮助建立一个更好的世界。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_Redemption.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_Redemption.achievementInfo = &quot;Help a friend find inner peace.&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_Redemption.achievementInfo = &quot;帮助一个朋友找到内心的平静。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_Redemption.addBehaviour(
     &quot;start&quot;,
@@ -34703,16 +34705,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="526" name="Achievement_Resolute" tags="" position="725,6600" size="100,100">&lt;&lt;set setup.Achievement_Resolute = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_Resolute&quot;,
-    name:       &quot;Resolute&quot;,
+    name:       &quot;坚毅&quot;,
     description:function(character)
     {
-        return &quot;Experience the Barrens without falling to its corruption.&quot;; 
+        return &quot;体验荒原而不落入它的腐败之中。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_Resolute.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_Resolute.achievementInfo = &quot;Reach level 10 without ever reaching 100 Corruption.&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_Resolute.achievementInfo = &quot;达到10级时，腐化值没有达到100。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_Resolute.addBehaviour(
     &quot;start&quot;,
@@ -34782,16 +34784,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="527" name="Achievement_SafePassage" tags="" position="850,6600" size="100,100">&lt;&lt;set setup.Achievement_SafePassage = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_SafePassage&quot;,
-    name:       &quot;Safe Passage&quot;,
+    name:       &quot;安全通道&quot;,
     description:function(character)
     {
-        return &quot;Tiadane&#39;s name has spread beyond the confines of time and space.&quot;; 
+        return &quot;提亚丹的名字已经超越了时间和空间的限制。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_SafePassage.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_SafePassage.achievementInfo = &quot;Skip the minotaur fight by telling him the right name.&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_SafePassage.achievementInfo = &quot;告诉他正确的名字，跳过牛头人的战斗。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_SafePassage.addBehaviour(
     &quot;start&quot;,
@@ -34816,16 +34818,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="528" name="Achievement_ShiftingIdeals" tags="" position="975,6600" size="100,100">&lt;&lt;set setup.Achievement_ShiftingIdeals = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_ShiftingIdeals&quot;,
-    name:       &quot;Shifting Ideals&quot;,
+    name:       &quot;转变的理想&quot;,
     description:function(character)
     {
-        return &quot;Your ideals have changed. Stand proud of what you&#39;ve become.&quot;; 
+        return &quot;你的理想已经改变。为你所成为的角色而感到自豪。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_ShiftingIdeals.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_ShiftingIdeals.achievementInfo = &quot;Encounter both sides of the doppleganger.&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_ShiftingIdeals.achievementInfo = &quot;与两侧的二重身进行会面。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_ShiftingIdeals.addBehaviour(
     &quot;start&quot;,
@@ -34874,16 +34876,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="529" name="Achievement_SubmissiveFighter" tags="" position="1100,6600" size="100,100">&lt;&lt;set setup.Achievement_SubmissiveFighter = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_SubmissiveFighter&quot;,
-    name:       &quot;Submissive Fighter&quot;,
+    name:       &quot;顺从的斗士&quot;,
     description:function(character)
     {
-        return &quot;Is it really losing when there&#39;s so much to gain from it?&quot;; 
+        return &quot;在有这么多好处的情况下，你真的会输吗？&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_SubmissiveFighter.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_SubmissiveFighter.achievementInfo = &quot;Lose a battle to 5 different opponents.&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_SubmissiveFighter.achievementInfo = &quot;在战斗中输给5个不同的对手。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_SubmissiveFighter.addBehaviour(
     &quot;start&quot;,
@@ -34949,16 +34951,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="530" name="Achievement_WordOfPower" tags="" position="1225,6600" size="100,100">&lt;&lt;set setup.Achievement_WordOfPower = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_WordOfPower&quot;,
-    name:       &quot;Word of Power&quot;,
+    name:       &quot;权力之言&quot;,
     description:function(character)
     {
-        return &quot;Kanathar&#39;s name is boundless, and it forever seeks to ascend its frail imp hosts into gods.&quot;; 
+        return &quot;卡纳塔尔的名字是无边无际的，它永远都在寻求将其脆弱的小恶魔主人升为神的方法。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_WordOfPower.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_WordOfPower.achievementInfo = &quot;Spread the name of a demon god.&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_WordOfPower.achievementInfo = &quot;传播魔神的名字。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_WordOfPower.addBehaviour(
     &quot;start&quot;,
@@ -35085,14 +35087,14 @@ maxRank: 5
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="533" name="FightMove_AbsorbEssence" tags="" position="350,6725" size="100,100">&lt;&lt;set setup.FightMove_AbsorbEssence =
 {
 	id: &quot;FightMove_AbsorbEssence&quot;,
-	name: &quot;Essence Surge&quot;,
+	name: &quot;精华涌流&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s body suddenly glows in a bright green aura.&quot;
+		return character.info.name + &quot;的身体突然焕发出明亮的绿色光环。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
-        return &quot;The Essence in the air suddenly gathers around &quot;+character.info.name+&quot;.&quot;;
+        return &quot;空气中的精华突然聚集在&quot;+character.info.name+&quot;身上。&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
@@ -35116,14 +35118,14 @@ maxRank: 5
 	critMod: 0,
     comboCost: 1,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Absorb the Essence in the air. Grows in power the longer the fight lasts.&quot;,
+	skillDescription: &quot;吸收空气中的精华。战斗持续的时间越长，力量越大。&quot;,
 	skillType: &quot;buff&quot;,
 	skillTheme: &quot;buff&quot;,
 	additionalEffects: [setup.absorbEssenceEffects]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="534" name="FightMove_Bash" tags="" position="475,6725" size="100,100">&lt;&lt;set setup.FightMove_Bash =
 {
 	id: &quot;FightMove_Bash&quot;,
-	name: &quot;Bash&quot;,
+	name: &quot;猛击&quot;,
 	preparation: function(character, target)
 	{
 		var flavourtext = setup.getFlavourBasedDescription(character, &#39;basicAttackPrepFlavour&#39;, 1)
@@ -35133,7 +35135,7 @@ maxRank: 5
 		}
 		else
 		{
-			return character.info.name + &quot; is getting ready to strike.&quot;
+			return character.info.name + &quot;正准备出击。&quot;
 		}
 	},
 	attackAttemptDesc: function(character, target)
@@ -35159,14 +35161,14 @@ maxRank: 5
 	critMod: 20,
     comboCost: 2,
     skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;A quick bash of your weapon&#39;s hilt with low stamina cost.&quot;,
+	skillDescription: &quot;以低体力消耗快速使用武器的把手猛击。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="535" name="FightMove_BasicAttack" tags="" position="600,6725" size="100,100">&lt;&lt;set setup.FightMove_Basic_Attack =
 {
 	id: &quot;FightMove_Basic_Attack&quot;,
-	name: &quot;Unarmed Strike&quot;,
+	name: &quot;徒手攻击&quot;,
 	preparation: function(character, target)
 	{
 		var flavourtext = setup.getFlavourBasedDescription(character, &#39;basicAttackPrepFlavour&#39;, 1)
@@ -35176,7 +35178,7 @@ maxRank: 5
 		}
 		else
 		{
-			return character.info.name + &quot; is getting ready to strike.&quot;
+			return character.info.name + &quot;正准备出击。&quot;
 		}
 	},
 	attackAttemptDesc: function(character, target)
@@ -35202,28 +35204,28 @@ maxRank: 5
 	critMod: 0,
     comboCost: 2,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;A basic attack based on your own body strength.&quot;,
+	skillDescription: &quot;基于你自己身体力量的基本攻击。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="536" name="FightMove_ChargedStrike" tags="" position="725,6725" size="100,100">&lt;&lt;set setup.FightMove_ChargedStrike =
 {
 	id: &quot;FightMove_ChargedStrike&quot;,
-	name: &quot;Charged Strike&quot;,
+	name: &quot;冲锋陷阵&quot;,
 	preparation: function(character, target)
 	{
         if(this.currentStep == 0)
         {
-		    return character.info.name + &quot; is channeling their strength for a powerful attack&quot;;
+		    return character.info.name + &quot;正在引导他的力量进行强力的攻击&quot;;
         }
         else
         {
-            return character.info.name + &quot; is charging at you for a massive attack!&quot;;
+            return character.info.name + &quot;正在冲向你进行大规模的攻击!&quot;;
         }
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return &quot;With their body pulsating with strength, &quot;+ character.info.name +&quot; strikes you with a bone shattering attack!&quot;;
+		return &quot;伴随着他们身体的脉动和力量&quot;+ character.info.name +&quot;向你发出了能够震碎骨头的攻击!&quot;;
 	},
 	activationCondition: function(character, target)
 	{
@@ -35243,7 +35245,7 @@ maxRank: 5
 	},
 	staminaCost: 0,
 	critMod: 0,
-	skillDescription: &quot;A bone shattering attack that takes a full turn to prepare.&quot;,
+	skillDescription: &quot;可以碎骨的攻击，需要整整一个回合的准备时间。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: [],
@@ -35253,21 +35255,21 @@ maxRank: 5
 	name: &quot;Consume Lost&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot; grasps a nearby Lost.&quot;
+		return character.info.name + &quot;抓住附近的一只迷失者。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
-		return character.info.name + &quot; pulls the lost into his pecs.&quot;;
+		return character.info.name + &quot;把迷失者拉进了他的胸肌里。&quot;;
 	},
     attackHitDesc: function(character, target)
 	{
-        var displayString = &quot;The Lost moans as it is completely absorbed inside of &quot;+character.info.name+&quot;. \n&quot;
-        displayString += &quot;His gargantuan muscles writhe and squirm as the mass of his worshippers builds on his own.&quot;
-        displayString += &quot;His cock has grown &quot;+ setup.getLength(9) + &quot;.\n&quot;;
-        displayString += &quot;His balls grow by &quot;+ setup.getLength(3) + &quot;.\n&quot;;
-        displayString += &quot;His muscles expand (&quot;+ setup.getLength(5) + &quot;).\n&quot;;
-        displayString += &quot;His body has become &quot;+ setup.getLength(18) + &quot; taller \n&quot;;
+        var displayString = &quot;迷失者完全被吸收在&quot;+character.info.name+&quot;时发出了呻吟声。 \n&quot;
+        displayString += &quot;他庞大的肌肉扭动着，随着他的崇拜者们在他自己身上建立起来。&quot;
+        displayString += &quot;他的鸡巴长长了&quot;+ setup.getLength(9) + &quot;。\n&quot;;
+        displayString += &quot;他的睾丸增大了&quot;+ setup.getLength(3) + &quot;。\n&quot;;
+        displayString += &quot;他的肌肉扩张了(&quot;+ setup.getLength(5) + &quot;)。\n&quot;;
+        displayString += &quot;他的身体变为&quot;+ setup.getLength(18) + &quot;高。\n&quot;;
 
         return displayString;
 	},
@@ -35289,7 +35291,7 @@ maxRank: 5
 	critMod: 100,
     cooldown: 3,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Consume a nearby Lost, adding their mass onto your own.&quot;,
+	skillDescription: &quot;消耗附近的一个迷失者，将他们的质量添加到你自己身上。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
     unlearnable: true,
@@ -43306,34 +43308,34 @@ Y你冲向那个男人，举起了拳头！
 他的身体变得有&lt;&lt;print setup.getLength(90)&gt;&gt;高，呻吟声填满了这片虚空。他得意洋洋地靠近你，移动的身躯在黑暗中砰砰作响。
 \&lt;&lt;/if&gt;&gt; 
  
-他看着好性感...你的杰作来到你的身前，滴滴前液从你们两的鸡巴渗出。他的手慢慢感受着你的胸，并开始向下摸索，你的脸涨得绯红。
+他看着好性感……你的杰作来到你的身前，滴滴前液从你们两的鸡巴渗出。他的手慢慢感受着你的胸，并开始向下摸索，你的脸涨得绯红。
 你把你的头埋进他厚实性感的胸肌里，伸手去摸他的臀部，狠狠地挤了挤那满是肌肉的半边屁股。他发出了一声低沉的异样呻吟以示允许。
  
 他的一些粘液滴在你的身上，很快就通过你的皮肤进入体内。你的兴奋感突然飙升。
 
 &lt;&lt;SymbioteRace&gt;&gt;的身体上，一部分颜色逐渐清晰起来。怪物身上滴着的黏液慢慢固化成了同一种色彩。
 
-[[Amber-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.AMBER; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.AMBER)]] 
-[[Beige-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BEIGE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BEIGE)]] 
-[[Black-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BLACK; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BLACK)]] 
-[[Blue-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BLUE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BLUE)]] 
-[[Brown-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BROWN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BROWN)]] 
-[[Crimson-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.CRIMSON; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.CRIMSON)]] 
-[[Emerald-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.EMERALD; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.EMERALD)]] 
-[[Golden-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.GOLDEN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.GOLDEN)]] 
-[[Green-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.GREEN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.GREEN)]] 
-[[Grey-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.GREY; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.GREY)]] 
-[[Indigo-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.INDIGO; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.INDIGO)]] 
-[[Obsidian-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.OBSIDIAN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.OBSIDIAN)]] 
-[[Orange-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.ORANGE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.ORANGE)]] 
-[[Pink-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.PINK; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.PINK)]] 
-[[Purple-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.PURPLE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.PURPLE)]] 
-[[Red-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.RED; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.RED)]] 
-[[Sapphire-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.SAPPHIRE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.SAPPHIRE)]] 
-[[Violet-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.VIOLET; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.VIOLET)]] 
-[[Tan-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.TAN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.TAN)]] 
-[[White-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.WHITE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.WHITE)]] 
-[[Yellow-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.YELLOW; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.YELLOW)]]</tw-passagedata><tw-passagedata pid="1272" name="Intro09" tags="" position="225,15975" size="100,100">\&lt;&lt;run setup.colourAllLimbs($CharacterSheet_Player.symbiote.anatomy, $CharacterSheet_Player.symbiote.color)&gt;&gt;\
+[[琥珀色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.AMBER; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.AMBER)]] 
+[[浅褐色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BEIGE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BEIGE)]] 
+[[黑色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BLACK; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BLACK)]] 
+[[蓝色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BLUE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BLUE)]] 
+[[棕色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.BROWN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.BROWN)]] 
+[[深红色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.CRIMSON; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.CRIMSON)]] 
+[[翡翠绿-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.EMERALD; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.EMERALD)]] 
+[[金色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.GOLDEN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.GOLDEN)]] 
+[[绿色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.GREEN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.GREEN)]] 
+[[灰色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.GREY; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.GREY)]] 
+[[深蓝色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.INDIGO; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.INDIGO)]] 
+[[黑曜石色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.OBSIDIAN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.OBSIDIAN)]] 
+[[橘色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.ORANGE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.ORANGE)]] 
+[[粉色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.PINK; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.PINK)]] 
+[[紫色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.PURPLE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.PURPLE)]] 
+[[红色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.RED; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.RED)]] 
+[[宝蓝色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.SAPPHIRE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.SAPPHIRE)]] 
+[[紫罗兰色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.VIOLET; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.VIOLET)]] 
+[[棕褐色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.TAN; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.TAN)]] 
+[[白色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.WHITE; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.WHITE)]] 
+[[黄色-&gt;Intro09][$CharacterSheet_Player.symbiote.color = setup.ColourPool.YELLOW; setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;eyes&quot;, setup.ColourPool.YELLOW)]]</tw-passagedata><tw-passagedata pid="1272" name="Intro09" tags="" position="225,15975" size="100,100">\&lt;&lt;run setup.colourAllLimbs($CharacterSheet_Player.symbiote.anatomy, $CharacterSheet_Player.symbiote.color)&gt;&gt;\
  
 看到自己&lt;&lt;SymbioteColor&gt;&gt;黏糊糊的身体，他轻轻一笑。
  
@@ -43345,8 +43347,8 @@ Y你冲向那个男人，举起了拳头！
 每一次悸动都让它变得越来越大，很快就伸得比&lt;&lt;SymbioteRace&gt;&gt;那本就凶残的工具还要远。
 他从亲吻中抽身，看着你的身体浅浅一笑。你全身都被&lt;&lt;SymbioteColor&gt;&gt;的粘液覆盖。他给了你一个大大的熊抱。
 
-\&lt;&lt;run setup.choice(&quot;[[Let him in...-&gt;Intro10]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1273" name="Intro10" tags="" position="350,15975" size="100,100">他一整个存在都进入了你。你尖叫着，不断涌出的快感吞没了每一个毛孔。你的嘴唇里发出了充斥着欲望的呻吟，你的肌肉爆发出更大的尺寸与力量。
-除了他的力量，你也能感觉到，他想进入你的需求...对性和力量的需求...对更多东西的需求...
+\&lt;&lt;run setup.choice(&quot;[[让他进来……-&gt;Intro10]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1273" name="Intro10" tags="" position="350,15975" size="100,100">他一整个存在都进入了你。你尖叫着，不断涌出的快感吞没了每一个毛孔。你的嘴唇里发出了充斥着欲望的呻吟，你的肌肉爆发出更大的尺寸与力量。
+除了他的力量，你也能感觉到，他想进入你的需求……对性和力量的需求……对更多东西的需求……
 你抓住你的鸡巴，试图保持不动，因为好几升粘液涌进了你的尿道。你还想要更多。当他包裹住你的身体时，你把他拉得更近了。
  
 你的整个身体都变大了。你很快就长到了&lt;&lt;print setup.getLength(86)&gt;&gt;高。你感觉你的鸡巴快要爆发出你一生中最激烈的高潮。
@@ -43423,10 +43425,10 @@ Y你冲向那个男人，举起了拳头！
 你感觉被包围，被压迫，让你不得不防御，却不记得为什么有如此的感受。
 
 \&lt;&lt;run setup.choice(&quot;[[Take in your surroundings-&gt;intro_start_2]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1281" name="Kanathar_EasterEgg" tags="" position="100,16100" size="100,100">&quot;Hmmmm... Feeling cheeky, are we?&quot;
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1281" name="Kanathar_EasterEgg" tags="" position="100,16100" size="100,100">&quot;嗯... 感觉很厚脸皮，是吗？&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Kanathar_EasterEgg_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1282" name="Kanathar_EasterEgg_2" tags="" position="225,16100" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
-&quot;You think you can just take my name away from me, maybe taste some of it&#39;s power for yourself?&quot;
+&quot;你认为你可以把我的名字从我身边夺走，也许可以为自己品尝一些它的力量？&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Kanathar_EasterEgg_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1283" name="Kanathar_EasterEgg_3" tags="" position="350,16100" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 
@@ -46160,11 +46162,11 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1577" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_5" tags="" position="850,19725" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;normal&quot;)&gt;&gt;
 
-将你围得水泄不通的的迷失者"山"坍塌了，你附誓仪式的开启，让他们精疲力竭。
+将你围得水泄不通的的迷失者"山"坍塌了，你赋誓仪式的开启，让他们精疲力竭。
 
 阿波图斯将你扶起来
 
-&quot;有了你的帮助，我觉得我们很快便可以让天选之子很快与尼克斯建立联系...&quot;
+&quot;有了你的帮助，我觉得我们很快便可以让天选之子很快与尼克斯建立联系……&quot;
 \&lt;&lt;set $CharacterSheet_Player.quest.oaths.apothus = setup.Oath.ACTIVE&gt;&gt;
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_Oath_Nyx);&gt;&gt;
 
