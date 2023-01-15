@@ -36737,7 +36737,7 @@ maxRank: 5
 	{
         var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
         var displayString = &quot;熟悉的传送门打开的声音在你们两个人之间响起。\n&quot;;
-        displayString += &quot;&quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot;长的尼克斯幼体的黑色不透明皮肤探出头来，在跳向&quot;+ target.info.name之前。;
+        displayString += &quot;在你行动之前，有&quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot;长的尼克斯幼体的黑色不透明皮肤探出头来，在跳向&quot;+ target.info.name;
 		return displayString;
 	},
 	attackHitDesc: function(character, target)
