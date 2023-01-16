@@ -111,6 +111,17 @@
 |yes|Sigil of Pain|name.苦痛魔印||
 |yes|Sigil of Perception|name.感知魔印||
 |yes|Sigil of Vitality|name.活力魔印||
+|yes|Tok|name.托克||
+|yes|Behemoth|n.巨兽|游戏内种族|
+|yes|Half-Orc|n.半兽人|游戏内种族|
+|no|the Inner Ring|name.内环||
+|yes|Beige|adj.淡黄色||
+|yes|Sapphire|adj.宝蓝色||
+|yes|Violet|adj.紫罗兰色||
+|yes|Tan|adj.棕褐色||
+|yes|indigo|adj.深蓝色||
+|yes|obsidian|adj.黑曜石色||
+|yes|amber|adj.琥珀色||
 ---
 
 ## **三、代码查疑**
