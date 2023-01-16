@@ -105,6 +105,23 @@
 |yes|cycle|n.周目||
 |yes|save file|n.存档||
 |yes|Tiadane|name.提亚丹|牛头人门卫的名字|
+|yes|Herald|name.先驱||
+|yes|aroused|n.唤醒|共生体特有数值|
+|yes|Sigil of Growth|name.生长魔印||
+|yes|Sigil of Pain|name.苦痛魔印||
+|yes|Sigil of Perception|name.感知魔印||
+|yes|Sigil of Vitality|name.活力魔印||
+|yes|Tok|name.托克||
+|yes|Behemoth|n.巨兽|游戏内种族|
+|yes|Half-Orc|n.半兽人|游戏内种族|
+|no|the Inner Ring|name.内环||
+|yes|Beige|adj.淡黄色||
+|yes|Sapphire|adj.宝蓝色||
+|yes|Violet|adj.紫罗兰色||
+|yes|Tan|adj.棕褐色||
+|yes|indigo|adj.深蓝色||
+|yes|obsidian|adj.黑曜石色||
+|yes|amber|adj.琥珀色||
 ---
 
 ## **三、代码查疑**
@@ -117,6 +134,8 @@
 |yes|setup.getLength(...)|函数，意为获取长度数据||
 |yes|$CharacterSheet_Player.info.name|变量名，储存着玩家角色的姓名||
 |yes|$SigilColor|颜色||
+|yes|character.info.name|调用时读取角色姓名||
+|yes|target.info.name|调用时读取敌人名字||
 ---
 
 # **附录**
