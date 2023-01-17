@@ -122,6 +122,7 @@
 |yes|indigo|adj.深蓝色||
 |yes|obsidian|adj.黑曜石色||
 |yes|amber|adj.琥珀色||
+|yes|Draco|name.德拉科|游戏内恶魔npc|
 ---
 
 ## **三、代码查疑**

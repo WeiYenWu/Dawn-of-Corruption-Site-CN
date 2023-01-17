@@ -29383,10 +29383,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 {	
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="400" name="Ability_ActiveParry" tags="" position="1225,4975" size="100,100">&lt;&lt;set setup.Ability_ActiveParry = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_ActiveParry&quot;,
-    name:       &quot;Active Parry&quot;, 
+    name:       &quot;格挡&quot;, 
     description:function(character)
     {
-        return character.info.name + &quot; uses a parry stance.&quot;; 
+        return character.info.name + &quot;作出招架的姿势。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -29417,15 +29417,15 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
             abilityParams.target.applyAbilityRuntimeData(setup.Ability_ParryEnergy, blackboard)
 
-            displayString += abilityParams.target.info.name + &quot; gazes at the incoming hit, letting it reach him.\n&quot;
-            displayString += &quot;The attack feels like it connects, but something different happens. It is like it hit a invisible wall of energy instead.\n&quot;;
-            displayString += &quot;The energy of the attack explodes into a thick white mist.\n&quot;;
-            displayString += abilityParams.target.info.name + &quot; grins as the it rushes into his chest, filling him with the energy of the attack.&quot;;
+            displayString += abilityParams.target.info.name + &quot;凝视着即将到来的攻击，让它到达他的身边。\n&quot;
+            displayString += &quot;攻击感觉就像击中了，但发生了一些不同的事情。好似它撞上了一堵看不见的能量墙。\n&quot;;
+            displayString += &quot;攻击的能量爆发出浓厚的白雾。\n&quot;;
+            displayString += abilityParams.target.info.name + &quot;咧嘴一笑，因为这冲进了他的胸部，使他充满了攻击的能量。&quot;;
 
         }
         else
         {
-            displayString += abilityParams.target.info.name + &quot; is ready to parry, but nothing comes.&quot;;
+            displayString += abilityParams.target.info.name + &quot;已经准备好招架攻击，但什么也发生。&quot;;
         }
 
         return displayString;
@@ -29451,16 +29451,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_ActiveParry.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="401" name="Ability_AppetiteForGrowth" tags="" position="100,5100" size="100,100">&lt;&lt;set setup.Ability_AppetiteForGrowth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_AppetiteForGrowth&quot;,
-    name:       &quot;Appetite for Growth&quot;,
+    name:       &quot;渴望生长&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Whenever you gain any amount of growth, you instead gain 25% more of that amount.&quot;; 
+            return &quot;每当你获得任何数值的生长，你会多获得该数值的25%。&quot;; 
         }
         else
         {
-            return &quot;Whenever you gain any amount of growth, you instead gain &quot;+ (Math.ceil((0.25 + abilityRuntimeData.getRankGrowth(&quot;log&quot;, 10)) * 100)).toFixed(2).replace(/\.00$/, &#39;&#39;) +&quot;% more of that amount.&quot;; 
+            return &quot;每当你获得任何数值的生长，你会多获得该数值的&quot;+ (Math.ceil((0.25 + abilityRuntimeData.getRankGrowth(&quot;log&quot;, 10)) * 100)).toFixed(2).replace(/\.00$/, &#39;&#39;) +&quot;%。&quot;; 
         }
     },
     maxRank: 5
@@ -29490,7 +29490,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     setup.Ability_AppetiteForGrowth_2,
     function(character){
         var displayString = &quot;&quot;
-        displayString += &quot;You must be at least level 3: (&quot; + State.variables.Level  + &quot;)\n&quot;
+        displayString += &quot;你必须至少有3级：(&quot; + State.variables.Level  + &quot;)\n&quot;
         return displayString
     }
 )&gt;&gt;
@@ -29506,16 +29506,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_AppetiteForGrowth.setCategory(setup.AbilityCategory.GROWTH)&gt;&gt;
 &lt;&lt;set setup.Ability_AppetiteForGrowth.setGrade(setup.AbilityGrade.LOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="402" name="Ability_AppetiteForGrowth_2" tags="" position="225,5100" size="100,100">&lt;&lt;set setup.Ability_AppetiteForGrowth_2 = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_AppetiteForGrowth_2&quot;,
-    name:       &quot;Demonic Appetite&quot;,
+    name:       &quot;恶魔渴望&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Whenever you gain any amount of growth, you gain 75% more of that amount.&quot;; 
+            return &quot;每当你获得任何数值的生长，你都会多获得该数值的75%。&quot;; 
         }
         else
         {
-            return &quot;Whenever you gain any amount of growth, you gain &quot;+ ( Math.ceil((0.75 + abilityRuntimeData.getRankGrowth(&quot;exp&quot;, 3) / 100) * 100) ).toFixed(2).replace(/\.00$/, &#39;&#39;) +&quot;% more of that amount.\n Gain &quot; + (10 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5))+&quot; corruption.&quot; ; 
+            return &quot;每当你获得任何数值的生长，你都会多获得该数值的&quot;+ ( Math.ceil((0.75 + abilityRuntimeData.getRankGrowth(&quot;exp&quot;, 3) / 100) * 100) ).toFixed(2).replace(/\.00$/, &#39;&#39;) +&quot;%。\n同时得到&quot; + (10 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5))+&quot;的腐化值。&quot; ; 
         }
     },
     maxRank: 5
@@ -29542,20 +29542,20 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_AppetiteForGrowth_2.setCategory(setup.AbilityCategory.SOMBREVE)&gt;&gt;
 &lt;&lt;set setup.Ability_AppetiteForGrowth_2.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="403" name="Ability_Berserking" tags="" position="350,5100" size="100,100">&lt;&lt;set setup.Ability_Berserking = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Berserking&quot;,
-    name:       &quot;Berserking&quot;,
+    name:       &quot;狂战&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            let displayString = &quot;You fight with reckless abandon. Your strength is increased by 15%&quot;;
-            displayString += &quot; and your max HP is decreased by 5%&quot;
+            let displayString = &quot;你不顾一切地战斗。你的力量增加了15%。&quot;;
+            displayString += &quot;并且你的生命上限减少5%。&quot;
             return displayString
         }
         else
         {
-            let displayString = &quot;You fight with reckless abandon. Your strength is increased by &quot;;
+            let displayString = &quot;你不顾一切地战斗。你的力量增加了&quot;;
             displayString += abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 15) + &quot;%&quot;;
-            displayString += &quot; and your max HP is decreased by &quot;;
+            displayString += &quot;并且你的生命上限减少&quot;;
             displayString += abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5) + &quot;%&quot;;
             return displayString
         }
@@ -29597,10 +29597,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_Berserking.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_Berserking.setGrade(setup.AbilityGrade.VERYLOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="404" name="Ability_BrinkOfMadness" tags="" position="475,5100" size="100,100">&lt;&lt;set setup.Ability_BrinkOfMadness = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BrinkOfMadness&quot;,
-    name:       &quot;Brink of Madness&quot;,
+    name:       &quot;疯狂边缘&quot;,
     description:function(character, abilityRuntimeData)
     {
-        return &quot;Your mind cracks under the weight of corruption upon reaching low health.&quot;;
+        return &quot;在低生命值时，你的思想会在腐化的重压下出现裂痕。&quot;;
         
     },
     maxRank: 1
@@ -29626,9 +29626,9 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
         abilityParams.target.fight.variables.currentStamina = Math.min(abilityParams.target.fight.variables.currentStamina, setup.getMaxStamina(abilityParams.target));
         abilityRuntimeData.modifier.fightMoveIDsMods = {mod: setup.mod.ADD, value: [setup.FightMove_Hypnotize.id]}
         
-        var displayString = abilityParams.target.info.name + &quot; pants in exhaustion. A terrible, oppressive thought enters their mind, that they might not win this battle. \n&quot;;
-        displayString += &quot;Their heart is racing, corruption seeping into their mind, feeding on their doubts. \n&quot;
-        displayString += &quot;A dark purple aura builds around their frame, they revel in the power of corruption to crush anything that stands in their way.\n&quot;
+        var displayString = abilityParams.target.info.name + &quot;在疲惫中唾骂。一个可怕的、压迫性的想法进入他们的头脑，他们可能无法赢得这场战斗。\n&quot;;
+        displayString += &quot;他们的心在狂跳，腐败渗入他们的头脑，以他们的疑虑为食。\n&quot;
+        displayString += &quot;一个暗紫色的光环在他们周围建立起来，他们陶醉于腐化的力量，以粉碎任何挡在他们面前的东西。\n&quot;
 
         return displayString;
     },
@@ -29659,10 +29659,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_BrinkOfMadness.setCategory(setup.AbilityCategory.SOMBREVE)&gt;&gt;
 &lt;&lt;set setup.Ability_BrinkOfMadness.setGrade(setup.AbilityGrade.VERYHIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="405" name="Ability_BuriedInCum" tags="" position="600,5100" size="100,100">&lt;&lt;set setup.Ability_BuriedInCum = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BuriedInCum&quot;,
-    name:       &quot;Buried In Cum&quot;, 
+    name:       &quot;种汁掩埋&quot;, 
     description:function(character)
     {
-        return &quot;You are buried in your opponent&#39;s cum.&quot;; 
+        return &quot;你被掩埋在对手的精液中。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -29689,29 +29689,29 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_BuriedInCum.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="406" name="Ability_ChannelTheAstralSoul" tags="" position="725,5100" size="100,100">&lt;&lt;set setup.Ability_ChannelTheAstralSoul = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_ChannelTheAstralSoul&quot;,
-    name:       &quot;Channel the Astral Soul&quot;, 
+    name:       &quot;引导星界之魂&quot;, 
     description:function(character)
     {
         var displayString = &quot;&quot;
         switch(setup.getCorruptionTier(character))
         {
             case 0:
-                displayString += &quot;Increases Essence gain. Its effect weakens the more corrupt you are.&quot;;
+                displayString += &quot;增加精华的获得量。你越腐败，其效果就越弱。&quot;;
                 break;
             case 1:
-                displayString += &quot;Your corruption weakens your connection to the astral soul preventing you from gaining much extra essence.&quot;;
+                displayString += &quot;你的腐败削弱了你与星界灵魂的联系，使你无法获得更多的额外精华。&quot;;
                 break;
             case 2:
-                displayString += &quot;Your corruption significantly weakens your connection to the astral soul almost preventing you from gaining extra essence.&quot;;
+                displayString += &quot;你的堕落大大削弱了你与星界灵魂的联系，几乎使你无法获得额外的精华。&quot;;
                 break;
             case 3:
-                displayString += &quot;Your corruption almost completely disrupts your connection to the astral soul. You barely gain any extra essence.&quot;;
+                displayString += &quot;你的腐败几乎完全破坏了你与星界灵魂的联系。你几乎没有获得任何额外的精华。&quot;;
                 break;
             case 4:
-                displayString += &quot;The corruption actively seeks to disrupt your connection to the astral soul, you gain almost nothing from the extraction.&quot;;
+                displayString += &quot;腐败主动破坏你与星界灵魂的联系，你几乎没有从中获得任何收益。&quot;;
                 break;
             default:
-                displayString += &quot;The corruption actively seeks to disrupt your connection to the astral soul, you gain almost nothing from the extraction.&quot;
+                displayString += &quot;腐败主动破坏你与星界灵魂的联系，你几乎没有从中获得任何收益。&quot;
                 break;
         }
         return displayString; 
@@ -29765,10 +29765,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_ChannelTheAstralSoul.setCategory(setup.AbilityCategory.PURITY)&gt;&gt;
 &lt;&lt;set setup.Ability_ChannelTheAstralSoul.setGrade(setup.AbilityGrade.LOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="407" name="Ability_CockRingOfTheBind" tags="" position="850,5100" size="100,100">&lt;&lt;set setup.Ability_CockRingOfTheBind = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CockRingOfTheBind&quot;,
-    name:       &quot;Cock Ring of the Bind&quot;,
+    name:       &quot;绑定者的鸡巴环&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;You can feel The Bind&#39;s presence within your cock. Grows your strength, muscles, cock and balls after every battle. Unlocks the &#39;Essence Surge&#39; Fight Move.&quot;;
+        let displayString = &quot;你可以在你的性器上感受到束缚的存在。每次与绑定者战斗后，你的力量、肌肉、阴茎和睾丸都会增长。解锁“精华涌动”的战斗行动。&quot;;
         return displayString
     },
     maxRank: 10
@@ -29818,16 +29818,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_CockRingOfTheBind.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="408" name="Ability_CodexPassion" tags="" position="975,5100" size="100,100">&lt;&lt;set setup.Ability_CodexPassion = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CodexPassion&quot;,
-    name:       &quot;Codex&#39;s Passion&quot;,
+    name:       &quot;药典激情&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Using a Fight Skill that does no damage heals you for 2 health&quot;;  
+            return &quot;使用没有伤害的战斗行动，可以治疗你2点生命值。&quot;;  
         }
         else
         {
-            return &quot;Using a Fight Skill that does no damage heals you for &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 2)+&quot; health&quot;; 
+            return &quot;使用没有伤害的战斗行动，可以治疗你&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 2)+&quot;点生命值。&quot;; 
         }
     },
     maxRank: 5
@@ -29850,7 +29850,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
         if(heal != 0)
         {
-            return &quot;Your soul resonates within you, healing you for &lt;span style=&#39;color:#46c546;&#39;&gt;&quot;+ heal + &quot;&lt;/span&gt; health.&quot;;
+            return &quot;你的灵魂在你体内产生了共鸣，为你&lt;span style=&#39;color:#46c546;&#39;&gt;&quot;+治疗了+ &quot;&lt;/span&gt;生命值。&quot;;
         }
     },
 )&gt;&gt;
@@ -29866,10 +29866,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_CodexPassion.setCategory(setup.AbilityCategory.PURITY)&gt;&gt;
 &lt;&lt;set setup.Ability_CodexPassion.setGrade(setup.AbilityGrade.LOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="409" name="Ability_CollarOfTheBind" tags="" position="1100,5100" size="100,100">&lt;&lt;set setup.Ability_CollarOfTheBind = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CollarOfTheBind&quot;,
-    name:       &quot;Collar of the Bind&quot;,
+    name:       &quot;绑定者的项圈&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;You can feel The Bind&#39;s presence within your soul. Unlocks the &#39;Essence Surge&#39; Fight Move.&quot;;
+        let displayString = &quot;你可以在你的灵魂中感受到束缚的存在。解锁“精华涌动”战斗行动。&quot;;
         return displayString
     },
     maxRank: 10
@@ -29894,10 +29894,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_CollarOfTheBind.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="410" name="Ability_CorruptedStrength" tags="" position="1225,5100" size="100,100">&lt;&lt;set setup.Ability_CorruptedStrength = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CorruptedStrength&quot;,
-    name:       &quot;Corrupted Strength&quot;, 
+    name:       &quot;腐化之力&quot;, 
     description:function(character)
     {
-        return &quot;Corruption courses through you, adds 20% of your Corruption to your Strength. This effect last until the end of the encounter.&quot;; 
+        return &quot;堕落贯穿你的身体，将的20%的腐化值增加至力量上。这个效果将持续到遭遇战结束。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -29926,11 +29926,11 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_CorruptedStrength.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="411" name="Ability_BlueStar" tags="" position="100,5225" size="100,100">&lt;&lt;set setup.Ability_BlueStar = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BlueStar&quot;,
-    name:       &quot;Adaptation of the Blue Star&quot;,
+    name:       &quot;蓝星之适应&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;The distant Blue Star is forcing evolution across the land. \n&quot;;
-        displayString += &quot;All growth is increased by 20%. \n&quot;
+        let displayString = &quot;遥远的蓝星正在迫使整个大地进化。\n&quot;;
+        displayString += &quot;所有生物的生长都会增加20%。\n&quot;
         return displayString
     },
     maxRank: 1
@@ -29969,11 +29969,11 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;run setup.Ability_BlueStar.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_BlueStar.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="412" name="Ability_GoldenStar" tags="" position="225,5225" size="100,100">&lt;&lt;set setup.Ability_GoldenStar = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_GoldenStar&quot;,
-    name:       &quot;Power of the Golden Star&quot;,
+    name:       &quot;金星之力量&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;The distant Golden Star has given the land increased strength. \n&quot;;
-        displayString += &quot;Your strength is increased by 20%&quot;
+        let displayString = &quot;遥远的金星给了这片土地更多的力量。\n&quot;;
+        displayString += &quot;你的力量增加了20%&quot;
         return displayString
     },
     maxRank: 1
@@ -30011,11 +30011,11 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;run setup.Ability_GoldenStar.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_GoldenStar.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="413" name="Ability_GreenStar" tags="" position="350,5225" size="100,100">&lt;&lt;set setup.Ability_GreenStar = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_GreenStar&quot;,
-    name:       &quot;Tenacity of the Green Star&quot;,
+    name:       &quot;绿星之坚韧&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;The distant Green Star gives the land increased tenacity. \n&quot;;
-        displayString += &quot; Your stamina is increased by 20%&quot;
+        let displayString = &quot;遥远的绿星赋予土地更强的韧性。\n&quot;;
+        displayString += &quot;你的体力增加了20%。&quot;
         return displayString
     },
     maxRank: 1
@@ -30054,11 +30054,11 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;run setup.Ability_GreenStar.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_GreenStar.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="414" name="Ability_RedStar" tags="" position="475,5225" size="100,100">&lt;&lt;set setup.Ability_RedStar = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_RedStar&quot;,
-    name:       &quot;Ferocity of the Red Star&quot;,
+    name:       &quot;红星之暴虐&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;The distant Red Star gives the land increased ferocity. \n&quot;;
-        displayString += &quot;Your crit chance is increased by 20%&quot;
+        let displayString = &quot;遥远的红星使土地更加凶猛。\n&quot;;
+        displayString += &quot;你的暴击率增加了20%&quot;
         return displayString
     },
     maxRank: 1
@@ -30097,17 +30097,17 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;run setup.Ability_RedStar.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_RedStar.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="415" name="Ability_DeadlyAim" tags="" position="600,5225" size="100,100">&lt;&lt;set setup.Ability_DeadlyAim = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_DeadlyAim&quot;,
-    name:       &quot;Deadly Aim&quot;,
+    name:       &quot;致命瞄准&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            let displayString = &quot;When you strike, you make sure it counts. Your crit chance is increased by 7%&quot;;
+            let displayString = &quot;当你发动攻击时，你会确保它是有价值的。你的暴击几率增加7%。&quot;;
             return displayString
         }
         else
         {
-            let displayString = &quot;When you strike, you make sure it counts. Your crit chance is increased by &quot;;
+            let displayString = &quot;当你发动攻击时，你会确保它是有价值的。你的暴击几率增加&quot;;
             displayString += abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 7) + &quot;%&quot;;
             return displayString
         }
@@ -30144,16 +30144,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_DeadlyAim.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_DeadlyAim.setGrade(setup.AbilityGrade.VERYLOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="416" name="Ability_Defiler" tags="" position="725,5225" size="100,100">&lt;&lt;set setup.Ability_Defiler = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Defiler&quot;,
-    name:       &quot;Defiler&quot;, 
+    name:       &quot;亵渎者&quot;, 
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Gain 5% Strength when fighting enemies with less than 500 Corruption.&quot;
+            return &quot;当与腐败程度低于500的敌人战斗时，获得5%的力量。&quot;
         }
         else
         {
-            return &quot;Gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;% Strength when fighting enemies with less than 500 Corruption.&quot;
+            return &quot;当与腐败程度低于500的敌人战斗时，获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;%的力量。&quot;
         }
     },
     maxRank: 10
@@ -30191,10 +30191,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_Defiler.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="417" name="Ability_DemonicCorruption" tags="" position="850,5225" size="100,100">&lt;&lt;set setup.Ability_DemonicCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_DemonicCorruption&quot;,
-    name:       &quot;Minor Demon&quot;,
+    name:       &quot;小恶魔&quot;,
     description:function(character)
     {
-        return &quot;Demonic powers flickers within you.&quot;; 
+        return &quot;恶魔的力量在你身心深处闪烁着。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -30230,11 +30230,11 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_DemonicCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="418" name="Ability_DemonicCorruption_2" tags="" position="975,5225" size="100,100">&lt;&lt;set setup.Ability_DemonicCorruption_2 = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_DemonicCorruption_2&quot;,
-    name:       &quot;Major Demon&quot;,
+    name:       &quot;大恶魔&quot;,
     description:function(character)
     {
-        return &quot;Can use Incubus&#39;s Call\n&quot; +
-                &quot;Demonic powers flow through you.&quot;
+        return &quot;可以使用战斗行动“梦魇的呼唤”\n&quot; +
+                &quot;恶魔的力量在你身上流淌。&quot;
     },
     maxRank: 1
 })&gt;&gt;
@@ -30266,12 +30266,12 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_DemonicCorruption_2.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="419" name="Ability_DemonicCorruption_3" tags="" position="1100,5225" size="100,100">&lt;&lt;set setup.Ability_DemonicCorruption_3 = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_DemonicCorruption_3&quot;,
-    name:       &quot;Lord of Lust&quot;,
+    name:       &quot;欲望之主&quot;,
     description:function(character)
     {
-        return &quot;Can use Incubus&#39;s Call\n&quot; +
-                &quot;Can use Incubus&#39;s Strike\n&quot; +
-                &quot;You are one with your demonic powers.&quot;
+        return &quot;可以使用战斗行动“梦魇的呼唤”\n&quot; +
+                &quot;可以使用战斗行动“梦魇的反击”\n&quot; +
+                &quot;你与恶魔力量融为一体。&quot;
     },
     maxRank: 1
 })&gt;&gt;
@@ -30295,16 +30295,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_DemonicCorruption_3.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="420" name="Ability_Disciplined" tags="" position="1225,5225" size="100,100">&lt;&lt;set setup.Ability_Disciplined = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Disciplined&quot;,
-    name:       &quot;Disciplined&quot;, 
+    name:       &quot;自律&quot;, 
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Gain 5% Strength when fighting enemies with more than 500 Corruption.&quot;
+            return &quot;与腐败程度超过500的敌人战斗时，获得5%的力量。&quot;
         }
         else
         {
-            return &quot;Gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;% Strength when fighting enemies with more than 500 Corruption.&quot;
+            return &quot;与腐败程度超过500的敌人战斗时，获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;%的力量。&quot;
         }
     },
     maxRank: 10
@@ -30342,16 +30342,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_Disciplined.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="421" name="Ability_DracosOmnipotence" tags="" position="100,5350" size="100,100">&lt;&lt;set setup.Ability_DracosOmnipotence = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_DracosOmnipotence&quot;,
-    name:       &quot;Draco&#39;s Omnipotence&quot;,
+    name:       &quot;德拉科的全能&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Whenever you reach max arousal, you gain size based on the amount of essence you have.&quot;; 
+            return &quot;每当你达到最大唤醒值时，你的身体就会根据你所拥有的精华量而获得大小。&quot;; 
         }
         else
         {
-            return &quot;Whenever you reach max arousal, you gain size based on &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot;x the amount of essence you have.&quot;; 
+            return &quot;每当你达到最大唤醒值时，你的身体就会获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot;倍的大小增长。&quot;; 
         }
     },
     maxRank: 10
@@ -30375,7 +30375,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
         var muscleGrowth = setup.applyGrowth(self, &quot;muscles&quot;, Math.round(State.variables.Essence * abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1) / 4.5));
         var sizeGrowth = setup.applyGrowth(self, &quot;height&quot;, Math.round(State.variables.Essence * abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)));
 
-        var displayString = &quot;You pulse with the power of gods. The Essence within fills you with the power to rule over all.\n\n&quot;;
+        var displayString = &quot;你以神的力量脉动。内在的精华使你充满了统治一切的力量。\n\n&quot;;
         displayString += setup.growthFlavourDescriptors(self, abilityParams.target, cockGrowth, ballsGrowth, muscleGrowth, sizeGrowth);
 
         return displayString;
@@ -30393,9 +30393,9 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_DracosOmnipotence.setCategory(setup.AbilityCategory.GROWTH)&gt;&gt;
 &lt;&lt;set setup.Ability_DracosOmnipotence.setGrade(setup.AbilityGrade.VERYHIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="422" name="Ability_EchoForm" tags="" position="225,5350" size="100,100">&lt;&lt;set setup.Ability_EchoForm = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_EchoForm&quot;,
-    name:       &quot;Symbiote Form&quot;,
+    name:       &quot;共生体形态&quot;,
     description:function(character){
-        return character.symbiote.name + &quot;&#39;s power flows through your body.&quot;;
+        return character.symbiote.name + &quot;的力量流经你的身体。&quot;;
     },
     maxRank: 5
 })&gt;&gt;
@@ -30424,7 +30424,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 			abilityParams.self.fight.variables.currentHP = Math.min(abilityParams.self.fight.variables.currentHP + hpMod, setup.getMaxHP(abilityParams.self));
 			abilityParams.self.fight.variables.currentStamina = Math.min(abilityParams.self.fight.variables.currentStamina + stamMod, setup.getMaxStamina(abilityParams.self));
 
-            return &quot;Arousal overtakes you. \n A thick &quot;+$CharacterSheet_Player.symbiote.color+&quot; goo emerges from your pores. \n You turn into a massive muscular &quot;+$CharacterSheet_Player.symbiote.color+&quot; &quot;+setup.getRace($CharacterSheet_Player.symbiote.anatomy)+&quot;.&quot;;
+            return &quot;唤醒超越了你\n 一个粗壮的&quot;+$CharacterSheet_Player.symbiote.color+&quot;的粘液从你的毛孔里冒出来。\n 你成为了一个有着&quot;+$CharacterSheet_Player.symbiote.color+&quot;色的有着巨大肌肉的&quot;+setup.getRace($CharacterSheet_Player.symbiote.anatomy)+&quot;。&quot;;
         }
     }
 )&gt;&gt;
@@ -30444,7 +30444,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
             State.variables.HasSymbiote = false;
             abilityRuntimeData.isActive = false;
 
-            return &quot;You revert back to your &quot;+setup.getRace(abilityParams.self.info.anatomy)+&quot; form&quot;;
+            return &quot;你恢复了你&quot;+setup.getRace(abilityParams.self.info.anatomy)+&quot;的模样&quot;;
         }
     }
 )&gt;&gt;
