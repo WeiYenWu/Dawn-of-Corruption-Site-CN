@@ -146,6 +146,7 @@
 |40060|...your ears perk up to a fiendish and >>>gutteral<<< howl.|guttural||
 |43775|...of the >>>direlect<<< ruins...|derelict||
 |44928|...and bound to corrupt us all!>>>&#39;<<<...|||
+|26582|...layer of your slightly->>>transluscent<<< horns lies...|translucent||
 ---
 
 *[待补充]*
