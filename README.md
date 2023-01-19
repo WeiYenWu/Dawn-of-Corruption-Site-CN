@@ -122,6 +122,7 @@
 |yes|indigo|adj.深蓝色||
 |yes|obsidian|adj.黑曜石色||
 |yes|amber|adj.琥珀色||
+|yes|Draco|name.德拉科|游戏内恶魔npc|
 ---
 
 ## **三、代码查疑**
@@ -145,6 +146,7 @@
 |40060|...your ears perk up to a fiendish and >>>gutteral<<< howl.|guttural||
 |43775|...of the >>>direlect<<< ruins...|derelict||
 |44928|...and bound to corrupt us all!>>>&#39;<<<...|||
+|26582|...layer of your slightly->>>transluscent<<< horns lies...|translucent||
 ---
 
 *[待补充]*
