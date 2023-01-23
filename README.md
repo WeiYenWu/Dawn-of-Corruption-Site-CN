@@ -123,6 +123,8 @@
 |yes|obsidian|adj.黑曜石色||
 |yes|amber|adj.琥珀色||
 |yes|Draco|name.德拉科|游戏内恶魔npc|
+|yes|Modify Metabolism|n.基因锁，代谢锁||
+|yes|Kaleth&#39;s Fervour|n.卡莱斯的狂热||
 ---
 
 ## **三、代码查疑**

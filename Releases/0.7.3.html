@@ -30454,7 +30454,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     name:       &quot;Empowering Drink&quot;,
     description:function(character)
     {
-        return &quot;Torgar&#39;s powerful concoction courses through you.\n Lasts for 4 days.&quot;; 
+        return &quot;托加的强大药水穿过你的身体。\n药水效果持续时间为4天。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -30497,16 +30497,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_EmpoweringDrink.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="424" name="Ability_EssenceHoarder" tags="" position="475,5350" size="100,100">&lt;&lt;set setup.Ability_EssenceHoarder = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_EssenceHoarder&quot;,
-    name:       &quot;Essence Hoarder&quot;,
+    name:       &quot;精华仓鼠&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Every 200 Essence within you grants you 1 Strength. (up to 30)&quot;; 
+            return &quot;你体内每200个精华就会赋予你1个力量。(最多给予你30力量)&quot;; 
         }
         else
         {
-            return &quot;Every 200 Essence within you grants you &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot; Strength. (up to &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 30)+&quot;)&quot;; 
+            return &quot;你体内每200个精华就会赋予你&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot;个力量.(最多给予你&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 30)+&quot;力量)&quot;; 
         }
     },
     maxRank: 5
@@ -30539,10 +30539,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_EssenceHoarder.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_EssenceHoarder.setGrade(setup.AbilityGrade.MEDIUM)&gt;&gt;</tw-passagedata><tw-passagedata pid="425" name="Ability_EssenceSurge" tags="" position="600,5350" size="100,100">&lt;&lt;set setup.Ability_EssenceSurge = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_EssenceSurge&quot;,
-    name:       &quot;Essence Surge&quot;, 
+    name:       &quot;精华澎湃&quot;, 
     description:function(character)
     {
-        return &quot;Absorb the Essence in the air. Grows in power the longer the fight lasts.&quot;; 
+        return &quot;吸收空气中的精华。战斗持续的时间越长，你的力量越大。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -30576,16 +30576,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_EssenceSurge.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="426" name="Ability_FaithsReward" tags="" position="725,5350" size="100,100">&lt;&lt;set setup.Ability_FaithsReward = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_FaithsReward&quot;,
-    name:       &quot;Faith&#39;s Reward&quot;,
+    name:       &quot;信仰的回报&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;You gain 0.5 health and 0.5 stamina whenever you win a battle. \n That bonus is reduced by 1 every time you gain corruption.&quot;;
+            return &quot;每当你赢得一场战斗，你就会获得0.5的生命值和0.5的耐力值。\n每当你获得腐败值时，该奖励就会减少1。&quot;;
         }
         else
         {
-            return &quot;You gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5)+&quot; health and &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5)+&quot; stamina whenever you win a battle. \n That bonus is reduced by 1 every time you gain corruption.&quot;;
+            return &quot;每当你赢得一场战斗，你就会获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5)+&quot;的生命值和&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5)+&quot;的耐力值。\n 每当你获得腐败值时，该奖励就会减少1。&quot;;
         }
     },
     maxRank: 5
@@ -30612,7 +30612,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
             abilityRuntimeData.modifier.maxStaminaMods = {mod: setup.mod.ADD, value: previousStamModifier + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5)}
         }
 
-        return &quot;You feel the presence of something far greater approve of your victory. Strength and vigour wells up within you.\n\n&quot;
+        return &quot;你感觉到某种更伟大的存在认可你的胜利。力量和活力在你内在涌动。\n\n&quot;
     },
 )&gt;&gt;
 
@@ -30633,11 +30633,11 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
                 abilityRuntimeData.modifier.maxHPMods = {mod: setup.mod.ADD, value: Math.max(0, abilityRuntimeData.modifier.maxHPMods.value - 1)}
                 abilityRuntimeData.modifier.maxStaminaMods = {mod: setup.mod.ADD, value: Math.max(0,abilityRuntimeData.modifier.maxStaminaMods.value -1)}
 
-                return &quot;A shiver runs down your spine and saps away your strength. You feel as if your actions have been judged.\n&quot;
+                return &quot;一阵颤抖从你的脊背上流过，抽走了你曾获得的力量。你觉得你的行为好像被审判了。\n&quot;
             }
             else
             {
-                return &quot;You feel tired. Emaciated. Famished. You have no more strength to offer as punishment for breaking your faith in purity.\n&quot;
+                return &quot;你感到疲惫。憔悴。饥肠辘辘。作为对你打破纯洁信仰的惩罚，你没有被提供更多的力量。\n&quot;
             }
             
         }
@@ -30657,10 +30657,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_FaithsReward.setCategory(setup.AbilityCategory.PURITY)&gt;&gt;
 &lt;&lt;set setup.Ability_FaithsReward.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="427" name="Ability_Focused" tags="" position="850,5350" size="100,100">&lt;&lt;set setup.Ability_Focused = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Focused&quot;,
-    name:       &quot;Focused&quot;, 
+    name:       &quot;聚精会神&quot;, 
     description:function(character)
     {
-        return &quot;Active until the end of the encounter.&quot;; 
+        return &quot;遭遇战结束前有效。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -30693,15 +30693,15 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_Focused.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="428" name="Ability_HerculeanBuild" tags="" position="975,5350" size="100,100">&lt;&lt;set setup.Ability_HerculeanBuild = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HerculeanBuild&quot;,
-    name:       &quot;Herculean Build&quot;,
+    name:       &quot;艰巨体型&quot;,
     description:function(abilityData, abilityRuntimeData){
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Gain Strength equal to half your Muscles stat (up to 15). Your Muscles grow by 10 upon acquiring this Ability.&quot;
+            return &quot;获得的力量等于肌肉属性的一半（最多15个）。获得此能力后，你的肌肉会增长 10。&quot;
         }
         else
         {
-            return &quot;Gain Strength equal to half your Muscles stat (up to &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 15)+&quot;). Your Muscles grow by 10 upon acquiring this Ability.&quot;
+            return &quot;获得的力量等于肌肉属性的一半（最多&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 15)+&quot;个）。获得此能力后，你的肌肉会增长 10。&quot;
         }
     },
     maxRank: 5
@@ -30741,10 +30741,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_HerculeanBuild.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_HerculeanBuild.setGrade(setup.AbilityGrade.VERYLOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="429" name="Ability_HostOfEcho" tags="" position="1100,5350" size="100,100">&lt;&lt;set setup.Ability_HostOfEcho = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HostOfEcho&quot;,
-    name:       &quot;Host of &lt;&lt;SymbioteName&gt;&gt;&quot;,
+    name:       &quot;&lt;&lt;SymbioteName&gt;&gt;之主人&quot;,
     description:function(character)
     {
-        return &quot;You are now the host of a mysterious being...\nUnlocks Arousal bar\nUnlocks Modify Metabolism\nCan equip Pleasure Self fight move.\nReaching Maximum Arousal transforms you into something more...&quot;;     },
+        return &quot;你现在是一个神秘生物的主人……\n解锁唤醒条\n解锁基因锁\n可以装备愉悦自我的战斗行动。\n达到最大的唤醒值，使你变成更多的东西……&quot;;     },
     maxRank: 1
 })&gt;&gt;
 
@@ -30753,7 +30753,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     setup.AbilityTrigger.ON_ACQUIRE,
     function(abilityRuntimeData, abilityParams)
     {
-        this.name = &quot;Host of &lt;&lt;SymbioteName&gt;&gt;&quot;;
+        this.name = &quot;&lt;&lt;SymbioteName&gt;&gt;之主人&quot;;
         
         abilityRuntimeData.modifier.fightMoveIDsMods = {mod: setup.mod.ADD, value: [setup.FightMove_Masturbate.id]}
     }
@@ -30761,16 +30761,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
 &lt;&lt;run setup.Ability_HostOfEcho.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="430" name="Ability_Incorruptible" tags="" position="1225,5350" size="100,100">&lt;&lt;set setup.Ability_Incorruptible = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Incorruptible&quot;,
-    name:       &quot;Incorruptible&quot;,
+    name:       &quot;不变之人&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;While your Corruption is below 25, you gain 5% critical chance, 10 strength. You gain half as much if your Corruption is over 25.&quot;;
+            return &quot;当你的腐化值低于25时，你获得5%的暴击率，10的力量。如果你的腐败程度超过25，你将仅能获得一半的收益。&quot;;
         }
         else
         {
-            return &quot;While your Corruption is below 25, you gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;% critical chance, &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 10)+&quot; strength. You gain half as much if your Corruption is over 25.&quot;;
+            return &quot;当你的腐化值低于25时，你获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;的暴击率，&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 10)+&quot;10的力量。如果你的腐败程度超过25，你将仅能获得一半的收益。&quot;;
         }
     },
     maxRank: 5
@@ -30812,16 +30812,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_Incorruptible.setCategory(setup.AbilityCategory.PURITY)&gt;&gt;
 &lt;&lt;set setup.Ability_Incorruptible.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="431" name="Ability_KalethsFervour" tags="" position="100,5475" size="100,100">&lt;&lt;set setup.Ability_KalethsFervour = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_KalethsFervour&quot;,
-    name:       &quot;Kaleth&#39;s Fervour&quot;,
+    name:       &quot;卡莱斯的狂热&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;You gain 3% more growth for every point of corruption within you.&quot;; 
+            return &quot;你体内每有一点腐化值，就能获得当前腐化值3%的增长。&quot;; 
         }
         else
         {
-            return &quot;You gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 3)+&quot;%  more growth for every point of corruption within you.&quot;;
+            return &quot;你体内每有一点腐化值，就能获得当前腐化值&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 3)+&quot;%的增长。&quot;;
         }
     },
     maxRank: 10
@@ -30853,16 +30853,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_KalethsFervour.setCategory(setup.AbilityCategory.SOMBREVE)&gt;&gt;
 &lt;&lt;set setup.Ability_KalethsFervour.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="432" name="Ability_LastStand" tags="" position="225,5475" size="100,100">&lt;&lt;set setup.Ability_LastStand = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_LastStand&quot;,
-    name:       &quot;Last Stand&quot;,
+    name:       &quot;背水一战&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Whenever you fall below 25% health, you gain 20 arousal, 30% critical chance and 15 strength.&quot;; 
+            return &quot;每当你的生命值低于25%时，你会获得20的唤醒值，30%的暴击率和15的力量。&quot;; 
         }
         else
         {
-            return &quot;Whenever you fall below 25% health, you gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 20)+&quot; arousal, &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 30)+&quot;% critical chance and &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 15)+&quot; strength.&quot;; 
+            return &quot;每当你的生命值低于25%时，你会获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 20)+&quot;的唤醒值，&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 30)+&quot;%的暴击率&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 15)+&quot;的力量&quot;; 
         }
         
     },
@@ -30884,7 +30884,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
         abilityParams.self.fight.variables.currentArousal += Math.min(100, abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 20))
         abilityRuntimeData.modifier.critChanceMods = {mod: setup.mod.ADD, value: abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 30)}
         abilityRuntimeData.modifier.strengthMods = {mod: setup.mod.ADD, value: abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 15)}
-        return &quot;The adrenaline of battle pumps through your veins!&quot;
+        return &quot;因战斗而分泌的肾上腺素通过你的血管泵送！&quot;
     },
 )&gt;&gt;
 
@@ -30898,7 +30898,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
         {
             abilityID: abilityRuntimeData.abilityDataID
         });
-        return &quot;You inhale deeply, regaining your composure.&quot;
+        return &quot;你深深地吸了口气，恢复了镇定。&quot;
     }
 )&gt;&gt;
 
@@ -30913,16 +30913,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_LastStand.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_LastStand.setGrade(setup.AbilityGrade.LOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="433" name="Ability_Masochism" tags="" position="350,5475" size="100,100">&lt;&lt;set setup.Ability_Masochism = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Masochism&quot;,
-    name:       &quot;Masochism&quot;,
+    name:       &quot;抖M&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Whenever you receive damage, you gain that much Arousal. (up to 3 per rank)&quot;; 
+            return &quot;每当你受到伤害，你就会获得那么多的唤醒。(每级最多3)&quot;; 
         }
         else
         {
-            return &quot;Whenever you receive damage, you gain that much Arousal. (up to &quot;+ abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 3) +&quot;)&quot;; 
+            return &quot;每当你受到伤害，你就会获得那么多的唤醒。(每级最多&quot;+ abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 3) +&quot;)&quot;; 
         }
     },
     maxRank: 5
@@ -30943,7 +30943,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 
         var arousalGain = Math.min(abilityParams.attackDamage, abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 3));
         
-        var displayString = abilityParams.target.info.name + &quot; relishes the pain. &quot;+He+&quot; gains &lt;span style=&#39;color:#ac46c5;&#39;&gt;&quot; + arousalGain + &quot;&lt;/span&gt; Arousal\n&quot;;
+        var displayString = abilityParams.target.info.name + &quot;享受着痛苦。&quot;+He+&quot;得到了&lt;span style=&#39;color:#ac46c5;&#39;&gt;&quot; + arousalGain + &quot;&lt;/span&gt;点唤醒值。\n&quot;;
 
         abilityParams.target.fight.variables.currentArousal += arousalGain;
 
@@ -30962,16 +30962,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_Masochism.setCategory(setup.AbilityCategory.LUST)&gt;&gt;
 &lt;&lt;set setup.Ability_Masochism.setGrade(setup.AbilityGrade.VERYLOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="434" name="Ability_MemoriesOfApothus" tags="" position="475,5475" size="100,100">&lt;&lt;set setup.Ability_MemoriesOfApothus = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MemoriesOfApothus&quot;,
-    name:       &quot;Memories of Apothus&quot;,
+    name:       &quot;阿波图斯的记忆&quot;,
     description:function(character)
     {
-        return &quot;Distant words of unrestrained madness echo within your soul.&quot;; 
+        return &quot;遥远的、无拘无束的疯狂话语在你的灵魂中回荡。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Ability_MemoriesOfApothus.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Ability_MemoriesOfApothus.achievementInfo = &quot;Give yourself away to the cult leader.&quot;&gt;&gt;
+&lt;&lt;set setup.Ability_MemoriesOfApothus.achievementInfo = &quot;把你自己交给邪教领袖。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Ability_MemoriesOfApothus.addBehaviour(
     &quot;start&quot;,
@@ -31004,16 +31004,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="435" name="Ability_MemoriesOfCray" tags="" position="600,5475" size="100,100">&lt;&lt;set setup.Ability_MemoriesOfCray = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MemoriesOfCray&quot;,
-    name:       &quot;Memories of Cray&quot;,
+    name:       &quot;克雷的记忆&quot;,
     description:function(character)
     {
-        return &quot;Distant words of a being yearning to be more echoes within your soul.&quot;; 
+        return &quot;一个渴望成为更多的人的遥远话语在你的灵魂中回响。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Ability_MemoriesOfCray.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Ability_MemoriesOfCray.achievementInfo = &quot;Embrace an old mentor.&quot;&gt;&gt;
+&lt;&lt;set setup.Ability_MemoriesOfCray.achievementInfo = &quot;拥抱一位老导师。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Ability_MemoriesOfCray.addBehaviour(
     &quot;start&quot;,
@@ -31045,16 +31045,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="436" name="Ability_MemoriesOfNyx" tags="" position="725,5475" size="100,100">&lt;&lt;set setup.Ability_MemoriesOfNyx = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MemoriesOfNyx&quot;,
-    name:       &quot;Memories of Nyx&quot;,
+    name:       &quot;尼克斯的记忆&quot;,
     description:function(character)
     {
-        return &quot;Distant visions of pure Corruption echo within your soul.&quot;; 
+        return &quot;纯粹的、腐化的遥远愿景在你的灵魂中回响。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Ability_MemoriesOfNyx.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Ability_MemoriesOfNyx.achievementInfo = &quot;Embrace the Black Sun.&quot;&gt;&gt;
+&lt;&lt;set setup.Ability_MemoriesOfNyx.achievementInfo = &quot;拥抱黑日。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Ability_MemoriesOfNyx.addBehaviour(
     &quot;start&quot;,
@@ -31088,10 +31088,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="437" name="Ability_MemoriesOfTheChosen" tags="" position="850,5475" size="100,100">&lt;&lt;set setup.Ability_MemoriesOfTheChosen = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MemoriesOfTheChosen&quot;,
-    name:       &quot;Memories of the Chosen&quot;,
+    name:       &quot;天选之人的回忆&quot;,
     description:function(character)
     {
-        return &quot;Distant words of cataclysmic ambitions echo within your soul.&quot;; 
+        return &quot;遥远的、灾难性的雄心壮志话语在你的灵魂中回响。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31108,16 +31108,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="438" name="Ability_Momentum" tags="" position="975,5475" size="100,100">&lt;&lt;set setup.Ability_Momentum = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Momentum&quot;,
-    name:       &quot;Momentum&quot;,
+    name:       &quot;势不可挡&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Gain 7% more Crit Damage for every damaging attack in your combo.&quot;;  
+            return &quot;在你的连击中，每一次伤害性攻击都能获得7%的暴击伤害。&quot;;  
         }
         else
         {
-            return &quot;Gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 7)+&quot;% more Crit Damage for every damaging attack in your combo.&quot;; 
+            return &quot;在你的连击中，每一次伤害性攻击都能获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 7)+&quot;%的暴击伤害。&quot;; 
         }
     },
     maxRank: 5
@@ -31159,16 +31159,16 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_Momentum.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_Momentum.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="439" name="Ability_Mutant" tags="" position="1100,5475" size="100,100">&lt;&lt;set setup.Ability_Mutant = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Mutant&quot;,
-    name:       &quot;Mutant&quot;,
+    name:       &quot;突变&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;The corruption within you seeks to drastically alter your form! When you take damage, you have a 1/10 chance of growing additional limbs.&quot;
+            return &quot;你体内的腐败试图大幅度地改变你的形态！当你受到伤害时，你有1/10的机会长出额外的肢体。&quot;
         }
         else
         {
-            return &quot;The corruption within you seeks to drastically alter your form! When you take damage, you have a 1/&quot; + (11 - abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)) + &quot; chance of growing additional limbs.&quot;
+            return &quot;你体内的腐败试图大幅度地改变你的形态！当你受到伤害时，你有1/&quot; + (11 - abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)) + &quot;的机会长出额外的肢体。&quot;
         }
     },
     maxRank: 5
@@ -31192,17 +31192,17 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
             var randomLimb = setup.getRandomLimb(abilityParams.target.info.anatomy)
             var currentNumber = randomLimb.currentNumber;
             var limb = randomLimb.limb;
-            var displayString = &quot;You feel the corruption run rampant within you! You hunch over, euphoria blinding you as your body changes!&quot;
+            var displayString = &quot;你感觉腐败在你体内肆虐！当你的身体发生变化时，你弓着腰，快感让你眼花缭乱！&quot;
 
             if (currentNumber % 2 == 0)
             {
                 setup.changeLimbNumber(abilityParams.target.info.anatomy, limb, 2, &quot;add&quot;) 
-                displayString += setup.processFlavours(abilityParams.target, &quot; You have grown another pair of &quot; + &quot;@[2|&quot; + limb + &quot;|noverb]!&quot;)
+                displayString += setup.processFlavours(abilityParams.target, &quot;你又长了一对&quot; + &quot;@[2|&quot; + limb + &quot;|noverb]！&quot;)
             }
             else
             {
                 setup.changeLimbNumber(abilityParams.target.info.anatomy, limb, 1, &quot;add&quot;)
-                displayString += setup.processFlavours(abilityParams.target, &quot; You have grown another &quot; + &quot;@[1|&quot; + limb + &quot;|noverb]!&quot;)
+                displayString += setup.processFlavours(abilityParams.target, &quot;你又长了一个&quot; + &quot;@[1|&quot; + limb + &quot;|noverb]!&quot;)
             }
             return displayString;
         }
@@ -31220,7 +31220,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
     setup.Ability_Mutant_2,
     function(character){
         var displayString = &quot;&quot;
-        displayString += &quot;You must have at least &quot;+setup.CorruptionComparators.CORRUPT+&quot; corruption: (&quot; + setup.displayStatValue(character, &quot;corruption&quot;) + &quot;)\n&quot;
+        displayString += &quot;你必须至少有&quot;+setup.CorruptionComparators.CORRUPT+&quot;点腐化值：(&quot; + setup.displayStatValue(character, &quot;corruption&quot;) + &quot;)\n&quot;
         return displayString
     }
 )&gt;&gt;
@@ -31237,10 +31237,10 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 &lt;&lt;set setup.Ability_Mutant.setCategory(setup.AbilityCategory.SOMBREVE)&gt;&gt;
 &lt;&lt;set setup.Ability_Mutant.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="440" name="Ability_Mutant_2" tags="" position="1225,5475" size="100,100">&lt;&lt;set setup.Ability_Mutant_2 = setup.AbilityDataFactory.createAbilityData({
 id:         &quot;Ability_Mutant_2&quot;,
-name:       &quot;Abomination&quot;,
+name:       &quot;恶煞&quot;,
 description:function(character, abilityRuntimeData)
 {
-    return &quot;Your body has become twisted by the corruption rampant within you! When you take damage, you have a 1/5 chance of doubling certain limbs.&quot;
+    return &quot;你的身体已经被你体内猖獗的腐败扭曲了！当你受到伤害时，你有1/5的几率将某些肢体数量加倍。&quot;
 },
 maxRank: 1
 })&gt;&gt;
@@ -31264,16 +31264,16 @@ maxRank: 1
             var limb = randomLimb.limb;
 
             setup.changeLimbNumber(abilityParams.target.info.anatomy, limb, 2, &quot;multiply&quot;);
-            var displayString = &quot;Your body pulses, the corruption within you bubbles to the surface. Your muscles shift and your bones crack as you grow twice the amount of &quot;;
+            var displayString = &quot;你的身体在跳动，你体内的腐败冒出水面。你的肌肉在变化，你的骨骼在裂开，因为你增长了两倍的&quot;;
             var limbNumber = setup.getLimbNumber(&quot;all&quot;, abilityParams.target.info.anatomy[limb], true);
 
             if(limbNumber == 2)
             {
-                displayString +=  setup.processFlavours(abilityParams.target, limb + &quot; you have! You now have two @[all|&quot; + limb + &quot;|noverb].\n&quot;);
+                displayString +=  setup.processFlavours(abilityParams.target, limb + &quot;你目前有!你现在有一对@[all|&quot; + limb + &quot;|noverb].\n&quot;);
             }
             else
             {
-                displayString +=  setup.processFlavours(abilityParams.target, limb + &quot; you have! You now have @[all|&quot; + limb + &quot;|noverb].\n&quot;);
+                displayString +=  setup.processFlavours(abilityParams.target, limb + &quot;你目前有!你现在有一对@[all|&quot; + limb + &quot;|noverb].\n&quot;);
             }
               
             return displayString;
