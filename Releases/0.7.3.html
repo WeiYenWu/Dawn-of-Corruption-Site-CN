@@ -31273,7 +31273,7 @@ maxRank: 1
             }
             else
             {
-                displayString +=  setup.processFlavours(abilityParams.target, limb + &quot;你目前有!你现在有一对@[all|&quot; + limb + &quot;|noverb].\n&quot;);
+                displayString +=  setup.processFlavours(abilityParams.target, limb + &quot;你目前有!你现在有一对@[all|&quot; + limb + &quot;|noverb]。\n&quot;);
             }
               
             return displayString;
@@ -31288,10 +31288,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_Mutant_2.setCategory(setup.AbilityCategory.SOMBREVE)&gt;&gt;
 &lt;&lt;set setup.Ability_Mutant_2.setGrade(setup.AbilityGrade.VERYHIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="441" name="Ability_CurseOfTheNaga" tags="" position="100,5600" size="100,100">&lt;&lt;set setup.Ability_CurseOfTheNaga = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CurseOfTheNaga&quot;,
-    name:       &quot;Curse of the Naga&quot;, 
+    name:       &quot;娜迦的诅咒&quot;, 
     description:function(character)
     {
-        return &quot;A part of you was stolen by the Lost Naga.\n Only by defeating him can you get your strength back.&quot;; 
+        return &quot;你身体的一部分被失落的娜迦偷走了。\n只有打败他，你才能恢复你的力量。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31309,10 +31309,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_CurseOfTheNaga.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="442" name="Ability_StolenMass" tags="" position="225,5600" size="100,100">&lt;&lt;set setup.Ability_StolenMass = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_StolenMass&quot;,
-    name:       &quot;Stolen Mass&quot;,
+    name:       &quot;窃取重量&quot;,
     description:function(character)
     {
-        return &quot;You have stolen mass from another creature.&quot;; 
+        return &quot;你从另一个生物身上窃取了重量。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31330,9 +31330,9 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_StolenMass.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="443" name="Ability_NeverendingGrowth" tags="" position="350,5600" size="100,100">&lt;&lt;set setup.Ability_NeverendingGrowth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NeverendingGrowth&quot;,
-    name:       &quot;Never-ending Growth&quot;, 
+    name:       &quot;永无止境的生长&quot;, 
     description:function(character, abilityRuntimeData){
-        return &quot;Your body continuously grows larger while in combat. The more corrupt you are, the more effective this growth is.&quot; 
+        return &quot;在战斗中，你的体型会不断变大。你越腐败，这种生长就越有效。&quot; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31367,12 +31367,12 @@ maxRank: 1
 
         if (corruption &gt; 0){
             if(self.id == &quot;CharacterSheet_Player&quot;){
-                displayString += &quot;Your muscles flex but do not recede in size when they relax.&quot;
-                displayString += &quot; A wash of pleasure takes you as your @[all|cocks|noverb] and @[all|balls|noverb] lurch with added size.\n&quot;
+                displayString += &quot;你的肌肉屈伸，但在你放松时，其大小并不退缩。&quot;
+                displayString += &quot;当你@[all|cocks|noverb]和@[all|balls|noverb]的尺寸增大时，一种如被洗礼般的快感将你带走了。\n&quot;
                 return setup.processFlavours(self, displayString);
             }else{
-                displayString += &quot;His muscles flex but do not recede in size when they relax.&quot;
-                displayString += &quot; Howling from growth induced euphoria, its @[all|cocks|noverb] and @[all|balls|noverb] lurch with added size.\n&quot;
+                displayString += &quot;他的肌肉屈伸，但在他放松时，其大小并不退缩。&quot;
+                displayString += &quot;在生长诱导的兴奋中嚎叫，它的@[all|cocks|noverb]和@[all|balls|noverb]随着尺寸的增加而摇摆不定。\n&quot;
                 return setup.processFlavours(self, displayString);
             }
         }else{
@@ -31393,10 +31393,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_NeverendingGrowth.setCategory(setup.AbilityCategory.GROWTH)&gt;&gt;
 &lt;&lt;set setup.Ability_NeverendingGrowth.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="444" name="Ability_NyxInducedWorkout" tags="" position="475,5600" size="100,100">&lt;&lt;set setup.Ability_NyxInducedWorkout = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxInducedWorkout&quot;,
-    name:       &quot;Nyx Induced Workout&quot;,
+    name:       &quot;尼克斯诱导的锻炼&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;Working out in Nyx&#39;s gym room has imbued your muscles with uncanny potential for growth.&quot;;
+        let displayString = &quot;在尼克斯的健身室里锻炼，使你的肌肉具有不可思议的增长潜力。&quot;;
         return displayString
     },
     maxRank: 999
@@ -31419,9 +31419,9 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_NyxInducedWorkout.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="445" name="Ability_NyxParasiteInfection" tags="" position="600,5600" size="100,100">&lt;&lt;set setup.Ability_NyxParasiteInfection = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxParasiteInfection&quot;,
-    name:       &quot;Nyx Spawn Infection&quot;, 
+    name:       &quot;感染尼克斯幼体&quot;, 
     description:function(character){
-        return &quot;Creatures of Nyx live within your body.\n You must protect the spawns...&quot;
+        return &quot;尼克斯的造物寄宿在你的身体里。你必须保护这些幼体……&quot;
     },
     maxRank: 10
 })&gt;&gt;
@@ -31462,9 +31462,9 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_NyxParasiteInfection.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="446" name="Ability_NyxParasiteInfection_2" tags="" position="725,5600" size="100,100">&lt;&lt;set setup.Ability_NyxParasiteInfection_2 = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxParasiteInfection_2&quot;,
-    name:       &quot;Nyx Hive Lord&quot;, 
+    name:       &quot;尼克斯幼体之君王&quot;, 
     description:function(character){
-        return &quot;You host countless spawns of Nyx within you.\n You gain 1 min arousal per parasite within your body.\n You must spread.\nYou must fuck.\nYou must grow.&quot;
+        return &quot;你体内孕育了无数的尼克斯幼体。\n你体内的每一条寄生虫都能让你得到最小为1的唤醒值。\n你必须传播。\n你必须做爱。\n你必须生长。&quot;
     },
     maxRank: 15
 })&gt;&gt;
