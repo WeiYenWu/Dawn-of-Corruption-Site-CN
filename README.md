@@ -125,6 +125,10 @@
 |yes|Draco|name.德拉科|游戏内恶魔npc|
 |yes|Modify Metabolism|n.基因锁，代谢锁||
 |yes|Kaleth&#39;s Fervour|n.卡莱斯的狂热||
+|yes|Lustful Instincts|n.淫欲本能||
+|yes|Corrupted Urges|n.腐化冲动||
+|yes|Corrupted Remedy|n.腐化疗愈||
+|yes|Infectious Lust|n.传播淫欲||
 ---
 
 ## **三、代码查疑**

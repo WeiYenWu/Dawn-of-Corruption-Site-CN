@@ -33657,16 +33657,16 @@ maxRank: 5
 &lt;&lt;set setup.Ability_VigorOfTheEndowed_2.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_VigorOfTheEndowed_2.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="500" name="Ability_WarriorOfDuality" tags="" position="1225,6225" size="100,100">&lt;&lt;set setup.Ability_WarriorOfDuality = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_WarriorOfDuality&quot;,
-    name:       &quot;二重性战士&quot;,
+    name:       &quot;Warrior of Duality&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;如果腐化值低于50，则在等级提升时获得1点健康值。\n 如果你的腐化值大于或等于50，则在等级提升时每回合额外获得1个唤醒值。&quot;; 
+            return &quot;Gain 1 health on level up if corruption lower than 50.\n Gain 1 arousal per turn on level up if your corruption is greater than or equal to 50.&quot;; 
         }
         else
         {
-            return &quot;如果腐化值低于50，则在等级提升时获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot;点健康值。\n如果你的腐化值大于或等于50，则在等级提升时每回合额外获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot;个唤醒值。&quot;; 
+            return &quot;Gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot; health on level up if corruption lower than 50.\n Gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot; arousal per turn on level up if your corruption is greater than or equal to 50.&quot;; 
         }
     },
     maxRank: 5
@@ -33705,10 +33705,10 @@ maxRank: 5
 &lt;&lt;set setup.Ability_WarriorOfDuality.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_WarriorOfDuality.setGrade(setup.AbilityGrade.LOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="501" name="Ability_WitheringVenom" tags="" position="100,6350" size="100,100">&lt;&lt;set setup.Ability_WitheringVenom = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_WitheringVenom&quot;,
-    name:       &quot;凋零之毒&quot;, 
+    name:       &quot;Withering Venom&quot;, 
     description:function(character)
     {
-        return &quot;有效，直到你的唤醒值变为&quot; + setup.getStatValue(character, &quot;minArousal&quot;) + &quot;点或更低。&quot;; 
+        return &quot;Active until your arousal becomes &quot; + setup.getStatValue(character, &quot;minArousal&quot;) + &quot; or less.&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -33746,10 +33746,10 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_WitheringVenom.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="502" name="Ability_LordOfCorruption" tags="" position="225,6350" size="100,100">&lt;&lt;set setup.Ability_LordOfCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_LordOfCorruption&quot;,
-    name:       &quot;腐化帝王&quot;,
+    name:       &quot;Lord of Corruption&quot;,
     description:function(character)
     {
-        return &quot;腐败屈服于你的意志，很少有人吸收了这么多腐败而不失去理智。\n&#39;淫欲本能&#39;、&#39;腐化冲动&#39;、&#39;腐化疗愈&#39;与&#39;传播淫欲&#39;将成为随机出现的战斗行动。&quot;; 
+        return &quot;Corruption bends to your will, few have absorbed this much Corruption without losing their mind.\n &#39;Lustful Instincts&#39;, &#39;Corrupted Urges&#39;, &#39;Corrupted Remedy&#39; and &#39;Infectious Lust&#39; will replace random fight moves.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33786,10 +33786,10 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_LordOfCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="503" name="Ability_LostInCorruption" tags="" position="350,6350" size="100,100">&lt;&lt;set setup.Ability_LostInCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_LostInCorruption&quot;,
-    name:       &quot;迷失于腐败中&quot;,
+    name:       &quot;Lost in Corruption&quot;,
     description:function(character)
     {
-        return &quot;生长的冲动欲求不满，你一直处于高潮的边缘。\n&#39;淫欲本能&#39;、&#39;腐化冲动&#39;、&#39;腐化疗愈&#39;与&#39;传播淫欲&#39;将成为随机出现的战斗行动。&quot;; 
+        return &quot;The urge to grow is unsatiable, you are constantly on the verge of orgasm.\n &#39;Lustful Instincts&#39;, &#39;Corrupted Urges&#39;, &#39;Corrupted Remedy&#39; and &#39;Infectious Lust&#39; will replace random fight moves.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33827,10 +33827,10 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_LostInCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="504" name="Ability_MajorCorruption" tags="" position="475,6350" size="100,100">&lt;&lt;set setup.Ability_MajorCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MajorCorruption&quot;,
-    name:       &quot;严重腐化&quot;,
+    name:       &quot;Major Corruption&quot;,
     description:function(character)
     {
-        return &quot;你的血管里流淌着非常多的腐败。\n &#39;淫欲本能&#39;和&#39;腐化冲动&#39;将成为随机出现的战斗行动。&quot;; 
+        return &quot;Very high amounts of Corruption flows through your veins.\n &#39;Lustful Instincts&#39; and &#39;Corrupted Urges&#39; will replace random fight moves.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33867,10 +33867,10 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_MajorCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="505" name="Ability_MinorCorruption" tags="" position="600,6350" size="100,100">&lt;&lt;set setup.Ability_MinorCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MinorCorruption&quot;,
-    name:       &quot;轻微腐化&quot;,
+    name:       &quot;Minor Corruption&quot;,
     description:function(character)
     {
-        return &quot;大量的腐败在你体内流动。\n &#39;淫欲本能&#39;将成为随机出现的战斗行动。&quot;; 
+        return &quot;A substantial amount of Corruption flows within you.\n &#39;Lustful Instincts&#39; will replace random fight moves.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33907,10 +33907,10 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_MinorCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="506" name="Ability_OverwhelmingCorruption" tags="" position="725,6350" size="100,100">&lt;&lt;set setup.Ability_OverwhelmingCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_OverwhelmingCorruption&quot;,
-    name:       &quot;势不可挡之腐化&quot;,
+    name:       &quot;Overwhelming Corruption&quot;,
     description:function(character)
     {
-        return &quot;腐败淹没了你的每一个身体部分。\n&#39;淫欲本能&#39;、&#39;腐化冲动&#39;和&#39;腐化疗愈&#39;将成为随机出现的战斗行动。&quot;; 
+        return &quot;Corruption overwhelms every part of you.\n &#39;Lustful Instincts&#39;, &#39;Corrupted Urges&#39; and &#39;Corrupted Remedy&#39; will replace random fight moves.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33947,16 +33947,16 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_OverwhelmingCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="507" name="Ability_ProcessingCorruption" tags="" position="850,6350" size="100,100">&lt;&lt;set setup.Ability_ProcessingCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_ProcessingCorruption&quot;,
-    name:       &quot;处理腐化&quot;,
+    name:       &quot;Processing Corruption&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData != undefined)
         {
-            let displayString = &quot;你已经被暴露在腐化中。\n&quot;;
+            let displayString = &quot;You have been exposed to Corruption.\n&quot;;
 
             if(character.info.accumulatedCorruption &gt; 0)
             {
-                displayString += &quot;在你下一次休息时，你将获得&quot;+character.info.accumulatedCorruption+&quot;点腐化值。&quot;;
+                displayString += &quot;You will gain &quot;+character.info.accumulatedCorruption+&quot; Corruption next time you rest.&quot;;
             }
 
             return displayString
@@ -34006,10 +34006,10 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_ProcessingCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="508" name="Ability_Uncorrupted" tags="" position="975,6350" size="100,100">&lt;&lt;set setup.Ability_Uncorrupted = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Uncorrupted&quot;,
-    name:       &quot;未腐化&quot;,
+    name:       &quot;Uncorrupted&quot;,
     description:function(character)
     {
-        return &quot;你的身体正常地代谢腐败。&quot;; 
+        return &quot;Your body processes Corruption normally.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -34044,16 +34044,16 @@ maxRank: 5
 
 &lt;&lt;run setup.Ability_Uncorrupted.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="509" name="Achievement_BaptismInCorruption" tags="" position="1100,6350" size="100,100">&lt;&lt;set setup.Achievement_BaptismInCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_BaptismInCorruption&quot;,
-    name:       &quot;腐败洗礼&quot;,
+    name:       &quot;Baptism In Corruption&quot;,
     description:function(character)
     {
-        return &quot;又一个人加入了这个事业，又一个人被赋予了无限的淫欲。&quot;; 
+        return &quot;Another one joins the cause, another one sired into infinite lust.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_BaptismInCorruption.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_BaptismInCorruption.achievementInfo = &quot;使对手达到150以上的腐败值。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_BaptismInCorruption.achievementInfo = &quot;Make an opponent reach over 150 Corruption.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_BaptismInCorruption.addBehaviour(
     &quot;start&quot;,
@@ -34078,16 +34078,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="510" name="Achievement_CockRingOfTheBind" tags="" position="1225,6350" size="100,100">&lt;&lt;set setup.Achievement_CockRingOfTheBind = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_CockRingOfTheBind&quot;,
-    name:       &quot;绑定者的阴茎环&quot;,
+    name:       &quot;Cock Ring of the Bind&quot;,
     description:function(character)
     {
-        return &quot;你已经支配了绑定者，它现在发誓要把你变成一个支配性的战士。&quot;; 
+        return &quot;You have dominated the Bind, and it now vows to turn you into a dominant warrior.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_CockRingOfTheBind.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_CockRingOfTheBind.achievementInfo = &quot;完全支配了戒指的精神。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_CockRingOfTheBind.achievementInfo = &quot;Completely dominate the spirit of the ring.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_CockRingOfTheBind.addBehaviour(
     &quot;start&quot;,
@@ -34112,16 +34112,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="511" name="Achievement_CollarOfTheBind" tags="" position="100,6475" size="100,100">&lt;&lt;set setup.Achievement_CollarOfTheBind = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_CollarOfTheBind&quot;,
-    name:       &quot;绑定者的项圈&quot;,
+    name:       &quot;Collar of the Bind&quot;,
     description:function(character)
     {
-        return &quot;你已经服从了绑定者。他在你灵魂中的存在是永恒的。&quot;; 
+        return &quot;You have submitted to the Bind. His presence within your soul is ever present.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_CollarOfTheBind.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_CollarOfTheBind.achievementInfo = &quot;完全服从于节奏的精神。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_CollarOfTheBind.achievementInfo = &quot;Completely submit to the spirit of the ring.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_CollarOfTheBind.addBehaviour(
     &quot;start&quot;,
@@ -34146,16 +34146,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="512" name="Achievement_DamnatoryKnowledge" tags="" position="225,6475" size="100,100">&lt;&lt;set setup.Achievement_DamnatoryKnowledge = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_DamnatoryKnowledge&quot;,
-    name:       &quot;被诅咒的知识&quot;,
+    name:       &quot;Damnatory Knowledge&quot;,
     description:function(character)
     {
-        return &quot;卡纳塔已经了解了黑日的位置。&quot;; 
+        return &quot;Kanathar has learned about the location of The Black Sun.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_DamnatoryKnowledge.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_DamnatoryKnowledge.achievementInfo = &quot;向你的主人传播禁忌的知识。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_DamnatoryKnowledge.achievementInfo = &quot;Spread forbidden knowledge to your master.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_DamnatoryKnowledge.addBehaviour(
     &quot;start&quot;,
@@ -34180,16 +34180,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="513" name="Achievement_ExplorerOfCorruptedDepths" tags="" position="350,6475" size="100,100">&lt;&lt;set setup.Achievement_ExplorerOfCorruptedDepths = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_ExplorerOfCorruptedDepths&quot;,
-    name:       &quot;腐化深渊的探索者&quot;,
+    name:       &quot;Explorer of Corrupted Depths&quot;,
     description:function(character)
     {
-        return &quot;你已经经历了尼克斯的所有扭曲挑战。&quot;; 
+        return &quot;You have experienced all of Nyx&#39;s twisted challenges.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_ExplorerOfCorruptedDepths.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_ExplorerOfCorruptedDepths.achievementInfo = &quot;完全探索尼克斯城堡的每个房间。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_ExplorerOfCorruptedDepths.achievementInfo = &quot;Complete every room of Nyx&#39;s castle.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_ExplorerOfCorruptedDepths.addBehaviour(
     &quot;start&quot;,
@@ -34214,10 +34214,10 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="514" name="Achievement_GodAmongstMen" tags="" position="475,6475" size="100,100">&lt;&lt;set setup.Achievement_GodAmongstMen = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_GodAmongstMen&quot;,
-    name:       &quot;人中之神&quot;,
+    name:       &quot;God Amongst Men&quot;,
     description:function(character)
     {
-        return &quot;诸神在不断思考你的存在。部分是出于兴趣，部分是出于恐惧。&quot;; 
+        return &quot;The gods are constantly thinking about you. Partially out of interest, partially out of fear.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -34265,16 +34265,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="515" name="Achievement_HostOfTheSpawns" tags="" position="600,6475" size="100,100">&lt;&lt;set setup.Achievement_HostOfTheSpawns = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_HostOfTheSpawns&quot;,
-    name:       &quot;寄生之主&quot;,
+    name:       &quot;Host of the Spawns&quot;,
     description:function(character)
     {
-        return &quot;他们不断地取悦你，乞求你变成一个畸形的野兽。&quot;;
+        return &quot;They are constantly pleasuring you, begging you to turn into a monstrous beast.&quot;;
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_HostOfTheSpawns.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_HostOfTheSpawns.achievementInfo = &quot;吸取5个尼克斯的幼体。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_HostOfTheSpawns.achievementInfo = &quot;Take in 5 spawns of Nyx.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_HostOfTheSpawns.addBehaviour(
     &quot;start&quot;,
@@ -34300,16 +34300,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="516" name="Achievement_IncompleteMemories" tags="" position="725,6475" size="100,100">&lt;&lt;set setup.Achievement_IncompleteMemories = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_IncompleteMemories&quot;,
-    name:       &quot;不完整的记忆&quot;,
+    name:       &quot;Incomplete Memories&quot;,
     description:function(character)
     {
-        return &quot;你已经走过了最多的路，即使它的目的地仍然遥不可及。你获得“先驱献身”的战斗行动。&quot;; 
+        return &quot;You have crossed the most travelled path, even if its destination is still out of reach. You gain the Herald&#39;s Devotion fight move.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_IncompleteMemories.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_IncompleteMemories.achievementInfo = &quot;达到主要故事路径的终点。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_IncompleteMemories.achievementInfo = &quot;Reach the end of the main story path.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_IncompleteMemories.addBehaviour(
     &quot;start&quot;,
@@ -34335,16 +34335,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="517" name="Achievement_LordOfTheSpawns" tags="" position="850,6475" size="100,100">&lt;&lt;set setup.Achievement_LordOfTheSpawns = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_LordOfTheSpawns&quot;,
-    name:       &quot;寄生君主&quot;,
+    name:       &quot;Lord of the Spawns&quot;,
     description:function(character)
     {
-        return &quot;它们的需求现在就是你自己的需求。它们必须生长……它们必须传播……&quot;;
+        return &quot;Their need is now your own. They must grow... They must spread...&quot;;
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_LordOfTheSpawns.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_LordOfTheSpawns.achievementInfo = &quot;吸取15个尼克斯的幼体。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_LordOfTheSpawns.achievementInfo = &quot;Take in 15 spawns of Nyx.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_LordOfTheSpawns.addBehaviour(
     &quot;start&quot;,
@@ -34371,16 +34371,16 @@ maxRank: 5
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="518" name="Achievement_MasterOfTheBarrens" tags="" position="975,6475" size="100,100">&lt;&lt;set setup.Achievement_MasterOfTheBarrens = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Achievement_MasterOfTheBarrens&quot;,
-    name:       &quot;荒漠的主宰&quot;,
+    name:       &quot;Master of the Barrens&quot;,
     description:function(character)
     {
-        return &quot;荒漠对你来说就像家一样。&quot;; 
+        return &quot;You know the Barrens inside and out.&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_MasterOfTheBarrens.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_MasterOfTheBarrens.achievementInfo = &quot;完成100次远征。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_MasterOfTheBarrens.achievementInfo = &quot;Accomplish 100 expeditions.&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_MasterOfTheBarrens.addBehaviour(
     &quot;start&quot;,
