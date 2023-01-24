@@ -31496,10 +31496,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_NyxParasiteInfection_2.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="447" name="Ability_Oath_Containment" tags="" position="850,5600" size="100,100">&lt;&lt;set setup.Ability_Oath_Containment = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Oath_Containment&quot;,
-    name:       &quot;Oath of Containment&quot;,
+    name:       &quot;遏制之誓&quot;,
     description:function(character)
     {
-        return &quot;Chain shaped tattoos race up your arms.\nThis oath lasts for as long as the cultists of Nyx remain sealed.&quot;; 
+        return &quot;链式花纹纹在你的手臂上。\n只要尼克斯的信徒们保持被封印的状态，这一誓言就会持续。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31517,10 +31517,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_Oath_Containment.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="448" name="Ability_Oath_Nyx" tags="" position="975,5600" size="100,100">&lt;&lt;set setup.Ability_Oath_Nyx = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Oath_Nyx&quot;,
-    name:       &quot;Oath of Nyx&quot;,
+    name:       &quot;尼克斯之誓&quot;,
     description:function(character)
     {
-        return &quot;A purple vortex shaped tattoo curls around the left side of your torso.\nThis oath lasts for as long as you strive to unleash Nyx upon the world.&quot;; 
+        return &quot;紫色漩涡状纹身卷曲在你的躯干左侧。\n只要你努力向世界传播尼克斯，这个誓言就会一直持续下去。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31539,10 +31539,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_Oath_Nyx.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="449" name="Ability_Oathbreaker" tags="" position="1100,5600" size="100,100">&lt;&lt;set setup.Ability_Oathbreaker = setup.AbilityDataFactory.createAbilityData({
 id:         &quot;Ability_Oathbreaker&quot;,
-name:       &quot;Oathbreaker&quot;,
+name:       &quot;破誓者&quot;,
 description:function(character)
 {
-    return &quot;The mark of the oathbreaker burns around your arm.\nYou are branded as a traitor.&quot;; 
+    return &quot;破誓者的印记在你的手臂上烧灼。\n你被打上了叛徒的烙印。&quot;; 
 },
 maxRank: 1
 })&gt;&gt;
@@ -31555,20 +31555,20 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_Oathbreaker.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="450" name="Ability_OrgasmicGrowth" tags="" position="1225,5600" size="100,100">&lt;&lt;set setup.Ability_OrgasmicGrowth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_OrgasmicGrowth&quot;,
-    name:       &quot;Orgasmic Growth&quot;, 
+    name:       &quot;性高潮生长&quot;, 
     description:function(character, abilityRuntimeData){
         if(abilityRuntimeData == undefined)
         {
             return setup.processFlavours(
                 character,
-                &quot;Whenever you reach max arousal, your body grows &quot;+setup.getLength(2.5)+&quot;, your @[all|cocks|one=grows~more=grows] &quot;+setup.getLength(1)+&quot; and your @[all|balls|noverb] grow &quot;+setup.getLength(0.5)+&quot;.&quot;
+                &quot;无论何时，当你的唤醒值达到最高，你的身体将会生长&quot;+setup.getLength(2.5)+&quot;，你的@[all|cocks|one=增长了~more=增长了]&quot;+setup.getLength(1)+&quot;并且你的@[all|balls|noverb]生长了&quot;+setup.getLength(0.5)+&quot;。&quot;
             )
         }
         else
         {
             return setup.processFlavours(
                 character,
-                &quot;Whenever you reach max arousal, your body grows &quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 2.5))+&quot;, your @[all|cocks|one=grows~more=grows] &quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1))+&quot; and your @[all|balls|noverb] grow &quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5))+&quot;.&quot; 
+                &quot;无论何时，当你的唤醒值达到最高，你的身体将会生长&quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 2.5))+&quot;，你的@[all|cocks|one=会增长~more=会增长] &quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1))+&quot;并且你的@[all|balls|noverb]会生长&quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5))+&quot;.&quot; 
             )
         }
     },
@@ -31593,9 +31593,9 @@ maxRank: 1
         setup.applyGrowth(self, &quot;height&quot;, abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 2.5));
         setup.applyGrowth(self, &quot;muscles&quot;, abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.5));
 
-        var displayString = setup.processFlavours(self, &quot;Your arousal becomes too intense to contain! You feel your @[all|balls|noverb] swell as an incredible orgasm builds! You erupt, cum spraying out of your @[all|cocks|noverb] and coating &quot;)
-        displayString += setup.processFlavours(self, &quot;your enemy with your scent and alabaster fluid. Your eyes widen as another wave takes you, an orgasm so intense that your body adapts to cater for its next impressive release!&quot;)
-        displayString += setup.processFlavours(self, &quot; Your body, @[all|cocks|noverb] and @[all|balls|noverb] have all grown in size!&quot;)
+        var displayString = setup.processFlavours(self, &quot;你的性欲变得太强烈了，你几乎无法控制！你感觉到你的@[all|balls|noverb]膨胀了，因为一波令人难以置信的高潮正在形成! 你爆发了，精液从你的@[all|cocks|noverb]中喷出，覆盖了你的身体。&quot;)
+        displayString += setup.processFlavours(self, &quot;你的敌人和你的气味与白玉般的液体。你的眼睛睁得大大的，因为另一波高潮带走了你，这波高潮如此强烈，以至于你的身体适应了下一次令人印象深刻的喷发。&quot;)
+        displayString += setup.processFlavours(self, &quot;你的身体，@[all|cocks|noverb]和@[all|balls|noverb]规模都增大了!&quot;)
 
         return displayString //not sure if you want the actual numbers in the string above.
     }
@@ -31612,10 +31612,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_OrgasmicGrowth.setCategory(setup.AbilityCategory.GROWTH)&gt;&gt;
 &lt;&lt;set setup.Ability_OrgasmicGrowth.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="451" name="Ability_ParryEnergy" tags="" position="100,5725" size="100,100">&lt;&lt;set setup.Ability_ParryEnergy = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_ParryEnergy&quot;,
-    name:       &quot;Parry Energy&quot;, 
+    name:       &quot;格挡蓄能&quot;, 
     description:function(character)
     {
-        return &quot;Your body is filled with the power of your last parried attack.&quot;; 
+        return &quot;你的身体充满了你最后一次招架的攻击的力量。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31637,17 +31637,17 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_ParryEnergy.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="452" name="Ability_PiercingPrecision" tags="" position="225,5725" size="100,100">&lt;&lt;set setup.Ability_PiercingPrecision = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_PiercingPrecision&quot;,
-    name:       &quot;Piercing Precision&quot;, 
+    name:       &quot;精确穿甲&quot;, 
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            let displayString = &quot;Your strikes always land true. Increases critical hits damage by 15%.&quot;;
+            let displayString = &quot;你的伤害总是真实。增加15%的暴击伤害。&quot;;
             return displayString
         }
         else
         {
-           let displayString = &quot;Your strikes always land true. Increases critical hits damage by &quot;+(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.15) * 100).toFixed(2).replace(/\.00$/, &#39;&#39;) + &quot;%&quot;+&quot;.&quot;;
+           let displayString = &quot;你的伤害总是真实。使暴击伤害增加&quot;+(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.15) * 100).toFixed(2).replace(/\.00$/, &#39;&#39;) + &quot;%&quot;+&quot;。&quot;;
             return displayString
         }
     },
@@ -31679,10 +31679,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_PiercingPrecision.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_PiercingPrecision.setGrade(setup.AbilityGrade.MEDIUM)&gt;&gt;</tw-passagedata><tw-passagedata pid="453" name="Ability_PromiseOfServitude" tags="" position="350,5725" size="100,100">&lt;&lt;set setup.Ability_PromiseOfServitude = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_PromiseOfServitude&quot;,
-    name:       &quot;Promise of Servitude&quot;,
+    name:       &quot;劳役许诺&quot;,
     description:function(character)
     {
-        return &quot;The minotaur has promised to serve you once you take the black sun for yourself.&quot;; 
+        return &quot;牛头人已承诺一旦你将黑太阳据为己有，就会为你服务。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31699,10 +31699,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_PromiseOfServitude.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="454" name="Ability_ServantOfKanathar" tags="" position="475,5725" size="100,100">&lt;&lt;set setup.Ability_ServantOfKanathar = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_ServantOfKanathar&quot;,
-    name:       &quot;Servant of Kanathar&quot;,
+    name:       &quot;卡纳塔尔之仆&quot;,
     description:function(character)
     {
-        return &quot;The essence of demon Kanathar flows within you.&quot;; 
+        return &quot;恶魔卡纳塔尔的精华在你体内流动。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -31728,16 +31728,16 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_ServantOfKanathar.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="455" name="Ability_SigilOfPerception" tags="" position="600,5725" size="100,100">&lt;&lt;set setup.Ability_SigilOfPerception = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_SigilOfPerception&quot;,
-    name:       &quot;Sigil of Perception&quot;,
+    name:       &quot;感知魔印&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Improves critical chance of next attack by 30%&quot;;
+            return &quot;提高下一次攻击30%的暴击率&quot;;
         }
         else
         {
-            return &quot;Improves critical chance of next attack by &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 30) + &quot;%&quot;;
+            return &quot;提高下一次攻击&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 30) + &quot;%的暴击率&quot;;
         }
         
     },
@@ -31774,10 +31774,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_SigilOfPerception.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="456" name="Ability_Global_BallsTier_First" tags="" position="725,5725" size="100,100">&lt;&lt;set setup.Ability_BallsTier_First = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BallsTier_First&quot;,
-    name:       &quot;Balls Tier 1&quot;,
+    name:       &quot;1级阴囊&quot;,
     description:function(character)
     {
-        return &quot;You have average sized balls.&quot;; 
+        return &quot;你的阴囊一般大小。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31815,10 +31815,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_BallsTier_First.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_BallsTier_First.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="457" name="Ability_Global_BallsTier_Second" tags="" position="850,5725" size="100,100">&lt;&lt;set setup.Ability_BallsTier_Second = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BallsTier_Second&quot;,
-    name:       &quot;Balls Tier 2&quot;,
+    name:       &quot;2级阴囊&quot;,
     description:function(character)
     {
-        return &quot;Your balls are larger than apples.&quot;; 
+        return &quot;你的林檎比林檎还大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31857,10 +31857,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_BallsTier_Second.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_BallsTier_Second.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="458" name="Ability_Global_BallsTier_Third" tags="" position="975,5725" size="100,100">&lt;&lt;set setup.Ability_BallsTier_Third = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BallsTier_Third&quot;,
-    name:       &quot;Balls Tier 3&quot;,
+    name:       &quot;3级阴囊&quot;,
     description:function(character)
     {
-        return &quot;Your balls are larger than a normal person&#39;s hands.&quot;; 
+        return &quot;你的阴囊比正常人的手大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31899,10 +31899,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_BallsTier_Third.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_BallsTier_Third.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="459" name="Ability_Global_BallsTier_Fourth" tags="" position="1100,5725" size="100,100">&lt;&lt;set setup.Ability_BallsTier_Fourth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BallsTier_Fourth&quot;,
-    name:       &quot;Balls Tier 4&quot;,
+    name:       &quot;4级阴囊&quot;,
     description:function(character)
     {
-        return &quot;Your balls are larger than soda cans.&quot;; 
+        return &quot;你的阴囊比汽水罐还大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31941,10 +31941,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_BallsTier_Fourth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_BallsTier_Fourth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="460" name="Ability_Global_BallsTier_Fifth" tags="" position="1225,5725" size="100,100">&lt;&lt;set setup.Ability_BallsTier_Fifth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BallsTier_Fifth&quot;,
-    name:       &quot;Balls Tier 5&quot;,
+    name:       &quot;5级阴囊&quot;,
     description:function(character)
     {
-        return &quot;Your balls are larger than 2 liter bottles.&quot;; 
+        return &quot;你的阴囊比2升的瓶子还大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -31983,10 +31983,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_BallsTier_Fifth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_BallsTier_Fifth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="461" name="Ability_Global_BallsTier_Sixth" tags="" position="100,5850" size="100,100">&lt;&lt;set setup.Ability_BallsTier_Sixth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_BallsTier_Sixth&quot;,
-    name:       &quot;Balls Tier 6&quot;,
+    name:       &quot;6级阴囊&quot;,
     description:function(character)
     {
-        return &quot;Your balls are larger than beach balls.&quot;; 
+        return &quot;你的阴囊比沙滩球还大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32024,10 +32024,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_BallsTier_Sixth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_BallsTier_Sixth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="462" name="Ability_Global_CockTier_First" tags="" position="225,5850" size="100,100">&lt;&lt;set setup.Ability_CockTier_First = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CockTier_First&quot;,
-    name:       &quot;Cock Tier 1&quot;,
+    name:       &quot;1级阴茎&quot;,
     description:function(character)
     {
-        return &quot;You have an average sized cock.&quot;;
+        return &quot;你有一个平均尺寸的阴茎。&quot;;
     },
     maxRank: 1
 })&gt;&gt;
@@ -32065,10 +32065,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_CockTier_First.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_CockTier_First.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="463" name="Ability_Global_CockTier_Second" tags="" position="350,5850" size="100,100">&lt;&lt;set setup.Ability_CockTier_Second = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CockTier_Second&quot;,
-    name:       &quot;Cock Tier 2&quot;,
+    name:       &quot;2级阴茎&quot;,
     description:function(character)
     {
-        return &quot;You have a monster cock.&quot;; 
+        return &quot;你有一个怪物般的阴茎。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32107,10 +32107,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_CockTier_Second.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_CockTier_Second.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="464" name="Ability_Global_CockTier_Third" tags="" position="475,5850" size="100,100">&lt;&lt;set setup.Ability_CockTier_Third = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CockTier_Third&quot;,
-    name:       &quot;Cock Tier 3&quot;,
+    name:       &quot;3级阴茎&quot;,
     description:function(character)
     {
-        return &quot;Your cock is bigger than a 2 litter bottle.&quot;; 
+        return &quot;你的鸡巴比一个2升的瓶子还大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32149,10 +32149,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_CockTier_Third.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_CockTier_Third.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="465" name="Ability_Global_CockTier_Fourth" tags="" position="600,5850" size="100,100">&lt;&lt;set setup.Ability_CockTier_Fourth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CockTier_Fourth&quot;,
-    name:       &quot;Cock Tier 4&quot;,
+    name:       &quot;4级阴茎&quot;,
     description:function(character)
     {
-        return &quot;Your cock is bigger than a bowling pin.&quot;; 
+        return &quot;你的鸡巴比保龄球瓶还大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32191,10 +32191,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_CockTier_Fourth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_CockTier_Fourth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="466" name="Ability_Global_CockTier_Fifth" tags="" position="725,5850" size="100,100">&lt;&lt;set setup.Ability_CockTier_Fifth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CockTier_Fifth&quot;,
-    name:       &quot;Cock Tier 5&quot;,
+    name:       &quot;5级阴茎&quot;,
     description:function(character)
     {
-        return &quot;Your cock is longer than a baseball bat&quot;; 
+        return &quot;你的阴茎比棒球棒还长。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32233,10 +32233,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_CockTier_Fifth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_CockTier_Fifth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="467" name="Ability_Global_CockTier_Sixth" tags="" position="850,5850" size="100,100">&lt;&lt;set setup.Ability_CockTier_Sixth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CockTier_Sixth&quot;,
-    name:       &quot;Cock Tier 6&quot;,
+    name:       &quot;6级阴茎&quot;,
     description:function(character)
     {
-        return &quot;Your cock is bigger than an average person.&quot;; 
+        return &quot;你的鸡巴比一般人的大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32274,10 +32274,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_CockTier_Sixth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_CockTier_Sixth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="468" name="Ability_Global_HeightSizeTier_1" tags="" position="975,5850" size="100,100">&lt;&lt;set setup.Ability_HeightSizeTier_First = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HeightSizeTier_First&quot;,
-    name:       &quot;Height Tier 1&quot;,
+    name:       &quot;1级身高&quot;,
     description:function(character)
     {
-        return &quot;You are an average person&#39;s height.&quot;; 
+        return &quot;你有着普通人的身高。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32315,10 +32315,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_HeightSizeTier_First.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_HeightSizeTier_First.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="469" name="Ability_Global_HeightSizeTier_2" tags="" position="1100,5850" size="100,100">&lt;&lt;set setup.Ability_HeightSizeTier_Second = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HeightSizeTier_Second&quot;,
-    name:       &quot;Height Tier 2&quot;,
+    name:       &quot;2级身高&quot;,
     description:function(character)
     {
-        return &quot;You are taller than an average person.&quot;; 
+        return &quot;你比普通人要高。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32357,10 +32357,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_HeightSizeTier_Second.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_HeightSizeTier_Second.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="470" name="Ability_Global_HeightSizeTier_3" tags="" position="1225,5850" size="100,100">&lt;&lt;set setup.Ability_HeightSizeTier_Third = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HeightSizeTier_Third&quot;,
-    name:       &quot;Height Tier 3&quot;,
+    name:       &quot;3级身高&quot;,
     description:function(character)
     {
-        return &quot;Most people barely reach your chest.&quot;; 
+        return &quot;大多数人的头几乎碰不到你的胸口。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32399,10 +32399,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_HeightSizeTier_Third.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_HeightSizeTier_Third.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="471" name="Ability_Global_HeightSizeTier_4" tags="" position="100,5975" size="100,100">&lt;&lt;set setup.Ability_HeightSizeTier_Fourth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HeightSizeTier_Fourth&quot;,
-    name:       &quot;Height Tier 4&quot;,
+    name:       &quot;4级身高&quot;,
     description:function(character)
     {
-        return &quot;You are taller than an average house.&quot;; 
+        return &quot;你比普通的房子还要高。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32441,10 +32441,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_HeightSizeTier_Fourth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_HeightSizeTier_Fourth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="472" name="Ability_Global_HeightSizeTier_5" tags="" position="225,5975" size="100,100">&lt;&lt;set setup.Ability_HeightSizeTier_Fifth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HeightSizeTier_Fifth&quot;,
-    name:       &quot;Height Tier 5&quot;,
+    name:       &quot;5级身高&quot;,
     description:function(character)
     {
-        return &quot;You are taller than an electric pole.&quot;; 
+        return &quot;你比电线杆还要高。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32482,10 +32482,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_HeightSizeTier_Fifth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_HeightSizeTier_Fifth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="473" name="Ability_Global_HeightSizeTier_6" tags="" position="350,5975" size="100,100">&lt;&lt;set setup.Ability_HeightSizeTier_Sixth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_HeightSizeTier_Sixth&quot;,
-    name:       &quot;Height Tier 6&quot;,
+    name:       &quot;6级身高&quot;,
     description:function(character)
     {
-        return &quot;You stand taller than a 6-story building.&quot;; 
+        return &quot;你站起来比6层楼还高。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32522,10 +32522,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_HeightSizeTier_Sixth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_HeightSizeTier_Sixth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="474" name="Ability_Global_MuscleTier_First" tags="" position="475,5975" size="100,100">&lt;&lt;set setup.Ability_MuscleTier_First = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MuscleTier_First&quot;,
-    name:       &quot;Muscles Tier 1&quot;,
+    name:       &quot;1级肌肉&quot;,
     description:function(character)
     {
-        return &quot;You somewhat fit.&quot;; 
+        return &quot;你的肌肉有点儿适合。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32563,10 +32563,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_MuscleTier_First.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_MuscleTier_First.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="475" name="Ability_Global_MuscleTier_Second" tags="" position="600,5975" size="100,100">&lt;&lt;set setup.Ability_MuscleTier_Second = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MuscleTier_Second&quot;,
-    name:       &quot;Muscles Tier 2&quot;,
+    name:       &quot;2级肌肉&quot;,
     description:function(character)
     {
-        return &quot;You are ripped. It&#39;s becoming hard to find clothes that fit you.&quot;; 
+        return &quot;你的如撕裂般。现在很难找到适合你的衣服。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32605,10 +32605,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_MuscleTier_Second.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_MuscleTier_Second.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="476" name="Ability_Global_MuscleTier_Third" tags="" position="725,5975" size="100,100">&lt;&lt;set setup.Ability_MuscleTier_Third = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MuscleTier_Third&quot;,
-    name:       &quot;Muscles Tier 3&quot;,
+    name:       &quot;3级肌肉&quot;,
     description:function(character)
     {
-        return &quot;You are massive, bigger than any warrior you&#39;ve encountered.&quot;; 
+        return &quot;你体型庞大，比你曾遇到的任何战士都要大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32647,10 +32647,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_MuscleTier_Third.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_MuscleTier_Third.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="477" name="Ability_Global_MuscleTier_Fourth" tags="" position="850,5975" size="100,100">&lt;&lt;set setup.Ability_MuscleTier_Fourth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MuscleTier_Fourth&quot;,
-    name:       &quot;Muscles Tier 4&quot;,
+    name:       &quot;4级肌肉&quot;,
     description:function(character)
     {
-        return &quot;You are a walking powerhouse. Legends about your powerful body are spreading.&quot;; 
+        return &quot;你是行走的身强力壮。关于你强大身体的传说正在传播。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32689,10 +32689,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_MuscleTier_Fourth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_MuscleTier_Fourth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="478" name="Ability_Global_MuscleTier_Fifth" tags="" position="975,5975" size="100,100">&lt;&lt;set setup.Ability_MuscleTier_Fifth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MuscleTier_Fifth&quot;,
-    name:       &quot;Muscles Tier 5&quot;,
+    name:       &quot;5级肌肉&quot;,
     description:function(character)
     {
-        return &quot;You are a hulking powerhouse, gods would kill for a body like yours. &quot;; 
+        return &quot;你有着庞大的力量，神会因你这样雄伟的身体而被弑杀。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32731,10 +32731,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_MuscleTier_Fifth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_MuscleTier_Fifth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="479" name="Ability_Global_MuscleTier_Sixth" tags="" position="1100,5975" size="100,100">&lt;&lt;set setup.Ability_MuscleTier_Sixth = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MuscleTier_Sixth&quot;,
-    name:       &quot;Muscles Tier 6&quot;,
+    name:       &quot;6级肌肉&quot;,
     description:function(character)
     {
-        return &quot;No god or mortal could overcome your bulking, mountainous muscles. Every flex is a booming statement.&quot;; 
+        return &quot;任何凡人或神都无法战胜你庞大的、如山的肌肉。每一次弯曲都是一个响亮的声明。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32772,10 +32772,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_MuscleTier_Sixth.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_MuscleTier_Sixth.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="480" name="Ability_Global_Overwhelming_Balls" tags="" position="1225,5975" size="100,100">&lt;&lt;set setup.Ability_Overwhelming_Balls = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Overwhelming_Balls&quot;,
-    name:       &quot;Overwhelming Balls&quot;,
+    name:       &quot;势不可挡之阴囊&quot;,
     description:function(character)
     {
-        return &quot;Your balls tower over your opponent.&quot;; 
+        return &quot;你的阴囊比你的对手要大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32817,10 +32817,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_Overwhelming_Balls.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_Overwhelming_Balls.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="481" name="Ability_Global_All_Consuming_Balls" tags="" position="100,6100" size="100,100">&lt;&lt;set setup.Ability_All_Consuming_Balls = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_All_Consuming_Balls&quot;,
-    name:       &quot;All-Consuming Balls&quot;,
+    name:       &quot;令人注目之阴囊&quot;,
     description:function(character)
     {
-        return &quot;Your balls completely overwhelm your opponent.&quot;; 
+        return &quot;你的阴囊完全压倒了对手。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32862,10 +32862,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_All_Consuming_Balls.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_All_Consuming_Balls.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="482" name="Ability_Global_Bigger_Than_Target_1" tags="" position="225,6100" size="100,100">&lt;&lt;set setup.Ability_Bigger_Than_Target = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Bigger_Than_Target&quot;,
-    name:       &quot;Looming Over Them&quot;,
+    name:       &quot;笼罩对手之影&quot;,
     description:function(character)
     {
-        return &quot;A shadow is cast over your opponent.&quot;; 
+        return &quot;你的身体在你的对手身上投下一片阴影。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32907,10 +32907,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_Bigger_Than_Target.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_Bigger_Than_Target.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="483" name="Ability_Global_Bigger_Than_Target_2" tags="" position="350,6100" size="100,100">&lt;&lt;set setup.Ability_Looming_Over_Target = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Looming_Over_Target&quot;,
-    name:       &quot;Towering Over Them&quot;,
+    name:       &quot;耸立于对手之上&quot;,
     description:function(character)
     {
-        return &quot;The size difference between you two is significant.&quot;; 
+        return &quot;你们两个人之间的体型差异很大。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -32954,10 +32954,10 @@ maxRank: 1
 &lt;&lt;run setup.Ability_Looming_Over_Target.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_Looming_Over_Target.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="484" name="Ability_Global_Bigger_Than_Target_3" tags="" position="475,6100" size="100,100">&lt;&lt;set setup.Ability_Overwhelming_Target = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Overwhelming_Target&quot;,
-    name:       &quot;Overwhelming Presence&quot;,
+    name:       &quot;铺天盖地般的存在&quot;,
     description:function(character)
     {
-        return &quot;Mass and power overtakes the scenery.&quot;; 
+        return &quot;质量和力量超越了风景。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33000,21 +33000,21 @@ maxRank: 1
 &lt;&lt;run setup.Ability_Overwhelming_Target.setAsGlobalAbility()&gt;&gt;
 &lt;&lt;run setup.Ability_Overwhelming_Target.setFilter(setup.AbilityFilter.GLOBAL)&gt;&gt;</tw-passagedata><tw-passagedata pid="485" name="Ability_SombrevesWhisper" tags="" position="600,6100" size="100,100">&lt;&lt;set setup.Ability_SombrevesWhisper = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_SombrevesWhisper&quot;,
-    name:       &quot;Sombreve&#39;s Whisper&quot;,
+    name:       &quot;恶魔Sombreve的低语&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
             var displayString = &quot;&quot;;
-            displayString += &quot;Temporarily gain 2 arousal per turn for each turn you have been in combat.\n&quot;;
-            displayString += &quot;Temporarily gain 5% Corruption per turn for each turn you have been in combat.&quot;; 
+            displayString += &quot;每回合暂时获得2个唤醒值。\n&quot;;
+            displayString += &quot;在战斗中每回合暂时获得5%的腐化值。&quot;; 
             return displayString;
         }
         else
         {
             var displayString = &quot;&quot;;
-            displayString += &quot;Temporarily gain &quot;+ (2 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)) +&quot; arousal per turn for each turn you have been in combat.\n&quot;;
-            displayString += &quot;Temporarily gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;% Corruption for each turn you have been in combat.&quot;; 
+            displayString += &quot;每回合暂时获得&quot;+ (2 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)) +&quot;个唤醒值。\n&quot;;
+            displayString += &quot;在战斗中每回合暂时获得&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5)+&quot;%的腐化值。&quot;; 
             return displayString;
         }
     },
@@ -33065,10 +33065,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_SombrevesWhisper.setCategory(setup.AbilityCategory.SOMBREVE)&gt;&gt;
 &lt;&lt;set setup.Ability_SombrevesWhisper.setGrade(setup.AbilityGrade.VERYHIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="486" name="Ability_SurvivorOfTheFirstEclipse" tags="" position="725,6100" size="100,100">&lt;&lt;set setup.Ability_SurvivorOfTheFirstEclipse = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_SurvivorOfTheFirstEclipse&quot;,
-    name:       &quot;Survivor of the First Eclipse&quot;,
+    name:       &quot;初次日蚀的幸存者&quot;,
     description:function(character)
     {
-        return &quot;Your body and soul were untainted by the first eclipse.&quot;; 
+        return &quot;你的身体和灵魂没有受到第一次日蚀的污染。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33085,10 +33085,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_SurvivorOfTheFirstEclipse.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="487" name="Ability_TaintedByTheLost" tags="" position="850,6100" size="100,100">&lt;&lt;set setup.Ability_TaintedByTheLost = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_TaintedByTheLost&quot;,
-    name:       &quot;Tainted by the Lost&quot;,
+    name:       &quot;失落者之玷污&quot;,
     description:function(character)
     {
-        return &quot;The seed of Corruption is sown...&quot;; 
+        return &quot;腐化之种已经播下……&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33106,20 +33106,20 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_TaintedByTheLost.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="488" name="Ability_Tank" tags="" position="975,6100" size="100,100">&lt;&lt;set setup.Ability_Tank = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Tank&quot;,
-    name:       &quot;Tank&quot;,
+    name:       &quot;坦克&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            let displayString = &quot;You have a sturdy and resilient body. Your Max HP is increased by 20%&quot;;
-            displayString += &quot; and your stamina is decreased by 5%&quot;
+            let displayString = &quot;你有一个结实而有弹性的身体。你的最大HP增加20%。&quot;;
+            displayString += &quot;并且你的耐力减少5%&quot;
             return displayString
         }
         else
         {
-            let displayString = &quot;You have a sturdy and resilient body. Your Max HP is increased by &quot;;
+            let displayString = &quot;你有一个结实而有弹性的身体。你的最大HP增加&quot;;
             displayString += abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 20) + &quot;%&quot;;
-            displayString += &quot; and your Stamina is decreased by &quot;;
+            displayString += &quot;并且你的耐力减少&quot;;
             displayString += abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 5) + &quot;%&quot;;
             return displayString
         }
@@ -33161,10 +33161,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_Tank.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_Tank.setGrade(setup.AbilityGrade.VERYLOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="489" name="Ability_ToLiveForEcho" tags="" position="1100,6100" size="100,100">&lt;&lt;set setup.Ability_ToLiveForEcho = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_ToLiveForEcho&quot;,
-    name:       &quot;To Live For &lt;&lt;SymbioteName&gt;&gt;&quot;,
+    name:       &quot;为&lt;&lt;SymbioteName&gt;&gt;而活&quot;,
     description: function(character, abilityRuntimeData)
                 {
-                    return &quot;You can only use pleasure self in human form, your stats in &lt;&lt;SymbioteName&gt;&gt; greatly increased.&quot;; 
+                    return &quot;你只能在普通的形态下使用奖励自己的连击行动，此行动在&lt;&lt;SymbioteName&gt;&gt;的状态下增益大大增加。&quot;; 
                 },
     maxRank:    1
 })&gt;&gt;
@@ -33186,9 +33186,9 @@ maxRank: 1
         abilityRuntimeData.modifier.critChanceMods = {mod: setup.mod.ADD, value: 20}
         abilityRuntimeData.modifier.fightMoveIDsMods = {mod: setup.mod.ADD, value: []}
 
-        var displayString = &quot;You feel the presence of &lt;&lt;SymbioteName&gt;&gt; press against your mind. You embrace it, feeling yourself become one with the being that resides within you.&quot;;
-        displayString += &quot;The familiar sensation of &lt;&lt;SymbioteName&gt;&gt; seeping through your pores is suddenly amplified as more and more ooze piles onto your flesh, expanding and taking shape as a&quot;
-        displayString += &quot;terrifyingly powerful and monstrous&quot; + setup.getRace($CharacterSheet_Player.symbiote.anatomy)  + &quot;!&quot;
+        var displayString = &quot;你感觉到&lt;&lt;SymbioteName&gt;&gt;的存在压迫着你的头脑。你拥抱它，感觉你的身心与居住在你体内的生命融为一体。&quot;;
+        displayString += &quot;熟悉的&lt;&lt;SymbioteName&gt;&gt;渗入你的毛孔的感觉突然被放大了，越来越多的渗出物堆积在你的肉体上，扩大并形成了一个&quot;
+        displayString += &quot;可怕、强大且畸形的&quot; + setup.getRace($CharacterSheet_Player.symbiote.anatomy)  + &quot;！&quot;
         return 
     }
 )&gt;&gt;
@@ -33205,7 +33205,7 @@ maxRank: 1
         
         abilityRuntimeData.modifier.fightMoveIDsMods = {mod: setup.mod.REPLACE, value: [setup.FightMove_Masturbate.id]}
 
-        return &quot;You feel &lt;&lt;SymbioteName&gt;&gt; recede back within you. You can almost feel his smile pulling wide.&quot;;
+        return &quot;你感觉到&lt;&lt;SymbioteName&gt;&gt;在你体内退却了。你几乎能感觉到他的笑容在拉大。&quot;;
     }
 )&gt;&gt;
 
@@ -33221,10 +33221,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_ToLiveForEcho.setCategory(setup.AbilityCategory.LUST)&gt;&gt;
 &lt;&lt;set setup.Ability_ToLiveForEcho.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="490" name="Ability_TonicOfStillness" tags="" position="1225,6100" size="100,100">&lt;&lt;set setup.Ability_TonicOfStillness = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_TonicOfStillness&quot;,
-    name:       &quot;Tonic of Stillness&quot;,
+    name:       &quot;冷静滋补&quot;,
     description:function(character)
     {
-        return &quot;The tonic of stillness flows through your body.\n Lasts for 7 expeditions.&quot;; 
+        return &quot;冷静的滋补流过你的身体。\n可持续7次远征。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -33282,17 +33282,17 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_TonicOfStillness.setFilter(setup.AbilityFilter.STATUSEFFECT)&gt;&gt;</tw-passagedata><tw-passagedata pid="491" name="Ability_TorgarsBond" tags="" position="100,6225" size="100,100">&lt;&lt;set setup.Ability_TorgarsBond = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_TorgarsBond&quot;,
-    name:       &quot;Torgar&#39;s Corrupted Bond&quot;,
+    name:       &quot;托加的腐化羁绊&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Torgar&#39;s corruption experiment empowers you.\n You gain 20% of Torgar&#39;s strength stat.&quot;;
+            return &quot;托加的腐化实验赋予了你力量。\n你获得托加20%的力量值。&quot;;
         }
         else
         {
-            let displayString = &quot;Torgar&#39;s corruption experiment empowers you.\n&quot;;
-            displayString += &quot;You gain &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 20) + &quot;% of Torgar&#39;s strength stat.&quot;;
+            let displayString = &quot;托加的腐化实验赋予了你力量。\n&quot;;
+            displayString += &quot;你获得托加&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 20) + &quot;%的力量值。&quot;;
             return displayString;
         }
     },
@@ -33316,10 +33316,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_TorgarsBond.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="492" name="Ability_TorgarsCorruption" tags="" position="225,6225" size="100,100">&lt;&lt;set setup.Ability_TorgarsCorruption = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_TorgarsCorruption&quot;,
-    name:       &quot;Torgar&#39;s Corruption&quot;,
+    name:       &quot;托加的腐败&quot;,
     description:function(character)
     {
-        return &quot;Torgar&#39;s tainted seed empowers you.\n Lasts for 12 days.&quot;; 
+        return &quot;托尔加的污浊种子赋予你力量。\n持续时间为12天。&quot;; 
     },
     maxRank: 999
 })&gt;&gt;
@@ -33364,10 +33364,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_TorgarsCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="493" name="Ability_EmbracedByNyxsLight" tags="" position="350,6225" size="100,100">&lt;&lt;set setup.Ability_EmbracedByNyxsLight = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_EmbracedByNyxsLight&quot;,
-    name:       &quot;Embraced By Nyx&#39;s Light&quot;,
+    name:       &quot;尼克斯光芒之拥&quot;,
     description:function(character)
                 {
-                    return &quot;Your body is absorbing Nyx&#39;s light while in this realm. You gain arousal 40% faster.&quot;; 
+                    return &quot;你的身体在此地时正在不断吸收尼克斯的光芒。你获得唤醒的速度会加快40%。&quot;; 
                 },
     maxRank:    1
 })&gt;&gt;
@@ -33389,10 +33389,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_EmbracedByNyxsLight.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="494" name="Ability_TouchedByNyxsLight" tags="" position="475,6225" size="100,100">&lt;&lt;set setup.Ability_TouchedByNyxsLight = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_TouchedByNyxsLight&quot;,
-    name:       &quot;Touched By Nyx&#39;s Light&quot;,
+    name:       &quot;尼克斯光芒之触&quot;,
     description:function(character)
                 {
-                    return &quot;Your body is absorbing Nyx&#39;s light while in this realm. You gain arousal 15% faster.&quot;; 
+                    return &quot;你的身体在此地时正在不断吸收尼克斯的光芒。你获得唤醒的速度会加快15%。&quot;; 
                 },
     maxRank:    1
 })&gt;&gt;
@@ -33420,16 +33420,16 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_TouchedByNyxsLight.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="495" name="Ability_UnstoppableExpansion" tags="" position="600,6225" size="100,100">&lt;&lt;set setup.Ability_UnstoppableExpansion = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_UnstoppableExpansion&quot;,
-    name:       &quot;Unstoppable Expansion&quot;,
+    name:       &quot;无可阻挡之扩张&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Whenever you gain any amount of growth, add 0.1% of your current size to that amount.&quot;; 
+            return &quot;每当你获得任何数量的生长时，在该数量上追加你当前体型的0.1%。&quot;; 
         }
         else
         {
-            return &quot;Whenever you gain any amount of growth, add &quot;+ abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.1).toFixed(2).replace(/\.00$/, &#39;&#39;) +&quot;% of your current size to that amount.&quot;; 
+            return &quot;每当你获得任何数量的生长时，在该数量上追加你当前体型的&quot;+ abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 0.1).toFixed(2).replace(/\.00$/, &#39;&#39;) +&quot;%。&quot;; 
         }
         
     },
@@ -33465,16 +33465,16 @@ maxRank: 1
 &lt;&lt;set setup.Ability_UnstoppableExpansion.setCategory(setup.AbilityCategory.GROWTH)&gt;&gt;
 &lt;&lt;set setup.Ability_UnstoppableExpansion.setGrade(setup.AbilityGrade.VERYHIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="496" name="Ability_ValiantRush" tags="" position="725,6225" size="100,100">&lt;&lt;set setup.Ability_ValiantRush = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_ValiantRush&quot;,
-    name:       &quot;Valiant Rush&quot;,
+    name:       &quot;英勇的冲刺&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Increases the amount of Combo Moves per turn by 1.&quot;;  
+            return &quot;每回合的连击动作增加1。&quot;;  
         }
         else
         {
-            return &quot;Increases the amount of Combo Moves per turn by &quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot;.&quot;; 
+            return &quot;每回合的连击动作增加&quot;+abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1)+&quot;。&quot;; 
         }
     },
     maxRank: 5
@@ -33506,16 +33506,16 @@ maxRank: 1
 &lt;&lt;set setup.Ability_ValiantRush.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_ValiantRush.setGrade(setup.AbilityGrade.MEDIUM)&gt;&gt;</tw-passagedata><tw-passagedata pid="497" name="Ability_VampiricLust" tags="" position="850,6225" size="100,100">&lt;&lt;set setup.Ability_VampiricLust = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_VampiricLust&quot;,
-    name:       &quot;Vampiric Lust&quot;,
+    name:       &quot;吸血鬼之欲&quot;,
     description:function(character, abilityRuntimeData)
     {
         if(abilityRuntimeData == undefined)
         {
-            return &quot;Regain 5 health whenever you reach max arousal.&quot;;
+            return &quot;无论何时，当你到达最大唤醒后，恢复5点生命值。&quot;;
         }
         else
         {
-            return &quot;Regain &quot;+ (2 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 3))+&quot; health whenever you reach max arousal.&quot;;
+            return &quot;无论何时，当你到达最大唤醒后，恢复&quot;+ (2 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 3))+&quot;点生命值。&quot;;
         }
     },
     maxRank: 5
@@ -33548,16 +33548,16 @@ maxRank: 1
 &lt;&lt;set setup.Ability_VampiricLust.setCategory(setup.AbilityCategory.LUST)&gt;&gt;
 &lt;&lt;set setup.Ability_VampiricLust.setGrade(setup.AbilityGrade.LOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="498" name="Ability_VigorOfTheEndowed" tags="" position="975,6225" size="100,100">&lt;&lt;set setup.Ability_VigorOfTheEndowed = setup.AbilityDataFactory.createAbilityData({
 id:         &quot;Ability_VigorOfTheEndowed&quot;,
-name:       &quot;Vigor of the Endowed&quot;,
+name:       &quot;资助活力&quot;,
 description:function(character, abilityRuntimeData)
 {
     if(abilityRuntimeData == undefined)
     {
-        return &quot;You gain Stamina for each &quot;+setup.getLength(4)+&quot; in cock length (up to 15).\n Your cock grows &quot;+setup.getLength(2)+&quot; and your balls grow &quot;+setup.getLength(1)+&quot; upon acquiring this Ability&quot;; 
+        return &quot;你的鸡巴长度每增加quot;+setup.getLength(4)+&quot;，你就会获得体力（最多15）。\n获得这种能力后，你的阴茎会增长&quot;+setup.getLength(2)，你的蛋蛋会增长&quot;+setup.getLength(1)+&quot;。&quot;; 
     }
     else
     {
-        return &quot;You gain Stamina for each &quot;+setup.getLength(4)+&quot; in cock length (up to &quot;+(5 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 10))+&quot;).\n Your cock grows &quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 2))+&quot; and your balls grow &quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 1))+&quot; upon acquiring this Ability&quot;; 
+        return &quot;你的鸡巴长度每增加&quot;+setup.getLength(4)+&quot;，你就会获得体力（最多&quot;+(5 + abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 10))+&quot;）。\n 获得这种能力后，你的阴茎会增长&quot;+setup.getLength(abilityRuntimeData.getRankGrowth(&quot;linear&quot;, 2))+&quot;，你的蛋蛋会增长&quot;linear&quot;, 1))+&quot;。&quot;; 
     }
 },
 maxRank: 4
