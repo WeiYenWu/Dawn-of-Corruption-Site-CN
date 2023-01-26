@@ -43469,8 +43469,8 @@ Y你冲向那个男人，举起了拳头！
 \&lt;&lt;run setup.choice(&quot;[[帮忙保卫黄金堡垒-&gt;intro_start_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1290" name="intro_start_8" tags="" position="1225,16100" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;, $CharacterSheet_Abel.info.bodyList.villager)&gt;&gt;
 &quot;小心！&quot;
 
-扭曲的黑色身影从你的头顶跨过。乌黑的爪子差点儿就碰到了你。还好你反应够快，迅速侧过了身体。 \
-当它落地时，一坨粘稠的黑色液体从巨大野兽的身上坠落而出。他的躯体是一团难以名状的黑色油墨，它咆哮着，更多的黑墨从他的嘴里流出。
+扭曲的黑色身影从你的头顶跨过。漆黑的爪子差点儿就碰到了你。还好你反应够快，迅速侧过了身体。 \
+当它落地时，一坨粘稠的黑色液体从巨大野兽的身上坠落而出。他的躯体是一团难以名状的黑色油墨，它咆哮着，更多的黑墨从他的嘴里滴下。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;intro_start_9]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1291" name="intro_start_9" tags="" position="100,16225" size="100,100">在一片沙地上，它强壮的腿向后一蹬，朝你扑了过来！
 
@@ -43519,7 +43519,7 @@ Y你冲向那个男人，举起了拳头！
 
 &quot;下次，至少帮我一下……&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1297" name="intro_first_crossroads" tags="" position="850,16225" size="100,100">战斗的声音回荡在内外城墙之间，the Golden Bastion的废墟上。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1297" name="intro_first_crossroads" tags="" position="850,16225" size="100,100">战斗的声音回荡在内外城墙之间，黄金堡垒的废墟之上。
 
 在你的脚下扭动着的，失去意识的身躯，是那些进攻黄金堡垒的怪物之一。它的肌肉扩张、收缩，似乎有着自己的生命。
 
@@ -43566,12 +43566,12 @@ Y你冲向那个男人，举起了拳头！
 
 &quot;好吧。我猜你是对的。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave the monster -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1302" name="intro_get_moving" tags="" position="225,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开这头怪物 -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1302" name="intro_get_moving" tags="" position="225,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
 &quot;都完事了？&quot;亚伯问。你点了点头。
 
-&quot;好吧，那我们最好在更多的他们出现之前离开。我发誓，所有这些扯蛋的玩意儿都是在一两天前发生的日食之后开始出现的。\
-有什么不太对劲;这种感觉让我脊背发凉。&quot;
+&quot;好吧，那我们最好在更多的怪物出现之前离开。我发誓，所有这些扯蛋的玩意儿都是在一两天前发生的日食之后开始出现的。\
+有什么不太对劲，这种感觉让我脊背发凉。&quot;
 
 你和你的同伴开始行走，利用着棚屋之间的狭小空间。你们马上就要进入内墙了，然而在这时，亚伯让你停了下来。
 
@@ -43730,24 +43730,24 @@ Y你冲向那个男人，举起了拳头！
 \&lt;&lt;set $InspectedCock = 0&gt;&gt;
 \&lt;&lt;set $drank_corruption = 0&gt;&gt;
 &lt;&lt;include intro_attack_choices&gt;&gt;</tw-passagedata><tw-passagedata pid="1321" name="intro_attack_choices" tags="" position="100,16600" size="100,100">\&lt;&lt;if $InspectedLegs == 0&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Inspect its legs -&gt; intro_inspect_legs]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[观察它的腿 -&gt; intro_inspect_legs]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Attack its legs! -&gt; intro_attack_wrong_choice_legs]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[攻击它的腿！ -&gt; intro_attack_wrong_choice_legs]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;if $InspectedArms == 0&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Inpsect its arms -&gt; intro_inspect_arms]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[观察它的手臂 -&gt; intro_inspect_arms]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Attack its arms! -&gt; intro_attack_arms]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[攻击它的手臂！ -&gt; intro_attack_arms]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;if $InspectedCock == 0&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Inspect its cock -&gt; intro_inspect_cock]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[观察它的阴茎 -&gt; intro_inspect_cock]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Attack its cock! -&gt; intro_attack_wrong_choice]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[攻击它的阴茎！ -&gt; intro_attack_wrong_choice]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;if $InspectedHead == 0&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Inspect its head -&gt; intro_inspect_head]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[观察它的头 -&gt; intro_inspect_head]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Attack its head! -&gt; intro_attack_head]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[攻击它的头！ -&gt; intro_attack_head]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1322" name="intro_inspect_head" tags="" position="225,16600" size="100,100">\&lt;&lt;set $InspectedHead = 1&gt;&gt;
 你面前的这堆肉山慢慢靠近，它的高度似乎从未停止过增长。它的脸是牛的形状，或者说，在它变成现在这个令人厌恶的样子之前是牛的形状。 \
 那一定是一只落入腐化之手的牛头人。
@@ -43800,7 +43800,7 @@ Y你冲向那个男人，举起了拳头！
 
 你的剑击中了一座山。不可能！你几乎可以听到这只生物的暗笑，它金色的眼眸不怀好意地蔑视者你。这些肌肉坚硬得不自然——就像你见过的最硬的金属一样！
 
-突然，怪物痛苦地叫了起来，它的一条腿暴露在下面。亚伯借由你让他分心，一击命中！
+突然，怪物痛苦地叫了起来，它的一条腿暴露在下面。亚伯借由你让他分心的时候，一击命中！
 
 &quot;打它的关节！&quot;他嘶吼着。
 
@@ -43832,7 +43832,7 @@ Y你冲向那个男人，举起了拳头！
 
 ……它的注意并没有放在你和亚伯身上。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1328" name="intro_attack_arms" tags="" position="975,16600" size="100,100">这东西大得可以成为一栋楼。然而，无论这些肌肉有多强壮;腋窝和肘部以上的肉总会很脆弱。切开肌腱。阻止它的移动。
+\&lt;&lt;run setup.choice(&quot;[[Continue -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1328" name="intro_attack_arms" tags="" position="975,16600" size="100,100">这东西大得可以成为一栋楼。然而，无论这些肌肉有多强壮,腋窝和肘部以上的肉总会很脆弱。切开肌腱。阻止它的移动。
 
 你告诉亚伯你的计划，他扬起眉毛，&quot;关节？对，有道理。我走左边，你走右边!&quot;
 
@@ -44412,7 +44412,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[Talk about something else-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1400" name="abelHouseDialogue_Herald_link" tags="" position="1225,17475" size="100,100">\&lt;&lt;run setup.choice(&quot;[[Talk about his role as the Herald&#39;s apprentice-&gt;abelHouseDialogue_Herald]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1401" name="abelHouseDialogue_Herald" tags="" position="100,17600" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
-(一旦我们有了服装的概念再更新这个)
+ 
 &quot;哦，对了，&quot;亚伯咯咯地笑了，他的手捏着他穿着的装饰长袍。不像典型的村民服装：宽松、舒适、朴素，亚伯的彩色长袍上装饰着金色和青色的小珠子。
 
 &quot;你具体想知道些什么？&quot;
@@ -44528,7 +44528,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;说真的，荒漠原始而残暴，我们每个人都不应该对死亡感到陌生。但失去一个和我如此亲近的人……我拒绝相信这种想法。&quot;
 
-&quot;但，你现在就站在这里，&quot;他停顿了一下，长舒了一口气，&quot;生龙活虎的，还塞给我这么多问题，都要握压垮了呀。&quot;
+&quot;但，你现在就站在这里，&quot;他停顿了一下，长舒了一口气，&quot;生龙活虎的。我的脑袋里现在有一万个问题，都快把我压垮了呀。&quot;
 
 这只猫盘腿坐在灰扑扑的地板上，双腿折叠在身下。
 
@@ -44546,7 +44546,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 亚伯沉默了几分钟。他的手颤抖着，眼睛紧盯着手里的东西。
 
-&quot;我……我不知道我该说什么好。如果这些话是从别人的嘴巴里说出来的，那我肯定觉得是他的头脑被沙漠里的高温冲昏了。&quot;亚伯说话的语调柔和而小心。
+&quot;我……我不知道我该说什么好。如果这些话是从别人的嘴巴里说出来的，那我肯定觉得是他的脑子被沙漠里的高温冲昏了。&quot;亚伯说话的语调柔和而小心。
 
 &quot;如果村子里有其他的任何人发现了，最好的结果就是，你会被流放……&quot;
 
@@ -44581,7 +44581,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 你摇了摇头。
 
-亚伯闭上眼睛，嘴角发出一声叹息，&quot;你不会来真的吧？&quot;
+亚伯闭上眼睛，嘴角发出一声叹息，&quot;你来真的？&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Argue that the power is a useful tool-&gt;abelHouse_tellAll_disagree_itHasUses]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Argue that the power has potential-&gt;abelHouse_tellAll_disagree_wantMore]]&quot;);&gt;&gt;
@@ -45852,11 +45852,11 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;哇，你能平安回来真是太好了，$CharacterSheet_Player.info.name~！&quot;亚伯一遍说一遍上下打量着你。
 
-&quot;你不知道……我每天都会来这堵墙，简直成了什么神秘仪式……我希望你能回来。不过看起来我是一只幸运的猫哈，&quot;他笑容的灿烂。
+&quot;你不知道……我每天都会来这堵墙，简直成了什么神秘仪式……我希望你能回来。看起来我是一只幸运的猫。&quot;他笑容的灿烂。
 
-quot;不过这里不是说这种话的地方。我家房子还蛮大的，到那儿来找我。quot;他边说边转向金色堡垒城内的方向，&quot;我们可以好好聊聊。&quot;
+&quot;不过这里不是说这种话的地方。我家房子还蛮大的，到那儿来找我。quot;他边说边转向金色堡垒城内的方向，&quot;我们可以好好聊聊。&quot;
 
-∇:你现在可以去亚伯的家了。
+∇：你现在可以去亚伯的家了。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1549" name="Quest_MQ002_ApothusRealm_Entrance" tags="" position="1100,19350" size="100,100">你向前一步，立刻感到空气中有一种难以抗拒的沉重。潮湿，麝香，被腐化污染。
 
