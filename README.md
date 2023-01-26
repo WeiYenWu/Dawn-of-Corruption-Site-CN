@@ -131,6 +131,7 @@
 |yes|Infectious Lust|n.传播淫欲||
 |yes|Augwult|name.奥古特||
 |yes|meteor|n.陨石||
+|yes|Link Value|n.链接阀值|战斗行动右上角的数字|
 ---
 
 ## **三、代码查疑**
