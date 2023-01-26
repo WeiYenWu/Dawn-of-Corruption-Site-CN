@@ -7380,7 +7380,7 @@ setup.getSkillDisplayString = function(character, target, fightMove, fightHotkey
     if(fightMove.comboValue != undefined)
     {
         displayString += "<div class='"+setup.getCorruptionUIClassName("comboValue", setup.getStatValue(character, "corruption"))+"'>";
-        displayString += setup.displayTooltipedString(fightMove.comboValue != 0 ? fightMove.comboValue : "*", "Link Value<br>(Can only combo with moves that have an adjacent Link Value)");
+        displayString += setup.displayTooltipedString(fightMove.comboValue != 0 ? fightMove.comboValue : "*", "链接值<br>(只能与具有相邻棋步的链接值才能在本回合打出连击)");
         displayString += "</div>";
     }
 
@@ -7389,7 +7389,7 @@ setup.getSkillDisplayString = function(character, target, fightMove, fightHotkey
 	if(fightMove.staminaCost != 0)
 	{
         displayString += "<div class='"+setup.getCorruptionUIClassName("FightSkillCardStaminaCost", setup.getStatValue(character, "corruption"))+"'>"
-        displayString += setup.displayTooltipedString(fightMove.staminaCost, "Stamina Cost");
+        displayString += setup.displayTooltipedString(fightMove.staminaCost, "花费的耐力值");
         displayString += "</div>";
 	}
 
@@ -7407,14 +7407,14 @@ setup.getSkillDisplayString = function(character, target, fightMove, fightHotkey
 	if(fightMove.cooldown)
 	{
         displayString += "<div class='"+setup.getCorruptionUIClassName("FightSkillCardCooldown", setup.getStatValue(character, "corruption"))+"'>"
-        displayString += setup.displayTooltipedString(fightMove.cooldown, "Cooldown");
+        displayString += setup.displayTooltipedString(fightMove.cooldown, "冷却");
         displayString += "</div>";
 	}
     
 	if(fightMove.maxStack)
 	{
         displayString += "<div class='"+setup.getCorruptionUIClassName("FightSkillCardStackCount", setup.getStatValue(character, "corruption"))+"'>"
-        displayString += setup.displayTooltipedString(fightMove.maxStack, "Maximum Stack Count");
+        displayString += setup.displayTooltipedString(fightMove.maxStack, "最大堆叠数");
         displayString += "</div>";
     }
 
@@ -7471,7 +7471,7 @@ setup.getSkillDisplayString = function(character, target, fightMove, fightHotkey
 
         displayString += "<span class='tooltipContainer'>";
         displayString += "<span class='tooltiptext'>";
-        displayString += "Action Cost<br>(Determines how many links this move needs in the Combo Chain)";
+        displayString += "行动花费<br>(决定此回合的连击链需要多少链接值)";
         displayString += "</span>";
         displayString += "</span>";
     
@@ -7530,8 +7530,8 @@ setup.getAttackDamageDisplay = function(character, fightMove)
             displayString += ">"+ damage;
             displayString += "<span class='tooltipContainer'>";
             displayString += "<span class='tooltiptext'>";
-            displayString += "Damage Value<br><br>";
-            displayString += "Modifiers:<br>";
+            displayString += "攻击伤害<br><br>";
+            displayString += "加成:<br>";
     
     
             var damageMod = {mod: setup.mod.ADD, value: Math.floor(strength / 5)};
@@ -7675,7 +7675,7 @@ setup.displayTurnHeaderText = function(attackerSheet, victimSheet)
     var displayString = "";
 
     displayString += "<div class='turnHeaderText'>";
-    displayString += "<h1>"+attackerSheet.info.name+"'s Turn</h1>";
+    displayString += "<h1>"+attackerSheet.info.name+"的回合</h1>";
     displayString += "</div>";
 
     return displayString;
@@ -7809,7 +7809,7 @@ setup.doAttack = function(attackerSheet, victimSheet)
 			}
 			else
 			{
-				addToFightOutcome(attackerSheet.fight.variables, "It hits for <span style='color:#ff0000;'>" + params.attackDamage + "</span> damage!");
+				addToFightOutcome(attackerSheet.fight.variables, "它造成了 <span style='color:#ff0000;'>" + params.attackDamage + "</span> 点伤害！");
             }
 			params.trigger = setup.AbilityTrigger.ON_FIGHT_POST_RECEIVE_DAMAGE;
             
@@ -8028,13 +8028,13 @@ setup.updateFightStatus = function(attackerSheet, victimSheet)
 	}
 	else if(setup.hasLostFight(victimSheet))
 	{
-		displayString += attackerSheet.info.name + " wins the fight \n\n";
+		displayString += attackerSheet.info.name + " 取得了战斗的胜利 \n\n";
 		displayString += "[[继续->Fight Outcome]]";
 		State.variables.FightSkills = undefined;
 	}
 	else if(setup.hasLostFight(attackerSheet))
 	{
-		displayString += attackerSheet.info.name + " loses the fight \n\n";
+		displayString += attackerSheet.info.name + " 打了一场败仗 \n\n";
 		displayString += "[[继续->Fight Outcome]]";
 		State.variables.FightSkills = undefined;
 	}
@@ -8091,7 +8091,7 @@ setup.updateFightStatus = function(attackerSheet, victimSheet)
 
         console.log("4")
 		
-		displayString += victimSheet.info.name + " looks " + setup.Fight_HealthDescriptor(setup.getMaxHP(victimSheet), victimFightVariables.currentHP);
+		displayString += victimSheet.info.name + " 看起来 " + setup.Fight_HealthDescriptor(setup.getMaxHP(victimSheet), victimFightVariables.currentHP);
 		displayString += "\n\n";
         
         if(attackerSheet.fight.teammate != undefined)
@@ -8124,11 +8124,11 @@ setup.updateFightStatus = function(attackerSheet, victimSheet)
 
         if(teammate != undefined)
         {
-            displayString +="<<click 'Inspect "+State.variables[teammate].info.name+"'>><<toggleclass '#InspectTeammateText' 'hidden'>><</click>> \n";
+            displayString +="<<click '探查 "+State.variables[teammate].info.name+"'>><<toggleclass '#InspectTeammateText' 'hidden'>><</click>> \n";
             displayString +="<span id='InspectTeammateText' class='hidden'> "+setup.getInspectText(attackerSheet, State.variables[teammate])+"</span>";
         }
         
-        displayString +="<<click 'Inspect "+victimSheet.info.name+"'>><<toggleclass '#InspectText' 'hidden'>><</click>> \n";
+        displayString +="<<click '探查 "+victimSheet.info.name+"'>><<toggleclass '#InspectText' 'hidden'>><</click>> \n";
         displayString +="<span id='InspectText' class='hidden'> "+setup.getInspectText(attackerSheet, victimSheet)+"</span>";
 		
         console.log("7")
@@ -8211,7 +8211,7 @@ setup.getInspectText = function(character, target)
 {
     var displayString = "";
 
-    displayString += character.info.name  + " inspects "+target.info.name+" carefully.\n\n";
+    displayString += character.info.name  + " 非常小心地探查 "+target.info.name+" 。\n\n";
 
     if(target.info.picture != undefined)
     {
@@ -8223,20 +8223,20 @@ setup.getInspectText = function(character, target)
     }
 
     displayString += "HP: "+target.fight.variables.currentHP+"/"+setup.displayStatValue(target, "hp")+"\n";
-    displayString += "Stamina: "+target.fight.variables.currentStamina+"/"+setup.displayStatValue(target, "stamina")+"\n";
-    displayString += "Arousal: "+target.fight.variables.currentArousal+"\n\n";
+    displayString += "耐力: "+target.fight.variables.currentStamina+"/"+setup.displayStatValue(target, "stamina")+"\n";
+    displayString += "唤醒值: "+target.fight.variables.currentArousal+"\n\n";
 
-    displayString += "Strength: "+setup.displayStatValue(target, "strength")+"\n";
-    displayString += "Critical Hit Chance: "+setup.displayStatValue(target, "critChance")+"\n";
-    displayString += "Arousal per Turn: "+setup.displayStatValue(target, "arousalGain")+"\n";
-    displayString += "Stamina per Turn: "+setup.displayStatValue(target, "staminaRecovery")+"\n\n";
+    displayString += "力量: "+setup.displayStatValue(target, "strength")+"\n";
+    displayString += "暴击率: "+setup.displayStatValue(target, "critChance")+"\n";
+    displayString += "每回合唤醒值: "+setup.displayStatValue(target, "arousalGain")+"\n";
+    displayString += "每回合耐力: "+setup.displayStatValue(target, "staminaRecovery")+"\n\n";
 
-    displayString += "Corruption: "+setup.getStatValue(target, "corruption")+"\n";
-    displayString += "Muscles: "+setup.getMusclesDescriptor(target)+"("+setup.displayStatValue(target, "muscles")+")\n";
-    displayString += "Height: "+setup.displayStatValue(target, "height", true)+"\n";
-    displayString += "Cock Size: "+setup.displayStatValue(target, "cock", true)+"\n\n";
+    displayString += "腐化值: "+setup.getStatValue(target, "corruption")+"\n";
+    displayString += "体型: "+setup.getMusclesDescriptor(target)+"("+setup.displayStatValue(target, "muscles")+")\n";
+    displayString += "身高: "+setup.displayStatValue(target, "height", true)+"\n";
+    displayString += "鸡巴尺寸: "+setup.displayStatValue(target, "cock", true)+"\n\n";
 
-    displayString += "Passive Abilities:\n";
+    displayString += "被动能力:\n";
 
     if(character.abilityHandler.abilityRuntimeDatas.length > 0)
     {
@@ -8316,21 +8316,21 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
     {
         if(!fightMove.available)
         {
-            return "This move is already part of your combo.";
+            return "此卡已经是本次连击之一";
         }
         
         console.log("3")
         console.log(fightMove)
         if(setup.calculateAvailableComboSlots() < fightMove.comboCost)
         {
-            return "Not enough slots left for this move in your combo.";
+            return "本次连击中没有足够的槽位以打出此卡。";
         }
 
         if(fightMove.maxStack)
         {
             if(!setup.canStackPersistentEffect(attackerSheet, victimSheet, fightMove.persistentEffectOpponent.id, fightMove.maxStack))
             {
-                return "Can't stack this skill more than " + fightMove.maxStack + " times.";
+                return "此技能不能叠加超过 " + fightMove.maxStack + " 次。";
             }
         }
 
@@ -8344,7 +8344,7 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
     
             if(!isZero && (isNotAdjacent && !isFourAndOne))
             {
-                return "This move's Link Value ("+currentComboValue+") is not adjacent to the Link Value of the latest move of your combo ("+latestComboValue+")";
+                return "此卡的链接值 ("+currentComboValue+") 与本次连击中最后一张卡的链接值不相邻("+latestComboValue+")。";
             }
         }
 
@@ -8352,7 +8352,7 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
         {
             if(attackerSheet.fight.variables.currentStamina < (setup.calculateComboStaminaCost() + fightMove.staminaCost))
             {
-                return "Not enough Stamina.";
+                return "耐力不足。";
             }
         }
 
@@ -8360,7 +8360,7 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
     
         if(cooldown != 0)
         {
-            return "In cooldown for " + cooldown + " more turns."
+            return "还需冷却 " + cooldown + " 回合。"
         }
     }
     else
@@ -8369,7 +8369,7 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
         {
             if(!setup.canStackPersistentEffect(attackerSheet, victimSheet, fightMove.persistentEffectOpponent.id, fightMove.maxStack))
             {
-                return "Can't stack this skill more than " + fightMove.maxStack + " times.";
+                return "此技能不能叠加超过 " + fightMove.maxStack + " 次。";
             }
         }
     
@@ -8377,7 +8377,7 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
         {
             if(attackerSheet.fight.variables.currentStamina < fightMove.staminaCost)
             {
-                return "Not enough Stamina.";
+                return "耐力不足。";
             }
         }
     
@@ -8385,7 +8385,7 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
     
         if(cooldown != 0)
         {
-            return "In cooldown for " + cooldown + " more turns."
+            return "还需冷却 " + cooldown + " 回合。"
         }
     }
 
@@ -8394,7 +8394,7 @@ setup.canActivateFightMove = function(attackerSheet, victimSheet, fightMove, fig
 	{
 		if(!fightMove.activationCondition(attackerSheet, victimSheet))
 		{
-			return "Can't activate this skill.";
+			return "无法释放此技能。";
 		}
     }
 
@@ -8488,7 +8488,7 @@ setup.printComboCost = function(character, target)
 {
     var displayString = "";
 
-    displayString += "Stamina Remaining: "+ setup.getRemainingStamina(character, target) +" \nAction Slots Remaining: "+setup.calculateAvailableComboSlots();
+    displayString += "剩余耐力值: "+ setup.getRemainingStamina(character, target) +" \n剩余行动槽: "+setup.calculateAvailableComboSlots();
 
     return displayString;
 }
@@ -8531,7 +8531,7 @@ setup.printAvailableFightMovesString = function(character, target)
     }   
 
     displayString +=    '<span class="'+setup.getCorruptBackgroundClass(character)+'">';
-    displayString +=        '<<button "Add Slot ('+setup.getAddSlotCost()+' Stamina)">>';
+    displayString +=        '<<button "添加卡槽 ('+setup.getAddSlotCost()+' 耐力)">>';
     displayString +=             '<<run setup.addComboSlot()>>';
     displayString +=             '<<replace "#FightSkillsList">> <<print setup.printAvailableFightMovesString(State.variables.CharacterSheet_Player, State.variables.Encounter_Target)>> <</replace>>';
     displayString +=        '<</button>>';
@@ -8556,7 +8556,7 @@ setup.printAvailableFightMovesString = function(character, target)
      
     displayString +=                '<div id="MulliganButton" class="BottomComboZone">';
     displayString +=                   '<span class="'+setup.getCorruptBackgroundClass(character)+'">';
-    displayString +=                       '<<button "Draw ('+setup.getRedrawCost()+' Stamina)">>';
+    displayString +=                       '<<button "抽卡 ('+setup.getRedrawCost()+' 耐力)">>';
     displayString +=                           '<<run setup.drawComboMove()>>';
     displayString +=                           '<<replace "#FightSkillsList">> <<print setup.printAvailableFightMovesString(State.variables.CharacterSheet_Player, State.variables.Encounter_Target)>> <</replace>>';
     displayString +=                       '<</button>>';
@@ -8575,7 +8575,7 @@ setup.printAvailableFightMovesString = function(character, target)
     {    
         displayString +=            '<div id="ClearButton" class="BottomComboZone">';
         displayString +=                '<span class="'+setup.getCorruptBackgroundClass(character)+'">';
-        displayString +=                    '<<button "Clear">>';
+        displayString +=                    '<<button "清除">>';
         displayString +=                        '<<run setup.clearCombo()>>';
         displayString +=                        '<<replace "#FightSkillsList">> <<print setup.printAvailableFightMovesString(State.variables.CharacterSheet_Player, State.variables.Encounter_Target)>> <</replace>>';
         displayString +=                    '<</button>>';
@@ -8586,7 +8586,7 @@ setup.printAvailableFightMovesString = function(character, target)
         displayString +=            '</div>';
         displayString +=            '<div id="AttackButton" class="BottomComboZone">';
         displayString +=                '<span class="'+setup.getCorruptBackgroundClass(character)+'">';
-        displayString +=                    '<<button [[Attack with Combo!->FightLogic]]>><</button>>';
+        displayString +=                    '<<button [[打出连击！->FightLogic]]>><</button>>';
         displayString +=                '</span>';
         displayString +=            '</div>';
     }
@@ -10653,7 +10653,7 @@ setup.displayInfoStats = function(character)
 	var expedition = State.variables.Expedition;
 	var displayString = "";
 	
-	displayString +=  "<span class='DateText'>"+setup.ordinal_suffix(expedition) +"次远征于第"+ setup.ordinal_suffix(cycle) +"周目</span> \n";
+	displayString +=  "<span class='DateText'>"+"第"+setup.ordinal_suffix(expedition) +"次远征于第"+ setup.ordinal_suffix(cycle) +"周目</span> \n";
 	displayString +=  "<div id='SidebarDivisionTop'>"+setup.getCorruptSidebarDividerTop()+"</div>";
 	displayString +=  "<div class='PlayerDescriptor'>";
 	displayString +=  "<span class='PlayerName'>"+State.variables.CharacterSheet_Player.info.name.toUpperCase() +"</span>\n";
@@ -10710,15 +10710,15 @@ setup.ordinal_suffix = function(i) {
     var j = i % 10,
         k = i % 100;
     if (j == 1 && k != 11) {
-        return i + "st";
+        return i + "";
     }
     if (j == 2 && k != 12) {
-        return i + "nd";
+        return i + "";
     }
     if (j == 3 && k != 13) {
-        return i + "rd";
+        return i + "";
     }
-    return i + "th";
+    return i + "";
 }
 
 setup.displayFightStats = function(character)
@@ -11496,8 +11496,8 @@ setup.displayChanceToHit = function(character, fightMove)
 		displayString += "<span class='tooltipContainer'>";
         displayString += "<span class='tooltiptext'>";
 
-		displayString += "Critical Hit Chance<br><br>"
-		displayString += "Modifiers:<br>";
+		displayString += "暴击率<br><br>"
+		displayString += "加成:<br>";
 
         var statValue = setup.getStatValue(character, "critChance");
         var damageMod = {mod: setup.mod.ADD, value: statValue};
@@ -20432,19 +20432,19 @@ Config.ui.stowBarInitially = false;
 {
 	if(curHP / maxHP &gt; 0.7)
 	{
-		return &quot;&lt;span style=&#39;color:#46c546;&#39;&gt;&quot; + &quot;healthy&quot; + &quot;&lt;/span&gt;&quot;;
+		return &quot;&lt;span style=&#39;color:#46c546;&#39;&gt;&quot; + &quot;健康&quot; + &quot;&lt;/span&gt;&quot;;
 	}
 	else if(curHP / maxHP &gt; 0.5)
 	{
-		return &quot;&lt;span style=&#39;color:#c5bb46;&#39;&gt;&quot; + &quot;out of breath&quot; + &quot;&lt;/span&gt;&quot;;
+		return &quot;&lt;span style=&#39;color:#c5bb46;&#39;&gt;&quot; + &quot;上气不接下气&quot; + &quot;&lt;/span&gt;&quot;;
 	}
 	else if(curHP / maxHP &gt; 0.3)
 	{
-		return &quot;&lt;span style=&#39;color:#ff9840;&#39;&gt;&quot; + &quot;exhausted&quot; + &quot;&lt;/span&gt;&quot;;
+		return &quot;&lt;span style=&#39;color:#ff9840;&#39;&gt;&quot; + &quot;筋疲力尽&quot; + &quot;&lt;/span&gt;&quot;;
 	}
 	else
 	{
-		return &quot;&lt;span style=&#39;color:#ff0000;&#39;&gt;&quot; + &quot;nearly dead&quot; + &quot;&lt;/span&gt;&quot;;
+		return &quot;&lt;span style=&#39;color:#ff0000;&#39;&gt;&quot; + &quot;濒死&quot; + &quot;&lt;/span&gt;&quot;;
 	}
 };
 &gt;&gt;
@@ -26827,7 +26827,7 @@ Finally, no room is complete without a mirror. Yet this would do little for you.
 
 You can only rely on your memories, your journal is nothing more than a speck far below you.
 
-Luckily, you could easily step over the walls of the Golden Bastion and use the reflective surface of the nearby lake as a mirror, but even that hardly suffices for your sheer bulk.</tw-passagedata><tw-passagedata pid="334" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_small" tags="" position="475,4225" size="100,100">You rush in and attack.</tw-passagedata><tw-passagedata pid="335" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_medium" tags="" position="600,4225" size="100,100">You charge in and swing your fist.</tw-passagedata><tw-passagedata pid="336" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_large" tags="" position="725,4225" size="100,100">You stomp forward and swing a massive fist.</tw-passagedata><tw-passagedata pid="337" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_huge" tags="" position="850,4225" size="100,100">Your @[all| arms| one=hurtles~more=hurtle] down toward the enemy.</tw-passagedata><tw-passagedata pid="338" name="_player_text_sheet_basicAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="975,4225" size="100,100">A trail of purple energy flows from your knuckles.</tw-passagedata><tw-passagedata pid="339" name="_player_text_sheet_basicAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="1100,4225" size="100,100">Each vein in your hand and arm burns with a dark purple hue. Tainted energy rolls off of your skin as tendrils of corrupt light.</tw-passagedata><tw-passagedata pid="340" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_small" tags="" position="1225,4225" size="100,100">You quickly bash with your weapon&#39;s hilt.</tw-passagedata><tw-passagedata pid="341" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_medium" tags="" position="100,4350" size="100,100">You charge in and quickly bash with your weapon&#39;s hilt.</tw-passagedata><tw-passagedata pid="342" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_large" tags="" position="225,4350" size="100,100">You stomp forward, fully extending your arm from the side of your torso.</tw-passagedata><tw-passagedata pid="343" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_huge" tags="" position="350,4350" size="100,100">Your @[1| arms| one=hurtles~more=hurtle] down toward the enemy, bashing wildly with your weapon&#39;s hilt.</tw-passagedata><tw-passagedata pid="344" name="_player_text_sheet_bashAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="475,4350" size="100,100">A trail of purple energy flows from your knuckles.</tw-passagedata><tw-passagedata pid="345" name="_player_text_sheet_bashAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="600,4350" size="100,100">Each vein in your hand and arm burns with a dark purple hue. Tainted energy rolls off of your skin as tendrils of corrupt light.</tw-passagedata><tw-passagedata pid="346" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_small" tags="" position="725,4350" size="100,100">You swing your weapon with full force.</tw-passagedata><tw-passagedata pid="347" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_medium" tags="" position="850,4350" size="100,100">You charge in and swing your weapon with full force.</tw-passagedata><tw-passagedata pid="348" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_large" tags="" position="975,4350" size="100,100">You stomp forward, twisting your waist and shoulders round before turning back unleasing a mighty swing of your weapon.</tw-passagedata><tw-passagedata pid="349" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_huge" tags="" position="1100,4350" size="100,100">Your @[all| arms| one=hurtles~more=hurtle] down toward the enemy, unleasing a mighty swing of your weapon.</tw-passagedata><tw-passagedata pid="350" name="_player_text_sheet_slashAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="1225,4350" size="100,100">A trail of purple energy flows from your weapon.</tw-passagedata><tw-passagedata pid="351" name="_player_text_sheet_slashAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="100,4475" size="100,100">Each vein in your hand and arm burns with a dark purple hue. Tainted energy rolls off of your weapon as tendrils of corrupt light.</tw-passagedata><tw-passagedata pid="352" name="_player_text_sheet_MuscleGrowthFlavourText_heightFlavour_small_1" tags="" position="225,4475" size="100,100">muscles harden and pulse with increasing strength. Your biceps form impressive peaks above well defined forearms. Veins begin peeking through your skin \
+Luckily, you could easily step over the walls of the Golden Bastion and use the reflective surface of the nearby lake as a mirror, but even that hardly suffices for your sheer bulk.</tw-passagedata><tw-passagedata pid="334" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_small" tags="" position="475,4225" size="100,100">你冲了进去并展开了攻击。</tw-passagedata><tw-passagedata pid="335" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_medium" tags="" position="600,4225" size="100,100">You charge in and swing your fist.</tw-passagedata><tw-passagedata pid="336" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_large" tags="" position="725,4225" size="100,100">You stomp forward and swing a massive fist.</tw-passagedata><tw-passagedata pid="337" name="_player_text_sheet_basicAttackAttemptFlavour_heightFlavour_huge" tags="" position="850,4225" size="100,100">Your @[all| arms| one=hurtles~more=hurtle] down toward the enemy.</tw-passagedata><tw-passagedata pid="338" name="_player_text_sheet_basicAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="975,4225" size="100,100">A trail of purple energy flows from your knuckles.</tw-passagedata><tw-passagedata pid="339" name="_player_text_sheet_basicAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="1100,4225" size="100,100">Each vein in your hand and arm burns with a dark purple hue. Tainted energy rolls off of your skin as tendrils of corrupt light.</tw-passagedata><tw-passagedata pid="340" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_small" tags="" position="1225,4225" size="100,100">You quickly bash with your weapon&#39;s hilt.</tw-passagedata><tw-passagedata pid="341" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_medium" tags="" position="100,4350" size="100,100">You charge in and quickly bash with your weapon&#39;s hilt.</tw-passagedata><tw-passagedata pid="342" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_large" tags="" position="225,4350" size="100,100">You stomp forward, fully extending your arm from the side of your torso.</tw-passagedata><tw-passagedata pid="343" name="_player_text_sheet_bashAttackAttemptFlavour_heightFlavour_huge" tags="" position="350,4350" size="100,100">Your @[1| arms| one=hurtles~more=hurtle] down toward the enemy, bashing wildly with your weapon&#39;s hilt.</tw-passagedata><tw-passagedata pid="344" name="_player_text_sheet_bashAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="475,4350" size="100,100">A trail of purple energy flows from your knuckles.</tw-passagedata><tw-passagedata pid="345" name="_player_text_sheet_bashAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="600,4350" size="100,100">Each vein in your hand and arm burns with a dark purple hue. Tainted energy rolls off of your skin as tendrils of corrupt light.</tw-passagedata><tw-passagedata pid="346" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_small" tags="" position="725,4350" size="100,100">You swing your weapon with full force.</tw-passagedata><tw-passagedata pid="347" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_medium" tags="" position="850,4350" size="100,100">You charge in and swing your weapon with full force.</tw-passagedata><tw-passagedata pid="348" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_large" tags="" position="975,4350" size="100,100">You stomp forward, twisting your waist and shoulders round before turning back unleasing a mighty swing of your weapon.</tw-passagedata><tw-passagedata pid="349" name="_player_text_sheet_slashAttackAttemptFlavour_heightFlavour_huge" tags="" position="1100,4350" size="100,100">Your @[all| arms| one=hurtles~more=hurtle] down toward the enemy, unleasing a mighty swing of your weapon.</tw-passagedata><tw-passagedata pid="350" name="_player_text_sheet_slashAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="1225,4350" size="100,100">A trail of purple energy flows from your weapon.</tw-passagedata><tw-passagedata pid="351" name="_player_text_sheet_slashAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="100,4475" size="100,100">Each vein in your hand and arm burns with a dark purple hue. Tainted energy rolls off of your weapon as tendrils of corrupt light.</tw-passagedata><tw-passagedata pid="352" name="_player_text_sheet_MuscleGrowthFlavourText_heightFlavour_small_1" tags="" position="225,4475" size="100,100">muscles harden and pulse with increasing strength. Your biceps form impressive peaks above well defined forearms. Veins begin peeking through your skin \
 as they spread across your growing shoulders and neck. Your @[all|pecs|noverb] push outwards, your nipples harden and a moan escapes your mouth as the growth tumbles downward \
 like a fresh breath of air through your @[all|abdominals|noverb], thighs and calves.</tw-passagedata><tw-passagedata pid="353" name="_player_text_sheet_MuscleGrowthFlavourText_heightFlavour_small_2" tags="" position="350,4475" size="100,100">athletic form hardens as every muscle contracts into picturesque beauty. Every line and crease deepens as the power flowing through you forces your body to \
 adapt. Your laterals spread wider, your abdominal wall pushes outwards and your upper body swells with growing, physical pride.</tw-passagedata><tw-passagedata pid="354" name="_player_text_sheet_MuscleGrowthFlavourText_heightFlavour_small_3" tags="" position="475,4475" size="100,100">body convulses as an internal fire spreads outwards from your core and to each limb. Your body freezes, momentarily before a wellspring of growth overtakes you. \
@@ -29280,7 +29280,7 @@ your @[all|cocks|one=strains~more=strain], the land braces. Your roars resound t
 	},
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="396" name="_wounded_lost_info_sheet" tags="" position="725,4975" size="100,100">&lt;&lt;set setup.InfoSheet_Wounded_Lost =
 {
-	name: &quot;Wounded Lost&quot;,
+	name: &quot;受伤的Lost&quot;,
 	gender: &quot;male&quot;,
 	corruption: 800,
 	muscles: 60,
@@ -35449,7 +35449,7 @@ maxRank: 5
 &lt;&lt;set setup.FightMove_Submit_Completely =
 {
     id: &quot;FightMove_Submit_Completely&quot;,
-	name: &quot;Submit Completely&quot;,
+	name: &quot;彻底开摆&quot;,
 	preparation: function(character, target)
 	{
 		var he = setup.getPronoun(character,&quot;pronoun&quot;);
@@ -36433,7 +36433,7 @@ maxRank: 5
     id: &quot;Sigil_Perception&quot;,
     constantDesc: function(attacker, victim)
     {
-        return &quot;感知魔印在&quot; + attacker.info.name + &quot;&#39;的身体周围建立起了一个强大的青色光环。&quot;;
+        return &quot;感知魔印在&quot; + attacker.info.name + &quot;的身体周围建立起了一个强大的青色光环。&quot;;
     },
     onActivate: function(attacker, victim, params)
     {
@@ -36850,7 +36850,7 @@ maxRank: 5
 
 当他砍断野兽的后背时，你听到他的叫喊。
 
-&quot;尽可能多地打击他，因为你可以的，$CharacterSheet_Player.info.name！记住你的&lt;&lt;链接&quot;训练！&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial1_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;&quot;
+&quot;尽可能多地打击他，因为你可以的，$CharacterSheet_Player.info.name！记住你的&lt;&lt;link &quot;training!&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial1_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;&quot;
 
 &lt;span id=&quot;tutorial&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="573" name="FightMove_Tutorial1_Tutorial" tags="" position="350,7225" size="100,100">每一回合都会给予你一个随机的行动列表。
 你可以在同一回合内连锁多个行动，只要它们的链接值（右上角的数字）与下面的棋步相邻。
@@ -36893,15 +36893,15 @@ Linking as many moves as you can during a turn is usually a good strategy!</tw-p
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
 	additionalEffects: []
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="575" name="FightMove_Tutorial2_Preparation" tags="" position="600,7225" size="100,100">The wounded Lost lifts his might paw to slash you, but Abel holds him back as he swings!
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="575" name="FightMove_Tutorial2_Preparation" tags="" position="600,7225" size="100,100">受伤的Lost举起它的爪子向你劈来，但是Abel阻止了它！
 
-As he slashes the beast&#39;s back, you hear him cry out.
+当他劈向野兽的背部时，你听见了他的战吼。
 
-&quot;He&#39;s distracted! &lt;&lt;link &quot;Make sure this one counts!&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial2_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;&quot;
+&quot;他分心了！ &lt;&lt;link &quot;务必确保这一点！&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial2_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;&quot;
 
-&lt;span id=&quot;tutorial&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="576" name="FightMove_Tutorial2_Tutorial" tags="" position="725,7225" size="100,100">If you don&#39;t like the hand that you received this turn, you can cycle it by clicking the &quot;Redraw&quot; button for an increasing amount of stamina.
+&lt;span id=&quot;tutorial&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="576" name="FightMove_Tutorial2_Tutorial" tags="" position="725,7225" size="100,100">如果你不喜欢这把手牌，你可以点击&quot;重新抽卡&quot;按钮以增加一定数量的耐力。
 
-This is a good thing to do if there are not a lot of moves that combo with one another!</tw-passagedata><tw-passagedata pid="577" name="FightMove_Tutorial3" tags="" position="850,7225" size="100,100">&lt;&lt;set setup.FightMove_Tutorial3 =
+如果没有太多招式可以打出连击时不妨这样试试！</tw-passagedata><tw-passagedata pid="577" name="FightMove_Tutorial3" tags="" position="850,7225" size="100,100">&lt;&lt;set setup.FightMove_Tutorial3 =
 {
 	id: &quot;FightMove_Tutorial3&quot;,
 	name: &quot;Distracted Roar&quot;,
@@ -36936,15 +36936,15 @@ This is a good thing to do if there are not a lot of moves that combo with one a
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
 	additionalEffects: []
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="578" name="FightMove_Tutorial3_Preparation" tags="" position="975,7225" size="100,100">You barely have time to cover your ears as the beasts roars in frustration.
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="578" name="FightMove_Tutorial3_Preparation" tags="" position="975,7225" size="100,100">当这头野兽懊恼地咆哮时你几乎来不及捂住你的耳朵。
 
-If Abel had something to tell you, it&#39;s impossible to hear right now.
+如果Abel有什么想告诉你的话，现在也不可能听到了。
 
-You&#39;ll have to &lt;&lt;link &quot;figure out your next move on your own.&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial3_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;
+你必须 &lt;&lt;link &quot;自己决定下一步该怎么办。&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial3_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;
 
-&lt;span id=&quot;tutorial&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="579" name="FightMove_Tutorial3_Tutorial" tags="" position="1100,7225" size="100,100">You can hover any icon on the cards to get a helpful tooltip about what it represents.
+&lt;span id=&quot;tutorial&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="579" name="FightMove_Tutorial3_Tutorial" tags="" position="1100,7225" size="100,100">你能将鼠标指针悬停到卡片上的任意一个图标上以获取它所代表内容的有用提示。
 
-Same goes for every stat that is currently affected by a modifier!</tw-passagedata><tw-passagedata pid="580" name="FightMove_WitheringVenom" tags="" position="1225,7225" size="100,100">&lt;&lt;set setup.FightMove_WitheringVenom =
+对你产生影响的每个属性也能这样做。</tw-passagedata><tw-passagedata pid="580" name="FightMove_WitheringVenom" tags="" position="1225,7225" size="100,100">&lt;&lt;set setup.FightMove_WitheringVenom =
 {
 	id: &quot;FightMove_WitheringVenom&quot;,
 	name: &quot;Withering Venom&quot;,
@@ -43424,7 +43424,7 @@ Y你冲向那个男人，举起了拳头！
 
 你感觉被包围，被压迫，让你不得不防御，却不记得为什么有如此的感受。
 
-\&lt;&lt;run setup.choice(&quot;[[Take in your surroundings-&gt;intro_start_2]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[环顾四周-&gt;intro_start_2]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1281" name="Kanathar_EasterEgg" tags="" position="100,16100" size="100,100">&quot;嗯... 感觉很厚脸皮，是吗？&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Kanathar_EasterEgg_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1282" name="Kanathar_EasterEgg_2" tags="" position="225,16100" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
@@ -43434,10 +43434,10 @@ Y你冲向那个男人，举起了拳头！
 
 &quot;Lemme show you where you stand, pet. Give you a name that&#39;s a better fit for you.&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_3][$CharacterSheet_Player.info.name = &#39;Perovsky&#39;]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1284" name="intro_start_2" tags="" position="475,16100" size="100,100">Small withering buildings of sandstone and marbles cover the sides of a huge canyon.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_3][$CharacterSheet_Player.info.name = &#39;Perovsky&#39;]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1284" name="intro_start_2" tags="" position="475,16100" size="100,100">在大峡谷的一侧掩埋着一些由砂岩和大理石砌成的残破建筑群。
 
-Some of them have clearly been damaged by what seems to be huge boulders. 
-Were they launched here? Did one of these cause you to fall unconscious? Thinking about it only hurts your head even more.
+其中一些已然被看似大量的巨石所摧毁。
+它们是从这里开始的吗？ 是它们其中致使你昏倒的吗？ 想到这些只会让你的头疼更盛。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;intro_start_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1285" name="intro_start_3" tags="" position="600,16100" size="100,100">当你摇晃着身体重新站起来时，你开始记起...
 
@@ -43449,12 +43449,12 @@ Were they launched here? Did one of these cause you to fall unconscious? Thinkin
 外墙。外墙作为平民和外面野兽之间屏障，那坚固的栅栏，被攻破了。
 即使在这么远的距离，也能看到裂开的洞和成堆的碎片。
 
-\&lt;&lt;run setup.choice(&quot;[[Look around you-&gt;intro_start_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1287" name="intro_start_5" tags="" position="850,16100" size="100,100">你转身面向背后，一阵如释重负的感觉传遍全身。
+\&lt;&lt;run setup.choice(&quot;[[环顾四周-&gt;intro_start_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1287" name="intro_start_5" tags="" position="850,16100" size="100,100">你转身面向背后，一阵如释重负的感觉传遍全身。
 战斗还在继续，但内墙的防御尚且存在。
 
 对于发动攻击的人而言，想要威胁墙内人群的安全，那简直是痴人说梦。
 
-\&lt;&lt;run setup.choice(&quot;[[Go help protect the Inner Wall-&gt;intro_start_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1288" name="intro_start_6" tags="" position="975,16100" size="100,100">你到达了混乱的战场，咕哝声和咆哮声回荡在你周围。
+\&lt;&lt;run setup.choice(&quot;[[前去帮忙保卫内墙-&gt;intro_start_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1288" name="intro_start_6" tags="" position="975,16100" size="100,100">你到达了混乱的战场，咕哝声和咆哮声回荡在你周围。
 卫兵隐藏在伤者之中，为接下来的事情做好了准备。
 
 你向前行进。
@@ -43466,8 +43466,8 @@ Were they launched here? Did one of these cause you to fall unconscious? Thinkin
 
 迷失者，那些被腐化吞噬，被交配和变强的欲望所奴役的野兽，就在这里。
 
-\&lt;&lt;run setup.choice(&quot;[[Help protect the Golden Bastion-&gt;intro_start_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1290" name="intro_start_8" tags="" position="1225,16100" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;, $CharacterSheet_Abel.info.bodyList.villager)&gt;&gt;
-&quot;Look out!&quot; 
+\&lt;&lt;run setup.choice(&quot;[[帮忙保卫 Golden Bastion-&gt;intro_start_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1290" name="intro_start_8" tags="" position="1225,16100" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;, $CharacterSheet_Abel.info.bodyList.villager)&gt;&gt;
+&quot;小心！&quot;
 
 扭曲的黑色身影从你的头顶跨过。乌黑的爪子差点儿就碰到了你。还好你反应够快，迅速侧过了身体。 \
 当它落地时，一坨粘稠的黑色液体从巨大野兽的身上坠落而出。他的躯体是一团难以名状的黑色油墨，它咆哮着，更多的黑墨从他的嘴里流出。
@@ -43484,7 +43484,7 @@ Were they launched here? Did one of these cause you to fall unconscious? Thinkin
 
 &quot;我们的机会来了！&quot;亚伯大叫着跳上野兽的背。他双手举起剑，准备刺入野兽的后背。
 
-\&lt;&lt;run setup.choice(&quot;[[Fight!-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Wounded_Lost]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1293" name="intro_fight_won" tags="" position="350,16225" size="100,100">你在野兽的胸膛上用力一击，它退缩着，不敢相信你的力量。
+\&lt;&lt;run setup.choice(&quot;[[战斗！-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Wounded_Lost]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1293" name="intro_fight_won" tags="" position="350,16225" size="100,100">你在野兽的胸膛上用力一击，它退缩着，不敢相信你的力量。
 
 &quot;呃啊... &quot;它先是呻吟，然后发出了可怜的畏缩的声音，脸朝下倒在村里的砾石路上。
 
@@ -43525,8 +43525,8 @@ Were they launched here? Did one of these cause you to fall unconscious? Thinkin
 
 亚伯在几步远的地方，跳起身来，准备走了。
 
-\&lt;&lt;run setup.choice(&quot;[[Inspect the monster&#39;s body -&gt; intro_inspect_monster]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Get moving -&gt; intro_get_moving]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1298" name="intro_inspect_monster" tags="" position="975,16225" size="100,100">你向倒下的野兽靠近，单膝跪着。长吻，方颚，和一对三角形的耳朵。它的身形看起来像狼，至少从面部结构来说。\
+\&lt;&lt;run setup.choice(&quot;[[查看怪物的身体 -&gt; intro_inspect_monster]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开 -&gt; intro_get_moving]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1298" name="intro_inspect_monster" tags="" position="975,16225" size="100,100">你向倒下的野兽靠近，单膝跪着。长吻，方颚，和一对三角形的耳朵。它的身形看起来像狼，至少从面部结构来说。\
 然而，与狼人种族的相似之处也就到此为止了，因为它身体的其余部分，从颈部以下都鼓着大量的肌肉。
 
 你以前见过这种野兽。他们被称为迷失者。\
@@ -43546,8 +43546,8 @@ Were they launched here? Did one of these cause you to fall unconscious? Thinkin
 
 Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意思了吧? 这些畜生大得很，而这是一只要小一点的。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Ask about the black liquid -&gt; intro_corruption]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave the monster -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1299" name="intro_corruption" tags="" position="1100,16225" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[询问黑色液体 -&gt; intro_corruption]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开这头怪物 -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1299" name="intro_corruption" tags="" position="1100,16225" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
 
 &quot;这绝对是腐化。&quot;
 
@@ -43555,18 +43555,18 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 亚伯的手突然从裤子上抽了出来， &quot;完事了吗？我一秒都不想再待在这头恶魔身边了。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[It doesn&#39;t feel too bad... -&gt; intro_hot]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[It looks dangerous... -&gt; intro_disgusting]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1300" name="intro_hot" tags="" position="1225,16225" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[它感觉并不糟… -&gt; intro_hot]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[它看起来很危险… -&gt; intro_disgusting]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1300" name="intro_hot" tags="" position="1225,16225" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
 
 亚伯的脸涨得通红，&quot;你也这么觉得吗？&quot; 他摇了摇头。&quot;闭，闭嘴！别在这种时候取笑我啊！那只是在谈论腐化罢了...&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave the monster -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1301" name="intro_disgusting" tags="" position="100,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开怪物 -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1301" name="intro_disgusting" tags="" position="100,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
 
 亚伯保持着沉默。他开始紧握着手，一种表明有什么事在让他烦扰的迹象。
 
 &quot;好吧。我猜你是对的。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave the monster -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1302" name="intro_get_moving" tags="" position="225,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开怪物 -&gt; intro_first_crossroads]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1302" name="intro_get_moving" tags="" position="225,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
 &quot;都完事了？&quot;亚伯问。你点了点头。
 
@@ -43577,7 +43577,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 &quot;等等，你听见了吗？&quot;他问。
 
-\&lt;&lt;run setup.choice(&quot;[[Stop and listen -&gt; intro_hold_up]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1303" name="intro_hold_up" tags="" position="350,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[停下并听 -&gt; intro_hold_up]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1303" name="intro_hold_up" tags="" position="350,16350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;)&gt;&gt;
 
 大地在颤抖。然后再一次。像一个不祥的定音鼓，发出的有节奏的砰砰响。
 
@@ -43586,13 +43586,13 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 &quot;那...那东西朝我们冲过来了！&quot;亚伯结结巴巴地说，&quot;该死！我们该怎么办！？&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Hide -&gt; intro_hide_in_rubble]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Fight it -&gt; intro_fight_it]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1304" name="intro_hide_in_rubble" tags="" position="475,16350" size="100,100">你推断你不可能跑得过那么大的野兽。它的一步就能轻易迈过你的几十步。你告诉亚伯，最好的办法就是躲起来。
+\&lt;&lt;run setup.choice(&quot;[[躲藏 -&gt; intro_hide_in_rubble]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[战斗 -&gt; intro_fight_it]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1304" name="intro_hide_in_rubble" tags="" position="475,16350" size="100,100">你推断你不可能跑得过那么大的野兽。它的一步就能轻易迈过你的几十步。你告诉亚伯，最好的办法就是躲起来。
 
 &quot;好吧...有什么想法吗？&quot; 他问。
 
-\&lt;&lt;run setup.choice(&quot;[[Play dead -&gt; intro_play_dead]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Hide inside the nearby houses -&gt; intro_rubble_hide]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1305" name="intro_play_dead" tags="" position="600,16350" size="100,100">一种恐惧的表情掠过亚伯的脸。&quot;你在说什么？&quot;
+\&lt;&lt;run setup.choice(&quot;[[装死 -&gt; intro_play_dead]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[藏在附近的房子里 -&gt; intro_rubble_hide]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1305" name="intro_play_dead" tags="" position="600,16350" size="100,100">一种恐惧的表情掠过亚伯的脸。&quot;你在说什么？&quot;
 
 你指向你身上的多处伤口，然后指向你们杀死的怪物的方向。 \
 如果有的话，对村民来说，让他们躺在尸体旁边，假装已经死在了它的爪下，看上去很有说服力。
@@ -43601,7 +43601,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 亚伯目瞪口呆。
 
-\&lt;&lt;run setup.choice(&quot;[[Ignore him and play dead-&gt;intro_play_dead_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1306" name="intro_play_dead_2" tags="" position="725,16350" size="100,100">沿着来时的路，你们找到了那只怪物，靠近它躺了下来。
+\&lt;&lt;run setup.choice(&quot;[[忽略他继续装死-&gt;intro_play_dead_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1306" name="intro_play_dead_2" tags="" position="725,16350" size="100,100">沿着来时的路，你们找到了那只怪物，靠近它躺了下来。
 
 &quot;我对天发誓，如果我们因为这个愚蠢的计划死了，&quot;亚伯躺在你旁边，&quot;我一定会办了你。&quot; 
 
@@ -43609,7 +43609,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 它来了。
 
-\&lt;&lt;run setup.choice(&quot;[[Hold your breath -&gt; intro_hold_breath_play_dead]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1307" name="intro_hold_breath_play_dead" tags="" position="850,16350" size="100,100">你最后深吸了一口气，然后屏住了呼吸。
+\&lt;&lt;run setup.choice(&quot;[[屏住呼吸 -&gt; intro_hold_breath_play_dead]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1307" name="intro_hold_breath_play_dead" tags="" position="850,16350" size="100,100">你最后深吸了一口气，然后屏住了呼吸。
 
 这种野兽根本不可能存在，但现实就摆在你的面前。它现在站在你上方，嗅着这块区域。它吸气，像空气涌入真空；它呼气，听起来像一阵愤怒的狂风。 \
 你可以相当清楚地看到它的一个爪子；黑色的爪子大到轻轻一碰就能把房屋碾成粉末。 
@@ -43628,8 +43628,8 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 你的眼睛睁得大大的，猛兽巨大的嘴以一种危险的方式贴着你隆起的大包。
 
-\&lt;&lt;run setup.choice(&quot;[[Resist -&gt; intro_playdead_resist]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Give In -&gt; intro_playdead_give_in]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1309" name="intro_playdead_resist" tags="" position="1100,16350" size="100,100">T你绝不能让这东西，对你为所欲为！就像亚伯所说的，一定是腐化影响了你。
+\&lt;&lt;run setup.choice(&quot;[[抵抗 -&gt; intro_playdead_resist]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[屈服 -&gt; intro_playdead_give_in]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1309" name="intro_playdead_resist" tags="" position="1100,16350" size="100,100">T你绝不能让这东西，对你为所欲为！就像亚伯所说的，一定是腐化影响了你。
 
 你大叫着，握紧拳头打向它油乎乎的脑袋一侧。
 
@@ -43637,7 +43637,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 你看向另一边。亚伯守护在你的背后，警戒地握着他的箭。
 
-\&lt;&lt;run setup.choice(&quot;[[Get Ready-&gt;intro_playdead_resist_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1310" name="intro_playdead_resist_2" tags="" position="1225,16350" size="100,100">这只怪物太大了……
+\&lt;&lt;run setup.choice(&quot;[[准备好-&gt;intro_playdead_resist_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1310" name="intro_playdead_resist_2" tags="" position="1225,16350" size="100,100">这只怪物太大了……
 
 它向你扑了过来，你连忙后退了几步，巨大的爪子猛地击中了地面。你微微俯身，紧握武器。你在冲锋。你在呐喊。剑刃与怪物的眼睛相连！
 
@@ -43645,7 +43645,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 你注意到一个披着斗篷的身影跳上了眼前生物的背，你倒吸了一口气!
 
-\&lt;&lt;run setup.choice(&quot;[[Continue -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1311" name="intro_playdead_give_in" tags="" position="100,16475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续 -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1311" name="intro_playdead_give_in" tags="" position="100,16475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 它的呼吸缓慢而沉重。它的鸡巴随着心脏的跳动猛击胸膛，龟头滑到脖子的下方，渗着粘液。
 
 一条长长的黑色舌头从它空洞的嘴里滑出来，品尝着你裤子里越来越湿的地方。它的嘴唇扭曲成了一个可怕的笑容。
@@ -43668,7 +43668,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 欲望的毒瘴突然消散了。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1313" name="intro_rubble_hide" tags="" position="350,16475" size="100,100">&quot;好吧，好吧，&quot;亚伯回答道，&quot;很有道理。只是要小心别被划伤了。我们受的伤已经够多的了，我想让自己更——&quot;
+\&lt;&lt;run setup.choice(&quot;[[继续 -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1313" name="intro_rubble_hide" tags="" position="350,16475" size="100,100">&quot;好吧，好吧，&quot;亚伯回答道，&quot;很有道理。只是要小心别被划伤了。我们受的伤已经够多的了，我想让自己更——&quot;
 
 他说到一半时停住了，注意到自己的喋喋不休。
 
@@ -43676,7 +43676,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 你和亚伯花了几分钟才成功挤进了这堆残骸中的空隙。就在这时，轻微的震动变成了不祥的颤抖。
 
-\&lt;&lt;run setup.choice(&quot;[[Peer through the cracks -&gt; intro_peer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1314" name="intro_peer" tags="" position="475,16475" size="100,100">你透过小缝往外看，心跳漏了一拍。“巨大”这个词已经不足以形容眼前这只怪物了。它看起来像只牛头人，或者说，它曾经可能是只牛头人。 \
+\&lt;&lt;run setup.choice(&quot;[[从缝隙偷看 -&gt; intro_peer]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1314" name="intro_peer" tags="" position="475,16475" size="100,100">你透过小缝往外看，心跳漏了一拍。“巨大”这个词已经不足以形容眼前这只怪物了。它看起来像只牛头人，或者说，它曾经可能是只牛头人。 \
 它的腿——如果可以被称为“腿”的话——是像山一样庞大而笨重的柱子。它的脚不是蹄子，而是诡异的大爪子，每走一步都能撕裂大地的爪子。
 
 你盯着它，眼睛眯成一条缝。不可能……
@@ -43685,7 +43685,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 它的脚现在就在你面前，诡异地静止着。
 
-\&lt;&lt;run setup.choice(&quot;[[Hold your breath -&gt; intro_rubble_hide_p2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1315" name="intro_rubble_hide_p2" tags="" position="600,16475" size="100,100">你和亚伯深吸一口气，屏住呼吸。
+\&lt;&lt;run setup.choice(&quot;[[屏住呼吸 -&gt; intro_rubble_hide_p2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1315" name="intro_rubble_hide_p2" tags="" position="600,16475" size="100,100">你和亚伯深吸一口气，屏住呼吸。
 
 肌肉膨胀的砰裂声离你是那么近。它巨大的吻部正对着你。你能感觉到它的呼吸。每一次喷鼻都像一阵狂风。
 
@@ -43693,25 +43693,25 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 你能感觉到汗水从亚伯的胸口滴落，他裸露的肚子紧贴在你的背上。
 
-\&lt;&lt;run setup.choice(&quot;[[Hold your breath -&gt; intro_hold_breath_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1316" name="intro_hold_breath_1" tags="" position="725,16475" size="100,100">你需要呼吸。
+\&lt;&lt;run setup.choice(&quot;[[屏住呼吸 -&gt; intro_hold_breath_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1316" name="intro_hold_breath_1" tags="" position="725,16475" size="100,100">你需要呼吸。
 
-\&lt;&lt;run setup.choice(&quot;[[Hold your breath -&gt; intro_hold_breath_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Breathe -&gt; intro_breathe]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1317" name="intro_hold_breath_2" tags="" position="850,16475" size="100,100">你的肺在燃烧。
+\&lt;&lt;run setup.choice(&quot;[[屏住呼吸 -&gt; intro_hold_breath_2]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[呼吸 -&gt; intro_breathe]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1317" name="intro_hold_breath_2" tags="" position="850,16475" size="100,100">你的肺在燃烧。
 
 黑暗开始吞噬你视野的边缘。你闭上了眼。
 
-\&lt;&lt;run setup.choice(&quot;[[Hold your breath -&gt; intro_hold_breath_3]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Breathe -&gt; intro_breathe]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1318" name="intro_hold_breath_3" tags="" position="975,16475" size="100,100">你的身体因需要氧气而抽搐。
+\&lt;&lt;run setup.choice(&quot;[[屏住呼吸 -&gt; intro_hold_breath_3]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[呼吸 -&gt; intro_breathe]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1318" name="intro_hold_breath_3" tags="" position="975,16475" size="100,100">你的身体因需要氧气而抽搐。
 
 你憋不住了!
 
-\&lt;&lt;run setup.choice(&quot;[[Breathe -&gt; intro_breathe]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1319" name="intro_breathe" tags="" position="1100,16475" size="100,100">你大口喘气，急需的氧气填满了燃烧的肺。
+\&lt;&lt;run setup.choice(&quot;[[呼吸 -&gt; intro_breathe]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1319" name="intro_breathe" tags="" position="1100,16475" size="100,100">你大口喘气，急需的氧气填满了燃烧的肺。
 
 你的心跳到嗓子眼了。缝隙另一边，一只巨大的、发着光的眼睛正凝视着你！
 
 难道……你的故事就到此为止了吗？
 
-\&lt;&lt;run setup.choice(&quot;[[Continue -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1320" name="intro_fight_it" tags="" position="1225,16475" size="100,100">你紧紧握住武器的手柄，剑刃闪烁着清冷的月光。
+\&lt;&lt;run setup.choice(&quot;[[继续 -&gt; intro_cray_kill]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1320" name="intro_fight_it" tags="" position="1225,16475" size="100,100">你紧紧握住武器的手柄，剑刃闪烁着清冷的月光。
 
 拯救者们因与传说中的怪物战斗过而闻名。如果你也想成为他们中的一员，那么是时候证明你的勇气不光只是说说而已。 \
 你站稳脚跟，举起长剑，护在身前，脸上露出一副坚定的神情。
@@ -43913,11 +43913,11 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;intro_cray_gets_jealous]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Thank him -&gt; intro_cray_leaves]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Ask him how you can aid the fight -&gt; intro_cray_leaves]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[感谢他 -&gt; intro_cray_leaves]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[问他你能帮什么忙 -&gt; intro_cray_leaves]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1336" name="intro_cray_gets_jealous" tags="" position="725,16725" size="100,100">&quot;它为什么选了你？&quot;他问。
 
-\&lt;&lt;run setup.choice(&quot;[[Ask him what he means -&gt; intro_cray_leaves]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1337" name="intro_cray_leaves" tags="" position="850,16725" size="100,100">这句话从你嘴吧里冒出来。你能感觉到每一个音节都从你的唇边流过，但都未被听取。
+\&lt;&lt;run setup.choice(&quot;[[问他什么意思 -&gt; intro_cray_leaves]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1337" name="intro_cray_leaves" tags="" position="850,16725" size="100,100">这句话从你嘴吧里冒出来。你能感觉到每一个音节都从你的唇边流过，但都未被听取。
 
 克雷的表情仍然僵硬，混杂着兴奋、恼怒和……饥渴。他巨大的身躯朝着外墙转去。
 
@@ -43931,8 +43931,8 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 &quot;回 家。&quot;拾荒者刺耳地说，&quot;只有我才能打破这个循环。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave him be -&gt; intro_cray_leaves_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Run after him -&gt; intro_cray_knockout]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1338" name="intro_cray_leaves_2" tags="" position="975,16725" size="100,100">你和亚伯目瞪口呆地看着这个气势汹汹的身影离开黄金堡垒。
+\&lt;&lt;run setup.choice(&quot;[[不管他 -&gt; intro_cray_leaves_2]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[追上他 -&gt; intro_cray_knockout]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1338" name="intro_cray_leaves_2" tags="" position="975,16725" size="100,100">你和亚伯目瞪口呆地看着这个气势汹汹的身影离开黄金堡垒。
 
 他头也不回地走了。
 
@@ -43974,7 +43974,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_SurvivorOfTheFirstEclipse)&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue -&gt; intro_sleep]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1341" name="intro_timer_passage" tags="" position="100,16850" size="100,100">\&lt;&lt;set $IntroCountdown = $IntroCountdown - 1&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续 -&gt; intro_sleep]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1341" name="intro_timer_passage" tags="" position="100,16850" size="100,100">\&lt;&lt;set $IntroCountdown = $IntroCountdown - 1&gt;&gt;
 \&lt;&lt;if $IntroCountdown == 2&gt;&gt;
 你脚下的颤抖正在加剧。它越来越近了。
 \&lt;&lt;elseif $IntroCountdown == 1&gt;&gt;
@@ -43992,7 +43992,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 争论不断，但你发现你的思想又回到了睡眠的爱抚中。你隐约有一种不安的感觉。那是一个陨石吗?
 
-\&lt;&lt;run setup.choice(&quot;[[Wake up-&gt;intro_wake_up]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1343" name="intro_wake_up" tags="" position="350,16850" size="100,100">你休息着，没有梦可做，直到阳光的亲吻把你唤醒。你用手遮住你的脸，不让刺眼的光线照进来，你挺直身子，破烂的毯子掉在满是灰尘的地板上。
+\&lt;&lt;run setup.choice(&quot;[[醒来-&gt;intro_wake_up]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1343" name="intro_wake_up" tags="" position="350,16850" size="100,100">你休息着，没有梦可做，直到阳光的亲吻把你唤醒。你用手遮住你的脸，不让刺眼的光线照进来，你挺直身子，破烂的毯子掉在满是灰尘的地板上。
 
 你的伤口刺痛着，你的身体也因疲劳而疼痛。昨晚的战斗又让你添了多少道伤疤？
 
@@ -44004,14 +44004,14 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 ……更危险的事件的开端。
 
-\&lt;&lt;run setup.choice(&quot;[[Get dressed -&gt; intro_get_dressed]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1344" name="intro_get_dressed" tags="" position="475,16850" size="100,100">你花了一些时间穿上装备，用周遭的破布擦去衣服上凝固的血液和腐化。
+\&lt;&lt;run setup.choice(&quot;[[穿上衣服 -&gt; intro_get_dressed]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1344" name="intro_get_dressed" tags="" position="475,16850" size="100,100">你花了一些时间穿上装备，用周遭的破布擦去衣服上凝固的血液和腐化。
 
 当你擦完后，你发现自己手里拿着两块布。下意识地，你用其中一块来擦血了……
 
 ……而那另一块，则被染成了黑色。你紧紧攥着这块布。
 
-\&lt;&lt;run setup.choice(&quot;[[Breathe it in -&gt; intro_inhale_cloth]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Throw it away -&gt; intro_throw_away_cloth]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1345" name="intro_inhale_cloth" tags="" position="600,16850" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[把它吸入 -&gt; intro_inhale_cloth]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[扔掉它 -&gt; intro_throw_away_cloth]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1345" name="intro_inhale_cloth" tags="" position="600,16850" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
 真走运。这东西至少能让你体验一次古怪的高潮——刚好足够让你感受到那种被禁止的快感。
 
 你闭上眼睛，把布盖在嘴上，深深地吸气。灼热的暖流涌入你的身体，你的脸涨得绯红，异常地兴奋。
@@ -44031,7 +44031,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 10)&gt;&gt;
 Δ:你获得了10点腐化。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave -&gt; intro_leave_home][setup.stopRealizationPackages([&#39;CharacterSheet_Player&#39;])]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1347" name="intro_throw_away_cloth" tags="" position="850,16850" size="100,100">你把眼睛从那块布上移开，把它揉成一团扔到房间的另一边。
+\&lt;&lt;run setup.choice(&quot;[[离开 -&gt; intro_leave_home][setup.stopRealizationPackages([&#39;CharacterSheet_Player&#39;])]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1347" name="intro_throw_away_cloth" tags="" position="850,16850" size="100,100">你把眼睛从那块布上移开，把它揉成一团扔到房间的另一边。
 
 真恶心。
 
@@ -44040,9 +44040,9 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 你在心里记下了腐败的威力，然后起身离开了。
 
 \&lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Achievement_MemoriesOfTheLost&quot;)&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave -&gt; intro_no_herald]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开 -&gt; intro_no_herald]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave -&gt; intro_leave_home]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开 -&gt; intro_leave_home]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1348" name="intro_no_herald" tags="" position="975,16850" size="100,100">离开舒适的家，你在干燥、酷热的空气里穿梭。今天的沙漠绝不会善待拾荒者。
     
 你没有发现使者。
@@ -44057,7 +44057,7 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 年长的男人从兜帽下向你微笑，他的蓝眼睛凹陷在他那苍老的头骨里，银发覆盖着他的头顶。&quot;啊，$CharacterSheet_Player.info.name。看到你康复了，我很高兴。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Approach the Herald -&gt; intro_approach_herald]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1350" name="intro_approach_herald" tags="" position="1225,16850" size="100,100">让使者久等是不明智的。你迅速走到他们跟前。
+\&lt;&lt;run setup.choice(&quot;[[接近使者 -&gt; intro_approach_herald]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1350" name="intro_approach_herald" tags="" position="1225,16850" size="100,100">让使者久等是不明智的。你迅速走到他们跟前。
 
 握着你的手，他微笑着对你说：&quot;我真的很庆幸你没有在昨晚的袭击中丧生，同时，我对让你再次突然陷入危险真的非常非常抱歉。&quot;
 
@@ -44076,8 +44076,8 @@ Abel的声音突然在你背后响起，吓了你一跳，&quot;明白我的意�
 
 &quot;好吧，&quot;亚伯叹了口气，然后把一只手搭在你的肩上，半开玩笑着说，&quot;恭喜呀，战斗一场接着一场哈？一定要注意安全，好吗？&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Ask Abel to accompany you -&gt; intro_abel_company]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Thank him and depart -&gt; intro_depart]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1352" name="intro_abel_company" tags="" position="225,16975" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[让亚伯陪伴你 -&gt; intro_abel_company]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[向他道谢并离开 -&gt; intro_depart]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1352" name="intro_abel_company" tags="" position="225,16975" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
 &quot;我也想啊！但我觉得卫兵们肯定不会让使者的徒弟就这么大摇大摆地走出村庄的。&quot; \
 
