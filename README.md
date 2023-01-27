@@ -132,6 +132,10 @@
 |yes|Augwult|name.奥古特||
 |yes|meteor|n.陨石||
 |yes|Link Value|n.链接阀值|战斗行动右上角的数字|
+|yes|Doppleganger|name.双重者||
+|yes|Drenth|name.德伦斯||
+|yes|God-Beast|name.神之兽||
+|yes|Ankou|name.安口||
 ---
 
 ## **三、代码查疑**
