@@ -43478,7 +43478,7 @@ Y你冲向那个男人，举起了拳头！
 
 &quot;有我在休想！&quot; 你听见左边传来声音。
 
-\&lt;&lt;run setup.choice(&quot;[[Dodge!-&gt;intro_monster_ambush_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1292" name="intro_monster_ambush_2" tags="" position="225,16225" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;, $CharacterSheet_Abel.info.bodyList.villager)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[闪避！-&gt;intro_monster_ambush_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1292" name="intro_monster_ambush_2" tags="" position="225,16225" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;, $CharacterSheet_Abel.info.bodyList.villager)&gt;&gt;
 
 怪物哀嚎着，猛地滚落在到你身后的一面墙上。
 
@@ -44167,7 +44167,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 &lt;&lt;include KnownEncounter&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1358" name="KnownEncounter" tags="" position="975,16975" size="100,100">&lt;&lt;print $Encounter_Target.fight.encounterIntroText&gt;&gt;</tw-passagedata><tw-passagedata pid="1359" name="Travelling" tags="" position="1100,16975" size="100,100">&lt;&lt;set $Explore_Destination = setup.getExploreDestination(0)&gt;&gt;
 
-&lt;&lt;run setup.choice(&quot;[[探索荒漠-&gt;$Explore_Destination]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1360" name="Change_Combo_Moves_Menu" tags="Overworld" position="1225,16975" size="100,100">改变连击动作！
+&lt;&lt;run setup.choice(&quot;[[探索荒漠-&gt;$Explore_Destination]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1360" name="Change_Combo_Moves_Menu" tags="Overworld" position="1225,16975" size="100,100">改变连击动作组合！
 \&lt;&lt;set $FightMovesLeft = 5&gt;&gt;
 &lt;&lt;print setup.displayChangeFightMoves()&gt;&gt;</tw-passagedata><tw-passagedata pid="1361" name="ChartPage" tags="Overworld" position="100,17100" size="100,100">你回忆着你在冒险中遇到的生物，对比着他们之间的大小。
 
@@ -44328,7 +44328,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;一些卫兵报告说看到克雷在远处的沙丘后面；一个巨大的发着光的狼人被热浪笼罩着。起初，我认为那只是巧合，但最后有太多的卫兵都说着同样的话。&quot;
 
-&quot;我们不得不派遣巡逻队深入荒野，去看一看那位任性的拾荒者。&quot; 
+&quot;我们不得不派遣巡逻队深入荒漠，去看一看那位任性的拾荒者。&quot; 
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;abelHouseDialogue_aboutCray_whereabouts_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1384" name="abelHouseDialogue_aboutCray_whereabouts_2" tags="" position="475,17350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;)&gt;&gt;
 
@@ -44388,7 +44388,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;abelHouseDialogue_aboutTheBind_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1395" name="abelHouseDialogue_aboutTheBind_3" tags="" position="600,17475" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
 
-&quot;一定要小心那种技术。我不确定那些东西的感知或者意识是什么样的。我们对它们的了解少得可怕。&quot;
+&quot;一定要小心那种法术。我不确定那些东西的感知或者意识是什么样的，我们对它们的了解少得可怕。&quot;
 
 &lt;&lt;print setup.getNextNarativeEventPassageListText($CharacterSheet_Abel.quest.crayDialogue, 3)&gt;&gt;
 
@@ -44424,7 +44424,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 亚伯叹了口气，&quot;现在我离村长只有一步之遥了。我尽我所能确保着我们生活的稳定和繁荣。&quot;
 
-&quot;哦，还有，&quot;亚伯停顿了一下，他的眼睛转向塔的方向，&quot;在需要的时候和长老谈谈。&quot;
+&quot;哦，还有就是，&quot;亚伯停顿了一下，他的眼睛转向塔的方向，&quot;在需要的时候和长老交流。&quot;
 
 &lt;&lt;print setup.getNextNarativeEventPassageListText($CharacterSheet_Abel.quest.heraldDialogue, 2)&gt;&gt;
 
