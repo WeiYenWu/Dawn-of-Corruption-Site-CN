@@ -9570,7 +9570,7 @@ setup.absorbEssenceEffects = function(attackerSheet, victimSheet)
 
 	attackerSheet.applyAbilityRuntimeData(setup.Ability_EssenceSurge);
 
-	displayString += "∇: "+attackerSheet.info.name+" gains "+ (State.variables.FightTurn * 5)+" Strength."
+	displayString += "∇: "+attackerSheet.info.name+"获得了"+ (State.variables.FightTurn * 5)+"力量。"
 
 	return displayString;
 };
@@ -9611,7 +9611,7 @@ setup.growthFlavourDescriptors = function(attackerSheet, victimSheet, cockGrowth
 	{
 		if(muscleGrowth > 0)
 		{
-			displayString += setup.getMuscleGrowthSequenceText(attackerSheet, "Your", minimal);
+			displayString += setup.getMuscleGrowthSequenceText(attackerSheet, "你的", minimal);
 			displayString += "\n"
 		}
 
@@ -9623,21 +9623,21 @@ setup.growthFlavourDescriptors = function(attackerSheet, victimSheet, cockGrowth
 
         if(setup.hasLimb(attackerSheet.info.anatomy, "cocks") && cockGrowth > 0)
         {
-            displayString += "∇: Your cock has grown "+ setup.getLength(cockGrowth) + ".\n";
+            displayString += "∇：你的阴茎成长"+ setup.getLength(cockGrowth) + "。\n";
         }
         
         if(setup.hasLimb(attackerSheet.info.anatomy, "balls") && ballsGrowth > 0)
         {
-            displayString += "∇: Your balls grow by "+ setup.getLength(ballsGrowth) + ".\n";
+            displayString += "∇：你的阴囊成长"+ setup.getLength(ballsGrowth) + "。\n";
         }
 		
 		if(sizeGrowth > 0)
 		{
-			displayString += "∇: Your body has become "+ setup.getLength(sizeGrowth) + " taller \n";
+			displayString += "∇：你的身体变得"+ setup.getLength(sizeGrowth) + "高\n";
 		}
 		
-		displayString += "You marvel at your " + setup.getLength(setup.getStatValue(attackerSheet, "height")) + " muscular frame. ";
-		displayString += "Your "+ setup.getLength(setup.getStatValue(attackerSheet, "cock")) + " cock throbs with arousal."
+		displayString += "你惊叹于自己" + setup.getLength(setup.getStatValue(attackerSheet, "height")) + "高的肌肉发达的身体。";
+		displayString += "你的"+ setup.getLength(setup.getStatValue(attackerSheet, "cock")) + "长的阴茎因性奋而悸动。"
 		
 	}
 	else
@@ -9656,21 +9656,21 @@ setup.growthFlavourDescriptors = function(attackerSheet, victimSheet, cockGrowth
 
         if(setup.hasLimb(attackerSheet.info.anatomy, "cocks") && cockGrowth > 0)
         {
-            displayString +=  "∇: "+his+" cock has grown by "+ setup.getLength(cockGrowth) + ".\n";
+            displayString +=  "∇："+his+"阴茎生长了"+ setup.getLength(cockGrowth) + "。\n";
         }
 
         if(setup.hasLimb(attackerSheet.info.anatomy, "balls") && ballsGrowth > 0)
         {
-            displayString += "∇: "+his+" balls have grown by "+ setup.getLength(ballsGrowth) + ".\n";
+            displayString += "∇："+his+"阴囊生长了"+ setup.getLength(ballsGrowth) + "。\n";
         }
 
 		if(sizeGrowth > 0)
 		{
-			displayString += "∇: "+his+" body becomes "+ setup.getLength(sizeGrowth) + " taller \n";
+			displayString += "∇："+his+"身体变得"+ setup.getLength(sizeGrowth) + "高\n";
 		}
 		
-		displayString += attackerSheet.info.name +" marvels at "+his+" " + setup.getLength(setup.getStatValue(attackerSheet, "height")) + " muscular frame. ";
-		displayString += His+" "+ setup.getLength(setup.getStatValue(attackerSheet, "cock")) + " cock throbs with arousal."
+		displayString += attackerSheet.info.name +"惊叹于"+his+" " + setup.getLength(setup.getStatValue(attackerSheet, "height")) + "高的肌肉发达的身体。";
+		displayString += His+" "+ setup.getLength(setup.getStatValue(attackerSheet, "cock")) + "长的阴茎因性奋而悸动。"
 	}
 
 	return displayString;
@@ -9709,10 +9709,10 @@ setup.incubusCallEffects = function(attackerSheet, victimSheet)
 	ballsGrowth = setup.applyGrowth(victimSheet, "balls", ballsGrowth);
 
 	var displayString = "";
-	displayString += "∇: "+victimSheet.info.name + " gains <span style='color:#ac46c5;'>40</span> Arousal \n";
-	displayString += "∇: "+victimSheet.info.name+"'s cock permanently grows by "+ setup.getLength(cockGrowth) + "\n";
-	displayString += "∇: "+victimSheet.info.name+"'s body permanently grows by "+ setup.getLength(bodyGrowth) + "\n";
-	displayString += "∇: "+victimSheet.info.name+"'s balls permanently grows by "+ setup.getLength(ballsGrowth);
+	displayString += "∇："+victimSheet.info.name + "得到了<span style='color:#ac46c5;'>40</span>唤醒值\n";
+	displayString += "∇："+victimSheet.info.name+"的鸡巴永久地增长了"+ setup.getLength(cockGrowth) + "\n";
+	displayString += "∇: "+victimSheet.info.name+"的身体永久地增长了"+ setup.getLength(bodyGrowth) + "\n";
+	displayString += "∇: "+victimSheet.info.name+"的阴囊永久地增长了"+ setup.getLength(ballsGrowth);
 
 	return displayString;
 };
@@ -9742,7 +9742,7 @@ setup.lustfulInstinctsMove = function(attackerSheet, victimSheet)
 	attackerSheet.fight.variables.currentStamina = Math.min(attackerSheet.fight.variables.currentStamina, setup.getMaxStamina(attackerSheet));
 	attackerSheet.fight.variables.currentArousal = Math.min(attackerSheet.fight.variables.currentArousal + 10, 100);
 
-	displayString += "∇: "+attackerSheet.info.name + " gains 10 Arousal \n";
+	displayString += "∇："+attackerSheet.info.name + "得到了10唤醒值\n";
 
 	return displayString;
 };
@@ -9753,7 +9753,7 @@ setup.corruptedUrgesMove = function(attackerSheet, victimSheet)
 	
 	displayString += attackerSheet.applyAbilityRuntimeData(setup.Ability_CorruptedStrength);
 
-	displayString += "∇: "+attackerSheet.info.name + " gains the 'Corrupted Strength' ability until the end of combat \n";
+	displayString += "∇："+attackerSheet.info.name + "得到了'腐化之力'的能力直到战斗结束\n";
 
 	return displayString;
 };
@@ -9765,8 +9765,8 @@ setup.infectiousLustMove = function(attackerSheet, victimSheet)
 	setup.applyCorruption(victimSheet, 5);
 	victimSheet.fight.variables.currentArousal = Math.min(victimSheet.fight.variables.currentArousal + 50, 100);
 
-	displayString += "∇: "+victimSheet.info.name+" gains 5 Corruption.\n";
-	displayString += "∇: "+victimSheet.info.name+" gains 50 Arousal.";
+	displayString += "∇："+victimSheet.info.name+"得到了5点腐化值。\n";
+	displayString += "∇: "+victimSheet.info.name+"得到了50点唤醒。";
 
 	return displayString;
 };
@@ -9780,7 +9780,7 @@ setup.corruptedRemedyMove = function(attackerSheet, victimSheet)
 
 	attackerSheet.fight.variables.currentHP = Math.min(attackerSheet.fight.variables.currentHP + value, setup.getMaxHP(attackerSheet));
 
-	displayString += attackerSheet.info.name +" gains "+value+" hp."
+	displayString += attackerSheet.info.name +"得到了"+value+"点hp。"
 
 	return displayString;
 };
@@ -9887,17 +9887,17 @@ setup.getPronoun = function(character, desc)
 		switch(desc)
 		{
 			case "pronoun":
-				return "he";
+				return "他";
 			case "pronounCap":
-				return "He";
+				return "他";
 			case "pronounDepPos":
-				return "his";
+				return "他的";
 			case "pronounDepPosCap":
-				return "His";
+				return "他的";
 			case "pronounObject":
-					return "him";
+					return "他";
 			case "pronounObjectCap":
-				return "Him";
+				return "他";
 		}
 	}
 	
@@ -13324,7 +13324,7 @@ setup.getRaceDescriptor = function(race)
 	/* Only describe certain anatomy if it is non-standard */
 	// This is a pretty hacky way to get plural and singular names of anatomy. Need to figure out a better way.
 	// Doesn't even work for "Teeths"
-	const limbArr = ["heads", "eyes", "jaws", "teeths", "hands", "tongues", "arms", "pecs", "abdominals", "legs", "wings", "horns", "tails"];
+	const limbArr = ["头", "眼", "下巴", "牙", "手", "舌头", "胳膊", "胸肌", "腹肌", "腿", "翅膀", "角", "尾巴"];
 	var anatomyStr = "";
 	limbArr.forEach(limbStr => {
 		var limb = race[limbStr];
@@ -13366,55 +13366,55 @@ setup.getMusclesDescriptorForValue = function(value)
 
 	if(value >= 5000)
 	{
-		displayString += "Godlike";
+		displayString += "如神";
 	}
 	else if(value >= 3000)
 	{
-		displayString += "Demi-God";
+		displayString += "半神";
 	}
 	else if(value >= 2000)
 	{
-		displayString += "Mountainous";
+		displayString += "山地";
 	}
 	else if(value >= 1250)
 	{
-		displayString += "Monumental";
+		displayString += "不朽";
 	}
 	else if(value >= 800)
 	{
-		displayString += "Gigantic";
+		displayString += "硕大无朋";
 	}
 	else if(value >= 500)
 	{
-		displayString += "Hyper";
+		displayString += "过大";
 	}
 	else if(value >= 300)
 	{
-		displayString += "Hulking";
+		displayString += "沉重";
 	}
 	else if(value >= 200)
 	{
-		displayString += "Powerful";
+		displayString += "强大";
 	}
 	else if(value >= 100)
 	{
-		displayString += "Brawny";
+		displayString += "壮硕";
 	}
 	else if(value >= 70)
 	{
-		displayString += "Ripped";
+		displayString += "健硕";
 	}
 	else if(value >= 30)
 	{
-		displayString += "Athletic";
+		displayString += "健壮";
 	}
 	else if(value >= 15)
 	{
-		displayString += "Fit";
+		displayString += "健康";
 	}
 	else
 	{
-		displayString += "Slim";
+		displayString += "苗条";
 	}
 
 	return displayString;
@@ -13446,17 +13446,17 @@ setup.getLength = function(value)
 			
 			if(km > 1000000000)
 			{
-				displayString += (km / 1000000000).toFixed(0).replace(/\.00$/, '') + "m km&nbsp;";
+				displayString += (km / 1000000000).toFxied(0).replace(/\.00$/, '') + "百万千米&nbsp;";
 				shownUnits = 0
 			}
 			else if(km > 1000000)
 			{
-				displayString += (km / 1000000).toFixed(0).replace(/\.00$/, '') + "k km&nbsp;";
+				displayString += (km / 1000000).toFixed(0).replace(/\.00$/, '') + "千千米&nbsp;";
 				shownUnits = 0;
 			}
 			else
 			{
-				displayString += km.toFixed(2).replace(/\.00$/, '') + "km&nbsp;" ;
+				displayString += km.toFixed(2).replace(/\.00$/, '') + "千米&nbsp;" ;
 				shownUnits--;
 			}
 		}
@@ -13468,7 +13468,7 @@ setup.getLength = function(value)
                 var m = Math.floor(cm / 100);
                 cm -= m * 100;
     
-                displayString += m.toFixed(2).replace(/\.00$/, '') + "m&nbsp;" ;
+                displayString += m.toFixed(2).replace(/\.00$/, '') + "米&nbsp;" ;
             }
 
 			shownUnits--;
@@ -13478,7 +13478,7 @@ setup.getLength = function(value)
 		{
             if(cm > 0)
             {
-                displayString += cm.toFixed(2).replace(/\.00$/, '') % 100+"cm";
+                displayString += cm.toFixed(2).replace(/\.00$/, '') % 100+"厘米";
             }
 
 			shownUnits--;
@@ -13493,17 +13493,17 @@ setup.getLength = function(value)
 
 			if(miles > 1000000000)
 			{
-				displayString += (miles / 1000000000).toFixed(0).replace(/\.00$/, '') + "m miles&nbsp;";
+				displayString += (miles / 1000000000).toFixed(0).replace(/\.00$/, '') + "百万英里&nbsp;";
 				shownUnits = 0
 			}
 			else if(miles > 1000000)
 			{
-				displayString += (miles / 1000000).toFixed(0).replace(/\.00$/, '') + "k miles&nbsp;";
+				displayString += (miles / 1000000).toFixed(0).replace(/\.00$/, '') + "千英里&nbsp;";
 				shownUnits = 0;
 			}
 			else
 			{
-				displayString += miles.toFixed(2).replace(/\.00$/, '') + "miles&nbsp;" ;
+				displayString += miles.toFixed(2).replace(/\.00$/, '') + "英里&nbsp;" ;
 				shownUnits--;
 			}
 		}
@@ -13515,7 +13515,7 @@ setup.getLength = function(value)
                 var ft = Math.floor(value / 12);
                 value -= ft * 12;
     
-                displayString += ft.toFixed(2).replace(/\.00$/, '') + "ft&nbsp;";
+                displayString += ft.toFixed(2).replace(/\.00$/, '') + "英尺&nbsp;";
             }
 
 			shownUnits--;
@@ -13525,7 +13525,7 @@ setup.getLength = function(value)
 		{
             if(value > 0)
             {
-                displayString += (value % 12).toFixed(2).replace(/\.00$/, '') +"in";
+                displayString += (value % 12).toFixed(2).replace(/\.00$/, '') +"英寸";
             }
             
 			shownUnits--;
@@ -13580,7 +13580,7 @@ setup.sizeCharactercomparison = function(charA, charB)
 	return setup.sizecomparison(setup.getStatValue(charA, "height"), setup.getStatValue(charB, "height"));
 }
 
-setup.getMuscleGrowthSequenceText = function(character, pronoun="Your", minimal)
+setup.getMuscleGrowthSequenceText = function(character, pronoun="你的", minimal)
 {
 	var displayString = "";
 	var muscleGrowthFlavourText = setup.getFlavourBasedDescription(character, "MuscleGrowthFlavourText");
@@ -13592,7 +13592,7 @@ setup.getMuscleGrowthSequenceText = function(character, pronoun="Your", minimal)
 		displayString += pronoun + " " + muscleGrowthFlavourText + " \n\n";
 	}
 	
-	displayString += pronoun + " muscles have increased in size! They are now " + muscleDescriptor + "(" + muscleStatValue + ")";
+	displayString += pronoun + "肌肉尺寸增加了! 它们现在是" + muscleDescriptor + "(" + muscleStatValue + ")";
 	return displayString;
 }
 
@@ -14165,17 +14165,17 @@ setup.displayAttackTimingDescription = function(character)
 
 	switch (character.fight.teammateSettings.attackTiming) {
 		case setup.AttackTiming.BEFORE_PLAYER:
-			displayString += character.info.name + " currently attacks before you.";
+			displayString += character.info.name + "在你的行动之前进行攻击。";
 			break;
 		case setup.AttackTiming.BETWEEN_PLAYER_AND_ENEMY:
-			displayString += character.info.name + " currently attacks between you and your enemy.";
+			displayString += character.info.name + "在你和你敌人的行动之间攻击。";
 			break;
 		case setup.AttackTiming.AFTER_ENEMY:
-			displayString += character.info.name + " currently attacks after you and your enemy.";
+			displayString += character.info.name + "在你和你敌人的行动之后进行攻击。";
 			break;
 	
 		default:
-			displayString += "TeammateSettings is not valid";
+			displayString += "TeammateSettings无效";
 			break;
 	}
 
@@ -15040,23 +15040,23 @@ setup.displayVillageCorruptionDescriptor = function()
 
     if(corruption >= 150)
     {
-        displayString += "Terrifying roars and monstrous moans constantly boom across the Golden Bastion.";
+        displayString += "恐怖的吼叫声和畸形的呻吟声不断地在黄金堡垒上轰鸣。";
     }
     else if(corruption >= 100)
     {
-        displayString += "The Golden Bastion is eerily quiet. Your corruption is rotting it to its core. Those who haven't fled can barely handle the lust booming within their mind.";
+        displayString += "黄金堡垒安静得可怕。腐化正在深入你的身心。那些没有逃离的人几乎无法承受他们心中蓬勃的欲望。";
     }
     else if(corruption >= 75)
     {
-        displayString += "The Golden Bastion's soil is darkened and corrupted. Whispers and schemes softly ring behind your back.";
+        displayString += "金色堡垒的土壤变得黑暗和腐朽。窃窃私语和密谋声在你背后轻轻响起。";
     }
     else if(corruption >= 50)
     {
-        displayString += "People give you worrying looks. You are not the same as before...";
+        displayString += "人们向你投来担忧的目光。你变得和以前不一样了……";
     }
     else
     {
-        displayString += "Life is not easy for the people here, but together they do their best to make it work. Every scrap fills a purpose. Everyone has a role to play.";
+        displayString += "对这里的人来说，生活并不容易，但他们一起努力让生活变得更好。每一个废料都有其用途。每个人都有自己的角色。";
     }
 
     return displayString;
@@ -18798,12 +18798,12 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 	},
     fightReward: setup.RewardTier.HIGH,
     encounterIntroText: &quot;&lt;&lt;include Tok_Fight_Intro&gt;&gt;&quot;,
-    encounterStartText: &quot;His immense stature is intimidating, he looks powerful enough to break you in half. Yet you feel an alien instinct warp your reason.\n The sight of his massive muscles and cock nearly drives you mad with excitement. \n Your own cock throbs as you ready your weapon.&quot;
-    + &quot;\n The fear is all gone, all you think of is to make this beast yours.&quot;,
+    encounterStartText: &quot;他巨大的身材让人望而生畏，他看起来强大到足以把你打成两半。然而，你感到一种外来的本能扭曲了你的理性。\n当你看到他巨大的肌肉和阴茎时，你几乎要兴奋得发疯了。\n你准备好你的武器，你感觉自己的阴茎也在悸动。&quot;
+    + &quot;\n你恐惧全无，你心中所想的，是让这头野兽为你所有。&quot;,
 	outcomePlayerWins: 
 		&quot;&lt;&lt;include Tok_Fight_Won&gt;&gt;&quot;,
 	outcomePlayerLoses: 
-		&quot;Tok brings you down to your knees. \n \n[[继续-&gt;Tok Fight Lost]]&quot;
+		&quot;托克让你跪下来。\n \n[[继续-&gt;Tok Fight Lost]]&quot;
 }&gt;&gt;
 
 &lt;&lt;set $CharacterSheet_Lakkos.fight =
@@ -18889,7 +18889,7 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 	},
 	fightReward: setup.RewardTier.HIGH,
 	encounterIntroText: &quot;&quot;,
-	encounterStartText: &quot;Minotaur Guard readies his weapon&quot;,
+	encounterStartText: &quot;牛头人守卫握紧了他的武器&quot;,
 	outcomePlayerWins: &quot;&lt;&lt;include Quest_MQ002_Entrance_PlayerWins&gt;&gt;&quot;,
 	outcomePlayerLoses: &quot;&lt;&lt;include Quest_MQ002_Entrance_PlayerLoses&gt;&gt;&quot;
 }&gt;&gt;
@@ -19435,11 +19435,11 @@ for(i = 0; i &lt; State.variables.CharacterSheet_Player.fight.fightMoveIDs.lengt
 &lt;&lt;set $LevelUpParams = 
 {
     point : 2,
-    hp: {name: &quot;Health&quot;, value: $CharacterSheet_Player.fight.hp},
-	stamina: {name: &quot;Stamina&quot;, value: $CharacterSheet_Player.fight.stamina},
-	strength: {name: &quot;Strength&quot;, value: $CharacterSheet_Player.fight.strength},
-	arousalGain: {name: &quot;Arousal Gain per turn&quot;, value: $CharacterSheet_Player.fight.arousalGain},
-	staminaRecovery: {name: &quot;Stamina Recovery per turn&quot;, value: $CharacterSheet_Player.fight.staminaRecovery},
+    hp: {name: &quot;生命值&quot;, value: $CharacterSheet_Player.fight.hp},
+	stamina: {name: &quot;耐力&quot;, value: $CharacterSheet_Player.fight.stamina},
+	strength: {name: &quot;力量&quot;, value: $CharacterSheet_Player.fight.strength},
+	arousalGain: {name: &quot;每回合获得唤醒值&quot;, value: $CharacterSheet_Player.fight.arousalGain},
+	staminaRecovery: {name: &quot;每回合耐力恢复值&quot;, value: $CharacterSheet_Player.fight.staminaRecovery},
 	scaling: {
 		hp: 6,
 		stamina: 4,
@@ -21557,17 +21557,17 @@ Config.ui.stowBarInitially = false;
 他的鸡巴附着着又大又重的肌肉，被慢慢地摆动到空中，它不断增长的质量使得每一个动作都让所有愿意驻足观看的观众都感到性感。
 又是一阵隆隆声。而这是另一场灾难。白色的河流从粗壮的阴茎顶端爆发出来，变成了一场洪水，覆盖了你、地面和每一个靠近的物体，使其遭受到从他的世界末日般大小的睾丸中释放出来的巨大负荷。</tw-passagedata><tw-passagedata pid="63" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_2" tags="" position="350,850" size="100,100">巨大的手臂软绵绵地落在他的身边。一声响亮的隆隆声，类似于发情的野兽的强大咆哮，开始在大地上回荡。一个黑影——这个庞然大物的轮廓开始颤抖。
 黄金堡垒。周围的人都会见证，这个巨大的泰坦突然颤抖起来。随着巨人的成长，一道如雷鸣般响亮的裂缝在空中炸开。
-雷鸣般的轰鸣声在这片土地上回荡；每一声都预示着泰坦&#39;的 骨骼在移动，以创造更多的空间。地面在颤抖，因为远处的阴影\
+雷鸣般的轰鸣声在这片土地上回荡；每一声都预示着泰坦的 骨骼在移动，以创造更多的空间。地面在颤抖，因为远处的阴影\
 越来越大。更高。愈加宽广。没有任何人类的语言可以描述此时展示给世界的巨大尺寸，没有任何语言可以描述被压缩到那个奇异点的质量。</tw-passagedata><tw-passagedata pid="64" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_huge_3" tags="" position="475,850" size="100,100">他的阴茎突然硬了起来。一股深不可测的巨大能量从阴茎的缝隙中喷出，汇集到他下面的土地上。
 空气突然变得很热，因为一种厚重的、难以辨认的力量光环覆盖了现实的结构。
-现实&#39;的 意志再无机会。出乎全世界&#39;的 意料, 这个巨人颤抖着向各个方向膨胀。
-他的前臂是毫无杂质的完美球体，推动着不断增长的肱二头肌和肱三头肌，它们早已使主人&#39;的 头相形见绌。
+现实的意志再无机会。出乎全世界的意料, 这个巨人颤抖着向各个方向膨胀。
+他的前臂是毫无杂质的完美球体，推动着不断增长的肱二头肌和肱三头肌，它们早已使主人的 头相形见绌。
 他那高大的体型向上弯曲并向外扩张，包裹着人类所无法想象的新肌肉群。
 他的颈部向外涌出，几乎快要将如此巨大的身体背后存在的驱动力给吞没了。他的侧腹向外涌动，形成一个令人难以置信的强大而不可能的Y形。
 腿部，就像世界的地基一样，迅速爆发出让那些天然地基感到羞愧的大小。</tw-passagedata><tw-passagedata pid="65" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_small" tags="" position="600,850" size="100,100">他的@[all|cocks|one=throbs~more=throb]，比以往任何时候都更硬。他往下看，感觉到阴茎上每条静脉都有着不自然的厚度。
 然后，他被从他腰部滋生的一股快感浪潮击中了。他的阴茎疯狂地跳动着，因为它膨胀得更粗更长。
 他的眼睛睁得大大的，因为@[all|cocks|noverb]的增长在他的身体上进一步发展。
-它是如此&#39;的 长，如此粗。而且它不断增长，把他的手指推得更开。</tw-passagedata><tw-passagedata pid="66" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_medium" tags="" position="725,850" size="100,100">一种熟悉的感觉涌上心头。他低头看着他的@[all|cocks|noverb]咧嘴一笑，准备迎接一波即将到来的增长。
+它是如此的长，如此粗。而且它不断增长，把他的手指推得更开。</tw-passagedata><tw-passagedata pid="66" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_medium" tags="" position="725,850" size="100,100">一种熟悉的感觉涌上心头。他低头看着他的@[all|cocks|noverb]咧嘴一笑，准备迎接一波即将到来的增长。
 这突然袭击了他，就像肾上腺素激增一样。他的@[all|cocks|one=jolts~more=jolt]向前伸，硬到足以让他失去平衡。
 突然间，它来了。当他的阴茎越来越粗，越来越长时，他高兴地尖叫起来。
 他心脏的每一次跳动，他肌肉的每一次弯曲和每一次呼吸都为阴茎提供了更多沉重的、跳动的血肉。
@@ -21590,7 +21590,7 @@ Config.ui.stowBarInitially = false;
 他的@[all|cocks|one=explodes~more=explode]在尺寸上不断增大，敏感的肉山沿着他的胸肌向上迸发。
 他热情地揉搓着它，每一次触摸都使他接近高潮边缘。
 他的血管变得巨大，以无尽的力量喂养他的@[all|cocks|noverb]。一声胜利的咆哮从他身上传来，他的@[all|cocks|noverb]占据了风景。
-一切事物，包括每个人都暴露在他&#39;所 被血肉包裹的值得称道的野兽面前。他们只能敬畏地注视着地面的隆隆声;
+一切事物，包括每个人都暴露在他&#39;所被血肉包裹的值得称道的野兽面前。他们只能敬畏地注视着地面的隆隆声;
 他用@[all|cocks|one=strains~more=strain]支撑着土地。他的咆哮声响彻整个大地，强大的精液海洋再次降临到这个世界。</tw-passagedata><tw-passagedata pid="69" name="StoryInit_UniversalFlavour" tags="" position="1100,850" size="100,100">&lt;&lt;set setup.UniversalFlavour =
 {
 	basicAttackAttemptFlavour: {
@@ -24382,7 +24382,7 @@ Config.ui.stowBarInitially = false;
             passage: &quot;Imp_Low_Rela_Loss_Idle&quot;,
         },
     },
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="118" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="975,1475" size="100,100">一边调皮地咧嘴笑着，一边寻找攻击的机会。</tw-passagedata><tw-passagedata pid="119" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="1100,1475" size="100,100">在空中飘来飘去，等待攻击。</tw-passagedata><tw-passagedata pid="120" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_3" tags="" position="1225,1475" size="100,100">舔着嘴唇，像你&#39;是 下一块肉一样盯着你看。</tw-passagedata><tw-passagedata pid="121" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_4" tags="" position="100,1600" size="100,100">用一根手指顺着他的胸膛往下摸，并以此调戏你。</tw-passagedata><tw-passagedata pid="122" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="225,1600" size="100,100">转动着他的巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="123" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="350,1600" size="100,100">正在伸展他的四肢，准备与你搏斗。</tw-passagedata><tw-passagedata pid="124" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_3" tags="" position="475,1600" size="100,100">一边让他的舌头滑过他的胸肌，一边盯着你。</tw-passagedata><tw-passagedata pid="125" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="600,1600" size="100,100">咆哮声中带着强大的野性音调。他迫不及待地想与你干一架。</tw-passagedata><tw-passagedata pid="126" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="725,1600" size="100,100">啜饮着层叠的口水。他强大的身形弯曲，期待你的下一步行动。</tw-passagedata><tw-passagedata pid="127" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_3" tags="" position="850,1600" size="100,100">他的大脚耙在地上，准备随时冲锋。</tw-passagedata><tw-passagedata pid="128" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,1600" size="100,100">弯曲他那巨大的肌肉，想让你清楚地知道你的地位。</tw-passagedata><tw-passagedata pid="129" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,1600" size="100,100">跺着他巨大的脚，准备战斗。大地随之颤抖。</tw-passagedata><tw-passagedata pid="130" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,1600" size="100,100">他巨大的指关节迸响，它们发出的声音就像雷声一样响彻整个战场。</tw-passagedata><tw-passagedata pid="131" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_1" tags="" position="100,1725" size="100,100">这个狡猾的小恶魔似乎为你准备了一两招。</tw-passagedata><tw-passagedata pid="132" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_2" tags="" position="225,1725" size="100,100">小恶魔饥渴地看着你的身体。</tw-passagedata><tw-passagedata pid="133" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_3" tags="" position="350,1725" size="100,100">这个小恶魔上下打量着你，想要把你打量得一清二楚。</tw-passagedata><tw-passagedata pid="134" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_4" tags="" position="475,1725" size="100,100">这只小恶魔疯狂地绕着圈子，显然对下一顿饭感到兴奋。</tw-passagedata><tw-passagedata pid="135" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_1" tags="" position="600,1725" size="100,100">转动着他的巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="136" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_2" tags="" position="725,1725" size="100,100">正在伸展他的四肢，准备与你搏斗。</tw-passagedata><tw-passagedata pid="137" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_3" tags="" position="850,1725" size="100,100">一边让他的舌头滑过他的胸肌，一边盯着你。</tw-passagedata><tw-passagedata pid="138" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_1" tags="" position="975,1725" size="100,100">咆哮声中带着强大的野性音调。他迫不及待地想与你干一架。</tw-passagedata><tw-passagedata pid="139" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_2" tags="" position="1100,1725" size="100,100">啜饮着层叠的口水。他强大的身形弯曲，期待你的下一步行动。</tw-passagedata><tw-passagedata pid="140" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_3" tags="" position="1225,1725" size="100,100">他的大脚耙在地上，准备随时冲锋。</tw-passagedata><tw-passagedata pid="141" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_1" tags="" position="100,1850" size="100,100">弯曲他那巨大的肌肉，想让你清楚地知道你的地位。</tw-passagedata><tw-passagedata pid="142" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_2" tags="" position="225,1850" size="100,100">跺着他巨大的脚，准备战斗。大地随之颤抖。</tw-passagedata><tw-passagedata pid="143" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_3" tags="" position="350,1850" size="100,100">他巨大的指关节迸响，它们发出的声音就像雷声一样响彻整个战场。</tw-passagedata><tw-passagedata pid="144" name="_imp_text_sheet" tags="" position="475,1850" size="100,100">&lt;&lt;set setup.TextSheet_Imp =
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="118" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="975,1475" size="100,100">一边调皮地咧嘴笑着，一边寻找攻击的机会。</tw-passagedata><tw-passagedata pid="119" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="1100,1475" size="100,100">在空中飘来飘去，等待攻击。</tw-passagedata><tw-passagedata pid="120" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_3" tags="" position="1225,1475" size="100,100">舔着嘴唇，像你&#39;是下一块肉一样盯着你看。</tw-passagedata><tw-passagedata pid="121" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_4" tags="" position="100,1600" size="100,100">用一根手指顺着他的胸膛往下摸，并以此调戏你。</tw-passagedata><tw-passagedata pid="122" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="225,1600" size="100,100">转动着他的巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="123" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="350,1600" size="100,100">正在伸展他的四肢，准备与你搏斗。</tw-passagedata><tw-passagedata pid="124" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_3" tags="" position="475,1600" size="100,100">一边让他的舌头滑过他的胸肌，一边盯着你。</tw-passagedata><tw-passagedata pid="125" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="600,1600" size="100,100">咆哮声中带着强大的野性音调。他迫不及待地想与你干一架。</tw-passagedata><tw-passagedata pid="126" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="725,1600" size="100,100">啜饮着层叠的口水。他强大的身形弯曲，期待你的下一步行动。</tw-passagedata><tw-passagedata pid="127" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_3" tags="" position="850,1600" size="100,100">他的大脚耙在地上，准备随时冲锋。</tw-passagedata><tw-passagedata pid="128" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,1600" size="100,100">弯曲他那巨大的肌肉，想让你清楚地知道你的地位。</tw-passagedata><tw-passagedata pid="129" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,1600" size="100,100">跺着他巨大的脚，准备战斗。大地随之颤抖。</tw-passagedata><tw-passagedata pid="130" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,1600" size="100,100">他巨大的指关节迸响，它们发出的声音就像雷声一样响彻整个战场。</tw-passagedata><tw-passagedata pid="131" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_1" tags="" position="100,1725" size="100,100">这个狡猾的小恶魔似乎为你准备了一两招。</tw-passagedata><tw-passagedata pid="132" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_2" tags="" position="225,1725" size="100,100">小恶魔饥渴地看着你的身体。</tw-passagedata><tw-passagedata pid="133" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_3" tags="" position="350,1725" size="100,100">这个小恶魔上下打量着你，想要把你打量得一清二楚。</tw-passagedata><tw-passagedata pid="134" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_4" tags="" position="475,1725" size="100,100">这只小恶魔疯狂地绕着圈子，显然对下一顿饭感到兴奋。</tw-passagedata><tw-passagedata pid="135" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_1" tags="" position="600,1725" size="100,100">转动着他的巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="136" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_2" tags="" position="725,1725" size="100,100">正在伸展他的四肢，准备与你搏斗。</tw-passagedata><tw-passagedata pid="137" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_3" tags="" position="850,1725" size="100,100">一边让他的舌头滑过他的胸肌，一边盯着你。</tw-passagedata><tw-passagedata pid="138" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_1" tags="" position="975,1725" size="100,100">咆哮声中带着强大的野性音调。他迫不及待地想与你干一架。</tw-passagedata><tw-passagedata pid="139" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_2" tags="" position="1100,1725" size="100,100">啜饮着层叠的口水。他强大的身形弯曲，期待你的下一步行动。</tw-passagedata><tw-passagedata pid="140" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_3" tags="" position="1225,1725" size="100,100">他的大脚耙在地上，准备随时冲锋。</tw-passagedata><tw-passagedata pid="141" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_1" tags="" position="100,1850" size="100,100">弯曲他那巨大的肌肉，想让你清楚地知道你的地位。</tw-passagedata><tw-passagedata pid="142" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_2" tags="" position="225,1850" size="100,100">跺着他巨大的脚，准备战斗。大地随之颤抖。</tw-passagedata><tw-passagedata pid="143" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_3" tags="" position="350,1850" size="100,100">他巨大的指关节迸响，它们发出的声音就像雷声一样响彻整个战场。</tw-passagedata><tw-passagedata pid="144" name="_imp_text_sheet" tags="" position="475,1850" size="100,100">&lt;&lt;set setup.TextSheet_Imp =
 {	
 	goMeetImp_Intro :{
 		heightFlavour: {
@@ -26516,7 +26516,7 @@ Config.ui.stowBarInitially = false;
 你从未想象过你的鸡巴能拥有如此的分量。
 
 一想到你自己鸡巴的体型——以及它突然变大的想法——让你的@[all| cocks| noverb]似乎更为膨胀，尽管你临近高潮，但你以这种方法所拥有的更加浓稠的前液开始渗出。\
-随着这个想法侵入你的头脑，你的手在下面徘徊摸到你的@[all| balls| noverb]，它们总是饱满而沉重——随时准备倾泻出&lt;&lt;SymbioteName&gt;&gt;&#39;的液体。</tw-passagedata><tw-passagedata pid="216" name="_player_text_sheet_mirror_player_mirror_symbiote_CrotchFlavour_heightFlavour_large" tags="" position="725,2725" size="100,100">你几乎不需要探索你的@[all| cocks| noverb]——当你在性高潮时它将变得非常熟悉以将带出&lt;&lt;SymbioteName&gt;&gt;。\
+随着这个想法侵入你的头脑，你的手在下面徘徊摸到你的@[all| balls| noverb]，它们总是饱满而沉重——随时准备倾泻出&lt;&lt;SymbioteName&gt;&gt;的液体。</tw-passagedata><tw-passagedata pid="216" name="_player_text_sheet_mirror_player_mirror_symbiote_CrotchFlavour_heightFlavour_large" tags="" position="725,2725" size="100,100">你几乎不需要探索你的@[all| cocks| noverb]——当你在性高潮时它将变得非常熟悉以将带出&lt;&lt;SymbioteName&gt;&gt;。\
 然而，你发现你的手仍然在你沉重的鸡巴上徘徊，你感觉有过于饱满的血肉物质垂坠在你的手上。
 
 你光滑粘稠的阴茎肉已经随着新产生的液体而悸动，它们涌入你的鸡巴之中，准备被射出。\
@@ -26687,18 +26687,18 @@ Config.ui.stowBarInitially = false;
 很难顾及到每一块肌肉，仅仅是因为&lt;&lt;SymbioteName&gt;&gt;太大了。\
 它的每条肢体都被那上面巨量的肌肉所牵制，但当&lt;&lt;SymbioteName&gt;&gt;需要感受你大腿下面时现在显然已经不可能了。 \
 尽管还在探索自己的身体，&lt;&lt;SymbioteName&gt;&gt;仍试着继续自我欣赏，完全被自己身体迷住了。</tw-passagedata><tw-passagedata pid="302" name="_player_text_sheet_mirror_player_UpperBodyFlavour_heightFlavour_small" tags="" position="225,3850" size="100,100">你的双眼像模像样地沿着脖子的每一个曲线看向你的身体。你向后收起肩膀，挺起了你的@[all| pecs| noverb]，依靠惊人的控制力使肌肉\
-跳动着。你举起@[all| arms| noverb]进行了一个有力的屈臂，将你的@[2| hands| noverb]向内弯曲，使每块二头肌真正地挺起。随后，你将它们伸向前面，去触碰你敏感的乳头，\
+跳动着。你举起@[all| arms| noverb]进行了一次有力的屈臂，将你的@[2| hands| noverb]向内弯曲，使每块二头肌真正地挺起。随后，你将它们伸向前面，去触碰你敏感的乳头，\
 手指在乳晕边缘划着圆圈。
 
-Moaning from the pleasure, you let your hands glide down to your lower torso and feel each curve of your @[all| abdominals| noverb]. Your every movement causes them to shift and bulge.</tw-passagedata><tw-passagedata pid="303" name="_player_text_sheet_mirror_player_UpperBodyFlavour_heightFlavour_medium" tags="" position="350,3850" size="100,100">Your eyes follow every curve of your neck down toward your body, proper. You push your shoulders backwards and push out your @[all| pecs| noverb], bouncing each muscle with impressive \
-control. You can feel their weight as they rise and fall - you can even get a small ripple of muscle to run from the top of each pec to the bottom!
+你从快感中呻吟，让你的手滑向你的下半身，感受你@[all| abdominals| noverb]的每一个曲线。</tw-passagedata><tw-passagedata pid="303" name="_player_text_sheet_mirror_player_UpperBodyFlavour_heightFlavour_medium" tags="" position="350,3850" size="100,100">你的目光沿着你脖子上的每一个曲线向你的身体看去，它们很适合。你把肩膀向后收起，并挺起你的@[all| pecs| noverb]，以令人印象深刻的控制力让每一块肌肉跳动。\
+你可以感觉到它们的重量，因为它们在跳动——你甚至可以看到一个小小的肌肉涟漪，从每个胸肌的顶部运动到底部!
 
-You raise your @[all| arms| noverb] into a powerful flex, curling your @[2| hands| noverb] inwards to truly make each bicep rise. \
-You can hear audible creaks from your bones and flesh as your muscles&#39; size puts strain on them. You then bring them forward to touch your hard and sensitive, nipples, \
-running your fingers across the fairly sized nubs - nubs large enough to grip and squeeze. You moan from the pleasure.
+你举起@[all| arms| noverb]进行了一次有力的屈臂，将你的@[2| hands| noverb]向内弯曲，使每块二头肌真正地挺起。\
+你可以听到骨头和肉发出的嘎吱嘎吱的声音，因为你的肌肉大小给它们带来了压力。然后，你把它们伸到前面，触摸你坚硬而敏感的乳头，\
+用你的手指划过相当大的乳头——你的乳头大到足以让你握住和挤压。你因这种快感而呻吟。
 
-After a minute of fondling, you let your hands glide down to your lower torso and feel each curve of your @[all| abdominals| noverb]. Your every movement causes them to shift and bulge. \
-Your laterals are now large enough to push your arms upwards and outwards giving you an imposing and brawny stance.</tw-passagedata><tw-passagedata pid="304" name="_player_text_sheet_mirror_player_UpperBodyFlavour_heightFlavour_large" tags="" position="475,3850" size="100,100">Your eyes follow every curve of your neck down toward your body, proper. You push your shoulders backwards and push out your @[all| pecs| noverb], bouncing each muscle with impressive \
+经过一分钟的爱抚，你让你的手滑落到你的下半身，感受你的@[all| abdominals| noverb]的每一个曲线 你的每一个动作都会使它们转移和隆起。\
+你的侧腹肌现在大到足以将你的手臂向上和向外推，使你有一个壮观而彪悍的姿态。</tw-passagedata><tw-passagedata pid="304" name="_player_text_sheet_mirror_player_UpperBodyFlavour_heightFlavour_large" tags="" position="475,3850" size="100,100">Your eyes follow every curve of your neck down toward your body, proper. You push your shoulders backwards and push out your @[all| pecs| noverb], bouncing each muscle with impressive \
 control. You can feel their heavy weight as they rise and fall with loud shudders. Each vein and chord is incredibly visible with the sheer amount of mass focused into each pec!
 
 You raise your @[all| arms| noverb] into a monstrous flex, curling your @[2| hands| noverb] inwards to truly make each bicep rise like hills. \
@@ -36337,7 +36337,7 @@ maxRank: 5
         var His = setup.getPronoun(attacker,&quot;pronounDepPosCap&quot;);
         var his = setup.getPronoun(attacker,&quot;pronounDepPos&quot;);
 
-        var displayString = attacker.info.name +&quot;&#39;随着成长魔印的激活，他的身体被金色的光环所笼罩。\n&quot;;
+        var displayString = attacker.info.name +&quot;随着成长魔印的激活，他的身体被金色的光环所笼罩。\n&quot;;
         displayString += attacker.info.name + &quot;的鸡巴生长为&quot;+ setup.getLength(cockGrowth) + &quot;长，&quot;;
         displayString += his+&quot;肌肉变得更大了(+&quot;+ muscleGrowth + &quot;)并且&quot;;
         displayString += his+&quot;身体变为&quot;+ setup.getLength(sizeGrowth) + &quot;高。\n&quot;;
@@ -36458,8 +36458,8 @@ maxRank: 5
 	attackHitDesc: function(character, target)
 	{
         var displayString = &quot;&quot;;
-        displayString += setup.processFlavours(State.variables.CharacterSheet_Player, &quot;你将精华集中到你的@[all| hands| noverb]；它突然发出柔和的青色色调。\n&quot;);
-        displayString += &quot;你攻击&quot;+ target.info.name +&quot;&#39;身体的核心，使得光芒扩散到他们的整个身体。&quot;;
+        displayString += setup.processFlavours(State.variables.CharacterSheet_Player, &quot;你将精华集中到你@[all|hands| noverb]；它突然发出柔和的青色色调。\n&quot;);
+        displayString += &quot;你攻击&quot;+ target.info.name +&quot;身体的核心，使得光芒扩散到他们的整个身体。&quot;;
 
         return displayString;
 	},
@@ -36482,7 +36482,7 @@ maxRank: 5
     id: &quot;Sigil_Triad&quot;,
 	constantDesc: function(attacker, victim)
     {
-        return &quot;复杂图案的漩涡形成了三个魔印，依附在&quot; + attacker.info.name + &quot;&#39;的身体上。&quot;;
+        return &quot;复杂图案的漩涡形成了三个魔印，依附在&quot; + attacker.info.name + &quot;的身体上。&quot;;
     },
     onActivate: function(attacker, victim, params)
     {
@@ -36940,28 +36940,28 @@ maxRank: 5
 
 如果安伯有什么想告诉你的话，现在也不可能听到了。
 
-你必须 &lt;&lt;link &quot;自己决定下一步该怎么办。&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial3_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;
+你必须&lt;&lt;link &quot;自己决定下一步该怎么办。&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial3_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;
 
 &lt;span id=&quot;tutorial&quot;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="579" name="FightMove_Tutorial3_Tutorial" tags="" position="1100,7225" size="100,100">你能将鼠标指针悬停到卡片上的任意一个图标上以获取它所代表内容的有用提示。
 
 对你产生影响的每个属性也能这样做。</tw-passagedata><tw-passagedata pid="580" name="FightMove_WitheringVenom" tags="" position="1225,7225" size="100,100">&lt;&lt;set setup.FightMove_WitheringVenom =
 {
 	id: &quot;FightMove_WitheringVenom&quot;,
-	name: &quot;Withering Venom&quot;,
+	name: &quot;凋零之毒&quot;,
 	preparation: function(character, target)
 	{
 		var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
 
-		return character.info.name + &quot; can&#39;t contain &quot;+his+&quot; need to spread...&quot;
+		return character.info.name + &quot;不能抑制&quot;+his+&quot;对传播的需求……&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
         var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
-		return &quot;As the &quot;+ character.info.name + &quot; crawls closer, you notice a stinger emerge from his previously featureless head.\n&quot;;
+		return &quot;当&quot;+ character.info.name + &quot;爬得更近时，你注意到从他以前没有特征的头上冒出了一根毒刺。\n&quot;;
 	},
 	attackHitDesc: function(character, target)
 	{
-        var displayString = &quot;The &quot;+ character.info.name + &quot; suddenly pounces and stings you. A sharp pain slowly spreads through your limbs. You feel weaker.&quot;;
+        var displayString = &quot;&quot;+ character.info.name + &quot;突然扑过来刺痛你。一种尖锐的疼痛感慢慢蔓延到你的四肢。你感觉更虚弱了。&quot;;
 
 		return displayString;
 	},
@@ -36982,17 +36982,17 @@ maxRank: 5
 	staminaCost: 12,
 	critMod: 0,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Weakens your target with numbing venom.&quot;,
+	skillDescription: &quot;用麻痹毒液削弱你的目标。&quot;,
 	skillType: &quot;offensive&quot;,
 	skillTheme: &quot;offensive&quot;,
 	additionalEffects: [setup.witheringVenom]
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="581" name="FightMove_Worship" tags="" position="100,7350" size="100,100">&lt;&lt;set setup.FightMove_Worship =
 {
 	id: &quot;FightMove_Worship&quot;,
-	name: &quot;Worship&quot;,
+	name: &quot;崇拜&quot;,
 	preparation: function(character, target)
 	{
-		return character.info.name + &quot;&#39;s mind is entirely under your control. His mouth is watering at the sight of your cock.&quot;;
+		return character.info.name + &quot;的思想完全在你的控制之下。看到你的鸡巴，他的嘴角就会流出口水。&quot;;
 	},
 	attackAttemptDesc: function(character, target)
 	{
@@ -37000,8 +37000,8 @@ maxRank: 5
         target.fight.variables.currentArousal += arousalGain;
         target.fight.variables.currentArousal = Math.min(100, target.fight.variables.currentArousal);
 
-        let displayString = character.info.name +&quot; is overwhelmed by am insatiable desire to worhip their master. He loses himself, kissing &quot;+target.info.name+&quot; while grinding his hard cock on his. He soon drops to suck his master&#39;s while moaning passionately.\n&quot;;
-        displayString += target.info.name +&quot; graps the back of &quot;+character.info.name+&quot;&#39;s head and thrusts his cock down his throat. He gains &quot;+arousalGain+&quot; arousal.&quot;;
+        let displayString = character.info.name +&quot;被贪得无厌的淫欲所淹没，想要崇拜他们的主人。他迷失了自己，一边亲吻着&quot;+target.info.name+&quot;，一边在他的身体上摩擦自己坚硬的阴茎。他很快就低下头吸吮他主人的鸡巴，同时口中热情地呻吟着。\n&quot;;
+        displayString += target.info.name +&quot;抓住&quot;+character.info.name+&quot;的后脑勺，将他的阴茎插入他的喉咙。他获得了&quot;+arousalGain+&quot;点兴奋值。&quot;;
 
         return displayString;
 	},
@@ -37023,7 +37023,7 @@ maxRank: 5
 	staminaCost: 0,
 	critMod: 100,
 	skillStatsToDescriptionSpacing: 2,
-	skillDescription: &quot;Worhip your opponent&#39;s body.&quot;,
+	skillDescription: &quot;蹂躏你的对手的身体。&quot;,
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
     unlearnable: true,
@@ -37419,7 +37419,7 @@ He murmurs in turn and starts to nod.
 
 这实在是一个紧致有力而又干净利落的拥抱，不禁让你气喘吁吁。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_PostNamingPrompt_PlayerSmaller_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="626" name="Jorm_PostNamingPrompt_PlayerSmaller_2" tags="" position="725,7850" size="100,100">第二条舌头从&lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;&#39;的嘴里冒出来。它引导你的男性气质进入他等待已久的、垂涎三尺的嘴里，不计后果地迅速潜入你的全身。 \
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_PostNamingPrompt_PlayerSmaller_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="626" name="Jorm_PostNamingPrompt_PlayerSmaller_2" tags="" position="725,7850" size="100,100">第二条舌头从&lt;&lt;print $CharacterSheet_Jorm.info.name&gt;&gt;的嘴里冒出来。它引导你的男性气质进入他等待已久的、垂涎三尺的嘴里，不计后果地迅速潜入你的全身。 \
 但这就是作为一条巨大的蛇的优势。你的腰冲进他的食道，最后在他的胸部消失。
 
 你能感觉到他内炽热而又黏糊糊的身体拥抱着你，以及纳迦吞咽和大口吞咽时强大的肌肉收缩。
@@ -37712,9 +37712,9 @@ The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anato
 ((To be implemented at a later stage!))
 
 \&lt;&lt;run setup.choice(&quot;[[Invite him to the Golden Bastion-&gt;Recruit]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="656" name="Encounter_Win_Lost_Entity_Absorb" tags="" position="725,8225" size="100,100">The &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;他的腐化让你增大，但这还远远不够！你对力量的需求现在太强烈了，不能只是浅尝一下。 你需要更多。
+\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="656" name="Encounter_Win_Lost_Entity_Absorb" tags="" position="725,8225" size="100,100">The &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;他的腐化让你增大，但这还远远不够！你对力量的需求现在太强烈了，不能只是浅尝一下。 你需要更多。
 
-你把你的手指放在嘴里，尝尝&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;剩下的黑色液体散发的浓郁气味让你不寒而栗。
+你把你的手指放在嘴里，尝尝&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;剩下的黑色液体散发的浓郁气味让你不寒而栗。
 
 浓稠的$CharacterSheet_Player.symbiote.color粘液从毛孔中慢慢渗出。一股蒸汽从你流口水的嘴里逸出。
 
@@ -37724,7 +37724,7 @@ The corrupted &lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anato
 
 \&lt;&lt;run setup.choice(&quot;[[Merge with the black goo-&gt;Encounter_Win_Lost_Entity_Absorb_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="657" name="Encounter_Win_Lost_Entity_Absorb_2" tags="" position="850,8225" size="100,100">空气中弥漫着放荡。你可以感觉到欲望的余烬，性的气味压倒一切。All testaments to your superiority as a host.
 
-当黑色的软泥似乎在他的身体上颤抖时，&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;&#39;的胸部向上隆起。它感受到了你体内蕴藏的力量。
+当黑色的软泥似乎在他的身体上颤抖时，&lt;&lt;print setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;的胸部向上隆起。它感受到了你体内蕴藏的力量。
 
 &lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mergeLost1&quot;, 1, $CharacterSheet_Lost_Entity)&gt;&gt;
 
@@ -39036,8 +39036,8 @@ The temple of the Eldest.
 
 他的整个身体因力量而脉动和膨胀。他的呻吟声越来越深沉，他的阴茎沿着他的腿蜿蜒而下。你不得不退后，因为他的身体突然变大了。
 
-Δ: 卡纳塔尔&#39;的阴茎增长了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;cock&quot;, 11 * 12))&gt;&gt;。
-Δ: 卡纳塔尔&#39;的睾丸变宽了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;balls&quot;, 9 * 12))&gt;&gt;。
+Δ: 卡纳塔尔的阴茎增长了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;cock&quot;, 11 * 12))&gt;&gt;。
+Δ: 卡纳塔尔的睾丸变宽了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;balls&quot;, 9 * 12))&gt;&gt;。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Imp_EndingLoop_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="822" name="Imp_EndingLoop_5" tags="" position="225,10350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 3)&gt;&gt;
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Imp, 100)&gt;&gt;
@@ -44120,8 +44120,8 @@ Y你冲向那个男人，举起了拳头！
 -如果存档不兼容，这个种族将不会一并保存至下一版本；
 -我无法保证游戏内的文本完全匹配一个新的种族。
 
-[[I accept-&gt;CustomRaceCreator]]
-[[I decline-&gt;Name Setup]]</tw-passagedata><tw-passagedata pid="1356" name="CustomRaceCreator" tags="" position="725,16975" size="100,100">说明：
+[[我接受-&gt;CustomRaceCreator]]
+[[我拒绝-&gt;Name Setup]]</tw-passagedata><tw-passagedata pid="1356" name="CustomRaceCreator" tags="" position="725,16975" size="100,100">说明：
 
 请在第一个方框内填一个数字，多少由你。
 第二个方框是一组描述肢体的形容词列表。使用英文的&#39;,&#39;符号进行分隔。
@@ -44711,7 +44711,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &lt;&lt;print setup.displaySelectTeammate()&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Return-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1437" name="Village" tags="Overworld" position="0,0" size="100,100">\&lt;&lt;run setup.stopAllRealizationPackages()&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[返回-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1437" name="Village" tags="Overworld" position="0,0" size="100,100">\&lt;&lt;run setup.stopAllRealizationPackages()&gt;&gt;
 \&lt;&lt;run setup.stopSoundActions();&gt;&gt;
 \&lt;&lt;include setup.getNextNarativeEventPassage($CharacterSheet_Player.quest.enterVillage)&gt;&gt;</tw-passagedata><tw-passagedata pid="1438" name="Village_Normal" tags="Overworld" position="975,17975" size="100,100">\&lt;&lt;print setup.getVillageDescriptor()&gt;&gt;
 
@@ -44723,41 +44723,41 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 \
 \&lt;&lt;include Village_Menu&gt;&gt;
 \</tw-passagedata><tw-passagedata pid="1439" name="Village_Menu" tags="Overworld" position="1100,17975" size="100,100">\&lt;&lt;if setup.canLevelUp($Level) &gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Level Up-&gt;Level Up]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[升级-&gt;Level Up]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \
 \&lt;&lt;if $CharacterSheet_Player.quest.corruptionVillageExiled == true&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Look Around-&gt;Home]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[环顾四周-&gt;Home]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Home-&gt;Home]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[回家-&gt;Home]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \
 \&lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Ability_HostOfEcho&quot;)&gt;&gt;
-[[Modify Metabolism-&gt;Modify_Metabolism]]
+[[改变基因锁-&gt;Modify_Metabolism]]
 \&lt;&lt;/if&gt;&gt;
 \
-[[Change Fight Moveset-&gt;Change_Combo_Moves_Menu]]
+[[修改战斗行动-&gt;Change_Combo_Moves_Menu]]
 \
 \&lt;&lt;if $CharacterSheet_Player.quest.corruptionVillageExiled == true&gt;&gt;
-[[Options-&gt;GameplaySettings]]
+[[选项-&gt;GameplaySettings]]
 \&lt;&lt;else&gt;&gt;
-[[Altar of Options-&gt;GameplaySettings]]
+[[选项祭坛-&gt;GameplaySettings]]
 \&lt;&lt;/if&gt;&gt;
 \
 &lt;&lt;print setup.getVillagePassages()&gt;&gt;\
 \&lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Ability_HostOfEcho&quot;) &amp;&amp; $CharacterSheet_Player.quest.corruptionVillageExiled == false&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Abel&#39;s House-&gt;Village_AbelHouse_Intro]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[亚伯的家-&gt;Village_AbelHouse_Intro]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \
 \&lt;&lt;if $CharacterSheet_Player.fight.unlockedTeammates.length &gt; 0&gt;&gt;
-[[Select Teammate-&gt;Select_Teammate]]
+[[选择队友-&gt;Select_Teammate]]
 \&lt;&lt;/if&gt;&gt;
 \
 \&lt;&lt;if $WorldState.cultManor.monolithBroken&gt;&gt;
 \   &lt;&lt;if setup.getNextNarativeEventPassage($CharacterSheet_Jorm.quest.encounterPassages) != undefined&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Investigate the Fallen Realm-&gt;Encounter_Jorm]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[调查堕落之境-&gt;Encounter_Jorm]]&quot;);&gt;&gt;
 \   &lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Return to a uncertain fate-&gt;Ending_UncertainFate]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[回到不确定的命运中-&gt;Ending_UncertainFate]]&quot;);&gt;&gt;
 \   &lt;&lt;/if&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \
@@ -44766,25 +44766,25 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
     \&lt;&lt;set $NorthGateEvent = setup.getNextNarativeEventPassage($CharacterSheet_Player.quest.exploration.villageGateNorth)&gt;&gt;
     \
     \&lt;&lt;if $NorthGateEvent != undefined &amp;&amp; $CharacterSheet_Player.quest.corruptionVillageExiled == false&gt;&gt;
-        &lt;&lt;run setup.choice(&quot;[[Explore Northern Barrens-&gt;$NorthGateEvent]]&quot;);&gt;&gt;
+        &lt;&lt;run setup.choice(&quot;[[探索北大荒-&gt;$NorthGateEvent]]&quot;);&gt;&gt;
     \&lt;&lt;else&gt;&gt;
-        &lt;&lt;run setup.choice(&quot;[[Explore Northern Barrens-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;
+        &lt;&lt;run setup.choice(&quot;[[探索北大荒-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;
     \&lt;&lt;/if&gt;&gt;
     \
     \&lt;&lt;set $EastGateEvent = setup.getNextNarativeEventPassage($CharacterSheet_Player.quest.exploration.villageGateEast)&gt;&gt;
     \&lt;&lt;if $EastGateEvent != undefined &amp;&amp; $CharacterSheet_Player.quest.corruptionVillageExiled == false&gt;&gt;
-        &lt;&lt;run setup.choice(&quot;[[Explore Eastern Barrens-&gt;$EastGateEvent]]&quot;);&gt;&gt;
+        &lt;&lt;run setup.choice(&quot;[[探索东大荒-&gt;$EastGateEvent]]&quot;);&gt;&gt;
     \&lt;&lt;else&gt;&gt;
-        &lt;&lt;run setup.choice(&quot;[[Explore Eastern Barrens-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(1)]]&quot;);&gt;&gt;
+        &lt;&lt;run setup.choice(&quot;[[探索东大荒-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(1)]]&quot;);&gt;&gt;
     \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-&lt;span class = &quot;inactive&quot;&gt;&lt;&lt;link &quot;Explore the Barrens&quot; $Explore_Destination&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
+&lt;span class = &quot;inactive&quot;&gt;&lt;&lt;link &quot;探索荒原&quot; $Explore_Destination&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;if $Debug&gt;&gt;
 &lt;&lt;run setup.choice(&quot;[[Debug Menu-&gt;DebugMenu]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1440" name="Village_MeetImp_Examine" tags="Overworld" position="1225,17975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
-&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Imp, &#39;goMeetImp_Height&#39;, 1)&gt;&gt;</tw-passagedata><tw-passagedata pid="1441" name="Village_MeetImp_Examine_Size_Small" tags="Overworld" position="100,18100" size="100,100">你的恶魔砰的一声落在地上。他&lt;&lt;ImpHeight&gt;&gt;的身高相当适中，并不让人失望。
+&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Imp, &#39;goMeetImp_Height&#39;, 1)&gt;&gt;</tw-passagedata><tw-passagedata pid="1441" name="Village_MeetImp_Examine_Size_Small" tags="Overworld" position="100,18100" size="100,100">你的恶魔砰的一声落在地上。他&lt;&lt;ImpHeight&gt;&gt;高的身高相当合适，并不让人失望。
 
 至少这样他可以更容易地避开堡垒守卫的视线。
 
@@ -45322,20 +45322,20 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 }&gt;&gt;
 
 &lt;&lt;/nobr&gt;&gt;
-\&lt;h1&gt;&lt;&lt;SymbioteName&gt;&gt;在你体内深处，让它来打破你凡人外壳的极限。&lt;/h1&gt;
+\&lt;h1&gt;&lt;&lt;SymbioteName&gt;&gt;在你体内深处，让它来打破你凡人躯体的极限。&lt;/h1&gt;
 
 &lt;div id=&quot;ModifyMetabolismContent&quot;&gt;
 \&lt;&lt;include Modify_Metabolism_Show&gt;&gt;
 &lt;/div&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Apply-&gt;Village][setup.applyModifyMetabolism($CharacterSheet_Player, $ModifyMetabolismParams)]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Cancel-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1514" name="Modify_Metabolism_Show" tags="" position="475,18975" size="100,100">它可以突破你的极限 $ModifyMetabolismParams.points 次.
+\&lt;&lt;run setup.choice(&quot;[[完成-&gt;Village][setup.applyModifyMetabolism($CharacterSheet_Player, $ModifyMetabolismParams)]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[取消-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1514" name="Modify_Metabolism_Show" tags="" position="475,18975" size="100,100">它可以突破你的极限 $ModifyMetabolismParams.points 次.
 
 &lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;ModifyMetabolismTable&quot;&gt;
     &lt;div class=&quot;ModifyMetabolismRow&quot;&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatName&quot;&gt;
-        Maximum Muscles
+        肌肉上限
         &lt;/div&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatValue&quot;&gt;
         &lt;&lt;print setup.getMusclesDescriptorForValue(setup.getStatSizeCap(&quot;muscles&quot;, $ModifyMetabolismParams.cap.muscles)) + &quot; (&quot;+ setup.getStatSizeCap(&quot;muscles&quot;, $ModifyMetabolismParams.cap.muscles) + &quot;)&quot;&gt;&gt;
@@ -45352,7 +45352,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
     &lt;/div&gt;
     &lt;div class=&quot;ModifyMetabolismRow&quot;&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatName&quot;&gt;
-        Maximum Height
+        身高上限
         &lt;/div&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatValue&quot;&gt;
         &lt;&lt;print setup.getLength(setup.getStatSizeCap(&quot;height&quot;, $ModifyMetabolismParams.cap.height))&gt;&gt;
@@ -45369,7 +45369,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
     &lt;/div&gt;
     &lt;div class=&quot;ModifyMetabolismRow&quot;&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatName&quot;&gt;
-        Maximum Cock Size
+        最大阴茎大小
         &lt;/div&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatValue&quot;&gt;
         &lt;&lt;print setup.getLength(setup.getStatSizeCap(&quot;cock&quot;, $ModifyMetabolismParams.cap.cock))&gt;&gt;
@@ -45386,7 +45386,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
     &lt;/div&gt;
     &lt;div class=&quot;ModifyMetabolismRow&quot;&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatName&quot;&gt;
-        Maximum Balls Size
+        最大阴囊大小
         &lt;/div&gt;
         &lt;div class=&quot;ModifyMetabolismElementStatValue&quot;&gt;
         &lt;&lt;print setup.getLength(setup.getStatSizeCap(&quot;balls&quot;, $ModifyMetabolismParams.cap.balls))&gt;&gt;
@@ -45644,9 +45644,9 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
  
 你专注于：
  
-[[His cock-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9][$SymbioteBoost = &quot;cock&quot;]]
-[[His muscles-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9][$SymbioteBoost = &quot;muscles&quot;]]
-[[His whole body-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9][$SymbioteBoost = &quot;height&quot;]]</tw-passagedata><tw-passagedata pid="1531" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9" tags="" position="100,19225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
+[[他的阴茎-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9][$SymbioteBoost = &quot;cock&quot;]]
+[[他的肌肉-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9][$SymbioteBoost = &quot;muscles&quot;]]
+[[他的整个身体-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9][$SymbioteBoost = &quot;height&quot;]]</tw-passagedata><tw-passagedata pid="1531" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_9" tags="" position="100,19225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
 \&lt;&lt;if $SymbioteBoost == &quot;cock&quot;&gt;&gt;
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player,
 &quot;你专注于他的@[all|cocks|noverb]。它膨胀得越来越大，越来越粗，无法抑制地剧烈跳动。它达到了之前的极限，但很快就以更大的尺寸突破了这个极限。\n\n 它的鼓包爬过腹部，一路向上伸向起伏的胸部。&quot;,

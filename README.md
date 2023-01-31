@@ -160,6 +160,7 @@
 |43775|...of the >>>direlect<<< ruins...|derelict||
 |44928|...and bound to corrupt us all!>>>&#39;<<<...|||
 |26582|...layer of your slightly->>>transluscent<<< horns lies...|translucent||
+|26697|...and flesh as your muscles&#39;>>><<< size puts...|s||
 ---
 
 *[待补充]*
