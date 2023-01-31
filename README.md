@@ -136,6 +136,7 @@
 |yes|Drenth|name.德伦斯||
 |yes|God-Beast|name.神之兽||
 |yes|Ankou|name.安口||
+|yes|Lakkos|name.拉科斯||
 ---
 
 ## **三、代码查疑**
