@@ -131,6 +131,11 @@
 |yes|Infectious Lust|n.传播淫欲||
 |yes|Augwult|name.奥古特||
 |yes|meteor|n.陨石||
+|yes|Link Value|n.链接阀值|战斗行动右上角的数字|
+|yes|Doppleganger|name.双重者||
+|yes|Drenth|name.德伦斯||
+|yes|God-Beast|name.神之兽||
+|yes|Ankou|name.安口||
 ---
 
 ## **三、代码查疑**
@@ -155,6 +160,7 @@
 |43775|...of the >>>direlect<<< ruins...|derelict||
 |44928|...and bound to corrupt us all!>>>&#39;<<<...|||
 |26582|...layer of your slightly->>>transluscent<<< horns lies...|translucent||
+|26697|...and flesh as your muscles&#39;>>><<< size puts...|s||
 ---
 
 *[待补充]*
