@@ -6845,7 +6845,7 @@ setup.printChangeFightSkillList = function()
 {
     var displayString = "";
 
-    displayString += State.variables.FightMovesLeft + ' moves left to choose.\n';
+    displayString += '剩余' + State.variables.FightMovesLeft + '张卡可选。\n';
 
     for(let i = 0; i < State.variables.ComboableMovesInfo.length; i++) 
     {
@@ -6893,16 +6893,16 @@ setup.printChangeFightSkillList = function()
     }
 
     displayString += "\n\n";
-    displayString += "[[Cancel->Village][[setup.resetComboableFightMoveList()]]]";
+    displayString += "[[取消->Village][[setup.resetComboableFightMoveList()]]]";
     displayString += "\n";
 
     if(State.variables.FightMovesLeft <= 0)
     {
-        displayString += "[[Apply->Village][setup.applyComboableFightMoveList(); setup.resetComboableFightMoveList()]]";
+        displayString += "[[应用->Village][setup.applyComboableFightMoveList(); setup.resetComboableFightMoveList()]]";
     }
     else
     {
-        displayString += "<span class='inactive'>[[Apply->Village]]</span>";
+        displayString += "<span class='inactive'>[[应用->Village]]</span>";
     }
 
     return displayString;
@@ -7805,7 +7805,7 @@ setup.doAttack = function(attackerSheet, victimSheet)
 		{
 			if(params.hitcheck <= params.thresholdToMiss)
 			{
-				addToFightOutcome(attackerSheet.fight.variables, "It hits with a critical hit for <span style='color:#ff0000;'>" + params.attackDamage + "</span> damage!");
+				addToFightOutcome(attackerSheet.fight.variables, "它造成了 <span style='color:#ff0000;'>" + params.attackDamage + "</span> 点暴击伤害！");
 			}
 			else
 			{
@@ -10752,8 +10752,8 @@ setup.displayFightStats = function(character)
 		}
 		
 		displayString += "<div class='stat-perturn'>";
-		displayString += setup.displaySign(setup.getArousalGain(character)) +  setup.displayStatValue(character, "arousalGain");
-		displayString +=" <span style='color:#d600b2'>每回合</span></div>";
+		displayString +=" <span style='color:#d600b2'>每回合</span>";
+		displayString += setup.displaySign(setup.getArousalGain(character)) +  setup.displayStatValue(character, "arousalGain") + "</div>";
 		displayString += "</div>";
 	}
 
@@ -11299,115 +11299,115 @@ setup.displayModifiers = function(modifier)
 	{
 		if(propertyName == "maxHPMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Max HP");
+			displayString += setup.displayModifierText(modifier[propertyName], "最大生命值");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "maxStaminaMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Max Stamina");
+			displayString += setup.displayModifierText(modifier[propertyName], "最大耐力值");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "strengthMods")
 		{
-			displayString +=  setup.displayModifierText(modifier[propertyName], "Strength");
+			displayString +=  setup.displayModifierText(modifier[propertyName], "力量");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "critChanceMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Crit Chance");
+			displayString += setup.displayModifierText(modifier[propertyName], "暴击率");
 			displayString += "<br>"
 		}
 		
 		if(propertyName == "critDamageMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Crit Damage Multiplier");
+			displayString += setup.displayModifierText(modifier[propertyName], "暴击伤害倍数");
 			displayString += "<br>"
 		}
 		
 		if(propertyName == "essenceMultiplierMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Essence Gain Multiplier");
+			displayString += setup.displayModifierText(modifier[propertyName], "精华增益倍数");
 			displayString += "<br>" 
 		}
 		
 		if(propertyName == "actionSlotsMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Action Slots");
+			displayString += setup.displayModifierText(modifier[propertyName], "行动槽");
 			displayString += "<br>" 
 		}
 		
 		if(propertyName == "comboMovesPerTurnMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Combo Moves Per Turn");
+			displayString += setup.displayModifierText(modifier[propertyName], "每回合连击卡牌数");
 			displayString += "<br>" 
 		}
 
 		if(propertyName == "arousalGainMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Arousal Gain");
+			displayString += setup.displayModifierText(modifier[propertyName], "唤醒增益");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "minArousalMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Min Arousal");
+			displayString += setup.displayModifierText(modifier[propertyName], "最小唤醒值");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "staminaRecoveryMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Stamina Recovery");
+			displayString += setup.displayModifierText(modifier[propertyName], "耐力恢复");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "corruptionMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Corruption");
+			displayString += setup.displayModifierText(modifier[propertyName], "腐化");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "cockMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Cock Size", true);
+			displayString += setup.displayModifierText(modifier[propertyName], "阴茎尺寸", true);
 			displayString += "<br>"
 		}
 
 		if(propertyName == "ballsMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Balls Size", true);
+			displayString += setup.displayModifierText(modifier[propertyName], "睾丸尺寸", true);
 			displayString += "<br>"
 		}
 
 		if(propertyName == "heightMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Body Size", true);
+			displayString += setup.displayModifierText(modifier[propertyName], "体型大小", true);
 			displayString += "<br>"
 		}
 
 		if(propertyName == "musclesMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Muscles");
+			displayString += setup.displayModifierText(modifier[propertyName], "肌肉");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "growthMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Growth Multiplier");
+			displayString += setup.displayModifierText(modifier[propertyName], "成长倍数");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "xpMultiplierMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "XP Multiplier");
+			displayString += setup.displayModifierText(modifier[propertyName], "经验值倍数");
 			displayString += "<br>"
 		}
 
 		if(propertyName == "corruptionPerDayMods")
 		{
-			displayString += setup.displayModifierText(modifier[propertyName], "Corruption Per Day");
+			displayString += setup.displayModifierText(modifier[propertyName], "每日腐化");
 			displayString += "<br>"
 		}
 	}
@@ -12412,7 +12412,7 @@ setup.printActiveSound = function()
 	var displayString = "";
 	if(SimpleAudio.volume() <= 0.02 && State.variables.PlayingAudio == true)
 	{
-		displayString = '<span class = "VolumeWarning">This passage features audio. You can adjust the volume with the slider at the bottom left.</span>'
+		displayString = '<span class = "VolumeWarning">本页面以音频为特色。你可以通过屏幕左下角的滑块调整音量。</span>'
 	}
 
 	return displayString;
@@ -12424,10 +12424,10 @@ setup.displayVoiceRadio = function(character, voiceIDs)
 
 	for(let i = 0; i < voiceIDs.length; ++i)
 	{
-		displayString += '<label><<radiobutton "$'+character.id+'.info.audioSheet" '+voiceIDs[i]+' checked>>  Voice '+ (i+1) +'  </label>'
+		displayString += '<label><<radiobutton "$'+character.id+'.info.audioSheet" '+voiceIDs[i]+' checked>>  声音 '+ (i+1) +'  </label>'
 
 		displayString += '<span class="'+setup.getCorruptBackgroundClass(character)+'">'
-		displayString += '<<button "Test Voice">><<run setup.playRandomVoiceClip('+i+')>><</button>>';
+		displayString += '<<button "声音试听">><<run setup.playRandomVoiceClip('+i+')>><</button>>';
 		displayString += '</span>'
 		displayString += '\n'
 	}
@@ -13324,7 +13324,7 @@ setup.getRaceDescriptor = function(race)
 	/* Only describe certain anatomy if it is non-standard */
 	// This is a pretty hacky way to get plural and singular names of anatomy. Need to figure out a better way.
 	// Doesn't even work for "Teeths"
-	const limbArr = ["头", "眼", "下巴", "牙", "手", "舌头", "胳膊", "胸肌", "腹肌", "腿", "翅膀", "角", "尾巴"];
+	const limbArr = ["heads", "eyes", "jaws", "teeths", "hands", "tongues", "arms", "pecs", "abdominals", "legs", "wings", "horns", "tails"];
 	var anatomyStr = "";
 	limbArr.forEach(limbStr => {
 		var limb = race[limbStr];
@@ -13353,9 +13353,9 @@ setup.getRaceDescriptor = function(race)
 	}
 
 	/* males Section */
-	displayString += "\nmales:\n";
-	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.cocks, "penis", "penises")) +"\n";
-	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.balls, "ball", "balls")) + "\n";
+	displayString += "\n男性:\n";
+	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.cocks, "阴茎", "阴茎")) +"\n";
+	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.balls, "睾丸", "睾丸")) + "\n";
 
 	return displayString;
 }
@@ -20332,45 +20332,45 @@ Config.ui.stowBarInitially = false;
 &lt;&lt;set setup.englishNumbers = 
 {
 	1: &quot;&quot;,
-	2: &quot;two&quot;,
-	3: &quot;three&quot;,
-	4: &quot;four&quot;,
-	5: &quot;five&quot;,
-	6: &quot;six&quot;,
-	7: &quot;seven&quot;,
-	8: &quot;eight&quot;,
-	9: &quot;nine&quot;,
-	10: &quot;ten&quot;,
-	11: &quot;eleven&quot;,
-	12: &quot;twelve&quot;,
-	13: &quot;thirteen&quot;,
-	14: &quot;fourteen&quot;,
-	15: &quot;fifteen&quot;,
-	16: &quot;sixteen&quot;,
-	17: &quot;seventeen&quot;,
-	18: &quot;eighteen&quot;,
-	19: &quot;nineteen&quot;,
-	20: &quot;twenty&quot;,
-	21: &quot;twenty one&quot;,
-	22: &quot;twenty two&quot;,
-	23: &quot;twenty three&quot;,
-	24: &quot;twenty four&quot;,
-	25: &quot;twenty five&quot;,
-	26: &quot;twenty six&quot;,
-	27: &quot;twenty seven&quot;,
-	28: &quot;twenty eight&quot;,
-	29: &quot;twenty nine&quot;,
-	30: &quot;thirty&quot;,
-	31: &quot;thirty one&quot;,
-	32: &quot;thirty two&quot;,
-	33: &quot;thirty three&quot;,
-	34: &quot;thirty four&quot;,
-	35: &quot;thirty five&quot;,
-	36: &quot;thirty six&quot;,
-	37: &quot;thirty seven&quot;,
-	38: &quot;thirty eight&quot;,
-	39: &quot;thirty nine&quot;,
-	40: &quot;forty&quot;
+	2: &quot;两个&quot;,
+	3: &quot;三个&quot;,
+	4: &quot;四个&quot;,
+	5: &quot;五个&quot;,
+	6: &quot;六个&quot;,
+	7: &quot;七个&quot;,
+	8: &quot;八个&quot;,
+	9: &quot;九个&quot;,
+	10: &quot;十个&quot;,
+	11: &quot;十一个&quot;,
+	12: &quot;十二个&quot;,
+	13: &quot;十三个&quot;,
+	14: &quot;十四个&quot;,
+	15: &quot;十五个&quot;,
+	16: &quot;十六个&quot;,
+	17: &quot;十七个&quot;,
+	18: &quot;十八个&quot;,
+	19: &quot;十九个&quot;,
+	20: &quot;二十个&quot;,
+	21: &quot;二十一个&quot;,
+	22: &quot;二十二个&quot;,
+	23: &quot;二十三个&quot;,
+	24: &quot;二十四个&quot;,
+	25: &quot;二十五个&quot;,
+	26: &quot;二十六个&quot;,
+	27: &quot;二十七个&quot;,
+	28: &quot;二十八个&quot;,
+	29: &quot;二十九个&quot;,
+	30: &quot;三十个&quot;,
+	31: &quot;三十一个&quot;,
+	32: &quot;三十二个&quot;,
+	33: &quot;三十三个&quot;,
+	34: &quot;三十四个&quot;,
+	35: &quot;三十五个&quot;,
+	36: &quot;三十六个&quot;,
+	37: &quot;三十七个&quot;,
+	38: &quot;三十八个&quot;,
+	39: &quot;三十九个&quot;,
+	40: &quot;四十个&quot;
 }&gt;&gt;
 
 &lt;&lt;set $Debug = $SpecialBuild&gt;&gt;
@@ -36911,7 +36911,7 @@ maxRank: 5
 	},
 	attackAttemptDesc: function(character, target)
 	{
-		return &quot;The wounded Lost roars out in exasperation.&quot;
+		return &quot;受伤的迷失者愤怒地咆哮着。&quot;
 	},
 	activationCondition: function(character, target)
 	{
@@ -38807,13 +38807,13 @@ The temple of the Eldest.
 
 因此，你立即认出了一棵被你遗忘的在沙丘之间的无叶孤树。
 
-\&lt;&lt;run setup.choice(&quot;[[Inspect the tree from afar-&gt;Imp_EncounterStart_Growth_Cock_1To2_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="798" name="Imp_EncounterStart_Growth_Cock_1To2_2" tags="" position="975,9975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[查看远处的树-&gt;Imp_EncounterStart_Growth_Cock_1To2_2]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="798" name="Imp_EncounterStart_Growth_Cock_1To2_2" tags="" position="975,9975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 
 你猜对了，那只熟悉的小恶魔躺在一条老树枝上，努力保持着隐蔽。
 
-\&lt;&lt;run setup.choice(&quot;[[Walk to him-&gt;Imp_EncounterStart_Growth_Cock_1To2_3]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave him alone-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="799" name="Imp_EncounterStart_Growth_Cock_1To2_3" tags="" position="1100,9975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[跟他聊聊-&gt;Imp_EncounterStart_Growth_Cock_1To2_3]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[不管他-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="799" name="Imp_EncounterStart_Growth_Cock_1To2_3" tags="" position="1100,9975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 
 这只小恶魔注意到你朝他走来时慌张了一下，但他在从树上掉下来之前保持了平衡。
 
@@ -40358,8 +40358,8 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 它看起来像是个古老的环，散发着明亮的翡翠绿光。
 
-\&lt;&lt;run setup.choice(&quot;[[Dig it out-&gt;Shard_Ring_FirstMeeting_Intro_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave it be-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="939" name="Shard_Ring_FirstMeeting_Intro_2" tags="" position="1100,11725" size="100,100">\&lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;strength&quot;) &gt; 20&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[把它挖出来-&gt;Shard_Ring_FirstMeeting_Intro_2]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[不管它-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="939" name="Shard_Ring_FirstMeeting_Intro_2" tags="" position="1100,11725" size="100,100">\&lt;&lt;if setup.getStatValue($CharacterSheet_Player, &quot;strength&quot;) &gt; 20&gt;&gt;
 你凑近了环，试着从粗石下面握住它。
 盖在上面的碎石不在少数，要花费不少功夫才能将它取出来。
 
@@ -40372,7 +40372,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 你目前似乎并足够的力量没有将其取出。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave it be-&gt;Village]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[不管它-&gt;Village]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="940" name="Shard_Ring_FirstMeeting_Intro_3" tags="" position="1225,11725" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.info.known = setup.EncounterKnownState.KNOWN&gt;&gt;
 你的手如被环烫着了一样本能地缩了回去，但你刚才只感受到了它冰凉且光滑的表面。
 
@@ -40435,8 +40435,8 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;你的心归属于何处？ &quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;我会将力量赋予你最渴望的地方。&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Say you yearn to be dominant-&gt;Shard_Ring_Win_Dominant_Idle]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Say you yearn to be submissive-&gt;ShardRing_Win_Sub_Idle]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[告诉他你心向主宰-&gt;Shard_Ring_Win_Dominant_Idle]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[告诉他你心向臣服-&gt;ShardRing_Win_Sub_Idle]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="949" name="Shard_Ring_Low_Rela_Loss" tags="" position="1100,11850" size="100,100">灵体俯视着你，眼神冰冷，嘴巴紧绷成一条严肃的直线。
 你察觉到了他眼中的一些惋惜。
 
@@ -40447,7 +40447,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 你缓缓起身，离开了废墟，一无所获。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="951" name="Shard_Ring_Win_Dominant_Idle" tags="" position="100,11975" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.quest.relationshipScoring++&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="951" name="Shard_Ring_Win_Dominant_Idle" tags="" position="100,11975" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.quest.relationshipScoring++&gt;&gt;
 灵体向你咧嘴一笑，用知己般的视线将你从头到脚打量着。
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;确实……你注定要为很多人带去快感。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;并让他们全都渴求着更多。&quot;&lt;/span&gt;
@@ -40463,7 +40463,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 在你眨眼的瞬间，他突然在你面前弯下腰去。你的鸡巴狠狠地顶着他的屁股，热切的期待使它的跳动更为血脉偾张。
 
-\&lt;&lt;run setup.choice(&quot;[[Fuck him-&gt;Shard_Ring_Win_Dominant_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="953" name="Shard_Ring_Win_Dominant_Idle_3" tags="" position="350,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[操他-&gt;Shard_Ring_Win_Dominant_Idle_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="953" name="Shard_Ring_Win_Dominant_Idle_3" tags="" position="350,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 你用龟头感受着他那异常丝滑的皮肤上的红晕，然后猛地插了进去。
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;嘎啊啊啊啊啊！&quot;&lt;/span&gt;
@@ -40471,7 +40471,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 他的全身都被激活，灼热的欲望甚至使他体温都在上升。 
 他无法压抑的骚叫声让你想要更加用力地狠操他。
 
-\&lt;&lt;run setup.choice(&quot;[[Fuck him harder-&gt;Shard_Ring_Win_Dominant_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="954" name="Shard_Ring_Win_Dominant_Idle_4" tags="" position="475,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[用力操他-&gt;Shard_Ring_Win_Dominant_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="954" name="Shard_Ring_Win_Dominant_Idle_4" tags="" position="475,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
 力量灌注你的全身，饥渴的呻吟使快感的火焰更加旺盛。而他回应以喷涌而出的前列腺液。
 
 你的鸡巴开始吸收他体内溢出的精华；随着你的冲刺一步步冲破着灵体的极限，你的鸡巴也在增长。Your cock begins to absorb the overflow of Essence building within him; It grows and pulses as your thrust stretch the limits of what the spirit can hold.
@@ -40480,13 +40480,13 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 但你还能给他更多。
 
-\&lt;&lt;run setup.choice(&quot;[[Thrust balls deep into him-&gt;Shard_Ring_Win_Dominant_Idle_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="955" name="Shard_Ring_Win_Dominant_Idle_5" tags="" position="600,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[塞蛋-&gt;Shard_Ring_Win_Dominant_Idle_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="955" name="Shard_Ring_Win_Dominant_Idle_5" tags="" position="600,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 既然他想要感受一个勇士的威力，那你便满足他的愿望。
 你坏笑着将蛋蛋也塞了进去，使他超越了承受的极限。
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;哦天……&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Cum-&gt;Shard_Ring_Win_Dominant_Idle_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="956" name="Shard_Ring_Win_Dominant_Idle_6" tags="" position="725,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[射精-&gt;Shard_Ring_Win_Dominant_Idle_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="956" name="Shard_Ring_Win_Dominant_Idle_6" tags="" position="725,11975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 你发出满足的怒吼，射入了他的深处，一股强健的雄性精种浪潮般在他体内爆发，也使你抵达了极限。
 你死死抵着他，确保他吸收了每一滴精液，他的肚子随着精液的涌入鼓胀了起来。
 
@@ -40503,7 +40503,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 ∇: 你的鸡巴长度增加了 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 1))&gt;&gt;。
 ∇: 约束者觉得你更倾向于支配的。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="959" name="Shard_Ring_Low_Rela_Win_Dominant_Final" tags="" position="1100,11975" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="959" name="Shard_Ring_Low_Rela_Win_Dominant_Final" tags="" position="1100,11975" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
 \&lt;&lt;set State.variables.CharacterSheet_Shard_Ring.quest.fullDom = true&gt;&gt;
 
 他紧致的小洞紧紧吸着你不断进出的鸡巴；这种感觉爽到无法相信。
@@ -40516,7 +40516,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;我想要继续。让你这神一样的鸡巴永远插在我里面。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;求你了~&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Give him another thrust-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="961" name="Shard_Ring_Low_Rela_Win_Dominant_Final_3" tags="" position="100,12100" size="100,100">感觉他都要在你鸡巴上融化了。
+\&lt;&lt;run setup.choice(&quot;[[直驱而入-&gt;Shard_Ring_Low_Rela_Win_Dominant_Final_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="961" name="Shard_Ring_Low_Rela_Win_Dominant_Final_3" tags="" position="100,12100" size="100,100">感觉他都要在你鸡巴上融化了。
 
 他的肉壁在你的大棒周围硬化，适应着你的形状，为你的猛插提供着极致兴奋的触感。
 被你的鸡巴塞得满满当当的灵体呻吟着，他半透明的身体因陶醉而不停颤抖。
@@ -40537,7 +40537,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_CockRingOfTheBind)&gt;&gt;
 \&lt;&lt;run setup.completeAchievement(&quot;Achievement_CockRingOfTheBind&quot;);&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="964" name="Shard_Ring_Low_Rela_Win_Dominant_Idle" tags="" position="475,12100" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="964" name="Shard_Ring_Low_Rela_Win_Dominant_Idle" tags="" position="475,12100" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;]);&gt;&gt;
 
 他紧致的小洞紧紧吸着你不断进出的鸡巴。
 你能感受到进入他体内的每一寸肉棒，这使你更为兴致高亢。 
@@ -40563,7 +40563,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 ∇: 你的能力&quot;绑定者的锁精环&quot;现在更强了。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_CockRingOfTheBind)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="968" name="Shard_Ring_Dom_Loss" tags="" position="975,12100" size="100,100">灵体俯视着你，眼神冰冷，嘴巴紧绷成一条严肃的直线。
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="968" name="Shard_Ring_Dom_Loss" tags="" position="975,12100" size="100,100">灵体俯视着你，眼神冰冷，嘴巴紧绷成一条严肃的直线。
 你察觉到了他眼中的一些惋惜。 
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;你似乎是腐化了。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;这可不对劲。&quot;&lt;/span&gt;
@@ -40571,7 +40571,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 眨眼间，鬼魂从你的视野里消失了，但你的老二再次感到了阴茎环的熟悉的压迫感。
 环上的绿色符文温和地脉动着，但没有往常那样明亮。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="969" name="ShardRing_Win_Sub_Idle" tags="" position="1100,12100" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.quest.relationshipScoring--&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="969" name="ShardRing_Win_Sub_Idle" tags="" position="1100,12100" size="100,100">\&lt;&lt;set $CharacterSheet_Shard_Ring.quest.relationshipScoring--&gt;&gt;
 灵体向你轻轻一笑，用知己般的视线将你从头到脚打量着。
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;嗯哼……的确，他人的赐予要由你体验。&quot;&lt;/span&gt; &lt;span class=&#39;bind2&#39;&gt;&quot;你应该要被原始的快感所赐福。&quot;&lt;/span&gt;
@@ -40586,13 +40586,13 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 他的唇落在了你的唇上，温暖的吻使你恍神。
 
-\&lt;&lt;run setup.choice(&quot;[[Kiss Back-&gt;ShardRing_Win_Sub_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="972" name="ShardRing_Win_Sub_Idle_4" tags="" position="225,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[回吻-&gt;ShardRing_Win_Sub_Idle_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="972" name="ShardRing_Win_Sub_Idle_4" tags="" position="225,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 你的身体也在回应，瘫在他的怀里。吻仍在深入，将你拉入了快感的漩涡之中。
 
 他的热气呼在你的脖颈上，他的舌头舔舐着你的皮肤，让你浑身颤抖。
 你完全无法阻止灵体进一步探索你的身体，在你皮肤上漫游的双手又让你脊骨一阵发凉。
 
-\&lt;&lt;run setup.choice(&quot;[[Take a deep breath-&gt;ShardRing_Win_Sub_Idle_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="973" name="ShardRing_Win_Sub_Idle_5" tags="" position="350,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[深呼吸-&gt;ShardRing_Win_Sub_Idle_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="973" name="ShardRing_Win_Sub_Idle_5" tags="" position="350,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
 他散发出的麝香扑面而来，你的鸡巴本能地流出了一小股前液。
 周围醉人的精华愈发浓烈，让你们二人都被肉欲淹没。
 
@@ -40600,7 +40600,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 &lt;span class=&#39;bind1&#39;&gt;&quot;为我呻吟……&quot;&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Moan-&gt;ShardRing_Win_Sub_Idle_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="974" name="ShardRing_Win_Sub_Idle_6" tags="" position="475,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[呻吟-&gt;ShardRing_Win_Sub_Idle_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="974" name="ShardRing_Win_Sub_Idle_6" tags="" position="475,12225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 他的欲望几乎要让全身沸腾，使他再也无法压抑。
 他沉浸在你带来的快感中，命令的口吻变成了高潮的咆哮。
 
@@ -41322,18 +41322,18 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 直到你发现了朝向路外的靴印。
 
-\&lt;&lt;run setup.choice(&quot;[[Inspect the boot prints-&gt;Torgar_FirstMeeting_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1052" name="Torgar_FirstMeeting_Intro_2" tags="" position="225,13225" size="100,100">从它近乎&lt;&lt;print setup.getLength(12)&gt;&gt;的长度来看，它们的主人一定是个大个子。
+\&lt;&lt;run setup.choice(&quot;[[查看靴印-&gt;Torgar_FirstMeeting_Intro_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1052" name="Torgar_FirstMeeting_Intro_2" tags="" position="225,13225" size="100,100">从它近乎&lt;&lt;print setup.getLength(12)&gt;&gt;的长度来看，它们的主人一定是个大个子。
 
 从它们消失的方向那里传来了微弱的化学物品的气息。
 
-\&lt;&lt;run setup.choice(&quot;[[Investigate-&gt;Torgar_FirstMeeting_Intro_3]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1053" name="Torgar_FirstMeeting_Intro_3" tags="" position="350,13225" size="100,100">\&lt;&lt;set $CharacterSheet_Torgar.info.known = setup.EncounterKnownState.KNOWN&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[侦查-&gt;Torgar_FirstMeeting_Intro_3]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1053" name="Torgar_FirstMeeting_Intro_3" tags="" position="350,13225" size="100,100">\&lt;&lt;set $CharacterSheet_Torgar.info.known = setup.EncounterKnownState.KNOWN&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Torgar.quest.relationshipScoring++&gt;&gt;
 你进入了其中一栋破损的砂岩建筑。天花板早就没了。
 
 你谨慎向前，捕捉着一切不怀好意的存在发出的动静。
 
-\&lt;&lt;run setup.choice(&quot;[[Keep an eye out for what could lie within-&gt;Torgar_FirstMeeting_Intro_3_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1054" name="Torgar_FirstMeeting_Intro_3_1" tags="" position="475,13225" size="100,100">沉重的脚步声清楚地传来，使你转向它的来源。
+\&lt;&lt;run setup.choice(&quot;[[留意内部情况-&gt;Torgar_FirstMeeting_Intro_3_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1054" name="Torgar_FirstMeeting_Intro_3_1" tags="" position="475,13225" size="100,100">沉重的脚步声清楚地传来，使你转向它的来源。
 
 一个巨大的半兽人正用手遮挡着眼部的阳光；每根手指的粗度几乎可以和一个普通人的手腕媲美。
 
@@ -41362,8 +41362,8 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 他低沉的嗓音满是友好的自信，但你仍对他保持着怀疑。
 
-\&lt;&lt;run setup.choice(&quot;[[Shake his hand-&gt;Torgar_FirstMeeting_Intro_7_ShakeHand]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Greet him from a distance-&gt;Torgar_FirstMeeting_Intro_7_DistantGreet]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1058" name="Torgar_FirstMeeting_Intro_7_ShakeHand" tags="" position="975,13225" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[跟他握手-&gt;Torgar_FirstMeeting_Intro_7_ShakeHand]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[在远处打招呼-&gt;Torgar_FirstMeeting_Intro_7_DistantGreet]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1058" name="Torgar_FirstMeeting_Intro_7_ShakeHand" tags="" position="975,13225" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
 他的手掌非常坚硬。他给了你一个热情的微笑，然后放开你的手。
 
 &quot;真是一个热烈的欢迎，我都很久没这么做过了。不过，你不应该信任那些在荒漠漫无目的闲逛的家伙们。&quot;他的语气有一些严肃。
@@ -41407,25 +41407,25 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 (该路线将于后续版本中继续)
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1064" name="Torgar_Ascended_Path_Trigger_Loss" tags="" position="475,13350" size="100,100">说，他已经这么接近了……但他需要从另一个角度审视自己，需要
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1064" name="Torgar_Ascended_Path_Trigger_Loss" tags="" position="475,13350" size="100,100">说，他已经这么接近了……但他需要从另一个角度审视自己，需要
 找到一个可以打败他的人，来使他突破控制的等级。
 
 //up lost scoring
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1065" name="Torgar_Low_Rela_EncounterStart_Converse" tags="" position="600,13350" size="100,100">你沿着沙漠中古老的道路行走。很难确认这些道路是否是被贸易员或是其他的拯救者使用的。
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1065" name="Torgar_Low_Rela_EncounterStart_Converse" tags="" position="600,13350" size="100,100">你沿着沙漠中古老的道路行走。很难确认这些道路是否是被贸易员或是其他的拯救者使用的。
 重要的是你记得这些路指向了哪里。
 
 你曾沿着这条路，遇到了那个半兽人，托加。再次遇见他可以带来更多兴奋的结果。
 
-\&lt;&lt;run setup.choice(&quot;[[Follow the tracks-&gt;Torgar_Low_Rela_EncounterStart_Converse_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Return to the Golden Bastion-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1066" name="Torgar_Low_Rela_EncounterStart_Converse_2" tags="" position="725,13350" size="100,100">你相对轻松地进入了废弃的村庄里。
+\&lt;&lt;run setup.choice(&quot;[[沿着路走-&gt;Torgar_Low_Rela_EncounterStart_Converse_2]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[返回黄金堡垒-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1066" name="Torgar_Low_Rela_EncounterStart_Converse_2" tags="" position="725,13350" size="100,100">你相对轻松地进入了废弃的村庄里。
 
 找到半兽人并不困难；他宽阔的背部已经长到比你周围房子的门还要宽了。
 你看到你看到他在挖一些旧的瓦砾，但只瞥了一眼，他便丢到了一手的残片来迎接你。
 
 &quot;啊……很高兴再次遇到你，拯救者。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Greet Him-&gt;Torgar_Low_Rela_EncounterStart_Converse_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1067" name="Torgar_Low_Rela_EncounterStart_Converse_3" tags="" position="850,13350" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[问候他-&gt;Torgar_Low_Rela_EncounterStart_Converse_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1067" name="Torgar_Low_Rela_EncounterStart_Converse_3" tags="" position="850,13350" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
 
 半兽人起身，以友好愉悦的微笑迎接了你。
 他拍去手上的灰，垂在身体两侧。
@@ -41490,8 +41490,8 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 &quot;但其中的腐化一样强大。这在将其加工为全新的东西的时候是很重要的。你可不想变成迷失者的一员吧。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Warn him of the dangers of Corruption-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_AntiCorr]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Hint that you&#39;d like to experiment with Corruption yourself-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1075" name="Torgar_Low_Rela_EncounterStart_Carry_3_AntiCorr" tags="" position="600,13475" size="100,100">\&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;sad&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[警告他腐化的危险-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_AntiCorr]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[暗示你想试试腐化-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1075" name="Torgar_Low_Rela_EncounterStart_Carry_3_AntiCorr" tags="" position="600,13475" size="100,100">\&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;sad&quot;)&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Torgar.quest.pureScoring++&gt;&gt;
 &quot;确实如此，希望再也没有人需要去使用这个东西。如果要我猜测，我得说这是用来给整个沉落世界区域供能的。&quot;
 
@@ -41513,8 +41513,8 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 &quot;你是一个怪人，拯救者。一般来说，城里人都认为腐化是邪恶的根源。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Say you&#39;re not a city dweller anymore-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr_2_NotACityBoy]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Hint that you&#39;re only curious-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr_2_Curious]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1078" name="Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr_2_NotACityBoy" tags="" position="975,13475" size="100,100">\&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[说你不再是城市的居民了-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr_2_NotACityBoy]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[暗示你只是好奇-&gt;Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr_2_Curious]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1078" name="Torgar_Low_Rela_EncounterStart_Carry_3_ProCorr_2_NotACityBoy" tags="" position="975,13475" size="100,100">\&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;normal&quot;)&gt;&gt;
 
 &quot;嗯……说的也对；一旦你踏入了荒漠，你就不可能回头了……&quot;
 
@@ -41553,7 +41553,7 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 不过，在你亲自品尝过后，你有些想要更多……
 
-\&lt;&lt;run setup.choice(&quot;[[Wait for his arrival-&gt;Torgar_Low_Rela_EncounterStart_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1083" name="Torgar_Low_Rela_EncounterStart_2" tags="" position="350,13600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;horny&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[等着他-&gt;Torgar_Low_Rela_EncounterStart_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1083" name="Torgar_Low_Rela_EncounterStart_2" tags="" position="350,13600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;horny&quot;)&gt;&gt;
 没过多久，他便现了身。他朝你走来，裤子将将能包住他增大的凸起。每一次跳动都可能将其撑破。
 
 &quot;你来了……我一直一直在想着你。&quot;他说道，舌头舔着自己的一根獠牙。
@@ -41588,8 +41588,8 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 &quot;如果你愿意的话，我可以给你提供一个交易。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Listen to his offer-&gt;Torgar_Buy_Sigils]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1087" name="Torgar_Buy_Sigils" tags="" position="850,13600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[听听他的交易-&gt;Torgar_Buy_Sigils]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1087" name="Torgar_Buy_Sigils" tags="" position="850,13600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
 &quot;太好了！也许你愿意花费一些精华来交换一点我正在做的强力的合剂？&quot;托加语调间是淳朴的热情。  
 
 他嘟囔着将手伸向了腰带。看起来在战斗中他没有弄掉任何一点他的奇怪的液体。
@@ -41598,7 +41598,7 @@ its bulky frame is warm and inviting. You enjoy every crevice born of the shape 
 
 &lt;&lt;print setup.displayFightMoveStore()&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1088" name="Buy_First_Sigil_1" tags="" position="975,13600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1088" name="Buy_First_Sigil_1" tags="" position="975,13600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Torgar, &quot;smiling&quot;)&gt;&gt;
 
 说完，他取下了腰间的一个小瓶，递到你的手里。
 
@@ -44321,7 +44321,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &lt;&lt;print setup.getNextNarativeEventPassageListText($CharacterSheet_Abel.quest.crayDialogue, 3)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Talk about something else-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1382" name="abelHouseDialogue_aboutCray_whereabouts_link" tags="" position="225,17350" size="100,100">\&lt;&lt;run setup.choice(&quot;[[询问克雷的去向-&gt;abelHouseDialogue_aboutCray_whereabouts]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1383" name="abelHouseDialogue_aboutCray_whereabouts" tags="" position="350,17350" size="100,100">&lt;&lt;set $CharacterSheet_Abel.quest.crayDialogue.whereabouts.available = false&gt;&gt;\
+\&lt;&lt;run setup.choice(&quot;[[聊些别的-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1382" name="abelHouseDialogue_aboutCray_whereabouts_link" tags="" position="225,17350" size="100,100">\&lt;&lt;run setup.choice(&quot;[[询问克雷的去向-&gt;abelHouseDialogue_aboutCray_whereabouts]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1383" name="abelHouseDialogue_aboutCray_whereabouts" tags="" position="350,17350" size="100,100">&lt;&lt;set $CharacterSheet_Abel.quest.crayDialogue.whereabouts.available = false&gt;&gt;\
 &lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
 
 &quot;呃，&quot;他叹了口气，&quot;在你们俩都消失后，我们曾发起过几次大范围的巡逻。&quot;
@@ -44446,7 +44446,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &lt;&lt;print setup.getNextNarativeEventPassageListText($CharacterSheet_Abel.quest.heraldDialogue, 2)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[Talk about something else-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1407" name="abelHouseDialogue_outro" tags="" position="850,17600" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Abel.info.picture, undefined, $CharacterSheet_Abel.info.currentEmote)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[聊些别的-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1407" name="abelHouseDialogue_outro" tags="" position="850,17600" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Abel.info.picture, undefined, $CharacterSheet_Abel.info.currentEmote)&gt;&gt;
 
 你向使者的徒弟告别。
 
@@ -45752,9 +45752,9 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 无论那个坑里的东西是什么，现在都已经是你的一部分了。
 
 \&lt;&lt;if $CharacterSheet_Player.quest.corruptionVillageExiled == false&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Go back home-&gt;Quest_MQ001_EchoPostMerge_1]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[回家-&gt;Quest_MQ001_EchoPostMerge_1]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Go back home-&gt;Village]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[回家-&gt;Village]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1535" name="Quest_MQ001_EchoPostMerge_1" tags="" position="600,19225" size="100,100">你朝黄金堡垒的方向往回走。你在整个旅途中都感到头晕，就好像你的重心不在原本的地方。就像一个孩子开始蹒跚学步一样。
 
 &quot;站住！&quot;一个卫兵粗暴的声音吓了你一跳。他是一名体格健壮的龙族。你可以在它裸露的鳞片上看到新的伤疤，显然是昨晚袭击的幸存者。
