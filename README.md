@@ -89,7 +89,7 @@
 |yes|Path of Mastery/Ascension/Embrace/Redemption|name.驾驭/济世/接纳/救赎之路|托加的四条路线|
 |yes|Tonic of Stillness|name.冷静补剂|技能，可将腐化暂时转为力量|
 |yes|Torgar&#39;s Corrupted Bond|name.托加的腐化连接|能力名|
-|yes|Herald of the Eldest|name.长老之信使||
+|yes|Herald of the Eldest|name.长老之先驱||
 |yes|ESSENCE|n.精华|游戏中类似货币的存在|
 |yes|STAMINA|n.耐力||
 |yes|STRENGTH|n.力量，（肌肉）强度||
