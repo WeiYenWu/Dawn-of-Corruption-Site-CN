@@ -39193,7 +39193,7 @@ He walks up to you/climbs you, 双臂环绕在你的脖子上。他凝视着你�
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;blushing&quot;)&gt;&gt;
 &quot;是……谢谢……&quot; 他说着，一股情绪涌上了他的心头。
 
-&quot;主人……quot; 他的声音如耳语一般，但它足以震撼你的内心。
+&quot;主人……&quot; 他的声音如耳语一般，但它足以震撼你的内心。
 
 主人。
 
@@ -44093,7 +44093,7 @@ With just a few thrusts, you take him to the very hilt, claim his entire length,
 
 我的名字是&lt;&lt;textbox &quot;$CharacterSheet_Player.info.name&quot; $CharacterSheet_Player.info.name&gt;&gt;. 
 
-我的声音是这样的。(你可以在统计面板的底部调整音量)
+我的声音是这样的。（你可以在统计面板的底部调整音量）
 &lt;&lt;print setup.displayVoiceRadio($CharacterSheet_Player, [&quot;AudioSheet_Voice1_Player&quot;,&quot;AudioSheet_Voice2_Player&quot;])&gt;&gt;
 
 我是
@@ -44152,7 +44152,7 @@ I have a muscles value of &lt;&lt;textbox &quot;$CharacterSheet_Player.info.musc
 I have a &lt;&lt;textbox &quot;$CharacterSheet_Player.info.cock&quot; 6&gt;&gt; inches cock.
 I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; inches balls.
 
-[[Done-&gt;$Intro_Passage][console.log($CustomRace); console.log(setup.RacePoolObjects); setup.parseIntStats(); setup.setRace(State.variables.CharacterSheet_Player.info.anatomy, setup.RacePool.CUSTOM, &quot;herm&quot;)]]</tw-passagedata><tw-passagedata pid="1357" name="RandomEcounter" tags="" position="167,1844" size="100,100">\&lt;&lt;if !$Encounter_Target&gt;&gt;
+[[完成-&gt;$Intro_Passage][console.log($CustomRace); console.log(setup.RacePoolObjects); setup.parseIntStats(); setup.setRace(State.variables.CharacterSheet_Player.info.anatomy, setup.RacePool.CUSTOM, &quot;herm&quot;)]]</tw-passagedata><tw-passagedata pid="1357" name="RandomEcounter" tags="" position="167,1844" size="100,100">\&lt;&lt;if !$Encounter_Target&gt;&gt;
 你在旅途中找不到令人兴奋的东西。所有可能与你遇到的人和事都不见了。
 
 \&lt;&lt;run setup.choice(&quot;[[回家-&gt;Village]]&quot;);&gt;&gt;
@@ -44194,7 +44194,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Home]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1364" name="mirror_player" tags="Overworld" position="475,17100" size="100,100">&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_Flavour&quot;, 1)&gt;&gt;
 
-你现在是一个&lt;&lt;print setup.displayStatValue($CharacterSheet_Player, &quot;height&quot;, true)&gt;&gt;高的&lt;&lt;print setup.getRace($CharacterSheet_Player.info.anatomy)&gt;&gt; 有着&lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt;肌肉。
+你现在是一个&lt;&lt;print setup.displayStatValue($CharacterSheet_Player, &quot;height&quot;, true)&gt;&gt;高的&lt;&lt;print setup.getRace($CharacterSheet_Player.info.anatomy)&gt;&gt;，有着&lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt;肌肉。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;mirror_player_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1365" name="mirror_player_2" tags="Overworld" position="600,17100" size="100,100">&lt;&lt;print setup.getFlavourBasedDescription($CharacterSheet_Player, &quot;mirror_player_HeadFlavour&quot;, 1)&gt;&gt;
 &lt;&lt;if $CharacterSheet_Player.info.anatomy.horns != undefined &amp;&amp; $CharacterSheet_Player.info.anatomy.horns.number &gt;= 1&gt;&gt;
@@ -44315,7 +44315,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 \&lt;&lt;run setup.choice(&quot;[[离开-&gt; abelHouseDialogue_outro]]&quot;);&gt;&gt;
 &lt;&lt;/if&gt;&gt;\</tw-passagedata><tw-passagedata pid="1380" name="abelHouseDialogue_aboutCray_link" tags="" position="1225,17225" size="100,100">\&lt;&lt;run setup.choice(&quot;[[谈谈克雷的事-&gt;abelHouseDialogue_aboutCray]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1381" name="abelHouseDialogue_aboutCray" tags="" position="100,17350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
 
-亚伯摇了摇头，抱起双臂，&quot;对你而言，恐怕那些信息没有任何意义。这个谜团需要我自己去解开。&quot;
+亚伯摇了摇头，抱起双臂，&quot;虽然，对你而言，那些信息恐怕没有任何意义。这个谜团需要我自己去解开。&quot;
 
 &quot;你想知道什么？&quot;
 
@@ -44332,7 +44332,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;abelHouseDialogue_aboutCray_whereabouts_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1384" name="abelHouseDialogue_aboutCray_whereabouts_2" tags="" position="475,17350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;angry&quot;)&gt;&gt;
 
-亚伯的嘴角向下卷曲。&quot;每一次目击都更加夸张。克雷的个头总是变得更大。更可怕。&quot;
+亚伯的嘴角向下卷曲。&quot;每一次目击都更加夸张。克雷的个头总是变得更大，更可怕。&quot;
 
 &quot;直到……&quot;亚伯停顿了一下，他的眼睛凝视着远方。
 
@@ -44406,7 +44406,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;拾荒者的职责是与使者一起合作带回食物和材料，以保持村庄的正常运转，&quot;亚伯回答，&quot;克雷日复一日地完成了他的任务。&quot;
 
-&quot;隐隐约约听说使者有时会派他去执行探索任务。当然了，那是长老要求的。&quot;
+&quot;有人隐隐约约听说有时候使者会派他去执行探索任务。当然了，那是长老要求的。&quot;
 
 &lt;&lt;print setup.getNextNarativeEventPassageListText($CharacterSheet_Abel.quest.crayDialogue, 3)&gt;&gt;
 
@@ -44585,7 +44585,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[争辩说那股力量是有用的工具-&gt;abelHouse_tellAll_disagree_itHasUses]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[争辩说那股力量很有潜力-&gt;abelHouse_tellAll_disagree_wantMore]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[争辩说那股力量可以“帮助”村庄-&gt;abelHouse_tellAll_disagree_forThePeople]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[争辩说那股力量可以“改进”村民-&gt;abelHouse_tellAll_disagree_forThePeople]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[争辩说那股力量可以保护亚伯-&gt;abelHouse_tellAll_disagree_forAbel]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1422" name="abelHouse_tellAll_disagree_forAbel" tags="" position="225,17850" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
 
 当你告诉他你想保护他不受伤害时，他的脸明显地红了。
@@ -45322,7 +45322,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 }&gt;&gt;
 
 &lt;&lt;/nobr&gt;&gt;
-\&lt;h1&gt;&lt;&lt;SymbioteName&gt;&gt;在你体内深处，让它来突破你凡人躯体的极限。&lt;/h1&gt;
+\&lt;h1&gt;&lt;&lt;SymbioteName&gt;&gt;在你体内深处，让它来突破你凡人身躯的极限。&lt;/h1&gt;
 
 &lt;div id=&quot;ModifyMetabolismContent&quot;&gt;
 \&lt;&lt;include Modify_Metabolism_Show&gt;&gt;
@@ -45444,7 +45444,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 你看了看你的手。
 
 \&lt;&lt;run setup.choice(&quot;[[触摸球体-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[回到村庄-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1518" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_2" tags="" position="975,18975" size="100,100">没有感觉的感觉。没有颜色的颜色。没有形状的形状。没有呼吸的低语。
+\&lt;&lt;run setup.choice(&quot;[[回到村庄-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1518" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_2" tags="" position="975,18975" size="100,100">没有感觉的感觉。没有颜色的颜色。没有形状的形状。没有气息的低语。
 
 你的皮肤与陨石接触的那一刻，它向外爆开了，就像海浪撞上了遥远的海岸。黑色包围着你。混乱包围着你。
 
