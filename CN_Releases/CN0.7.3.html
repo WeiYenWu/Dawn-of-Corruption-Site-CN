@@ -15476,17 +15476,17 @@ setup.displayTorgarConverse = function()
 
     if(State.variables.CharacterSheet_Torgar.quest.encounterPassages.lowRelaIdle_GotBig.available == true)
     {
-        displayString += "[[Ask him how he got so big->Torgar_Low_Rela_EncounterStart_GotBig]]\n"
+        displayString += "[[问他怎么会变得这么大->Torgar_Low_Rela_EncounterStart_GotBig]]\n"
     }
 
     if(State.variables.CharacterSheet_Torgar.quest.encounterPassages.lowRelaIdle_Carry.available == true)
     {
-        displayString += "[[Ask him what he is carrying on his back->Torgar_Low_Rela_EncounterStart_Carry]]\n"
+        displayString += "[[问他背上的是什么->Torgar_Low_Rela_EncounterStart_Carry]]\n"
     }
 
     if(State.variables.CharacterSheet_Torgar.quest.encounterPassages.lowRelaIdle_Origin.available == true)
     {
-        displayString += "[[Ask him where he is from->Torgar_Low_Rela_EncounterStart_Origin]]\n"
+        displayString += "[[问他来自哪里->Torgar_Low_Rela_EncounterStart_Origin]]\n"
     }
 
     return displayString;
@@ -15545,13 +15545,13 @@ setup.getTorgarVersionEndMessage = function()
     switch(setup.evaluateTorgarPath())
     {
         case setup.TorgarProgress.LOST:
-            displayString += "(Based on your current choices, you currently lead Torgar towards embracing the pleasure and power of Corruption)\n";
+            displayString += "（根据你目前的选择，你目前带领托加走向拥抱腐败的快乐和力量。）\n";
         break;
         case setup.TorgarProgress.REDEEMED:
-            displayString += "(Based on your current choices, you currently lead Torgar towards giving up on Corruption completely)\n";
+            displayString += "（根据你目前的选择，你目前带领托加走向完全放弃腐败的道路）\n";
         break;
         case setup.TorgarProgress.ASCENDED:
-            displayString += "(Based on your current choices, you currently lead Torgar towards achieving mastery over his changes)\n";
+            displayString += "（根据你目前的选择，你目前带领托尔加实现对其变化的掌握）\n";
         break;
     }
 
@@ -44358,7 +44358,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;然而，有那么的一天，一直留在我的记忆里。有一次我有机会和他交谈，我问他，这个世界上对他来说最重要的是什么。&quot;
 
-&quot;‘力量。’他说，‘力量是人们生存的唯一出路。’&quot;亚伯停顿了一下，沉思着往事。
+“‘力量。’他说，‘力量是人们生存的唯一出路。’”亚伯停顿了一下，沉思着往事。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;abelHouseDialogue_aboutCray_motives_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1389" name="abelHouseDialogue_aboutCray_motives_2" tags="" position="1100,17350" size="100,100">&lt;&lt;print setup.setAndDisplayEmote($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
 
