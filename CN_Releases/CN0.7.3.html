@@ -46017,9 +46017,9 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;它温暖的光芒拥抱着我，就像我是它的儿子一样。它低声回答我的请求，赋予我面对敌人的力量,&quot;他一直盯着它，全身都在兴奋地颤抖。
 
-&quot;但我们应该得到更好的;我们应该生活在没有恐惧的环境中，应该在一个共同的理想下团结一致,&quot;他张开双臂，就像拥抱着那温暖的黑太阳。
+&quot;但我们应该得到更好的;我们应该生活在没有恐惧的环境中，应该在一个共同的理想下团结一致,&quot;他张开双臂，就像拥抱着那温暖的黑日。
 
-&quot;因为黑太阳只赐予了我们…没有人能否认这一点。我知道你也能感受到。那像火一样不断燃烧着的活力正在你的下身滋长着。&quot; 
+&quot;因为黑日只赐予了我们…没有人能否认这一点。我知道你也能感受到。那像火一样不断燃烧着的活力正在你的下身滋长着。&quot; 
 \&lt;&lt;if setup.MQ002_Manor_IsCorruptedInManor($CharacterSheet_Player)&gt;&gt;
 
 他看着你，感受你的心脏的快速跳动和你的&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt;鸡巴的悸动。
@@ -46042,25 +46042,25 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 &quot;哦,对了…我知道总有一天会有人来找他。但那个人花的时间比我预期的要长,&quot; 他紫色的眼睛直视着你的内心，就像在看一本打开的书，一览无余。
 
-&quot;你的朋友来了…但目前你就别想着能看到他了&quot;他转过身，看着那越来越大的茧。
+&quot;你的朋友来了…但目前你就别想着能看到他了。&quot;他转过身，看着那越来越大的茧。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToSaveCray_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1563" name="Quest_MQ002_ApothusRealm_HereToSaveCray_2" tags="" position="350,19600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;normal&quot;)&gt;&gt;
 
-&quot;他在进化。我们都在梦里看到，他正在不断成长，直到成长为尼克斯本身。 只有能与黑日直接接触的他才配得上它的力量。&quot;阿波图斯一直看着茧，完全被它迷住了。
+&quot;他在进化。我们都在梦里看到，他正在不断成长，直到成长为尼克斯本身。只有能与黑日直接接触的他才配得上它的力量。&quot;阿波图斯一直看着茧，完全被它迷住了。
 
-&quot;他就是我们需要的，能指引我们的神，阻止我们屈服于内心疯狂的神&quot;他猛地转过身来面对你
+&quot;他就是我们需要的，能指引我们的神，阻止我们屈服于内心疯狂的神&quot;他猛地转过身来面对你。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1564" name="Quest_MQ002_ApothusRealm_HereToKillThem" tags="" position="475,19600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
 
 他疯狂地咯咯笑着。
 
-&quot;然后呢？我们只会继续回来，一次又一次地。尼克斯是永恒的，我们对它的奉献也是永恒的。&quot;他的双手突然被一层紫色的浓雾包围。 
+&quot;然后呢？我们只会继续回来，一次又一次。尼克斯是永恒的，我们对它的奉献也是永恒的。&quot;他的双手突然被一层紫色的浓雾包围。 
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToKillThem_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1565" name="Quest_MQ002_ApothusRealm_HereToKillThem_2" tags="" position="600,19600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;grumpy&quot;)&gt;&gt;
 
 &quot;即使我死了，我维系王国的咒语也会生效。它存在于我的意志中，在我不朽的灵魂深处。&quot; 
 
-他的黑眼睛向你投来一道锐利的目光
+他黑色的眼睛向你投来一道锐利的目光。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToKillThem_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1566" name="Quest_MQ002_ApothusRealm_HereToKillThem_3" tags="" position="725,19600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;angry&quot;)&gt;&gt;
 
@@ -46071,12 +46071,16 @@ The dragonborn laughs, exposing his razor-sharp canines.
 &quot;我们还有很多时间。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Fight Him-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Apothus]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1567" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx" tags="" position="850,19600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
+<<<<<<< Updated upstream
 尼克斯流过皮肤的感觉是不可否认的;这种感觉不仅仅令人振奋。它是光荣的;你觉得你可以几天不停地进行交配。
+=======
+    尼克斯流过皮肤的感觉是不可否认的；这种感觉不仅仅令人振奋。它是光荣的；你觉得你可以几天不停地进行交配。
+>>>>>>> Stashed changes
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &gt; 0&gt;&gt;
 你也很喜欢在你体内不断扭动着的幼体。
 \&lt;&lt;/if&gt;&gt;
 
-你接近腐化的龙裔;你的手紧握着你跳动的肉棒。你随时可能射精。
+你接近腐化的龙裔；你的手紧握着你跳动的肉棒。你随时可能射精。
 
 \&lt;&lt;run setup.choice(&quot;[[亲吻他-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1568" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_1" tags="" position="975,19600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;blushing&quot;)&gt;&gt;
 \&lt;&lt;if setup.MQ002_Manor_IsMassiveInManor($CharacterSheet_Player)&gt;&gt;
@@ -46084,11 +46088,11 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 \&lt;&lt;/if&gt;&gt;
 
-无需多言，在无数迷失者嫉妒的目光下，你们忘我地亲吻着 
+无需多言，在无数迷失者嫉妒的目光下，你们忘我地亲吻着。
 你的舌头为争夺主导权而在他的口腔中翻涌搅动。
 
 他的唾液比你见过的任何东西都要腐化。 
-唾液的气味是酸性的;你能感觉到当他的毒在你体内流淌时，你舌头逐渐麻木。
+唾液的气味是酸性的；你能感觉到当他的毒液在你体内流淌时，你舌头逐渐麻木。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_1_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1569" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_1_2" tags="" position="1100,19600" size="100,100">\&lt;&lt;set $CharacterSheet_Apothus.quest.arousalProgress = setup.Apothus_Arousal.REVEALING&gt;&gt;
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
@@ -46105,7 +46109,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 \&lt;&lt;run setup.choice(&quot;[[操他-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1570" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_2" tags="" position="1225,19600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
 你抓住他的后肩，把他往下推。他娇吟着，笑着回应道。
 
-&quot;快来干我吧，大只佬……向那些迷失者们展示一下一头真正的怪物是怎么做这种事的&quot;他一边说，一边双手散发出深紫色的光环。
+&quot;快来干我吧，大家伙……向那些迷失者们展示一下一头真正的怪物是怎么做这种事的。&quot;他一边说，一边双手散发出深紫色的光环。
 
 你用力地插了进去, 每次耕耘都向着深处更近一寸。
 当你身下巨物的前六英寸填满他的小穴时，阿波图斯不断地发出浪叫声。
@@ -46120,7 +46124,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_2_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1572" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_2_2" tags="" position="225,19725" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
 你能感觉到他们的腐化渗入你的皮肤。你的乳头在一些迷失者的热切吮吸下变硬隆起。
 
-&quot;加入我们吧 $CharacterSheet_Player.info.name,让尼克斯指引你，因为这是我们在这个被诅咒的世界里唯一的救赎。只有这样才能在不失去理智的情况下享受腐化的乐趣。&quot; 
+&quot;加入我们吧，$CharacterSheet_Player.info.name，让尼克斯指引你，因为这是我们在这个被诅咒的世界里唯一的救赎。只有这样才能在不失去理智的情况下享受腐化的乐趣。&quot; 
 
 \&lt;&lt;run setup.choice(&quot;[[Fuck Him Harder-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1573" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_3" tags="" position="350,19725" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
 当你把肉棒的剩余部分都插进他体内时，他的话被打断了。 
@@ -46135,7 +46139,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 阿波图斯向你举起手;它现在比火焰还亮。他摊开的手掌上有一个流血的伤口。
 
-&quot;Mrrrffff……啊啊啊啊啊……让世人见识一下黑日的力量吧！&quot;
+&quot;嗯……啊啊啊啊啊……让世人见识一下黑日的力量吧！&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Seal the Oath of Nyx-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1575" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_4" tags="" position="600,19725" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Apothus.quest.arousalProgress = setup.Apothus_Arousal.NAKED&gt;&gt;
@@ -46147,12 +46151,12 @@ The dragonborn laughs, exposing his razor-sharp canines.
 阿波图斯首先受到影响，旋涡状纹身吸收着暗能量。
 他的声音在他的呻吟中变得嘶哑而紧张。
 
-它建立在设计的基础上，使其更大、更详细；它一直延伸到他的肩膀。接下来你感觉到它在触碰你。它在你的皮肤上留下自己的印记;你当场射精了。
+它建立在设计的基础上，使其更大、更详细；它一直延伸到他的肩膀。接下来你感觉到它在触碰你。它在你的皮肤上留下自己的印记；你当场射精了。
 你皮肤的每一个毛孔都打开了，以便给尼克斯的光芒更多空间进入你的身体。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_4_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1576" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_4_2" tags="" position="725,19725" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
 
-你的 &lt;&lt;print setup.processFlavours($CharacterSheet_Player,&quot;@[all|肉棒|one=射出~more=喷射出]&quot;)&gt;&gt; 成升的精液, 这种无与伦比的快感让你全身心都融化了 
+你的 &lt;&lt;print setup.processFlavours($CharacterSheet_Player,&quot;@[all|cock|one=射出~more=喷射出]&quot;)&gt;&gt; 成升的精液, 这种无与伦比的快感让你全身心都融化了。
 迷失者的每一次舔舐, 你深入 &lt;&lt;print setup.processFlavours($CharacterSheet_Player,&quot;@[all|cocks|noverb]&quot;)&gt;&gt; 阿波图斯穴内的每一寸所获得的快感都足以使你情不自禁地就达到一次又一次的高潮。
 
 你感到魔力更深入你的肉体，沿着你的胸膛旋转和蔓延。
@@ -46164,7 +46168,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 将你围得水泄不通的的迷失者"山"坍塌了，你赋誓仪式的开启，让他们精疲力竭。
 
-阿波图斯将你扶起来
+阿波图斯将你扶起来。
 
 &quot;有了你的帮助，我觉得我们很快便可以让天选之子与尼克斯建立联系……&quot;
 \&lt;&lt;set $CharacterSheet_Player.quest.oaths.apothus = setup.Oath.ACTIVE&gt;&gt;
@@ -46176,7 +46180,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 你看着克雷在茧里不断成长着。这个冒名顶替者不应该出现在你们之间。
 
-你看着他，眼中燃烧着一团黑色的火焰。亘古未有的，迷失者的呻吟在这一刻陷入平静  
+你看着他，眼中燃烧着一团黑色的火焰。亘古未有的，迷失者的呻吟在这一刻陷入平静。
 他们只是无声地注视着你靠近阿波图斯. 
 
 他立马察觉到你的意图。
@@ -46186,10 +46190,10 @@ The dragonborn laughs, exposing his razor-sharp canines.
 \&lt;&lt;run setup.choice(&quot;[[Fight Him-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Apothus]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1579" name="Quest_MQ002_ApothusRealm_Feed_The_Chosen" tags="" position="1100,19725" size="100,100">当你靠近&lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;大的黑茧时，迷失者们自觉靠向一旁为你让路。\
 他们因内心强烈的期待而颤抖，你肉体中蕴含的力量就足以让他们垂涎三尺。一部分迷失者是多么渴望带走你，并试图用他们的腐化击垮你，但尼克斯的召唤力实在是太强烈了。
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的 @[all|双手|one=按住~more=按在] 黑茧的底部; 在它上面脉动着无数生命的精华。天选者的存在是不可否认的。&quot;)&gt;&gt; \
-他如山般的肌肉在茧的表面颤抖。他渴望更多;只有当他接触到上面的黑太阳时，他才会感到满足。
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的 @[all|hands|one=按住~more=按在] 黑茧的底部; 在它上面脉动着无数生命的精华。天选者的存在是不可否认的。&quot;)&gt;&gt; \
+他如山般的肌肉在茧的表面颤抖。他渴望更多；只有当他接触到上面的黑日时，他才会感到满足。
 
-你梦想着在荒漠上看到他;你以前的导师现在变成了神;整个世界都会为之俯首膜拜。
+你梦想着在荒漠上看到他;你以前的导师现在变成了神；整个世界都会为之俯首膜拜。
 
 \&lt;&lt;if $WorldState.apothusChosen.essenceLevel == 0&gt;&gt;
     \&lt;&lt;if $Essence &gt;= setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)&gt;&gt;
@@ -46210,36 +46214,36 @@ The dragonborn laughs, exposing his razor-sharp canines.
 &lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[Complete the chosen&#39;s ascension (&quot;+setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)+&quot;)-&gt;Feed_The_Chosen_Final]]&lt;/span&gt;&quot;&gt;&gt;
     \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Go Back-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1580" name="Feed_The_Chosen_Level1" tags="" position="1225,19725" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;精华在你的@[all|arms|noverb]上流动，并顺着流进了茧中&quot;)&gt;&gt; \
+\&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1580" name="Feed_The_Chosen_Level1" tags="" position="1225,19725" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;精华在你的@[all|arms|noverb]上流动，并顺着流进了茧中。&quot;)&gt;&gt; \
 
 整个站台突然轰隆作响。当你强化他们的神时，周围的迷失者也在呻吟。
 你们的内心都充满了期待，感觉世界将在茧最终孵化后发生翻天覆地的改变。
 
-它接受了你的礼物;粗大的根状卷须从你的手中升起的力量中浮现出来。这些卷须长得比周围的迷失者还要巨大，在开裂的土壤上肆意扭动。 
+它接受了你的礼物；粗大的根状卷须从你的手中升起的力量中浮现出来。这些卷须长得比周围的迷失者还要巨大，在开裂的土壤上肆意扭动。 
 
-一声可怕的、淫荡的咆哮冲破了茧的束缚。迷失者呻吟着回应;他们的神离黑日越来越近了。
+一声可怕的、淫荡的咆哮冲破了茧的束缚。迷失者呻吟着回应；他们的神离黑日越来越近了。
 \&lt;&lt;set $WorldState.apothusChosen.essenceLevel = 1&gt;&gt;
 
-他的监狱长到 &lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;.
+他的监狱长到&lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1581" name="Feed_The_Chosen_Level2" tags="" position="100,19850" size="100,100">黑色的茧正对着尼克斯的光芒向上生长。 在黑色的茧脉动扩张以容纳天选者巨大的肌肉和肉棒时，你不禁后退一步。 \
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1581" name="Feed_The_Chosen_Level2" tags="" position="100,19850" size="100,100">黑色的茧正对着尼克斯的光芒向上生长。在黑色的茧脉动扩张以容纳天选者巨大的肌肉和肉棒时，你不禁后退一步。\
 他的身体庞大得令人难以置信，仿佛其本身就是力量和阳刚之气的化身。 他在茧里不受控制地弯曲，让茧仍在生长的表面产生波纹。
  
-当你走向天选之子时，迷失者们满怀敬畏地看着你。 他们虔诚地跪下，以便让你没有任何阻碍地走向茧。 \
+当你走向天选之子时，迷失者们满怀敬畏地看着你。他们虔诚地跪下，以便让你没有任何阻碍地走向茧。\
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的@[all|hands|one=再一次地按压~more=再次按压]在茧的表面, 他把你拉进去，仿佛久逢甘露的土壤急切地吸收着你的精华。&quot;)&gt;&gt; \
 你感受到尼克斯的意志，它让你雕刻出一艘巨轮，以便让它能在荒漠畅游。
  
-以便让所有人的目光都被它的光芒所吸引
+以便让所有人的目光都被它的光芒所吸引。
 \&lt;&lt;set $WorldState.apothusChosen.essenceLevel = 2&gt;&gt;
  
 当看到他们的神高耸在废墟上时，迷失者们齐声欢呼。
 
-平台勉强支撑着山般的黑茧。黑茧达到了 &lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;的规模, 尼克斯几乎触手可及。
+平台勉强支撑着山般的黑茧。黑茧达到了&lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;的规模, 尼克斯几乎触手可及。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1582" name="Feed_The_Chosen_Final" tags="" position="225,19850" size="100,100">\&lt;&lt;set $WorldState.apothusChosen.essenceLevel = 3&gt;&gt;
 阿波托斯带着纯粹的、幸福无比的微笑看着你。但你知道，这个微笑所展现的只不过是他看到新神诞生时内心喜悦的冰山一角。
 
-他的双手闪耀着金色的光芒;整个废墟也随之晃动起来。
+他的双手闪耀着金色的光芒；整个废墟也随之晃动起来。
 
 你给茧注入更多精华，数量多到足以把任何人培养成力量惊人的泰坦。
 
@@ -46254,26 +46258,31 @@ The dragonborn laughs, exposing his razor-sharp canines.
 周围的迷失者紧随其后，将他们的精华献给了他们的神。一声低沉的轰鸣声震动了整个站台。 新神的剪影在茧中突然膨胀，伸展着茧，仿佛一颗炸弹在内部被引爆了。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Feed_The_Chosen_Final_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1583" name="Feed_The_Chosen_Final_2" tags="" position="350,19850" size="100,100">你凝视着黑日，惊叹于茧是如何越来越接近它的表面。 \
-黑日的光线开始偏移，聚焦在下面体形惊人的茧身上。 天选之子咆哮着，用兽欲的本能刺穿你的灵魂。 还未成型的半神吐出它来到这世间的第一句话。
+黑日的光线开始偏移，聚焦在下面体形惊人的茧身上。天选之子咆哮着，用兽欲的本能刺穿你的灵魂。 还未成型的半神吐出它来到这世间的第一句话。
 
 &quot;我要更多……&quot;
 
 他的声音在你的皮肤下滑动，让你体内充满新的禁忌力量。
 
-你脚下的地面随着神的心跳而震动。 他那巨大的肉棒变硬了，不断地在内部挤压着蛹，直到它突然挣脱束缚。 \
-黑日融入它的新宿主。 它不断地收缩，直至变得比你脚下的平台还要小
+你脚下的地面随着神的心跳而震动。 他那巨大的肉棒变硬了，不断地在内部挤压着蛹，直到它突然挣脱束缚。\
+黑日融入它的新宿主。它不断地收缩，直至变得比你脚下的平台还要小。
 
 &quot;我！要！更！多！&quot;
 
 仿佛在对这个世界发号施令，他的话语渗透到所有能触及的地方。
 
+<<<<<<< Updated upstream
 迷失者们随之咆哮，每一个迷失者都瞬间达到了令人惊心动魄的高潮边缘。 它们腐化的种子喷涌而出，直到整个平台覆盖上一层厚厚的精液。 \
 天选之子的力量也宠幸了你，强烈的性快感让你咬紧牙关。 你的身体因乞求更多的不洁需求而颤抖; 更大的体型，更多的快感，更强大的力量——这是你消灭任何反抗之声，甚至是克服死亡本身限制所需要的。
+=======
+迷失者们随之咆哮，每一个迷失者都瞬间达到了令人惊心动魄的高潮边缘。 它们腐化的种子喷涌而出，直到整个平台覆盖上一层厚厚的精液。\
+天选之子的力量也宠幸了你，强烈的性快感让你咬紧牙关。 你的身体因乞求更多的不洁需求而颤抖; 更大的体型，更多的快感，更强大的力量—这是你消灭任何反抗之声，甚至是克服死亡本身限制所需要的。
+>>>>>>> Stashed changes
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Feed_The_Chosen_Final_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1584" name="Feed_The_Chosen_Final_3" tags="" position="475,19850" size="100,100">他的爪子就像刀刺穿黄油般轻松地从茧中刺出; 两只爪子都闪耀着强烈的黑暗光芒，就好像黑日从它们玻璃般的边缘后面掠过。 \
 光是看着它的双爪便让人着迷;它们身上似乎跳动着无穷的力量，将充满感染力的光芒照射在所有敢于注视它们的人身上。
 
-当现实被天选之人的光芒扭曲时，你咆哮着射出一股浓稠精液
+当现实被天选之人的光芒扭曲时，你咆哮着射出一股浓稠精液。
 
 \&lt;&lt;run setup.choice(&quot;[[Absorb Nyx&#39;s Light-&gt;Feed_The_Chosen_Final_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1585" name="Feed_The_Chosen_Final_4" tags="" position="600,19850" size="100,100">\&lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, 35)&gt;&gt;\
 
@@ -46281,15 +46290,15 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 茧碎了一地。
 
-那副曾保护过黄金堡垒的狼人躯体已经成为如今他这般存在的，脑海里的模糊记忆。他那堕落的腐化光芒在每一缕皮毛之间跳动; 巨大的血管蔓延在他同样巨大的身躯之上 \
-他气喘吁吁，挣扎着控制吞噬一切的黑日的力量。 他发光的紫色眼睛端详着他青筋暴凸的肉棒。 肉棒的每一次悸动都使其沿着他发达的胸肌不断变长。 \
+那副曾保护过黄金堡垒的狼人躯体已经成为如今他这般存在的，脑海里的模糊记忆。他那堕落的腐化光芒在每一缕皮毛之间跳动；巨大的血管蔓延在他同样巨大的身躯之上。\
+他气喘吁吁，挣扎着控制吞噬一切的黑日的力量。 他发光的紫色眼睛端详着他青筋暴凸的肉棒。 肉棒的每一次悸动都使其沿着他发达的胸肌不断变长。\
 &lt;&lt;if setup.sizecomparison(setup.getStatValue($CharacterSheet_Player, &quot;height&quot;), 16896) &gt;= setup.Comparators.BIGGER&gt;&gt;\
-他用爪子握住他的肉棒，抬头看向你
+他用爪子握住他的肉棒，抬头看向你。
 &lt;&lt;else&gt;&gt;\
-他用爪子握住他的肉棒，低头看向你
+他用爪子握住他的肉棒，低头看向你。
 &lt;&lt;/if&gt;&gt;\
 
-&quot;我需要更多!&quot;
+&quot;我需要更多！&quot;
 
 他的整个躯体突然迸发出一阵明亮的紫光，渗入你的躯体。
 瞬间，你的肌肉爆发出不可思议的力量，不断生长的肌肉让你的躯体变得越来越巨大。
@@ -46306,33 +46315,33 @@ The dragonborn laughs, exposing his razor-sharp canines.
 随着天选之子的咆哮扫过无垠的沙漠，这种感觉荡然无存。 野兽就在你身边，而现在它被被释放出来了 \
 他的身躯不断膨胀，他的体形迅速高耸在地平线上，同时无数迷失者向他扑来。
 
-然而，当他的身影在沙丘上升起时，你感觉到他那可怖的声音变调了。 他的声音更加低沉，从不可一世的咆哮转为挑衅的隆隆笑声 
+然而，当他的身影在沙丘上升起时，你感觉到他那可怖的声音变调了。他的声音更加低沉，从不可一世的咆哮转为挑衅的隆隆笑声。
 
 有什么不对劲……
 
-他双手捂着头，明亮的紫光在他的皮肤下跳动。 他似乎处于疯狂的边缘，仿佛他全身心都陷入一种激烈的斗争中。 \
+他双手捂着头，明亮的紫光在他的皮肤下跳动。 他似乎处于疯狂的边缘，仿佛他全身心都陷入一种激烈的斗争中。\
 然而，迷失者们对此毫不知情。他们崇拜他的每一寸身体，如此痴迷，仿佛他们就是为此而活的。 
 
 &quot;不……为什么他要违抗尼克斯的意愿？&quot; 阿波托斯一边呻吟着一边紧张地接近天选之子。
 
-刹那间，他双目圆睁，在他反应过来前，天选之子的巨爪便拍到了他。 你看着先知的身躯像破布般被拍飞到几百尺外
+刹那间，他双目圆睁，在他反应过来前，天选之子的巨爪便拍到了他。你看着先知的身躯像破布般被拍飞到几百尺外。
 
-天选之子的内心深处陷入混乱，奈克斯与他自身的野心为争夺主导权而相互斗争。 他越来越疯狂地大发雷霆，同时用巨爪划过沙丘，在上面留下深深的抓痕。
+天选之子的内心深处陷入混乱，尼克斯与他自身的野心为争夺主导权而相互斗争。他越来越疯狂地大发雷霆，同时用巨爪划过沙丘，在上面留下深深的抓痕。
 
-\&lt;&lt;run setup.choice(&quot;[[Try to help the Chosen-&gt;Feed_The_Chosen_Final_HelpHim]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[尝试帮助天选之人-&gt;Feed_The_Chosen_Final_HelpHim]]&quot;);&gt;&gt;
 \&lt;&lt;if $CharacterSheet_MQ002_Guard.quest.nyxPromise == true&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Align with the minotaur-&gt;Feed_The_Chosen_Final_Minotaur]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[与牛头人结盟-&gt;Feed_The_Chosen_Final_Minotaur]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1587" name="Feed_The_Chosen_Final_HelpHim" tags="" position="850,19850" size="100,100">天选者脑海内有两个声音正在发生激烈冲突，就像两只为生存而战的野兽。
 
 看到此番情景，你内心深处的某段记忆被唤醒了，那是你曾亲身体验过的。
 
 你知道该如何化解他内心的混乱。
 
-\&lt;&lt;run setup.choice(&quot;[[Get closer-&gt;Feed_The_Chosen_Final_HelpHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1588" name="Feed_The_Chosen_Final_HelpHim_2" tags="" position="975,19850" size="100,100">You step towards the Chosen.
+\&lt;&lt;run setup.choice(&quot;[[靠近-&gt;Feed_The_Chosen_Final_HelpHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1588" name="Feed_The_Chosen_Final_HelpHim_2" tags="" position="975,19850" size="100,100">You step towards the Chosen.
 
 他的吼声变得越来越狂暴，两种声音交替出现; 他变得歇斯底里. 他吼声蕴含的可怖力量在他周围激起一阵猛烈的沙尘暴，这使得你越来越难以接近他。
 
-然而，当你靠近他时，你逐渐意识到他咆哮的意图。 听起来他渴望更多，他渴望成为伟大的存在，而他的渴望驱使他走到这一步。
+然而，当你靠近他时，你逐渐意识到他咆哮的意图。听起来他渴望更多，他渴望成为伟大的存在，而他的渴望驱使他走到这一步。
 
 突然，他的音调变了。他深沉的尖叫扭曲成另一种不同的声音，他的嚎叫，是在呼唤他的同胞。
 
@@ -46342,10 +46351,10 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 \&lt;&lt;run setup.choice(&quot;[[Reach out to him-&gt;Feed_The_Chosen_Final_HelpHim_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1589" name="Feed_The_Chosen_Final_HelpHim_3" tags="" position="1100,19850" size="100,100">他的咆哮骤然而止。 沉重的死寂笼罩荒原，但这片死寂却比之前卷起沙尘暴的那声咆哮更加震耳欲聋。
 
-你能感受到他的激情，即使所有人都知道他是克雷，是“拯救者”，这种感受的强烈程度依然未减分毫。你们对力量的共同需求让你们更加了解对方，仿佛对任何事都心照不宣\
-这种对更多力量的渴望是你们来到这里的首要原因。 你们的腰急切地悸动着，就像在你们的灵魂之间建立起一种不言而喻的联系，一种所有人都应该向它俯首膜拜的共同渴望。
+你能感受到他的激情，即使所有人都知道他是克雷，是“拯救者”，这种感受的强烈程度依然未减分毫。你们对力量的共同需求让你们更加了解对方，仿佛对任何事都心照不宣。\
+这种对更多力量的渴望是你们来到这里的首要原因。你们的腰急切地悸动着，就像在你们的灵魂之间建立起一种不言而喻的联系，一种所有人都应该向它俯首膜拜的共同渴望。
 
-一层浓厚的 &lt;&lt;SymbioteColor&gt;&gt; 粘稠物质覆盖在你们身上, 你从未如此靠近过他
+一层浓厚的&lt;&lt;SymbioteColor&gt;&gt;粘稠物质覆盖在你们身上, 你从未如此靠近过他。
 
 当尼克斯在你体内流动时，你紧绷手臂。你因强烈的情欲而颤抖，你的眼睛突然迸发出明亮的紫色光芒。\
 这只野兽潜伏在你的内心深处，并趁此爬向你的灵魂。你的内心有一股强烈的冲动，想要改变现实，让黑暗之光照射到这个世界的每一个角落。
@@ -46353,7 +46362,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 克雷的低语就像天边的闷雷，他低沉的声音变了，与你的融合在一起。他抓住你的腹部，将你拉近。
 
 &lt;&lt;if $CharacterSheet_Player.hasAbility(&quot;Ability_TaintedByTheLost&quot;)&gt;&gt;\
-&quot;现在我总算明白为什么失落者们会在那天选择你了。&quot;
+&quot;现在我总算明白为什么迷失者们会在那天选择你了。&quot;
 &lt;&lt;else&gt;&gt;\
 &quot;我……我从未想到你会找到我。&quot;
 &lt;&lt;/if&gt;&gt;\
@@ -46361,7 +46370,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 尼克斯紧紧地抓住你的灵魂，就在这时克雷深情地吻了你。
 
 &lt;&lt;if setup.sizecomparison(setup.getStatValue($CharacterSheet_Player, &quot;height&quot;), 16896) &gt;= setup.Comparators.BIGGER&gt;&gt;\
-即使是黑日那铺天盖地的强烈光芒在你们的深情热吻下也黯然失色。你那&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;height&quot;))&gt;&gt; 高的身体随着力量的不断涌入而颤抖，因为他给予你的这股力量在你体内疯了一般地乱窜，拼命地想要充斥在你身体的每一寸。
+即使是黑日那铺天盖地的强烈光芒在你们的深情热吻下也黯然失色。你那&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;height&quot;))&gt;&gt;高的身体随着力量的不断涌入而颤抖，因为他给予你的这股力量在你体内疯了一般地乱窜，拼命地想要充斥在你身体的每一寸。
 &lt;&lt;else&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;cock&quot;, 1495)&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;balls&quot;, 528)&gt;&gt;\
@@ -46369,7 +46378,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, 250)&gt;&gt;\
 你的身躯随着源源不断涌入的力量像充气球一般迅速膨胀。
 
-&quot;变强……! 你要变得更强-!&quot; 克雷咆哮着把你拉近。
+&quot;变强……！你要变得更强——！&quot; 克雷咆哮着把你拉近。
 
 你呻吟着，体内的力量以不可思议的速度爆炸性地增长，与此同时你的肉棒立刻将你体内无数浓稠种子尽数喷洒在底下被克雷力量污染的土壤上。
 &lt;&lt;/if&gt;&gt;\
@@ -46379,7 +46388,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 \&lt;&lt;run setup.choice(&quot;[[和克雷结盟，并继续增长自身力量-&gt;Feed_The_Chosen_Final_OnlyGrowPath]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[和尼克斯结盟，并腐化所有生灵-&gt;Feed_The_Chosen_Final_CorruptEverything]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1590" name="Feed_The_Chosen_Final_OnlyGrowPath" tags="" position="1225,19850" size="100,100">当&lt;&lt;SymbioteName&gt;&gt;将自身力量传递给克雷时，你们的体型和力量都在飞速增长，这让他感受到了你在这场旅途中经历的成长。
 
-而这比黑太阳本身的力量更令他动容。
+而这比黑日本身的力量更令他动容。
 
 他的嘴唇紧紧抵在你的嘴唇上，你第一次感到克雷平静下来，就像他终于找到了他一直苦苦寻觅的东西。
 
@@ -46388,8 +46397,8 @@ The dragonborn laughs, exposing his razor-sharp canines.
 \&lt;&lt;run setup.choice(&quot;[[与克雷交媾-&gt;Feed_The_Chosen_Final_OnlyGrowPath_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1591" name="Feed_The_Chosen_Final_OnlyGrowPath_2" tags="" position="100,19975" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;迷失者们朝拜般崇拜地注视着你们水乳交融，享受着这场鱼水之欢。 @[all|arms|one=向天空举起~more=向着天空举起] 满怀期待。性快感使你的脚蜷缩在温暖的沙上，你用鞋底在上面堆出新的沙丘。&quot;)&gt;&gt; \
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;最后，你发出了一声咆哮，震动了世界本身的根基。你的身形逐渐从&lt;&lt;SymbioteColor&gt;&gt; 的粘稠物质中显露出来。在场的所有生灵都对你俯首称臣。&quot;)&gt;&gt;
 
-你感觉跟以前相比，自己的各方面都有所长进。世人别无选择，只能臣服于你，因为你接下来的的每一步动作都足以在世界历史上留下深刻烙印。 \
-作为 &lt;&lt;SymbioteRace&gt;&gt;，现在的你已经成为比在场所有生灵都要雄伟巨大的存在。
+你感觉跟以前相比，自己的各方面都有所长进。世人别无选择，只能臣服于你，因为你接下来的的每一步动作都足以在世界历史上留下深刻烙印。\
+作为&lt;&lt;SymbioteRace&gt;&gt;，现在的你已经成为比在场所有生灵都要雄伟巨大的存在。
 
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;但你还是渴求着更多;随着心脏的每一次跳动，你的@[all|cocks|one=性奋地悸动着~more=性奋地抽动着] 。&quot;)&gt;&gt;
 
@@ -46417,7 +46426,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;balls&quot;, setup.getStatValue($CharacterSheet_Player, &quot;balls&quot;))&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;height&quot;, setup.getStatValue($CharacterSheet_Player, &quot;height&quot;))&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;))&gt;&gt;\
-看到渺渺众生迅速颤抖着跪下，你的脸上出现一个可怖的笑容。大多数迷失者只看你一眼便已不寒而栗  \
+看到渺渺众生迅速颤抖着跪下，你的脸上出现一个可怖的笑容。大多数迷失者只看你一眼便已不寒而栗。\
 而剩下的迷失者则被你散发出的纯粹的男子气概和力量所征服，因激动与狂喜而达到高潮边缘。 \
 
 伴随着心脏一次又一次的跳动和迷失者们的崇拜，你的身体仍在不断地成长。。
@@ -46439,7 +46448,7 @@ The dragonborn laughs, exposing his razor-sharp canines.
 
 &quot;嘎啊啊啊啊啊!&quot;
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;山脚碎裂，随着胜利的咆哮，你将它举过 @[all|heads|noverb].&quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;山脚碎裂，随着胜利的咆哮，你将它举过@[all|heads|noverb].&quot;)&gt;&gt;
 
 你是这个世界上最强大的存在，这是毫无疑问的，但内心的欲望之火仍在熊熊燃烧。
 
@@ -46449,16 +46458,16 @@ The dragonborn laughs, exposing his razor-sharp canines.
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;balls&quot;, setup.getStatValue($CharacterSheet_Player, &quot;balls&quot;))&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;height&quot;, setup.getStatValue($CharacterSheet_Player, &quot;height&quot;))&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;))&gt;&gt;\
-俯瞰众生的感觉足以让你确信曾经的愿望已经实现了。 你如山峦般巍然屹立，这种感觉这让你曾经所经历的苦痛不值一提。 \
+俯瞰众生的感觉足以让你确信曾经的愿望已经实现了。 你如山峦般巍然屹立，这种感觉这让你曾经所经历的苦痛不值一提。\
 只要一拳，你就能打败任何敌人，任何敢挡你路的人。
 
-但只是变强还不行; 所有人都必须知道你是世间的主宰，这样他们就会对你望而却步。
+但只是变强还不行；所有人都必须知道你是世间的主宰，这样他们就会对你望而却步。
 
 你的身体再次开始成长，并因此在强烈快感的侵入和力量的涌入下颤抖。
 
 &quot;咕啊啊啊啊啊啊!&quot;
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的 @[all|cocks|one=渴求地悸动~more=渴望地悸动] ; 你真想疯狂地暴操某人三天三夜，和他颠鸾倒凤不知天地为何物。 下意识地，你放下手中握着的大山，将肉棒插了进去。&quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的@[all|cocks|one=渴求地悸动~more=渴望地悸动]；你真想疯狂地暴操某人三天三夜，和他颠鸾倒凤不知天地为何物。下意识地，你放下手中握着的大山，将肉棒插了进去。&quot;)&gt;&gt;
 你的肉体坚不可摧; 山体表面在你的疯狂冲刺下破碎、弯曲。
 
 &quot;真他妈爽!&quot;
@@ -46474,15 +46483,15 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 &quot;嘎啊啊啊啊啊啊啊啊啊啊!&quot;
 
 一股又一股 &lt;&lt;SymbioteColor&gt;&gt; 的精液从你的铃口中喷涌而出，丝毫没有要停止的迹象。 你的肉棒如同开闸的大坝般不断喷出，精液完全淹没了这座最高的山峰。 \
-你尖叫着，性奋爆炸般在你脑中轰然作响，这使你失去了理智; 然而高潮仍在继续。
+你尖叫着，性奋爆炸般在你脑中轰然作响，这使你失去了理智；然而高潮仍在继续。
 
 当你一遍又一遍地射精时，你发达的胸肌也随之鼓起。
 
-&quot;我艹……屮艸芔茻，爷爽飞了!!!&quot;
+&quot;操……操，操！！！&quot;
 
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;The sound of your deep moans travels across the world as your当你 @[all|cocks|one=膨胀到原先的两倍~more=涨大到原先的两倍]时,你深沉的呻吟声响彻世界，你真想用你现在那大到不可思议的@[all|cocks|noverb]操平这座山，日穿地球。&quot;)&gt;&gt;
 
-你长得太大了，以至于你渺小的追随者们彻底消失在你的视野里。 但他们又确实存在。 他们对你的崇拜对你的成神之路起到不可磨灭的作用; 没有他们，你无法成神，这是毋庸置疑的事实。
+你长得太大了，以至于你渺小的追随者们彻底消失在你的视野里。但他们又确实存在。他们对你的崇拜对你的成神之路起到不可磨灭的作用; 没有他们，你无法成神，这是毋庸置疑的事实。
 
 你深陷疯狂与愉悦的海洋，笑不拢嘴; 你渴望得到更多, 而这种渴望必将伴随你的一生!
 
@@ -46490,16 +46499,16 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;balls&quot;, setup.getStatValue($CharacterSheet_Player, &quot;balls&quot;))&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;height&quot;, setup.getStatValue($CharacterSheet_Player, &quot;height&quot;))&gt;&gt;\
 &lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;))&gt;&gt;\
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的大腿肌肉隆起成巨大的泪滴状,挤占了@[all|legs|noverb].周围的所有空间&quot;)&gt;&gt;
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你那发达的胸肌是你无法俯瞰信徒的罪魁祸首。 你用手捧着，挤压你的 @[all|pecs|noverb], 为它们能大到让你看不到身下风光而狂喜。&quot;)&gt;&gt; \
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的大腿肌肉隆起成巨大的泪滴状,挤占了@[all|legs|noverb]周围的所有空间。&quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你那发达的胸肌是你无法俯瞰信徒的罪魁祸首。你用手捧着，挤压你的 @[all|pecs|noverb], 为它们能大到让你看不到身下风光而狂喜。&quot;)&gt;&gt; \
 
 很快，所有人都将见证你们的成神，因为山脉变得比你们的脚趾还小。
 
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你喘着粗气，急切地撸动着你那大到能日穿星球的@[all|cocks|noverb], 感受到性欲的巨浪在你体内翻涌着。&quot;)&gt;&gt;
 
-我真的是嗨到不行啊……
+机会来了……
 
-\&lt;&lt;run setup.choice(&quot;[[生长-&gt;Feed_The_Chosen_Final_OnlyGrowPath_9]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1598" name="Feed_The_Chosen_Final_OnlyGrowPath_9" tags="" position="975,19975" size="100,100">没有回头路可走了; 你俯瞰世界，甚至看不到那些追随你的人。 不过，反正你也不需要他们了 
+\&lt;&lt;run setup.choice(&quot;[[生长-&gt;Feed_The_Chosen_Final_OnlyGrowPath_9]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1598" name="Feed_The_Chosen_Final_OnlyGrowPath_9" tags="" position="975,19975" size="100,100">没有回头路可走了；你俯瞰世界，甚至看不到那些追随你的人。不过，反正你也不需要他们了 
 
 成长，力量，快感，得到他们的感觉如此美妙。
 
@@ -46509,13 +46518,13 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 &quot;我还要更多！!&quot;
 
-你的身体在虚空中膨胀;没有什么能阻止神的成长。
+你的身体在虚空中膨胀；没有什么能阻止神的成长。
 
-\&lt;&lt;run setup.choice(&quot;[[生长-&gt;Feed_The_Chosen_Final_OnlyGrowPath_10]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1599" name="Feed_The_Chosen_Final_OnlyGrowPath_10" tags="" position="1100,19975" size="100,100">欲望之神在你脑海里唱响甜蜜的愉悦之歌，余音绕梁;你陷入这淫荡的乐曲中无法自拔。 
+\&lt;&lt;run setup.choice(&quot;[[生长-&gt;Feed_The_Chosen_Final_OnlyGrowPath_10]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1599" name="Feed_The_Chosen_Final_OnlyGrowPath_10" tags="" position="1100,19975" size="100,100">欲望之神在你脑海里唱响甜蜜的愉悦之歌，余音绕梁；你陷入这淫荡的乐曲中无法自拔。 
 
 你不知你身处何处，也不知该去往何方。
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;但你的@[all|cocks|one=再次勃起~more=再一次勃起];你的身躯也再次急速成长g。&quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;但你的@[all|cocks|one=再次勃起~more=再一次勃起];你的身躯也再次急速成长。&quot;)&gt;&gt;
 
 你和克雷发出一声惊天动地的咆哮，愉悦感霸占了你原本可以拥有的所有想法。
 
@@ -46526,23 +46535,23 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 你的血管散发着着超凡脱俗的紫色光芒;这是一种能够污染空气和土壤的紫色光芒。
 
-无数迷失者在看到你眼中迸发出令人着迷的紫光时兴奋地射出一股股精液，与此同时你的视野被你体内生长的黑太阳所淹没。 \
+无数迷失者在看到你眼中迸发出令人着迷的紫光时兴奋地射出一股股精液，与此同时你的视野被你体内生长的黑日所淹没。\
 它让你的脑海中呈现了一个被腐化的世界愿景，那是一个可以实现人们内心最深处欲望的世界。
 
 你咧嘴一笑当做回应，紧握拳头，而无数迷失的人把你当作神一样崇拜。
 
-\&lt;&lt;run setup.choice(&quot;[[与尼克斯合并-&gt;Feed_The_Chosen_Final_CorruptEverything_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1601" name="Feed_The_Chosen_Final_CorruptEverything_2" tags="" position="100,20100" size="100,100">迷失者的崇拜于你而言自然是喜闻乐见的事, 就随他们为了你躯体的每寸成长而振臂欢呼吧。
+\&lt;&lt;run setup.choice(&quot;[[与尼克斯合并-&gt;Feed_The_Chosen_Final_CorruptEverything_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1601" name="Feed_The_Chosen_Final_CorruptEverything_2" tags="" position="100,20100" size="100,100">你欢迎着迷失者的崇拜，让他们享受你身体上的每一寸肌肤。
 
 只要他们叠得足够高，就会有无数光溜溜黏糊糊的身体爬在你身上淫秽地耸动着，并用舌头舔舐你的每一寸身体。
 
-你向迷失者举起手臂，那是比一千个太阳的火焰更闪耀的手臂。黑暗之光渗透进他们的皮肤，并用你庞大身躯的力量和肉体滋养他们。 \
-当他们的肌肉因神的力量而激增时，他们高兴地发出嘶嘶声和呻吟声。很快，废墟就在周围不断增长的朝拜者的重压下破碎。 \
+你向迷失者举起手臂，那是比一千个太阳的火焰更闪耀的手臂。黑暗之光渗透进他们的皮肤，并用你庞大身躯的力量和肉体滋养他们。\
+当他们的肌肉因神的力量而激增时，他们高兴地发出嘶嘶声和呻吟声。很快，废墟就在周围不断增长的朝拜者的重压下破碎。\
 他们如同饥渴的野兽般冲向你 \
 无数湿漉漉的舌头、肉棒和触手渴望着你的肉棒和肌肉。\
 你感觉他们的狂热的欲望将你底下身体的一部分包裹起来, 他们纯粹的欲望&lt;span class=&quot;glitch nyx&quot; 【data-text=&quot;为你的升华加油。&quot;&gt;成为你成神道路上的助推器。&lt;/span&gt;】
 
 \&lt;&lt;run setup.choice(&quot;[[升华-&gt;Feed_The_Chosen_Final_CorruptEverything_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1602" name="Feed_The_Chosen_Final_CorruptEverything_3" tags="" position="225,20100" size="100,100">你的身体突然向前倾斜，附着在你身上的狂热追随者逐渐聚集，并在你背部的皮肤上隆起，他们需要得到释放！\
-无数的触手从你身上伸出来，左右扭动，它们仿佛有自己的意志，在寻找着雄心勃勃的战士和领袖，\
+无数的触手从你身上伸出来，左右扭动，它们仿佛有自己的意志，在寻找着雄心勃勃的战士和领袖。\
 将他们圈起来，操弄他们，让性欲的快感支配他们，将他们的雄心壮志尽数消灭，仅留下交媾的欲望, &lt;span class=&quot;glitch nyx&quot; 【data-text=&quot;腐化他们&quot;&gt;然后腐化他们&lt;/span&gt;, 】将他们培养成新的，雄伟的腐化之神。
 
 与此同时，你的一些肉棒开始产出尼克斯的幼崽大军，寻找那些能让你&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;权力之言&quot;&gt;威严话语举世皆知的忠诚精英。&lt;/span&gt;,\
@@ -46565,8 +46574,8 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 这些被触手缠绕的新肉棒 &lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;s̶͓͗è̸̘̥̚ë̶̱̫͐k̷͍̗͒   ̵̛͕̖̓ó̵͓̈ ǔ̴͇͘t̷̖̙͒&quot;&gt;迫切地寻找着&lt;/span&gt;新皈依的信徒，赐予他们你的力量，操弄他们，把他们变成巨大的淫秽的野兽!
 
 &lt;span class=&quot;corruptText75&quot;&gt;堕落野兽的嚎叫和狂怒的欲望淹没了你新增强的神圣感官，而你的眼睛 &lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;ḙ̷̒x̷̥͗͋u̷͔̿̃l̴͖̓t̷̡̻̆̒a̸͈͖͌͝t̶̨̋̇ì̵̮ő̷̫n̷̫͑ ̷̡̩̓̈́ a̷̧̛̔n̴̝͍̆̃d̴̝͍̚  ̶̺͙͊̊d̷̻͐͗e̵̹̞̾p̴̨̫̈́ṙ̶̭̪ä̴̤́͘͜v̴̹͒i̶͖͍͝ẗ̵̞́̾y̶̙̆͘&quot;&gt;在狂喜和堕落的喧嚣中缓缓闭上&lt;/span&gt;, \
-你竭尽全力地控制住脸部的抽搐，与此同时&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;g̸͓̜̚l̴̖̥̈́̑o̶̠̞͒͗w̶̡̛i̴̢͉̿n̸͍̣̓̉g̵̯̀,̶̢̓ ̴̝̦͊̾ p̴͎̰͠u̴͖̒r̴͓̆p̶̝̍̚l̴͉̎͑e̶̩͚̓̎ ̷͕̮̋ ę̵̂̑y̵͔͉̐͑e̴̮͕̊s̸̝̗̊̈́&quot;&gt;你的眼睛&lt;/span&gt; 突然迸发出强烈的紫色光芒。当你再次睁眼时, &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|eyes|noverb]&quot;)&gt;&gt;都充斥着着用之不竭的力量和无尽的腐化 &lt;span class=&quot;glitch nyx&quot; data-text=&quot;e̵̝̽n̵̹̈͛d̷̖͕̔͘l̵̜̯̎̈́e̵̖͑ŝ̵͉͈s̵̲̽ ̵͍̣͠ ̴̡̬̈̾ ̶̜̍ṕ̷̘͉̓ỏ̴͍͔͂w̷̜̣̐͊ȩ̴͉̿̔ṟ̵̍ ̴͚̘̿͝ ̷͍̌ ̴͈͂a̴̢͈̐̾n̵̯̔̆d̸̢̛̹ ̵̤͛͜͠ ̵̺̮̈ ̸̥̆ͅc̷̯̬̈́ô̶̖͜r̶̖͘r̶̰̘͋ȗ̴͙̘̀p̸̦̩̂t̴̳̝̽̉i̸͍̚͝ō̸̡̢͝ń̴͚&quot;&gt;仿佛熊熊燃烧永不熄灭的火焰&lt;/span&gt;, \
-他们的眼中也迸发出强烈的紫色光芒&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;S̶̠̊͝E̵͓͇͋À̷̝Ȓ̵̹̥Ị̴͙́̔N̵̜͍͂̽G̵͈͚͒ ̷̞̙̔͠ P̸̞̐Ǘ̸̩̏R̸̮̫̀P̷̮̉̕L̶̗͘͠Ē̴̦͓  ̵͎̤̆̒Ǵ̵͍̞́A̴͎̠̒Z̷̛̥̅E̵̼̘͐.̷̢͈̀̎&quot;&gt;四面八方都被照亮了&lt;/span&gt;&lt;/span&gt;
+你竭尽全力地控制住脸部的抽搐，与此同时&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;g̸͓̜̚l̴̖̥̈́̑o̶̠̞͒͗w̶̡̛i̴̢͉̿n̸͍̣̓̉g̵̯̀,̶̢̓ ̴̝̦͊̾ p̴͎̰͠u̴͖̒r̴͓̆p̶̝̍̚l̴͉̎͑e̶̩͚̓̎ ̷͕̮̋ ę̵̂̑y̵͔͉̐͑e̴̮͕̊s̸̝̗̊̈́&quot;&gt;你的眼睛&lt;/span&gt; 突然迸发出强烈的紫色光芒。当你再次睁眼时, &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|eyes|noverb]&quot;)&gt;&gt;都充斥着着用之不竭的力量和无尽的腐化 &lt;span class=&quot;glitch nyx&quot; data-text=&quot;e̵̝̽n̵̹̈͛d̷̖͕̔͘l̵̜̯̎̈́e̵̖͑ŝ̵͉͈s̵̲̽ ̵͍̣͠ ̴̡̬̈̾ ̶̜̍ṕ̷̘͉̓ỏ̴͍͔͂w̷̜̣̐͊ȩ̴͉̿̔ṟ̵̍ ̴͚̘̿͝ ̷͍̌ ̴͈͂a̴̢͈̐̾n̵̯̔̆d̸̢̛̹ ̵̤͛͜͠ ̵̺̮̈ ̸̥̆ͅc̷̯̬̈́ô̶̖͜r̶̖͘r̶̰̘͋ȗ̴͙̘̀p̸̦̩̂t̴̳̝̽̉i̸͍̚͝ō̸̡̢͝ń̴͚&quot;&gt;仿佛熊熊燃烧永不熄灭的火焰。&lt;/span&gt;, \
+他们的眼中也迸发出强烈的紫色光芒&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;S̶̠̊͝E̵͓͇͋À̷̝Ȓ̵̹̥Ị̴͙́̔N̵̜͍͂̽G̵͈͚͒ ̷̞̙̔͠ P̸̞̐Ǘ̸̩̏R̸̮̫̀P̷̮̉̕L̶̗͘͠Ē̴̦͓  ̵͎̤̆̒Ǵ̵͍̞́A̴͎̠̒Z̷̛̥̅E̵̼̘͐.̷̢͈̀̎&quot;&gt;四面八方都被照亮了。&lt;/span&gt;&lt;/span&gt;
 
 &lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;Ų̶̢̡̨̙̳̤̖͈̻̻̪͔̮̫͎̺̬̠̟́̃̕ş̷̢͉̮̬͓͉̬̹̗̙̻̖͕͔̫̭̩͓͕̺̍͛́͐̍͆̔͐͂̑͘h̴͙̻̮͕͎̀͋̋͂́͆͒̍͂͊̂̀̈́́͘͝ĕ̸̥͈̝̩̬͍͔̗̙͈͖̞̦̻̯͉̝̈́̐͜͝r̶̮̝̄̓̈́̿͋͌͌̈̓̒̓̇̈́̅  ̴͎͖̞͖̺̻̘̟͇̦͈̍ î̶͇͕̘̼̪̟͙͈͇̺̬̦̟͇͓͚̣͖̳̽̈́̂̏̿̒̂̎͊̅̚͜͝n̴̢̧̞̬̤̝͎͙̩͚̬̞̱̫͚̻̰͔̂̃̌ͅ ̷̜̟̳̪̩̑͌͋͌͌̽̀̂́͑̌͘͜͝  a̴̛͍̟͉͓͚̝̱̼͍͊̄̕ ̶͍̘̥̓̇͛̅͑̽̏̈́͑͠  Ņ̵̛̣̤̺̙̦̩̦̟͔̞̝̭͈͍̼̬̀̒̍̿̽͋͒͌͌̀̈́́̀͘͘̕͘͘͘͜͜͠͝ͅͅȩ̷̧̛͙̩̩̜͓͔̹͇͎̩͕̥̭̙̮͊͊̾̔̄͂̂̎̓̂̍͛͊̾̈́̐̍͘ͅw̴̧̛͇͙͕̥̭̹̜̫̗͚̥̖͉̗͍̋̎͛̀͛̈́́͠ ̶̡̢͚͚͖͍̬̟͕̥̟̝̔̾̈́̄̓̑̑͗͛̑̆͘̚  A̴̧̡̡̨̛͙̣̼̰͍͙̫͓̜̹̫̅̋͒̈́̈́͛̈́̃̏̾̍́̎͋̓̚͝ͅg̶̡̡̨̛̹͉̹͍͈̥͙͎̤̳͖͎̱̣͚̓́̒̈́̐͐͋̏̃͋̎̾̆̉͂̚͘͝͠͝ͅe̴̦̮̠̩̫̗̗̩͕͓̹̻͌͐̂́̎̔̍̂͑͂͒͒&quot;&gt;[[迎接新时代的到来-&gt;Feed_The_Chosen_Final_CorruptEverything_5]]&lt;/span&gt;\</tw-passagedata><tw-passagedata pid="1604" name="Feed_The_Chosen_Final_CorruptEverything_5" tags="" position="475,20100" size="100,100">\&lt;&lt;set $CorruptSidebar = true&gt;&gt;
 &lt;span class=&quot;corruptText100&quot;&gt;\
@@ -46601,7 +46610,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 他突然抬起头，好像刚从噩梦中醒来。他睁开恶龙般的眼睛与你的眼睛对视，随后微微向后缩。
 
-&quot;你是谁?&quot; 他用嘶哑的声音说，并用布满鳞片的爪子和双脚支撑自己站了起来。
+&quot;你是谁？&quot;他用嘶哑的声音说，并用布满鳞片的爪子和双脚支撑自己站了起来。
 
 他看起来有点紧张，但动作优雅而不失风范。 他的灰色长衫轻轻摆动，隐没在厚厚的浓雾中。
 从他的衣着和姿势来判断，他应该是个僧侣。
@@ -46637,7 +46646,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 他看上去很痛苦，极力忍耐着什么，而你对这种痛苦的姿态再熟悉不过了。
 
 你可以看到他的血管在跳动，他痛苦的表情中夹杂着兴奋，他的束腰外衣上微微隆起的部分在跳动。
-感觉尼克斯的幼体也在他的身体里。你自己的尼克斯幼体兴奋地压迫你的蛋蛋和前列腺。
+你感觉尼克斯的幼体也在他的身体里。你自己的尼克斯幼体兴奋地压迫你的蛋蛋和前列腺。
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1613" name="Quest_MQ002_Manor_DragonRoom_Safe" tags="" position="350,20225" size="100,100">\&lt;&lt;if setup.MQ002_HasIntactOath()&gt;&gt;
 &lt;&lt;print setup.displayEncounterImage($CharacterSheet_MQ002_DragonMonk.info.pictureFriend)&gt;&gt;
 \&lt;&lt;else&gt;&gt;
@@ -46675,7 +46684,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 \你告诉他你不是来战斗的，但他似乎很困扰。
 
 \&lt;&lt;/if&gt;&gt;
-&quot;可恶…… 你想要什么?&quot; 他用手按在额头上，喘着粗气，仿佛在自言自语。
+&quot;可恶……你想要什么？&quot; 他用手按在额头上，喘着粗气，仿佛在自言自语。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom_Safe]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1615" name="Quest_MQ002_Manor_DragonRoom_WhyAreYouHere" tags="" position="600,20225" size="100,100">龙裔的背部沿着床架底部滑落，直到他砰的一声撞到地板上。
 
@@ -46691,30 +46700,30 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1616" name="Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_2" tags="" position="725,20225" size="100,100">&quot;因此我们奋起反击. 我毫不留情地打败了他，等着他再一次把可怜的自我献给尼克斯。
 每次落败后他都会在几天内出现，总是更堕落，更强壮，更可怕。&quot; 他刚刚还挺自豪的语气突然失落起来。
 
-&quot;直到我再也无法阻止他。他重新找到奈克斯，并把自身献给了腐化 He went back to Nyx and gave himself to its corruption.
-他…… 在这之后完全变了。 变成一个令人憎恶的，制造恐怖和野兽的人，让整个荒原逐渐堕落。&quot; 他的声音越来越小。
+&quot;直到我再也无法阻止他。他重新找到尼克斯，并把自身献给了腐化 He went back to Nyx and gave himself to its corruption.
+他……在这之后完全变了。变成一个令人憎恶的，制造恐怖和野兽的人，让整个荒原逐渐堕落。&quot; 他的声音越来越小。
 
 &quot;我必须阻止这一切，所以这几天来，我试图用自己的方式去斗争。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1617" name="Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_3" tags="" position="850,20225" size="100,100">&quot;直到有一天，我听闻他即将举行一个重要仪式的谣言;我意识到这就是我出击的机会。 
 我设法溜了进去，如我所料，这些被诅咒的的大厅空无一人。这个可怕邪教的每个成员都在阿波修斯的个人领域。 
-所以…我自己做了一个仪式，以此来封锁他们唯一的出口。&quot; 即使深受折磨，他依然咧开嘴，露出一个胜利的笑容。
+所以……我自己做了一个仪式，以此来封锁他们唯一的出口。&quot; 即使深受折磨，他依然咧开嘴，露出一个胜利的笑容。
 
-&quot;现在只有我才能把这些怪物从监狱里放出来…… 只要我遵守誓言，他们就逃不掉。&quot;
+&quot;现在只有我才能把这些怪物从监狱里放出来……只要我遵守誓言，他们就逃不掉。&quot;
 
 \&lt;&lt;set $CharacterSheet_MQ002_DragonMonk.quest.askedWhyAreYouHere = true&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1618" name="Quest_MQ002_Manor_DragonRoom_WhoAreYou" tags="" position="975,20225" size="100,100">他稍稍平复自己的心情。
 
-&quot;他叫德伦斯, 卡尔迪尔·德伦斯&quot; 他停顿了一下。
+&quot;我叫德伦斯，卡尔迪尔·德伦斯。&quot; 他停顿了一下。
 
-&quot;听着，我不知道你为什么在这里, 但是…… 邪恶被封印在这些大厅里。 即使它的力量被控制住了，它还是会把怪物送到这里，希望它们把我们腐化成和他们一样可恶的东西。&quot; 
+&quot;听着，我不知道你为什么在这里, 但是……有邪物被封印在这些大厅里。即使它的力量被控制住了，它还是会把怪物送到这里，希望它们把我们腐化成和他们一样可恶的东西。&quot; 
 
-他深深地叹了口气，把面前雾驱散了一些。
+他深深地叹了口气，把面前的雾驱散了一些。
 
 &quot;也许你最好还是离开吧。&quot;
 \&lt;&lt;set $CharacterSheet_MQ002_DragonMonk.quest.askedWhoAreYou = true&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1619" name="Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone" tags="" position="1100,20225" size="100,100">&quot;这个人会是谁? 我们可是这里唯一还有一丝理智的人了……&quot;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1619" name="Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone" tags="" position="1100,20225" size="100,100">&quot;这个人会是谁？我们可是这里唯一还有一丝理智的人了……&quot;
 
 你不厌其详地向他描述克雷的外表，不错过任何细节，包括他结实身体上的伤疤。
 他的故事在金堡家喻户晓，几百次的探险把他变成了如今这样伟大的人。 
@@ -46728,7 +46737,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 &quot;据我所知，他是这场仪式的核心。&quot; 说完，他便陷入了沉默。
 
-&quot;这个邪教在寻找一个可以成为尼克斯——也就是黑太阳本身主人的战士。
+&quot;这个邪教在寻找一个可以成为尼克斯——也就是黑日本身主人的战士。
 在我看来，他好像是心甘情愿去做的……&quot;
 
 德伦斯的话语骤然而止。
@@ -46742,7 +46751,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 德伦斯摇了摇头，心中升起一丝愤怒。
 
-&quot;我花这么长时间保护这个封印可不是为了打破它。 我不能冒这个险，你难道不知道这些怪物有多危险吗?&quot;
+&quot;我花这么长时间保护这个封印可不是为了打破它。 我不能冒这个险，你难道不知道这些怪物有多危险吗？&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[告诉他你能对付他们-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_SaveHim_2]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[同意他的观点-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_GiveUp]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1622" name="Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_SaveHim_2" tags="" position="225,20350" size="100,100">德伦斯瞥了你一眼，扫视着你的身体。他无法掩饰自己眼中的震惊……
@@ -46754,10 +46763,10 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 &quot;我们为什么要冒这个风险？&quot; 他压低声音说，恳求你不要这样做。
 
 \&lt;&lt;run setup.choice(&quot;[[告诉他一旦你进入怪物的领地就重新激活你的封印-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_SaveHim_3]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[停止施压-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_GiveUp]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1623" name="Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_SaveHim_3" tags="" position="350,20350" size="100,100">&quot;你真是疯得无可救药…… 这意味着你会跟他们被永远地封印在这……&quot;他叹了口气
+\&lt;&lt;run setup.choice(&quot;[[停止施压-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_GiveUp]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1623" name="Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_SaveHim_3" tags="" position="350,20350" size="100,100">&quot;你真是疯得无可救药……这意味着你会跟他们被永远地封印在这……&quot;他叹了口气
 龙裔低头沉思，房间陷入了长时间的沉默。他似乎在看自己的胳膊。
 
-&quot;居然向你透露这么多有关他的事，我真想给自己的大嘴巴来一巴掌，但我可不认为你能跟我讲道理。&quot;
+&quot;我居然向你透露这么多有关他的事，我真想给自己的大嘴巴来一巴掌，但我不认为我能跟你讲道理了。&quot;
 
 德伦斯拔出匕首，拿在手上。
 
@@ -46770,7 +46779,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 他划伤了自己的手，鲜血从敞开的伤口迅速涌出。
 
-&quot;只要你的事业是高尚的，我就尊重你&quot;
+&quot;只要你的事业是高尚的，我就尊重你。&quot;
 
 你把你的手伸给他，当匕首刺进你的手时，你向后缩了一下。
 然后他把他那长满鳞甲的手压在你的手上，他冰冷的血液迅速与你的血混合在一起。
@@ -46816,42 +46825,42 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 当嗅到你体内仍存有的良知时，他们便开始马不停蹄地产出成吨的性奋剂。
 
-&quot;哈啊……哈嗯…… 这个feel倍儿爽……&quot; 当肉棒和卵蛋因性奋而变大时，你情不自禁地发出一声娇喘。
+&quot;哈啊……哈嗯……操……&quot; 当你的肉棒和卵蛋因性奋而变大时，你情不自禁地发出一声娇喘。
 它们跳动得如此剧烈，在空中留下一道弯曲的残影，你心跳加速，呼吸也随之加快。
 
 龙裔绝望地看着，直到他突然挣扎着弯下腰。
 
-\&lt;&lt;run setup.choice(&quot;[[你察觉到他体内的尼克斯幼体苏醒了-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1629" name="Quest_MQ002_Manor_DragonRoom_InfestHim_2" tags="" position="1100,20350" size="100,100">&quot;嘎啊…… 不……不要在这种时候!&quot; 他大叫着，拼命捂住自己鼓起的大包。
+\&lt;&lt;run setup.choice(&quot;[[你察觉到他体内的尼克斯幼体苏醒了-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1629" name="Quest_MQ002_Manor_DragonRoom_InfestHim_2" tags="" position="1100,20350" size="100,100">&quot;嘎啊…… 不……不要在这种时候！&quot; 他大叫着，拼命捂住自己鼓起的大包。
 
 但很快，即使是他这样的僧侣也无法抗拒自己体内尼克斯幼体产出的强力春药。 
 起初他只是忍耐着让自己呻吟得不要那么大声，直到他燥热难耐，像要干坏事的孩子般惊慌地解开了上衣的扣子。
 
-&quot;啊，啊啊……哈啊啊啊……求，恳求你原谅我的堕落，我的神…… 嘎啊啊啊啊啊啊!&quot; 
+&quot;啊，啊啊……哈啊啊啊……恳，恳求你原谅我的堕落，我的神……嘎啊啊啊啊啊啊!&quot; 
 
 \&lt;&lt;run setup.choice(&quot;[[凝视他不断变大的肉棒-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1630" name="Quest_MQ002_Manor_DragonRoom_InfestHim_3" tags="" position="1225,20350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 还没能及时脱掉裤子，他的擎天柱便冲破裤裆横空出世。
 
 &lt;&lt;print setup.processFlavours($CharacterSheet_MQ002_DragonMonk, &quot;在看到龙裔肥硕的@[all|cocks|noverb]出现在你面前时，你垂涎欲滴。&quot;)&gt;&gt; 
-他的巨物已经满布淫液，在光线的照射下闪闪发光, 看上去真是…… 肥美多汁. 
+他的巨物已经满布淫液，在光线的照射下闪闪发光, 看上去真是……肥美多汁. 
 
 你的卵蛋随着你们之间距离的缩短逐渐变大……
 龙裔只是注视着你，目光中混合着困惑和渴求，他试图说话，但都变成了急不可耐的呻吟。
 
 \&lt;&lt;run setup.choice(&quot;[[让他放弃挣扎，尽情享受-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1631" name="Quest_MQ002_Manor_DragonRoom_InfestHim_4" tags="" position="100,20475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 听闻你的话语，他发出一声如释重负的呻吟。 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;他沉沦在你的 @[all|pecs|noverb] 和 @[all|abdominals|noverb]享受着在情欲之海中畅游的快感。&quot;)&gt;&gt; 
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;他沉沦在你的@[all|pecs|noverb] 和 @[all|abdominals|noverb]之中，享受着在情欲之海中畅游的快感。&quot;)&gt;&gt; 
 
 你轻抚他的后脑勺，然后深情地吻他。
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的 @[all|tongues|one=thrusts~more=thrust] 在他的喉咙深处翻腾，他渴望你对他做更多淫秽之事，意识到这点让你如痴如醉。&quot;)&gt;&gt; 
-&lt;&lt;print setup.processFlavours($CharacterSheet_MQ002_DragonMonk, &quot;就像你的那个一样, 他的 @[all|cocks|one=猛烈地悸动~more=激烈地悸动]。&quot;)&gt;&gt;
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的@[all|tongues|one=thrusts~more=thrust]在他的喉咙深处翻腾，他渴望你对他做更多淫秽之事，意识到这点让你如痴如醉。&quot;)&gt;&gt; 
+&lt;&lt;print setup.processFlavours($CharacterSheet_MQ002_DragonMonk, &quot;就像你的那个一样, 他的@[all|cocks|one=猛烈地悸动~more=激烈地悸动]。&quot;)&gt;&gt;
 你用手指轻抚他肉棒上暴起的青筋，意识到血管里流淌的不仅仅是血液。
 
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;龙裔紧紧地盯着你的 @[all|cocks|noverb], 惊叹于它的尺寸。&quot;)&gt;&gt; 
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;龙裔紧紧地盯着你的@[all|cocks|noverb]，惊叹于它的尺寸。&quot;)&gt;&gt; 
 
-&quot;求求你…… 我…… 我要……&quot; 他低声说道，喘气声几乎掩盖了他的声音。
+&quot;求求你……我……我要……&quot; 他低声说道，喘气声几乎掩盖了他的声音。
 
-\&lt;&lt;run setup.choice(&quot;[[用你的凶器满足他-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1632" name="Quest_MQ002_Manor_DragonRoom_InfestHim_5" tags="" position="225,20475" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你把你的 @[all|cocks|noverb] 用力插入他的小穴中, 他的浪叫不绝于耳，成为这场淫秽派对的奇妙乐章。&quot;)&gt;&gt; 
+\&lt;&lt;run setup.choice(&quot;[[用你的凶器满足他-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1632" name="Quest_MQ002_Manor_DragonRoom_InfestHim_5" tags="" position="225,20475" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你把你的@[all|cocks|noverb] 用力插入他的小穴中, 他的浪叫不绝于耳，成为这场淫秽派对的奇妙乐章。&quot;)&gt;&gt; 
 
 你将巨物拔出，向他展示你雄伟的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|cocks|noverb]&quot;)&gt;&gt; 。 
 
@@ -46860,28 +46869,28 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 但他可不满足于此……
 
-\&lt;&lt;run setup.choice(&quot;[[Give him more...-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1633" name="Quest_MQ002_Manor_DragonRoom_InfestHim_6" tags="" position="350,20475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[给他更多……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1633" name="Quest_MQ002_Manor_DragonRoom_InfestHim_6" tags="" position="350,20475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 他的舌头缠上了你的龟头，细细品尝其中风味，不落下每一寸，然后才将你的肉棒完全吞下。 你感觉到他的巧舌俏皮地想要往你的铃口深处钻，想要得到更多汁液。
 
-他捧住你的 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|balls|noverb]&quot;)&gt;&gt;, 轻轻地抚摩，感受里面尼克斯幼体的存在。
+他捧住你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|balls|noverb]&quot;)&gt;&gt;，轻轻地抚摩，感受里面尼克斯幼体的存在。
 
 &quot;哈，嗯嗯嗯……&quot;
 
 你感觉到它们的反应，它们穿过你的卵蛋，滑向你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|cocks|noverb]&quot;)&gt;&gt;。
 你不仅仅体会到了高潮的快感。你猛然察觉现在的自己才是一个完整的个体，就像你就是为尼克斯的繁衍生息而活的。
 
-&quot;厚乳我……超蓝我……&quot;
+&quot;后入我……操烂我……&quot;
 
 龙裔完全屈服于肉欲的快感。 
 他能感觉到幼体们沿着你的肉棒隆起，他贪婪地吮吸着，就像他的生命依赖于它们一样，他的舌头探入你的肉棒深处。 
 
 \&lt;&lt;run setup.choice(&quot;[[排出幼体-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1634" name="Quest_MQ002_Manor_DragonRoom_InfestHim_7" tags="" position="475,20475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-当幼体们顺着你的肉棒来到你的下腹部，一寸寸向你的上半身蔓延时，你爽到眼皮上翻&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|teeths|noverb]&quot;)&gt;&gt; 紧咬。 快感仍在飙升，而他的小舌对此毫不知情，仍肆无忌惮地往肉棒更深处探索。
+当幼体们顺着你的肉棒来到你的下腹部，一寸寸向你的上半身蔓延时，你爽到眼皮上翻，&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|teeths|noverb]&quot;)&gt;&gt; 紧咬。 快感仍在飙升，而他的小舌对此毫不知情，仍肆无忌惮地往肉棒更深处探索。
 他从两胯之间抬头凝视着你，眼中燃烧着一种疯狂的性奋。当感觉到幼体在你的血管里移动时，他嘴巴发出的啪啪水声和喉咙深处的呻吟声越来越响。
 
 终于，你感觉那一刻要来了。你用力抱住他的头，跨部一顶，似乎要用肉棒贯穿他的整个身体，然后你发出一声惊天动地的咆哮。 
-在咆哮声中，你达到一个前所未有的高潮。你的 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|churning|balls| one=悸动着~more=抖动着]&quot;)&gt;&gt; 同时大量精液喷涌而出。
-&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;龙裔发出一声低沉的咆哮，他再也忍耐不住，绚烂的烟花绽放在你的@[all|abdominals|noverb] 上，汇聚在你的@[all|pecs|noverb]处并形成一个小型泳池。&quot;)&gt;&gt; 
+在咆哮声中，你达到一个前所未有的高潮。你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|churning|balls| one=悸动着~more=抖动着]&quot;)&gt;&gt; 同时大量精液喷涌而出。
+&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;龙裔发出一声低沉的咆哮，他再也忍耐不住，绚烂的烟花绽放在你的@[all|abdominals|noverb]上，汇聚在你的@[all|pecs|noverb]处并形成一个小型泳池。&quot;)&gt;&gt; 
 你的头向后猛烈地一撞，第二波精液即将喷出，让你更加激情地咆哮。
 
 然后你感觉到。一些可怕的东西沿着你的肉棒中轴移动，让你的尿道越来越宽……
@@ -46891,7 +46900,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 你呻吟着，娇喘着，而它一直滑动到你的尿道口。龙裔头向后仰，嘴唇依然含住龟头，脸上却挂上了疯狂的笑容。
 一个形状酷似&lt;&lt;print setup.getRace($CharacterSheet_Player.info.anatomy, true)&gt;&gt;&#39;的肉棒将你的尿道口扩张到极限。它似乎在你体内随着时间的流逝而进化。
 
-&quot;屮艸芔茻…… 啊~就是这样……&quot; 龙裔呻吟着。
+&quot;操……啊~就是这样……&quot; 龙裔呻吟着。
 
 \&lt;&lt;run setup.choice(&quot;[[进一步感染他……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1635" name="Quest_MQ002_Manor_DragonRoom_InfestHim_8" tags="" position="600,20475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 他下定决心，张开嘴，伸出舌头，色情地地舔着嘴唇。
@@ -46911,12 +46920,12 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 当他把他的束腰外衣撕成丝带时，炽热的光芒充满了房间。
 
 当看到这强烈光芒的来源时，你双目圆睁。
-龙裔的皮肤上有许多链状纹身灼烧着他，就像阻隔一切生灵靠近的炙热岩浆
+龙裔的皮肤上有许多链状纹身灼烧着他，就像阻隔一切生灵靠近的炙热岩浆。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_8_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1638" name="Quest_MQ002_Manor_DragonRoom_InfestHim_8_3" tags="" position="975,20475" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
 &quot;这种感觉太棒了，我完全无法抵制……&quot; 他惊叫着，与此同时身上的纹身开始瓦解。 每一条链子的每一环都在他的皮肤下迸裂成墨汁般的碎片。
 
-&quot;一直到一切的结束To finally be free.&quot;
+&quot;一直到一切的结束。&quot;
 
 他凝视着你，深深凝视着你，他不再疲倦，不再痛苦。看起来他已经准备好让世界屈服于他的脚下了。
 
@@ -46924,18 +46933,18 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 
 \&lt;&lt;run setup.breakOath(&quot;drenth&quot;)&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[粗野地亲吻他-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_10]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1639" name="Quest_MQ002_Manor_DragonRoom_InfestHim_10" tags="" position="1100,20475" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_MQ002_DragonMonk.info.pictureCorrupt)&gt;&gt;
-你们两唇相悦，刚一触碰，便陷入了深吻中。你的 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot; @[all|tongues|one=在他的口腔中中搅动~more=在他的口腔中翻腾]&quot;)&gt;&gt; 与此同时你爱怜地捧起你的卵蛋。
+你们两唇相悦，刚一触碰，便陷入了深吻中。你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot; @[all|tongues|one=在他的口腔中中搅动~more=在他的口腔中翻腾]&quot;)&gt;&gt; 与此同时你爱怜地捧起你的卵蛋。
 
 他推搡着，窃笑着。
 
-&quot;我们的誓言失效了,&quot; 他用手指抚弄破碎的纹身。 &quot;已经没有什么能够阻止这个地方的邪恶了……&quot; 
+&quot;我们的誓言失效了,&quot; 他用手指抚弄破碎的纹身。&quot;已经没有什么能够阻止这个地方的邪恶了……&quot; 
 他似乎出现了一瞬间的恍惚，但他已经不在乎了。 
 
 他盯着你胯下的那两个铃铛，也捧起了自己的。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_11]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1640" name="Quest_MQ002_Manor_DragonRoom_InfestHim_11" tags="" position="1225,20475" size="100,100">&quot;入口的巨石，就是这个邪教的首领所在的地方。&quot; 他的嘴角缓缓浮现出一丝笑容。
 
-&quot;你看起来足够强大，可以对付他们。拜托你，替我除掉他们的领袖吧，就是因为他才让我在这烂地狱里浪费我的人生。&quot;
+&quot;你看起来足够强大，可以对付他们。拜托你，替我除掉他们的领袖吧，就是因为他才让我在这破烂地狱里浪费我的人生。&quot;
 
 他站起来，在朝门口走去前最后看了你一眼。
 
@@ -46976,7 +46985,7 @@ Cum churns from your balls with boiling eagerness to fill the mountain&#39;s new
 不仅是地平线附近，这片地方简直是空无一物。
 
 \&lt;&lt;run setup.choice(&quot;[[进一步探索-&gt;Quest_MQ002_Entrance_FirstTime_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[回黄金城堡去-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1645" name="Quest_MQ002_Entrance_FirstTime_2" tags="" position="600,20600" size="100,100">你走了几个小时，路上发现的奇怪之处变得越来越明显。
+\&lt;&lt;run setup.choice(&quot;[[回黄金堡垒去-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1645" name="Quest_MQ002_Entrance_FirstTime_2" tags="" position="600,20600" size="100,100">你走了几个小时，路上发现的奇怪之处变得越来越明显。
 
 没有沙子，没有岩石，没有植物，没有动物，在这个空间甚至连一丝风都不存在。
 
@@ -47011,7 +47020,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 \&lt;&lt;run setup.choice(&quot;[[冒险从峡谷中走下去-&gt;Quest_MQ002_Entrance_2]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[返回黄金堡垒-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1648" name="Quest_MQ002_Entrance_2" tags="" position="975,20600" size="100,100">你沿着峡谷陡峭的边缘走下来。
 
-洞穴底部有一盏燃烧的灯，很难判断它有多深，但随着你的深入，洞穴景象逐渐阔然开朗
+洞穴底部有一盏燃烧的灯，很难判断它有多深，但随着你的深入，洞穴景象逐渐阔然开朗。
 岩壁变得越来越热，空气中弥漫着浓厚的金属气味。
 
 \&lt;&lt;run setup.choice(&quot;[[继续探索-&gt;Quest_MQ002_Entrance_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1649" name="Quest_MQ002_Entrance_3" tags="" position="1100,20600" size="100,100">你向下探索，感觉已经过了了好几个小时。
@@ -47052,14 +47061,14 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Entrance_Guard_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1655" name="Quest_MQ002_Entrance_Guard_3" tags="" position="600,20725" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
 
-猛地，他仿佛能洞穿一切的锐利双眼直视着你的眼睛
+猛地，他仿佛能洞穿一切的锐利双眼直视着你的眼睛。
 
-&quot;找谁?&quot; 他低吼道。
+&quot;找谁？&quot; 他低吼道。
 
 \&lt;&lt;run setup.choice(&quot;[[回答他-&gt;Quest_MQ002_Entrance_Guard_Prompt]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[走为上计-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1656" name="Quest_MQ002_Entrance_Guard_Prompt" tags="" position="725,20725" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
 
-找谁?  &lt;&lt;textbox &quot;$WorldState.minoWords&quot; &quot;&quot;&gt;&gt;
+找谁？&lt;&lt;textbox &quot;$WorldState.minoWords&quot; &quot;&quot;&gt;&gt;
 
 \&lt;&lt;set $CharacterSheet_MQ002_Guard.quest.met = true&gt;&gt;
 
@@ -47087,7 +47096,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 他把斧头放在被腐化的土壤上，向你走来。
 
-&quot;你的意图很纯洁，但被误导了。 如果你真的想找到他，我必须确保你的灵魂不会因为这扇门后面的东西而四分五裂。&quot;
+&quot;你的意图很纯洁，但被误导了。如果你真的想找到他，我必须确保你的灵魂不会因为这扇门后面的东西而四分五裂。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[与他战斗-&gt;FightLogic][$Encounter_Target = $CharacterSheet_MQ002_Guard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1662" name="Quest_MQ002_Entrance_Answer_Kanathar" tags="" position="225,20850" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
 
@@ -47119,7 +47128,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 突然间，你内心的某种东西苏醒了，某种深埋在你灵魂深处的东西。
 
-&quot;主人?&quot;
+&quot;主人？&quot;
 
 这个词在牛头人低沉的男中音中隆隆而出。 
 在那一刹那，紫色的静脉从你的巩膜显露，明亮的紫光充满了你的瞳孔，让牛头怪惊奇地盯着你。
@@ -47155,7 +47164,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 \&lt;&lt;run setup.choice(&quot;[[与他战斗-&gt;FightLogic][$Encounter_Target = $CharacterSheet_MQ002_Guard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1670" name="Quest_MQ002_Entrance_Answer_Sombreve" tags="" position="1225,20850" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
 
-这个名字…… 这不是你该知道的事。
+这个名字……这不是你该知道的事。
 
 \&lt;&lt;run setup.choice(&quot;[[与他战斗-&gt;FightLogic][$Encounter_Target = $CharacterSheet_MQ002_Guard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1671" name="Quest_MQ002_Entrance_NoGuard" tags="" position="100,20975" size="100,100">牛头怪被消灭后，便没有什么能阻止你穿过大门了。
 
@@ -47172,13 +47181,13 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Imp_ServantPath_NyxHint_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1673" name="Imp_ServantPath_NyxHint_2" tags="" position="350,20975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 
-你的主人带着明显的好奇看着你;他咧嘴一笑，戏弄地舔了舔嘴唇。
+你的主人带着明显的好奇看着你；他咧嘴一笑，戏弄地舔了舔嘴唇。
 
-&quot;你好像好忙呢，我的宠物。 我得说，你去了一些很有趣的地方旅行。&quot;
+&quot;你好像好忙呢，我的宠物。我得说，你去了一些很有趣的地方旅行。&quot;
 
 他走近了，轻声耳语道。
 
-&quot;你是不是藏了一些有趣的事情，没有告诉你的主人呢?&quot;
+&quot;你是不是藏了一些有趣的事情，没有告诉你的主人呢？&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[跟他说你在尼克斯领地的经历-&gt;Imp_ServantPath_NyxHint_2_Share]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[跟他说这只是一场平平无奇的探险-&gt;Imp_ServantPath_NyxHint_2_Hide]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1674" name="Imp_ServantPath_NyxHint_2_Share" tags="" position="475,20975" size="100,100">\&lt;&lt;set $CharacterSheet_Imp.quest.knowsAboutNyx = true&gt;&gt;
@@ -47246,7 +47255,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 &quot;我猜他们恨不得能一步登天，对吧，我可爱的宠物?&quot;
 
-你的主人弓腰，展翅飞翔，这景象远比黑太阳本身更令你心潮澎湃。
+你的主人弓腰，展翅飞翔，这景象远比黑日本身更令你心潮澎湃。
 他的翅膀与身体其他部分相比显得有点袖珍，但它们却蕴含着无穷的力量。
 轻轻一扇便能卷起狂风，足以把他周围的泥土吹起。
 
@@ -47257,7 +47266,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 在剧烈的运动下，他已经汗流浃背，但他翅膀的每一次扇动都使他飞得更高。
 你可以感觉到他变得多么强大，而这一切的功劳在你。
 
-&quot;唔唔唔……当我成功后，你会成为第一个吃螃蟹的人。&quot;
+&quot;唔唔唔……当我成功后，你会成为第一个体验我的力量的人。&quot;
 
 他已经势不可挡。
 
@@ -47276,7 +47285,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1684" name="Quest_MQ002_ApothusRealm_ImpInvasion_8" tags="" position="475,21100" size="100,100">你突然听到一个声音从茧里传出来。它焦躁不安，甚至害怕，绝望地尖叫。
 
-&quot;发生了什么?他是谁?&quot;
+&quot;发生了什么？他是谁？&quot;
 
 你转过身，看到一个肌肉发达的术士。他的手在明亮的紫色中发光，你可以看出他正在准备什么咒语。不管他是谁，为了主人的顺利夺得力量，你必须阻止他。
 
@@ -47284,7 +47293,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 你向他冲过去，把所有的力气都放在肩膀上，用铲球击中他。
 
-他太专注于他的咒语，没有察觉到你的靠近;只有当你离他不到几英尺时，他才开始惊叫。
+他太专注于他的咒语，没有察觉到你的靠近；只有当你离他不到几英尺时，他才开始惊叫。
 
 &quot;不! 别是现在!&quot;
 
@@ -47298,20 +47307,20 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 \&lt;&lt;set $CharacterSheet_Imp.quest.ascended = true&gt;&gt;
 当你击倒术士时，你听到一声可怕的咆哮，明亮的紫光在空中炸开，铺天盖地。
 
-&quot;拿来吧你!&quot;
+&quot;都是我的！&quot;
 
 天空暗了下来，从上面传来深沉的、雷鸣般的笑声。黑日终于向小恶魔凝结，渗入他的身体。
 
-Δ: Kanathar&#39;s Corruption has increased by 200.
-∇: Kanathar&#39;s strength has increased by 130.
-∇: Kanathar&#39;s health has increased by 500.
-∇: Kanathar&#39;s stamina has increased by 400.
+Δ: 卡纳塔尔的腐化上升了200。
+∇: 卡纳塔尔的力量上升了130。
+∇: 卡纳塔尔的生命值上升了500。
+∇: 卡纳塔尔的体力值上升了400。
 
-Δ: Kanathar&#39;s body grows &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;height&quot;, 1500))&gt;&gt; taller.
+Δ: 卡纳塔尔的身体增高了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;height&quot;, 1500))&gt;&gt;。
 \&lt;&lt;set $growth = setup.applyGrowth($CharacterSheet_Imp, &quot;muscles&quot;, 100)&gt;&gt;
-Δ: Kanathar&#39;s muscles grow to become &lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Imp)&gt;&gt;(+$growth).
-Δ: Kanathar&#39;s cock grows &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;cock&quot;, 500))&gt;&gt; longer.
-Δ: Kanathar&#39;s balls grows &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;balls&quot;, 200))&gt;&gt; wider.
+Δ: 卡纳塔尔的肌肉变得&lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Imp)&gt;&gt;(+$growth)。
+Δ: 卡纳塔尔的阴茎增长了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;cock&quot;, 500))&gt;&gt;。
+Δ: 卡纳塔尔的睾丸增宽了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;balls&quot;, 200))&gt;&gt;。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_11]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1687" name="Quest_MQ002_ApothusRealm_ImpInvasion_11" tags="" position="850,21100" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_2_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_2.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 2)&gt;&gt;
@@ -47321,7 +47330,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 这种感觉比他经历过的任何事情都要强烈，但感觉好得不可思议。
 
-&quot;嘎啊啊啊啊啊…… 看着我 &lt;&lt;PlayerName&gt;&gt;. 爷要成神啦!&quot;
+&quot;嘎啊啊啊啊啊……看着我吧，&lt;&lt;PlayerName&gt;&gt;。爷要成神啦！&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_12]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1688" name="Quest_MQ002_ApothusRealm_ImpInvasion_12" tags="" position="975,21100" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 2)&gt;&gt;
@@ -47337,9 +47346,9 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 术士迅速跪倒在地，他终于忍耐不住了，伸出一只手握住肉棒，另一只手捏住他的乳头。
 
-&quot;哈哈哈…… 去吧, 卡纳塔尔。夺回属于你的力量。&quot;
+&quot;哈哈哈……去吧, 卡纳塔尔。夺回属于你的力量。&quot;
 
-你和小恶魔都没见过这个堕落的人。 然而，卡纳塔尔的名字现在在他的脑海中回荡，这个名字的力量正在不断增长。
+你和小恶魔都没见过这个堕落的人。然而，卡纳塔尔的名字现在在他的脑海中回荡，这个名字的力量正在不断增长。
 
 不久，你会跪倒在地，膜拜你尚在成长中的神。
 
@@ -47349,7 +47358,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 &quot;嘎啊啊啊啊啊!&quot;
 
 你的主人咆哮着，他的翅膀突然展开，变得越来越宽，超过他身体宽度的两倍。
-他变得比周围任何建筑物还要巨大，力量强大到可以轻松举起 &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Imp, &quot;height&quot;))&gt;&gt; 重的恶魔。 他整个身体生长得快到不可思议;每次身体的快速成长都让你和术士在他的意志下射精。
+他变得比周围任何建筑物还要巨大，力量强大到可以轻松举起&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Imp, &quot;height&quot;))&gt;&gt;重的恶魔。 他整个身体生长得快到不可思议;每次身体的快速成长都让你和术士在他的意志下射精。
 
 &quot;没错... 没错，就是这样！ 看看吧，看看一个恶魔是如何飞升成神的!&quot;
 
@@ -47360,27 +47369,27 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 &quot;呵呵呵, 哈哈哈哈!&quot;
 
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Imp, 400)&gt;&gt;
-Δ: 卡纳塔尔的腐化值达到 400.
+Δ: 卡纳塔尔的腐化值上升了400。
 
-Δ: 卡纳塔尔的身体 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;height&quot;, 6000))&gt;&gt; 变得更高。
+Δ: 卡纳塔尔的身体增高了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;height&quot;, 6000))&gt;&gt;。
 \&lt;&lt;set $growth = setup.applyGrowth($CharacterSheet_Imp, &quot;muscles&quot;, 200)&gt;&gt;
-Δ: 卡纳塔尔的肌肉变成 &lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Imp)&gt;&gt;(+$growth).
-Δ: 卡纳塔尔的肉棒变得 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;cock&quot;, 2000))&gt;&gt; 更长.
-Δ: 卡纳塔尔的卵蛋变得 &lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;balls&quot;, 800))&gt;&gt; 更大.
+Δ: 卡纳塔尔的肌肉变得&lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Imp)&gt;&gt;(+$growth)。
+Δ: 卡纳塔尔的阴茎增长了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;cock&quot;, 2000))&gt;&gt;。
+Δ: 卡纳塔尔的睾丸增宽了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Imp, &quot;balls&quot;, 800))&gt;&gt;。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_15]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1691" name="Quest_MQ002_ApothusRealm_ImpInvasion_15" tags="" position="100,21225" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 5)&gt;&gt;
 
-小魔鬼咆哮着，抓住他的肉棒，瞥了一眼，下达命令，迷失者才达到高潮。他可以品尝到他们的欲望，陶醉在他们无休止的崇拜中，而这只会让他变得更强大。
+小恶魔咆哮着，抓住他的肉棒，瞥了一眼，下达命令，迷失者才达到高潮。他可以品尝到他们的欲望，陶醉在他们无休止的崇拜中，而这只会让他变得更强大。
 
 但他的注意力仍在你身上，你是他引他到这里来的宠物。
 
-&quot;准备好了，我可爱的小宠物; 你就快要体会到你新神的力量了!&quot;
+&quot;准备好了，我可爱的小宠物；你就快要体会到你新神的力量了！&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Fight!-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Imp]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1692" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss" tags="" position="225,21225" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[战斗！-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Imp]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1692" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss" tags="" position="225,21225" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 
 当他踩在你疲惫的身体上时，他巨大的鸡巴上流淌的淫液源源不断地滴落，在你下面汇聚成一个越来越大的水池。
-你还没来得及将脸埋进去舔舐，红紫色的有力手指就掐住你的喉咙，毫不费力地把你举到空中
+你还没来得及将脸埋进去舔舐，红紫色的有力手指就掐住你的喉咙，毫不费力地把你举到空中。
 
 即使他的手指抓住你的喉咙，你也能感觉到他们在每一秒都在不断生长。
 你的脚就这么悬空在地上，你发现自己正面对着一个带着邪恶笑容的怪物般的恶魔。 
@@ -47404,7 +47413,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1694" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss_3" tags="" position="475,21225" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 1)&gt;&gt;
 
-黑日的力量在小魔鬼的身体和 【metaphysically】中荡漾。
+黑日的力量在小魔鬼的身体和内心中荡漾。
 刹那间，你察觉到他掐在你脖子上的手指甚至比他几分钟的前臂还要粗。
 
 当他的身体与与他融合的腐化力量同步生长时，你可以感受到他超凡脱世的吸引力，那种压倒性的优越感和存在感充斥了他，如今尼克斯的新主人。 
@@ -47434,12 +47443,16 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 他可怕的金箍棒仅仅只是贴在地上变长，随着不断推进，占据越来越多的空间，也逐渐在大地上撕裂出越来越深的鸿沟。
 然而，即使你的主人扩张得超出了所有合理的规模，他仍然在不断生长。
 
+<<<<<<< Updated upstream
 \&lt;&lt;run setup.choice(&quot;[[为他射精-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1697" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss_6" tags="" position="850,21225" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
+=======
+\&lt;&lt;run setup.choice(&quot;[[为你的神射精-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1697" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss_6" tags="" position="850,21225" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
+>>>>>>> Stashed changes
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 2)&gt;&gt;
 
 恶魔的注意力转向了聚集在他周围的迷失者。
 如果不是因为他们与腐化有非同寻常的联系，恶魔对他们根本就不屑一顾。 
-当脑海中蹦出一个想法时，一个邪恶的笑容在占尽优势的魔鬼脸上蔓延开来。 
+当他脑海中蹦出一个想法时，一个邪恶的笑容在占尽优势的魔鬼脸上蔓延开来。 
 
 他并没有选择吸收他们的力量以强化自身，而是选择改变它们内部的腐败。
 
@@ -47447,7 +47460,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 野兽们在他们充满激情、痴迷、为性疯狂的头脑中感觉到某种理智的建立。虽然只够引导那些基本的本能。 
 具体来说，就是指引他们去找他们的神。当小魔鬼那不可思议的的力量成长到甚至超过了最强大的恶魔领主时，一支野兽军队对于他来说可有可无。 
 
-他的力量无人可挡，而他无需证明这点.。
+他的力量无人可挡，而他无需证明这点。
 
 不，这只恶魔既不想也不需要一支怪物军队; 他想要的是一支崇拜他的军队。
 
@@ -47498,7 +47511,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 对他来说，他作为一个由魔鬼变成的神在重铸世界秩序的过程中获得了极大的乐趣。 
 
-他赐予迷失者新的称呼&quot;见证者&quot;. 
+他赐予迷失者新的称呼&quot;见证者&quot;。
 
 这个世界很快就会被一个不断增长着的新型腐化力量所侵占，而他会将力量和快乐传播给所有崇拜他的人 
 他们现在最基本、最原始的本能就是做任何能给他们的神带来最大快乐的事。 
@@ -47506,7 +47519,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_12]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1703" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss_12" tags="" position="350,21350" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_2_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_2.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 3)&gt;&gt;
 
-&quot;动作快点&quot; 卡纳塔尔雷鸣般的声音在你耳边隆隆作响。
+&quot;动作快点！&quot; 卡纳塔尔雷鸣般的声音在你耳边隆隆作响。
 
 他的声音现在令方圆几英里内的每个人都能听到，并使他们产生一股超自然的冲动。
 趴在他老二上的成千上万的变异狼人，牛头怪和人类对他是绝对的服从。
@@ -47528,7 +47541,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 卡纳塔尔的存在便是世间一切主宰的象征，他的愉悦是世界性的事件。他不仅仅是在享受自己的新神身份. 
 
-这一次他的快乐是有目的的。
+这一次他的快乐是赋予了目的的。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_14]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1705" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss_14" tags="" position="600,21350" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 3)&gt;&gt;
@@ -47564,7 +47577,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 当他低头盯着你，看着你全身心地照顾着他那无穷无尽的阴茎的每一部分，这是他喜闻乐见的结果。
 随着他的名字现在具有超越现实枷锁的力量，他知道他再也不会是一个微不足道的弱者了。
 
-&quot;嘎啊啊啊啊啊啊……准备好收下我大量的精华吧, &lt;&lt;PlayerName&gt;&gt;.&quot;你的神对你咆哮，当他的声音让你进入痉挛性高潮时，他咧嘴笑着。 &quot;将你们的精液尽数交予你们的神，现在，以卡纳塔尔之名射出来吧！&quot;
+&quot;嘎啊啊啊啊啊啊……准备好收下我大量的精华吧，&lt;&lt;PlayerName&gt;&gt;。&quot;你的神对你咆哮，当他的声音让你进入痉挛性高潮时，他咧嘴笑着。&quot;将你们的精液尽数交予你们的神，现在，以卡纳塔尔之名射出来吧！&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[爆射-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Loss_17]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1708" name="Quest_MQ002_ApothusRealm_ImpInvasion_Loss_17" tags="" position="975,21350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 4)&gt;&gt;
 
@@ -47579,7 +47592,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 每隔几秒钟，他的身体就会跳动，膨胀得更大。 
 
 多到能填满整湖的精液从他巨大的肉棒上无力地喷出，而他的肉棒瘫软在地。 
-然而，尽管他的巨大的力量不断增长，你却是胜利的一方
+然而，尽管他的巨大的力量不断增长，你却是胜利的一方。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1710" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_2" tags="" position="1225,21350" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 
@@ -47593,7 +47606,7 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 你感到黑日雷鸣般的声音在你脑海回荡。
 
-&quot;&lt;&lt;PlayerName&gt;&gt;! 将你的全身心献给我吧!&quot;
+&quot;&lt;&lt;PlayerName&gt;&gt;！将你的全身心献给我吧！&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1711" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_3" tags="" position="100,21475" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_1.jpg&quot;, undefined, true)&gt;&gt;
 You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard to think.
@@ -47637,10 +47650,10 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 \&lt;&lt;run setup.choice(&quot;[[拥抱卡纳塔尔-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1717" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_5" tags="" position="850,21475" size="100,100">有关他的一切，每一个想法，情感和他的存在本身都在紧紧围绕着你。 
 
-当你们融合的时候，尼克斯会像潮水一样涌向你们，欣慰地接受你们的胜利。
+当你们融合的时候，尼克斯像潮水一样涌向你们，欣慰地接受你们的胜利。
 
 \&lt;&lt;run setup.choice(&quot;[[升神-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1718" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_6" tags="" position="975,21475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
-你的肌肉突然地膨胀，如此之快以至于你能听到骨骼被挤压而发出的噼里啪啦的声音，每一块肌肉的体积都增加一倍，然后在几分之一秒内再次增加一倍。 
+你的肌肉突然开始膨胀，如此之快以至于你能听到骨骼被挤压而发出的噼里啪啦的声音，每一块肌肉的体积都增加一倍，然后在几分之一秒内再次增加一倍。 
 不一会儿，你的身体就变得肌肉发达得不可思议，你甚至难以移动半寸。
 
 你那巨大的腹肌、三角肌和胸肌膨胀到难以置信的肌肉比例，甚至吞没了你的头。
@@ -47689,7 +47702,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 不久之后，你的肉棒猛地摔在地上，震动了整个大陆。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_12]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1724" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_12" tags="" position="475,21600" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
-当你雷鸣般的恶魔笑声像一连串的音爆一样在大地上轰鸣而过时，你的肉棒继续喷出大量的精液，就像有人看到福瑞大帅比时会湿一样随意。 
+当你雷鸣般的恶魔笑声像一连串的音爆一样在大地上轰鸣而过时，你的肉棒继续喷出大量的精液，就像有人喷出一些前液一样随意。 
 无论是谁，只要一与你的汁液接触都会在几秒钟内堕落和腐化。 
 
 但这种腐化力量不是你曾经认识的那个。
@@ -47847,7 +47860,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 这只手臂有山脉那幺长，手指大到足以压碎城市的庞然大物在你的操弄之下发出断断续续的、渴望又享受的呻吟。
 他的呻吟声被压抑住，而当你抓住他的后脑勺，把这个初出茅庐的神的脸推到土里，从后面操他的时候，呻吟声就被切断了。
 
-你拥有如此巨大，如此势不可挡的力量，还能为他留有一席之地，这只牛头怪内心对你翻涌着一股强烈的情感，几乎当场就射了
+你拥有如此巨大，如此势不可挡的力量，还能为他留有一席之地，这只牛头怪内心对你翻涌着一股强烈的情感，几乎当场就射了。
 即使是现在，当这头野兽成长到任何凡人都无法理解的地步，也超越了任何凡人将自己视为神的程度，牛头人仍然知道他在你下面的位置。 
 
 他是你锐不可当的战士，是令敌人闻风丧胆的强力武器，也是趴在地上任你操弄的性玩具。永远都是。 
@@ -47893,7 +47906,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 他环顾四周，眼中闪过一丝好奇.
 
-&quot;它的统治者利用尼克斯来塑造我们周围的现实。假如他们想要交媾的想法是涟漪，尼克斯将其强化为波浪。Its ruler uses Nyx to shape reality around us. Their thoughts are ripples that Nyx strengthens into waves.&quot;
+&quot;它的统治者利用尼克斯来塑造我们周围的现实。假如他们想要交媾的想法是涟漪，尼克斯将其强化为波浪。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1746" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskFeeling_Lust1" tags="" position="725,21850" size="100,100">&lt;&lt;ImageMinoClothedNoBG&gt;&gt;
 
@@ -47910,7 +47923,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1748" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust2" tags="" position="975,21850" size="100,100">&lt;&lt;ImageMinoNakedNoBG&gt;&gt;
 
-&quot;他们身上有太多的腐化和欲望……谁知道他们的感受呢&quot;
+&quot;他们身上有太多的腐化和欲望……谁知道他们的感受呢。&quot;
 
 他抚慰着自己的肉棒，呻吟着。看来他现在迷失在自己的思绪中了。
 
@@ -47937,7 +47950,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 他猛地弯下身，用双手抓住他的肉棒开始饥渴地舔舐。他的舌头似乎比你记得的要长。
 
-&quot;我从未有过如此 &lt;span class=&quot;glitch nyx&quot; data-text=&quot;MOOOOOOOORE&quot;&gt;愉悦的感觉~&lt;/span&gt;&quot;
+&quot;我从未有过如此 &lt;span class=&quot;glitch nyx&quot; data-text=&quot;更多……&quot;&gt;愉悦的感觉~&lt;/span&gt;&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[接近他-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_1]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[停留在原地-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1752" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskFeeling_Lust3" tags="" position="225,21975" size="100,100">&lt;&lt;ImageMinoNakedAura&gt;&gt;
@@ -47980,7 +47993,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 你高兴地咕哝着，让更多尼克斯的力量进入你的灵魂。 
 你的脚用力一跺，脚下石板破裂，碎石飞溅，与此同时你的凶器更加深入牛头怪的体内。
 
-&quot;嘎啊啊啊啊!!! 天呐…… 就要这样!&quot;
+&quot;嘎啊啊啊啊！！！天呐……就要这样！&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[操翻他-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1757" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_5" tags="" position="850,21975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 他为你弯曲整个身体，用他的臀部压在你的肉棒上，然后主动地让他的整个身体配合你的抽插，几乎要融化在你的肉棒之上。
@@ -47995,7 +48008,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 &quot;我恳求您，您一定要亲自夺取黑日的力量！然后成为神，而我将作为您忠实的仆人服侍您！&quot;
 
 一堆又一堆强有力的种子洪流从他满溢的骚穴中喷薄而出，你把他压得更近，想要让他全部吃掉，但无济于事，从他屁股上淌下的浓液很快就在他的身下形成一个小型池塘。
-你的两颗铃铛抽动着，它们因刚刚的大量卸货而疼痛，但你体内积聚的纯粹欲望使它们再次载满种子，然后再次膨胀
+你的两颗铃铛抽动着，它们因刚刚的大量卸货而疼痛，但你体内积聚的纯粹欲望使它们再次载满种子，然后再次膨胀。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1759" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_7" tags="" position="1100,21975" size="100,100">&lt;&lt;ImageMinoNakedAura&gt;&gt;
 
@@ -48008,12 +48021,12 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1760" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_Promise" tags="" position="1225,21975" size="100,100">你抬头望着带有窗户的天花板，回忆着牛头怪说过的话。
 
-这种力量 &lt;span class=&quot;glitch nyx&quot; data-text=&quot;全部都是属于你的&quot;&gt;全部都属于你……&lt;/span&gt;
+这种力量&lt;span class=&quot;glitch nyx&quot; data-text=&quot;全部都是属于你的&quot;&gt;全部都属于你……&lt;/span&gt;
 
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 18)&gt;&gt;
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_PromiseOfServitude);&gt;&gt;
 Δ: 你得到了18点腐化值。
-Δ: 你获得了&quot;奴役的承诺&quot;能力
+Δ: 你获得了&quot;奴役的承诺&quot;能力。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1761" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_PromisedMenu" tags="" position="100,22100" size="100,100">&lt;&lt;ImageMinoNakedAura&gt;&gt;
 
@@ -48021,7 +48034,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 随着卵蛋的悸动和鼓起，他的手不自觉地向其伸去。他的肉棒变硬了，他调整了双腿，为其庞大的体积腾出空间。
 
-&quot;你内心深处有一团火，而我还想要体会更多它的滋味。再干我一次。求你了…… 我的身体饥渴难耐!&quot;
+&quot;你内心深处有一团火，而我还想要体会更多它的滋味。再干我一次。求你了……我的身体饥渴难耐!&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[接近他-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_1]]&quot;);&gt;&gt;
 
@@ -48041,7 +48054,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[完全打开门-&gt;Quest_MQ002_MoveInsideGate_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Close it and Go Back-&gt;Quest_MQ002_Entrance_NoGuard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1763" name="Quest_MQ002_MoveInsideGate_2" tags="" position="350,22100" size="100,100">The old gate hard grinds along the corrupted soil. 
+\&lt;&lt;run setup.choice(&quot;[[关上门并返回-&gt;Quest_MQ002_Entrance_NoGuard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1763" name="Quest_MQ002_MoveInsideGate_2" tags="" position="350,22100" size="100,100">古老的大门沿着腐烂的土壤艰难地碾过。
 
 深不见底，寒气逼人的雾渗出来，让你呼吸急促。
 
@@ -48063,7 +48076,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 它在号召你……
 
-∇: 呆在这个领域使你得到了&quot;尼克斯光芒之触&quot;的能力。
+∇: 停留在这个领域使你得到了&quot;尼克斯光芒之触&quot;的能力。
 \&lt;&lt;run setup.MQ002_GiveNyxLightAbility()&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Player.quest.knowsAboutNyx = true&gt;&gt;
 
@@ -48082,7 +48095,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 然而，强烈的黑日之光仍在你的瞳孔里燃烧。就好像它已经在你的脑海里留下了印记。
 
-∇: 你得到了七点腐化值。
+∇: 你得到了7点腐化值。
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 7)&gt;&gt;
 \&lt;&lt;set $MQ002_LookedUpwards = true&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_MoveInsideGate_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1766" name="Quest_MQ002_MoveInsideGate_LookAround" tags="" position="725,22100" size="100,100">当你的眼睛被奇怪的腐败的光灼伤时，你看到了站在大门后面某个巨物的模糊轮廓。 
@@ -48094,7 +48107,7 @@ You grasp your head with your &lt;&lt;Hands&gt;&gt;; its presence makes it hard 
 
 在黑星的凝视下，你向前推进到那座高耸入云的大厦。
 
-当你走近时，你会发现那是一座巨大的城堡
+当你走近时，你会发现那是一座巨大的城堡。
 比它令人敬畏的外观更令人在意的是它的内部状况。 
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_Entrance_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1768" name="Quest_MQ002_Manor_Entrance_2" tags="" position="975,22100" size="100,100">它看起来像是最近才建的，用的黑色石头似乎是从另一个世界来的，神秘莫测，比你在荒原见过的任何材料都更令人难以置信。
@@ -48198,9 +48211,9 @@ With every step, stones and wood flies out in a destructive display of sheer siz
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_WestWing_Path_SeeParasite_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1777" name="Quest_MQ002_Manor_WestWing_Path_SeeParasite_2" tags="" position="850,22225" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_MQ002_NyxParasite.info.picture)&gt;&gt;
 
-它不断爬行，直到它 &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_NyxParasite, &quot;height&quot;))&gt;&gt; 长的身体终于完全显露在你的眼前,你吸引了它的全部注意……
+它不断爬行，直到它&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_NyxParasite, &quot;height&quot;))&gt;&gt;长的身体终于完全显露在你的眼前，你吸引了它的全部注意……
 
-\&lt;&lt;run setup.choice(&quot;[[自卫-&gt;FightLogic][$Encounter_Target = $CharacterSheet_MQ002_NyxParasite]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1778" name="WestWing_GloryHole" tags="" position="975,22225" size="100,100">glory hole
+\&lt;&lt;run setup.choice(&quot;[[自卫-&gt;FightLogic][$Encounter_Target = $CharacterSheet_MQ002_NyxParasite]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1778" name="WestWing_GloryHole" tags="" position="975,22225" size="100,100">鸟洞
 
 &lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="1779" name="WestWing_GymRoom" tags="" position="1100,22225" size="100,100">你走进隔壁房间，立刻闻到刚抛光的钢铁的味道。
 这个房间很大，里面装满了你在家里用过的训练设备。
@@ -48241,7 +48254,7 @@ With every step, stones and wood flies out in a destructive display of sheer siz
 \&lt;&lt;run setup.choice(&quot;[[举起来！-&gt;WestWing_GymRoom_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1784" name="WestWing_GymRoom_5" tags="" position="475,22350" size="100,100">当你在卖力地锻炼时，你感觉到有几双眼睛在盯着你。
 
 当你完成最后一次重复练习时，你终于有机会查明周围情况了。
-几十个迷失者统治着这个健身房，他们都有着壮硕的肌肉，上面满布的汗水在灯光下闪闪发亮
+几十个迷失者统治着这个健身房，他们都有着壮硕的肌肉，上面满布的汗水在灯光下闪闪发亮。
 
 你的心脏怦怦直跳，肌肉在燃烧，你能感觉到汗水像瀑布一样从身体上倾泻而下。 
 
@@ -48285,7 +48298,7 @@ With every step, stones and wood flies out in a destructive display of sheer siz
 
 迷失者和你一起达到高潮，快感具象化为你们不绝于耳的呻吟声和野兽的咆哮声，填满了这间小小健身房。
 
-&quot;嘎啊啊啊啊啊啊啊~&quot; 无数迷失者在狂喜中呼喊。
+&quot;嘎啊啊啊啊啊啊啊~&quot;无数迷失者在狂喜中呼喊。
 
 你射出一股又一股精液，高潮带来的快感支配了你，使你完全忘记举重带来的痛苦，你握紧拳头，忘乎所以，与此同时杠铃从你的手中滑落，你将手指插入站在你旁边一个迷失者的健硕身躯中。
 
@@ -48298,7 +48311,7 @@ With every step, stones and wood flies out in a destructive display of sheer siz
 目之所及都是你们射出的精液。它喷洒在杠铃上，涂满了所有健身机器，甚至从天花板滴下，下一场小型精液雨。
 没过多久，在无边的淫欲中，便很难再分辨出谁已经缴械投降，谁还在顽强地继续这场淫秽的枪林弹雨。
 
-真是斯巴拉西的风景呐，每个人都陶醉地细细体会着，在事后回味无穷。
+真是迷人的风景呐，每个人都陶醉地细细体会着，在事后回味无穷。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_GymRoom_11]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1791" name="WestWing_GymRoom_11" tags="" position="100,22475" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 \&lt;&lt;run setup.stopSoundActions()&gt;&gt;
@@ -48309,9 +48322,9 @@ With every step, stones and wood flies out in a destructive display of sheer siz
 只剩下健身房里的汗渍、腐化和精液。 
 你感觉体内有一种非同凡响的成长感觉，在你的肌肉里跃跃欲试。
 
-你比以前更加强大了
+你比以前更加强大了。
 
-∇: 你获得了 &quot;在尼克斯诱导下锻炼&quot; 的能力。
+∇:你获得了 &quot;在尼克斯诱导下锻炼&quot; 的能力。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_NyxInducedWorkout)&gt;&gt;
 
 \&lt;&lt;print setup.clearWestWingRoom(&quot;WestWing_GymRoom&quot;)&gt;&gt;
@@ -48327,7 +48340,7 @@ With every step, stones and wood flies out in a destructive display of sheer siz
 \&lt;&lt;if setup.MQ002_Manor_IsMassiveInManor($CharacterSheet_Player)&gt;&gt;
 即使对于你的体型而言，它也是相当庞大。
 \&lt;&lt;else&gt;&gt;
-It&#39;s absolutely massive.
+这实在是太大了。
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;run setup.choice(&quot;[[检查这面镜子-&gt;WestWing_MirrorRoom_2]]&quot;);&gt;&gt;
@@ -48366,11 +48379,11 @@ It&#39;s absolutely massive.
 
 深不见底的巨坑散发着生人勿进的可怖气息，就像一只择人而噬的凶兽，但与此同时这也提示了某种东西的存在。某种惊险刺激的事。
 
-洞里充满了长长的，用尾巴保持挺立的蛇一样的生物。他们的眼睛一眨不眨地注视着你
+洞里充满了长长的，用尾巴保持挺立的蛇一样的生物。他们的眼睛一眨不眨地注视着你。
 
 可以看到他们在那里有20多只，他们摇着尾巴，好像他们正准备扑过来。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_NyxSpawnPit_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1799" name="WestWing_NyxSpawnPit_3" tags="" position="1100,22475" size="100,100">这些这些尼克斯卵里的怪物散发着超凡脱俗的光芒，在地面上扭动着身躯，热情地舞蹈着，邀请你进入坑里。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_NyxSpawnPit_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1799" name="WestWing_NyxSpawnPit_3" tags="" position="1100,22475" size="100,100">这些尼克斯卵里的怪物散发着超凡脱俗的光芒，在地面上扭动着身躯，热情地舞蹈着，邀请你进入坑里。
 
 腐化的思想在你的头脑中奔流，用黑暗的欲望诱惑你。
 你不禁想知道，如果你屈服于欲望和诱惑，这些幼体会对你做什么。 
@@ -48385,7 +48398,7 @@ It&#39;s absolutely massive.
 \&lt;&lt;run setup.choice(&quot;[[邀请他们进入你-&gt;WestWing_NyxSpawnPit_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1801" name="WestWing_NyxSpawnPit_5" tags="" position="100,22600" size="100,100">随着呼吸越来越重，你跪下，向它们伸出手臂。 
 它们都热切地向你游来。有些甚至想跳起来够到你的手臂，但却擦肩而过。
 
-一只幼体越过其他幼体向你靠近;它的腐化使你沐浴在麝香的香气中。 
+一只幼体越过其他幼体向你靠近；它的腐化使你沐浴在麝香的香气中。 
 当它温暖黏滑的皮肤接触到你的皮肤时，你兴奋得全身颤抖。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_NyxSpawnPit_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1802" name="WestWing_NyxSpawnPit_6" tags="" position="225,22600" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
@@ -48477,7 +48490,7 @@ It&#39;s absolutely massive.
 
 成长刻不容缓。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;WestWing_NyxSpawnPit_17]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1813" name="WestWing_NyxSpawnPit_17" tags="" position="350,22725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_NyxSpawnPit_17]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1813" name="WestWing_NyxSpawnPit_17" tags="" position="350,22725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 欲望在你内心深处生长，那是一种必须被满足的原始冲动。 你的需求每时每刻都在增加，直到你无法思考，只能屈服于压倒性的欲望。
 
 你开始自慰，巨大的快感立刻将你淹没，令你骨软筋酥，忍不住呻吟出声。
@@ -48490,7 +48503,11 @@ It&#39;s absolutely massive.
 
 但随后，你放弃了挣扎，因为你感到自己即将踏上一条不归路时，你就投降了。 
 
+<<<<<<< Updated upstream
 \&lt;&lt;run setup.choice(&quot;[[高潮-&gt;WestWing_NyxSpawnPit_19]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1815" name="WestWing_NyxSpawnPit_19" tags="" position="600,22725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
+=======
+\&lt;&lt;run setup.choice(&quot;[[射精-&gt;WestWing_NyxSpawnPit_19]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1815" name="WestWing_NyxSpawnPit_19" tags="" position="600,22725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
+>>>>>>> Stashed changes
 这些幼体现在已经完全成为你身体的一部分，他们会在你的生命旅途中全心全意地服侍你。
 
 你能感觉到它们在你的血管里肆意游动，在你身体里跳动。
@@ -48502,7 +48519,7 @@ It&#39;s absolutely massive.
 
 高潮一波一波地席卷你，像暴风雨一样向你袭来。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;WestWing_NyxSpawnPit_20]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1816" name="WestWing_NyxSpawnPit_20" tags="" position="725,22725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_NyxSpawnPit_20]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1816" name="WestWing_NyxSpawnPit_20" tags="" position="725,22725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 你爽到手脚不听使唤，难以动弹。
 你躺在那里，气喘吁吁，汗流浃背，感受着高潮的余韵在你体内荡漾。
 
@@ -48517,7 +48534,7 @@ It&#39;s absolutely massive.
 
 你需要得到更多……
 
-∇: 你获得了 &quot;尼克斯之卵的感染&quot; 成就。
+∇: 你获得了 &quot;尼克斯之卵的感染&quot; 的能力。
 \&lt;&lt;run setup.MQ002_AddNyxParasiteInfection()&gt;&gt;
 
 \&lt;&lt;print setup.clearWestWingRoom(&quot;WestWing_NyxSpawnPit&quot;)&gt;&gt;
@@ -48533,7 +48550,7 @@ It&#39;s absolutely massive.
 当你试图穿过东门时，守在一旁的门卫拦住了你。
 不过他一认出你，姿势就放松了。
 
-&quot;哈, &lt;&lt;print $CharacterSheet_Player.info.name&gt;&gt;…… 此时此刻，你可能是唯一一个应该被允许在这里的人。&quot; 
+&quot;哈，&lt;&lt;print $CharacterSheet_Player.info.name&gt;&gt;……此时此刻，你可能是唯一一个应该被允许在这里的人。&quot; 
 
 他叹了口气。
 
@@ -48555,7 +48572,7 @@ It&#39;s absolutely massive.
 
 体内的幼体渴望被释放，将他们超凡脱俗的欲望传播到荒原的野兽身上。
 
-终于，你快要可以沉浸在欲望中，纵情交配，这是作为你这样一个怪物要做的事。 一些守卫饶有兴趣地窥视着你，那种污染空气的兴奋感就像恶魔的灵魂一样渗入他们体内。
+终于，你快要可以沉浸在欲望中，纵情交配，这是作为你这样一个怪物要做的事。一些守卫饶有兴趣地窥视着你，那种污染空气的兴奋感就像恶魔的灵魂一样渗入他们体内。
 
 你想要腐化这里所有一切的内心渴望再也难以遁阴匿景。
 
@@ -48593,17 +48610,17 @@ It&#39;s absolutely massive.
 
 突然，他转身推开那扇很大的破旧大门。它吱吱作响，留下一个足够小的缝隙让你挤过去。
 
-&quot;在那边小心谨慎;我们需要你完好无损地回来。&quot;他喃喃地说。
+&quot;在那边你要小心谨慎；我们需要你完好无损地回来。&quot;他喃喃地说。
 
-&quot;而且要身心健全地。&quot;
+&quot;而且还要身心健全地回来。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[穿过大门-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1827" name="Explore_NorthGrownMuscular" tags="" position="850,22850" size="100,100">\&lt;&lt;set $CharacterSheet_Player.quest.exploration.villageGateNorth.northGrownMuscular.available = false&gt;&gt;
 不出所料，一个警卫在东门入口处等着你。 他轻轻推开大门，大门吱吱作响，然而它远远不够容纳你的体型。
 
-你走到大门前，用手一推便轻松地达到需要五个壮汉拼尽全力才能推开的距离。 破损的大门发出巨大的吱吱声，将所有人的目光都吸引到你身上;你踏着脚步走向北部的不毛之地。
+你走到大门前，用手一推便轻松地达到需要五个壮汉拼尽全力才能推开的距离。 破损的大门发出巨大的吱吱声，将所有人的目光都吸引到你身上；你踏着脚步走向北部的不毛之地。
 
-警卫的声音从入口处传来。
+守卫的声音从入口处传来。
 
 &quot;感谢上苍，幸亏他是我们这边的。&quot;
 
@@ -48628,12 +48645,12 @@ It&#39;s absolutely massive.
 
 在花了一点时间欣赏强大的防御结构后，你抬起一只脚，简单地跨过它，就像它只是一根倒在你路上的木头一样。
 
-你已经成长得远远超出了任何人的想象;甚至连你自己也始料未及。
+你已经成长得远远超出了任何人的想象；甚至连你自己也始料未及。
 
 \&lt;&lt;run setup.choice(&quot;[[穿过大门-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1831" name="Combat_Guide" tags="" position="100,22975" size="100,100">这个版本有一个新的战斗系统，所以这里有一个小指南来解释它是如何工作的。
 
 每个回合都会给你一个随机的移动列表。
-如果一个移动的链接值(右上角的数字)与下一个移动的链接值相邻，则可以将其链接。
+如果一个移动的链接值（右上角的数字）与下一个移动的链接值相邻，则可以将其链接。
 
 因此，值为3的移动只能与值为2或4的移动组合 
 
@@ -48759,13 +48776,13 @@ MikeLovesPecs
 
 \&lt;&lt;run setup.choice(&quot;[[主菜单-&gt;Main Menu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1836" name="Ending" tags="" position="725,22975" size="100,100">这个世界已经走到了故事的尽头，在自己野心的重压下崩溃了。
 
-然而，腐化的种子仍然存在;在其他的土地上，你的意志还未触及。
+然而，腐化的种子仍然存在；在其他的土地上，你的意志还未触及。
 
 [[重生-&gt;Name Setup][$Intro_Passage = &quot;intro_wake_up&quot;]]
 
-&lt;&lt;include Ending_Reset&gt;&gt;</tw-passagedata><tw-passagedata pid="1837" name="Ending_Slow" tags="" position="850,22975" size="100,100">This world has reached the end of its story, cracked under the weight of its own ambitions.
+&lt;&lt;include Ending_Reset&gt;&gt;</tw-passagedata><tw-passagedata pid="1837" name="Ending_Slow" tags="" position="850,22975" size="100,100">这个世界已经走到了故事的尽头，在自己野心的重压下崩溃了。
 
-然而，腐化的种子仍然存在;在其他的土地上，你的意志还未触及。
+然而，腐化的种子仍然存在；在其他的土地上，你的意志还未触及。
 
 \&lt;&lt;run setup.choice(&quot;[[重生-&gt;Name Setup]]&quot;);&gt;&gt;
 
@@ -48811,7 +48828,7 @@ MikeLovesPecs
 &lt;&lt;set $Essence = $EssenceBackup&gt;&gt;
 
 &lt;&lt;unset $ExpBackup&gt;&gt;
-&lt;&lt;unset $EssenceBackup&gt;&gt;</tw-passagedata><tw-passagedata pid="1841" name="Exit_Popup" tags="" position="100,23100" size="100,100">你确定要退出吗?
+&lt;&lt;unset $EssenceBackup&gt;&gt;</tw-passagedata><tw-passagedata pid="1841" name="Exit_Popup" tags="" position="100,23100" size="100,100">你确定要退出吗？
 
 所有未保存的进度将会丢失。
 
@@ -48874,7 +48891,7 @@ MikeLovesPecs
 	},
 ]&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-&lt;h1&gt;随着资历的丰富，你的力量也会随之增长&lt;/h1&gt;
+&lt;h1&gt;随着资历的丰富，你的力量也会随之增长。&lt;/h1&gt;
 
 &lt;&lt;print setup.displayStatsUp($CharacterSheet_Player, $LevelUpParams)&gt;&gt;
 你可以获得一种新的能力。单击以选择它。
@@ -48884,7 +48901,7 @@ MikeLovesPecs
 \&lt;&lt;run setup.choice(&quot;[[取消-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1845" name="StoryBanner" tags="" position="600,23100" size="100,100"></tw-passagedata><tw-passagedata pid="1846" name="Main Menu" tags="Name" position="19,1463" size="100,100">&lt;div class=&quot;MainMenu&quot;&gt;\
 警告，本游戏仅适用于年龄到达18岁及以上的人群。
 它的特点是男性同性恋角色和恋物癖，如：
-肌肉生长，宏观，亢进，粘稠，转化，腐化
+肌肉生长，巨型，亢进，粘液，身体转化，腐化
 
 如果您喜欢该游戏并希望提前查看下一个版本，请查看
 Patreon: https://www.patreon.com/sombreve
@@ -48900,7 +48917,7 @@ Gumroad: https://gumroad.com/sombreve
 
 你要穿越记忆之间的大门吗?所有的角色和故事进程都会消失。
 
-进入一个新的周期将会被超凡脱俗的旁观者注意到。 因此，你的成就将授予特殊能力以便开始一个新的关卡。
+进入一个新的周期将会被超凡脱俗的旁观者注意到。因此，你的成就将授予特殊能力以便开始一个新的关卡。
 
 &lt;div class=&quot;ExitPopupButtons&quot;&gt;
 \&lt;&lt;button &quot;取消&quot;&gt;&gt;
@@ -48975,7 +48992,7 @@ Gumroad: https://gumroad.com/sombreve
 
 他困惑地看着你，突然感觉到纯粹的力量进入了他的身体。他张开的红眼睛突然迸发出红光，身体止不住地颤抖。
 
-&quot;这……这是什么?&quot; 这证实了你的猜测。他不能像你一样从人身上提取精华。 这是他第一次尝到如此纯粹、集中的力量。 
+&quot;这……这是什么？&quot; 这证实了你的猜测。他不能像你一样从人身上提取精华。 这是他第一次尝到如此纯粹、集中的力量。 
 
 \&lt;&lt;run setup.choice(&quot;[[给予他精华-&gt;Transformation_Incubus_Level1_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1853" name="Transformation_Incubus_Level1_2" tags="" position="350,23225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
 他起身时肌肉因力量而悸动。他似乎完全痊愈了。
@@ -48987,11 +49004,11 @@ Gumroad: https://gumroad.com/sombreve
 
 他突然对你上下其手，摸索你的肉棒和胸肌。
 
-&quot;正确的选择。&quot;
+&quot;你做出了正确的选择。&quot;
 
 他深情地亲吻你。
 
-暗红色的纹章突然出现在你周围。和恶魔发光的眼睛一样红。 
+暗红色的纹章突然出现在你周围，和恶魔发光的眼睛一样红。 
 
 \&lt;&lt;run setup.choice(&quot;[[让恶魔的力量进入你的身体-&gt;Transformation_Incubus_Level1_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1854" name="Transformation_Incubus_Level1_3" tags="" position="475,23225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 
@@ -49002,7 +49019,7 @@ Gumroad: https://gumroad.com/sombreve
 拉科斯咧嘴一笑，跪下来将嘴伸向你的的肉棒。你感觉到他温热的口腔将你 &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt; 长的肉棒尽数吞下。随着肉棒对他喉咙的每一次蹂躏，你感觉头顶上的肉块充满了力量。
 你额头上的小肿块突然裂开了。感觉它形成了角，并一直长到 &lt;&lt;print setup.getHornsSize($CharacterSheet_Player)&gt;&gt;长, 那对角先是稍稍弯曲，然后挺直。每个都几乎和你的手腕一样粗。
 \&lt;&lt;run setup.changeLimb($CharacterSheet_Player.info.anatomy, &quot;horns&quot;, setup.RacePool.INCUBUS)&gt;&gt;
-你觉得拉科斯吸得更快更狠。你快爽死了，感觉就快从顺着高潮直达天堂了。
+你觉得拉科斯吸得更快更狠。你快要高潮了。
 你用你那双紫眼睛注视着恶魔。
 
 \&lt;&lt;run setup.choice(&quot;[[完成转换-&gt;Transformation_Incubus_Level1_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1855" name="Transformation_Incubus_Level1_4" tags="" position="600,23225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
@@ -49012,9 +49029,9 @@ Gumroad: https://gumroad.com/sombreve
 一直在观察你变化的恶魔兴奋得即将抵达高潮。他嘴一松，头向后一仰，释放了你现在 &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt; 长的紫色肉棒。 
 他性奋地盯着你健美的恶魔新躯体，忍不住当场打飞机，并且爽得开始大声浪叫。 当印记燃烧起地狱之火时，强烈的欲望便势不可挡地占据了你的身体。
 
-&quot;嘎啊啊啊啊&quot;
+&quot;嘎啊啊啊啊！！&quot;
 
-你们俩都吼着，射在对方身上，让彼此都沾上了对方精液的味道;你的种子让你们俩都充满了邪恶的活力。
+你们俩都吼着，射在对方身上，让彼此都沾上了对方精液的味道；你的种子让你们俩都充满了邪恶的活力。
 新得到的力量开始在你们身上发挥作用——让你们的身体变大了。
 
 &lt;&lt;print setup.getFightReward($CharacterSheet_Lakkos)&gt;&gt;
@@ -49043,7 +49060,7 @@ Gumroad: https://gumroad.com/sombreve
 拉科斯筋疲力尽地倒在地上，但还是咧着嘴笑。他知道你想要更多，没有人能抵抗恶魔力量的诱惑。
 你冲向他，再次把手放在他的头上。当纯粹的力量流过他时，他出于强烈的需求开始舔你的阴茎。
 
-&quot;哈哈…我能感觉到我的以前的力量开始回来了……&quot;
+&quot;哈哈……我能感觉到我的以前的力量开始回来了……&quot;
 
 他的笑声逐渐疯狂。 
 
@@ -49053,7 +49070,7 @@ Gumroad: https://gumroad.com/sombreve
 
 他的肉棒像被附身一样颤抖和悸动。厚厚的红色脉络充满了力量。他抓住根基，强烈的快感使他将头往后仰。
 
-&quot;OHHHHHH……干，真他妈爽……&quot;
+&quot;哦……干，真他妈爽……&quot;
 
 当他的肉棒深入你时，你的眼睛睁大了。一磅又一磅的厚肉堆在他的巨物上。当精液从他不断增长的肉棒中涌出时，他发出疯狂的笑声。 
 
@@ -49086,14 +49103,14 @@ Gumroad: https://gumroad.com/sombreve
 触手不断爬上你的身体，带着粘液深入你的口腔。有些缠绕在你的肉棒上，如饥似渴地撸动着它，想要获得更多汁液的浇灌。 
 一些触手伸入你的小穴，你感觉入口处被逐渐扩张，自带润滑油属性的粘液在你体内传播他们的恶魔种子。
 触手释放紫色液体进入你体内，与你的前列腺融合，增强它的敏感度，这给你带来了无与伦比的快感。
-触手的侍弄使你娇喘不断，而拉库斯还在你面前撸管，他已经完全被情欲冲昏了头脑。
+触手的侍弄使你娇喘不断，而拉科斯还在你面前撸管，他已经完全被情欲冲昏了头脑。
 
 触手突然开始野蛮地操弄你，但你觉得这比你之前的任何一次的做爱都要爽，其中三根触手深入你的小穴，四个按摩着你的肉棒和卵蛋。
 一根细细触手的慢慢伸入你的马眼，用恶魔的能量喂养你的作案工具。
 
 &quot;噢, 天呐……啊啊啊啊啊啊……&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[要射力！-&gt;Transformation_Incubus_Level2_3_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1859" name="Transformation_Incubus_Level2_3_1" tags="" position="1100,23225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[射精-&gt;Transformation_Incubus_Level2_3_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1859" name="Transformation_Incubus_Level2_3_1" tags="" position="1100,23225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 
 你射了，跟它们继续操你有什么关系。它们以各种方式干你，让你欲仙欲死。即使在射精后，你的性欲仍未减分毫，保持在历史最高水平。
 似乎你能一直这么高潮下去，直到世界毁灭。
@@ -49106,12 +49123,12 @@ Gumroad: https://gumroad.com/sombreve
 你咧嘴笑着，盯着自己的手臂。你的指甲伸展弯曲，变成又粗又黑的爪子。
 
 你用力压在中出你的触手上。
-一不小心爽过头了；你又射了。
+你再也忍不住了；你又射了。
 
 更多的触手突然升起，按摩你身体的每一寸。你全身上下都沉浸在这个超凡脱俗的野兽取悦你的纯粹欲望中。
 当你再次射精时，你的形体也随之慢慢变大。
  
-你淫荡的呻吟响彻云霄，回荡在这整片森林中。一条黑色的分叉尾巴突然从你身后冲出来;并且随着不断的生长，厚度也在增加。 你把它缠绕在你的肉棒上，并且射出你人类种子的最后残余。 
+你淫荡的呻吟响彻云霄，回荡在这整片森林中。一条黑色的分叉尾巴突然从你身后冲出来;并且随着不断的生长，厚度也在增加。你把它缠绕在你的肉棒上，并且射出你人类种子的最后残余。 
  
 就像对你人性的最后一部分离开你做出反应一样，触手从你身体抽离，并且向后撤，咒语消失了。拉科斯现在可以完全看到你的新身体了。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_DemonicCorruption);&gt;&gt;
@@ -49122,7 +49139,11 @@ Gumroad: https://gumroad.com/sombreve
 
 \&lt;&lt;run setup.choice(&quot;[[和拉科斯颠鸾倒凤不知天地为何物-&gt;Transformation_Incubus_Level2_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1861" name="Transformation_Incubus_Level2_5" tags="" position="100,23350" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
 
+<<<<<<< Updated upstream
 在一周的爱欲浮沉后，你回到了黄金堡垒 
+=======
+在一周昏天黑地的基情性爱后，你回到了黄金堡垒。
+>>>>>>> Stashed changes
 拉科斯告诉你，如果你收集到足够多的精华，他可以将你转化为最终形态。
 
 然而，他被强化过的身体将是一个更艰巨的挑战……
@@ -49153,7 +49174,7 @@ Gumroad: https://gumroad.com/sombreve
 你看到他的肩膀变宽了，充满了力量。他的整个身体开始生长。
 你感觉到他的头在你的手下变大了。他的舌头覆盖肉棒的部分也变得越来越大。
 
-&quot;啊啊啊啊啊……啊啊啊啊啊…… 你这样太过了啦！呃啊啊啊啊啊&quot; 他突然更用力更快地吸你，让你的呻吟变成了愉悦的浪叫。
+&quot;啊啊啊啊啊……啊啊啊啊啊…… 你这样太过了啦！呃啊啊啊啊啊！&quot; 他突然更用力更快地吸你，让你的呻吟变成了愉悦的浪叫。
 
 \&lt;&lt;run setup.choice(&quot;[[给他更多的精华……-&gt;Transformation_Incubus_Level3_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1863" name="Transformation_Incubus_Level3_2" tags="" position="350,23350" size="100,100">\&lt;&lt;run setup.playSoundActionParams([&quot;action_Suck&quot;], true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
@@ -49169,18 +49190,18 @@ Gumroad: https://gumroad.com/sombreve
 &quot;没错，就是这样……让精华来得更猛烈些吧……&quot;他呻吟着，肉棒在他抽搐的双手之间长大。他几乎无法应付自己的巨根。
 他垂涎欲滴地盯着自己&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lakkos, &quot;cock&quot;))&gt;&gt;长的巨根。
 
-&quot;唔…… 他奶奶个熊的。这才是一只真正的雄兽该有的基霸尺寸！&quot;他一边疯狂地笑，一边用手和尾巴抚摸着自己的身躯。随着力量不断成长，恶魔的身体也止不住颤抖。
+&quot;唔……操。这才是一只真正的野兽该有的鸡巴尺寸！&quot;他一边疯狂地笑，一边用手和尾巴抚摸着自己的身躯。随着力量不断成长，恶魔的身体也止不住颤抖。
 
 &quot;我需要更多精华……我需要变得非常巨大，才能更好地使用它……&quot;他咧嘴一笑，看着他巨大的阴茎。 
 
-&quot;但首先……我的交易结束了，&lt;&lt;print $CharacterSheet_Player.info.name&gt;&gt;&quot;
+&quot;但首先……我还要完成这场交易，&lt;&lt;print $CharacterSheet_Player.info.name&gt;&gt;&quot;
 
 当它用爪子刺穿地面时，你兴奋得发抖。一种深深的黑色腐化开始在你周围的土地上蔓延。你周围的少数植物在扩散超过&lt;&lt;print setup.getLength(30)&gt;&gt;时就会变形和腐化。腐化的中心是黑色的，你可以认出黑色的门是情欲的化身.但这一次它十分巨大，另一个世界的生物在门那边拼命想要进来，急切地将自己推到玻璃般的表面上。
 
 拉科斯笑着把他的力量集中在自己身上。他的鳞片闪烁着红色恶魔的能量。
 他不断地成长，直到他过去&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lakkos, &quot;height&quot;))&gt;&gt;高的身体达到 
 \&lt;&lt;run setup.applyGrowth($CharacterSheet_Lakkos, &quot;height&quot;, setup.getStatValue($CharacterSheet_Lakkos, &quot;height&quot;) * 1.5)&gt;&gt;
-\&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lakkos, &quot;height&quot;))&gt;&gt;.
+\&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Lakkos, &quot;height&quot;))&gt;&gt;。
 他的成长丝毫没有停止的迹象，与此同时他的笑声变得更加邪恶且具有威慑力。浓稠的前列腺液从他的肉棒中渗出，他兴高采烈地抓住他的巨根。
 
 \&lt;&lt;run setup.choice(&quot;[[拥抱腐化-&gt;Transformation_Incubus_Level3_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1864" name="Transformation_Incubus_Level3_3" tags="" position="475,23350" size="100,100">\&lt;&lt;run setup.stopSoundActions()&gt;&gt;
@@ -49200,9 +49221,9 @@ Gumroad: https://gumroad.com/sombreve
 当它们到达你的腰腹间，你便发出充满狂躁欲望的野性尖叫。触手附着在你的肉棒和卵蛋上，将它们的恶魔种子直接注入其中。
 你能感觉到它们在紫色液体中生长和剧烈搅拌。
 
-&quot;哦草…… 次奥次奥次奥…… 我要更多……&quot;
+&quot;哦操……操操操……我要更多……&quot;
 
-&lt;h1&gt;&quot;干他娘的，就是这样! 给我更多!&quot;&lt;/h1&gt;
+&lt;h1&gt;&quot;干，就是这样！给我更多！&quot;&lt;/h1&gt;
 
 你的肉棒射出一股又一股的白浊。无数触手爬上你的胸膛，其中一条巨大的触手进入你的嘴里。
 你贪婪地吮吸它，仿佛它是输氧机一样，没有它的插入你就活不下去了。你感觉到触手在你口腔里不断膨胀，与此同时一升升浓稠的恶魔粘液从中喷出。你试着将它尽数吞下，消化殆尽。
@@ -49213,12 +49234,12 @@ Gumroad: https://gumroad.com/sombreve
 
 拉科斯只能惊讶地盯着，你被这么多的触手完全覆盖着，就像被包裹在一个黑色的茧里。
 
-你能感觉到你的肌肉充满了力量;你的身体轮廓在改变。茧几乎无法容纳你的生长形态。 
-拉科斯知道你不再是恶魔，你是被欲望所祝福的天选之人。强大的力量近在眼前，而你只需要顺水推舟。 
+你能感觉到你的肌肉充满了力量；你的身体轮廓在改变。茧几乎无法容纳你的生长形态。 
+拉科斯知道你不再是恶魔，你是被欲望所祝福的天选之人。强大的力量近在你的眼前，而他只需要顺水推舟。 
 
 他很乐意帮忙。
 
-他咆哮着，再也压抑不住，将体内汹涌澎湃的高潮尽数释放出来。他的肉棒像决堤般喷发出大量精液。他的精液完全浸透了你的茧;你觉得你的身体在吸收着它邪恶的能量。 
+他咆哮着，再也压抑不住，将体内汹涌澎湃的高潮尽数释放出来。他的肉棒像决堤般喷发出大量精液。他的精液完全浸透了你的茧；你觉得你的身体在吸收着它邪恶的能量。 
 鳞片慢慢地覆盖在你身体的每一个表面。你的头悸动，一组新的巨大的角从你的太阳穴处冒出。
 它们一直生长，直到长到你的后脑勺。 
 \&lt;&lt;run setup.changeLimbNumber($CharacterSheet_Player.info.anatomy, &quot;horns&quot;, 2, &quot;add&quot;)&gt;&gt;
@@ -49248,16 +49269,16 @@ Gumroad: https://gumroad.com/sombreve
 \&lt;&lt;run setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;legs&quot;, setup.ColourPool.BLACK)&gt;&gt;
 \&lt;&lt;run setup.colourLimb($CharacterSheet_Player.info.anatomy, &quot;tails&quot;, setup.ColourPool.BLACK)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[与拉库斯大战三百回合-&gt;Transformation_Incubus_Level3_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1866" name="Transformation_Incubus_Level3_5" tags="" position="725,23350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[与拉科斯大战三百回合-&gt;Transformation_Incubus_Level3_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1866" name="Transformation_Incubus_Level3_5" tags="" position="725,23350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 
-你跳向了拉科斯，对他做了所有你能想象的或不能想象的极度淫荡下贱卑鄙无耻的咸湿事。而且还连续干了几个星期不间断，简直不要太荒谬。 
+你跳向了拉科斯，和他用任何你们能摆出的所有姿势做爱，不间断地连续干了几个星期。 
 他那巨大的身躯很难对付，但你希望你和他再大一点。力量和欲望驱使着你的每一个想法。 
 
-几周、几个月过去。在左右翻炒之下，你终于炒熟了你原先非常生疏的新恶魔躯体。
+几周、几个月过去了。在不断性爱之后，你终于适应了你的新恶魔躯体。
 拉科斯喜欢和你做爱的每分每秒，也许被放逐在这里对他来说也没那么糟。
 
-在昏天黑地的爱欲中，你短暂地清醒过来，一个遥远的记忆慢慢从你的脑海中浮现出来。那是一个从未完成的旧职责。
-拔吊后，你就迅速离开了，你的目标和直觉都已改变，然而……
+在昏天黑地的爱欲中，你短暂地清醒过来，一个遥远的记忆慢慢从你的脑海中浮现出来。那是一个从未完成的旧的职责。
+很快你就离开了，你的目标和本能都已改变，然而……
 
 你的探索永无止境。
 \&lt;&lt;run setup.upgradeLakkosStats(3)&gt;&gt;
