@@ -137,6 +137,9 @@
 |yes|God-Beast|name.神之兽||
 |yes|Ankou|name.安口||
 |yes|Lakkos|name.拉科斯||
+|yes|Mildred|name.|米尔德莱德||
+|yes|Senna|name.塞纳||
+|yes|Trent|name.|特伦特||
 ---
 
 ## **三、代码查疑**
