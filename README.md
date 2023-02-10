@@ -132,8 +132,8 @@
 |yes|Augwult|name.奥古特||
 |yes|meteor|n.陨石||
 |yes|Link Value|n.链接阀值|战斗行动右上角的数字|
-|yes|Doppleganger|name.双重者||
-|yes|Drenth|name.德伦斯||
+|yes|Doppleganger|name.二重身||
+|yes|Drenth|name.德伦斯|城堡小龙人|
 |yes|God-Beast|name.神之兽||
 |yes|Ankou|name.安口||
 |yes|Lakkos|name.拉科斯||
@@ -165,6 +165,8 @@
 |44928|...and bound to corrupt us all!>>>&#39;<<<...|||
 |26582|...layer of your slightly->>>transluscent<<< horns lies...|translucent||
 |26697|...and flesh as your muscles&#39;>>><<< size puts...|s||
+|39266|...his >>>softenning<<< as he stares into your...|softening||
+|40182|He walks up to you>>>/<<< climbs you|,||
 ---
 
 *[待补充]*
