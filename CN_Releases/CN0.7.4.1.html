@@ -24230,7 +24230,7 @@ Config.ui.stowBarInitially = false;
 	},
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="107" name="_ethrex_info_sheet" tags="" position="850,1350" size="100,100">&lt;&lt;set setup.InfoSheet_Ethrex =
 {
-	name: &quot;Ethrex&quot;,
+	name: &quot;埃塞克斯&quot;,
 	gender: &quot;male&quot;,
     corruption: 400,
 	muscles: 0,
@@ -29618,7 +29618,7 @@ Config.ui.stowBarInitially = false;
 	outcomePlayerLoses: &quot;&lt;&lt;include Encounter_Loss_Slime&gt;&gt;&quot;
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="389" name="_slime_info_sheet" tags="" position="1100,4850" size="100,100">&lt;&lt;set setup.InfoSheet_Slime =
 {
-	name: &quot;Slime&quot;,
+	name: &quot;史莱姆&quot;,
 	gender: &quot;other&quot;,
 	corruption: 0,
 	muscles: 0,
@@ -40636,7 +40636,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 你还记得那种熟悉的感觉，就像在某个梦魇身边一样。
 
 \&lt;&lt;run setup.choice(&quot;[[寻找腐败的根源-&gt;Encounter_Intro_Ethrex_LowRela_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="846" name="Encounter_Intro_Ethrex_LowRela_2" tags="" position="725,10600" size="100,100">The incubus slowly strides along the Barrens.
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="846" name="Encounter_Intro_Ethrex_LowRela_2" tags="" position="725,10600" size="100,100">那只梦魇沿着荒原慢慢地走着。
 他似乎陷入了沉思，没有显示出发现你的迹象。
 
 他的阴茎躺在那里，供你凝视。
@@ -40789,7 +40789,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 随着埃塞克斯的离去，你感到自己更能控制冲过你身体的快乐。
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="870" name="Encounter_Intro_Ethrex_MidRela" tags="" position="1225,10850" size="100,100">阳光打在你的肩上，你感到汗水开始在你的皮肤上形成。
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="870" name="Encounter_Intro_Ethrex_MidRela" tags="" position="1225,10850" size="100,100">阳光打在你的肩上，你感到汗水开始在你的皮肤上形成。
 
 你停了下来，嗅着空气，感觉到脊柱一阵颤抖。
 这气息带有麝香味和甜味，它有着放荡不羁的形式。
@@ -51232,9 +51232,9 @@ for(i = 0; i &lt; State.variables.Explore_Destinations.length; i++)
 
 你已经成长得远远超出了任何人的想象；甚至连你自己也始料未及。
 
-\&lt;&lt;run setup.choice(&quot;[[穿过大门-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1995" name="ChoicesWindowSettings" tags="" position="600,24975" size="100,100">Choices are shown:
-&lt;label&gt;&lt;&lt;radiobutton &#39;$ChoicesWindow&#39; false autocheck&gt;&gt;Inside the main window&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &#39;$ChoicesWindow&#39; true autocheck&gt;&gt;Under the main window&lt;/label&gt;</tw-passagedata><tw-passagedata pid="1996" name="Combat_Guide" tags="" position="725,24975" size="100,100">这个版本有一个新的战斗系统，所以这里有一个小指南来解释它是如何工作的。
+\&lt;&lt;run setup.choice(&quot;[[穿过大门-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1995" name="ChoicesWindowSettings" tags="" position="600,24975" size="100,100">选项显示方位:
+&lt;label&gt;&lt;&lt;radiobutton &#39;$ChoicesWindow&#39; false autocheck&gt;&gt;在主窗口内&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &#39;$ChoicesWindow&#39; true autocheck&gt;&gt;在主窗口下&lt;/label&gt;</tw-passagedata><tw-passagedata pid="1996" name="Combat_Guide" tags="" position="725,24975" size="100,100">这个版本有一个新的战斗系统，所以这里有一个小指南来解释它是如何工作的。
 
 每个回合都会给你一个随机的移动列表。
 如果一个移动的链接值（右上角的数字）与下一个移动的链接值相邻，则可以将其链接。
@@ -51546,7 +51546,7 @@ Gumroad: https://gumroad.com/sombreve
 \&lt;div class=&quot;sidebar-footer&quot;&gt;
 \   &lt;div class=&quot;volume-control-container&quot;&gt;
 \       &lt;span class=&quot;volumeLabel&quot;&gt;
-\       &lt;&lt;link Volume&gt;&gt; &lt;&lt;script&gt;&gt;setup.volumeMenu()&lt;&lt;/script&gt;&gt;&lt;&lt;/link&gt;&gt;
+\       &lt;&lt;link 音量选项&gt;&gt; &lt;&lt;script&gt;&gt;setup.volumeMenu()&lt;&lt;/script&gt;&gt;&lt;&lt;/link&gt;&gt;
 \       &lt;/span&gt;
 \       &lt;&lt;volume&gt;&gt;
 \   &lt;/div&gt;
