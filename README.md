@@ -139,7 +139,9 @@
 |yes|Lakkos|name.拉科斯||
 |yes|Mildred|name.|米尔德莱德||
 |yes|Senna|name.塞纳||
-|yes|Trent|name.|特伦特||
+|yes|Trent|name.特伦特|||
+|yes|Ethrex|name.埃塞克斯||
+|yes|incubus|n.梦魇|男性魅魔|
 ---
 
 ## **三、代码查疑**
