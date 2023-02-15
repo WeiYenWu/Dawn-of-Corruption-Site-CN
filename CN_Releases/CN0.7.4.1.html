@@ -325,7 +325,7 @@ a
   background: white;
 }
 
-#passages a.link-internal:is([data-passage="设置名称"], [data-passage="制作组名单主菜单"]) {
+#passages a.link-internal:is([data-passage="Name Setup"], [data-passage="CreditsMainMenu"]) {
   clip-path: unset !important;
   padding: 0 .5em !important;
 }
@@ -7464,7 +7464,7 @@ setup.getAbilityCategoryDisplayName = function(category)
             displayString += "";
             break;
         case categories.WARRIOR:
-            displayString += "拯救之法";
+            displayString += "救赎之路";
             break;
         case categories.GROWTH:
             displayString += "生长之力";
@@ -10998,7 +10998,7 @@ setup.displayInfoStats = function(character)
 	var expedition = State.variables.Expedition;
 	var displayString = "";
 	
-	displayString +=  "<span class='DateText'>"+"第"+setup.ordinal_suffix(expedition) +"次远征于第"+ setup.ordinal_suffix(cycle) +"周目</span> \n";
+	displayString +=  "<span class='DateText'>"+setup.ordinal_suffix(expedition) +"次远征于第"+ setup.ordinal_suffix(cycle) +"周目</span> \n";
 	displayString +=  "<div id='SidebarDivisionTop'>"+setup.getCorruptSidebarDividerTop()+"</div>";
 	displayString +=  "<div class='PlayerDescriptor'>";
 	displayString +=  "<span class='PlayerName'>"+State.variables.CharacterSheet_Player.info.name.toUpperCase() +"</span>\n";
@@ -13764,8 +13764,8 @@ setup.getRaceDescriptor = function(race)
 
 	/* males Section */
 	displayString += "\n男性:\n";
-	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.cocks, "阴茎", "阴茎")) +"\n";
-	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.balls, "睾丸", "睾丸")) + "\n";
+	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.cocks, "阴茎", "阴茎们")) +"\n";
+	displayString += setup.autoCap(setup.getRaceLimbDescriptor(race.balls, "睾丸", "睾丸们")) + "\n";
 
 	return displayString;
 }
@@ -27480,8 +27480,7 @@ Config.ui.stowBarInitially = false;
 
 你感觉到你在他身上和他体内生长——感觉到他的胃向上拱起，把你的鸡巴推得更高，这会激发生物的性高潮。
 
-他发出一声强大的嚎叫，把他那厚厚的腐败种子射到你的胸膛上。乌木、焦油般的精子从下面淋向你，将你的整个胸部都涂上了墨汁般的阴影。</tw-passagedata><tw-passagedata pid="204" name="_player_text_sheet_lostFuck2_heightFlavour_large" tags="" position="475,2600" size="100,100">你觉得腐败在你体内扎根。你拥抱了它，让它的温暖传遍你的每一寸肌肤，进入你的大脑。\
-黑暗的低语充斥着你的脑海。
+他发出一声强大的嚎叫，把他那厚厚的腐败种子射到你的胸膛上。乌木、焦油般的精子从下面淋向你，将你的整个胸部都涂上了墨汁般的阴影。</tw-passagedata><tw-passagedata pid="204" name="_player_text_sheet_lostFuck2_heightFlavour_large" tags="" position="475,2600" size="100,100">你觉得腐败在你体内扎根。你拥抱了它，让它的温暖传遍你的每一寸肌肤，进入你的大脑。黑暗的低语充斥着你的脑海。
 
 你需要传播。
 
@@ -27876,7 +27875,7 @@ Config.ui.stowBarInitially = false;
 没过多久你就意识到自己正在崇拜着&lt;&lt;SymbioteName&gt;&gt;的身体，便用手抚了上去。
 
 它炫耀着肌肉，用它的手指感受身体的沟壑，用它的手掌感受隆起的推力。\
-假肌肉增长已经大到足以让&lt;&lt;SymbioteName&gt;&gt;满意地崇拜的程度，让它陶醉在自我欣赏之中。/tw-passagedata><tw-passagedata pid="307" name="_player_text_sheet_mirror_symbiote_LowerBodyFlavour_LiveForEcho_heightFlavour_large" tags="" position="850,3850" size="100,100">&lt;&lt;SymbioteName&gt;&gt;展示着腰部下面的@[all| legs| noverb]。它急不可耐地自豪地举起一条腿，然后重重地将脚踏在了地上。\
+假肌肉增长已经大到足以让&lt;&lt;SymbioteName&gt;&gt;满意地崇拜的程度，让它陶醉在自我欣赏之中。</tw-passagedata><tw-passagedata pid="307" name="_player_text_sheet_mirror_symbiote_LowerBodyFlavour_LiveForEcho_heightFlavour_large" tags="" position="850,3850" size="100,100">&lt;&lt;SymbioteName&gt;&gt;展示着腰部下面的@[all| legs| noverb]。它急不可耐地自豪地举起一条腿，然后重重地将脚踏在了地上。\
 你黏胶材质的身体随着因你引起的地面的震动和雷鸣般的巨响而颤抖着。
 
 当颤抖平息下来后，&lt;&lt;SymbioteName&gt;&gt;欣赏着它大腿上的每个泪珠状物与钻石造型的小腿肚的轮廓。\
@@ -31888,7 +31887,7 @@ Config.ui.stowBarInitially = false;
 
 &lt;&lt;run setup.Ability_EchoForm.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="433" name="Ability_EmpoweringDrink" tags="" position="350,5475" size="100,100">&lt;&lt;set setup.Ability_EmpoweringDrink = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_EmpoweringDrink&quot;,
-    name:       &quot;Empowering Drink&quot;,
+    name:       &quot;赋能饮料&quot;,
     description:function(character)
     {
         return &quot;托加的强大药水穿过你的身体。\n药水效果持续时间为4天。&quot;; 
@@ -38548,7 +38547,7 @@ maxRank: 5
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_FirstMeeting_PlayerSmall_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="598" name="Jorm_FirstMeeting_PlayerSmall_4" tags="" position="975,7475" size="100,100">你感到你的鼻子开始发痒。\
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;一种难以描述的气味让你在片刻感到头晕目眩。Your @[all|cocks|one=涌动~more=涌动]，在一秒内就完全勃起了。&quot;)&gt;&gt;
-当令人难以置信的欲望穿过你的下身时，你会感觉到你的taint紧绷。 你感觉到&lt;&lt;SymbioteName&gt;&gt; 在你的皮肤下搅动, 渴望着挺立。
+当难以置信的欲望贯穿你的腰部时，你能感觉到你的阴部绷紧。你感觉到&lt;&lt;SymbioteName&gt;&gt; 在你的皮肤下搅动, 渴望着挺立。
 
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;就像想上前一样，把你的@[all|cocks|noverb]也放进池塘里。 你感觉到它在你的皮肤下翻腾。&quot;)&gt;&gt;
 气味在召唤你前进，迷失者低沉的咆哮预示着令人难以置信的快乐， \
@@ -38591,7 +38590,8 @@ maxRank: 5
 出现的噪音让你瞬间停顿。 你下面的迷失者在高潮的幸福中嚎叫。 当令人心碎的高潮压倒他们时，他们的身体摇摆不定。
 你可以感知其他坑内的迷失者也经历了类似的经历。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_FirstMeeting_PlayerBig_5]]&quot;);&gt;&gt;&gt;&gt;</tw-passagedata><tw-passagedata pid="604" name="Jorm_FirstMeeting_PlayerBig_5" tags="" position="475,7600" size="100,100">当池塘变成黑色时，他们巨大的、肌肉发达的身体也随之缩小。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_FirstMeeting_PlayerBig_5]]&quot;);&gt;&gt;&gt;&gt;</tw-passagedata><tw-passagedata pid="604" name="Jorm_FirstMeeting_PlayerBig_5" tags="" position="475,7600" size="100,100">坑内的&lt;&lt;SymbioteColor&gt;&gt;粘液挥发出来，开始吞噬失落者。
+他们巨大的、肌肉发达的身体也随之缩小。
 
 在几秒钟之内，他们就被完全吞没在深坑中，彻底消失。
 
@@ -38709,7 +38709,7 @@ maxRank: 5
 
 把目光移开实在是太困难了。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;/tw-passagedata><tw-passagedata pid="616" name="Jorm_JormDescriptions_SmallerThanPlayer" tags="" position="725,7725" size="100,100">灰尘散去，在你面前出现了一只&lt;&lt;SymbioteColor&gt;&gt;的纳迦。你需要低下头才能看到他，即使这只野兽轻松到达了&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;))&gt;&gt;高。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Jorm_NamingDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="616" name="Jorm_JormDescriptions_SmallerThanPlayer" tags="" position="725,7725" size="100,100">灰尘散去，在你面前出现了一只&lt;&lt;SymbioteColor&gt;&gt;的纳迦。你需要低下头才能看到他，即使这只野兽轻松到达了&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Jorm, &quot;height&quot;))&gt;&gt;高。
 
 对于这样一个小笨蛋来说，这是一个多么戏剧性的入口。但话又说回来，他怎么可能希望对抗像你这样的人————一个活生生的、正在成长的神呢？你的目光沿着大蛇的身体移动。
 
