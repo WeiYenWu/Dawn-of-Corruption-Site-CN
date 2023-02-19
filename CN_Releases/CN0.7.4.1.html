@@ -9517,7 +9517,7 @@ setup.getNextManorDestination = function()
         dest = "MQ002_Manor_WestWing_Ending";
     }
 
-    return "[[Enter the next room->"+dest+"]]";
+    return "[[进入下一个房间->"+dest+"]]";
 };
 
 setup.clearWestWingRoom = function(room)
@@ -9539,7 +9539,7 @@ setup.clearWestWingRoom = function(room)
         setup.completeAchievement("Achievement_ExplorerOfCorruptedDepths");
     }
 
-    return "∇: The monolith has gained power.";
+    return "∇：巨石获得了能量。";
 };
 
 setup.getFightStartPassages = function(character)
@@ -9551,13 +9551,13 @@ setup.getFightStartPassages = function(character)
 	
 	if(setup.sizeCharactercomparison(State.variables.CharacterSheet_Player, character) >= setup.Comparators.REACHES_WAIST)
 	{
-		displayString += '<<run setup.choice("[[Fight->FightLogic]]");>>' +
-		'\<<run setup.choice("[[They are too small for you to care->Village]]");>>';
+		displayString += '<<run setup.choice("[[战斗->FightLogic]]");>>' +
+		'\<<run setup.choice("[[他们太小了，你不在意->Village]]");>>';
 	}
 	else
 	{
-        displayString += '<<run setup.choice("[[Fight->FightLogic]]");>>' +
-		'\<<run setup.choice("[[Run Away->Village]]");>>';
+        displayString += '<<run setup.choice("[[战斗->FightLogic]]");>>' +
+		'\<<run setup.choice("[[开润->Village]]");>>';
 	}
 
 	return displayString;
@@ -9728,7 +9728,7 @@ setup.hypnotize = function(attackerSheet, victimSheet, stunDuration = 2)
 		victimSheet.fight.variables.stunnedDuration = stunDuration;
 		victimSheet.fight.variables.hypnotizedMoveIDsList = [setup.FightMove_Worship.id];
 
-		return victimSheet.info.name+" falls under the mind shattering influence of "+attackerSheet.info.name+". He eagerly wait for his master's commands.";
+		return victimSheet.info.name+"受到"+attackerSheet.info.name+"的震撼。他急切地等待着主人的命令。";
 	}
 }
 
@@ -9770,20 +9770,20 @@ setup.heraldsDevotionEffect = function(attackerSheet, victimSheet)
 	console.log("post heal")
 	console.log(attackerSheet.fight.variables.currentHP)
 
-	return "∇: "+attackerSheet.info.name+" heals for "+healAmount+" health.";
+	return "∇："+attackerSheet.info.name+"治愈"+healAmount+"生命值。";
 };
 
 setup.stunTarget = function(attackerSheet, victimSheet, stunDuration = 2)
 {
 	if(victimSheet.fight.immuneToStun)
 	{
-		return victimSheet.info.name+"'s body is too hardened to be stunned!";
+		return victimSheet.info.name+"的身体太坚强了，不会被吓呆！";
 	}
 	else
 	{
 		victimSheet.fight.variables.stunnedDuration = stunDuration;
 
-		return victimSheet.info.name+" struggles to move.";
+		return victimSheet.info.name+"移动困难。";
 	}
 	
 };
@@ -9837,13 +9837,13 @@ setup.tonicOfStillness = function(attackerSheet, victimSheet)
 
 	if(appliedCorruption != 0)
 	{
-		displayString += "∇: " + attackerSheet.info.name + " has turned " + Math.max(0, State.variables[attackerSheet.id].info.corruption - 5) + " Corruption into strength. This effect will persist for the next 7 expeditions."
+		displayString += "∇：" + attackerSheet.info.name + "转化了" + Math.max(0, State.variables[attackerSheet.id].info.corruption - 5) + "点腐化值到力量上。这个效果将持续到接下来的7次探险。"
 	
 		State.variables[attackerSheet.id].applyAbilityRuntimeData(setup.Ability_TonicOfStillness);
 	}
 	else
 	{
-		displayString += "∇: " + State.variables[attackerSheet.id].info.name + " does not have any Corruption to convert into strength."
+		displayString += "∇：" + State.variables[attackerSheet.id].info.name + "没有任何腐化可以转化为力量。"
 	}
 
 	return displayString;
@@ -9890,7 +9890,7 @@ setup.bindLossSubEffect = function()
 	var loss = setup.getRandomInt(12, 20);
 	State.variables.Essence -= loss;
 
-	displayString += "∇: You lose "+ loss + " Essence.\n"
+	displayString += "∇：你失去了"+ loss + "点精华值。\n"
 
 	var cockGrowth = setup.getRandomInt(6, 12);
 	var ballsGrowth = cockGrowth / 2;
@@ -13720,7 +13720,7 @@ setup.renderGraph = function()
 	}
 
 	var chart = '<ul class="chart-horizontal">' + chartItems + '</ul>';
-	var displayString = "<div><h2>Size Chart:</h2></div>"
+	var displayString = "<div><h2>尺寸表:</h2></div>"
 	displayString += '<div><section class="chart-wrapper">' + chart + '</section></div>';
 	return displayString;
 }
@@ -15592,7 +15592,7 @@ setup.displayJournal = function(quest)
 
     if(displayString == "")
     {
-        displayString +="Your journal is turned to a blank page"
+        displayString +="你的日记被翻到了空白的一页"
     }
 
     return displayString;
@@ -20801,27 +20801,27 @@ Config.ui.stowBarInitially = false;
 &lt;&lt;set setup.ColourPool = 
 {
 	DEFAULT: undefined,
-    RED: &quot;red&quot;,
-	ORANGE: &quot;orange&quot;,
-	YELLOW: &quot;yellow&quot;,
-	GREEN: &quot;green&quot;,
-	BLUE: &quot;blue&quot;,
-	INDIGO: &quot;indigo&quot;,
-	VIOLET: &quot;violet&quot;,
-	PURPLE: &quot;purple&quot;,
-	WHITE: &quot;white&quot;,
-	GREY: &quot;grey&quot;,
-	BLACK: &quot;black&quot;,
-	OBSIDIAN: &quot;obsidian&quot;,
-	AMBER: &quot;amber&quot;,
-	PINK: &quot;pink&quot;,
-	BROWN: &quot;brown&quot;,
-	TAN: &quot;tan&quot;,
-	BEIGE: &quot;beige&quot;,
-	EMERALD: &quot;emerald&quot;,
-	SAPPHIRE: &quot;sapphire&quot;,
-	CRIMSON: &quot;crimson&quot;,
-	GOLDEN: &quot;golden&quot;
+    RED: &quot;红色&quot;,
+	ORANGE: &quot;橘色&quot;,
+	YELLOW: &quot;黄色&quot;,
+	GREEN: &quot;绿色&quot;,
+	BLUE: &quot;蓝色&quot;,
+	INDIGO: &quot;深蓝色&quot;,
+	VIOLET: &quot;紫罗兰色&quot;,
+	PURPLE: &quot;紫色&quot;,
+	WHITE: &quot;白色&quot;,
+	GREY: &quot;灰色&quot;,
+	BLACK: &quot;黑色&quot;,
+	OBSIDIAN: &quot;黑曜石色&quot;,
+	AMBER: &quot;琥珀色&quot;,
+	PINK: &quot;粉色&quot;,
+	BROWN: &quot;棕色&quot;,
+	TAN: &quot;棕褐色&quot;,
+	BEIGE: &quot;浅褐色&quot;,
+	EMERALD: &quot;翡翠绿&quot;,
+	SAPPHIRE: &quot;宝蓝色&quot;,
+	CRIMSON: &quot;深红色&quot;,
+	GOLDEN: &quot;金色&quot;
 }&gt;&gt;
 
 &lt;&lt;set setup.MuscleComparators = 
@@ -37279,7 +37279,7 @@ maxRank: 5
 		var he = setup.getPronoun(character,&quot;pronoun&quot;);
 
         var cockSize = setup.getLength(setup.getStatValue(character, &quot;cock&quot;) + 20);
-		var displayString = &quot;随着每一次悸动，&quot;+character.info.name +&quot;的阴茎在周长和长度上都在扩大，远远大于其自然尺寸。当它的长度增长到&quot; + cockSize + &quot;长时，&quot;+his+&quot;淫荡呻吟声越来越强烈。&quot;;
+		var displayString = &quot;随着每一次悸动，&quot;+character.info.name +&quot;的阴茎在周长和长度上都在扩大，远远大于其自然尺寸。当它的长度增长到&quot; + cockSize + &quot;长时，&quot;+His+&quot;淫荡呻吟声越来越强烈。&quot;;
         displayString += &quot;只需抽动几下，&quot;+he+&quot;就会咆哮着向目标射出大量&quot;+his+&quot;恶魔般的种子，然后再退到原来的长度。\n&quot;;
 
         return displayString;
@@ -37328,7 +37328,7 @@ maxRank: 5
 	{
 		var His = setup.getPronoun(character,&quot;pronounDepPosCap&quot;);
 
-		return &quot;一个红色的符号出现在&quot;+ character.info.name + &quot;的身上。&quot;+his+&quot;身体发出恶魔般的能量。&quot;
+		return &quot;一个红色的符号出现在&quot;+ character.info.name + &quot;的身上。&quot;+His+&quot;身体发出恶魔般的能量。&quot;
 	},
 	attackAttemptDesc: function(character, target)
 	{
@@ -37343,7 +37343,7 @@ maxRank: 5
 
 		if(character.id == &quot;CharacterSheet_Player&quot;)
 		{
-			return &quot;你咧嘴一笑，把你的手按在 &quot;+target.info.name+&quot;的裆部\n &quot;+his+&quot;生命力和兴奋感涌入你体内。&quot;
+			return &quot;你咧嘴一笑，把你的手按在&quot;+target.info.name+&quot;的裆部\n &quot;+His+&quot;生命力和兴奋感涌入你体内。&quot;
 			+&quot;你随着身体力量的增长而不断大笑。&quot;
 		}
 		else
@@ -38386,7 +38386,7 @@ maxRank: 5
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
 	additionalEffects: []
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="586" name="FightMove_Tutorial2_Preparation" tags="" position="725,7350" size="100,100">受伤的迷失者举起它的爪子向你劈来，但是安伯阻止了它！
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="586" name="FightMove_Tutorial2_Preparation" tags="" position="725,7350" size="100,100">受伤的迷失者举起它的爪子向你劈来，但是亚伯阻止了它！
 
 当他劈向野兽的背部时，你听见了他的战吼。
 
@@ -38431,7 +38431,7 @@ maxRank: 5
 	additionalEffects: []
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="589" name="FightMove_Tutorial3_Preparation" tags="" position="1100,7350" size="100,100">当这头野兽懊恼地咆哮时你几乎来不及捂住你的耳朵。
 
-如果安伯有什么想告诉你的话，现在也不可能听到了。
+如果亚伯有什么想告诉你的话，现在也不可能听到了。
 
 你必须&lt;&lt;link &quot;自己决定下一步该怎么办。&quot;&gt;&gt; &lt;&lt;replace &quot;#tutorial&quot;&gt;&gt;&lt;&lt;include &quot;FightMove_Tutorial3_Tutorial&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt; &lt;&lt;/link&gt;&gt;
 
@@ -39172,7 +39172,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 \&lt;&lt;run $CharacterSheet_Lost_Entity.info.cock = 23&gt;&gt;
 \&lt;&lt;run $CharacterSheet_Lost_Entity.info.balls = 8&gt;&gt;
 \&lt;&lt;run setup.setRandomRace($CharacterSheet_Lost_Entity.info.anatomy)&gt;&gt; 
-\&lt;&lt;run $CharacterSheet_Lost_Entity.info.name = &quot;The Lost &quot; + setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;
+\&lt;&lt;run $CharacterSheet_Lost_Entity.info.name = &quot;迷失的&quot; + setup.getRace($CharacterSheet_Lost_Entity.info.anatomy, true)&gt;&gt;
 \&lt;&lt;run $Encounter_Target=$CharacterSheet_Lost_Entity&gt;&gt;
 在荒原中严酷的沙漠中行走了一个小时后，你听到了一种奇怪的声音。 这听起来像是深沉的呻吟和可怕的咆哮之间的融合。
 
@@ -40687,7 +40687,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 一声深深的愉悦的呻吟从你的嘴唇中渗出。
 
 \&lt;&lt;run setup.choice(&quot;[[亲吻他-&gt;Encounter_Loss_Ethrex_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="856" name="Encounter_Loss_Ethrex_1" tags="" position="725,10725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
-你伸手到孵化器前，深深地吻他。
+你将手伸到这只梦魇面前，深深地吻他。
 他把它推得更远，他自己的舌头伸到你的喉咙里，好像要品尝你体内的东西。
 
 你感到你的高潮被他的魔法阻挡了。它形成了一种无法满足的释放的饥渴。
@@ -42229,7 +42229,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Death]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1023" name="Encounter_Intro_Swarm" tags="" position="350,12850" size="100,100">\&lt;&lt;set $CharacterSheet_Swarm.quest.met = true&gt;&gt;
 \&lt;&lt;include Swarm_Flavours&gt;&gt;
 \&lt;&lt;run setup.setRandomRace($CharacterSheet_Swarm.info.anatomy)&gt;&gt; 
-\&lt;&lt;run $CharacterSheet_Swarm.info.name = &quot;The lost &quot; + setup.getRace($CharacterSheet_Swarm.info.anatomy, true)&gt;&gt;
+\&lt;&lt;run $CharacterSheet_Swarm.info.name = &quot;迷失的&quot; + setup.getRace($CharacterSheet_Swarm.info.anatomy, true)&gt;&gt;
 \&lt;&lt;run $Encounter_Target=$CharacterSheet_Swarm&gt;&gt;
 
 当你在荒原上搜索时，你的耳朵被一种邪恶的、阴森的嚎叫声所震慑。
@@ -43198,10 +43198,10 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 &lt;&lt;include Encounter_Win_Slime_Sex&gt;&gt;</tw-passagedata><tw-passagedata pid="1133" name="Encounter_Win_Slime_Sex" tags="" position="350,14225" size="100,100">在史莱姆按照你的意愿变形后，你开始考虑要和它干什么。
 
 \&lt;&lt;if $ReshapeSexualOrgan == &quot;Penis&quot; &amp;&amp; setup.hasLimb($CharacterSheet_Player.info.anatomy, &quot;vaginas&quot;)&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[干它的阴道-&gt;Encounter_Win_Slime_Sex_RideVaginal]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[让它干的阴道-&gt;Encounter_Win_Slime_Sex_RideVaginal]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;if $ReshapeSexualOrgan == &quot;Penis&quot;&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[干它的屁眼-&gt;Encounter_Win_Slime_Sex_RideAnal]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[让它干的屁眼-&gt;Encounter_Win_Slime_Sex_RideAnal]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;if setup.sizecomparison(setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;), setup.getStatValue($CharacterSheet_Slime, &quot;height&quot;)) &gt;= setup.Comparators.BIGGER&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[浅操一下-&gt;Encounter_Win_Slime_Sex_TooBig]]&quot;);&gt;&gt;
@@ -46786,7 +46786,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;不管怎么样，&quot;亚伯深深地吸了一口气，沮丧的感觉慢慢消失了，&quot;船到桥头自然直。现在……&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;abelHouseIntro_firstDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1532" name="abelHouseIntro_firstDialogue_link" tags="" position="225,19225" size="100,100">[[Talk to Abel-&gt;abelHouseIntro_firstDialogue]]</tw-passagedata><tw-passagedata pid="1533" name="abelHouseIntro_firstDialogue" tags="" position="350,19225" size="100,100">&lt;&lt;set $CharacterSheet_Abel.quest.available_houseIntro_baseFirstDialogue = false&gt;&gt;\
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;abelHouseIntro_firstDialogue]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1532" name="abelHouseIntro_firstDialogue_link" tags="" position="225,19225" size="100,100">[[与亚伯交谈-&gt;abelHouseIntro_firstDialogue]]</tw-passagedata><tw-passagedata pid="1533" name="abelHouseIntro_firstDialogue" tags="" position="350,19225" size="100,100">&lt;&lt;set $CharacterSheet_Abel.quest.available_houseIntro_baseFirstDialogue = false&gt;&gt;\
 &lt;&lt;set $CharacterSheet_Abel.quest.playedHouseIntro = true&gt;&gt;\
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
 
@@ -46803,7 +46803,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;你在外面遇到了什么事？有什么我还不知道的吗……&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1534" name="abelHouseIntro_tellAll_link" tags="" position="475,19225" size="100,100">[[Share your experience with the meteor-&gt;abelHouseIntro_tellAll]]</tw-passagedata><tw-passagedata pid="1535" name="abelHouseIntro_tellAll" tags="" position="600,19225" size="100,100">&lt;&lt;set $CharacterSheet_Abel.quest.available_flavourDialogue_introTellAll = false&gt;&gt;\
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1534" name="abelHouseIntro_tellAll_link" tags="" position="475,19225" size="100,100">[[分享你于陨石的经历-&gt;abelHouseIntro_tellAll]]</tw-passagedata><tw-passagedata pid="1535" name="abelHouseIntro_tellAll" tags="" position="600,19225" size="100,100">&lt;&lt;set $CharacterSheet_Abel.quest.available_flavourDialogue_introTellAll = false&gt;&gt;\
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;worried&quot;)&gt;&gt;
 
 你告诉了他一切，小球在亚伯的手指间停止了移动。你讲述了发现陨石坑的过程，以及陨石坑中心那个奇怪的球体。
