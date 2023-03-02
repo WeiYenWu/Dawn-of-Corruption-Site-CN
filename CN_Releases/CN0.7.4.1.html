@@ -47311,7 +47311,6 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village_MeetImp_Chat]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1596" name="Village_MeetImp_Chat_Name" tags="" position="725,19975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 
-
 &quot;我的名字？我们这样的恶魔通常是没有这种东西的。&quot;小恶魔的眼神耷拉了下来。
 
 &quot;他们说一旦小恶魔的地位上升，他们的名字就会从灵魂深处浮现出来。&quot;他突然更加坚定地抬头望着你。
@@ -48160,7 +48159,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;if $CharacterSheet_Imp.quest.knowsAboutNyx&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[靠近建筑物-&gt;Quest_MQ002_ApothusRealm_ImpInvasion]]&quot;);&gt;&gt;
-\&lt;&lt;elseif $CharacterSheet_Player.quest.exploration.apothusRealmFirstTime&gt;&gt;
+\&lt;&lt;elseif $CharacterSheet_Player.quest.apothusRealmFirstTime&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[探索这个领域-&gt;Quest_MQ002_ApothusRealm_ApproachStructure]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[靠近建筑物-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;
@@ -48415,7 +48414,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;嗯……啊啊啊啊啊……让世人见识一下黑日的力量吧！&quot;
 
-\&lt;&lt;run setup.choice(&quot;[封存尼克斯之誓-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1694" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_4" tags="" position="475,21225" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[封存尼克斯之誓-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1694" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_4" tags="" position="475,21225" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Apothus.quest.arousalProgress = setup.Apothus_Arousal.NAKED&gt;&gt;
 你咬破自己的手，并紧紧地贴在他的手上封存誓言。
 
