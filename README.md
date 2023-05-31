@@ -1,16 +1,18 @@
 # **Dawn of Corruption CN translation projects**
+# **腐化黎明汉化工程**
 
 ## Thanks to [@Sombreve](https://github.com/Sombreve), the author of DoC, for the great recognition of this project!
+## 再度感谢作者Somebreve对组内汉化工作的大力支持
 
 ---
-## **project_red汉化组（e-mail：<project_red@foxmail.com>）全体成员**
+## **project_red-公益性汉语本地化组织（e-mail：<project_red@foxmail.com>）成员名单**
 |    |职位|昵称|
 |---|---|---|
 |1|翻校组长|老魏|
 |2|翻译|Phil|
 |3|翻译|机械|
 |4|翻译|炀|
-|5|程序、校对|小徐|
+|5|程序、校对|向死而生|
 |6|翻译|lan|
 ---
 ## **一、翻校原则。**
@@ -24,10 +26,11 @@
 
 ### **3.不要着急，尽量还原作者意思**
 对各位的翻译速度不作要求，但请各位不要丢进翻译软件就不管了，那样还不如不翻译，翻译工具终究是一个死板的机器工具，要做到严复先生所提到的“信、达、雅”，仅凭机器是万万不能的,我只希望各位能尽量达到“信”这一层次，及指意义不悖原文这一原则，还请各位慎重思考。
+
 ---
 
 ## **二、单词注释**
-如果各位对翻译有更好的建议请在群里艾特我让我看到
+如果各位对翻译有更好的建议请及时通过任何方式让我看到
 
 使用ctrl+shift+v预览此文档
 
