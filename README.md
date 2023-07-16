@@ -12,7 +12,7 @@
 |2|翻译|Phil|
 |3|翻译|机械|
 |4|翻译|炀|
-|5|程序、校对|向死而生|
+|5|程序、合并|向死而生|
 |6|翻译|lan|
 ---
 ## **一、翻校原则。**
@@ -35,6 +35,8 @@
 使用ctrl+shift+v预览此文档
 
 使用ctrl+f查找单词与代码
+
+使用ctrl+g跳转行数
 
 |是否被确认|单词|译意（多个意义请使用分号分隔）|备注|
 |:---:|:---:|:---:|---|
@@ -145,6 +147,8 @@
 |yes|Trent|name.特伦特|||
 |yes|Ethrex|name.埃塞克斯||
 |yes|incubus|n.梦魇|男性魅魔|
+|yes|Lukka|name.卢卡||
+|yes|Essence reservoir|n.精华池||
 ---
 
 ## **三、代码查疑**
@@ -165,13 +169,7 @@
 ## **原文本勘误**
 |行数|原文本|正确文本|备注|
 |:---:|---|---|---|
-|40060|...your ears perk up to a fiendish and >>>gutteral<<< howl.|guttural||
-|43775|...of the >>>direlect<<< ruins...|derelict||
-|44928|...and bound to corrupt us all!>>>&#39;<<<...|||
-|26582|...layer of your slightly->>>transluscent<<< horns lies...|translucent||
-|26697|...and flesh as your muscles&#39;>>><<< size puts...|s||
-|39266|...his >>>softenning<<< as he stares into your...|softening||
-|40182|He walks up to you>>>/<<< climbs you|,||
+
 ---
 
 *[待补充]*
