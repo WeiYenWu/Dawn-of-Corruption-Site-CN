@@ -49008,89 +49008,89 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 \&lt;&lt;run setup.choice(&quot;[[回家-&gt;Quest_MQ001_EchoPostMerge_1]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[回家-&gt;Village]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1640" name="Quest_MQ001_EchoPostMerge_1" tags="" position="1225,20475" size="100,100">You head back in the direction of the Golden Bastion. You feel dizzy through the entire trip, as if your center of gravity is not quite where it should be. It is not unlike a child learning to walk all over again.
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1640" name="Quest_MQ001_EchoPostMerge_1" tags="" position="1225,20475" size="100,100">你朝黄金堡垒的方向往回走。你在整个旅程中感到头晕目眩，好像你的重心不在它应该在的地方，就像一个孩子重新学习走路一样。
 
-&quot;Halt!&quot; The voice of a gruff guard startles you. He was a dragonkin with a solid build. You can see fresh scars across his exposed scales; clearly a survivor of last night&#39;s assault.
+&quot;站住！&quot; 一个卫兵粗暴的声音吓了你一跳。他是一名体格健壮的龙族。你可以在他裸露在外的鳞片上看到新的伤疤。显然，他是昨晚袭击的一个幸存者。
 
-&quot;State your intentions, stranger!&quot; He barked.
+&quot;说明你的来意，陌生人！&quot; 他吼到。
 
-The remark confuses you. By now, the Eldest should have communicated to everyone that you had become the new explorer. You realise you have no idea how much time has passed since you touched the strange orb.
+这话把你弄糊涂了。在这之前，长老应该已经告诉过大家你成了黄金堡垒新的探索者了。你突然想到，你不知道从触摸那个奇怪的球体开始，到现在已经过去多久的时间了。
 
-\&lt;&lt;run setup.choice(&quot;[[Tell him who you are -&gt; Quest_MQ001_EchoPostMerge_2_who_are_you]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1641" name="Quest_MQ001_EchoPostMerge_2_who_are_you" tags="" position="100,20600" size="100,100">You state your name and your position as the Golden Bastion&#39;s explorer.
+\&lt;&lt;run setup.choice(&quot;[[告诉他你是谁-&gt; Quest_MQ001_EchoPostMerge_2_who_are_you]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1641" name="Quest_MQ001_EchoPostMerge_2_who_are_you" tags="" position="100,20600" size="100,100">你报上了你的名字和你作为黄金堡垒探索者的身份。
 
-He pauses for a moment, as if examining you closer. His expression is hard to make out; a blend between distrust and hope.
+他在原地站定了好一会儿，好像在更仔细地观察你。他的表情很怪，一种介于怀疑和希望之间的混合。
 
-&quot;You look nothing like $CharacterSheet_Player.info.name, how do I know you are truly who you say you are?&quot; The man&#39;s stance shifts and his hand hovers over the pommel of his sword.
+&quot;你长得一点也不像$CharacterSheet_Player.info.name，陌生人。我怎么知道你说的是真的？&quot;眼前的男人调整了站姿，手徘徊在他的剑柄上。
 
-You blink in confusion and then look at yourself. The shock shakes you to the core. You look nothing like you did before: you are taller, far more muscular and your nether region has certainly become more pronounced.
+你困惑地眨着眼睛，然后看向了自己。震惊直击你的内心。你看起来一点也不像以前的模样：你更高了，肌肉更发达了，大包也更明显了。
 
-&quot;$CharacterSheet_Player.info.name has been gone for weeks; if it is you, where have you been?&quot; he presses.
+&quot;$CharacterSheet_Player.info.name已经失踪好几周了。如果你就是他，你这些日子都在哪里？&quot;他厉声说道。
 
-\&lt;&lt;run setup.choice(&quot;[[Say you encountered something strange-&gt;Quest_MQ001_EchoPostMerge_2_Truth]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Say that only the Herald should know-&gt;Quest_MQ001_EchoPostMerge_2_Eldest]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Punch Him-&gt;FightLogic][$Encounter_Target=$CharacterSheet_town_guard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1642" name="Quest_MQ001_EchoPostMerge_2_Truth" tags="" position="225,20600" size="100,100">You decide to tell the guard everything. The more you speak, the more the colour drains from his face. 
+\&lt;&lt;run setup.choice(&quot;[[说你遇到了一些奇怪的东西-&gt;Quest_MQ001_EchoPostMerge_2_Truth]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[说只有长老才应该知道-&gt;Quest_MQ001_EchoPostMerge_2_Eldest]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[揍他-&gt;FightLogic][$Encounter_Target=$CharacterSheet_town_guard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1642" name="Quest_MQ001_EchoPostMerge_2_Truth" tags="" position="225,20600" size="100,100">你决定把一切都告诉卫兵。你说得越多，他的脸色就越难看。 
 
-&quot;Even if it is true and you are $CharacterSheet_Player.info.name, I can not let you pass!&quot; He states sternly, &quot;It&#39;s too risky to allow you inside if you have been... tainted.&quot;
+&quot;即便你说的都是真的，你就是$CharacterSheet_Player.info.name，我也不能让你过去！&quot;他的语气坚决，&quot;让你进去太危险了，如果你已经被……污染了。&quot;
 
-&quot;I&#39;m sorry, but it would be safer if I just ended you here.&quot; The guard draws his sword and takes a step toward you. A strange wave of power washes over you. You could snap him like a twig, show him the extent of your building lust.
+&quot;很抱歉，但如果我在这儿就了结了你恐怕更安全。&quot;卫兵拔出剑，朝你迈了一步。一股奇怪的力量席在你体内升起。你觉得你可以像折下树枝一样掰断他，让他看看你的欲望有多强烈。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_aggressive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1643" name="Quest_MQ001_EchoPostMerge_3_Lie" tags="" position="350,20600" size="100,100">There is a sense of pride that wells up within you as you realise how much more you have become, but at the same time the feeling is laced with the fear that you may not actually be the same person that left in the morning.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_aggressive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1643" name="Quest_MQ001_EchoPostMerge_3_Lie" tags="" position="350,20600" size="100,100">你意识到自己已经变得多么强大，一种自豪感涌上心头。但与此同时，这种感觉也伴随着恐惧，让担心你可能已经不是那天早上离开时的那个人了。
 
-A bluff escapes your lips; that you were sent out in the morning to collect materials. A lie laced with truth.
+谎言从你嘴里溜出来，你说你早上被派去收集材料。真假参半。
 
-The guard raises an eyebrow, &quot;Is that so? Who sent you? Who was manning this post when you left?&quot;
+卫兵扬起眉毛，&quot;是吗？谁派你去的？你走的时候谁在这里站岗？&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Make up a name-&gt;Quest_MQ001_EchoPostMerge_3_Lie_mildred]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1644" name="Quest_MQ001_EchoPostMerge_3_Lie_mildred" tags="" position="475,20600" size="100,100">You blurt out the name Mildred. A generic name that you ocassionally heard within the markets.
+\&lt;&lt;run setup.choice(&quot;[[编个名字-&gt;Quest_MQ001_EchoPostMerge_3_Lie_mildred]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1644" name="Quest_MQ001_EchoPostMerge_3_Lie_mildred" tags="" position="475,20600" size="100,100">你脱口而出米尔德莱德这个名字。一个你偶然在市场上听到的泛用名字。
 
-&quot;Okay fine, but then which guard let you out?&quot; he grunts, his hand hovering over the pommel of his sword.
+&quot;好吧，但是哪个卫兵放你出去的？&quot;他哼了一声，手悬在剑柄上。
 
-\&lt;&lt;run setup.choice(&quot;[[Abel-&gt;Quest_MQ001_EchoPostMerge_3_Lie_Abel]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Senna, The Drill Sergeant-&gt;Quest_MQ001_EchoPostMerge_3_senna]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Trent, The Inner Wall Watchman-&gt;Quest_MQ001_EchoPostMerge_3_Lie_Trent]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1645" name="Quest_MQ001_EchoPostMerge_3_Lie_Trent" tags="" position="600,20600" size="100,100">The name Trent escapes your lips. It was one of three guards you remember working with extensively during your training.
+\&lt;&lt;run setup.choice(&quot;[[亚伯-&gt;Quest_MQ001_EchoPostMerge_3_Lie_Abel]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[教官，塞纳-&gt;Quest_MQ001_EchoPostMerge_3_senna]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[内墙守护者，特伦特-&gt;Quest_MQ001_EchoPostMerge_3_Lie_Trent]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1645" name="Quest_MQ001_EchoPostMerge_3_Lie_Trent" tags="" position="600,20600" size="100,100">特伦特这个名字脱口而出。你记得他是在训练期间经常和你一同共事的三名卫兵之一。
 
-&quot;Trent, eh?&quot; The guard relaxes his stance towards you, &quot;If you know a guard that works exclusively at the Inner Wall, then it has to be you.&quot;
+&quot;特伦特，嗯？&quot;卫兵面对你的姿态放松了些，&quot;如果你认识一个专门在内墙工作的守卫，那你肯定就是$CharacterSheet_Player.info.name了。&quot;
 
-He hesitates for a moment, looking you up and down and then finally opens his mouth to speak in hushed tones, &quot;Is it really you, $CharacterSheet_Player.info.name? When you disappeared, you look... different&quot;
+他犹豫了一会儿，上下打量着你，最后小心翼翼地说，&quot;真的是你吗？你消失过后，看起来……不太一样了。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1646" name="Quest_MQ001_EchoPostMerge_3_senna" tags="" position="725,20600" size="100,100">You think back to a number of guards you had worked with in the past. The name Senna comes to the fore of your mind; one of the drill masters that helped train you and Abel.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1646" name="Quest_MQ001_EchoPostMerge_3_senna" tags="" position="725,20600" size="100,100">你回想起过去和你一起工作过的卫兵。塞纳的名字出现在你的脑海中，他是训练你和亚伯的教官之一。
 
-&quot;Senna?&quot; The guard drops his aggressive stance, but his shoulders slump and lines of sadness creep into his expression, &quot;Well that&#39;s one way to prove its you, though you could have picked something less somber.&quot;
+&quot;塞纳？&quot;卫兵放下了他攻击性的姿态，但他的肩膀耷拉下来，悲伤的线条爬上了他的脸颊，&quot;好吧，这也是证明你身份的方式之一，虽然你明明可以选择让人没那么沮丧的办法。&quot;
 
-&quot;Senna is dead, $CharacterSheet_Player.info.name. He was killed in combat the day before you left,&quot; he hesitates for a moment, looking you up and down, &quot;I am sorry I treated you with mistrust.&quot;
+&quot;塞纳已经死了，$CharacterSheet_Player.info.name。你离开的前一天，他在战斗中牺牲了，&quot;他犹豫了一会儿，上下打量着你，&quot;我很抱歉，刚刚没信任你。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1647" name="Quest_MQ001_EchoPostMerge_3_Lie_Abel" tags="" position="850,20600" size="100,100">You say that you were sent by Abel, the Herald&#39;s apprentice.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1647" name="Quest_MQ001_EchoPostMerge_3_Lie_Abel" tags="" position="850,20600" size="100,100">你说是使者的徒弟，亚伯让你出去的。
 
-The guard&#39;s face scrunches into a scowl, &quot;He&#39;s not even a guard, but of course an outsider wouldn&#39;t know that.&quot;
+卫兵的脸皱成一团，&quot;他甚至不是卫兵……但是，哼，当然了，一个外人怎么会知道这些呢。&quot;
 
-The guard unsheaths his sword, the sound of ringing steel interrupting your thoughts, &quot;I don&#39;t know who you are or what you want with us, but turn away or be slain!&quot;
+守卫拔出了他的剑，铿锵的钢铁声打断了你的思绪，&quot;我不知道你是谁，也不知道你想从我们这里得到什么……但你要么离开，要么就死！&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_aggressive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1648" name="Quest_MQ001_EchoPostMerge_2_Eldest" tags="" position="975,20600" size="100,100">The guard&#39;s body tenses and there is a flash of distrust that manifests in his hand gripping the handle of his sword. He does not draw it. A frustrated growl rasps from his throat.
+\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_aggressive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1648" name="Quest_MQ001_EchoPostMerge_2_Eldest" tags="" position="975,20600" size="100,100">卫兵的身体紧绷起来，他握着剑柄的手显露出对你的不信任。但他没有抽出剑。他的喉咙发出了一阵沮丧的咆哮。
 
-&quot;If you are here on business of our leader, then you must speak with those who can hear it&#39;s words. Wait here, I will fetch someone,&quot; he says in flat and measured tones, &quot;If you are lying, there will be hell to pay.&quot;
+&quot;如果你是为了和我们领袖谈事来的，那你必须和那些直接与他对接的人谈谈。在这儿等着，我去叫人，&quot;他用平静而谨慎的语调说，&quot;但是如果你在说谎，你会付出惨痛的代价。&quot;
 
-The man assigns a colleague to stand watch over you as he disappears into the Golden Bastion. 
+他进黄金堡垒的时候，指派了一个同事来监视你。
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_2_Eldest_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1649" name="Quest_MQ001_EchoPostMerge_2_Eldest_2" tags="" position="1100,20600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
-It feels like an agonizing wait before he arrives with a familiar face.
+等待简直是一种折磨，直到他带着熟悉的面孔到来。
 
-It is Abel.
+是亚伯。
 
-He motions for you to join him within the Golden Bastion walls.
+他示意你和他一起进入黄金堡垒的大门。
 
 \&lt;&lt;run setup.choice(&quot;[[Enter the Golden Bastion-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_p2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1650" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_aggressive" tags="" position="1225,20600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;angry&quot;)&gt;&gt;
 
-&quot;Stop!&quot; A familiar voice immediately cuts through your boiling blood.
+&quot;慢着！&quot;一个熟悉的声音陡然穿过你沸腾的血液。
 
-&quot;No honoured voice,&quot; he answers, &quot;My apologies. If this stranger-&quot;
+&quot;不敢，大人。&quot;他回答到，&quot;我很抱歉，如果这个陌生人……&quot;
 
-&quot;$CharacterSheet_Player.info.name.&quot; Abel corrects.
+&quot;这个“陌生人”是探索者$CharacterSheet_Player.info.name。&quot;亚伯纠正说。
 
-&quot;If this is indeed $CharacterSheet_Player.info.name, then we shall let him pass.&quot; The guard eyes you warily but drops his aggressive stance towards you and steps out of the way.
+&quot;……确实是$CharacterSheet_Player.info.name的话，那就应该放行。&quot;警卫小心翼翼地看着你，但他放下了对你咄咄逼人的姿态，然后走开了。
 
-\&lt;&lt;run setup.choice(&quot;[[Enter the town-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_p2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1651" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive" tags="" position="100,20725" size="100,100">&quot;Wait here,&quot; he smiles. 
+\&lt;&lt;run setup.choice(&quot;[[进入城镇-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_p2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1651" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive" tags="" position="100,20725" size="100,100">&quot;请在这里等一下。&quot;他微笑道。 
 
-&quot;I&#39;ll go fetch Abel. He has been visiting the wall every day in hopes that you would return. In truth, we all have been praying for the return of a Scavenger.&quot;
+&quot;我去找亚伯。他每天都会来城门，希望你能回来。我们也都一直在祈祷探索者的归来。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1652" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive_2" tags="" position="225,20725" size="100,100">It takes some time for the man to return.
 
