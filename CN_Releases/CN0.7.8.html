@@ -49092,96 +49092,96 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 
 &quot;我去找亚伯。他每天都会来城门，希望你能回来。我们也都一直在祈祷探索者的归来。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1652" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive_2" tags="" position="225,20725" size="100,100">It takes some time for the man to return.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1652" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive_2" tags="" position="225,20725" size="100,100">他过了一段时间才回来。
 
-&quot;The Herald&#39;s apprentice is waiting for you within the walls, please proceed and go in the grace of the Eldest,&quot; the guard salutes and lets you pass.
+&quot;使者的徒弟在城内等你。请进吧，长老的荣耀照耀着你。&quot;卫兵向你敬礼，让你通过。
 
-As you enter the village proper, you see a familiar figure. The beaming visage of Abel greets you, garbed in what looks to be the cermonial kit.
+你进入村子后，看到了一个熟悉的身影。亚伯满是兴奋地迎接你，他身上穿的看起来像是某种礼服。
 
-\&lt;&lt;run setup.choice(&quot;[[Speak to Abel-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_p2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1653" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_p2" tags="" position="350,20725" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[和亚伯交流-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_p2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1653" name="Quest_MQ001_EchoPostMerge_3_Meet_Abel_p2" tags="" position="350,20725" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
-&quot;It&#39;s good to see you are alive and well, $CharacterSheet_Player.info.name.&quot; Abel says as he looks you up and down.
+&quot;哇，你能平安回来真是太好了，$CharacterSheet_Player.info.name~！&quot;亚伯一边说一边上下打量着你。
 
-&quot;By the gods... I made it a ritual to visit this wall every day in the hopes you would come back, but I never thought I would be blessed with such luck,&quot; he smiles brightly.
+&quot;你不知道……我每天都会来这堵墙，简直成了什么神秘仪式……我希望你能回来。而且看起来我是一只幸运的猫。&quot;他笑容的灿烂。
 
-&quot;This is not the place for that kind of talk. Come find me in my house,&quot; he says as he turns toward the Golden Bastion proper, &quot;We can try and make sense of this all.&quot;
+&quot;不过这里不是说这种话的地方。我家房子还蛮大的，到那儿来找我。&quot;他边说边转向金色堡垒城内的方向，&quot;我们可以好好聊聊。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1654" name="Quest_MQ001_EchoFirstEncounter_Lake" tags="" position="475,20725" size="100,100">&lt;&lt;include setup.getNextNarativeEventPassage(setup.StorySheet_Player.oasisIntro)&gt;&gt;</tw-passagedata><tw-passagedata pid="1655" name="Quest_MQ001_EchoFirstEncounter_Lake_Intro_FirstTime" tags="" position="600,20725" size="100,100">&lt;&lt;set $CharacterSheet_Player.quest.available_meteorQuest_firstTime = false&gt;&gt;
-The distant smoke of the crash site makes it easy to spot, but reaching it is a journey nonetheless.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1654" name="Quest_MQ001_EchoFirstEncounter_Lake" tags="" position="475,20725" size="100,100">&lt;&lt;include setup.getNextNarativeEventPassage(setup.StorySheet_Player.oasisIntro)&gt;&gt;</tw-passagedata><tw-passagedata pid="1655" name="Quest_MQ001_EchoFirstEncounter_Lake_Intro_FirstTime" tags="" position="600,20725" size="100,100">&lt;&lt;set $CharacterSheet_Player.quest.available_meteorQuest_firstTime = false&gt;&gt;
+尽管远处撞击地点翻腾的黑烟清晰可见，要到达那里仍然花了不少时间。
 
-You hear the faint crackling of flames and smell the charred scent that lingers in the air. 
-The closer you get, the more the site reveals itself, and you can&#39;t help but marvel at the sheer magnitude of it.
+你听到了火焰微弱的噼啪声，闻到了弥漫在空气中的焦味。
+随着你的靠近，眼前的景象慢慢展开，你不禁对它的巨大规模发出感慨。
 
-The meteor itself is surrounded by an oasis of dark, jet-black water. The smell of Corruption hangs heavy in the air. 
+流星被一湾漆黑如墨的绿洲包围，空气中弥漫着腐化的气味。
 
-A small island lies at the center of it, where ash and flames rise, shimmering the horizon.
-The light illuminates a thick fog over the oasis, creating a surreal and mysterious atmosphere.
+一座小岛坐落在灰烬与火焰升腾的中心，在地平线上发出光亮。
+那光照亮了绿洲上方的浓雾，营造出一种虚幻而神秘的氛围。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoFirstEncounter_Lake_Menu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1656" name="Quest_MQ001_EchoFirstEncounter_Lake_Menu" tags="" position="725,20725" size="100,100">You are at the edge of the oasis, the thick, viscous corruptive goo lapping at your feet. 
-The bubbles and splashes created by the goo&#39;s movement create an eerie, alien-like sound that echoes. 
-It&#39;s a strange contrast to the peacefulness of the oasis and the surrounding area.
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoFirstEncounter_Lake_Menu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1656" name="Quest_MQ001_EchoFirstEncounter_Lake_Menu" tags="" position="725,20725" size="100,100">你正站在绿洲的边上，厚厚的腐化黏液轻轻拍打着你的双脚。 
+粘液运动，四处飞溅，产生了一种怪异的回音。 
+这与绿洲和周边地区的宁静形成了奇怪的对比。
 
-You can feel the meteor&#39;s power reverberating through the air, and the ripples on the lake&#39;s surface seem to be magnified by the eerie glow.
+你可以感觉到流星的力量在空气中回荡，湖面上的涟漪似乎被怪异的光芒放大了。
 
-This pool of Corruption is about &lt;&lt;print setup.getLength(12 * 12)&gt;&gt; in radius.
+这是一滩半径为&lt;&lt;print setup.getLength(12 * 12)&gt;&gt;的腐化。
 
 &lt;&lt;print setup.getNextNarativeEventPassageListText(setup.StorySheet_Player.oasisChoices, 5)&gt;&gt;\
 
-\&lt;&lt;run setup.choice(&quot;[[Leave-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1657" name="Quest_MQ001_EchoFirstEncounter_Lake_LookAtPool_Link" tags="" position="850,20725" size="100,100">[[Inspect the oasis-&gt;Quest_MQ001_EchoFirstEncounter_Lake_LookAtPool]]
-\</tw-passagedata><tw-passagedata pid="1658" name="Quest_MQ001_EchoFirstEncounter_Lake_LookAtPool" tags="" position="975,20725" size="100,100">You can almost feel the energy radiating from the lake as the goo seems to come alive with its pulsing energy.
-Tiny bubbles of black goo rise to the surface. 
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1657" name="Quest_MQ001_EchoFirstEncounter_Lake_LookAtPool_Link" tags="" position="850,20725" size="100,100">[[检查绿洲-&gt;Quest_MQ001_EchoFirstEncounter_Lake_LookAtPool]]
+\</tw-passagedata><tw-passagedata pid="1658" name="Quest_MQ001_EchoFirstEncounter_Lake_LookAtPool" tags="" position="975,20725" size="100,100">粘性物质似乎随着它的脉冲能量而活跃起来，你几乎可以感觉到从湖中辐射而出的能量。
+黑色的小气泡浮到水面上。
 
-It would be dangerous to try to cross it without a plan.
+如果没有计划就贸然穿过这摊腐化非常危险。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoFirstEncounter_Lake_Menu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1659" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_Link" tags="" position="1100,20725" size="100,100">[[Step over the oasis-&gt;Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt]]
-\</tw-passagedata><tw-passagedata pid="1660" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_Link_Inactive" tags="" position="1225,20725" size="100,100">&lt;span class=&#39;inactive&#39;&gt;[[Step over the oasis-&gt;Village]]&lt;/span&gt;
-\</tw-passagedata><tw-passagedata pid="1661" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt" tags="" position="100,20850" size="100,100">You take a deep breath as you stand before the corrupted oasis. 
-Looking down, you see the lush green foliage that used to fill this place now wilted and blackened. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoFirstEncounter_Lake_Menu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1659" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_Link" tags="" position="1100,20725" size="100,100">[[蹚过绿洲-&gt;Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt]]
+\</tw-passagedata><tw-passagedata pid="1660" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_Link_Inactive" tags="" position="1225,20725" size="100,100">&lt;span class=&#39;inactive&#39;&gt;[[蹚过绿洲-&gt;Village]]&lt;/span&gt;
+\</tw-passagedata><tw-passagedata pid="1661" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt" tags="" position="100,20850" size="100,100">你站在满是腐化的绿洲前，深深地吸了一口气。 
+低头向下看去，你发现过去郁郁葱葱的植物现在枯萎、变黑了。
 
-With a determined stride, you step into the corrupted oasis. Your giant feet make deep impressions in the ground, and the sickly plants crumble beneath your weight.
+迈着坚定的步伐，你走进了被腐化的绿洲。你那巨大的脚在地上留下了深深的印痕，那些病态的植物在你的重量下都要崩溃了。
 
-[[Push Onwards-&gt;Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_2]]</tw-passagedata><tw-passagedata pid="1662" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_2" tags="" position="225,20850" size="100,100">\&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 3)&gt;&gt;
-As you progress, you can feel the darkness emanating from the oasis, trying to spread to you. 
-You can feel the goo pressing against your skin, trying to take hold and spread endless pleasure to your soul, but it simply can&#39;t reach you.
+[[继续前进-&gt;Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_2]]</tw-passagedata><tw-passagedata pid="1662" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_2" tags="" position="225,20850" size="100,100">\&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 3)&gt;&gt;
+在你前进的时候，你能感觉到黑暗从绿洲四散而出，试图把你拉入其中。
+你可以感觉到粘液紧贴着你的皮肤，固定，并你的灵魂传递无尽的快乐，但它就是无法到达你。
 
-∇: You gain 3 corruption.
+∇：你得到了3点腐化。
 
-[[Push Onwards-&gt;Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_3]]</tw-passagedata><tw-passagedata pid="1663" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_3" tags="" position="350,20850" size="100,100">Finally, you emerge on the other side, only slightly affected by Corruption. 
+[[继续前进-&gt;Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_3]]</tw-passagedata><tw-passagedata pid="1663" name="Quest_MQ001_EchoFirstEncounter_Lake_StepOverIt_3" tags="" position="350,20850" size="100,100">终于，你到达了绿洲的另一边，只受到了腐化的轻微影响。
 
-You have not only survived the corrupted oasis, but you have conquered it. 
-You stand tall, proud of your success and confident in your strength.
+你不仅活着跨过了腐化的绿洲，也征服了绿洲。
+你站在绿洲前，为自己的成功感到骄傲，也对自己的实力充满信心。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1664" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_Link" tags="" position="475,20850" size="100,100">[[Cross the oasis safely-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence]]
-\</tw-passagedata><tw-passagedata pid="1665" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_Link_Inactive" tags="" position="600,20850" size="100,100">&lt;span class=&#39;inactive&#39;&gt;[[Cross the oasis safely-&gt;Village]]&lt;/span&gt;
-\</tw-passagedata><tw-passagedata pid="1666" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence" tags="" position="725,20850" size="100,100">The goo reacts to your presence as it moves faster and faster.
-You can feel it reaching your legs, but it suddenly stops. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1664" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_Link" tags="" position="475,20850" size="100,100">[[安全地跨过绿洲-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence]]
+\</tw-passagedata><tw-passagedata pid="1665" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_Link_Inactive" tags="" position="600,20850" size="100,100">&lt;span class=&#39;inactive&#39;&gt;[[安全地跨过绿洲-&gt;Village]]&lt;/span&gt;
+\</tw-passagedata><tw-passagedata pid="1666" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence" tags="" position="725,20850" size="100,100">你的存在让粘液有了反应，移动得越来越快。
+你可以感觉到它爬上了你的腿，但是，它突然停下了。
 
-\&lt;&lt;run setup.choice(&quot;[[Push Onwards-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1667" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_2" tags="" position="850,20850" size="100,100">\&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 2)&gt;&gt;
-You take a few more steps and can feel the goo getting even more intense, its warmth and texture making you quiver with anticipation. 
-The lake&#39;s energy radiates through your body, but your mind is at ease.
+\&lt;&lt;run setup.choice(&quot;[[继续前进-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1667" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_2" tags="" position="850,20850" size="100,100">\&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 2)&gt;&gt;
+你又走了几步，感觉到粘稠变得更紧了，它的温暖和触感让你因期待而颤抖。
+湖水辐射的能量穿过了你的身体，而你的思维却十分放松。
 
-Your hand holds your shard of demonic Essence as tight as it can. The fear of dropping it grows stronger with every step.
+你的手紧紧握住恶魔般精华的碎片。你害怕它掉下来的心情随着你踏出的每一步变得更加强烈。
 
-∇: You gain 2 corruption.
+∇：你得到了2点腐化。
 
-\&lt;&lt;run setup.choice(&quot;[[Push Onwards-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1668" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_3" tags="" position="975,20850" size="100,100">Finally, you emerge on the other side, only slightly affected by Corruption. 
+\&lt;&lt;run setup.choice(&quot;[[继续向前-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1668" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_DemonicEssence_3" tags="" position="975,20850" size="100,100">终于，你到达了绿洲的另一边，只受到了腐化的轻微影响。
 
-You have not only survived the corrupted oasis, but you have conquered it. 
-You stand tall, proud of your success and confident in your strength.
+你不仅活着跨过了腐化的绿洲，也征服了绿洲。
+你站在绿洲前，为自己的成功感到骄傲，也对自己的实力充满信心。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1669" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Link" tags="" position="1100,20850" size="100,100">[[Attempt to cross the oasis without assistance-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt]]
-\</tw-passagedata><tw-passagedata pid="1670" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Link_Inactive" tags="" position="1225,20850" size="100,100">&lt;span class=&#39;inactive&#39;&gt;[[Attempt to cross the oasis without assistance-&gt;Village]]&lt;/span&gt;
-\</tw-passagedata><tw-passagedata pid="1671" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt" tags="" position="100,20975" size="100,100">The goo reacts to your presence as it moves faster and faster.
-You can feel it reaching up your legs, massaging them and sending waves of pleasure through your body. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1669" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Link" tags="" position="1100,20850" size="100,100">[[尝试没有协助跨过绿洲-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt]]
+\</tw-passagedata><tw-passagedata pid="1670" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Link_Inactive" tags="" position="1225,20850" size="100,100">&lt;span class=&#39;inactive&#39;&gt;[[尝试没有协助跨过绿洲-&gt;Village]]&lt;/span&gt;
+\</tw-passagedata><tw-passagedata pid="1671" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt" tags="" position="100,20975" size="100,100">你的存在让粘液有了反应，移动得越来越快。
+你可以感觉到它伸向你的腿，不断摩擦着，向你的身体输送着一阵又一阵愉悦的波浪。 
 
-You begin to blush as you realize what is happening. 
+你意识到发生了什么，脸开始变红。
 
-[[Push onwards-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_2]]</tw-passagedata><tw-passagedata pid="1672" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_2" tags="" position="225,20975" size="100,100">You take a few more steps and can feel the goo getting even more intense, its warmth and texture making you quiver with anticipation. 
-The lake&#39;s energy radiates through your body. Its strange power courses through your veins.
+[[继续前进-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_2]]</tw-passagedata><tw-passagedata pid="1672" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_2" tags="" position="225,20975" size="100,100">你又走了几步，感觉到粘稠变得更紧了，它的温暖和触感让你因期待而颤抖。
+湖水辐射的能量穿过了你的身体，陌生的力量在你的血管里流淌。
 
-Your muscles start twitching and contracting, growing stronger with each passing second. Heat radiates off of your body, and your muscles swell and ripple.
+你的肌肉开始抽搐、收缩，每秒都会变得更加强壮。热量从你的身体里散发出来，然后你的肌肉开始起伏、膨胀。
 
-[[Push onwards-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_3]]</tw-passagedata><tw-passagedata pid="1673" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_3" tags="" position="350,20975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
+[[继续-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_3]]</tw-passagedata><tw-passagedata pid="1673" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_3" tags="" position="350,20975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 Your breathing quickens as your heart races, and your body aches with need. 
 The goo is swirling through your veins, intensifying your desire and making you desperately crave physical touch.
 
