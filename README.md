@@ -169,6 +169,7 @@
 ## **原文本勘误**
 |行数|原文本|正确文本|备注|
 |:---:|---|---|---|
+|33549|if(abilityRuntimeData.blackboard.drainCount >>>&gt;<<<= 3)||待确认|
 
 ---
 

@@ -8804,19 +8804,19 @@ setup.updateFightStatus = function(attackerSheet, victimSheet)
 	{
 		attackerSheet.fight.variables.currentHP = 0.1;
 		displayString += "你们都在疲惫中倒下。然而，纯粹通过强大的意志力，你设法迫使自己慢慢站起来。\n\n";
-		displayString += "[[Continue->Fight Outcome]]";
+		displayString += "[[继续->Fight Outcome]]";
 		State.variables.FightSkills = undefined;
 	}
 	else if(setup.hasLostFight(victimSheet))
 	{
 		displayString += attackerSheet.info.name + "取得了战斗的胜利\n\n";
-		displayString += "[[Continue->Fight Outcome]]";
+		displayString += "[[继续->Fight Outcome]]";
 		State.variables.FightSkills = undefined;
 	}
 	else if(setup.hasLostFight(attackerSheet))
 	{
 		displayString += attackerSheet.info.name + "打了一场败仗\n\n";
-		displayString += "[[Continue->Fight Outcome]]";
+		displayString += "[[继续->Fight Outcome]]";
 		State.variables.FightSkills = undefined;
 	}
 	else
@@ -8872,7 +8872,7 @@ setup.updateFightStatus = function(attackerSheet, victimSheet)
 
         console.log("4")
 		
-		displayString += victimSheet.info.name + "看起来" + setup.Fight_HealthDescriptor(setup.getMaxHP(victimSheet), victimFightVariables.currentHP);
+		displayString += victimSheet.info.name + "看起来是" + setup.Fight_HealthDescriptor(setup.getMaxHP(victimSheet), victimFightVariables.currentHP);
 		displayString += "\n\n";
         
         if(attackerSheet.fight.teammate != undefined)
@@ -9004,19 +9004,19 @@ setup.getInspectText = function(character, target)
         displayString += setup.setAndDisplayBodyVisual(target, "normal") + "\n\n";
     }
 
-    displayString += "HP: "+target.fight.variables.currentHP+"/"+setup.displayStatValue(target, "hp")+"\n";
+    displayString += "生命值："+target.fight.variables.currentHP+"/"+setup.displayStatValue(target, "hp")+"\n";
     displayString += "耐力："+target.fight.variables.currentStamina+"/"+setup.displayStatValue(target, "stamina")+"\n";
-    displayString += "Arousal: "+target.fight.variables.currentArousal+"\n\n";
+    displayString += "觉醒值: "+target.fight.variables.currentArousal+"\n\n";
 
     displayString += "力量："+setup.displayStatValue(target, "strength")+"\n";
-    displayString += "Critical Hit Chance: "+setup.displayStatValue(target, "critChance")+"\n";
-    displayString += "Arousal per Turn: "+setup.displayStatValue(target, "arousalGain")+"\n";
-    displayString += "Stamina per Turn: "+setup.displayStatValue(target, "staminaRecovery")+"\n\n";
+    displayString += "暴击几率："+setup.displayStatValue(target, "critChance")+"\n";
+    displayString += "每回合获得觉醒值："+setup.displayStatValue(target, "arousalGain")+"\n";
+    displayString += "每回合耐力："+setup.displayStatValue(target, "staminaRecovery")+"\n\n";
 
     displayString += "腐化值："+setup.getStatValue(target, "corruption")+"\n";
-    displayString += "Muscles: "+setup.getMusclesDescriptor(target)+"("+setup.displayStatValue(target, "muscles")+")\n";
-    displayString += "Height: "+setup.displayStatValue(target, "height", true)+"\n";
-    displayString += "Cock Size: "+setup.displayStatValue(target, "cock", true)+"\n\n";
+    displayString += "肌肉："+setup.getMusclesDescriptor(target)+"("+setup.displayStatValue(target, "muscles")+")\n";
+    displayString += "身高："+setup.displayStatValue(target, "height", true)+"\n";
+    displayString += "阴茎长度："+setup.displayStatValue(target, "cock", true)+"\n\n";
 
     displayString += "被动能力：\n";
 
@@ -10619,7 +10619,7 @@ setup.displayFightMoveStore = function()
             displayString += "<span class = 'inactive'>";
         }
 
-        displayString += "[["+fightMove.itemName+" ["+fightMove.essenceCost+" Essence]->"+fightMove.buyPassage+"]]";
+        displayString += "[["+fightMove.itemName+" ["+fightMove.essenceCost+"精华]->"+fightMove.buyPassage+"]]";
 
         if(State.variables.Essence < fightMove.essenceCost)
         {
@@ -11566,7 +11566,7 @@ setup.displayInfoStats = function(character)
 	if(State.variables.CharacterSheet_Player.info.accumulatedCorruption > 0)
 	{
 		let perDay = State.variables.CharacterSheet_Player.info.accumulatedCorruption;
-		displayString += "<dd>" + setup.displayStatValue(State.variables.CharacterSheet_Player, "corruption") + " + "+perDay+" daily</dd>"
+		displayString += "<dd>" + setup.displayStatValue(State.variables.CharacterSheet_Player, "corruption") + " + "+perDay+" 每日增长</dd>"
 	}
 	else
 	{
@@ -13295,7 +13295,7 @@ setup.printActiveSound = function()
 	var displayString = "";
 	if(SimpleAudio.volume() <= 0.02 && State.variables.PlayingAudio == true)
 	{
-		displayString = '<span class = "VolumeWarning">本游戏以音频为特色。你可以通过屏幕左下角的滑块调整音量，谨防社死。</span>'
+		displayString = '<span class = "VolumeWarning">温馨提示：本游戏以音频为特色。你可以通过屏幕左下角的滑块调整音量，谨防社死。</span>'
 	}
 
 	return displayString;
@@ -15355,7 +15355,7 @@ setup.brewFlavour = function(numberRequirement, customAdjectives, limb, verbInst
     }
 
     if(limb == "cocks"){
-        limb = ["阴茎", "鸡巴", "工具", "肉棒", "棍棒", "杆柄", "标枪", "长矛", "尖塔"].random();
+        limb = ["阴茎", "鸡巴", "那活", "肉棒", "棍棒", "杆柄", "标枪", "长矛", "尖塔"].random();
     }
     
     if(limb == "vaginas"){
@@ -16473,7 +16473,7 @@ setup.displayImpModsPassages = function()
         displayString += "<span class = 'inactive'>";
     }
 
-    displayString += "[[Grant him power and size ["+essenceCost+" Essence]->Village_MeetImp_GrowHim][$Essence -= "+essenceCost+"; State.variables.CharacterSheet_Imp.quest.growthMultiplier++]]";
+    displayString += "[[赐予他力量和体型["+essenceCost+"精华]->Village_MeetImp_GrowHim][$Essence -= "+essenceCost+"; State.variables.CharacterSheet_Imp.quest.growthMultiplier++]]";
 
     if(State.variables.Essence < essenceCost)
     {
@@ -21493,7 +21493,7 @@ Config.ui.stowBarInitially = false;
 
 &lt;&lt;set $Debug = $SpecialBuild&gt;&gt;
 
-&lt;&lt;set setup.Colors = [&quot;orange&quot;, &quot;blue&quot;, &quot;grey&quot;]&gt;&gt;
+&lt;&lt;set setup.Colors = [&quot;橘黄色&quot;, &quot;蓝色&quot;, &quot;灰色&quot;]&gt;&gt;
 
 &lt;&lt;set $BoughtFightMoves = 0&gt;&gt;
 &lt;&lt;set $FightTurn = 0&gt;&gt;
@@ -22676,7 +22676,7 @@ Config.ui.stowBarInitially = false;
 	skillType: &quot;special&quot;,
 	skillTheme: &quot;special&quot;,
 	additionalEffects: []
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="StoryInit_StateDrivenModifiers" tags="" position="475,225" size="100,100">&lt;&lt;set $FightStateDrivenModifiers = [$Bigger_Than_Target_1, $Bigger_Than_Target_2, $Bigger_Than_Target_3]&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="StoryInit_UI" tags="" position="600,225" size="100,100">&lt;&lt;run setup.updateStaticCorruptionUI(State.variables.CharacterSheet_Player)&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_small" tags="" position="725,225" size="100,100">敌人冲上前来进攻。</tw-passagedata><tw-passagedata pid="17" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_medium" tags="" position="850,225" size="100,100">敌人向前猛地冲向你，在他的攻击中投入了他的体重作为附加伤害。</tw-passagedata><tw-passagedata pid="18" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_large" tags="" position="975,225" size="100,100">敌人向前跺脚，挥舞着巨大的拳头。</tw-passagedata><tw-passagedata pid="19" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_huge" tags="" position="1100,225" size="100,100">敌人的@[all|huge|arms|noverb]向你急速冲来。</tw-passagedata><tw-passagedata pid="20" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="1225,225" size="100,100">一缕缕紫色的能量从他的指关节中流出。</tw-passagedata><tw-passagedata pid="21" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="100,350" size="100,100">他手上和手臂上的每一根血管都燃烧着一种污染的紫色，能量从他的皮肤上滚落，成为黑暗力量的卷须。</tw-passagedata><tw-passagedata pid="22" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="225,350" size="100,100">在每只脚之间跳跃，随时准备佯攻和进攻。</tw-passagedata><tw-passagedata pid="23" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="350,350" size="100,100">为战斗做好准备。</tw-passagedata><tw-passagedata pid="24" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="475,350" size="100,100">转动着他那巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="25" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="600,350" size="100,100">正在伸展他的四肢，准备进行摔跤。</tw-passagedata><tw-passagedata pid="26" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="725,350" size="100,100">他的大脚耙过地面，准备冲锋。</tw-passagedata><tw-passagedata pid="27" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="850,350" size="100,100">绷紧了他的肌肉。他笨重的身躯因力量而吱吱作响，因对战斗的期待而颤抖。</tw-passagedata><tw-passagedata pid="28" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,350" size="100,100">弯曲巨大的肌肉，准备把每一条绷紧的如山肌肉都用上。</tw-passagedata><tw-passagedata pid="29" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,350" size="100,100">跺着他巨大的脚，准备战斗。大地因此在颤抖。</tw-passagedata><tw-passagedata pid="30" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,350" size="100,100">巨大的指关节裂响，它们像雷声一样响彻战场。</tw-passagedata><tw-passagedata pid="31" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt50" tags="" position="100,475" size="100,100">这个生物周围的空气感觉不太对。</tw-passagedata><tw-passagedata pid="32" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt75" tags="" position="225,475" size="100,100">A terrible darkness spreads across the ground from this creature&#39;s feet.</tw-passagedata><tw-passagedata pid="33" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt100" tags="" position="350,475" size="100,100">Purple and black tendrils of energy are breaking out from the ground around this creature&#39;s feet.</tw-passagedata><tw-passagedata pid="34" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_1" tags="" position="475,475" size="100,100">tiny</tw-passagedata><tw-passagedata pid="35" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_2" tags="" position="600,475" size="100,100">small</tw-passagedata><tw-passagedata pid="36" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_3" tags="" position="725,475" size="100,100">minute</tw-passagedata><tw-passagedata pid="37" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_4" tags="" position="850,475" size="100,100">little</tw-passagedata><tw-passagedata pid="38" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_1" tags="" position="975,475" size="100,100">large</tw-passagedata><tw-passagedata pid="39" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_2" tags="" position="1100,475" size="100,100">sizeable</tw-passagedata><tw-passagedata pid="40" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_3" tags="" position="1225,475" size="100,100">hefty</tw-passagedata><tw-passagedata pid="41" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_4" tags="" position="100,600" size="100,100">burly</tw-passagedata><tw-passagedata pid="42" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_1" tags="" position="225,600" size="100,100">huge</tw-passagedata><tw-passagedata pid="43" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_2" tags="" position="350,600" size="100,100">massive</tw-passagedata><tw-passagedata pid="44" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_3" tags="" position="475,600" size="100,100">towering</tw-passagedata><tw-passagedata pid="45" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_4" tags="" position="600,600" size="100,100">humongous</tw-passagedata><tw-passagedata pid="46" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_1" tags="" position="725,600" size="100,100">immense</tw-passagedata><tw-passagedata pid="47" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_2" tags="" position="850,600" size="100,100">titanic</tw-passagedata><tw-passagedata pid="48" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_3" tags="" position="975,600" size="100,100">colossal</tw-passagedata><tw-passagedata pid="49" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_4" tags="" position="1100,600" size="100,100">gigantic</tw-passagedata><tw-passagedata pid="50" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_1" tags="" position="1225,600" size="100,100">muscles harden and pulse with increasing strength. His biceps form fair peaks above well defined forearms. 
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="StoryInit_StateDrivenModifiers" tags="" position="475,225" size="100,100">&lt;&lt;set $FightStateDrivenModifiers = [$Bigger_Than_Target_1, $Bigger_Than_Target_2, $Bigger_Than_Target_3]&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="StoryInit_UI" tags="" position="600,225" size="100,100">&lt;&lt;run setup.updateStaticCorruptionUI(State.variables.CharacterSheet_Player)&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_small" tags="" position="725,225" size="100,100">敌人冲上前来进攻。</tw-passagedata><tw-passagedata pid="17" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_medium" tags="" position="850,225" size="100,100">敌人向前猛地冲向你，在他的攻击中投入了他的体重作为附加伤害。</tw-passagedata><tw-passagedata pid="18" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_large" tags="" position="975,225" size="100,100">敌人向前跺脚，挥舞着巨大的拳头。</tw-passagedata><tw-passagedata pid="19" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_heightFlavour_huge" tags="" position="1100,225" size="100,100">敌人的@[all|huge|arms|noverb]向你急速挥来。</tw-passagedata><tw-passagedata pid="20" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt75" tags="" position="1225,225" size="100,100">一缕缕紫色的能量从他的指关节中流出。</tw-passagedata><tw-passagedata pid="21" name="StoryInit_UniversalFlavour_basicAttackAttemptFlavour_corruptionFlavour_corrupt100" tags="" position="100,350" size="100,100">他手上和手臂上的每一根血管都燃烧着一种污染的紫色，能量从他的皮肤上滚落，成为黑暗力量的卷须。</tw-passagedata><tw-passagedata pid="22" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="225,350" size="100,100">的双脚来回跳起，随时准备着佯攻和进攻。</tw-passagedata><tw-passagedata pid="23" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="350,350" size="100,100">为战斗做好准备。</tw-passagedata><tw-passagedata pid="24" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="475,350" size="100,100">转动着他那巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="25" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="600,350" size="100,100">正在伸展他的四肢，准备进行摔跤。</tw-passagedata><tw-passagedata pid="26" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="725,350" size="100,100">他的大脚耙过地面，准备冲锋。</tw-passagedata><tw-passagedata pid="27" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="850,350" size="100,100">绷紧了他的肌肉。他笨重的身躯因力量而吱吱作响，因对战斗的期待而颤抖。</tw-passagedata><tw-passagedata pid="28" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,350" size="100,100">弯曲巨大的肌肉，准备把每一条绷紧的如山肌肉都用上。</tw-passagedata><tw-passagedata pid="29" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,350" size="100,100">跺着他巨大的脚，准备战斗。大地因此在颤抖。</tw-passagedata><tw-passagedata pid="30" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,350" size="100,100">巨大的指关节裂响，它们像雷声一样响彻战场。</tw-passagedata><tw-passagedata pid="31" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt50" tags="" position="100,475" size="100,100">这个生物周围的空气感觉不太对。</tw-passagedata><tw-passagedata pid="32" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt75" tags="" position="225,475" size="100,100">可怕的黑暗从这个生物的脚上蔓延到地面上。</tw-passagedata><tw-passagedata pid="33" name="StoryInit_UniversalFlavour_basicAttackPrepFlavour_corruptionFlavour_corrupt100" tags="" position="350,475" size="100,100">紫色和黑色的能量卷须从这种生物脚周围的地面上爆发出来。</tw-passagedata><tw-passagedata pid="34" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_1" tags="" position="475,475" size="100,100">迷你的</tw-passagedata><tw-passagedata pid="35" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_2" tags="" position="600,475" size="100,100">微小的</tw-passagedata><tw-passagedata pid="36" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_3" tags="" position="725,475" size="100,100">细小的</tw-passagedata><tw-passagedata pid="37" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_small_4" tags="" position="850,475" size="100,100">小小的</tw-passagedata><tw-passagedata pid="38" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_1" tags="" position="975,475" size="100,100">大的</tw-passagedata><tw-passagedata pid="39" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_2" tags="" position="1100,475" size="100,100">相当大的</tw-passagedata><tw-passagedata pid="40" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_3" tags="" position="1225,475" size="100,100">巨大的</tw-passagedata><tw-passagedata pid="41" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_medium_4" tags="" position="100,600" size="100,100">魁梧的</tw-passagedata><tw-passagedata pid="42" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_1" tags="" position="225,600" size="100,100">庞大的</tw-passagedata><tw-passagedata pid="43" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_2" tags="" position="350,600" size="100,100">雄伟的</tw-passagedata><tw-passagedata pid="44" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_3" tags="" position="475,600" size="100,100">高耸的</tw-passagedata><tw-passagedata pid="45" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_large_4" tags="" position="600,600" size="100,100">极大的</tw-passagedata><tw-passagedata pid="46" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_1" tags="" position="725,600" size="100,100">极为巨大的</tw-passagedata><tw-passagedata pid="47" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_2" tags="" position="850,600" size="100,100">如泰坦一般的</tw-passagedata><tw-passagedata pid="48" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_3" tags="" position="975,600" size="100,100">极为庞大的</tw-passagedata><tw-passagedata pid="49" name="StoryInit_UniversalFlavour_sizeDescriptionFlavour_heightFlavour_huge_4" tags="" position="1100,600" size="100,100">排山倒海的</tw-passagedata><tw-passagedata pid="50" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_1" tags="" position="1225,600" size="100,100">肌肉变硬，随着力量的增加而跳动。他的二头肌在轮廓分明的前臂上方形成了美丽的山峰。
 静脉开始从他的皮肤中涨出，遍布他那正不断增长的肩膀和脖子。
 他的胸肌向外推，他的乳头变硬，当增长的肌肉像新鲜空气一样向下翻滚，穿过他的六块腹肌、大腿和小腿时，一声呻吟从他嘴里发出。</tw-passagedata><tw-passagedata pid="51" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_2" tags="" position="100,725" size="100,100">运动形态随着每块肌肉收缩而变硬，形成风景如画的美丽。每一条线和褶皱都随着流经他的力量而加深，迫使他的身体适应。
 他的侧腹伸展得更宽、腹壁向外推，他的上半身膨胀得越来越大，身体也越来越令人感到自豪。</tw-passagedata><tw-passagedata pid="52" name="StoryInit_UniversalFlavour_MuscleGrowthFlavourText_musclesFlavour_small_3" tags="" position="225,725" size="100,100">当一种刺痛的感觉从他的核心向外扩散到每个肢体时，他的身体抽搐起来。他的身体瞬间冻结，然后生长的源泉淹没了他。
@@ -22719,7 +22719,7 @@ Config.ui.stowBarInitially = false;
 他的前臂是毫无杂质的完美球体，推动着不断增长的肱二头肌和肱三头肌，它们早已使主人的 头相形见绌。
 他那高大的体型向上弯曲并向外扩张，包裹着人类所无法想象的新肌肉群。
 他的颈部向外涌出，几乎快要将如此巨大的身体背后存在的驱动力给吞没了。他的侧腹向外涌动，形成一个令人难以置信的强大而不可能的Y形。
-腿部，就像世界的地基一样，迅速爆发出让那些天然地基感到羞愧的大小。</tw-passagedata><tw-passagedata pid="65" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_small" tags="" position="600,850" size="100,100">他的@[all|cocks|one=throbs~more=throb]勃起了，比以往任何时候都更硬。他往下看，感觉到阴茎上每条静脉都有着不自然的厚度。
+腿部，就像世界的地基一样，迅速爆发出让那些天然地基感到羞愧的大小。</tw-passagedata><tw-passagedata pid="65" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_small" tags="" position="600,850" size="100,100">他的阴茎勃起了，比以往任何时候都更硬。他往下看，感觉到阴茎上每条静脉都有着不自然的厚度。
 然后，他被从他腰部滋生的一股快感浪潮击中了。他的阴茎疯狂地跳动着，因为它膨胀得更粗更长。
 他的眼睛睁得大大的，因为@[all|cocks|noverb]的增长在他的身体上进一步发展。
 它是如此的长，如此粗。而且它不断增长，把他的手指推得更开。</tw-passagedata><tw-passagedata pid="66" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_medium" tags="" position="725,850" size="100,100">一种熟悉的感觉涌上心头。他低头看着他的@[all|cocks|noverb]咧嘴一笑，准备迎接一波即将到来的增长。
@@ -22730,13 +22730,13 @@ Config.ui.stowBarInitially = false;
 他仰起头，低沉的呻吟足以让他的呼吸缩短。</tw-passagedata><tw-passagedata pid="67" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_large" tags="" position="850,850" size="100,100">突然，他的@[all|cocks|one=勃起~more=勃起]了。对他那大得如同怪物般的肉棒关注的纯粹需求压倒了他。
 他试图抓住根部;他只能在期待中颤抖。
 
-他的@[all|cocks|one=is~more=are]好热、好饱满、好粗。一想到要变得更大，他就不寒而栗。
+他的@[all|cocks|one=变得~more=变得]好热、好饱满、好粗。一想到要变得更大，他就不寒而栗。
 随着@[all|cocks|noverb]开始增长，快感在他身上跳动起来。他拼命地试图抓住和享受跳动的肉体，但它太大了，他的手根本无法容纳。
 
 他向下压，沿着地面推送他的臀部。他庞大身躯的@[all|cocks|noverb]仍然非常敏感；当它向外推进，变得越来越大时，他发出了愉悦的呻吟。
 
 他用手指沿着阴茎马眼的细缝滑动，激情地呻吟着。每一次接触都会刺穿快感的闪电，\
-精液像损坏的大坝正在泄洪一样从他巨大的鸡巴中泄漏出来。他的@[all|cocks|one=grows~more=grow]生长得比他想象的要大。
+精液像损坏的大坝正在泄洪一样从他巨大的鸡巴中泄漏出来。他的@[all|cocks|one=生长~more=生长]得比他想象的要大。
 
 他的鸡巴是巨大的，甚至是畸形的；找到任何能应付它的东西都将成为一个挑战。</tw-passagedata><tw-passagedata pid="68" name="StoryInit_UniversalFlavour_CockGrowthFlavourText_cockSizeFlavour_huge" tags="" position="975,850" size="100,100">他感觉到有什么东西要来了，有什么巨大的东西……一股熟悉的温暖涌上心头。他的鸡巴因期待而灼热。
 它不断建立，快乐的刺痛从他的@[all|cocks|noverb]里蔓延开来。
@@ -26303,7 +26303,7 @@ Config.ui.stowBarInitially = false;
             passage: &quot;Imp_Low_Rela_Loss_Idle&quot;,
         },
     },
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="975,1600" size="100,100">is grining mischieviously, looking for an opportunity to attack.</tw-passagedata><tw-passagedata pid="129" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="1100,1600" size="100,100">flutters about in the air, waiting to strike.</tw-passagedata><tw-passagedata pid="130" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_3" tags="" position="1225,1600" size="100,100">is licking its lips, staring at you like you&#39;re his next meal.</tw-passagedata><tw-passagedata pid="131" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_4" tags="" position="100,1725" size="100,100">runs a finger down his chest, taunting you.</tw-passagedata><tw-passagedata pid="132" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="225,1725" size="100,100">rolls his boulder like shoulders, ready to strike.</tw-passagedata><tw-passagedata pid="133" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="350,1725" size="100,100">is stretching his limbs, ready to wrestle with you.</tw-passagedata><tw-passagedata pid="134" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_3" tags="" position="475,1725" size="100,100">lets his tongue slither over his pecs as he stares you down.</tw-passagedata><tw-passagedata pid="135" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="600,1725" size="100,100">growls with powerful brassy tones. He is itching to tussle with you.</tw-passagedata><tw-passagedata pid="136" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="725,1725" size="100,100">slurps up cascading rivulets of drool. His powerful form bends in anticipation of your next move.</tw-passagedata><tw-passagedata pid="137" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_3" tags="" position="850,1725" size="100,100">rakes his large feet across the ground, ready to charge.</tw-passagedata><tw-passagedata pid="138" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,1725" size="100,100">flexes gargantuan muscles, letting you know exactly where you stand.</tw-passagedata><tw-passagedata pid="139" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,1725" size="100,100">stomps his massive feet as he readies himself for combat. The earth quivers.</tw-passagedata><tw-passagedata pid="140" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,1725" size="100,100">cracks his massive knuckles, they sound like thunder across the battlefield.</tw-passagedata><tw-passagedata pid="141" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_1" tags="" position="100,1850" size="100,100">The small wily imp seems to have a trick or two planned for you.</tw-passagedata><tw-passagedata pid="142" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_2" tags="" position="225,1850" size="100,100">The small demon looks at your body, hungrily.</tw-passagedata><tw-passagedata pid="143" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_3" tags="" position="350,1850" size="100,100">The tiny demon looks you up and down, sizing you up.</tw-passagedata><tw-passagedata pid="144" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_4" tags="" position="475,1850" size="100,100">The small imp zips around in wild loops, clearly excited for its next meal.</tw-passagedata><tw-passagedata pid="145" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_1" tags="" position="600,1850" size="100,100">rolls his boulder like shoulders, ready to strike.</tw-passagedata><tw-passagedata pid="146" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_2" tags="" position="725,1850" size="100,100">is stretching his limbs, ready to wrestle with you.</tw-passagedata><tw-passagedata pid="147" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_3" tags="" position="850,1850" size="100,100">lets his tongue slither over his pecs as he stares you down.</tw-passagedata><tw-passagedata pid="148" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_1" tags="" position="975,1850" size="100,100">growls with powerful brassy tones. He is itching to tussle with you.</tw-passagedata><tw-passagedata pid="149" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_2" tags="" position="1100,1850" size="100,100">slurps up cascading rivulets of drool. His powerful form bends in anticipation of your next move.</tw-passagedata><tw-passagedata pid="150" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_3" tags="" position="1225,1850" size="100,100">rakes his large feet across the ground, ready to charge.</tw-passagedata><tw-passagedata pid="151" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_1" tags="" position="100,1975" size="100,100">flexes gargantuan muscles, letting you know exactly where you stand.</tw-passagedata><tw-passagedata pid="152" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_2" tags="" position="225,1975" size="100,100">stomps his massive feet as he readies himself for combat. The earth quivers.</tw-passagedata><tw-passagedata pid="153" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_3" tags="" position="350,1975" size="100,100">cracks his massive knuckles, they sound like thunder across the battlefield.</tw-passagedata><tw-passagedata pid="154" name="_imp_text_sheet" tags="" position="475,1975" size="100,100">&lt;&lt;set setup.TextSheet_Imp =
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_1" tags="" position="975,1600" size="100,100">一边顽皮地咧嘴笑着，一边寻找着攻击的机会。</tw-passagedata><tw-passagedata pid="129" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_2" tags="" position="1100,1600" size="100,100">在空中飞动着，等待着出手时机。</tw-passagedata><tw-passagedata pid="130" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_3" tags="" position="1225,1600" size="100,100">一边舔着嘴唇一边盯着你看，就好像你是他的下一顿饭一样。</tw-passagedata><tw-passagedata pid="131" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_small_4" tags="" position="100,1725" size="100,100">把一根手指到进他的胸口上并以此嘲弄你。</tw-passagedata><tw-passagedata pid="132" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_1" tags="" position="225,1725" size="100,100">抡起他那巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="133" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_2" tags="" position="350,1725" size="100,100">正在伸展四肢，准备与你摔跤。</tw-passagedata><tw-passagedata pid="134" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_medium_3" tags="" position="475,1725" size="100,100">盯着你的时候，他伸出他的舌头滑过他的胸肌。</tw-passagedata><tw-passagedata pid="135" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_1" tags="" position="600,1725" size="100,100">发出低沉的咆哮声，他很想与你进行扭打。</tw-passagedata><tw-passagedata pid="136" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_2" tags="" position="725,1725" size="100,100">潺潺地流着口水。他那强有力的身体弯曲起来，期待着你的下一步行动。</tw-passagedata><tw-passagedata pid="137" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_large_3" tags="" position="850,1725" size="100,100">的大脚划过地面，准备向你发起冲锋。</tw-passagedata><tw-passagedata pid="138" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_1" tags="" position="975,1725" size="100,100">弯曲着巨大的肌肉，让你准确地明白自己当前的处境。</tw-passagedata><tw-passagedata pid="139" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_2" tags="" position="1100,1725" size="100,100">为战斗做着准备时，他跺着他那双巨大的脚。大地随之颤动。</tw-passagedata><tw-passagedata pid="140" name="_imp_text_sheet_basicAttackPrepFlavour_heightFlavour_huge_3" tags="" position="1225,1725" size="100,100">巨大的指节发出迸裂声，听起来就如战场上产生的雷声。</tw-passagedata><tw-passagedata pid="141" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_1" tags="" position="100,1850" size="100,100">这个老谋深算的小恶魔似乎为你策划了一两个花招。</tw-passagedata><tw-passagedata pid="142" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_2" tags="" position="225,1850" size="100,100">这位小小的恶魔盯着你的身体，饥渴地。</tw-passagedata><tw-passagedata pid="143" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_3" tags="" position="350,1850" size="100,100">这只小小的恶魔上下打量着你，左右评估着你。</tw-passagedata><tw-passagedata pid="144" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_small_4" tags="" position="475,1850" size="100,100">这只小恶魔飞快地绕着圈子，显然对你这顿饭很兴奋。</tw-passagedata><tw-passagedata pid="145" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_1" tags="" position="600,1850" size="100,100">抡起他那巨石般的肩膀，准备出击。</tw-passagedata><tw-passagedata pid="146" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_2" tags="" position="725,1850" size="100,100">正在伸展四肢，准备与你摔跤。</tw-passagedata><tw-passagedata pid="147" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_medium_3" tags="" position="850,1850" size="100,100">盯着你的时候，他伸出他的舌头滑过他的胸肌。</tw-passagedata><tw-passagedata pid="148" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_1" tags="" position="975,1850" size="100,100">发出低沉的咆哮声，他很想与你进行扭打。</tw-passagedata><tw-passagedata pid="149" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_2" tags="" position="1100,1850" size="100,100">潺潺地流着口水。他那强有力的身体弯曲起来，期待着你的下一步行动。</tw-passagedata><tw-passagedata pid="150" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_large_3" tags="" position="1225,1850" size="100,100">的大脚划过地面，准备向你发起冲锋。</tw-passagedata><tw-passagedata pid="151" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_1" tags="" position="100,1975" size="100,100">弯曲着巨大的肌肉，让你准确地明白自己当前的处境。</tw-passagedata><tw-passagedata pid="152" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_2" tags="" position="225,1975" size="100,100">为战斗做着准备时，他跺着他那双巨大的脚。大地随之颤动。</tw-passagedata><tw-passagedata pid="153" name="_imp_text_sheet_encounterStartFlavour_heightFlavour_huge_3" tags="" position="350,1975" size="100,100">巨大的指节发出迸裂声，听起来就如战场上产生的雷声。</tw-passagedata><tw-passagedata pid="154" name="_imp_text_sheet" tags="" position="475,1975" size="100,100">&lt;&lt;set setup.TextSheet_Imp =
 {	
 	goMeetImp_Intro :{
 		heightFlavour: {
@@ -27778,7 +27778,7 @@ Config.ui.stowBarInitially = false;
 
 &lt;&lt;run setup.setRace($CharacterSheet_Player.symbiote.anatomy, setup.RacePool.SYMBIOTE)&gt;&gt;
 &lt;&lt;set $CharacterSheet_Player.symbiote.color = setup.ColourPool.WHITE&gt;&gt;
-&lt;&lt;set $CharacterSheet_Player.symbiote.name = &quot;Echo&quot;&gt;&gt;
+&lt;&lt;set $CharacterSheet_Player.symbiote.name = &quot;回响&quot;&gt;&gt;
 
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_Uncorrupted);&gt;&gt;
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_MinorCorruption);&gt;&gt;
@@ -32508,7 +32508,7 @@ Config.ui.stowBarInitially = false;
     name:       &quot;蓝星之适应&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;遥远的蓝星正在迫使整个大地进化。\n&quot;;
+        let displayString = &quot;遥远的蓝星正在迫使这片大地进化。\n&quot;;
         displayString += &quot;所有生物的生长都会增加20%。\n&quot;
         return displayString
     },
@@ -32551,7 +32551,7 @@ Config.ui.stowBarInitially = false;
     name:       &quot;金星之力量&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;遥远的金星给了这片土地更多的力量。\n&quot;;
+        let displayString = &quot;遥远的金星赋予了这片大地更多的力量。\n&quot;;
         displayString += &quot;你的力量增加了20%&quot;
         return displayString
     },
@@ -32593,7 +32593,7 @@ Config.ui.stowBarInitially = false;
     name:       &quot;绿星之坚韧&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;遥远的绿星赋予土地更强的韧性。\n&quot;;
+        let displayString = &quot;遥远的绿星赋予这片大地更强的韧性。\n&quot;;
         displayString += &quot;你的耐力增加了20%。&quot;
         return displayString
     },
@@ -32636,7 +32636,7 @@ Config.ui.stowBarInitially = false;
     name:       &quot;红星之暴虐&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;遥远的红星使土地更加凶猛。\n&quot;;
+        let displayString = &quot;遥远的红星使这片大地更加凶猛。\n&quot;;
         displayString += &quot;你的暴击率增加了20%&quot;
         return displayString
     },
@@ -32878,10 +32878,10 @@ Config.ui.stowBarInitially = false;
 
 &lt;&lt;run setup.Ability_DemonicCorruption_3.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="432" name="Ability_DemonicEssenceShard" tags="" position="225,5475" size="100,100">&lt;&lt;set setup.Ability_DemonicEssenceShard = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_DemonicEssenceShard&quot;,
-    name:       &quot;Demonic Essence Shard&quot;,
+    name:       &quot;恶魔精华碎片&quot;,
     description:function(character, abilityRuntimeData)
     {
-        return &quot;You carry a shard of demonic Essence. It is said to repel minimally concentrated Corruption.&quot;;
+        return &quot;你带着一块恶魔的精华碎片。据说，它可以击退聚集程度最低的腐败。&quot;;
     },
     maxRank: 1
 })&gt;&gt;
@@ -33518,10 +33518,10 @@ Config.ui.stowBarInitially = false;
 &lt;&lt;set setup.Ability_LastStand.setCategory(setup.AbilityCategory.WARRIOR)&gt;&gt;
 &lt;&lt;set setup.Ability_LastStand.setGrade(setup.AbilityGrade.LOW)&gt;&gt;</tw-passagedata><tw-passagedata pid="446" name="Ability_LukkasBox" tags="" position="725,5600" size="100,100">&lt;&lt;set setup.Ability_LukkasBox = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_LukkasBox&quot;,
-    name:       &quot;Essence Reservoir&quot;,
+    name:       &quot;精华之池&quot;,
     description:function(character, abilityRuntimeData)
     {
-        return &quot;You have drained &quot;+abilityRuntimeData.blackboard.drainCount+&quot; burst of demonic Essence. Lukka&#39;s Essence reservoir will store a small portion of the Essence you&#39;ve acquired.&quot;; 
+        return &quot;你已经耗尽了&quot;+abilityRuntimeData.blackboard.drainCount+&quot;爆发的恶魔精华。卢卡的精华储池将储存你所获得的精华的一小部分。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -33531,7 +33531,7 @@ Config.ui.stowBarInitially = false;
     setup.AbilityTrigger.ON_ACQUIRE,
     function(abilityRuntimeData, abilityParams)
     {
-    name:       &quot;情欲化身&quot;,
+    name:       &quot;淫望化身&quot;,
         abilityRuntimeData.modifier.essenceMultiplierMods = {mod: setup.mod.REMOVE, value: 0.01};
     }
 )&gt;&gt;
@@ -33546,18 +33546,18 @@ Config.ui.stowBarInitially = false;
             abilityRuntimeData.blackboard.drainCount += 1;
         }
 
-        if(abilityRuntimeData.blackboard.drainCount &gt;= 3)
+        if(abilityRuntimeData.blackboard.drainCount = 3)
         {
             State.variables.CharacterSheet_Player.quest.lukkaQuest.reservoirFilled = true;
         }
 
-        return &quot;It absorbs a small portion of the Essence you gathered. It now contains &quot;+abilityRuntimeData.blackboard.drainCount+&quot; doses of demonic Essence.&quot;;
+        return &quot;它吸收了你所收集的一小部分精华。它现在储存有&quot;+abilityRuntimeData.blackboard.drainCount+&quot;单位的恶魔精华。&quot;;
     }
 )&gt;&gt;
 
 &lt;&lt;run setup.Ability_LukkasBox.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="447" name="Ability_LustIncarnate" tags="" position="850,5600" size="100,100">&lt;&lt;set setup.Ability_LustIncarnate = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_LustIncarnate&quot;,
-    name:       &quot;Lust Incarnate&quot;,
+    name:       &quot;淫望化身&quot;,
     description:function(character, abilityRuntimeData)
     {
         let displayString = &quot;获得相当于你唤醒值&quot;+setup.getRankGrowth(abilityRuntimeData, &quot;linear&quot;, 15) +&quot;%的力量。&quot; ;
@@ -37186,7 +37186,7 @@ maxRank: 5
     name:       &quot;迷失者之记忆&quot;,
     description:function(character)
     {
-        return &quot;先驱敢于尝试阻止你，这一行为导致他最糟糕的噩梦升级了。&quot;; 
+        return &quot;先驱者敢于尝试阻止你，这一行为导致他最糟糕的噩梦进一步升级了。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -40449,20 +40449,20 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 \&lt;&lt;/if&gt;&gt;
 
 \&lt;&lt;if (setup.sizeNormalPersoncomparison($CharacterSheet_Player) &gt;= setup.Comparators.FITS_ON_FINGER) and (setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &gt;= 75)&gt;&gt;
-&lt;span class=&quot;glitch&quot; data-text=&quot;招募他-&quot;&gt;[[招募他--&gt;Planetary69Ending]]&lt;/span&gt;
+&lt;span class=&quot;glitch&quot; data-text=&quot;招募他&quot;&gt;[[招募他-&gt;Planetary69Ending]]&lt;/span&gt;
 \&lt;&lt;elseif setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &gt;= 75&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[招募他--&gt;Encounter_Win_Lost_Entity_Corrupt]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[让他成为-&gt;LeavePurified]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[招募他-&gt;Encounter_Win_Lost_Entity_Corrupt]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[随他去-&gt;LeavePurified]]&quot;);&gt;&gt;
 \&lt;&lt;elseif setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;) &gt;= 50&gt;&gt;
 \&lt;&lt;if Math.floor(Math.random() * 2) == 1&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[招募他--&gt;Encounter_Win_Lost_Entity_Corrupt]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[招募他-&gt;Encounter_Win_Lost_Entity_Corrupt]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-&lt;span class=&quot;inactive&quot;&gt;[[招募他--&gt;Recruit]]&lt;/span&gt;
+&lt;span class=&quot;inactive&quot;&gt;[[招募他-&gt;Recruit]]&lt;/span&gt;
 \&lt;&lt;/if&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[让他成为-&gt;LeavePurified]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[随他去-&gt;LeavePurified]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
 &lt;span class = &quot;inactive&quot;&gt;[[招募他-&gt;Recruit]]&lt;/span&gt;
-\&lt;&lt;run setup.choice(&quot;[[让他成为-&gt;LeavePurified]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[随他去-&gt;LeavePurified]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="673" name="Encounter_Win_Lost_Entity_Corrupt" tags="" position="350,8475" size="100,100">&lt;&lt;print setup.processFlavours(
     $CharacterSheet_Player,
     &quot;这还不够！ 永远都不够！&quot;+
@@ -40503,17 +40503,17 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 \&lt;&lt;run setup.setBaseStatValue($CharacterSheet_Lost_Harbinger, &quot;cock&quot;, setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt;
 你觉得你和迷失者之间有一种不自然的紧密联系。他是你的第一个伴侣，对他来说，你是他唯一真正的伴侣。他为你而生，为你而呼吸，只为你而存在。躺在对方胸前时，他轻轻地把手放在你的胸脯上，轻轻地亲吻你的脸颊。你不情愿地把自己从他飘忽不定的手上拖走。
 
-他着急地喊道, &quot;不要走！&quot;
+他着急地喊道, “不要走！”
 
-你用坚硬的手抚摸他的后脑勺，亲吻他的额头。&quot;我必须走。 我有事要做，而你也有要做的事。&quot; 
+你用坚硬的手抚摸他的后脑勺，亲吻他的额头。“我必须走。 我有事要做，而你也有要做的事。” 
 \&lt;&lt;print setup.processFlavours(
     $CharacterSheet_Lost_Harbinger,
     &quot;他的情绪立即变得兴奋起来，他两腿之间的@[all| cocks| noverb]硬了起来。&quot;
 )&gt;&gt;
 
-&quot;我要你成为我统治这片土地的先驱，&quot;你命令道，&quot;你将为我做爱，传播腐化并继续增大。&quot;
+“我要你成为我统治这片土地的先驱，”你命令道，“你将为我做爱，传播腐化并继续增大。”
 
-&quot;是！&quot; 他呻吟着， &quot;我愿意为你做任何事！"。&quot; 他的兴奋之情溢于言表，开始漏出前列腺液。
+“是！”他呻吟着， “我愿意为你做任何事！"。” 他的兴奋之情溢于言表，下体开始渗出前列腺液。
 
 尽管你的爱人有着傲人的身姿，但他需要与众人区分开来。他需要一个名字，以标明他是你新的迷失者家族的领袖。
 
@@ -40566,32 +40566,32 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 阿波图斯紧握着他的胸膛，单膝跪地；他喘着气，曾经诱人的笑容变得狰狞。
 
-&quot;你到底是什么东西？你身体里面的这个东西是什么？&quot; 他的双手紧握成拳，再次凝视着黑日，眼中带着痛苦。
+“你到底是什么东西？你身体里面的这个东西是什么？”他的双手紧握成拳，再次凝视着黑日，眼中带着痛苦。
 
-&quot;你只不过是我们画布上的污点。&quot;他再也不愿看着你了，眼睛注视着尼克斯。
+“你只不过是我们画布上的污点。”他再也不愿看着你了，眼睛注视着尼克斯。
 
-&quot;我不能让你靠近我们的天选之人……拜托了，尼克斯……&quot; 他的目光落在你周围的迷失者身上。 他们神色激动地看着他。
+“我不能让你靠近我们的天选之人……拜托了，尼克斯……”他的目光落在你周围的迷失者身上。 他们神色激动地看着他。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusEncounter_PlayerWins_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="681" name="Quest_MQ002_ApothusEncounter_PlayerWins_1" tags="" position="100,8600" size="100,100">&quot;给我力量保护他，这样你才可以拥有你应得的容器！&quot; 他大喊着，张开双臂，仿佛要拥抱尼克斯。
 
 一个迷失者跳向他，他的头撞到了阿波图斯的胸膛上。黑色的粘稠物溅满了他的全身，迅速地在周围蔓延和打转。
 当他疯狂地笑着时，他的纹身呈现出明亮的紫色。
 
-&quot;对……到我这里来……&quot;
+“对……到我这里来……”
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusEncounter_PlayerWins_1_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="682" name="Quest_MQ002_ApothusEncounter_PlayerWins_1_2" tags="" position="225,8600" size="100,100">腐败助长了他长期以来一直抗拒的力量。
 迷失者冲进他的胸膛，把自己交给了他的主人。
 
-&quot;呃……&quot;他呻吟着，试图在身体膨胀时保持身体完整。 
+“呃……”他呻吟着，试图在身体膨胀时保持身体完整。 
 他的胸肌上的纤维鼓起，充满了神一般的力量。
 另一只冲向他，他肥厚的爪子从后面抱住这个迷失者，把他拉到自己的背上。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusEncounter_PlayerWins_1_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="683" name="Quest_MQ002_ApothusEncounter_PlayerWins_1_3" tags="" position="350,8600" size="100,100">&quot;咕啊……真是太棒了……&quot;随着越来越多的迷失者加入他们，他呻吟着，声音变得扭曲起来。
 
-&quot;啊……啊！&quot; 他的呻吟声变成了野兽般的咆哮。他把他的阴茎呈现给他的迷失者。
+“啊……啊！”他的呻吟声变成了野兽般的咆哮。他把他的阴茎呈现给他的迷失者。
 他们崇拜着这个巨物，在进入它之前爱抚它的每一寸。
 
-&quot;再来一些！再来一些！&quot; 阿波图斯的身体冲散了一堆聚集起来的迷失者。他把头向后拉，发出一声可怕的咆哮。
+“再来一些！再来一些！”阿波图斯的身体冲散了一堆聚集起来的迷失者。他把头向后拉，发出一声可怕的咆哮。
 巨大的牛角从他的头的每一侧冒出来。他的下巴发生了变化，巨大的象牙从他的嘴里伸出来，变成了致命而又锐利的尖刺。
 他长着爪子的双手抱住他的头，拼命地试图控制他体内涌动的腐化。
 
@@ -40608,14 +40608,13 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 \&lt;&lt;run setup.choice(&quot;[[殴打他-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Apothus_2nd_Form]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="682" name="Quest_MQ002_ApothusEncounter_PlayerLoses" tags="" position="225,8600" size="100,100">你倒下了，周围的迷失者在看到你虚弱的状态时兴奋地注视着你。
 阿波图斯向他们举起了手，他们立即停了下来。
 
-&quot;似乎你还没有准备好接受我能提供给你的东西。&quot; 他用失望的语气说道。
+“似乎你还没有准备好接受我能提供给你的东西。”他用失望的语气说道。
 
-&quot;我们被困在了一个永无止境的充满欲望和贪婪的循环。它只会把我们撕裂，直到我们都躺在沙原上身心俱疲。尼克斯是终止这个循环的唯一方式，因为它的光线向世界展示了不同的一面。&quot;
+“我们被困在了一个永无止境的充满欲望和贪婪的循环。它只会把我们撕裂，直到我们都躺在沙原上身心俱疲。尼克斯是终止这个循环的唯一方式，因为它的光线向世界展示了不同的一面。”
 
 他朝你走去，手掌慢慢向你的后脑勺移动。
 
-&quot;你准备好之后就可以回来了。Nyx的光芒永远不会丢下任何一个灵魂的。&quot;
-
+“你准备好之后就可以回来了。Nyx的光芒永远不会丢下任何一个灵魂的。”
 他把你击倒在地。
 
 &lt;&lt;print setup.getFightReward($CharacterSheet_Apothus, true)&gt;&gt;
@@ -40634,7 +40633,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 阿波图斯突然克制地看着你。也许是他过去的自我的残余？这很难说，但这可能是你逃脱的唯一机会。
 他的漩涡形纹身闪耀着炫目的紫光。
 
-&quot;加入我吧……&quot;他喃喃自语，他的话在扭曲的呻吟声中飘荡。
+“加入我吧……”他喃喃自语，他的话在扭曲的呻吟声中飘荡。
 
 \&lt;&lt;run setup.choice(&quot;[[润润子-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[接受他的邀请-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_01]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="691" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_01" tags="" position="100,8725" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Apothus_2nd_Form.info.picture)&gt;&gt;
@@ -40652,7 +40651,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 你的手抓住他油腻的阴茎，感受它不自然的活力。
 它是如此饱满，如此多汁和丰富，但它比你所感受到的任何肉棒都更加剧烈地跳动。
 
-&quot;你是我的……&quot; 他咆哮着，抓住他的阴茎，把它带到了你的嘴里。
+“你是我的……”他咆哮着，抓住他的阴茎，把它带到了你的嘴里。
 
 \&lt;&lt;run setup.choice(&quot;[[吸吮他-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_02]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="693" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_02" tags="" position="350,8725" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Apothus_2nd_Form.info.picture)&gt;&gt;
 当你尝到他腐败的液体时，你的阴茎变得非常硬。你低沉的呻吟声使他非常满意。
@@ -40662,7 +40661,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_02_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="694" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_02_2" tags="" position="475,8725" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Apothus_2nd_Form.info.picture)&gt;&gt;
 
-&quot;你属于我！！！&quot; 他咆哮着，把他的阴茎从你的喉咙里拉出来，使你转过身背对着他。
+“你属于我！！！”他咆哮着，把他的阴茎从你的喉咙里拉出来，使你转过身背对着他。
 
 他的阴茎顶着你的后门，你呻吟回应。阿波图斯的身体在颤抖，这是一个拥有不可阻挡的力量的身躯。
 他的增大畅通无阻，这是他不可抗拒的力量的源源不断的能量。他终于进入你的时候，你发出了喊叫。他咆哮着强迫自己的巨物进去，丢弃了所有人性的伪装。
@@ -40681,18 +40680,18 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 突然，你感觉到有什么东西伸向了阿波图斯，它就像你从来不知道自己拥有的肢体一样。
 
-&quot;什，什么……这是……？&quot;他难以置信地说道。
+“什，什么……这是……？”他难以置信地说道。
 
 &lt;&lt;SymbioteName&gt;&gt;也尝到了腐化的力量，他的呻吟在你的灵魂深处回荡。他们伸出手，味道引发了久违的饥饿感。
 &lt;&lt;SymbioteColor&gt;&gt;的浓稠粘液在他的身体上扩散，也进入了它。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_04]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="697" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_04" tags="" position="850,8725" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Apothus_2nd_Form.info.picture)&gt;&gt;
-&quot;唔嗯嗯啊啊啊啊!太棒了!&quot;他尖叫着，达到了你第一次接触&lt;&lt;SymbioteName&gt;&gt;时所感受到的高潮。
+“唔嗯嗯啊啊啊啊!太棒了!”他尖叫着，达到了你第一次接触&lt;&lt;SymbioteName&gt;&gt;时所感受到的高潮。
 
 他的力量呈指数增长，他每一寸腐化的自我突然比以往任何时候都更有效地处理腐败。
 你觉得和他产生了联系，他的整个身体感觉离你越来越近。
 
-&quot;这种力量……我，我还要更多!&quot;
+“这种力量……我，我还要更多!”
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_05]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="698" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_05" tags="" position="975,8725" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Apothus_2nd_Form.info.picture)&gt;&gt;
 
@@ -40710,7 +40709,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 &lt;&lt;SymbioteName&gt;&gt;感觉到你了的需求，你那饱尝被禁锢的快感的梦想萦绕着他。
 你自己的身体慢慢地与你的主人结合，你们的思想在合为一体。
 
-&quot;对……合为一体……&quot; 阿波图斯在你的脑海中呻吟。
+“对……合为一体……”阿波图斯在你的脑海中呻吟。
 
 \&lt;&lt;run setup.choice(&quot;[[与阿波图斯合并-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_06]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="700" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_06" tags="" position="1225,8725" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Apothus_2nd_Form.info.picture)&gt;&gt;
 
@@ -41419,9 +41418,9 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 你试着抑制深沉的呻吟，感觉自己被带到了边缘。
 
 \&lt;&lt;if $Essence &gt;= setup.getDemonicTFCost($CharacterSheet_Player)&gt;&gt;
-    &lt;&lt;print &quot;[[赐予他力量(&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot; Essence)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;][$Essence -= &quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
+    &lt;&lt;print &quot;[[赐予他力量(消耗&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;精华)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;][$Essence -= &quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-    &lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[赐予他力量(&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot; Essence)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;]]&lt;/span&gt;&quot;&gt;&gt;
+    &lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[赐予他力量(消耗&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;精华)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;]]&lt;/span&gt;&quot;&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 [[拒绝-&gt;Encounter_Intro_Ethrex_LowRela_Win_Leave]]</tw-passagedata><tw-passagedata pid="805" name="Encounter_Ethrex_HighRela_Win_Leave" tags="" position="600,10100" size="100,100">“你不会是认真的吧……”
 
@@ -41465,7 +41464,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 在一股突然涌现的能量中，他呻吟着，因为力量充满了他的身体整个框架。
 他新发现的能量正把他带到高潮的边缘。
 
-&quot;啊啊啊啊……这种抛瓦……&quot;
+“啊啊啊啊……这种抛瓦……”
 
 当他的手在你的胸部和你坚硬的胸肌上游走时，它们坚定而紧张的。
 他的指尖涌动着原始的恶魔般的力量，他在你的乳头上划着圈，在你的身体里发出快感的火花。
@@ -41480,7 +41479,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 你能感觉到自己在他的抚摸下变得越来越硬，你的兴奋感随着每一次抚摸而加剧。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Transformation_Incubus_Level1_2_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="812" name="Transformation_Incubus_Level1_2_2" tags="" position="225,10225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-&quot;You made the right choice.&quot;
+“你作出了一个正确的决定”
 
 当你的嘴唇接触到他的嘴唇时，你的心跳加速。
 他的吻是热情的，与他接吻的每一个瞬间都会在你的脊柱上发出电流的火花。
@@ -41989,11 +41988,11 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 你试着抑制住深深的呻吟，感觉自己被带到了快感边缘。
 
 \&lt;&lt;if $Essence &gt;= setup.getDemonicTFCost($CharacterSheet_Player)&gt;&gt;
-    &lt;&lt;print &quot;[[赐予他力量(&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot; Essence)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;][$Essence -= &quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
+    &lt;&lt;print &quot;[[赐予他力量(消耗&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;精华)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;][$Essence -= &quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-    &lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[赐予他力量(&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot; Essence)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;]]&lt;/span&gt;&quot;&gt;&gt;
+    &lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[赐予他力量(消耗&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;精华)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;]]&lt;/span&gt;&quot;&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
-[[Refuse-&gt;Encounter_Intro_Ethrex_LowRela_Win_Leave]]</tw-passagedata><tw-passagedata pid="873" name="Encounter_Intro_Ethrex_LowRela_Win_Leave" tags="" position="350,10975" size="100,100">“啧啧，真是浪费了美妙有力的精华。”
+[[拒绝-&gt;Encounter_Intro_Ethrex_LowRela_Win_Leave]]</tw-passagedata><tw-passagedata pid="873" name="Encounter_Intro_Ethrex_LowRela_Win_Leave" tags="" position="350,10975" size="100,100">“啧啧，真是浪费了美妙有力的精华。”
 
 即使尝到了失败的滋味，埃塞克斯也是一个威风凛凛的人物。
 他的翅膀抽搐着，颤抖着，仿佛急切地想把他带走。
@@ -42054,9 +42053,9 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 你试着抑制住深深的呻吟，感觉自己被带到了边缘。
 
 \&lt;&lt;if $Essence &gt;= setup.getDemonicTFCost($CharacterSheet_Player)&gt;&gt;
-    &lt;&lt;print &quot;[[赐予他力量(&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot; Essence)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;][$Essence -= &quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
+    &lt;&lt;print &quot;[[赐予他力量(消耗&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;精华)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;][$Essence -= &quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
 \&lt;&lt;else&gt;&gt;
-    &lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[赐予他力量(&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot; Essence)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;]]&lt;/span&gt;&quot;&gt;&gt;
+    &lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[赐予他力量(消耗&quot;+setup.getDemonicTFCost($CharacterSheet_Player)+&quot;精华)-&gt;&quot;+setup.getDemonicTFPassage($CharacterSheet_Player)+&quot;]]&lt;/span&gt;&quot;&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 [[拒绝-&gt;Encounter_Intro_Ethrex_LowRela_Win_Leave]]</tw-passagedata><tw-passagedata pid="883" name="Encounter_Ethrex_MidRela_Win_Leave" tags="" position="350,11100" size="100,100">“你不会是认真的吧……”
 
@@ -42120,7 +42119,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 他的手臂垂到一边，然后他向你做出离开的手势。
 
-&quot;我这次对你手下留情，拾荒者。当你解决流经你身体的腐败之时，你才可以再次被审判。&quot;
+“我这次对你手下留情，探索者。当你解决流经你身体的腐败之时，你才可以再次被审判。”
 
 \&lt;&lt;run setup.choice(&quot;[[离开黄金堡垒-&gt;Village_Exiled]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="898" name="Village_Herald_Win" tags="" position="975,11225" size="100,100">\&lt;&lt;run setup.completeAchievement(&quot;Achievement_MemoriesOfTheLost&quot;);&gt;&gt;
 &lt;&lt;print setup.getFightReward($CharacterSheet_Herald)&gt;&gt;
@@ -42343,11 +42342,11 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 这只小恶魔缓缓起身，尴尬地垂下眼。
 
-&quot;Damn it...&quot; He mutters before meeting your gaze.
+“我操……”在与你对视之前他嘟囔了一句。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Imp_FirstMeeting_Intro_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="929" name="Imp_FirstMeeting_Intro_4" tags="" position="1100,11600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 
-&quot;真是差劲的出场，啧啧。&quot; 他一边说，一边掸掉翅膀上的灰尘，用眼角的余光观察着你。
+“真是差劲的登场，啧啧。”他一边说，一边掸掉翅膀上的灰尘，用眼角的余光观察着你。
 
 他带爪的双脚伸进沙子里，仿佛随时准备扑过来。
 
@@ -42355,11 +42354,11 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 他咧嘴一笑，恶魔般的笑容中流露出一丝疯狂的饥饿。
 
-&quot;我懂了，你不喜欢啰嗦。没有问题，毕竟我已经可以品尝到你内心的精华了。&quot;
+“我懂了，你不喜欢啰嗦。没有问题，毕竟我已经可以品尝到你内心的精华了。”
 
 不到一秒钟，他的翅膀就展开了。
 
-&quot;我们都在寻找着力量，而我是不会落后的！&quot;
+“我们都在寻找着力量，而我是不会落后的！”
 
 &lt;&lt;print setup.getFightStartPassages($CharacterSheet_Imp)&gt;&gt;</tw-passagedata><tw-passagedata pid="931" name="Imp_EncounterStart_Growth_Cock_1To2" tags="" position="100,11725" size="100,100">\&lt;&lt;set $CharacterSheet_Imp.quest.available_encounterPassages_growthCock1to2 = false&gt;&gt;
 &lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/Barrens/northernbarrens.jpg&quot;, undefined, undefined, true)&gt;&gt;
@@ -42653,7 +42652,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Imp_LukkaReservoir_QuestHint_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="960" name="Imp_LukkaReservoir_QuestHint_2" tags="" position="1225,11975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 小恶魔感觉道你分心了，并趁机逃跑了。
 
-“集中精力，保持注意，拾荒者。”
+“集中精力，保持注意，探索者。”
 
 他扇动着翅膀飞向了天空。
 
@@ -42882,7 +42881,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Imp_Mid_Rela_EncounterStart_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="982" name="Imp_Mid_Rela_EncounterStart_2" tags="" position="225,12350" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 
-&quot;我们又见面了，拾荒者。&quot; 他看着你，咧嘴一笑。
+&quot;我们又见面了，探索者。&quot; 他看着你，咧嘴一笑。
 
 &quot;我得说，你越来越容易被我找到了，但这又不是什么坏事~&quot;
 
@@ -44518,7 +44517,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 下方有种无法形容的触感，也许是它缺少微弱的心跳，但它的勃起处徐缓的跳动足以让你忽视这个事实。
 温和的频率已近乎暧昧，但史莱姆仍未有明显要深入你的样子，似乎它已经满足于这平缓的状况。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Encounter_Win_Slime_Sex_RideVaginal_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1146" name="Encounter_Win_Slime_Sex_RideVaginal_3" tags="" position="725,14350" size="100,100">节奏全部由你把控，每当你抵达了它鸡巴的根部，肥大的睾丸都在挤压着你的屁股。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Encounter_Win_Slime_Sex_RideVaginal_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1146" name="Encounter_Win_Slime_Sex_RideVaginal_3" tags="" position="725,14350" size="100,100">节奏全部由你把控，每当你抵达了它鸡巴的根部，肥大的睾丸都在挤压着你的屁股。
 很快，你感到你的阻力开始下降，腰部则在逐渐发紧。
 
 在你短暂失重的时间里，它的身体会微微扭动。突然，你的脸直接埋在了它的胸口。
@@ -44753,7 +44752,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 \&lt;&lt;run setup.choice(&quot;[[用你的胸肌迎接它的侵犯-&gt;Encounter_Loss_Slime_Submit_Chest]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[用你的菊花迎接它的侵犯-&gt;Encounter_Loss_Slime_Submit_Rear]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1169" name="Encounter_Loss_Slime_Submit_Penis" tags="" position="1100,14600" size="100,100">史莱姆继续以黏糊糊的身体爬过你的衣服，直到它包裹住了你的肉棒。
 
-你的阴茎很快便在持续的摸索挤压的侵犯中完全竖起了桅杆。
+你的阴茎很快便在持续的摸索挤压的侵犯中如桅杆般完全竖起了。
 这个生物急切地爬上了你的阴茎，一边抚摸着你的蛋蛋，一边用整个身体缓缓重复着撸动你阴茎的动作。
 
 你鸡巴的每次抽动都让它在过度的热切中摇晃。不管它想要的是什么，它似乎都被你的下体迷住了。
@@ -45933,7 +45932,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 托加朝你走来，整理了一下他的紧身无袖上衣；对绝大部分衣服而言他还是太大了。
 
-&quot;我必须要感谢你，拾荒者。是你的协助和智慧真正帮我逃离了贪欲的循环。&quot;
+&quot;我必须要感谢你，探索者。是你的协助和智慧真正帮我逃离了贪欲的循环。&quot;
 
 他将你拉入怀中，不肯松手。他紧紧的拥抱可以让你感觉到他身体的温热和跳动的心脏。
 要抱住他巨大的身体很难，但你还是尽可能地抱了回去。
@@ -47068,7 +47067,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 其中一些明显是被似乎巨大的石块毁坏了。
 它们是在这里发射的吗？ 其中之一是否导致您失去了知觉？这样想只会更让你头疼。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;intro_start_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1421" name="intro_start_3" tags="" position="100,17850" size="100,100">当你摇动身体重新站起来时，你开始记起……
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;intro_start_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1421" name="intro_start_3" tags="" position="100,17850" size="100,100">当你摇动身体重新站起来时，你开始记起……
 
 这是你的家园，黄金堡垒。
 它在遭受攻击！
@@ -47162,7 +47161,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 它们被称为迷失者。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;intro_inspect_monster_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1435" name="intro_inspect_monster_2" tags="" position="600,17975" size="100,100">有一种黑色的油状物质从它的皮毛下面渗出。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;intro_inspect_monster_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1435" name="intro_inspect_monster_2" tags="" position="600,17975" size="100,100">有一种黑色的油状物质从它的皮毛下面渗出。
 如果你仔细听，你可以听到气泡爆裂的声音，紧接着又有几条墨水状物质从他的身上滴落到地板上。
 
 它身体的大小简直难以置信。
@@ -47191,7 +47190,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 &quot;那一定是腐化。&quot;
 
-你注意到亚伯的手在胯部附近摩擦一个坚硬的凸起。&quot;任何称职的拾荒者都说这种东西极其危险。深入你的皮肤。也许这就是为什么这个东西变成这么庞大，这么魁梧的野兽。&quot;
+你注意到亚伯的手在胯部附近摩擦一个坚硬的凸起。&quot;任何称职的探索者都说这种东西极其危险。深入你的皮肤。也许这就是为什么这个东西变成这么庞大，这么魁梧的野兽。&quot;
 
 亚伯的手突然从裤子上拉开，&quot;我们可以走了吗？我不想再靠近这个恶魔了。&quot;
 
@@ -47250,7 +47249,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 你的家就在几步之遥。
 
-[[回家休息-&gt;intro_wake_up]]</tw-passagedata><tw-passagedata pid="1448" name="intro_fail" tags="" position="975,18100" size="100,100">这种气味...你面前野兽的雄性气概。这几乎让你忍不住了。你放下剑跪在地上。
+[[回家休息-&gt;intro_wake_up]]</tw-passagedata><tw-passagedata pid="1448" name="intro_fail" tags="" position="975,18100" size="100,100">这种气味……你面前野兽的雄性气概。这几乎让你忍不住了。你放下剑跪在地上。
 你听到阿贝尔的武器发出的咔嗒声，他和你一起来到了那片越来越大的充满佳肴的水池边。
 
 权力。巨大。增长。如果你屈服，你现在就可以拥有它。迷失者不是在追捕你，而是给你一个成为强者，成为更伟大的人的机会。
@@ -47272,7 +47271,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 有一块被染成了黑色。你紧紧攥着这块布。
 
-\&lt;&lt;run setup.choice(&quot;[[把它吸入-&gt; intro_inhale_cloth]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[闻它-&gt; intro_inhale_cloth]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[扔掉它-&gt; intro_throw_away_cloth]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1451" name="intro_inhale_cloth" tags="" position="100,18225" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
 真走运。这东西至少能让你体验一次古怪的高潮——刚好足够让你感受到那种被禁止的快感。
 
@@ -47305,13 +47304,13 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 \&lt;&lt;run setup.choice(&quot;[[离开-&gt; intro_no_herald]]&quot;);&gt;&gt;
 \&lt;&lt;else&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[离开-&gt; intro_leave_home]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1454" name="intro_no_herald" tags="" position="475,18225" size="100,100">离开舒适的家，你在干燥、酷热的空气里穿梭。今天的沙漠绝不会善待拾荒者。
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1454" name="intro_no_herald" tags="" position="475,18225" size="100,100">离开舒适的家，你在干燥、酷热的空气里穿梭。今天的沙漠绝不会善待探索者。
 
 你没有发现使者。
 
 &lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;很好……&lt;/span&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1455" name="intro_leave_home" tags="" position="600,18225" size="100,100">离开舒适的家，你在干燥、酷热的空气里穿梭。今天的沙漠绝不会善待拾荒者。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1455" name="intro_leave_home" tags="" position="600,18225" size="100,100">离开舒适的家，你在干燥、酷热的空气里穿梭。今天的沙漠绝不会善待探索者。
 
 &quot;早上好，瞌睡虫！&quot;你听到亚伯喊到。他旁边站着一个从头到脚都裹着破旧法袍的男人。&quot;过来一下吧。&quot;
 
@@ -47329,7 +47328,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 &quot;克雷不见了，&quot;亚伯看着你困惑的表情，解释到，&quot;也就是说，很明显，你要接他的班了。无语，你的拳头强到要被诅咒了，伙计。&quot;
 
-&quot;那可不是诅咒，亚伯！&quot;使者皱眉，亚伯立刻没声了。&quot;拥有拾荒者的头衔是最高的荣耀之一。这是一个能让你家族的名字载入史册的机会。时间紧迫，立即前往荒地，然后回来向我们报告你发现了什么。&quot;
+&quot;那可不是诅咒，亚伯！&quot;使者皱眉，亚伯立刻没声了。&quot;拥有探索者的头衔是最高的荣耀之一。这是一个能让你家族的名字载入史册的机会。时间紧迫，立即前往荒地，然后回来向我们报告你发现了什么。&quot;
 
 他没给你留下一点点回旋的余地。那个男人离开了你和亚伯，蹒跚地向村庄中心走去。
 
@@ -47587,7 +47586,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;一些卫兵报告说看到克雷在远处的沙丘后面；一个巨大的发着光的狼人被热浪笼罩着。起初，我认为那只是巧合，但最后有太多的卫兵都说着同样的话。&quot;
 
-&quot;我们不得不派遣巡逻队深入荒漠，去看一看那位任性的拾荒者。&quot; 
+&quot;我们不得不派遣巡逻队深入荒漠，去看一看那位任性的探索者。&quot; 
 
 [[继续-&gt;abelHouseDialogue_aboutCray_whereabouts_2]]</tw-passagedata><tw-passagedata pid="1489" name="abelHouseDialogue_aboutCray_whereabouts_2" tags="" position="1100,18600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;angry&quot;)&gt;&gt;
 
@@ -47654,7 +47653,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 [[聊些别的-&gt; Village_AbelHouse]]</tw-passagedata><tw-passagedata pid="1501" name="abelHouseDialogue_aboutCray_achievements_link" tags="" position="100,18850" size="100,100">[[询问克雷的成就-&gt;abelHouseDialogue_aboutCray_achievements]]</tw-passagedata><tw-passagedata pid="1502" name="abelHouseDialogue_aboutCray_achievements" tags="" position="225,18850" size="100,100">&lt;&lt;set $CharacterSheet_Abel.quest.available_crayDialogue_achievements = false&gt;&gt;\
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
-&quot;我该从哪里说起呢？&quot;亚伯摇了摇头。&quot;他可是一号传奇人物。他保持着消灭的迷失者数量最多的记录。杀死动物最多的猎手，生存时间最长的拾荒者，村庄权力最大的人，在所有部门都是。老实说，太多了，根本没办法一一列举。&quot;
+&quot;我该从哪里说起呢？&quot;亚伯摇了摇头。&quot;他可是一号传奇人物。他保持着消灭的迷失者数量最多的记录。杀死动物最多的猎手，生存时间最长的探索者，村庄权力最大的人，在所有部门都是。老实说，太多了，根本没办法一一列举。&quot;
 
 &quot;甚至有追求者向这家伙献殷勤，搞得好像他是村里唯一一缕阳光一样。&quot; 亚伯笑着说。&quot;每个小孩子，包括我自己，长大后都想成为克雷那样牛逼的人。&quot;
 
@@ -47728,7 +47727,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 眼前的这只猫在听你讲述故事时点了点头，嘴唇沮丧地耷拉了下来。
 
-&quot;很抱歉，最近黄金堡垒的气氛太紧张了。两个拾荒者失踪，一个年轻人被任命为新的使者，一时间咎言四起，不得不那样。&quot;
+&quot;很抱歉，最近黄金堡垒的气氛太紧张了。两个探索者失踪，一个年轻人被任命为新的使者，一时间咎言四起，不得不那样。&quot;
 
 亚伯叹了一口气。
 
@@ -47852,7 +47851,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 你同意亚伯的观点，同理心的浪潮席卷了你。
 
-&quot;你是一个拾荒者，&quot;他轻轻地哼着，&quot;也就是说，保护大家的安全是你的首要任务……哦，是我们的首要任务。&quot;
+&quot;你是一个探索者，&quot;他轻轻地哼着，&quot;也就是说，保护大家的安全是你的首要任务……哦，是我们的首要任务。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;abelHouse_protectAbel_agree_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1527" name="abelHouse_protectAbel_agree_2" tags="" position="850,19100" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
 
@@ -47908,7 +47907,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 你尽你所能回答亚伯，解释着腐化对你的影响和这种感觉是不一样的。
 
-他的眼睛仔细审视着你，因为你说要把这种新的力量变成有用的和实际的东西，能够清理以前没有拾荒者能去的地方。
+他的眼睛仔细审视着你，因为你说要把这种新的力量变成有用的和实际的东西，能够清理以前没有探索者能去的地方。
 
 你发现亚伯的眼睛后面闪烁着好奇的光芒。
 
@@ -47981,7 +47980,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 \&lt;&lt;run setup.choice(&quot;[[回家-&gt;Home]]&quot;);&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \
-[[Modify Metabolism-&gt;Modify_Metabolism]]
+[[突破基因锁-&gt;Modify_Metabolism]]
 \
 [[修改战斗行动-&gt;Change_Combo_Moves_Menu]]
 \
@@ -48133,7 +48132,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 在你有机会回应或解释之前，他大声说道：
 
-&quot;荒漠已经对你产生了影响，&lt;&lt;PlayerName&gt;&gt;。就像其他越界的拾荒者一样，你将被放逐，直到你处理好了体内的腐化。&quot;
+&quot;荒漠已经对你产生了影响，&lt;&lt;PlayerName&gt;&gt;。就像其他越界的探索者一样，你将被放逐，直到你处理好了体内的腐化。&quot;
 
 他语气果断，表情坚决。你可以推断，这样的话他已经讲过很多次了。
 
@@ -48165,7 +48164,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village_Normal]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1561" name="Village_Confrontation" tags="Overworld" position="100,19600" size="100,100">周围的卫兵睁大了眼睛。一些人举起武器，但使者举手阻止了他们。每个人都站着，等着有人先捅破这层窗户纸。
 
-使者打破了沉默。
+先驱者打破了沉默。
 &quot;不要接近他！他有传染性，会腐化我们所有人！&quot;
 
 他坚定的目光直勾勾地盯着你。他紧握拳头，手臂开始在一种微妙的白色光环中发光。
@@ -48588,7 +48587,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 \&lt;&lt;run setup.choice(&quot;[[完成-&gt;Modify_Metabolism][setup.applyModifyMetabolism($CharacterSheet_Player, $ModifyMetabolismParams)]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[取消-&gt;Modify_Metabolism]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1619" name="Modify_Metabolism_LimitBreak_Show" tags="" position="1100,20225" size="100,100">它可以突破你肉体的极限$ModifyMetabolismParams.points 次。
 
-&lt;&lt;print setup.onClickMetabolismChange(&#39;Gain extra Limit Break for &#39;+setup.getLimitBreakEssenceCost()+&#39; Essence. ($ModifyMetabolismParams.essence Essence remaining)&#39;, &quot;console.log(&#39;clicked&#39;); if(setup.getLimitBreakEssenceCost() &lt;= $ModifyMetabolismParams.essence) {$ModifyMetabolismParams.points++; $ModifyMetabolismParams.essence -= setup.getLimitBreakEssenceCost();}&quot;)&gt;&gt;
+&lt;&lt;print setup.onClickMetabolismChange(&#39;以&#39;+setup.getLimitBreakEssenceCost()+&#39;精华获得获得额外的数值上限突破次数。（你还剩下$ModifyMetabolismParams.essence点精华。）&#39;, &quot;console.log(&#39;clicked&#39;); if(setup.getLimitBreakEssenceCost() &lt;= $ModifyMetabolismParams.essence) {$ModifyMetabolismParams.points++; $ModifyMetabolismParams.essence -= setup.getLimitBreakEssenceCost();}&quot;)&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;ModifyMetabolismTable&quot;&gt;
@@ -48697,7 +48696,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 非你的手莫属。
 
 \&lt;&lt;run setup.choice(&quot;[[触摸球体-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_2]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[Go back to the village-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1623" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_2" tags="" position="350,20350" size="100,100">没有感觉的感觉。没有颜色概念的颜色。没有空间概念的形状。没有呼吸的低语。
+\&lt;&lt;run setup.choice(&quot;[[回到村庄之中去-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1623" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_2" tags="" position="350,20350" size="100,100">没有感觉的感觉。没有颜色概念的颜色。没有空间概念的形状。没有呼吸的低语。
 
 当你的皮肤接触到陨石的那一刻，它向外爆炸，就像海浪拍打着遥远的海岸。黑色包围着你。混沌包围着你。
 
@@ -48737,23 +48736,23 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 你开始感到一股舒适的暖流席卷全身，击退刺骨的冰寒，把你拉进生命与爱的怀抱。
 
-This feeling is your oasis in this strange, alien expanse.
+这种感觉就如同是你在这片陌生的、异域的广袤土地上的一片绿洲。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1627" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_6" tags="" position="850,20350" size="100,100">The soothing heat seeps into your bones. 
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoFirstEncounter_InvestigateImpact_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1627" name="Quest_MQ001_EchoFirstEncounter_InvestigateImpact_6" tags="" position="850,20350" size="100,100">舒缓的热量渗入你的骨头。
 
-The mist around your feet suddenly disperses, blasted away by some unseen force. 
+你脚周围的薄雾突然消散，被某种看不见的力量吹走了。
 
-Something is moving around you; a powerful aura that spins around your body, playfully. 
+有东西在你周围移动；一种强大的光环，在你的身体周围旋转，如同正在玩耍般地。
 
-Teasingly, it pushes against your chest with strength that nearly topples you over. It suddenly retreats as if it realised it may have caused you harm. The presence in front of you seems to grow stronger. 
+可笑的是，它用力推挤着你的胸部，几乎把你掀翻在地。可随即它却突然退缩，好像意识到自己方才可能对你造成了伤害。你面前的那个存在似乎变得越来越强壮。
 
-From the black, reflective ground before you rises a huge and writhing mass of semi-solid ooze. It seems unstable; its very being rolling through a spectrum of shapes and colours.
+从你面前黑色的、反光的地面上升起一团巨大的、翻腾的半固态软泥。它看起来似乎并不稳定；它在各种形状和颜色中来回切换。
 
-It seems indecisive.
+它似乎犹豫不决。
 
-Curiously, you aren&#39;t terrified in the slightest - whatever this strange creature was, it appears to be the source of the embrace that surrounds you. Your soul resonates with it. It means you no harm, as you mean none to it.
+奇怪的是，你一点也不害怕——不管这个奇怪的生物是什么，它似乎是你周围拥抱着你的能量的的来源。你的灵魂与之产生共鸣。这意味着你是无害的，就如同你对它毫无意义一样。
 
-You smile as it cycles in and out of the appearance of creatures from your memory; some even based on beasts you&#39;ve only heard of in stories. Your mirth increases as it shifts into forms that you and your people could never have dreamed of.
+当它循环切换于你记忆中的生物的外表时，你微笑了；有些生物的外表甚至以你只在故事中听说过的野兽为原型。当它转变成你和你的人民们做梦也想不到的形式时，你的欢乐也随之增加。
 
 它好像在向你寻求帮助，试图确定自身的形状。
 
@@ -48992,7 +48991,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
  
 即使你们都在兴奋中尖叫，紫色的平原上覆盖了一层层的种子，但那怪物的名字在你脑海中出现，清晰异常。 
  
-&lt;&lt;textbox &quot;$CharacterSheet_Player.symbiote.name&quot; &quot;Echo&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$CharacterSheet_Player.symbiote.name&quot; &quot;回响&quot;&gt;&gt;
 \&lt;&lt;run setup.completeQuest($Quest_MQ001_01)&gt;&gt;
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_EchoForm)&gt;&gt;
  
@@ -49052,7 +49051,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 
 他犹豫了一会儿，上下打量着你，最后小心翼翼地说，&quot;真的是你吗？你消失过后，看起来……不太一样了。&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1646" name="Quest_MQ001_EchoPostMerge_3_senna" tags="" position="725,20600" size="100,100">你回想起过去和你一起工作过的卫兵。塞纳的名字出现在你的脑海中，他是训练你和亚伯的教官之一。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_passive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1646" name="Quest_MQ001_EchoPostMerge_3_senna" tags="" position="725,20600" size="100,100">你回想起过去和你一起工作过的卫兵。塞纳的名字出现在你的脑海中，他是训练你和亚伯的教官之一。
 
 &quot;塞纳？&quot;卫兵放下了他攻击性的姿态，但他的肩膀耷拉下来，悲伤的线条爬上了他的脸颊，&quot;好吧，这也是证明你身份的方式之一，虽然你明明可以选择让人没那么沮丧的办法。&quot;
 
@@ -49064,13 +49063,13 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 
 守卫拔出了他的剑，铿锵的钢铁声打断了你的思绪，&quot;我不知道你是谁，也不知道你想从我们这里得到什么……但你要么离开，要么就死！&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_aggressive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1648" name="Quest_MQ001_EchoPostMerge_2_Eldest" tags="" position="975,20600" size="100,100">卫兵的身体紧绷起来，他握着剑柄的手显露出对你的不信任。但他没有抽出剑。他的喉咙发出了一阵沮丧的咆哮。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoPostMerge_3_Meet_Abel_aggressive]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1648" name="Quest_MQ001_EchoPostMerge_2_Eldest" tags="" position="975,20600" size="100,100">卫兵的身体紧绷起来，他握着剑柄的手显露出对你的不信任。但他没有抽出剑。他的喉咙发出了一阵沮丧的咆哮。
 
 &quot;如果你是为了和我们领袖谈事来的，那你必须和那些直接与他对接的人谈谈。在这儿等着，我去叫人，&quot;他用平静而谨慎的语调说，&quot;但是如果你在说谎，你会付出惨痛的代价。&quot;
 
 他进黄金堡垒的时候，指派了一个同事来监视你。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;Quest_MQ001_EchoPostMerge_2_Eldest_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1649" name="Quest_MQ001_EchoPostMerge_2_Eldest_2" tags="" position="1100,20600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ001_EchoPostMerge_2_Eldest_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1649" name="Quest_MQ001_EchoPostMerge_2_Eldest_2" tags="" position="1100,20600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;normal&quot;)&gt;&gt;
 
 等待简直是一种折磨，直到他带着熟悉的面孔到来。
 
@@ -49203,12 +49202,12 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 你发出的是短而浅的喘息。粘液继续它的旅程，让你身体里的每一个神经末梢都欲火中烧。
 
 [[继续前进-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_6]]</tw-passagedata><tw-passagedata pid="1676" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_6" tags="" position="725,20975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
-它到达了你存在的中心，并最终释放出了它的全部力量。你感觉你的欲望快要爆炸了。
-你拱起了背，尖叫着，达到了快乐的顶峰。粘液渗透到了你的每一个角落，淫水抽射，永无止境。
+粘液进入了你的内心，并最终释放出了它的全部力量。你感觉你的欲望快要爆炸了。
+你拱起了背，尖叫着，登上了快乐的顶峰。粘液渗透到了你的每一个角落，淫水抽射，永无止境。
 
-太多了，好难忍受！
+这种感觉太强烈了，简直难以忍受！
 
-&lt;span class=&quot;glitch nyx&quot; data-text=&quot;CORRUPT GROW FUCK&quot;&gt;&quot;Give in...&quot;&lt;/span&gt;
+&lt;span class=&quot;glitch nyx&quot; data-text=&quot;腐化 生长 性交&quot;&gt;&quot;放弃……&quot;&lt;/span&gt;
 
 [[屈服-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_7]]</tw-passagedata><tw-passagedata pid="1677" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_7" tags="" position="850,20975" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 8)&gt;&gt;
@@ -49237,7 +49236,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 但你已经习惯了这种感觉。
 
 [[继续-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Corrupted_4]]</tw-passagedata><tw-passagedata pid="1682" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Corrupted_4" tags="" position="225,21100" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-你的每一步都会让脚深深地陷进满是腐化地水里，让你越来越性奋。
+你的每一步都会让脚深深地陷进满是腐化的水里，这让你越来越性奋。
 你在水中行走，每一个动作都散发着一种不可否认的力量。
 
 温暖。诱人。它轻轻抚摸着你的皮肤，直到包裹着你的身体，开始渗入你的血管。
@@ -49283,7 +49282,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 
 太多了，好难忍受！
 
-&lt;span class=&quot;glitch nyx&quot; data-text=&quot;CORRUPT GROW FUCK&quot;&gt;&quot;Give in...&quot;&lt;/span&gt;
+&lt;span class=&quot;glitch nyx&quot; data-text=&quot;腐化 生长 性交&quot;&gt;&quot;放弃……&quot;&lt;/span&gt;
 
 [[屈服-&gt;Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Corrupted_7]]</tw-passagedata><tw-passagedata pid="1687" name="Quest_MQ001_EchoFirstEncounter_Lake_CrossIt_Corrupted_7" tags="" position="850,21100" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 8)&gt;&gt;
@@ -49538,7 +49537,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 
 他被腐化的身躯呼唤着你。
 
-&lt;span class=&quot;glitch nyx&quot; data-text=&quot;CORRUPT GROW FUCK&quot;&gt;&quot;Grow. Fuck. Spread.&quot;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="1736" name="LostPrisoner_MainMenu_Normal" tags="Overworld" position="725,21725" size="100,100">即使被锁在墙上，这个巨大狼人的肌肉也鼓胀着力量。
+&lt;span class=&quot;glitch nyx&quot; data-text=&quot;腐化 生长 传播&quot;&gt;&quot;生长。做爱。传播。&quot;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="1736" name="LostPrisoner_MainMenu_Normal" tags="Overworld" position="725,21725" size="100,100">即使被锁在墙上，这个巨大狼人的肌肉也鼓胀着力量。
 他戴着沉重的铁项圈，手脚被粗麻绳捆着。
 
 你能感觉到从他身上散发出来的原始的饥渴。
@@ -49552,7 +49551,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 
 &lt;&lt;print setup.getNextNarativeEventPassageListText(setup.StorySheet_Player.lukkaHouseLinks, 3)&gt;&gt;\
 
-\&lt;&lt;run setup.choice(&quot;[[离开-&gt; Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1740" name="LukkaHouse_MainMenu_Normal" tags="Overworld" position="1225,21725" size="100,100">卢卡的实验室里到处都是灰尘。可以闻到微弱的腐化的气味，但没有侵入性。一定是来自他无数的实验。</tw-passagedata><tw-passagedata pid="1741" name="LukkaHouse_MainMenu_Huge" tags="Overworld" position="100,21850" size="100,100">你和卢卡一起站在他的后院，因为你不可能挤进他的实验室。</tw-passagedata><tw-passagedata pid="1742" name="LukkaHouse_CorruptionLore_Low_Link" tags="Overworld" position="225,21850" size="100,100">[[询问腐化-&gt;LukkaHouse_CorruptionLore_Low]]
+\&lt;&lt;run setup.choice(&quot;[[离开-&gt; Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1740" name="LukkaHouse_MainMenu_Normal" tags="Overworld" position="1225,21725" size="100,100">卢卡的实验室里到处都是灰尘。可以闻到一些微弱的腐化的气味，但这些腐化没有侵入性。一定是来自他无数的实验。</tw-passagedata><tw-passagedata pid="1741" name="LukkaHouse_MainMenu_Huge" tags="Overworld" position="100,21850" size="100,100">你和卢卡一起站在他的后院，因为你不可能挤进他的实验室。</tw-passagedata><tw-passagedata pid="1742" name="LukkaHouse_CorruptionLore_Low_Link" tags="Overworld" position="225,21850" size="100,100">[[询问腐化-&gt;LukkaHouse_CorruptionLore_Low]]
 \</tw-passagedata><tw-passagedata pid="1743" name="LukkaHouse_CorruptionLore_Low" tags="Overworld" position="350,21850" size="100,100">&lt;&lt;set $CharacterSheet_Player.quest.available_lukkaHouse_askCorruption = false&gt;&gt;
 &quot;你绝对不会想碰这种黏糊糊的东西的。它是一种危险的、腐败的物质，可以导致肌肉快速生长。&quot;
 
@@ -49597,7 +49596,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 &quot;它很危险，而且目前已知它会导致各种各样的突变，从力量和身体大小的增加到更奇怪的变化。&quot;
 
 [[问他为什么身上还带着一些-&gt;LukkaHouse_MainMenu]]
-[[继续-&gt;LukkaHouse_MainMenu]]</tw-passagedata><tw-passagedata pid="1751" name="LukkaHouse_LostLore_Link" tags="Overworld" position="100,21975" size="100,100">[[Ask about the Lost-&gt;LukkaHouse_LostLore]]
+[[继续-&gt;LukkaHouse_MainMenu]]</tw-passagedata><tw-passagedata pid="1751" name="LukkaHouse_LostLore_Link" tags="Overworld" position="100,21975" size="100,100">[[询问有关迷失者的事情-&gt;LukkaHouse_LostLore]]
 \</tw-passagedata><tw-passagedata pid="1752" name="LukkaHouse_LostLore" tags="Overworld" position="225,21975" size="100,100">&lt;&lt;set $CharacterSheet_Player.quest.available_lukkaHouse_askLost = false&gt;&gt;
 你几乎可以感觉到卢卡吞咽口水时的紧张。
 
@@ -49744,7 +49743,7 @@ You smile as it cycles in and out of the appearance of creatures from your memor
 
 他带着温暖的微笑走近，你几乎可以感觉到他身上散发出的能量。
 
-\&lt;&lt;run setup.choice(&quot;[[Continue-&gt;LukkaHouse_MainMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1777" name="Quest_MQ002_ApothusRealm_Entrance" tags="" position="850,22225" size="100,100">你向前走了一步，立刻感到空气中有一种压倒性的重量。潮湿、麝香，还带着腐化的味道。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;LukkaHouse_MainMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1777" name="Quest_MQ002_ApothusRealm_Entrance" tags="" position="850,22225" size="100,100">你向前走了一步，立刻感到空气中有一种压倒性的重量。潮湿、麝香，还带着腐化的味道。
 
 一片漆黑、虚无的空间包裹着你。尼克斯包罗万象的存在只会放大它的黑暗。
 
@@ -52493,7 +52492,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 你感到胸部的重量突然变重了，但你不在乎。当快感巨浪呼啸而过，将你卷向高潮时，你用力推起杠铃，剧烈的快感和推举的痛苦使你的脚趾弯曲，背部弓起。
 
 \&lt;&lt;run setup.choice(&quot;[[忍不住了-&gt;WestWing_GymRoom_9]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2062" name="WestWing_GymRoom_9" tags="" position="225,25850" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
-你闭上眼睛,把杆推到顶端,与此同时你终于达到高潮,并且不受控制地发出呻吟。
+你闭上眼睛,把举重杆推到顶端,与此同时你终于达到高潮,并且不受控制地发出呻吟。
 
 迷失者和你一起达到高潮，快感具象化为你们不绝于耳的呻吟声和野兽的咆哮声，填满了这间小小健身房。
 
@@ -52818,13 +52817,13 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 &lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/Barrens/northernbarrens.jpg&quot;, undefined, undefined, true)&gt;&gt;
 一个卫兵在东门的入口处等待着你。他的表情很难读懂，那是一种被严酷生活反复折磨所铺就的悲伤。
 
-&quot;听说你就是新来的拯救者。&quot; 他上下打量着你。
+“听说你就是新来的救世主。”他上下打量着你。
 
 突然，他转身推开那扇很大的破旧大门。它吱吱作响，留下一个足够小的缝隙让你挤过去。
 
-&quot;在那边你要小心谨慎；我们需要你完好无损地回来。&quot;他喃喃地说。
+“在那边你要小心谨慎；我们需要你完好无损地回来。”他喃喃地说。
 
-&quot;而且还要身心健全地回来。&quot;
+“而且还要身心健全地回来。”
 
 \&lt;&lt;run setup.choice(&quot;[[穿过大门-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2100" name="Explore_NorthMeteorFall" tags="" position="1225,26225" size="100,100">\&lt;&lt;set $CharacterSheet_Player.quest.available_exploration_villageGateNorth_northMeteorFall = false&gt;&gt;
@@ -52854,7 +52853,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 守卫的声音从入口处传来。
 
-&quot;感谢上苍，幸亏他是我们这边的。&quot;
+“感谢上苍，幸亏他是我们这边的。”
 
 \&lt;&lt;run setup.choice(&quot;[[穿过大门-&gt;$Explore_Destination][$Encounter_Target = setup.getRandomEncounter(0)]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2104" name="Explore_NorthVisibleCorruption" tags="" position="475,26350" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/Barrens/northernbarrens.jpg&quot;, undefined, undefined, true)&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Player.quest.available_exploration_villageGateNorth_northVisibleCorruption = false&gt;&gt;
@@ -53156,7 +53155,7 @@ Gumroad: https://gumroad.com/sombreve
 \&lt;&lt;set $Intro_Passage = &quot;intro_wake_up&quot;&gt;&gt;
 \&lt;&lt;goto [[Ending]]&gt;&gt;
 \&lt;&lt;/button&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2126" name="Purgatory" tags="" position="725,26600" size="100,100"></tw-passagedata><tw-passagedata pid="2127" name="UpgradeSave" tags="" position="850,26600" size="100,100">This save file is not compatible with the current version, but you can still restart a new life with your accumulated Essence, Achievements and Exp.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2126" name="Purgatory" tags="" position="725,26600" size="100,100"></tw-passagedata><tw-passagedata pid="2127" name="UpgradeSave" tags="" position="850,26600" size="100,100">这个存档文件与当前游戏版本不兼容，但你仍然可以用你积累的精华、成就和经验重新开始新的游戏。
 
 &lt;div class=&quot;ExitPopupButtons&quot;&gt;
 \&lt;&lt;button &quot;开始一段新的旅途&quot;&gt;&gt;
