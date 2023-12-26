@@ -149,6 +149,7 @@
 |yes|incubus|n.梦魇|男性魅魔|
 |yes|Lukka|name.卢卡||
 |yes|Essence reservoir|n.精华池||
+|yes|Unnatural Growth|n.非自然生长||
 ---
 
 ## **三、代码查疑**
