@@ -148,7 +148,7 @@
 |yes|Ethrex|name.埃塞克斯||
 |yes|incubus|n.梦魇|男性魅魔|
 |yes|Lukka|name.卢卡||
-|yes|Essence reservoir|n.精华池||
+|yes|Essence reservoir|n.精华汇池||
 |yes|Unnatural Growth|n.非自然生长||
 ---
 
