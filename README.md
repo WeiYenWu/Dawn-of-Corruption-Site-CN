@@ -150,6 +150,8 @@
 |yes|Lukka|name.卢卡||
 |yes|Essence reservoir|n.精华汇池||
 |yes|Unnatural Growth|n.非自然生长||
+|yes|Abomination|name.恶煞||
+|yes|Ferro|name.费罗||
 ---
 
 ## **三、代码查疑**
