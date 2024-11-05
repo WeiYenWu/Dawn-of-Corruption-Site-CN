@@ -48,16 +48,15 @@
 |yes|Wasteland|n.荒原；不毛之地|游戏内目前主要有东、西部荒原两大地点可供玩家自由探索|
 |yes|Nyx|name.倪克斯|游戏内能在一定程度上控制宿主思想行为的一种寄生虫|
 |yes|The Lost Naga|name.被腐化的纳迦||
-|yes|Nyx Spawn Infection|感染尼克斯之卵|此乃游戏里的一个常驻效果，随着层数增高，你的腐化值也就越高，但同样还伴随着对玩家数值的增强|
+|yes|Nyx Spawn Infection|感染尼克斯幼体|此乃游戏里的一个常驻效果，随着层数增高，你的腐化值也就越高，但同样还伴随着对玩家数值的增强|
 |yes|spawn|n.(Nyx)幼体；卵|直译为卵，但通过游戏立绘可知这玩意指nyx的时候并不是指nyx的卵而是nyx幼体|
 |yes|Essence|n.精华；本质|鸡儿环/项圈的剧情里有出现这个单词，目前译为精华即可|
-|yes|Forth|name.福斯|鸡儿环的名字|
 |yes|Symbiote|name.共生体|主角前期就能获得的一个类似毒液的依附在主角身体里的伙伴一样的存在，在战斗里面很猛|
 |yes|Barrens|n.荒漠|专有地名，游戏中同样也有非专有名词形式的barren和barrens;the Northen Barrens即为北方荒漠|
 |yes|the Bind|name.绑定者|阴茎环/项圈的称谓|
 |yes|cock ring|n.鸡巴环，锁精环，阴茎环||
 |yes|Apothus|name.阿波图斯||
-|yes|hood|n.（纳迦的）头侧皮褶|在纳迦剧情内疑似指纳迦头周类似眼镜蛇一样的结构:颈部皮褶，这个词同样有兜帽及覆盖的意思，但是结合立绘来看貌似纳迦并不穿衣服，具体情况具体分析|
+|yes|hood|n.（纳迦的）肉翼；头罩；头侧皮褶|在纳迦剧情内疑似指纳迦头周类似眼镜蛇一样的结构:颈部皮褶，这个词同样有兜帽及覆盖的意思，但是结合立绘来看貌似纳迦并不穿衣服，具体情况具体分析|
 |yes|black cocoon|n.黑茧||
 |yes|serpent|n.大蛇||
 |yes|the Golden Bastion|n.黄金堡垒|游戏中玩家一开始的出生点|
