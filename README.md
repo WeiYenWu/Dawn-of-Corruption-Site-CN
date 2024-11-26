@@ -151,6 +151,8 @@
 |yes|Unnatural Growth|n.非自然生长||
 |yes|Abomination|name.恶煞||
 |yes|Ferro|name.费罗||
+|yes|Timeless Bond|n.永恒羁绊|亚伯腐化线获得的新能力|
+|yes|Corruption Inhibitor|n.腐化抑制剂|亚伯治愈线新获得的能力|
 ---
 
 ## **三、代码查疑**
