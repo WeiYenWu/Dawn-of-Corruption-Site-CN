@@ -11478,7 +11478,7 @@ setup.displayCorruptSidebar = function(character)
 	var displayString = "";
 
 	displayString +=  "<span class='corruptText100'>";
-	displayString +=  "<span class='glitch nyx fucked' data-text='̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷̴͇͕͛́͘Ṫ̶̖Ḩ̵̰̈Ȅ̷̥̄ ̴̛̣̟̃Ā̸͜G̴͇̗̅͝Ḙ̴͋͐ ̶̪̖̑O̸̙͛̀F̴̡̖̊͆ ̸̠̥̇͐N̴̬͑Y̸̰̔X̴͚́ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ '>̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ 尼克斯的时代ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ </span> \n";
+	displayString +=  "<span class='glitch nyx fucked' data-text='̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷̴͇͕͛́͘Ṫ̶̖Ḩ̵̰̈Ȅ̷̥̄ ̴̛̣̟̃Ā̸͜G̴͇̗̅͝Ḙ̴͋͐ ̶̪̖̑O̸̙͛̀F̴̡̖̊͆ ̸̠̥̇͐N̴̬͑Y̸̰̔X̴͚́ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ '>̶̱̍̔ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ 倪克斯的时代ɟ̷͓͔̌ı̴͕͇͎̊ɹ̴̗͇͂͑̀ͅs̴̰͖̆ʇ̷͇͛ </span> \n";
 	displayString +=  "<div id='SidebarDivisionTop'>"+setup.getCorruptSidebarDividerTop()+"</div>";
 	displayString += "<div class='stat-window-offset'>"
 	displayString += 	"<div class='info-row'>"
@@ -27295,7 +27295,7 @@ Config.ui.stowBarInitially = false;
 	fightMoveIDs: [setup.FightMove_WitheringVenom.id],
 	fightReward: setup.RewardTier.HIGH,
 	encounterIntroText: &quot;&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_FightIntro&gt;&gt;&quot;,
-	encounterStartText: &quot;尼克斯的幼体默默地向你爬行。&quot;,
+	encounterStartText: &quot;倪克斯的幼体默默地向你爬行。&quot;,
 	outcomePlayerWins: &quot;&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_PlayerWins&gt;&gt;&quot;,
 	outcomePlayerLoses: &quot;&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_PlayerLoses&gt;&gt;&quot;
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="186" name="_nyx_parasite_info_sheet" tags="" position="725,2350" size="100,100">&lt;&lt;set setup.InfoSheet_MQ002_NyxParasite =
@@ -33727,7 +33727,7 @@ Config.ui.stowBarInitially = false;
     }
 )&gt;&gt;</tw-passagedata><tw-passagedata pid="451" name="Ability_MemoriesOfNyx" tags="" position="100,5725" size="100,100">&lt;&lt;set setup.Ability_MemoriesOfNyx = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_MemoriesOfNyx&quot;,
-    name:       &quot;尼克斯的记忆&quot;,
+    name:       &quot;倪克斯的记忆&quot;,
     description:function(character)
     {
         return &quot;纯粹的、腐化的遥远愿景在你的灵魂中回响。&quot;; 
@@ -34078,10 +34078,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_NeverendingGrowth.setCategory(setup.AbilityCategory.GROWTH)&gt;&gt;
 &lt;&lt;set setup.Ability_NeverendingGrowth.setGrade(setup.AbilityGrade.HIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="459" name="Ability_NyxInducedWorkout" tags="" position="1100,5725" size="100,100">&lt;&lt;set setup.Ability_NyxInducedWorkout = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxInducedWorkout&quot;,
-    name:       &quot;尼克斯诱导的锻炼&quot;,
+    name:       &quot;倪克斯诱导的锻炼&quot;,
     description:function(character, abilityRuntimeData)
     {
-        let displayString = &quot;在尼克斯的健身室里锻炼，使你的肌肉具有不可思议的增长潜力。&quot;;
+        let displayString = &quot;在倪克斯的健身室里锻炼，使你的肌肉具有不可思议的增长潜力。&quot;;
         return displayString
     },
     maxRank: 999
@@ -34104,9 +34104,9 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_NyxInducedWorkout.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="460" name="Ability_NyxParasiteInfection" tags="" position="1225,5725" size="100,100">&lt;&lt;set setup.Ability_NyxParasiteInfection = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxParasiteInfection&quot;,
-    name:       &quot;感染尼克斯幼体&quot;, 
+    name:       &quot;感染倪克斯幼体&quot;, 
     description:function(character){
-        return &quot;尼克斯的造物寄宿在你的身体里。你必须保护这些幼体……&quot;
+        return &quot;倪克斯的造物寄宿在你的身体里。你必须保护这些幼体……&quot;
     },
     maxRank: 10
 })&gt;&gt;
@@ -34147,9 +34147,9 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_NyxParasiteInfection.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="461" name="Ability_NyxParasiteInfection_2" tags="" position="100,5850" size="100,100">&lt;&lt;set setup.Ability_NyxParasiteInfection_2 = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxParasiteInfection_2&quot;,
-    name:       &quot;尼克斯幼体之君王&quot;, 
+    name:       &quot;倪克斯幼体之君王&quot;, 
     description:function(character){
-        return &quot;你体内孕育了无数的尼克斯幼体。\n你体内的每一条寄生虫都能让你得到最小为1的唤醒值。\n你必须传播。\n你必须做爱。\n你必须生长。&quot;
+        return &quot;你体内孕育了无数的倪克斯幼体。\n你体内的每一条寄生虫都能让你得到最小为1的唤醒值。\n你必须传播。\n你必须做爱。\n你必须生长。&quot;
     },
     maxRank: 15
 })&gt;&gt;
@@ -34184,7 +34184,7 @@ maxRank: 1
     name:       &quot;遏制之誓&quot;,
     description:function(character)
     {
-        return &quot;链式花纹纹在你的手臂上。\n只要尼克斯的信徒们保持被封印的状态，这一誓言就会持续。&quot;; 
+        return &quot;链式花纹纹在你的手臂上。\n只要倪克斯的信徒们保持被封印的状态，这一誓言就会持续。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -34202,10 +34202,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_Oath_Containment.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="463" name="Ability_Oath_Nyx" tags="" position="350,5850" size="100,100">&lt;&lt;set setup.Ability_Oath_Nyx = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_Oath_Nyx&quot;,
-    name:       &quot;尼克斯之誓&quot;,
+    name:       &quot;倪克斯之誓&quot;,
     description:function(character)
     {
-        return &quot;紫色漩涡状纹身卷曲在你的躯干左侧。\n只要你努力向世界传播尼克斯，这个誓言就会一直持续下去。&quot;; 
+        return &quot;紫色漩涡状纹身卷曲在你的躯干左侧。\n只要你努力向世界传播倪克斯，这个誓言就会一直持续下去。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -36055,10 +36055,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_TorgarsCorruption.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="508" name="Ability_EmbracedByNyxsLight" tags="" position="975,6350" size="100,100">&lt;&lt;set setup.Ability_EmbracedByNyxsLight = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_EmbracedByNyxsLight&quot;,
-    name:       &quot;尼克斯光芒之拥&quot;,
+    name:       &quot;倪克斯光芒之拥&quot;,
     description:function(character)
                 {
-                    return &quot;你的身体在此地时正在不断吸收尼克斯的光芒。你获得唤醒的速度会加快40%。&quot;; 
+                    return &quot;你的身体在此地时正在不断吸收倪克斯的光芒。你获得唤醒的速度会加快40%。&quot;; 
                 },
     maxRank:    1
 })&gt;&gt;
@@ -36080,10 +36080,10 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_EmbracedByNyxsLight.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="509" name="Ability_TouchedByNyxsLight" tags="" position="1100,6350" size="100,100">&lt;&lt;set setup.Ability_TouchedByNyxsLight = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_TouchedByNyxsLight&quot;,
-    name:       &quot;尼克斯光芒之触&quot;,
+    name:       &quot;倪克斯光芒之触&quot;,
     description:function(character)
                 {
-                    return &quot;你的身体在此地时正在不断吸收尼克斯的光芒。你获得唤醒的速度会加快15%。&quot;; 
+                    return &quot;你的身体在此地时正在不断吸收倪克斯的光芒。你获得唤醒的速度会加快15%。&quot;; 
                 },
     maxRank:    1
 })&gt;&gt;
@@ -36874,13 +36874,13 @@ maxRank: 5
     name:       &quot;腐化深渊的探索者&quot;,
     description:function(character)
     {
-        return &quot;你已经经历了尼克斯的所有扭曲挑战。&quot;; 
+        return &quot;你已经经历了倪克斯的所有扭曲挑战。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_ExplorerOfCorruptedDepths.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_ExplorerOfCorruptedDepths.achievementInfo = &quot;完全探索尼克斯城堡的每个房间。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_ExplorerOfCorruptedDepths.achievementInfo = &quot;完全探索倪克斯城堡的每个房间。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_ExplorerOfCorruptedDepths.addBehaviour(
     &quot;start&quot;,
@@ -36965,7 +36965,7 @@ maxRank: 5
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_HostOfTheSpawns.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_HostOfTheSpawns.achievementInfo = &quot;吸取5个尼克斯的幼体。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_HostOfTheSpawns.achievementInfo = &quot;吸取5个倪克斯的幼体。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_HostOfTheSpawns.addBehaviour(
     &quot;start&quot;,
@@ -37035,7 +37035,7 @@ maxRank: 5
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_LordOfTheSpawns.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_LordOfTheSpawns.achievementInfo = &quot;吸取15个尼克斯的幼体。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_LordOfTheSpawns.achievementInfo = &quot;吸取15个倪克斯的幼体。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_LordOfTheSpawns.addBehaviour(
     &quot;start&quot;,
@@ -37227,7 +37227,7 @@ maxRank: 5
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_MemoriesOfTheMinotaur.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_MemoriesOfTheMinotaur.achievementInfo = &quot;把尼克斯的力量带给牛头人。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_MemoriesOfTheMinotaur.achievementInfo = &quot;把倪克斯的力量带给牛头人。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_MemoriesOfTheMinotaur.addBehaviour(
     &quot;start&quot;,
@@ -39437,7 +39437,7 @@ maxRank: 5
 	{
         var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
         var displayString = &quot;熟悉的传送门打开的声音在你们两个人之间响起。\n&quot;;
-        displayString += &quot;&quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot;长的尼克斯幼体的黑色不透明皮肤探出头来，跳向&quot;+ target.info.name;
+        displayString += &quot;&quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot;长的倪克斯幼体的黑色不透明皮肤探出头来，跳向&quot;+ target.info.name;
 		return displayString;
 	},
 	attackHitDesc: function(character, target)
@@ -39464,7 +39464,7 @@ maxRank: 5
 	critMod: 0,
 	comboCost: 3,
 	skillStatsToDescriptionSpacing: 1,
-	skillDescription: &quot;带来尼克斯的后代。&quot;,
+	skillDescription: &quot;带来倪克斯的后代。&quot;,
 	skillType: &quot;demon&quot;,
 	skillTheme: &quot;demon&quot;,
 	additionalEffects: [setup.witheringVenom]
@@ -40568,11 +40568,11 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 “你到底是什么东西？你身体里面的这个东西是什么？”他的双手紧握成拳，再次凝视着黑日，眼中带着痛苦。
 
-“你只不过是我们画布上的污点。”他再也不愿看着你了，眼睛注视着尼克斯。
+“你只不过是我们画布上的污点。”他再也不愿看着你了，眼睛注视着倪克斯。
 
-“我不能让你靠近我们的天选之人……拜托了，尼克斯……”他的目光落在你周围的迷失者身上。 他们神色激动地看着他。
+“我不能让你靠近我们的天选之人……拜托了，倪克斯……”他的目光落在你周围的迷失者身上。 他们神色激动地看着他。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusEncounter_PlayerWins_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="681" name="Quest_MQ002_ApothusEncounter_PlayerWins_1" tags="" position="100,8600" size="100,100">&quot;给我力量保护他，这样你才可以拥有你应得的容器！&quot; 他大喊着，张开双臂，仿佛要拥抱尼克斯。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusEncounter_PlayerWins_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="681" name="Quest_MQ002_ApothusEncounter_PlayerWins_1" tags="" position="100,8600" size="100,100">&quot;给我力量保护他，这样你才可以拥有你应得的容器！&quot; 他大喊着，张开双臂，仿佛要拥抱倪克斯。
 
 一个迷失者跳向他，他的头撞到了阿波图斯的胸膛上。黑色的粘稠物溅满了他的全身，迅速地在周围蔓延和打转。
 当他疯狂地笑着时，他的纹身呈现出明亮的紫色。
@@ -40610,7 +40610,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 “似乎你还没有准备好接受我能提供给你的东西。”他用失望的语气说道。
 
-“我们被困在了一个永无止境的充满欲望和贪婪的循环。它只会把我们撕裂，直到我们都躺在沙原上身心俱疲。尼克斯是终止这个循环的唯一方式，因为它的光线向世界展示了不同的一面。”
+“我们被困在了一个永无止境的充满欲望和贪婪的循环。它只会把我们撕裂，直到我们都躺在沙原上身心俱疲。倪克斯是终止这个循环的唯一方式，因为它的光线向世界展示了不同的一面。”
 
 他朝你走去，手掌慢慢向你的后脑勺移动。
 
@@ -40725,7 +40725,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 日子一天天过去，你陶醉在不断的放荡中，你的信徒每天都在增加。 你永远不会停止扩张，变得越来越大，永不停止。
 每隔几分钟，当大地再一次充满你受污染的精种时，无数怪物会高兴地咆哮。
 
-但是很快，你的需求变得越来越强烈。你的思绪回到了尼克斯。
+但是很快，你的需求变得越来越强烈。你的思绪回到了倪克斯。
 
 不过你知道，你自己达到它的境界只是时间问题。
 
@@ -40775,7 +40775,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerWins_3_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="706" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerWins_3_2" tags="" position="725,8850" size="100,100">&lt;&lt;print setup.displayEncounterImage($CharacterSheet_Apothus_2nd_Form.info.picture)&gt;&gt;
 
-他的手伸向尼克斯。他的提成神是如此的接近完成。
+他的手伸向倪克斯。他的提成神是如此的接近完成。
 
 如此的接近！
 
@@ -41217,7 +41217,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 
 他的手臂突然泛起明亮的白光。
 
-&quot;即使这意味着我会死在这里，即使这意味着会解放尼克斯教派。&quot;他跌跌撞撞地站了起来，光线越来越强，甚至让人眼花缭乱。
+&quot;即使这意味着我会死在这里，即使这意味着会解放倪克斯教派。&quot;他跌跌撞撞地站了起来，光线越来越强，甚至让人眼花缭乱。
 
 &quot;我会继续战斗，只要我的灵魂还是光明和善良的，我就会回来。&quot;
 
@@ -43687,7 +43687,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 ∇: 你获得了8点腐化。
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 8)&gt;&gt;
 \&lt;&lt;run setup.MQ002_AddNyxParasiteInfection()&gt;&gt;
-∇: 你获得了能力&quot;感染尼克斯幼体&quot;。
+∇: 你获得了能力&quot;感染倪克斯幼体&quot;。
 \
 
 \&lt;&lt;print setup.clearWestWingRoom(&quot;WestWing_NyxSpawnFight&quot;)&gt;&gt;
@@ -46433,7 +46433,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 腰间瞬时涌来的暖流使你娇喘不断，口中不断地哈出白雾。
 
 这种暴力毫无意义。树立敌人毫无意义。
-&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;生G̶̠͉͖͐R̴̛̎̔̚͜Ȍ̵̹̹̹̖̅W̷̨͊̾̚͠长&quot;&gt;一切都将&lt;/span&gt;&lt;span class=&quot;glitch nyx&quot; data-text=&quot;S̶͔̣͈͕̥̆̎̔͑́́̈̿̾̆͝͝ͅP̶̼̺̪̘͚̱͓̙̭̙͐̇̄̐̍̋̅̅̆̕͘͘͠R̴̦̩͕̙̿͆͌̾̈́̏͐̕E̶̡̧̝̭̩̪̜͙͋̓̿̓͝A̴̜̘͚̜͕̜̙̺͎̤͋̀̓̀̊̂̔̿͑̾̐̀̃͐̑̾͜͜ͅD̶̢̘͚̹̦̟̈́͒͐͆́͘&quot;&gt;瞻仰&lt;/span&gt;&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;尼克斯之主&lt;/span&gt;
+&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;生G̶̠͉͖͐R̴̛̎̔̚͜Ȍ̵̹̹̹̖̅W̷̨͊̾̚͠长&quot;&gt;一切都将&lt;/span&gt;&lt;span class=&quot;glitch nyx&quot; data-text=&quot;S̶͔̣͈͕̥̆̎̔͑́́̈̿̾̆͝͝ͅP̶̼̺̪̘͚̱͓̙̭̙͐̇̄̐̍̋̅̅̆̕͘͘͠R̴̦̩͕̙̿͆͌̾̈́̏͐̕E̶̡̧̝̭̩̪̜͙͋̓̿̓͝A̴̜̘͚̜͕̜̙̺͎̤͋̀̓̀̊̂̔̿͑̾̐̀̃͐̑̾͜͜ͅD̶̢̘͚̹̦̟̈́͒͐͆́͘&quot;&gt;瞻仰&lt;/span&gt;&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;倪克斯之主&lt;/span&gt;
 
 你紧紧抱住他，只是不再勒住他的脖子，而是支撑住了他的脑袋。他发出一身恐惧的低鸣，但嘴立马被你的嘴唇封住了。
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;他的身体僵在了你的@[all|arms|noverb]中。你感到了他勃起的鸡巴顶住了你，而你的@[all|cocks|noverb]也加入了这升温的情欲。&quot;, true)&gt;&gt; 
@@ -46550,7 +46550,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 你看到了那光。它是如此强烈，感觉好像你要被点燃了一样。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Death_NyxDungeon_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1381" name="Death_NyxDungeon_3" tags="" position="100,17350" size="100,100">尼克斯照耀着你，你沐浴在它温暖的怀抱里。但当你试图靠得更近时，它似乎在跳动和闪烁，拒绝着你的存在。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Death_NyxDungeon_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1381" name="Death_NyxDungeon_3" tags="" position="100,17350" size="100,100">倪克斯照耀着你，你沐浴在它温暖的怀抱里。但当你试图靠得更近时，它似乎在跳动和闪烁，拒绝着你的存在。
 
 那光一闪，你醒了。你一时迷失了方向，但随后你认出了城堡的入口。
 
@@ -47888,7 +47888,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village_AbelHouse]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1531" name="abelHouse_protectAbel_corrupt" tags="" position="100,19225" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Abel, &quot;blushing&quot;)&gt;&gt;
 
 就像以前一样，你感到内心的力量在翻滚，准备爆发。
-&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;G̶̠͉͖͐R̴̛̎̔̚͜Ȍ̵̹̹̹̖̅W̷̨͊̾̚͠&quot;&gt;一切都将&lt;/span&gt;&lt;span class=&quot;glitch nyx&quot; data-text=&quot;S̶͔̣͈͕̥̆̎̔͑́́̈̿̾̆͝͝ͅP̶̼̺̪̘͚̱͓̙̭̙͐̇̄̐̍̋̅̅̆̕͘͘͠R̴̦̩͕̙̿͆͌̾̈́̏͐̕E̶̡̧̝̭̩̪̜͙͋̓̿̓͝A̴̜̘͚̜͕̜̙̺͎̤͋̀̓̀̊̂̔̿͑̾̐̀̃͐̑̾͜͜ͅD̶̢̘͚̹̦̟̈́͒͐͆́͘&quot;&gt;瞻仰&lt;/span&gt;&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;尼克斯之主&lt;/span&gt;
+&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;G̶̠͉͖͐R̴̛̎̔̚͜Ȍ̵̹̹̹̖̅W̷̨͊̾̚͠&quot;&gt;一切都将&lt;/span&gt;&lt;span class=&quot;glitch nyx&quot; data-text=&quot;S̶͔̣͈͕̥̆̎̔͑́́̈̿̾̆͝͝ͅP̶̼̺̪̘͚̱͓̙̭̙͐̇̄̐̍̋̅̅̆̕͘͘͠R̴̦̩͕̙̿͆͌̾̈́̏͐̕E̶̡̧̝̭̩̪̜͙͋̓̿̓͝A̴̜̘͚̜͕̜̙̺͎̤͋̀̓̀̊̂̔̿͑̾̐̀̃͐̑̾͜͜ͅD̶̢̘͚̹̦̟̈́͒͐͆́͘&quot;&gt;瞻仰&lt;/span&gt;&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;倪克斯之主&lt;/span&gt;
 
 你突然冲过去亲吻亚伯，速度让他大吃一惊。你们的嘴唇相拥，你的舌头潜入了他的喉咙。 
 你通过舌头影响着他，他融入了你的怀抱。
@@ -48540,7 +48540,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village_MeetImp_Leave_Large_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1614" name="Village_MeetImp_Leave_Large_2" tags="" position="475,20225" size="100,100">恶魔飞向天空，越升越高，而他的巨大的前液像雨点般落在你周围的土地上。
 
 每一个撞击都像弹射器发射的巨石一样强大。他花了好几分钟才到达了某个高度，在那里他变得无法与天空中的其他生物区别出来。 
-
+f
 你决定是时候返回堡垒了。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1615" name="Village_MeetImp_Leave_Huge" tags="" position="600,20225" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
@@ -49745,12 +49745,12 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;LukkaHouse_MainMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1777" name="Quest_MQ002_ApothusRealm_Entrance" tags="" position="850,22225" size="100,100">你向前走了一步，立刻感到空气中有一种压倒性的重量。潮湿、麝香，还带着腐化的味道。
 
-一片漆黑、虚无的空间包裹着你。尼克斯包罗万象的存在只会放大它的黑暗。
+一片漆黑、虚无的空间包裹着你。倪克斯包罗万象的存在只会放大它的黑暗。
 
 黑日的存在势不可挡。它占据了你上方的大部分空间。
 
 你站在一个由粗糙的岩石和土壤构成的平台之上。你注意到身后没有地面。这片土地的尽头是一个陡峭的悬崖，悬崖之后一切便坠入虚无。
-它漂浮在这片领域上空，好像是尼克斯自己把它吸向自己一样。紫色的符文在边缘盘旋。被诅咒的符号闪烁着侵略性的光芒，看起来不太稳定。
+它漂浮在这片领域上空，好像是倪克斯自己把它吸向自己一样。紫色的符文在边缘盘旋。被诅咒的符号闪烁着侵略性的光芒，看起来不太稳定。
 它们的力量是绝对的，正是这些东西阻止了这片领域向下坠落。
 
 黑日的光芒渗入你的皮肤。你的心跳得像鼓一样。
@@ -49761,7 +49761,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 你试着忍住呻吟。 
 \&lt;&lt;/if&gt;&gt;
 
-∇：你获得了&quot;尼克斯光芒之拥&quot;的能力。这项能力只要你进入到阿波图斯的领域中便会一直存在。
+∇：你获得了&quot;倪克斯光芒之拥&quot;的能力。这项能力只要你进入到阿波图斯的领域中便会一直存在。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_EmbracedByNyxsLight);&gt;&gt;
 \&lt;&lt;run setup.MQ002_LeavingManor($CharacterSheet_Player)&gt;&gt;
 
@@ -49808,7 +49808,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 它是强大的，野蛮的，宏大的，比你以前遇到过的任何野兽还大。
 随着能量的脉动，茧吸走了更多迷失者的精华；呻吟声也越来越大。 
-黑茧慢慢地膨胀，增大了体型，并沿着表面扩张，以便得到更多尼克斯的光。 
+黑茧慢慢地膨胀，增大了体型，并沿着表面扩张，以便得到更多倪克斯的光。 
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApproachStructure_2_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1782" name="Quest_MQ002_ApothusRealm_ApproachStructure_2_1" tags="" position="225,22350" size="100,100">球体内部突然爆发出一阵可怕的嚎叫，传向四面八方。
 茧内部的存在将一股股粘稠的白色汁液喷到它的表面——周围的迷失者都齐声咆哮。
@@ -49840,7 +49840,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApproachStructure_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1785" name="Quest_MQ002_ApothusRealm_ApproachStructure_5" tags="" position="600,22350" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;normal&quot;)&gt;&gt;
 
-&quot;我都忘了我们被封印在这里多久了，不过没关系。现在我们没有理由再回荒地了；尼克斯的温暖拥抱和那个人的成长才是我们所需要的。&quot;
+&quot;我都忘了我们被封印在这里多久了，不过没关系。现在我们没有理由再回荒地了；倪克斯的温暖拥抱和那个人的成长才是我们所需要的。&quot;
 
 他对你咧嘴笑着，不确定自己是应该屈服还是应该抑制住和你搞在一起的冲动。
 
@@ -49877,7 +49877,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
     \&lt;&lt;/if&gt;&gt;
 
     \&lt;&lt;if $CharacterSheet_Player.quest.oaths.apothus != setup.Oath.ACTIVE&gt;&gt;
-[[加入他，释放尼克斯-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx]]
+[[加入他，释放倪克斯-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx]]
     \&lt;&lt;/if&gt;&gt;
     \&lt;&lt;if $CharacterSheet_Player.quest.oaths.apothus == setup.Oath.ACTIVE &amp;&amp; setup.getStatValue($CharacterSheet_Player, &quot;corruption&quot;)&gt;&gt;
 [[篡夺阿波图斯的异教-&gt;Quest_MQ002_ApothusRealm_ChallengeApothus]]
@@ -49910,7 +49910,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 他看着你，感受你的心脏的快速跳动和你的&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;cock&quot;))&gt;&gt;鸡巴的悸动。
 \&lt;&lt;/if&gt;&gt;
 
-&quot;那么，你为什么大老远的来到这里，拯救者？你是来帮助我们把尼克斯的祝福带给世界的吗？&quot; 
+&quot;那么，你为什么大老远的来到这里，拯救者？你是来帮助我们把倪克斯的祝福带给世界的吗？&quot; 
 
 \&lt;&lt;set $CharacterSheet_Apothus.quest.askedAboutHim = true&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1789" name="Quest_MQ002_ApothusRealm_AskAboutTheLosts" tags="" position="1100,22350" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;normal&quot;)&gt;&gt;
@@ -49931,7 +49931,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToSaveCray_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1791" name="Quest_MQ002_ApothusRealm_HereToSaveCray_2" tags="" position="100,22475" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;normal&quot;)&gt;&gt;
 
-&quot;他在进化。我们都在梦里看到了，他正在不断成长，直到成长为尼克斯本身。只有能与黑日直接接触的他才配得上它的力量。&quot;阿波图斯一直看着茧，完全被它迷住了。
+&quot;他在进化。我们都在梦里看到了，他正在不断成长，直到成长为倪克斯本身。只有能与黑日直接接触的他才配得上它的力量。&quot;阿波图斯一直看着茧，完全被它迷住了。
 
 &quot;他就是我们需要的，能指引我们的神，阻止我们屈服于内心疯狂的神。&quot;他猛地转过身来面对你。
 
@@ -49939,7 +49939,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 他疯狂地咯咯笑着。
 
-&quot;然后呢？我们只会继续回来，一次又一次。尼克斯是永恒的，我们对它的奉献也是永恒的。&quot;他的双手突然被一层紫色的浓雾包围。 
+&quot;然后呢？我们只会继续回来，一次又一次。倪克斯是永恒的，我们对它的奉献也是永恒的。&quot;他的双手突然被一层紫色的浓雾包围。 
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToKillThem_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1793" name="Quest_MQ002_ApothusRealm_HereToKillThem_2" tags="" position="350,22475" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;grumpy&quot;)&gt;&gt;
 
@@ -49956,7 +49956,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 &quot;我们还有很多时间。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[揍他-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Apothus]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1795" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx" tags="" position="600,22475" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
-尼克斯流过皮肤的感觉是不可否认的;这种感觉不仅仅令人振奋。它是光荣的;你觉得你可以几天不停地进行交配。
+倪克斯流过皮肤的感觉是不可否认的;这种感觉不仅仅令人振奋。它是光荣的;你觉得你可以几天不停地进行交配。
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &gt; 0&gt;&gt;
 你也很喜欢在你体内不断扭动着的幼体。
 \&lt;&lt;/if&gt;&gt;
@@ -49996,7 +49996,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 当你身下巨物的前六英寸填满他的小穴时，阿波图斯不断地发出浪叫声。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_2_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1799" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_2_1" tags="" position="1100,22475" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
-他的双手充满了超凡脱世的魔力，就像尼克斯自己将这种力量直接渗透到他身上一样。
+他的双手充满了超凡脱世的魔力，就像倪克斯自己将这种力量直接渗透到他身上一样。
 他的内穴因你的肉棒而扩张，并反过来紧紧地裹住你的肉棒
 
 你高兴地嚎叫; 一些迷失者立刻跑过来响应这淫荡的号召。 
@@ -50005,7 +50005,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_2_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1800" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_2_2" tags="" position="1225,22475" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
 你能感觉到他们的腐化渗入你的皮肤。你的乳头在一些迷失者的热切吮吸下变硬隆起。
 
-&quot;加入我们吧，$CharacterSheet_Player.info.name，让尼克斯指引你，因为这是我们在这个被诅咒的世界里唯一的救赎。只有这样才能在不失去理智的情况下享受腐化的乐趣。&quot; 
+&quot;加入我们吧，$CharacterSheet_Player.info.name，让倪克斯指引你，因为这是我们在这个被诅咒的世界里唯一的救赎。只有这样才能在不失去理智的情况下享受腐化的乐趣。&quot; 
 
 \&lt;&lt;run setup.choice(&quot;[[更加用力干他-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1801" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_3" tags="" position="100,22600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
 当你把肉棒的剩余部分都插进他体内时，他的话被打断了。 
@@ -50022,18 +50022,18 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 &quot;嗯……啊啊啊啊啊……让世人见识一下黑日的力量吧！&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[封存尼克斯之誓-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1803" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_4" tags="" position="350,22600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[封存倪克斯之誓-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1803" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_4" tags="" position="350,22600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Apothus.quest.arousalProgress = setup.Apothus_Arousal.NAKED&gt;&gt;
 你咬破自己的手，并紧紧地贴在他的手上封存誓言。
 
-紫色魔法的漩涡包围着你们俩。迷失者们在高潮下开始咆哮，并且在被尼克斯巨大的力量推开数英寸时射精 。
+紫色魔法的漩涡包围着你们俩。迷失者们在高潮下开始咆哮，并且在被倪克斯巨大的力量推开数英寸时射精 。
 黑魔法缠绕着你们两个，它旋转成漩涡，瞄准你们各自的胸部。
 
 阿波图斯首先受到影响，旋涡状纹身吸收着暗能量。
 他的声音在他的呻吟中变得嘶哑而紧张。
 
 它建立在设计的基础上，使其更大、更详细；它一直延伸到他的肩膀。接下来你感觉到它在触碰你。它在你的皮肤上留下自己的印记；你当场射精了。
-你皮肤的每一个毛孔都打开了，以便给尼克斯的光芒更多空间进入你的身体。
+你皮肤的每一个毛孔都打开了，以便给倪克斯的光芒更多空间进入你的身体。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_HereToUnleashNyx_4_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1804" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx_4_2" tags="" position="475,22600" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;mischievious&quot;)&gt;&gt;
 
@@ -50051,11 +50051,11 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 阿波图斯将你扶起来。
 
-&quot;有了你的帮助，我觉得我们很快便可以让天选之子与尼克斯建立联系……&quot;
+&quot;有了你的帮助，我觉得我们很快便可以让天选之子与倪克斯建立联系……&quot;
 \&lt;&lt;set $CharacterSheet_Player.quest.oaths.apothus = setup.Oath.ACTIVE&gt;&gt;
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_Oath_Nyx);&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1806" name="Quest_MQ002_ApothusRealm_ChallengeApothus" tags="" position="725,22600" size="100,100">你能感觉到尼克斯的呼唤;它比情人的低语更亲密。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1806" name="Quest_MQ002_ApothusRealm_ChallengeApothus" tags="" position="725,22600" size="100,100">你能感觉到倪克斯的呼唤;它比情人的低语更亲密。
 
 你意识到他所统帅的失落者们应该属于你。他们的腐化在你的心里跳动。他们都已经把你看作他们真正的主人了。
 
@@ -50069,7 +50069,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 一团浓浓的紫色雾气突然聚集在他的双手周围。
 
 \&lt;&lt;run setup.choice(&quot;[[揍他-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Apothus]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1807" name="Quest_MQ002_ApothusRealm_Feed_The_Chosen" tags="" position="850,22600" size="100,100">当你靠近&lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;大的黑茧时，迷失者们自觉靠向一旁为你让路。\
-他们因内心强烈的期待而颤抖，你肉体中蕴含的力量就足以让他们垂涎三尺。一部分迷失者是多么渴望带走你，并试图用他们的腐化击垮你，但尼克斯的召唤力实在是太强烈了。
+他们因内心强烈的期待而颤抖，你肉体中蕴含的力量就足以让他们垂涎三尺。一部分迷失者是多么渴望带走你，并试图用他们的腐化击垮你，但倪克斯的召唤力实在是太强烈了。
 
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的 @[all|hands|noverb]按在黑茧的底部; 在它上面脉动着无数生命的精华。天选者的存在是不可否认的。&quot;)&gt;&gt; \
 他如山般的肌肉在茧的表面颤抖。他渴望更多；只有当他接触到上面的黑日时，他才会感到满足。
@@ -50107,19 +50107,19 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 他的监狱长到&lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1809" name="Feed_The_Chosen_Level2" tags="" position="1100,22600" size="100,100">黑色的茧正对着尼克斯的光芒向上生长。在黑色的茧脉动扩张以容纳天选者巨大的肌肉和肉棒时，你不禁后退一步。\
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1809" name="Feed_The_Chosen_Level2" tags="" position="1100,22600" size="100,100">黑色的茧正对着倪克斯的光芒向上生长。在黑色的茧脉动扩张以容纳天选者巨大的肌肉和肉棒时，你不禁后退一步。\
 他的身体庞大得令人难以置信，仿佛其本身就是力量和阳刚之气的化身。 他在茧里不受控制地弯曲，让茧仍在生长的表面产生波纹。
  
 当你走向天选之子时，迷失者们满怀敬畏地看着你。他们虔诚地跪下，以便让你没有任何阻碍地走向茧。\
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的@[all|hands|noverb]再次按压在茧的表面, 他把你拉进去，仿佛久逢甘露的土壤急切地吸收着你的精华。&quot;)&gt;&gt; \
-你感受到尼克斯的意志，它让你雕刻出一艘巨轮，以便让它能在荒漠畅游。
+你感受到倪克斯的意志，它让你雕刻出一艘巨轮，以便让它能在荒漠畅游。
  
 以便让所有人的目光都被它的光芒所吸引。
 \&lt;&lt;set $WorldState.apothusChosen.essenceLevel = 2&gt;&gt;
  
 当看到他们的神高耸在废墟上时，迷失者们齐声欢呼。
 
-平台勉强支撑着山般的黑茧。黑茧达到了&lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;的规模, 尼克斯几乎触手可及。
+平台勉强支撑着山般的黑茧。黑茧达到了&lt;&lt;print setup.getNyxChosenCocoonSize()&gt;&gt;的规模, 倪克斯几乎触手可及。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1810" name="Feed_The_Chosen_Final" tags="" position="1225,22600" size="100,100">\&lt;&lt;set $WorldState.apothusChosen.essenceLevel = 3&gt;&gt;
 阿波图斯带着纯粹的、幸福无比的微笑看着你。但你知道，这个微笑所展现的只不过是他看到新神诞生时内心喜悦的冰山一角。
@@ -50128,13 +50128,13 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 你给茧注入更多精华，数量多到足以把任何人培养成力量惊人的泰坦。
 
-没错……只要你崇拜尼克斯，就能让世界摆脱所有的疑虑和恐惧！
+没错……只要你崇拜倪克斯，就能让世界摆脱所有的疑虑和恐惧！
 
 世间万物皆应沐浴在它神圣的光芒之下！
 
 无需害怕会被被诅咒的野兽撕碎！世间万物都会因新神的祝福变得尽善尽美！
 
-阿波图斯咧嘴一笑，他的眼睛闪烁着尼克斯的邪恶光芒。他的手压在茧的底部，加入你往茧中注入精华的行列。
+阿波图斯咧嘴一笑，他的眼睛闪烁着倪克斯的邪恶光芒。他的手压在茧的底部，加入你往茧中注入精华的行列。
 
 周围的迷失者紧随其后，将他们的精华献给了他们的神。一声低沉的轰鸣声震动了整个站台。 新神的剪影在茧中突然膨胀，伸展着茧，仿佛一颗炸弹在内部被引爆了。
 
@@ -50160,7 +50160,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 当现实被天选之人的光芒扭曲时，你咆哮着射出一股浓稠精液。
 
-\&lt;&lt;run setup.choice(&quot;[[吸收尼克斯的光芒-&gt;Feed_The_Chosen_Final_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1813" name="Feed_The_Chosen_Final_4" tags="" position="350,22725" size="100,100">\&lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, 35)&gt;&gt;\
+\&lt;&lt;run setup.choice(&quot;[[吸收倪克斯的光芒-&gt;Feed_The_Chosen_Final_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1813" name="Feed_The_Chosen_Final_4" tags="" position="350,22725" size="100,100">\&lt;&lt;run setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, 35)&gt;&gt;\
 
 你的身躯与力量爆发性地成长，这让你也加入这淫荡的，对新神诞生的齐声赞美中。
 
@@ -50182,7 +50182,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 迷失者们再次尖叫和射精，他们疯狂地向前冲去，只因他们崇尚新神的每一寸肌肤。
 
 阿波修斯看着，内心完全被对神的崇拜所吞噬，然而他的职责迫使他不得不回到现实，哪怕只享受了一瞬间的疯狂。 \
-他的双手闪耀着他为这一刻准备的仪式的力量，这是他作为尼克斯先知的最后任务。
+他的双手闪耀着他为这一刻准备的仪式的力量，这是他作为倪克斯先知的最后任务。
 
 从他身上迸发出耀眼的青色光芒，甚至盖过了那新生的神。
 
@@ -50198,11 +50198,11 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 他双手捂着头，明亮的紫光在他的皮肤下跳动。 他似乎处于疯狂的边缘，仿佛他全身心都陷入一种激烈的斗争中。\
 然而，迷失者们对此毫不知情。他们崇拜他的每一寸身体，如此痴迷，仿佛他们就是为此而活的。 
 
-&quot;不……为什么他要违抗尼克斯的意愿？&quot;阿波图斯一边呻吟着一边紧张地接近天选之子。
+&quot;不……为什么他要违抗倪克斯的意愿？&quot;阿波图斯一边呻吟着一边紧张地接近天选之子。
 
 刹那间，他双目圆睁，在他反应过来前，天选之子的巨爪便拍到了他。你看着先知的身躯像破布般被拍飞到几百尺外。
 
-天选之子的内心深处陷入混乱，尼克斯与他自身的野心为争夺主导权而相互斗争。他越来越疯狂地大发雷霆，同时用巨爪划过沙丘，在上面留下深深的抓痕。
+天选之子的内心深处陷入混乱，倪克斯与他自身的野心为争夺主导权而相互斗争。他越来越疯狂地大发雷霆，同时用巨爪划过沙丘，在上面留下深深的抓痕。
 
 \&lt;&lt;run setup.choice(&quot;[[尝试帮助天选之人-&gt;Feed_The_Chosen_Final_HelpHim]]&quot;);&gt;&gt;
 \&lt;&lt;if $CharacterSheet_MQ002_Guard.quest.nyxPromise == true&gt;&gt;
@@ -50232,7 +50232,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 一层浓厚的&lt;&lt;SymbioteColor&gt;&gt;粘稠物质覆盖在你们身上, 你从未如此靠近过他。
 
-当尼克斯在你体内流动时，你紧绷手臂。你因强烈的情欲而颤抖，你的眼睛突然迸发出明亮的紫色光芒。\
+当倪克斯在你体内流动时，你紧绷手臂。你因强烈的情欲而颤抖，你的眼睛突然迸发出明亮的紫色光芒。\
 这只野兽潜伏在你的内心深处，并趁此爬向你的灵魂。你的内心有一股强烈的冲动，想要改变现实，让黑暗之光照射到这个世界的每一个角落。
 
 克雷的低语就像天边的闷雷，他低沉的声音变了，与你的融合在一起。他抓住你的腹部，将你拉近。
@@ -50243,7 +50243,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 &quot;我……我从未想到你会找到我。&quot;
 &lt;&lt;/if&gt;&gt;\
 
-尼克斯紧紧地抓住你的灵魂，就在这时克雷深情地吻了你。
+倪克斯紧紧地抓住你的灵魂，就在这时克雷深情地吻了你。
 
 &lt;&lt;if setup.sizecomparison(setup.getStatValue($CharacterSheet_Player, &quot;height&quot;), 16896) &gt;= setup.Comparators.BIGGER&gt;&gt;\
 即使是黑日那铺天盖地的强烈光芒在你们的深情热吻下也黯然失色。你那&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_Player, &quot;height&quot;))&gt;&gt;高的身体随着力量的不断涌入而颤抖，因为他给予你的这股力量在你体内疯了一般地乱窜，拼命地想要充斥在你身体的每一寸。
@@ -50262,7 +50262,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 &lt;&lt;SymbioteName&gt;&gt;的内心也陷入和他一样的混乱中，但回忆起你们旅途中一起经历的种种后，你要追求的目标逐渐明了。
 
 \&lt;&lt;run setup.choice(&quot;[[和克雷结盟，并继续增长自身力量-&gt;Feed_The_Chosen_Final_OnlyGrowPath]]&quot;);&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[和尼克斯结盟，并腐化所有生灵-&gt;Feed_The_Chosen_Final_CorruptEverything]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1818" name="Feed_The_Chosen_Final_OnlyGrowPath" tags="" position="975,22725" size="100,100">当&lt;&lt;SymbioteName&gt;&gt;将自身力量传递给克雷时，你们的体型和力量都在飞速增长，这让他感受到了你在这场旅途中经历的成长。
+\&lt;&lt;run setup.choice(&quot;[[和倪克斯结盟，并腐化所有生灵-&gt;Feed_The_Chosen_Final_CorruptEverything]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1818" name="Feed_The_Chosen_Final_OnlyGrowPath" tags="" position="975,22725" size="100,100">当&lt;&lt;SymbioteName&gt;&gt;将自身力量传递给克雷时，你们的体型和力量都在飞速增长，这让他感受到了你在这场旅途中经历的成长。
 
 而这比黑日本身的力量更令他动容。
 
@@ -50290,7 +50290,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 你们的意志合二为一，成为了坚不可摧的存在。
 
-即使是尼克斯也只能屈服于你们的意志。
+即使是倪克斯也只能屈服于你们的意志。
 
 &quot;嘎啊啊啊啊啊啊!&quot;你的声音震耳欲聋，让世人在恐惧和迷恋中颤抖。 迷失者刺耳的呻吟声此起彼伏。
 
@@ -50416,7 +50416,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 
 你咧嘴一笑当做回应，紧握拳头，而无数迷失的人把你当作神一样崇拜。
 
-\&lt;&lt;run setup.choice(&quot;[[与尼克斯合并-&gt;Feed_The_Chosen_Final_CorruptEverything_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1829" name="Feed_The_Chosen_Final_CorruptEverything_2" tags="" position="1100,22850" size="100,100">你欢迎着迷失者的崇拜，让他们享受你身体上的每一寸肌肤。
+\&lt;&lt;run setup.choice(&quot;[[与倪克斯合并-&gt;Feed_The_Chosen_Final_CorruptEverything_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1829" name="Feed_The_Chosen_Final_CorruptEverything_2" tags="" position="1100,22850" size="100,100">你欢迎着迷失者的崇拜，让他们享受你身体上的每一寸肌肤。
 
 只要他们叠得足够高，就会有无数光溜溜黏糊糊的身体爬在你身上淫秽地耸动着，并用舌头舔舐你的每一寸身体。
 
@@ -50430,7 +50430,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 无数的触手从你身上伸出来，左右扭动，它们仿佛有自己的意志，在寻找着雄心勃勃的战士和领袖，\
 将他们圈起来，操弄他们，让性欲的快感支配他们，将他们的雄心壮志尽数消灭，仅留下交媾的欲望, &lt;span class=&quot;glitch nyx&quot; data-text=&quot;腐化他们&quot;&gt;然后腐化他们&lt;/span&gt;，将他们培养成新的，雄伟的腐化之神。
 
-与此同时，你的一些肉棒开始产出尼克斯的幼崽大军，寻找那些能让你&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;力量之言&quot;&gt;威严话语举世皆知的忠诚精英。&lt;/span&gt;,\
+与此同时，你的一些肉棒开始产出倪克斯的幼崽大军，寻找那些能让你&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;力量之言&quot;&gt;威严话语举世皆知的忠诚精英。&lt;/span&gt;,\
 被选中的人的躯体涨破衣服，变成了巨大的，肌肉发达的， \
 充满巨大力量和性欲的猛兽，这是他们梦寐以求的，&lt;span class=&quot;glitch nyx&quot; data-text=&quot;在最黑暗的角落里，他们扭曲的堕落行为&quot;&gt;只有奈落深处才能滋养出来的恶魔躯体&lt;/span&gt;.
 
@@ -50457,7 +50457,7 @@ I have &lt;&lt;textbox &quot;$CharacterSheet_Player.info.balls&quot; 2&gt;&gt; i
 &lt;span class=&quot;corruptText100&quot;&gt;\
 &lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;G̶̠͉͖͐R̴̛̎̔̚͜Ȍ̵̹̹̹̖̅W̷̨͊̾̚͠&quot;&gt;一切都将&lt;/span&gt;\
 &lt;span class=&quot;glitch nyx&quot; data-text=&quot;S̶͔̣͈͕̥̆̎̔͑́́̈̿̾̆͝͝ͅP̶̼̺̪̘͚̱͓̙̭̙͐̇̄̐̍̋̅̅̆̕͘͘͠R̴̦̩͕̙̿͆͌̾̈́̏͐̕E̶̡̧̝̭̩̪̜͙͋̓̿̓͝A̴̜̘͚̜͕̜̙̺͎̤͋̀̓̀̊̂̔̿͑̾̐̀̃͐̑̾͜͜ͅD̶̢̘͚̹̦̟̈́͒͐͆́͘&quot;&gt;瞻仰&lt;/span&gt;\
-&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;[[尼克斯之主-&gt;Feed_The_Chosen_Final_CorruptEverything_6]]&lt;/span&gt;\
+&lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;[[倪克斯之主-&gt;Feed_The_Chosen_Final_CorruptEverything_6]]&lt;/span&gt;\
 &lt;/span&gt;
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 9999999)&gt;&gt;</tw-passagedata><tw-passagedata pid="1833" name="Feed_The_Chosen_Final_CorruptEverything_6" tags="" position="350,22975" size="100,100">&lt;span class=&quot;corruptText100&quot;&gt;\
 &lt;span class=&quot;glitch nyx fucked&quot; data-text=&quot;C̷̛̛̱̹̟͚͕̱̗͎͙̳̞̜̘̬̝͖̖̟̻̐̎́̌̈͐̉͑͐̋̽̔̋͂̋͝ͅƠ̶̢̱̯̬̖̥̠̬̼̼̼̜͔̬̜͚̯̺̹̩̐̍̅͒̅̓̀̚͠R̷̨̡̛̪̣͚̲͕̝̥̩͚̗̭̫̯̪͙̯̥̓͐̉̈́̒͐̃͒̽͊͛̀͋̅̕͜R̷̠̎U̵̧̫͙̺̤̰͎͓̦̓̎̿̈́̈̅́͌͝P̸̘͔̺̘̮̼̱̭̜̲͕̬̩̋̑́͜T̷͓̱͎̘̞̣͎̗̙̦̲͔͒͛͑̋̔̊̀͑̔͒͆̚̚͜͝͠͝͝ͅ&quot;&gt;一种&lt;/span&gt;\
@@ -50586,7 +50586,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 \&lt;&lt;run setup.choice(&quot;[[与他战斗-&gt;FightLogic][$Encounter_Target = $CharacterSheet_MQ002_Guard]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1853" name="Quest_MQ002_Entrance_Answer_Nyx" tags="" position="350,23225" size="100,100">&lt;&lt;ImageMinoClothedGateBG&gt;&gt;
 
-&quot;尼克斯不像你曾经遇到的腐化生物。 它是一团熊熊燃烧的火焰，而其他的腐化生物只不过是它的燃料罢了。 它会像病毒一样侵扰你的灵魂，蔓延到你思想的每一个角落。&quot;
+&quot;倪克斯不像你曾经遇到的腐化生物。 它是一团熊熊燃烧的火焰，而其他的腐化生物只不过是它的燃料罢了。 它会像病毒一样侵扰你的灵魂，蔓延到你思想的每一个角落。&quot;
 
 他把斧头放在被腐化的土壤上，向你走来。 
 
@@ -50691,12 +50691,12 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 &quot;你是不是藏了一些有趣的事情，没有告诉你的主人呢？&quot;
 
-\&lt;&lt;run setup.choice(&quot;[[跟他说你在尼克斯领地的经历-&gt;Imp_ServantPath_NyxHint_2_Share]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[跟他说你在倪克斯领地的经历-&gt;Imp_ServantPath_NyxHint_2_Share]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[跟他说这只是一场平平无奇的探险-&gt;Imp_ServantPath_NyxHint_2_Hide]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1867" name="Imp_ServantPath_NyxHint_2_Share" tags="" position="850,23350" size="100,100">\&lt;&lt;set $CharacterSheet_Imp.quest.knowsAboutNyx = true&gt;&gt;
 \&lt;&lt;run setup.completeAchievement(&quot;Achievement_DamnatoryKnowledge&quot;);&gt;&gt;
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;normal&quot;)&gt;&gt;
 
-你分享了你在尼克斯领域的所见所闻，除了你在门口击败的守卫。
+你分享了你在倪克斯领域的所见所闻，除了你在门口击败的守卫。
 当你提到那颗用不洁之光燃烧一切的黑星时，他的表情就亮了起来。 
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Imp_ServantPath_NyxHint_2_Share_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1868" name="Imp_ServantPath_NyxHint_2_Share_2" tags="" position="975,23350" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Imp, &quot;blushing&quot;)&gt;&gt;
@@ -50708,7 +50708,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 &quot;谁管你经历了什么，小畜生。但现在，让爷来向你展示这段时间爷增长的力量~&quot;
 
-&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Imp)&gt;&gt;</tw-passagedata><tw-passagedata pid="1870" name="Quest_MQ002_ApothusRealm_ImpInvasion" tags="" position="1225,23350" size="100,100">尼克斯的王国贫瘠而干燥，除了不断的呻吟声和腐化生物啪啪啪的声音之外，没有任何生命的声音。
+&lt;&lt;print setup.getFightStartPassages($CharacterSheet_Imp)&gt;&gt;</tw-passagedata><tw-passagedata pid="1870" name="Quest_MQ002_ApothusRealm_ImpInvasion" tags="" position="1225,23350" size="100,100">倪克斯的王国贫瘠而干燥，除了不断的呻吟声和腐化生物啪啪啪的声音之外，没有任何生命的声音。
 
 只走了几步，你就僵住了。巨大的砰砰声震动着你周围的地面，这种情景似乎很熟悉。
 
@@ -50720,7 +50720,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 &quot;呵呵呵,这里看起来比我想象的还要破旧.&quot;
 
-他举起双臂，全身上下都在吸收尼克斯的光。他的胯下巨物起反应了; 当浓稠的精液精液沿着恶魔的根部缓缓淌下，他的巨物也在兴奋中砰砰跳动。
+他举起双臂，全身上下都在吸收倪克斯的光。他的胯下巨物起反应了; 当浓稠的精液精液沿着恶魔的根部缓缓淌下，他的巨物也在兴奋中砰砰跳动。
 
 &quot;哈唔……就是这样没错。哦对了，还有一件事, 你是个好向导，小畜生。&quot;
 
@@ -50732,13 +50732,13 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 &quot;我能感觉到他就在我的体内，它的力量……它仿佛在呼唤我的的名字。&quot;
 
-他的翅膀弯曲伸展;他的膝盖微微弯曲，目光仍然停留在尼克斯身上。
+他的翅膀弯曲伸展;他的膝盖微微弯曲，目光仍然停留在倪克斯身上。
 
 &quot;自从我第一次看到它的力量，我就渴望着它的力量，现在它离我如此之近……好像我自己也能够接触到它一样。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[询问他有什么计划-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1873" name="Quest_MQ002_ApothusRealm_ImpInvasion_4" tags="" position="350,23475" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_2_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_2.jpg&quot;, undefined, true)&gt;&gt;
 
-你问你的主人下一步打算做什么。你与尼克斯的距离从未如此接近，但显然还有其他恶徒觊觎着它的力量。
+你问你的主人下一步打算做什么。你与倪克斯的距离从未如此接近，但显然还有其他恶徒觊觎着它的力量。
 
 他注视着地平线，引导你的目光朝向那巨大的圆形建筑，它高高矗立，仿佛将要刺破这片被诅咒领域的天空。
 
@@ -50827,7 +50827,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_11]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1880" name="Quest_MQ002_ApothusRealm_ImpInvasion_11" tags="" position="1225,23475" size="100,100">&lt;&lt;print setup.displayEncounterImage(&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_2_lowres.jpg&quot;,&quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/Scenes/voidlesky_dawn_of_corruption_9_2.jpg&quot;, undefined, true)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Imp&quot;], 2)&gt;&gt;
 
-当他感觉到尼克斯燃烧的灵魂充斥在他肌肉的每一寸时，他发出了邪恶的恶魔的笑声。 
+当他感觉到倪克斯燃烧的灵魂充斥在他肌肉的每一寸时，他发出了邪恶的恶魔的笑声。 
 他的胸部隆起，不断变大，充斥着原始的力量，直到触碰到他的下巴。 
 
 这种感觉比他经历过的任何事情都要强烈，但感觉好得不可思议。
@@ -50865,7 +50865,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 &quot;没错... 没错，就是这样！ 看看吧，看看一个恶魔是如何飞升成神的!&quot;
 
 巨大的尖刺从他的肩膀和胸部凸出，黑日就像一个巨大的王冠一样悬停在恶魔的头上
-他的整个身体都散发着尼克斯的光芒，而这光芒把这个领域里的每个人都逼到了高潮边缘。 
+他的整个身体都散发着倪克斯的光芒，而这光芒把这个领域里的每个人都逼到了高潮边缘。 
 无数迷失者此起彼伏的淫荡咆哮从遥远的废墟中升起，加入了卡纳塔尔的愉悦大合唱。
 
 &quot;呵呵呵, 哈哈哈哈!&quot;
@@ -50908,7 +50908,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 这句话这就像承认自己释放了一些比你梦寐以求的更美好的东西。
 你看着他的表情从快乐变成了因达到高潮而极度愉悦的崩坏。 
-尼克斯的力量已经抑制住了，这给了你最后的机会，不是去拯救苍生，不是去阻止这个过度生长的恶魔，而是把它占为己有。 
+倪克斯的力量已经抑制住了，这给了你最后的机会，不是去拯救苍生，不是去阻止这个过度生长的恶魔，而是把它占为己有。 
 
 而事实证明，这种力量只能属于卡纳塔尔。
 
@@ -50918,7 +50918,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 黑日的力量在小魔鬼的身体和内心中荡漾。
 刹那间，你察觉到他掐在你脖子上的手指甚至比他几分钟的前臂还要粗。
 
-当他的身体与与他融合的腐化力量同步生长时，你可以感受到他超凡脱世的吸引力，那种压倒性的优越感和存在感充斥了他，如今尼克斯的新主人。 
+当他的身体与与他融合的腐化力量同步生长时，你可以感受到他超凡脱世的吸引力，那种压倒性的优越感和存在感充斥了他，如今倪克斯的新主人。 
 
 &quot;你是我的……&quot;
 
@@ -51138,7 +51138,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 即使他像钳子一样紧紧地抓着你的手臂，你也能感觉到他的手指还在成长，禁锢住你手臂的范围每一秒都在增长。 
 恶魔与你对视;他脸上露出坚定而邪恶的笑容。当他这样做的时候，他的身体开始融化成一种粘稠的物质，流入你体内。 
 
-尼克斯和卡纳塔尔的力量交织着涌入你体内，侵入你的身体、思想和灵魂。
+倪克斯和卡纳塔尔的力量交织着涌入你体内，侵入你的身体、思想和灵魂。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1909" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_4" tags="" position="1100,23850" size="100,100">卡纳塔尔在你的内心急切地伸出手。
 
@@ -51148,7 +51148,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 \&lt;&lt;run setup.choice(&quot;[[拥抱卡纳塔尔-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1910" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_5" tags="" position="1225,23850" size="100,100">有关他的一切，每一个想法，情感和他的存在本身都在紧紧围绕着你。 
 
-当你们融合的时候，尼克斯像潮水一样涌向你们，欣慰地接受你们的胜利。
+当你们融合的时候，倪克斯像潮水一样涌向你们，欣慰地接受你们的胜利。
 
 \&lt;&lt;run setup.choice(&quot;[[升神-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1911" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_6" tags="" position="100,23975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 你的肌肉突然开始膨胀，如此之快以至于你能听到骨骼被挤压而发出的噼里啪啦的声音，每一块肌肉的体积都增加一倍，然后在几分之一秒内再次增加一倍。 
@@ -51185,7 +51185,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 你感觉到卡纳塔的恶魔本能影响着你的思想和个性，它们将你的自我滋养到骇人的程度。 
 
-尼克斯看似无限的力量只会加剧这种情况，直到连你自己最卑微的部分都在敦促你向所有能听到的人咆哮，展示你的神性。
+倪克斯看似无限的力量只会加剧这种情况，直到连你自己最卑微的部分都在敦促你向所有能听到的人咆哮，展示你的神性。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ImpInvasion_Win_10]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1915" name="Quest_MQ002_ApothusRealm_ImpInvasion_Win_10" tags="" position="600,23975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 你的双手，现在每只都大到足以包住山脉，似乎这片领域的一切都逃不出你的手掌心。 
@@ -51288,7 +51288,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 牛头人察觉到了神隐藏在你灵魂最深处，黑日也有同样的反应。
 它超凡脱俗的光芒穿过被选中的人，像一个投掷的火球一样向你射出。
 
-\&lt;&lt;run setup.choice(&quot;[[夺走尼克斯的力量-&gt;Feed_The_Chosen_Final_Minotaur_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1923" name="Feed_The_Chosen_Final_Minotaur_3" tags="" position="350,24100" size="100,100">你咆哮着，感觉腐败的火焰在你身上燃烧。
+\&lt;&lt;run setup.choice(&quot;[[夺走倪克斯的力量-&gt;Feed_The_Chosen_Final_Minotaur_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1923" name="Feed_The_Chosen_Final_Minotaur_3" tags="" position="350,24100" size="100,100">你咆哮着，感觉腐败的火焰在你身上燃烧。
 一股强烈的性欲在你体内爆炸开来，你的身体充斥着一种野蛮的、野兽般的的冲动，悸动着，性奋地痉挛着，&lt;span class=&quot;glitch nyx&quot; data-text=&quot;生长 腐化&quot;&gt;你想要日天日地日空气，将你的子子孙孙传播到世界各地。&lt;/span&gt;.
 
 但是当牛头怪以绝对的虔诚凝视着你时，你发热的头脑冷静下来。
@@ -51390,7 +51390,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1937" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskWhyHere_Lust1" tags="" position="850,24225" size="100,100">&lt;&lt;ImageMinoClothedNoBG&gt;&gt;
 
-&quot;这就是尼克斯的意志。从我记事起，我的主人就派我来服侍它。&quot;
+&quot;这就是倪克斯的意志。从我记事起，我的主人就派我来服侍它。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1938" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust1" tags="" position="975,24225" size="100,100">&lt;&lt;ImageMinoClothedNoBG&gt;&gt;
 
@@ -51398,7 +51398,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 他深深吸了一口气，似乎是为了阻止自己对这个地方想得太多。
 
-&quot;我所知道的是，藏在这座城堡里的东西都是尼克斯对快乐和力量永不停息的渴望所产生的。&quot;
+&quot;我所知道的是，藏在这座城堡里的东西都是倪克斯对快乐和力量永不停息的渴望所产生的。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1939" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskCastle_Lust1" tags="" position="1100,24225" size="100,100">&lt;&lt;ImageMinoClothedNoBG&gt;&gt;
 
@@ -51406,11 +51406,11 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 他环顾四周，眼中闪过一丝好奇.
 
-&quot;它的统治者利用尼克斯来塑造我们周围的现实。假如他们想要交媾的想法是涟漪，尼克斯则将其强化为波浪。&quot;
+&quot;它的统治者利用倪克斯来塑造我们周围的现实。假如他们想要交媾的想法是涟漪，倪克斯则将其强化为波浪。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1940" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskFeeling_Lust1" tags="" position="1225,24225" size="100,100">&lt;&lt;ImageMinoClothedNoBG&gt;&gt;
 
-&quot;尼克斯的存在对我来说是沉重的负担，但我有责任留在这里，为能够获得它的力量的人服务。&quot;
+&quot;倪克斯的存在对我来说是沉重的负担，但我有责任留在这里，为能够获得它的力量的人服务。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1941" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Lust2" tags="" position="100,24350" size="100,100">&lt;&lt;ImageMinoNakedNoBG&gt;&gt;
 
@@ -51419,7 +51419,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 他的肉棒早已挺立，坚硬如铁, 他将他的盔甲尽数脱下。
 
 [[询问他的感受-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskFeeling_Lust2]]
-[[询问关于尼克斯幼体的事-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust2]]
+[[询问关于倪克斯幼体的事-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust2]]
 
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1942" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust2" tags="" position="225,24350" size="100,100">&lt;&lt;ImageMinoNakedNoBG&gt;&gt;
 
@@ -51442,7 +51442,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 一股强大的腐败气息从他肌肉发达的裸露身体中散发出来。
 
 [[询问他的感受-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskFeeling_Lust3]]
-[[询问有关尼克斯幼体的事情-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust3]]
+[[询问有关倪克斯幼体的事情-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust3]]
 
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1945" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust3" tags="" position="600,24350" size="100,100">&lt;&lt;ImageMinoNakedAura&gt;&gt;
 
@@ -51472,7 +51472,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[摸他的蛋蛋-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1948" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_2" tags="" position="975,24350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 &lt;&lt;ImageMinoNakedAura&gt;&gt;
 
-可以感觉到尼克斯的幼体从内部愉悦他的蛋蛋，像充气球一样让他的球越胀越大。 
+可以感觉到倪克斯的幼体从内部愉悦他的蛋蛋，像充气球一样让他的球越胀越大。 
 他的肉棒像一头狂野的巨兽疯狂地悸动着。
 
 &quot;干我……&quot;
@@ -51488,9 +51488,9 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 \&lt;&lt;run setup.choice(&quot;[[干他-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1950" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_4" tags="" position="1225,24350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 当你的凶器深深地刺入他的体内，他高兴地咆哮。他的眼睛闪闪发光，亮到足以照亮整个房间。 
-充满情欲的吼叫声使墙壁震动，与此同时你的眼睛开始散发出尼克斯腐败的光芒。 你觉得它侵入了你的思想，把你体内的良知和理性等等一切有价值的东西变成贪婪的，拥有无尽欲望和力量的野兽。
+充满情欲的吼叫声使墙壁震动，与此同时你的眼睛开始散发出倪克斯腐败的光芒。 你觉得它侵入了你的思想，把你体内的良知和理性等等一切有价值的东西变成贪婪的，拥有无尽欲望和力量的野兽。
 
-你高兴地咕哝着，让更多尼克斯的力量进入你的灵魂。 
+你高兴地咕哝着，让更多倪克斯的力量进入你的灵魂。 
 你的脚用力一跺，脚下石板破裂，碎石飞溅，与此同时你的凶器更加深入牛头怪的体内。
 
 &quot;嘎啊啊啊啊！！！天呐……就要这样！&quot;
@@ -51576,7 +51576,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 它在号召你……
 
-∇：停留在这个领域使你得到了&quot;尼克斯光芒之触&quot;的能力。
+∇：停留在这个领域使你得到了&quot;倪克斯光芒之触&quot;的能力。
 \&lt;&lt;run setup.MQ002_GiveNyxLightAbility()&gt;&gt;
 \&lt;&lt;set $CharacterSheet_Player.quest.knowsAboutNyx = true&gt;&gt;
 
@@ -51732,7 +51732,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 他看上去很痛苦，极力忍耐着什么，而你对这种痛苦的姿态再熟悉不过了。
 
 你可以看到他的血管在跳动，他痛苦的表情中夹杂着兴奋，他的束腰外衣上微微隆起的部分在跳动。
-你感觉尼克斯的幼体也在他的身体里。你自己的尼克斯幼体兴奋地压迫你的蛋蛋和前列腺。
+你感觉倪克斯的幼体也在他的身体里。你自己的倪克斯幼体兴奋地压迫你的蛋蛋和前列腺。
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1975" name="Quest_MQ002_Manor_DragonRoom_Safe" tags="" position="600,24725" size="100,100">\&lt;&lt;if setup.MQ002_HasIntactOath()&gt;&gt;
 &lt;&lt;print setup.displayEncounterImage($CharacterSheet_MQ002_DragonMonk.info.pictureFriend)&gt;&gt;
 \&lt;&lt;else&gt;&gt;
@@ -51783,10 +51783,10 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 &quot;我来这里质问他做出有悖我们价值观行为的罪行，希望能跟他讲道理。
 但他对权力的贪婪蒙蔽了他的双眼，自从他来到这里凝视黑日后，他就对我们的部落产生浓厚的兴趣。&quot;他叹了口气，那些记忆沉重地压在他的灵魂上。 
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1978" name="Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_2" tags="" position="975,24725" size="100,100">&quot;因此我们奋起反击. 我毫不留情地打败了他，等着他再一次把可怜的自我献给尼克斯。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1978" name="Quest_MQ002_Manor_DragonRoom_WhyAreYouHere_2" tags="" position="975,24725" size="100,100">&quot;因此我们奋起反击. 我毫不留情地打败了他，等着他再一次把可怜的自我献给倪克斯。
 每次落败后他都会在几天内出现，总是更堕落，更强壮，更可怕。&quot; 他刚刚还挺自豪的语气突然失落起来。
 
-&quot;直到我再也无法阻止他。他重新找到尼克斯，并把自身献给了腐化 He went back to Nyx and gave himself to its corruption.
+&quot;直到我再也无法阻止他。他重新找到倪克斯，并把自身献给了腐化 He went back to Nyx and gave himself to its corruption.
 他……在这之后完全变了。变成一个令人憎恶的，制造恐怖和野兽的人，让整个荒原逐渐堕落。&quot; 他的声音越来越小。
 
 &quot;我必须阻止这一切，所以这几天来，我试图用自己的方式去斗争。&quot;
@@ -51823,7 +51823,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 &quot;据我所知，他是这场仪式的核心。&quot; 说完，他便陷入了沉默。
 
-&quot;这个邪教在寻找一个可以成为尼克斯——也就是黑日本身主人的战士。
+&quot;这个邪教在寻找一个可以成为倪克斯——也就是黑日本身主人的战士。
 在我看来，他好像是心甘情愿去做的……&quot;
 
 德伦斯的话语骤然而止。
@@ -51861,7 +51861,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 他看着你，信念在他的眼睛里燃烧。
 
 [[向德伦斯发誓-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_MakeOath]]
-[[拒绝他的提议-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_RefuseOath]]</tw-passagedata><tw-passagedata pid="1986" name="Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_MakeOath" tags="" position="725,24850" size="100,100">&quot;只要你努力对抗尼克斯的腐化力量，你便可以通过我的封印。&quot;
+[[拒绝他的提议-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_RefuseOath]]</tw-passagedata><tw-passagedata pid="1986" name="Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone_MakeOath" tags="" position="725,24850" size="100,100">&quot;只要你努力对抗倪克斯的腐化力量，你便可以通过我的封印。&quot;
 
 他划伤了自己的手，鲜血从敞开的伤口迅速涌出。
 
@@ -51908,7 +51908,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 他给了你一个同情的眼神，然后又痛苦地弓下身。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1992" name="Quest_MQ002_Manor_DragonRoom_InfestHim" tags="" position="225,24975" size="100,100">似乎有什么东西在你体内悸动，渴求着什么。那是你体内的尼克斯幼体，他们剧烈地在你的卵蛋内摇晃旋转着。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1992" name="Quest_MQ002_Manor_DragonRoom_InfestHim" tags="" position="225,24975" size="100,100">似乎有什么东西在你体内悸动，渴求着什么。那是你体内的倪克斯幼体，他们剧烈地在你的卵蛋内摇晃旋转着。
 
 当嗅到你体内仍存有的良知时，他们便开始马不停蹄地产出成吨的性奋剂。
 
@@ -51917,9 +51917,9 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 龙裔绝望地看着，直到他突然挣扎着弯下腰。
 
-\&lt;&lt;run setup.choice(&quot;[[你察觉到他体内的尼克斯幼体苏醒了-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1993" name="Quest_MQ002_Manor_DragonRoom_InfestHim_2" tags="" position="350,24975" size="100,100">&quot;嘎啊…… 不……不要在这种时候！&quot; 他大叫着，拼命捂住自己鼓起的大包。
+\&lt;&lt;run setup.choice(&quot;[[你察觉到他体内的倪克斯幼体苏醒了-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1993" name="Quest_MQ002_Manor_DragonRoom_InfestHim_2" tags="" position="350,24975" size="100,100">&quot;嘎啊…… 不……不要在这种时候！&quot; 他大叫着，拼命捂住自己鼓起的大包。
 
-但很快，即使是他这样的僧侣也无法抗拒自己体内尼克斯幼体产出的强力春药。 
+但很快，即使是他这样的僧侣也无法抗拒自己体内倪克斯幼体产出的强力春药。 
 起初他只是忍耐着让自己呻吟得不要那么大声，直到他燥热难耐，像要干坏事的孩子般惊慌地解开了上衣的扣子。
 
 &quot;啊，啊啊……哈啊啊啊……恳，恳求你原谅我的堕落，我的神……嘎啊啊啊啊啊啊!&quot; 
@@ -51959,12 +51959,12 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[给他更多……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1997" name="Quest_MQ002_Manor_DragonRoom_InfestHim_6" tags="" position="850,24975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 他的舌头缠上了你的龟头，细细品尝其中风味，不落下每一寸，然后才将你的肉棒完全吞下。 你感觉到他的巧舌俏皮地想要往你的铃口深处钻，想要得到更多汁液。
 
-他捧住你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|balls|noverb]&quot;)&gt;&gt;，轻轻地抚摩，感受里面尼克斯幼体的存在。
+他捧住你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|balls|noverb]&quot;)&gt;&gt;，轻轻地抚摩，感受里面倪克斯幼体的存在。
 
 &quot;哈，嗯嗯嗯……&quot;
 
 你感觉到它们的反应，它们穿过你的卵蛋，滑向你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|cocks|noverb]&quot;)&gt;&gt;。
-你不仅仅体会到了高潮的快感。你猛然察觉现在的自己才是一个完整的个体，就像你就是为尼克斯的繁衍生息而活的。
+你不仅仅体会到了高潮的快感。你猛然察觉现在的自己才是一个完整的个体，就像你就是为倪克斯的繁衍生息而活的。
 
 &quot;后入我……操烂我……&quot;
 
@@ -52000,7 +52000,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 他爽得双眼上翻，眼珠子都快飞到后脑勺去了，强烈的性快感淹没了他，使他再次射出大量精液。
 
-当你的巨物深入他的小穴，他爽得在你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot; @[all|pecs|noverb]&quot;)&gt;&gt; 上喷洒出奶白色的浓稠精液，混合着他体内的大量尼克斯幼体。
+当你的巨物深入他的小穴，他爽得在你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot; @[all|pecs|noverb]&quot;)&gt;&gt; 上喷洒出奶白色的浓稠精液，混合着他体内的大量倪克斯幼体。
 
 &quot;啊啊啊啊啊……我好爽，好爽啊……&quot;他呻吟着，淹没在情欲的海洋里，快要喘不上气来了。
 
@@ -52107,7 +52107,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 口水从它们的下巴上滴下来，它们那双画着亮黄色的眼睛饥渴地盯着空荡荡的房间，仿佛在等待着愿意满足它们欲望的人。
 
-你被沐浴在新释放的尼克斯幼体的气味中。
+你被沐浴在新释放的倪克斯幼体的气味中。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_DrenthRoom_FirstTime_Infected_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2013" name="WestWing_DrenthRoom_FirstTime_Infected_2" tags="" position="350,25225" size="100,100">铜色的地板被雾气笼罩着。
 唯一没有被它吞噬的是房间中央的大床和床底旁的一个人。
@@ -52145,7 +52145,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;/if&gt;&gt;
 
 一个毫无正常生物特征的黑色蛇状身体探了进来。一只巨瞳正从原本应该是头的地方直勾勾地盯着你。 
-它被看起来像是滴着水的黑色叶子的东西包围着，每一片叶子都闪烁着尼克斯超凡脱俗的光芒。 
+它被看起来像是滴着水的黑色叶子的东西包围着，每一片叶子都闪烁着倪克斯超凡脱俗的光芒。 
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_WestWing_Path_SeeParasite_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2017" name="Quest_MQ002_Manor_WestWing_Path_SeeParasite_2" tags="" position="850,25225" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;purple&quot;)&gt;&gt;
 
@@ -52380,7 +52380,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 一个腐化的存在，现在是如此熟悉。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_GloryHole_Infect_2]]&quot;)&gt;&gt;</tw-passagedata><tw-passagedata pid="2049" name="WestWing_GloryHole_Infect_2" tags="" position="1100,25600" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
-你感觉到尼克斯的幼体在洞外，在那个乞求你的污秽种子的洞里。
+你感觉到倪克斯的幼体在洞外，在那个乞求你的污秽种子的洞里。
 看来你的舔屌者自己也沉溺于禁忌的快乐中了。
 
 &quot;干……快点给我口……&lt;span class=&quot;glitch nyx&quot; data-text=&quot;腐化 生长 做爱&quot;&gt;&quot;侵占我！&quot;&lt;/span&gt;&quot;
@@ -52407,7 +52407,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 你抓着你的蛋蛋，感觉它们随着新的卵子的出现而变得饱满。
 
-尼克斯的合唱再次响起，这次比以前更激烈，更有激情。
+倪克斯的合唱再次响起，这次比以前更激烈，更有激情。
 卵子的能量激增，因为它们变得与你被腐蚀的灵魂相适应。
 
 &quot;生长……做爱……传播……&quot;
@@ -52522,7 +52522,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 你比以前更加强大了。
 
-∇：你获得了&quot;尼克斯诱导的锻炼&quot;的能力。
+∇：你获得了&quot;倪克斯诱导的锻炼&quot;的能力。
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_NyxInducedWorkout)&gt;&gt;
 
 \&lt;&lt;print setup.clearWestWingRoom(&quot;WestWing_GymRoom&quot;)&gt;&gt;
@@ -52582,7 +52582,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 可以看到他们在那里有20多只，他们摇着尾巴，好像他们正准备扑过来。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_NyxSpawnPit_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2072" name="WestWing_NyxSpawnPit_3" tags="" position="225,25975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;blue&quot;)&gt;&gt;
-这些尼克斯卵里的怪物散发着超凡脱俗的光芒，在地面上扭动着身躯，热情地舞蹈着，邀请你进入坑里。
+这些倪克斯卵里的怪物散发着超凡脱俗的光芒，在地面上扭动着身躯，热情地舞蹈着，邀请你进入坑里。
 
 腐化的思想在你的头脑中奔流，用黑暗的欲望诱惑你。
 你不禁想知道，如果你屈服于欲望和诱惑，这些幼体会对你做什么。 
@@ -52655,7 +52655,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[屈服于欲望之下-&gt;WestWing_NyxSpawnPit_12]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2081" name="WestWing_NyxSpawnPit_12" tags="" position="100,26100" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;red&quot;)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 曾经在你皮肤下留下刺激快感的外来生物现在正在数以百计地入侵你的皮肤。 
-在下坠的翻滚中，尼克斯幼体不断地刺激着你的身体，给你带来了无尽的快感冲击。
+在下坠的翻滚中，倪克斯幼体不断地刺激着你的身体，给你带来了无尽的快感冲击。
 
 在成百上千只幼体急切地钻入你的肉棒跟菊部时，你的身体充满了愉悦感。
 
@@ -52743,7 +52743,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 你需要得到更多……
 
-∇：你获得了&quot;感染尼克斯幼体&quot;的能力。
+∇：你获得了&quot;感染倪克斯幼体&quot;的能力。
 ∇: 你获得了8点腐化。
 \&lt;&lt;run setup.MQ002_AddNyxParasiteInfection()&gt;&gt;
 

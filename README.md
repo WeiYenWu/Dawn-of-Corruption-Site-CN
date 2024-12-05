@@ -156,7 +156,9 @@
 |yes|chasm|n.鸿沟||
 |yes|Eroth|name.伊洛斯|the Warden，典狱长|
 |yes|Silas|name.塞拉斯|the Wise，智者|
-|yes|Kobold|n.狗头人||
+|yes|Kobold|n.哥布林||
+|yes|Echo|name.回响||
+|yes|Tendrils Grasp|n.触手抓握||
 ---
 
 ## **三、代码查疑**
