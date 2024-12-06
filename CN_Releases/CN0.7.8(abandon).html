@@ -22310,8 +22310,8 @@ Config.ui.stowBarInitially = false;
 		}
 	},
 	NAGA: {
-		name: &quot;娜迦&quot;,
-		namePlural: &quot;娜迦们&quot;,
+		name: &quot;纳迦&quot;,
+		namePlural: &quot;纳迦们&quot;,
 		heads: {
 			defaultNumber: 1,
 			raceTexture: [&quot;蜿蜒的&quot;]
@@ -26888,7 +26888,7 @@ Config.ui.stowBarInitially = false;
 	outcomePlayerLoses: &quot;&lt;&lt;include Encounter_Loss_Lost_Naga_1&gt;&gt;&quot;
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="172" name="_lost_naga_info_sheet" tags="" position="225,2225" size="100,100">&lt;&lt;set setup.InfoSheet_Lost_Naga =
 {
-	name: &quot;迷失的娜迦&quot;,
+	name: &quot;迷失的纳迦&quot;,
 	gender: &quot;male&quot;,
     picture: &quot;https://sombreve.github.io/Dawn-of-Corruption-Site/Images/characters/lost_naga.png&quot;,
     corruption: 800,
@@ -33970,10 +33970,10 @@ maxRank: 1
 &lt;&lt;set setup.Ability_Mutant_2.setCategory(setup.AbilityCategory.SOMBREVE)&gt;&gt;
 &lt;&lt;set setup.Ability_Mutant_2.setGrade(setup.AbilityGrade.VERYHIGH)&gt;&gt;</tw-passagedata><tw-passagedata pid="456" name="Ability_CurseOfTheNaga" tags="" position="725,5725" size="100,100">&lt;&lt;set setup.Ability_CurseOfTheNaga = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_CurseOfTheNaga&quot;,
-    name:       &quot;娜迦的诅咒&quot;, 
+    name:       &quot;纳迦的诅咒&quot;, 
     description:function(character)
     {
-        return &quot;你身体的一部分被失落的娜迦偷走了。\n只有打败他，你才能恢复你的力量。&quot;; 
+        return &quot;你身体的一部分被失落的纳迦偷走了。\n只有打败他，你才能恢复你的力量。&quot;; 
     },
     maxRank: 1
 })&gt;&gt;
@@ -40716,7 +40716,7 @@ $CharacterSheet_Jorm.info.name只是在头晕，甚至几乎失去了意识。
 你腐化的思想融入了荒原内任何事物都无法阻止的怪物。你对力量的渴望是无法满足的。你对快感的需求是永无止境的。
 你梦想着达到肉体所能产生的最多的快感，变为将世界握在手中的终极野兽。
 
-你离开天选之子，因为你的阴茎需要找一个洞口来发泄。
+你离开天选之人，因为你的阴茎需要找一个洞口来发泄。
 
 \&lt;&lt;run setup.choice(&quot;[[时光荏苒-&gt;Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_07]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="701" name="Quest_MQ002_Apothus_2nd_Form_Encounter_PlayerLoses_07" tags="" position="100,8850" size="100,100">你在荒原上游荡，在你以从未见过的方式传播腐化的过程中，你的身体日复一日地增大。 你很快就凌驾于其他所有存在之上。
 怪物崇拜你作为他们的神，作为统治一切的恶魔。其他人只能逃避你，但很快连大地都被你腐化了。
@@ -43290,7 +43290,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 &quot;嗯……对……&quot;
 
 每一次心跳都会让你感到生长的悖动。一阵力量突然像卡车一样冲击你，你把头往后拉，呻吟了起来。
-你的身体爆发出的力量比娜迦从你身上夺走的还要多。
+你的身体爆发出的力量比纳迦从你身上夺走的还要多。
 &lt;&lt;set $growth = setup.applyGrowth($CharacterSheet_Player, &quot;muscles&quot;, Math.ceil(setup.getStatValue($CharacterSheet_Player, &quot;muscles&quot;) * 0.1))&gt;&gt;
 你的肌肉变得&lt;&lt;print setup.getMusclesDescriptor($CharacterSheet_Player)&gt;&gt;(+$growth)。
 你的身体增高了&lt;&lt;print setup.getLength(setup.applyGrowth($CharacterSheet_Player, &quot;height&quot;, Math.ceil(setup.getStatValue($CharacterSheet_Player, &quot;height&quot;) * 0.1)))&gt;&gt;。
@@ -43307,7 +43307,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 &lt;&lt;print setup.getFightReward($CharacterSheet_Lost_Naga)&gt;&gt;
 
-\&lt;&lt;run setup.choice(&quot;[[趁热干娜迦-&gt;Encounter_Win_Lost_Naga_Fuck_1]]&quot;);&gt;&gt;
+\&lt;&lt;run setup.choice(&quot;[[趁热干纳迦-&gt;Encounter_Win_Lost_Naga_Fuck_1]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1022" name="Encounter_Win_Lost_Naga_Fuck_1" tags="" position="225,12850" size="100,100">你的双手握住他巨大的阴茎时，你几乎可以听到你的手指在他黏糊糊的皮肤上发出的吱吱声。
 毫无疑问，他的成员坚如磐石，坚硬到足以充当武器。 
 你试探性地沿着上面肿胀的血管抚摸它，然后开始邪恶地咧嘴一笑。你听说过蛇很有柔韧性。
@@ -43318,11 +43318,11 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 \&lt;&lt;set $CharacterSheet_Lost_Naga.quest.fuckedByPlayer = true&gt;&gt;
 \&lt;&lt;if setup.sizeCharactercomparison($CharacterSheet_Player, $CharacterSheet_Lost_Naga) &gt;= setup.Comparators.EQUAL&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[将娜迦的鸡巴按在你的鸡巴缝里-&gt;Encounter_Win_Lost_Naga_Fuck_PlayerBigger_1]]&quot;);&gt;&gt;
-&lt;span class = &#39;inactive&#39;&gt;[[操娜迦的鸡巴缝-&gt;Encounter_Win_Lost_Naga_Fuck_NagaBigger_1]]&lt;/span&gt;
+\&lt;&lt;run setup.choice(&quot;[[将纳迦的鸡巴按在你的鸡巴缝里-&gt;Encounter_Win_Lost_Naga_Fuck_PlayerBigger_1]]&quot;);&gt;&gt;
+&lt;span class = &#39;inactive&#39;&gt;[[操纳迦的鸡巴缝-&gt;Encounter_Win_Lost_Naga_Fuck_NagaBigger_1]]&lt;/span&gt;
 \&lt;&lt;else&gt;&gt;
-&lt;span class = &#39;inactive&#39;&gt;[[将娜迦的鸡巴按在你的鸡巴缝里-&gt;Encounter_Win_Lost_Naga_Fuck_PlayerBigger_1]]&lt;/span&gt;
-\&lt;&lt;run setup.choice(&quot;[[操娜迦的鸡巴缝-&gt;Encounter_Win_Lost_Naga_Fuck_NagaBigger_1]]&quot;);&gt;&gt;
+&lt;span class = &#39;inactive&#39;&gt;[[将纳迦的鸡巴按在你的鸡巴缝里-&gt;Encounter_Win_Lost_Naga_Fuck_PlayerBigger_1]]&lt;/span&gt;
+\&lt;&lt;run setup.choice(&quot;[[操纳迦的鸡巴缝-&gt;Encounter_Win_Lost_Naga_Fuck_NagaBigger_1]]&quot;);&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[离开-&gt;Village]]&quot;);&gt;&gt;
 
@@ -43333,7 +43333,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 你的手猛扑过去，抓住了他的尾巴尖。在他醒悟过来之前，你已经把它塞进你的阴茎里了。
 它只比他的阴茎大一点点，你可以轻松地承受住它。你用双手握住他的尾巴，又拉又推地将它送入您的阴茎里。
-你弯曲你的阴部，弯曲你的阴茎，让它吞咽和吞咽。先是几英寸，很快就是整个脚。当娜迦意识到发生了什么时，他睁大了眼睛。
+你弯曲你的阴部，弯曲你的阴茎，让它吞咽和吞咽。先是几英寸，很快就是整个脚。当纳迦意识到发生了什么时，他睁大了眼睛。
 他不停地扭动，嘴唇发出嘶嘶声和咆哮声，他的手伸进泥泞的地面，但你巨大的阴茎却无比诱人。
 他抓住任何可以抓住的东西，任何可以用作锚点的东西。但是他找到的几根树根在他的手中裂开了。
 你疯狂地、饥渴地笑着。
@@ -43405,7 +43405,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 快了……
 
-\&lt;&lt;run setup.choice(&quot;[[高潮-&gt;Encounter_Win_Lost_Naga_Fuck_NagaBigger_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1028" name="Encounter_Win_Lost_Naga_Fuck_NagaBigger_2" tags="" position="975,12850" size="100,100">你高潮时怒吼了出来。当你把精液喷入娜迦的内部时，您的睾丸紧贴您的腹股沟。你能感觉到他的阴茎急切地吮吸着它。 
+\&lt;&lt;run setup.choice(&quot;[[高潮-&gt;Encounter_Win_Lost_Naga_Fuck_NagaBigger_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1028" name="Encounter_Win_Lost_Naga_Fuck_NagaBigger_2" tags="" position="975,12850" size="100,100">你高潮时怒吼了出来。当你把精液喷入纳迦的内部时，您的睾丸紧贴您的腹股沟。你能感觉到他的阴茎急切地吮吸着它。 
 它充满活力地吸收着你的精种。他的阴茎向上倾斜并吞下你自己的，一直到底部。你瞪大了你的双眼。
 他粘稠的精液在您的阴茎周围飞速向上喷出并溅到了您的腰部，但不仅如此，您还可以感觉到它是如何涌入您的阴茎的。
 它涌入了您的睾丸，拉伸并侵犯着您的前列腺。你的睾丸开始膨胀，它们在接受纳迦的高潮时增大了起来。
@@ -50051,7 +50051,7 @@ f
 
 阿波图斯将你扶起来。
 
-&quot;有了你的帮助，我觉得我们很快便可以让天选之子与倪克斯建立联系……&quot;
+&quot;有了你的帮助，我觉得我们很快便可以让天选之人与倪克斯建立联系……&quot;
 \&lt;&lt;set $CharacterSheet_Player.quest.oaths.apothus = setup.Oath.ACTIVE&gt;&gt;
 \&lt;&lt;run $CharacterSheet_Player.applyAbilityRuntimeData(setup.Ability_Oath_Nyx);&gt;&gt;
 
@@ -50090,9 +50090,9 @@ f
     \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;elseif $WorldState.apothusChosen.essenceLevel == 2&gt;&gt;
     \&lt;&lt;if $Essence &gt;= setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)&gt;&gt;
-&lt;&lt;print &quot;[[完成天选之子的升天(&quot;+setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)+&quot;)-&gt;Feed_The_Chosen_Final][$Essence -= &quot;+setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
+&lt;&lt;print &quot;[[完成天选之人的升天(&quot;+setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)+&quot;)-&gt;Feed_The_Chosen_Final][$Essence -= &quot;+setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)+&quot;]]&quot;&gt;&gt;
     \&lt;&lt;else&gt;&gt;
-&lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[完成天选之子的升天(&quot;+setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)+&quot;)-&gt;Feed_The_Chosen_Final]]&lt;/span&gt;&quot;&gt;&gt;
+&lt;&lt;print &quot;&lt;span class = &#39;inactive&#39;&gt;[[完成天选之人的升天(&quot;+setup.getNyxChosenFeedEssenceCost($CharacterSheet_Player)+&quot;)-&gt;Feed_The_Chosen_Final]]&lt;/span&gt;&quot;&gt;&gt;
     \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1808" name="Feed_The_Chosen_Level1" tags="" position="975,22600" size="100,100">&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;精华在你的@[all|arms|noverb]上流动，并顺着流进了茧中。&quot;)&gt;&gt; \
@@ -50110,7 +50110,7 @@ f
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_ApothusRealm_ApothusMenu]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1809" name="Feed_The_Chosen_Level2" tags="" position="1100,22600" size="100,100">黑色的茧正对着倪克斯的光芒向上生长。在黑色的茧脉动扩张以容纳天选者巨大的肌肉和肉棒时，你不禁后退一步。\
 他的身体庞大得令人难以置信，仿佛其本身就是力量和阳刚之气的化身。 他在茧里不受控制地弯曲，让茧仍在生长的表面产生波纹。
  
-当你走向天选之子时，迷失者们满怀敬畏地看着你。他们虔诚地跪下，以便让你没有任何阻碍地走向茧。\
+当你走向天选之人时，迷失者们满怀敬畏地看着你。他们虔诚地跪下，以便让你没有任何阻碍地走向茧。\
 &lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;你的@[all|hands|noverb]再次按压在茧的表面, 他把你拉进去，仿佛久逢甘露的土壤急切地吸收着你的精华。&quot;)&gt;&gt; \
 你感受到倪克斯的意志，它让你雕刻出一艘巨轮，以便让它能在荒漠畅游。
  
@@ -50139,7 +50139,7 @@ f
 周围的迷失者紧随其后，将他们的精华献给了他们的神。一声低沉的轰鸣声震动了整个站台。 新神的剪影在茧中突然膨胀，伸展着茧，仿佛一颗炸弹在内部被引爆了。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Feed_The_Chosen_Final_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1811" name="Feed_The_Chosen_Final_2" tags="" position="100,22725" size="100,100">你凝视着黑日，惊叹于茧是如何越来越接近它的表面。 \
-黑日的光线开始偏移，聚焦在下面体形惊人的茧身上。天选之子咆哮着，用兽欲的本能刺穿你的灵魂。 还未成型的半神吐出它来到这世间的第一句话。
+黑日的光线开始偏移，聚焦在下面体形惊人的茧身上。天选之人咆哮着，用兽欲的本能刺穿你的灵魂。 还未成型的半神吐出它来到这世间的第一句话。
 
 &quot;我要更多……&quot;
 
@@ -50153,7 +50153,7 @@ f
 仿佛在对这个世界发号施令，他的话语渗透到所有能触及的地方。
 
 迷失者们随之咆哮，每一个迷失者都瞬间达到了令人惊心动魄的高潮边缘。 它们腐化的种子喷涌而出，直到整个平台覆盖上一层厚厚的精液。 \
-天选之子的力量也宠幸了你，强烈的性快感让你咬紧牙关。 你的身体因乞求更多的不洁需求而颤抖; 更大的体型，更多的快感，更强大的力量——这是你消灭任何反抗之声，甚至是克服死亡本身限制所需要的。
+天选之人的力量也宠幸了你，强烈的性快感让你咬紧牙关。 你的身体因乞求更多的不洁需求而颤抖; 更大的体型，更多的快感，更强大的力量——这是你消灭任何反抗之声，甚至是克服死亡本身限制所需要的。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Feed_The_Chosen_Final_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1812" name="Feed_The_Chosen_Final_3" tags="" position="225,22725" size="100,100">他的爪子就像刀刺穿黄油般轻松地从茧中刺出; 两只爪子都闪耀着强烈的黑暗光芒，就好像黑日从它们玻璃般的边缘后面掠过。 \
 光是看着它的双爪便让人着迷;它们身上似乎跳动着无穷的力量，将充满感染力的光芒照射在所有敢于注视它们的人身上。
@@ -50188,7 +50188,7 @@ f
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Feed_The_Chosen_Final_5]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1814" name="Feed_The_Chosen_Final_5" tags="" position="475,22725" size="100,100">荒漠在你周围形成，仿佛你所处的领域只是一个幻象。 
 
-随着天选之子的咆哮扫过无垠的沙漠，这种感觉荡然无存。 野兽就在你身边，而现在它被被释放出来了 \
+随着天选之人的咆哮扫过无垠的沙漠，这种感觉荡然无存。 野兽就在你身边，而现在它被被释放出来了 \
 他的身躯不断膨胀，他的体形迅速高耸在地平线上，同时无数迷失者向他扑来。
 
 然而，当他的身影在沙丘上升起时，你感觉到他那可怖的声音变调了。他的声音更加低沉，从不可一世的咆哮转为挑衅的隆隆笑声。
@@ -50198,22 +50198,22 @@ f
 他双手捂着头，明亮的紫光在他的皮肤下跳动。 他似乎处于疯狂的边缘，仿佛他全身心都陷入一种激烈的斗争中。\
 然而，迷失者们对此毫不知情。他们崇拜他的每一寸身体，如此痴迷，仿佛他们就是为此而活的。 
 
-&quot;不……为什么他要违抗倪克斯的意愿？&quot;阿波图斯一边呻吟着一边紧张地接近天选之子。
+&quot;不……为什么他要违抗倪克斯的意愿？&quot;阿波图斯一边呻吟着一边紧张地接近天选之人。
 
-刹那间，他双目圆睁，在他反应过来前，天选之子的巨爪便拍到了他。你看着先知的身躯像破布般被拍飞到几百尺外。
+刹那间，他双目圆睁，在他反应过来前，天选之人的巨爪便拍到了他。你看着先知的身躯像破布般被拍飞到几百尺外。
 
-天选之子的内心深处陷入混乱，倪克斯与他自身的野心为争夺主导权而相互斗争。他越来越疯狂地大发雷霆，同时用巨爪划过沙丘，在上面留下深深的抓痕。
+天选之人的内心深处陷入混乱，倪克斯与他自身的野心为争夺主导权而相互斗争。他越来越疯狂地大发雷霆，同时用巨爪划过沙丘，在上面留下深深的抓痕。
 
 \&lt;&lt;run setup.choice(&quot;[[尝试帮助天选之人-&gt;Feed_The_Chosen_Final_HelpHim]]&quot;);&gt;&gt;
 \&lt;&lt;if $CharacterSheet_MQ002_Guard.quest.nyxPromise == true&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[与牛头人结盟-&gt;Feed_The_Chosen_Final_Minotaur]]&quot;);&gt;&gt;
-\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1815" name="Feed_The_Chosen_Final_HelpHim" tags="" position="600,22725" size="100,100">天选之子的脑海内有两个声音正在发生激烈冲突，就像两只为生存而战的野兽。
+\&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1815" name="Feed_The_Chosen_Final_HelpHim" tags="" position="600,22725" size="100,100">天选之人的脑海内有两个声音正在发生激烈冲突，就像两只为生存而战的野兽。
 
 看到此番情景，你内心深处的某段记忆被唤醒了，那是你曾亲身体验过的。
 
 你知道该如何化解他内心的混乱。
 
-\&lt;&lt;run setup.choice(&quot;[[靠近-&gt;Feed_The_Chosen_Final_HelpHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1816" name="Feed_The_Chosen_Final_HelpHim_2" tags="" position="725,22725" size="100,100">你朝着天选之子走去。
+\&lt;&lt;run setup.choice(&quot;[[靠近-&gt;Feed_The_Chosen_Final_HelpHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1816" name="Feed_The_Chosen_Final_HelpHim_2" tags="" position="725,22725" size="100,100">你朝着天选之人走去。
 
 他的吼声变得越来越狂暴，两种声音交替出现; 他变得歇斯底里. 他吼声蕴含的可怖力量在他周围激起一阵猛烈的沙尘暴，这使得你越来越难以接近他。
 
@@ -51271,7 +51271,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 \&lt;&lt;/if&gt;&gt;
 \&lt;&lt;/if&gt;&gt;
-\&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1921" name="Feed_The_Chosen_Final_Minotaur" tags="" position="100,24100" size="100,100">在天选之子内心有两个声音就像两头为生存而战的野兽一样激烈地斗争着。
+\&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1921" name="Feed_The_Chosen_Final_Minotaur" tags="" position="100,24100" size="100,100">在天选之人内心有两个声音就像两头为生存而战的野兽一样激烈地斗争着。
 
 你在你的内心深处感觉到一些东西，一些你过去已经经历过的东西。
 一种你能化解他内心混乱的感觉。

@@ -159,6 +159,7 @@
 |yes|Kobold|n.哥布林||
 |yes|Echo|name.回响||
 |yes|Tendrils Grasp|n.触手抓握||
+|yes|Hybrid|n.杂种|字面意思，多个种族的混合体。|
 ---
 
 ## **三、代码查疑**
