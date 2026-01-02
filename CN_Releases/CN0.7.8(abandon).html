@@ -27295,12 +27295,12 @@ Config.ui.stowBarInitially = false;
 	fightMoveIDs: [setup.FightMove_WitheringVenom.id],
 	fightReward: setup.RewardTier.HIGH,
 	encounterIntroText: &quot;&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_FightIntro&gt;&gt;&quot;,
-	encounterStartText: &quot;倪克斯的幼体默默地向你爬行。&quot;,
+	encounterStartText: &quot;倪克斯的寄生体默默地向你爬行。&quot;,
 	outcomePlayerWins: &quot;&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_PlayerWins&gt;&gt;&quot;,
 	outcomePlayerLoses: &quot;&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_PlayerLoses&gt;&gt;&quot;
 }&gt;&gt;</tw-passagedata><tw-passagedata pid="186" name="_nyx_parasite_info_sheet" tags="" position="725,2350" size="100,100">&lt;&lt;set setup.InfoSheet_MQ002_NyxParasite =
 {
-	name: &quot;阿尔法幼体&quot;,
+	name: &quot;阿尔法寄生体&quot;,
 	gender: &quot;male&quot;,
 	bodyVisual: &quot;BodyVisualSheet_MQ002_NyxParasite&quot;,
 	corruption: 9000,
@@ -34104,9 +34104,9 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_NyxInducedWorkout.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="460" name="Ability_NyxParasiteInfection" tags="" position="1225,5725" size="100,100">&lt;&lt;set setup.Ability_NyxParasiteInfection = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxParasiteInfection&quot;,
-    name:       &quot;感染倪克斯幼体&quot;, 
+    name:       &quot;感染倪克斯寄生体&quot;, 
     description:function(character){
-        return &quot;倪克斯的造物寄宿在你的身体里。你必须保护这些幼体……&quot;
+        return &quot;倪克斯的造物寄宿在你的身体里。你必须保护这些寄生体……&quot;
     },
     maxRank: 10
 })&gt;&gt;
@@ -34147,9 +34147,9 @@ maxRank: 1
 
 &lt;&lt;run setup.Ability_NyxParasiteInfection.setFilter(setup.AbilityFilter.ALTERATION)&gt;&gt;</tw-passagedata><tw-passagedata pid="461" name="Ability_NyxParasiteInfection_2" tags="" position="100,5850" size="100,100">&lt;&lt;set setup.Ability_NyxParasiteInfection_2 = setup.AbilityDataFactory.createAbilityData({
     id:         &quot;Ability_NyxParasiteInfection_2&quot;,
-    name:       &quot;倪克斯幼体之君王&quot;, 
+    name:       &quot;倪克斯寄生体之君王&quot;, 
     description:function(character){
-        return &quot;你体内孕育了无数的倪克斯幼体。\n你体内的每一条寄生虫都能让你得到最小为1的唤醒值。\n你必须传播。\n你必须做爱。\n你必须生长。&quot;
+        return &quot;你体内孕育了无数的倪克斯寄生体。\n你体内的每一条寄生虫都能让你得到最小为1的唤醒值。\n你必须传播。\n你必须做爱。\n你必须生长。&quot;
     },
     maxRank: 15
 })&gt;&gt;
@@ -36965,7 +36965,7 @@ maxRank: 5
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_HostOfTheSpawns.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_HostOfTheSpawns.achievementInfo = &quot;吸取5个倪克斯的幼体。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_HostOfTheSpawns.achievementInfo = &quot;吸取5个倪克斯的寄生体。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_HostOfTheSpawns.addBehaviour(
     &quot;start&quot;,
@@ -37035,7 +37035,7 @@ maxRank: 5
 })&gt;&gt;
 
 &lt;&lt;set setup.Achievement_LordOfTheSpawns.isAchievement = true&gt;&gt;
-&lt;&lt;set setup.Achievement_LordOfTheSpawns.achievementInfo = &quot;吸取15个倪克斯的幼体。&quot;&gt;&gt;
+&lt;&lt;set setup.Achievement_LordOfTheSpawns.achievementInfo = &quot;吸取15个倪克斯的寄生体。&quot;&gt;&gt;
 
 &lt;&lt;run setup.Achievement_LordOfTheSpawns.addBehaviour(
     &quot;start&quot;,
@@ -39437,7 +39437,7 @@ maxRank: 5
 	{
         var his = setup.getPronoun(character,&quot;pronounDepPos&quot;);
         var displayString = &quot;熟悉的传送门打开的声音在你们两个人之间响起。\n&quot;;
-        displayString += &quot;&quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot;长的倪克斯幼体的黑色不透明皮肤探出头来，跳向&quot;+ target.info.name;
+        displayString += &quot;&quot;+setup.getLength(Math.ceil(setup.getStatValue(character, &quot;cock&quot;) / 3))+&quot;长的倪克斯寄生体的黑色不透明皮肤探出头来，跳向&quot;+ target.info.name;
 		return displayString;
 	},
 	attackHitDesc: function(character, target)
@@ -43596,7 +43596,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Village]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1039" name="Quest_MQ002_NyxParasiteEncounter_FightIntro" tags="" position="1100,12975" size="100,100">\&lt;&lt;set $CharacterSheet_MQ002_NyxParasite.quest.met = true&gt;&gt;
 &lt;&lt;print setup.getFightStartPassages($CharacterSheet_MQ002_NyxParasite)&gt;&gt;</tw-passagedata><tw-passagedata pid="1040" name="Quest_MQ002_NyxParasiteEncounter_PlayerWins" tags="" position="1225,12975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;purple&quot;)&gt;&gt;
-那个&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_NyxParasite, &quot;height&quot;))&gt;&gt;幼体完全摔在了地上。
+那个&lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_NyxParasite, &quot;height&quot;))&gt;&gt;寄生体完全摔在了地上。
 
 它被卡在了死胡同里，动弹不得。
 
@@ -43609,13 +43609,13 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 \&lt;&lt;endif&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[让它进入你-&gt;Quest_MQ002_NyxParasiteEncounter_ConsentualInfest]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1041" name="Quest_MQ002_NyxParasiteEncounter_ConsentualInfest" tags="" position="100,13100" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;purple&quot;)&gt;&gt;
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
-你低头看向面前已无生气的幼体。你可以当场杀死它。但是有一种东西阻止了你。
+你低头看向面前已无生气的寄生体。你可以当场杀死它。但是有一种东西阻止了你。
 
 当它缠上你，在你体内跳动的时候，你感到了前所未有的快感。天知道当你让它完全占据你时会有多爽？
 
 如果你渴望着它的影响，那它还算是寄生物吗？
 \&lt;&lt;else&gt;&gt;
-视线中那受伤的幼体让你的大脑隐隐阵痛。你根本无法让自己杀了它。
+视线中那受伤的寄生体让你的大脑隐隐阵痛。你根本无法让自己杀了它。
 
 至少是在它带给你了那么多之后……
 \&lt;&lt;/if&gt;&gt;
@@ -43624,7 +43624,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 \&lt;&lt;set $NyxParasiteEncounter_Won = true&gt;&gt;
 &lt;&lt;include Quest_MQ002_NyxParasiteEncounter_Infection&gt;&gt;</tw-passagedata><tw-passagedata pid="1042" name="Quest_MQ002_NyxParasiteEncounter_Infection" tags="" position="225,13100" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;pink&quot;)&gt;&gt;
-它带着新生出的活力向你蠕动着；很快，你便感觉到了那潮湿的幼体爬上了双腿。
+它带着新生出的活力向你蠕动着；很快，你便感觉到了那潮湿的寄生体爬上了双腿。
 \&lt;&lt;if $NyxParasiteEncounter_Won&gt;&gt;
 它很快便抵达了胸口，离你的嘴巴只有一步之遥，仿佛是在等你放他进入。
 
@@ -43654,52 +43654,52 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 你试着揉了揉蛋蛋；仅仅这样就几乎让你立马射出来。 
 睾丸的敏感度不断增长，已超过了人体的极限，持续的压力更是让它们疯狂地脉动。
 
-你吮吸着这个幼体的尾巴的末端，一边呻吟一边舔食着唇边的油。
+你吮吸着这个寄生体的尾巴的末端，一边呻吟一边舔食着唇边的油。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_3]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1044" name="Quest_MQ002_NyxParasiteEncounter_Infection_3" tags="" position="475,13100" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;pink&quot;)&gt;&gt;
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
-你又开始揉搓你的蛋蛋。虽然不确定那个幼体做了什么，但是你的蛋蛋正在变化。
+你又开始揉搓你的蛋蛋。虽然不确定那个寄生体做了什么，但是你的蛋蛋正在变化。
 \&lt;&lt;else&gt;&gt;
 你还清楚地记得这种感觉，并在你的睾丸再次生长的时候呻吟着揉搓着它们。
 \&lt;&lt;/if&gt;&gt;
 
-你感觉你的睾丸涨大了。它们像海绵吸水一样吸收着幼体分泌出的催情油。
+你感觉你的睾丸涨大了。它们像海绵吸水一样吸收着寄生体分泌出的催情油。
 你用力地揉搓着，每一次触碰都让强烈的快感注满全身。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_3_1]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1045" name="Quest_MQ002_NyxParasiteEncounter_Infection_3_1" tags="" position="600,13100" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;red&quot;)&gt;&gt;
-幼体贪婪地吞吃着你产生的精液，但是压力已经大到无法承受。
-它变得更大了，进一步填满了你的蛋蛋。而你巨量的精液同时也超过了幼体的极限。
+寄生体贪婪地吞吃着你产生的精液，但是压力已经大到无法承受。
+它变得更大了，进一步填满了你的蛋蛋。而你巨量的精液同时也超过了寄生体的极限。
 你扬起脑袋，吼叫着从你肥大鸡巴里射出一升又一升的精液，如喷泉一般，让精液从你塞得满满的蛋蛋中出来，铺满了过道
 你彻底陷入意乱神迷的快感，吼叫声持续了数分钟才停止。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_NyxParasiteEncounter_Infection_4]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1046" name="Quest_MQ002_NyxParasiteEncounter_Infection_4" tags="" position="725,13100" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;purple&quot;)&gt;&gt;
-幼体的饥渴驱使着你的欲望一直高涨着。
+寄生体的饥渴驱使着你的欲望一直高涨着。
 但这似乎并不是你体内发生的唯一变化。
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &lt;= 0&gt;&gt;
 你同时感到了一股要将这个给你的赐福传播出去的渴望。
 \&lt;&lt;else&gt;&gt;
-随着你体内幼体的增多，传播的渴望便愈发强烈。
+随着你体内寄生体的增多，传播的渴望便愈发强烈。
 \&lt;&lt;/if&gt;&gt;
 
 ∇: 你获得了8点腐化。
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 8)&gt;&gt;
 \&lt;&lt;run setup.MQ002_AddNyxParasiteInfection()&gt;&gt;
-∇: 你获得了能力&quot;感染倪克斯幼体&quot;。
+∇: 你获得了能力&quot;感染倪克斯寄生体&quot;。
 \
 
 \&lt;&lt;print setup.clearWestWingRoom(&quot;WestWing_NyxSpawnFight&quot;)&gt;&gt;
 
 &lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="1047" name="Quest_MQ002_NyxParasiteEncounter_KillIt" tags="" position="850,13100" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;blue&quot;)&gt;&gt;
 看到它掉落的瞬间，你箭步上前去给予它最后一击。
-你一遍又一遍地踩踏着幼体，让恐惧和肾上腺素引领你的本能。
+你一遍又一遍地踩踏着寄生体，让恐惧和肾上腺素引领你的本能。
 你不停地用力踩踏，直到身体允许的最大极限，喘息声在整个门厅内回响着。
 锐利的尖叫声很快融化成了潮湿的溅泼声；它的身体只能无意识地抽搐。
 
 你喘着粗气，向后退了几步。 
-幼体那毛骨悚然的死状让你几乎都要吐出来。
+寄生体那毛骨悚然的死状让你几乎都要吐出来。
 
 你屏住呼吸，走向了门廊尽头的门前。
 你的视线仍紧紧盯着那怪物的尸体，以防它会瞬间复活过来。
@@ -43709,7 +43709,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 &lt;&lt;print setup.getNextManorDestination()&gt;&gt;</tw-passagedata><tw-passagedata pid="1048" name="Quest_MQ002_NyxParasiteEncounter_PlayerLoses" tags="" position="975,13100" size="100,100">\&lt;&lt;print setup.getFightReward($CharacterSheet_MQ002_NyxParasite, true)&gt;&gt;
 &lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;purple&quot;)&gt;&gt;
 
-目睹着幼体饥渴地朝你爬来的场景让你崩溃了。
+目睹着寄生体饥渴地朝你爬来的场景让你崩溃了。
 
 在它抓到你之前你只有数秒的反应时间
 
@@ -43721,7 +43721,7 @@ $CharacterSheet_Player.symbiote.name很高兴，他能感觉到自己再次变�
 \&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="1049" name="Quest_MQ002_NyxParasiteEncounter_Submit" tags="" position="1100,13100" size="100,100">\&lt;&lt;set $NyxParasiteEncounter_Won = false&gt;&gt;
 你来时的门只在你身后几尺远的距离，但一股压倒性的疲劳混合着升起的好奇心让你保持着双膝跪地的姿势。
 
-&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_Infection&gt;&gt;</tw-passagedata><tw-passagedata pid="1050" name="Quest_MQ002_NyxParasiteEncounter_Escape" tags="" position="1225,13100" size="100,100">在你身体即将放弃之时，看到幼体爬向你的强烈恐惧让你重获动力。
+&lt;&lt;include Quest_MQ002_NyxParasiteEncounter_Infection&gt;&gt;</tw-passagedata><tw-passagedata pid="1050" name="Quest_MQ002_NyxParasiteEncounter_Escape" tags="" position="1225,13100" size="100,100">在你身体即将放弃之时，看到寄生体爬向你的强烈恐惧让你重获动力。
 
 你尖叫着转过身去，门只有几寸之遥……
 你毫不犹豫冲进了来时的房间，用尽最后一丝力量将门强行关了上去。
@@ -49958,7 +49958,7 @@ f
 \&lt;&lt;run setup.choice(&quot;[[揍他-&gt;FightLogic][$Encounter_Target = $CharacterSheet_Apothus]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1795" name="Quest_MQ002_ApothusRealm_HereToUnleashNyx" tags="" position="600,22475" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_Apothus, &quot;licky&quot;)&gt;&gt;
 倪克斯流过皮肤的感觉是不可否认的;这种感觉不仅仅令人振奋。它是光荣的;你觉得你可以几天不停地进行交配。
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &gt; 0&gt;&gt;
-你也很喜欢在你体内不断扭动着的幼体。
+你也很喜欢在你体内不断扭动着的寄生体。
 \&lt;&lt;/if&gt;&gt;
 
 你接近腐化的龙裔；你的手紧握着你跳动的肉棒。你随时可能射精。
@@ -51419,7 +51419,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 他的肉棒早已挺立，坚硬如铁, 他将他的盔甲尽数脱下。
 
 [[询问他的感受-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskFeeling_Lust2]]
-[[询问关于倪克斯幼体的事-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust2]]
+[[询问关于倪克斯寄生体的事-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust2]]
 
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1942" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust2" tags="" position="225,24350" size="100,100">&lt;&lt;ImageMinoNakedNoBG&gt;&gt;
 
@@ -51442,7 +51442,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 一股强大的腐败气息从他肌肉发达的裸露身体中散发出来。
 
 [[询问他的感受-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskFeeling_Lust3]]
-[[询问有关倪克斯幼体的事情-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust3]]
+[[询问有关倪克斯寄生体的事情-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust3]]
 
 \&lt;&lt;run setup.choice(&quot;[[返回-&gt;Quest_MQ002_Manor_MainHall]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1945" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_AskMonsters_Lust3" tags="" position="600,24350" size="100,100">&lt;&lt;ImageMinoNakedAura&gt;&gt;
 
@@ -51459,7 +51459,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 他抓着自己的卵蛋，浑身性奋地颤抖。
 
-&quot;特别是那些滑溜溜的幼体。我吃了一些，天呐，那感觉太棒了。我能感受到他们在取悦我的卵蛋，让我的卵蛋越来越大。&quot;
+&quot;特别是那些滑溜溜的寄生体。我吃了一些，天呐，那感觉太棒了。我能感受到他们在取悦我的卵蛋，让我的卵蛋越来越大。&quot;
 
 \&lt;&lt;run setup.choice(&quot;[[接近他-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_1]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[停留在原地-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1947" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_1" tags="" position="850,24350" size="100,100">&lt;&lt;ImageMinoNakedAura&gt;&gt;
@@ -51472,7 +51472,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[摸他的蛋蛋-&gt;Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1948" name="Quest_MQ002_Manor_MainHall_TalkMinotaur_Sex_2" tags="" position="975,24350" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 &lt;&lt;ImageMinoNakedAura&gt;&gt;
 
-可以感觉到倪克斯的幼体从内部愉悦他的蛋蛋，像充气球一样让他的球越胀越大。 
+可以感觉到倪克斯的寄生体从内部愉悦他的蛋蛋，像充气球一样让他的球越胀越大。 
 他的肉棒像一头狂野的巨兽疯狂地悸动着。
 
 &quot;干我……&quot;
@@ -51732,7 +51732,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 他看上去很痛苦，极力忍耐着什么，而你对这种痛苦的姿态再熟悉不过了。
 
 你可以看到他的血管在跳动，他痛苦的表情中夹杂着兴奋，他的束腰外衣上微微隆起的部分在跳动。
-你感觉倪克斯的幼体也在他的身体里。你自己的倪克斯幼体兴奋地压迫你的蛋蛋和前列腺。
+你感觉倪克斯的寄生体也在他的身体里。你自己的倪克斯寄生体兴奋地压迫你的蛋蛋和前列腺。
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="1975" name="Quest_MQ002_Manor_DragonRoom_Safe" tags="" position="600,24725" size="100,100">\&lt;&lt;if setup.MQ002_HasIntactOath()&gt;&gt;
 &lt;&lt;print setup.displayEncounterImage($CharacterSheet_MQ002_DragonMonk.info.pictureFriend)&gt;&gt;
 \&lt;&lt;else&gt;&gt;
@@ -51741,19 +51741,19 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;include Quest_MQ002_Manor_DragonRoom_ParasiteHint&gt;&gt;
 
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &gt; 0 &amp;&amp; $CharacterSheet_MQ002_DragonMonk.quest.askedWhoAreYou&gt;&gt;
-&lt;span class=&quot;glitch&quot; data-text=&quot;传播你的幼体……&quot;&gt;[[传播你的幼体……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim]]&lt;/span&gt;
+&lt;span class=&quot;glitch&quot; data-text=&quot;传播你的寄生体……&quot;&gt;[[传播你的寄生体……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim]]&lt;/span&gt;
 \&lt;&lt;else&gt;&gt;
 [[询问他的情况-&gt;Quest_MQ002_Manor_DragonRoom_WhoAreYou]]
 \&lt;&lt;/if&gt;&gt;
 \
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &gt; 0 &amp;&amp; $CharacterSheet_MQ002_DragonMonk.quest.askedWhyAreYouHere&gt;&gt;
-&lt;span class=&quot;glitch&quot; data-text=&quot;用幼体填满他……&quot;&gt;[[用幼体填满他……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim]]&lt;/span&gt;
+&lt;span class=&quot;glitch&quot; data-text=&quot;用寄生体填满他……&quot;&gt;[[用寄生体填满他……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim]]&lt;/span&gt;
 \&lt;&lt;elseif $CharacterSheet_MQ002_DragonMonk.quest.askedWhoAreYou&gt;&gt;
 [[询问他为什么在这里-&gt;Quest_MQ002_Manor_DragonRoom_WhyAreYouHere]]
 \&lt;&lt;/if&gt;&gt;
 \
 \&lt;&lt;if $CharacterSheet_Player.quest.nyxParasiteInfections &gt; 0 &amp;&amp; $CharacterSheet_MQ002_DragonMonk.quest.askedLookingForSomeone&gt;&gt;
-&lt;span class=&quot;glitch&quot; data-text=&quot;让你的幼体来接管他……&quot;&gt;[[让你的幼体来接管他……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim]]&lt;/span&gt;
+&lt;span class=&quot;glitch&quot; data-text=&quot;让你的寄生体来接管他……&quot;&gt;[[让你的寄生体来接管他……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim]]&lt;/span&gt;
 \&lt;&lt;elseif $CharacterSheet_MQ002_DragonMonk.quest.askedWhyAreYouHere &amp;&amp; !$CharacterSheet_MQ002_DragonMonk.quest.askedLookingForSomeone&gt;&gt;
 [[告诉他你在寻找一些什么-&gt;Quest_MQ002_Manor_DragonRoom_ImLookingForSomeone]]
 \&lt;&lt;/if&gt;&gt;
@@ -51908,7 +51908,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 他给了你一个同情的眼神，然后又痛苦地弓下身。
 
-\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1992" name="Quest_MQ002_Manor_DragonRoom_InfestHim" tags="" position="225,24975" size="100,100">似乎有什么东西在你体内悸动，渴求着什么。那是你体内的倪克斯幼体，他们剧烈地在你的卵蛋内摇晃旋转着。
+\&lt;&lt;run setup.choice(&quot;[[继续-&gt;Quest_MQ002_Manor_DragonRoom]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1992" name="Quest_MQ002_Manor_DragonRoom_InfestHim" tags="" position="225,24975" size="100,100">似乎有什么东西在你体内悸动，渴求着什么。那是你体内的倪克斯寄生体，他们剧烈地在你的卵蛋内摇晃旋转着。
 
 当嗅到你体内仍存有的良知时，他们便开始马不停蹄地产出成吨的性奋剂。
 
@@ -51917,9 +51917,9 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 龙裔绝望地看着，直到他突然挣扎着弯下腰。
 
-\&lt;&lt;run setup.choice(&quot;[[你察觉到他体内的倪克斯幼体苏醒了-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1993" name="Quest_MQ002_Manor_DragonRoom_InfestHim_2" tags="" position="350,24975" size="100,100">&quot;嘎啊…… 不……不要在这种时候！&quot; 他大叫着，拼命捂住自己鼓起的大包。
+\&lt;&lt;run setup.choice(&quot;[[你察觉到他体内的倪克斯寄生体苏醒了-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1993" name="Quest_MQ002_Manor_DragonRoom_InfestHim_2" tags="" position="350,24975" size="100,100">&quot;嘎啊…… 不……不要在这种时候！&quot; 他大叫着，拼命捂住自己鼓起的大包。
 
-但很快，即使是他这样的僧侣也无法抗拒自己体内倪克斯幼体产出的强力春药。 
+但很快，即使是他这样的僧侣也无法抗拒自己体内倪克斯寄生体产出的强力春药。 
 起初他只是忍耐着让自己呻吟得不要那么大声，直到他燥热难耐，像要干坏事的孩子般惊慌地解开了上衣的扣子。
 
 &quot;啊，啊啊……哈啊啊啊……恳，恳求你原谅我的堕落，我的神……嘎啊啊啊啊啊啊!&quot; 
@@ -51959,7 +51959,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[给他更多……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1997" name="Quest_MQ002_Manor_DragonRoom_InfestHim_6" tags="" position="850,24975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 他的舌头缠上了你的龟头，细细品尝其中风味，不落下每一寸，然后才将你的肉棒完全吞下。 你感觉到他的巧舌俏皮地想要往你的铃口深处钻，想要得到更多汁液。
 
-他捧住你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|balls|noverb]&quot;)&gt;&gt;，轻轻地抚摩，感受里面倪克斯幼体的存在。
+他捧住你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|balls|noverb]&quot;)&gt;&gt;，轻轻地抚摩，感受里面倪克斯寄生体的存在。
 
 &quot;哈，嗯嗯嗯……&quot;
 
@@ -51969,11 +51969,11 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 &quot;后入我……操烂我……&quot;
 
 龙裔完全屈服于肉欲的快感。 
-他能感觉到幼体们沿着你的肉棒隆起，他贪婪地吮吸着，就像他的生命依赖于它们一样，他的舌头探入你的肉棒深处。 
+他能感觉到寄生体们沿着你的肉棒隆起，他贪婪地吮吸着，就像他的生命依赖于它们一样，他的舌头探入你的肉棒深处。 
 
-\&lt;&lt;run setup.choice(&quot;[[排出幼体-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1998" name="Quest_MQ002_Manor_DragonRoom_InfestHim_7" tags="" position="975,24975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-当幼体们顺着你的肉棒来到你的下腹部，一寸寸向你的上半身蔓延时，你爽到眼皮上翻，&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|teeths|noverb]&quot;)&gt;&gt;紧咬。 快感仍在飙升，而他的小舌对此毫不知情，仍肆无忌惮地往肉棒更深处探索。
-他从两胯之间抬头凝视着你，眼中燃烧着一种疯狂的性奋。当感觉到幼体在你的血管里移动时，他嘴巴发出的啪啪水声和喉咙深处的呻吟声越来越响。
+\&lt;&lt;run setup.choice(&quot;[[排出寄生体-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_7]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1998" name="Quest_MQ002_Manor_DragonRoom_InfestHim_7" tags="" position="975,24975" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
+当寄生体们顺着你的肉棒来到你的下腹部，一寸寸向你的上半身蔓延时，你爽到眼皮上翻，&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|teeths|noverb]&quot;)&gt;&gt;紧咬。 快感仍在飙升，而他的小舌对此毫不知情，仍肆无忌惮地往肉棒更深处探索。
+他从两胯之间抬头凝视着你，眼中燃烧着一种疯狂的性奋。当感觉到寄生体在你的血管里移动时，他嘴巴发出的啪啪水声和喉咙深处的呻吟声越来越响。
 
 终于，你感觉那一刻要来了。你用力抱住他的头，跨部一顶，似乎要用肉棒贯穿他的整个身体，然后你发出一声惊天动地的咆哮。 
 在咆哮声中，你达到一个前所未有的高潮。你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot;@[all|churning|balls|noverb]颤动着&quot;)&gt;&gt;，同时大量精液从中喷涌而出。
@@ -51992,7 +51992,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[进一步感染他……-&gt;Quest_MQ002_Manor_DragonRoom_InfestHim_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="1999" name="Quest_MQ002_Manor_DragonRoom_InfestHim_8" tags="" position="1100,24975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;unique&quot;)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 他下定决心，张开嘴，伸出舌头，色情地地舔着嘴唇。
-当幼体从龟头缝钻出来时，你爽得尖叫起来。 
+当寄生体从龟头缝钻出来时，你爽得尖叫起来。 
 
 它像蛇一样滑向龙裔张开的嘴，并融入其中。
 
@@ -52000,7 +52000,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 他爽得双眼上翻，眼珠子都快飞到后脑勺去了，强烈的性快感淹没了他，使他再次射出大量精液。
 
-当你的巨物深入他的小穴，他爽得在你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot; @[all|pecs|noverb]&quot;)&gt;&gt; 上喷洒出奶白色的浓稠精液，混合着他体内的大量倪克斯幼体。
+当你的巨物深入他的小穴，他爽得在你的&lt;&lt;print setup.processFlavours($CharacterSheet_Player, &quot; @[all|pecs|noverb]&quot;)&gt;&gt; 上喷洒出奶白色的浓稠精液，混合着他体内的大量倪克斯寄生体。
 
 &quot;啊啊啊啊啊……我好爽，好爽啊……&quot;他呻吟着，淹没在情欲的海洋里，快要喘不上气来了。
 
@@ -52107,7 +52107,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 口水从它们的下巴上滴下来，它们那双画着亮黄色的眼睛饥渴地盯着空荡荡的房间，仿佛在等待着愿意满足它们欲望的人。
 
-你被沐浴在新释放的倪克斯幼体的气味中。
+你被沐浴在新释放的倪克斯寄生体的气味中。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_DrenthRoom_FirstTime_Infected_2]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2013" name="WestWing_DrenthRoom_FirstTime_Infected_2" tags="" position="350,25225" size="100,100">铜色的地板被雾气笼罩着。
 唯一没有被它吞噬的是房间中央的大床和床底旁的一个人。
@@ -52380,7 +52380,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 一个腐化的存在，现在是如此熟悉。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_GloryHole_Infect_2]]&quot;)&gt;&gt;</tw-passagedata><tw-passagedata pid="2049" name="WestWing_GloryHole_Infect_2" tags="" position="1100,25600" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
-你感觉到倪克斯的幼体在洞外，在那个乞求你的污秽种子的洞里。
+你感觉到倪克斯的寄生体在洞外，在那个乞求你的污秽种子的洞里。
 看来你的舔屌者自己也沉溺于禁忌的快乐中了。
 
 &quot;干……快点给我口……&lt;span class=&quot;glitch nyx&quot; data-text=&quot;腐化 生长 做爱&quot;&gt;&quot;侵占我！&quot;&lt;/span&gt;&quot;
@@ -52389,17 +52389,17 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 
 \&lt;&lt;run setup.choice(&quot;[[高潮-&gt;WestWing_GloryHole_Infect_3]]&quot;)&gt;&gt;</tw-passagedata><tw-passagedata pid="2050" name="WestWing_GloryHole_Infect_3" tags="" position="1225,25600" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 厚厚的疙瘩从你的蛋蛋上升起，沿着你的鸡巴，让你在快乐中咆哮。
-漆黑的种子喷涌而出。它拉长了你的尿道，因为幼体被挤出来，深入到饥饿的喉咙里。
+漆黑的种子喷涌而出。它拉长了你的尿道，因为寄生体被挤出来，深入到饥饿的喉咙里。
 
 你听到他在拼命地想把你全部吸进去的时候抽搐。
 
 他紧缩的喉咙的感觉太强烈了。你高兴地咆哮着，感觉到高潮的快感在你的血管里流淌。
 
-你最后一次插入，尽可能地深入。你的蛋蛋又在他们的喉咙里射出一个幼体，带领他们在无尽的快乐之路上走得更远。
+你最后一次插入，尽可能地深入。你的蛋蛋又在他们的喉咙里射出一个寄生体，带领他们在无尽的快乐之路上走得更远。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_GloryHole_Infect_4]]&quot;)&gt;&gt;</tw-passagedata><tw-passagedata pid="2051" name="WestWing_GloryHole_Infect_4" tags="" position="100,25725" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
 
-流动的幼体射干了，你的蛋蛋开始疼了，因为黑日的合唱声轰轰烈烈地进入你的脑海，使你感到无尽的确认。
+流动的寄生体射干了，你的蛋蛋开始疼了，因为黑日的合唱声轰轰烈烈地进入你的脑海，使你感到无尽的确认。
 
 &quot;生长……做爱……传播……&quot;
 
@@ -52585,7 +52585,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 这些倪克斯卵里的怪物散发着超凡脱俗的光芒，在地面上扭动着身躯，热情地舞蹈着，邀请你进入坑里。
 
 腐化的思想在你的头脑中奔流，用黑暗的欲望诱惑你。
-你不禁想知道，如果你屈服于欲望和诱惑，这些幼体会对你做什么。 
+你不禁想知道，如果你屈服于欲望和诱惑，这些寄生体会对你做什么。 
 
 \&lt;&lt;run setup.choice(&quot;[[屈服于你内心的欲望-&gt;WestWing_NyxSpawnPit_4]]&quot;);&gt;&gt;
 \&lt;&lt;run setup.choice(&quot;[[进入下一个房间-&gt;WestWing_NyxSpawnPit_Leave]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2073" name="WestWing_NyxSpawnPit_4" tags="" position="350,25975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;blue&quot;)&gt;&gt;
@@ -52599,12 +52599,12 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 随着呼吸越来越重，你跪下，向它们伸出手臂。 
 它们都热切地向你游来。有些甚至想跳起来够到你的手臂，但却擦肩而过。
 
-一只幼体越过其他幼体向你靠近；它的腐化使你沐浴在麝香的香气中。 
+一只寄生体越过其他寄生体向你靠近；它的腐化使你沐浴在麝香的香气中。 
 当它温暖黏滑的皮肤接触到你的皮肤时，你兴奋得全身颤抖。
 
 \&lt;&lt;run setup.choice(&quot;[[继续-&gt;WestWing_NyxSpawnPit_6]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2075" name="WestWing_NyxSpawnPit_6" tags="" position="600,25975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;purple&quot;)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
-另一只幼体紧随其后，它的身体爬在你的手臂上。
+另一只寄生体紧随其后，它的身体爬在你的手臂上。
 
 你能感觉到它的腐化渗入你的皮肤，你忍不住呻吟。
 它使你那活儿硬了，因情欲而悸动着。
@@ -52613,13 +52613,13 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 1)&gt;&gt;
 你乞求它们靠近你，让它们侵入你的身体内部。
 
-其中一只幼体从你的手臂上掉下来，滑下你的身体。 
+其中一只寄生体从你的手臂上掉下来，滑下你的身体。 
 它停在你的腰部，然后爬上你的腿，在你身上蠕动着，留下一串令人愉悦的痕迹。 
 当它到达你的大腿时，你的整个身体都在期待中颤抖。
 
 \&lt;&lt;run setup.choice(&quot;[[让它进入你的肉棒-&gt;WestWing_NyxSpawnPit_8]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2077" name="WestWing_NyxSpawnPit_8" tags="" position="850,25975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;pink&quot;)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
-幼体开始沿着你的肉棒爬行，让你的脊背因快感和激动而颤抖。
+寄生体开始沿着你的肉棒爬行，让你的脊背因快感和激动而颤抖。
 它缠绕在你的肉棒上，紧紧地抓住了。 
 
 你能感觉到它的悸动，它在渴望得到你的精液。 
@@ -52631,7 +52631,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[呻吟出声-&gt;WestWing_NyxSpawnPit_9]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2078" name="WestWing_NyxSpawnPit_9" tags="" position="975,25975" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;red&quot;)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 2)&gt;&gt;
 当欲望一遍又一遍地袭击你时，你发出愉悦的呻吟，声音在房间内久久回荡。
-你抓住茎柄，拼命地引导内部的幼体。 你的肉棒随着幼体的深入而变粗。
+你抓住茎柄，拼命地引导内部的寄生体。 你的肉棒随着寄生体的深入而变粗。
 
 你前后扭动你的臀部，频率越来越快，快感达到了你从未设想过的高度。
 
@@ -52655,9 +52655,9 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.choice(&quot;[[屈服于欲望之下-&gt;WestWing_NyxSpawnPit_12]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2081" name="WestWing_NyxSpawnPit_12" tags="" position="100,26100" size="100,100">&lt;&lt;print setup.setAndDisplayBodyVisual($CharacterSheet_MQ002_NyxParasite, &quot;red&quot;)&gt;&gt;
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 曾经在你皮肤下留下刺激快感的外来生物现在正在数以百计地入侵你的皮肤。 
-在下坠的翻滚中，倪克斯幼体不断地刺激着你的身体，给你带来了无尽的快感冲击。
+在下坠的翻滚中，倪克斯寄生体不断地刺激着你的身体，给你带来了无尽的快感冲击。
 
-在成百上千只幼体急切地钻入你的肉棒跟菊部时，你的身体充满了愉悦感。
+在成百上千只寄生体急切地钻入你的肉棒跟菊部时，你的身体充满了愉悦感。
 
 它们不断地爬上你的身体，为你制造更多让你上瘾，让你入迷的快感，而随着快感的不断增长和累计，你在期待中颤抖和喘气。
 
@@ -52665,7 +52665,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 他们在你体内蠕动，用不断起伏的身体填满你，抚摸你最敏感的地方。你可以感觉到它们的每一寸身体，这种感觉真是妙不可言。
 
-你想让更多的幼体进入你的身体。
+你想让更多的寄生体进入你的身体。
 
 你渴望它们。
 
@@ -52685,7 +52685,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 你投降了，完全屈服于自己的肉欲之下，只想着让它们控制你的身体，以便给你带来无尽的欢愉。
 
-你的身体尖叫着寻求释放，但你肉棒内的幼体不会让你轻易得逞。
+你的身体尖叫着寻求释放，但你肉棒内的寄生体不会让你轻易得逞。
 他们不断地制造快感，直到你完全丧失理智，直到真正的爆发来临。
 
 你能感觉到它们在你体内蠕动，让你的阴茎痛并快乐着。每一次抽搐和痉挛都是折磨，因为你越来越接近一个似乎永远不会到来的爆炸性释放。
@@ -52694,9 +52694,9 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 你彻底地成为它们的一员; 和它们建立起了牢不可破的纽带。
 
-向其他人传播幼体的本能和图像如潮水般涌来，充斥在你的脑海内。
+向其他人传播寄生体的本能和图像如潮水般涌来，充斥在你的脑海内。
 
-传播幼体迫在眉睫。
+传播寄生体迫在眉睫。
 
 交媾的欲望永不熄灭。
 
@@ -52708,7 +52708,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 你开始自慰，巨大的快感立刻将你淹没，令你骨软筋酥，忍不住呻吟出声。
 每一次撸动都在你的腰部点燃一团新的火，你能感觉到自己在欲火焚身中越来越接近高潮边缘。
 
-当幼体入侵到你的蛋蛋时，你感觉你的两颗球在剧烈翻腾，它们在你体内的每一次蠕动都在不断地刺激着你，为你提供源源不断的绝伦的快感。
+当寄生体入侵到你的蛋蛋时，你感觉你的两颗球在剧烈翻腾，它们在你体内的每一次蠕动都在不断地刺激着你，为你提供源源不断的绝伦的快感。
 
 \&lt;&lt;run setup.choice(&quot;[[屈服-&gt;WestWing_NyxSpawnPit_18]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2087" name="WestWing_NyxSpawnPit_18" tags="" position="850,26100" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 3)&gt;&gt;
 你陷入肉欲的泥沼中难以自拔，想要忘却所有烦恼完全沉沦，但你的一部分在抗拒，挣扎着保持自我。
@@ -52716,7 +52716,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 但随后，你放弃了挣扎，因为你感到自己即将踏上一条不归路时，你就投降了。 
 
 \&lt;&lt;run setup.choice(&quot;[[高潮-&gt;WestWing_NyxSpawnPit_19]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2088" name="WestWing_NyxSpawnPit_19" tags="" position="975,26100" size="100,100">\&lt;&lt;run setup.playRealizationPackage([&quot;CharacterSheet_Player&quot;], 4)&gt;&gt;
-这些幼体现在已经完全成为你身体的一部分，他们会在你的生命旅途中全心全意地服侍你。
+这些寄生体现在已经完全成为你身体的一部分，他们会在你的生命旅途中全心全意地服侍你。
 
 你能感觉到它们在你的血管里肆意游动，在你身体里跳动。
 精液滴落在你的大腿上，将其涂上和你的生殖器上一样的被春药污染的粘液。
@@ -52734,16 +52734,16 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 当你逐渐从大脑的宕机状态下清醒过来时，你意识到你全身上下都浸在你射出的精液中。
 你射得到处都是 - 在你的胸上，你的肚子上，还有你的大腿上都流淌着新鲜出炉热气腾腾的精液。
 
-你感觉到幼体的精华就在那堆射出的浓液里，那是一种腐化的力量，促使你的身体如饥似渴地吸收它。
+你感觉到寄生体的精华就在那堆射出的浓液里，那是一种腐化的力量，促使你的身体如饥似渴地吸收它。
 
 \&lt;&lt;run setup.choice(&quot;[[爬出淫坑-&gt;WestWing_NyxSpawnPit_21]]&quot;);&gt;&gt;</tw-passagedata><tw-passagedata pid="2090" name="WestWing_NyxSpawnPit_21" tags="" position="1225,26100" size="100,100">\&lt;&lt;run setup.stopRealizationPackages([&quot;CharacterSheet_Player&quot;])&gt;&gt;
 \&lt;&lt;run setup.applyCorruption($CharacterSheet_Player, 8)&gt;&gt;
 你从坑里爬出来,受内心欲望的驱使，你脸上情不自禁地露出一抹淫荡的笑容。
-想要得到更多幼体的念头疯了似的涌入你的脑海，并且永不消散。
+想要得到更多寄生体的念头疯了似的涌入你的脑海，并且永不消散。
 
 你需要得到更多……
 
-∇：你获得了&quot;感染倪克斯幼体&quot;的能力。
+∇：你获得了&quot;感染倪克斯寄生体&quot;的能力。
 ∇: 你获得了8点腐化。
 \&lt;&lt;run setup.MQ002_AddNyxParasiteInfection()&gt;&gt;
 
@@ -52780,7 +52780,7 @@ The &lt;&lt;print setup.getLength(setup.getStatValue($CharacterSheet_MQ002_Guard
 \&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2094" name="Explore_EastGrownParasites" tags="" position="475,26225" size="100,100">\&lt;&lt;set $CharacterSheet_Player.quest.available_exploration_villageGateEast_eastGrownParasites = false&gt;&gt;
 当快要抵达东门时，你的心剧烈地跳动。
 
-体内的幼体渴望被释放，将他们超凡脱俗的欲望传播到荒原的野兽身上。
+体内的寄生体渴望被释放，将他们超凡脱俗的欲望传播到荒原的野兽身上。
 
 终于，你快要可以沉浸在欲望中，纵情交配，这是作为你这样一个怪物要做的事。一些守卫饶有兴趣地窥视着你，那种污染空气的兴奋感就像恶魔的灵魂一样渗入他们体内。
 

@@ -48,8 +48,8 @@
 |yes|Wasteland|n.荒原；不毛之地|游戏内目前主要有东、西部荒原两大地点可供玩家自由探索|
 |yes|Nyx|name.倪克斯|游戏内能在一定程度上控制宿主思想行为的一种寄生虫|
 |yes|The Lost Naga|name.被腐化的纳迦||
-|yes|Nyx Spawn Infection|感染尼克斯幼体|此乃游戏里的一个常驻效果，随着层数增高，你的腐化值也就越高，但同样还伴随着对玩家数值的增强|
-|yes|spawn|n.(Nyx)幼体；卵|直译为卵，但通过游戏立绘可知这玩意指nyx的时候并不是指nyx的卵而是nyx幼体|
+|yes|Nyx Spawn Infection|感染尼克斯寄生体|此乃游戏里的一个常驻效果，随着层数增高，你的腐化值也就越高，但同样还伴随着对玩家数值的增强|
+|yes|spawn|n.(Nyx)寄生体；卵|直译为卵，但通过游戏立绘可知这玩意指nyx的时候并不是指nyx的卵而是nyx寄生体|
 |yes|Essence|n.精华；本质|鸡儿环/项圈的剧情里有出现这个单词，目前译为精华即可|
 |yes|Symbiote|name.共生体|主角前期就能获得的一个类似毒液的依附在主角身体里的伙伴一样的存在，在战斗里面很猛|
 |yes|Barrens|n.荒漠|专有地名，游戏中同样也有非专有名词形式的barren和barrens;the Northen Barrens即为北方荒漠|
